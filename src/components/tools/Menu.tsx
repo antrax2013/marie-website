@@ -20,7 +20,12 @@ const Menu = ({ ...props }) => {
   //     className='mr-2'
   //   ></img>
   // );
-  const end = <Button label='Prendre rendez-vous' />;
+  const end = (
+    <Button
+      label='Prendre rendez-vous'
+      className='p-button-outlined p-button-rounded '
+    />
+  );
   const className = 'm-1';
   const selectedClassName = 'm-1 selected';
 
