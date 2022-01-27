@@ -1,6 +1,6 @@
 const QuiSuisJe = () => {
   return (
-    <>
+    <article>
       <h1>QuiSuisJe</h1>
       <h2>Lorem ipsum dolor sit amet?</h2>
       <p>
@@ -25,7 +25,21 @@ const QuiSuisJe = () => {
         sapiente voluptatem ea praesentium. Ut harum provident non repellat
         nostrum ea quos galisum ut sint Quis quasi consectetur.
       </p>
-    </>
+      <h2>Lorem ipsum dolor sit amet?</h2>
+      <p>
+        Aut maxime neque id ullam autem 33 possimus quibusdam! Eius eius id
+        voluptatem aperiam rem aperiam necessitatibus cum placeat voluptas est
+        sapiente voluptatem ea praesentium. Ut harum provident non repellat
+        nostrum ea quos galisum ut sint Quis quasi consectetur.
+      </p>
+      <h2>Lorem ipsum dolor sit amet?</h2>
+      <p>
+        Aut maxime neque id ullam autem 33 possimus quibusdam! Eius eius id
+        voluptatem aperiam rem aperiam necessitatibus cum placeat voluptas est
+        sapiente voluptatem ea praesentium. Ut harum provident non repellat
+        nostrum ea quos galisum ut sint Quis quasi consectetur.
+      </p>
+    </article>
   );
 };
 

@@ -1,8 +1,9 @@
 import React from 'react';
-import './App.css';
+import './scss/App.css';
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.css';
+import './scss/OverridePrimeCSS.css';
 import 'primeflex/primeflex.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -12,26 +13,45 @@ import Reiki from './components/pages/Reiki';
 import Massage5Continents from './components/pages/Massage-5-continents';
 import Contact from './components/pages/Contact';
 import Footer from './components/Footer';
-
-
+import Adresse from './components/pages/Adresse';
+import PolitiqueConfidentialite from './components/pages/Politique-condfidentialite';
+import FooterMenu from './components/tools/Footer-Menu';
+import ScrollButton from './components/tools/Scrollbutton';
 
 function App() {
   return (
     <div className='App'>
       <BrowserRouter>
-        <header className='App-header flex flex-wrap'>
+        <header className='flex flex-wrap'>
           <Header />
         </header>
-        <section className='App-Body'>
-          <Routes>
-            <Route path='/' element={<QuiSuisJe />} />
-            <Route path='qui-suis-je' element={<QuiSuisJe />} />
-            <Route index element={<QuiSuisJe />} />
-            <Route path='reiki' element={<Reiki />} />
-            <Route path='massage-des-5-continents' element={<Massage5Continents />} />
-            <Route path='contact' element={<Contact />} />
-            <Route path='*' element={<QuiSuisJe />} />
-          </Routes>
+        <div className='App-body flex flex-wrap'>
+          <main>
+            <Routes>
+              <Route path='/' element={<QuiSuisJe />} />
+              <Route path='qui-suis-je' element={<QuiSuisJe />} />
+              <Route index element={<QuiSuisJe />} />
+              <Route path='reiki' element={<Reiki />} />
+              <Route
+                path='massage-des-5-continents'
+                element={<Massage5Continents />}
+              />
+              <Route path='contact' element={<Contact />} />
+              <Route
+                path='politique-de-confidentialite'
+                element={<PolitiqueConfidentialite />}
+              />
+              {/* <Route path='plan-du-site' element={<PlanDuSite />} /> */}
+              <Route path='*' element={<QuiSuisJe />} />
+            </Routes>
+            <ScrollButton />
+          </main>
+          <aside>
+            <Adresse />
+          </aside>
+        </div>
+        <section className='article-footer'>
+          <FooterMenu />
         </section>
       </BrowserRouter>
       <footer>

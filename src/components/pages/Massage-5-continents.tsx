@@ -1,6 +1,6 @@
 const Massage5Continents = () => {
   return (
-    <>
+    <article>
       <h1>Massage5Continents</h1>
       <h2>Lorem ipsum dolor sit amet?</h2>
       <p>
@@ -25,7 +25,7 @@ const Massage5Continents = () => {
         sapiente voluptatem ea praesentium. Ut harum provident non repellat
         nostrum ea quos galisum ut sint Quis quasi consectetur.
       </p>
-    </>
+    </article>
   );
 };
 
