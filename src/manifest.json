@@ -20,9 +20,9 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "process.env.REACT_APP_META_URL",
+  "start_url": "https://marie-cophignon-therapeute.fr",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "description":"Je vous propose différents soins energétiques pour votre bien être: Reiki, Massage des 5 continents..."
+  "description":"process.env.REACT_APP_META_DESCRIPTION"
 }

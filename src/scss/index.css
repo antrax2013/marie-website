@@ -18,10 +18,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-main-color);
+  font-size: 12px !important;
 }
 
 p, a, span:not(.p-button-label), td, h1, h2, h3{
   color: var(--text-color) !important;
+}
+
+h1 {
+  margin: inherit;
+  padding: 0.83em 0;
 }
 
 header {
@@ -34,7 +40,7 @@ header {
   height: 40vh;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-evenly;  
+  justify-content: space-evenly; 
 }
 
 header nav {
@@ -42,7 +48,9 @@ header nav {
 }
 
 .App-body {
-  padding: 0 1rem;
+  padding: 0 1rem;   
+  flex-wrap: wrap;
+  display: flex;
   flex-direction: row;
   align-items: flex-start;  
   justify-content: space-between; 
@@ -108,4 +116,23 @@ footer a:active {
   bottom: 15px;
   z-index: 2;
   cursor: pointer;
+}
+
+@media screen and (max-width: 426px) {
+  .App-body {
+    flex: unset;
+    flex-direction: unset;
+    padding: 0;
+    display: block;
+  }
+  main, aside {
+    flex: 1 1;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 427px) {
+  main {
+    flex: 2 1;
+  }
 }

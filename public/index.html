@@ -2,17 +2,38 @@
 <html lang="fr_FR">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    
+    <title>%REACT_APP_META_MAIN_TILTE%</title>
+    <meta name="robots " content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Je vous propose différents soins energétiques pour votre bien être: Reiki, Massage des 5 continents..." />
+    <meta property="author" content="REACT_APP_META_AUTHOR" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+
+    <!-- https://www.skyminds.net/les-balises-meta-indispensables-pour-les-reseaux-sociaux-facebook-twitter-google-pinterest/ -->
+    
+    <!-- Schema.org meta for Google+ -->
+    <meta itemprop="name" content="%REACT_APP_META_MAIN_TILTE%" />
+    <meta itemprop="description" content="%REACT_APP_META_DESCRIPTION%" />
+    <!-- <meta itemprop="image" content="%PUBLIC_URL%/logo192.png" />   -->
+    
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="%REACT_APP_META_DOMAINE%" />
+    <meta name="twitter:creator" content="%REACT_APP_META_AUTHOR%" />
     <meta name="twitter:title" content="%REACT_APP_META_MAIN_TILTE%">
-    <meta name="twitter:description" content="Je vous propose différents energétiques pour votre bien être: Reiki, Massage des 5 continents...">
+    <meta name="twitter:description" content="%REACT_APP_META_DESCRIPTION%">
+    <!-- Twitter Summary card images must be at least 200x200px -->
+    <!-- <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png"> -->
+    
+    <!-- Open Graph meta (Facebook, Linkedin) -->
     <meta property="og:url" content="%REACT_APP_META_URL%">
     <meta property="og:title" content="%REACT_APP_META_MAIN_TILTE%">
-    <meta property="og:description" ccontent="Je vous propose différents soins energétiques pour votre bien être: Reiki, Massage des 5 continents...">
+    <meta property="og:description" ccontent="%REACT_APP_META_DESCRIPTION%">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="%REACT_APP_META_DOMAINE%">
+    <!-- <meta property="og:image" content="%PUBLIC_URL%/logo192.png" /> -->
     
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -20,19 +41,10 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>%REACT_APP_META_MAIN_TILTE%</title>
+    
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Ce site pour fonctionner nécessite l'activation des Javascripts.<br />You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
 </html>

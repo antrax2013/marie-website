@@ -25,7 +25,7 @@ function App() {
         <header className='flex flex-wrap'>
           <Header />
         </header>
-        <div className='App-body flex flex-wrap'>
+        <div className='App-body'>
           <main>
             <Routes>
               <Route path='/' element={<QuiSuisJe />} />
