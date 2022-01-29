@@ -9,12 +9,12 @@ const FooterMenu = ({ ...props }) => {
     <section>
       <Button
         label='Politique de confidentialité'
-        className='p-button-raised p-button-secondary p-button-text'
-        onClick={() => onClick('politique-de-confidentialité')}
+        className='p-button-secondary p-button-text'
+        onClick={() => onClick('politique-de-confidentialite')}
       />
       <Button
         label='Plan du site'
-        className='p-button-raised p-button-secondary p-button-text'
+        className='p-button-secondary p-button-text'
         onClick={() => onClick('plan-du-site')}
       />
     </section>

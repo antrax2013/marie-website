@@ -10,7 +10,10 @@ const Footer = () => {
         <a type='tel' href={`tel:${process.env.REACT_APP_META_NUMTEL}`}>
           {process.env.REACT_APP_META_NUMTEL}
         </a>{' '}
-        ou en ligne <a href='#'>cliquez ici</a>
+        ou en ligne{' '}
+        <a href={process.env.REACT_APP_META_URLRDV} rel='external'>
+          cliquez ici
+        </a>
       </span>
     </section>
   );

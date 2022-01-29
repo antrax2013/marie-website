@@ -1,49 +1,40 @@
 
 /* Buttons */
-.p-button {
+.p-button:not(.bottom-right-fixed) {
   padding: 0.2rem 0.75rem;
 }
-.p-button-primary {
-  background-color: var(--primary-color) !important;
-  border-color: var(--primary-color) !important;
+
+nav .p-menuitem .p-menuitem-text {
+  font-size: 0.9rem; 
 }
 
-.p-button-primary:hover {
-  filter: saturate(50%);
-}
-
-.p-button.p-button-outlined {
-  background-color: transparent;
+.bottom-right-fixed,
+.p-button-secondary,
+.p-button-icon-only,
+nav .p-menuitem:not(.selected) .p-menuitem-text {
   color: var(--primary-color) !important;
-  border: var(--primary-color) 1px solid !important;
-  font-size: calc(5px + 2vmin);
 }
 
-a.p-menuitem-link:hover,
-.p-button.p-button-outlined:enabled:hover, .p-button.p-button-outlined:not(button):not(a):not(.p-disabled):hover {
-  background: rgba(33, 243, 150, 0.08) !important;
+nav .p-menuitem.selected .p-menuitem-text {
+  color: var(--secondary-color) !important;
 }
 
-/* a.p-menuitem-link:hover {
-  text-decoration: underline;
-} */
-
-a.p-menuitem-link:active,
-.p-button.p-button-outlined:enabled:active, .p-button.p-button-outlined:not(button):not(a):not(.p-disabled):active {
-  background: rgba(33, 243, 150, 0.16) !important;
-}
-
-
-.p-button-secondary {
-  background-color: var(--primary-white) !important;
-  border-color: var(--primary-color) !important;
-  border-width: 3px !important;
-  padding: 3px;
-}
-
+.bottom-right-fixed:hover,
+.p-button-secondary:hover,
+.p-button-icon-only:hover,
+nav .p-menuitem:not(.selected) a.p-menuitem:hover, 
+nav .p-menubar-mobile-active .p-menubar-button:hover, 
 .p-button-secondary:hover {
-  filter: saturate(70%);
-  background-color: #e0e0e0 !important;
+  filter: invert(5%);
+}
+
+.bottom-right-fixed:active,
+.p-button-secondary:active,
+.p-button-icon-only:active,
+nav .p-menuitem:not(.selected) a.p-menuitem:active, 
+nav .p-menubar-mobile-active .p-menubar-button:active, 
+.p-button-secondary:active {
+  filter: invert(10%);
 }
 
 .p-menubar {
@@ -56,12 +47,3 @@ a.p-menuitem-link:active,
   padding: 0.2rem 0.75rem;
 }
 
-nav .p-menuitem:not(.selected) .p-menuitem-text {
-  color: var(--primary-color) !important;
-  font-size: calc(5px + 2vmin);
-}
-
-nav .p-menuitem.selected .p-menuitem-text {
-  color: var(--secondary-color) !important;
-  font-size: calc(5px + 2vmin);
-}

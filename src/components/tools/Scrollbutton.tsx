@@ -18,20 +18,20 @@ const ScrollButton = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
-      /* you can also use 'auto' behaviour
-		in place of 'smooth' */
     });
   };
 
   window.addEventListener('scroll', toggleVisible);
 
   return (
-    <Button
-      onClick={scrollToTop}
-      className='bottom-right-fixed p-button-rounded p-button-text p-button-secondary'
-      icon='pi pi-arrow-up'
-      style={{ display: visible ? 'inline' : 'none' }}
-    />
+    <div className='ScrollButton'>
+      <Button
+        onClick={scrollToTop}
+        className='bottom-right-fixed p-button-raised p-button-secondary p-button-text'
+        icon='pi pi-arrow-up'
+        style={{ display: visible ? 'inline' : 'none' }}
+      />
+    </div>
   );
 };
 

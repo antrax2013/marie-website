@@ -3,7 +3,7 @@ import { Button } from 'primereact/button';
 const Adresse = () => {
   return (
     <>
-      <h1>Adresse</h1>
+      <h1 className='aside'>Adresse</h1>
       <p>17 rue des Paquerettes</p>
       <p>78310 Maurepas</p>
       <p>Tél: {process.env.REACT_APP_META_NUMTEL}</p>
@@ -15,7 +15,7 @@ const Adresse = () => {
       <p>
         <Button className='facebook p-0'>
           <i className='pi pi-facebook px-2'></i>
-          <span className='px-3'>Facebook</span>
+          <span>Facebook</span>
         </Button>
       </p>
     </>

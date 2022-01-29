@@ -1,16 +1,16 @@
 /*  .App {} */
 
 .App-logo {
-  height: 40vmin;
+  height:25vmin;
   pointer-events: none;
+  border: 3px red solid;
+  border-radius: 200px;
 }
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-link {
-  color: #61dafb;
 }

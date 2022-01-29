@@ -7,6 +7,9 @@
   --secondary-color:#00ff00 !important;
   --background-main-color: #eeeeee !important;
   --background-color: #f0f0f0 !important;
+  --shadow:rgba(128, 128, 128, 0.1) !important;
+  --shadow-ligth:rgba(255, 255, 255, 0.9) !important;
+  --grey-medium:rgba(128, 128, 128) !important;
 }
 
 body {
@@ -18,34 +21,40 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-main-color);
-  font-size: 12px !important;
+  font-size: 14px !important;
 }
 
-p, a, span:not(.p-button-label), td, h1, h2, h3{
+p, a, span:not(.p-button-label):not(.p-button-icon), td,  h3{
   color: var(--text-color) !important;
 }
 
-h1 {
+p{
+  text-align: justify;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ol {
+  padding-inline-start: 0px;
+  padding-left:0 ;
+}
+
+li:before {
+  content: ॐ;
+}
+
+h1, h2, strong {
+  color: var(--primary-color) !important;
+}
+
+h1:not(.aside) {
   margin: inherit;
   padding: 0.83em 0;
+  margin-top: 0.2rem;  
 }
 
-header {
-  /* background-color: #282c34; */
-  background-image:
-  /* linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), */
-  url("../assets/header.png");
-  background-size: cover;
-  background-position: left top;
-  height: 40vh;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly; 
-}
-
-header nav {
-  width: 100%;
-}
 
 .App-body {
   padding: 0 1rem;   
@@ -56,44 +65,101 @@ header nav {
   justify-content: space-between; 
 }
 
-main {
+header {
+  background-color: var(--background-color);
+  background-image:
+  /* linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), */
+  url("../assets/header.png");
+  background-size: cover;
+  background-position: left top;
+  height: 40vh;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+header nav {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: left; 
+}
+
+.title h1 {
+  color: var(--background-color) !important;
+}
+
+main.content {
   flex: 4 1;
   flex-direction: column;
   margin: 0 1rem;
   padding: 0 1rem;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.1);
+  box-shadow: 5px 5px 5px 5px var(--shadow);
   background-color: var(--background-color);
 }
 
-aside {
+aside.content {
   flex: 1;
   flex-direction: column;
+  align-items: flex-start;
   margin: 0 1rem;
   padding: 0 1rem;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.1);
+  box-shadow: 5px 5px 5px 5px var(--shadow);
   background-color: var(--background-color);
 }
 
-p{
-  text-align: justify;
+article {
+  padding-bottom: 1rem;
 }
 
-li:before {
-  content: ॐ;
+article h1:not(.aside) {
+  box-shadow: -0.5rem 0 0 0 var(--secondary-color);
+  display: inline-block;
+  position: relative;
+  padding-left: 0.4rem;
+  left: -0.6rem;
 }
+
+/* article h1:not(.aside)::after {
+  position: absolute;
+  width: 3rem;
+  display: block;
+  height: 4px;
+  bottom: 0.5rem;
+  background-color: var(--secondary-color);
+  content: "";
+} */
+
+
+article section aside {
+  flex: 1 1;
+  align-items: center;
+}
+
 
 .article-footer {
-  border-top: 1px solid var(--primary-color);
-  padding-bottom: 30px;
-  /* visibility: hidden; */
+  background-color: var(--background-color);
+  padding-bottom: 30px;  
+}
+
+.article-footer section {
+  margin: 0 1rem;
+  padding: 0 1rem;
+}
+
+.article-footer button span { 
+  font-size: 0.8rem;
 }
 
 footer {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--shadow-ligth);
   min-height: 22px;
   vertical-align: bottom;
   align-items: center;
@@ -107,18 +173,35 @@ footer {
 footer a,
 footer a:hover,
 footer a:active {
-  color: grey !important;
+  color: var(--grey-medium) !important;
 }
 
 .bottom-right-fixed {
   position: fixed !important;
   right: 10px;
-  bottom: 15px;
+  bottom: 27px;
   z-index: 2;
   cursor: pointer;
+  background-color: var(--background-color) !important;
 }
 
-@media screen and (max-width: 426px) {
+.separator {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: var(--secondary-color) !important;
+  font-size: 1.1rem;
+}
+
+.facebook span {
+  color: var(--primary-color-text) !important;
+  padding-bottom: 0.1rem;
+  padding-left: 0.5rem !important;
+  padding-right: 1rem !important;
+}
+
+@media (max-width: 426px) {
   .App-body {
     flex: unset;
     flex-direction: unset;
@@ -131,8 +214,21 @@ footer a:active {
   }
 }
 
-@media screen and (max-width: 769px) and (min-width: 427px) {
+@media (max-width: 769px) and (min-width: 427px) {
   main {
     flex: 2 1;
+  }
+}
+
+@media (min-width: 1520px) {
+  #root {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .App {
+    max-width: 1520px;
   }
 }

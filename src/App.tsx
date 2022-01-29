@@ -26,7 +26,7 @@ function App() {
           <Header />
         </header>
         <div className='App-body'>
-          <main>
+          <main className='content'>
             <Routes>
               <Route path='/' element={<QuiSuisJe />} />
               <Route path='qui-suis-je' element={<QuiSuisJe />} />
@@ -46,7 +46,7 @@ function App() {
             </Routes>
             <ScrollButton />
           </main>
-          <aside>
+          <aside className='content'>
             <Adresse />
           </aside>
         </div>

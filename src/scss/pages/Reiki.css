@@ -1,0 +1,80 @@
+article > section {
+  display: flex;
+  flex: 1 1;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+article section aside > div {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.paragraphe-1 .paragraphe-content {
+  flex: 7 1;
+}
+.img-reiki-kanji {
+  width: 70%;
+}
+
+.paragraphe-2 .paragraphe-content, 
+.paragraphe-3 .paragraphe-content, 
+.paragraphe-4 .paragraphe-content {
+  flex: 2 1;
+}
+
+.img-reiki-tete, .img-reiki-genou {
+  width: 80%;
+  height: 80%;
+  border-radius: 25px;
+}
+
+
+.paragraphe-3, .paragraphe-4 {
+  align-items: center;
+}
+
+.paragraphe-3 .paragraphe-content  {
+  margin-left: 1rem;
+}
+
+@media (max-width: 426px) {
+  .content article section {
+    flex-direction: column;
+  }
+  .paragraphe-3 {
+    flex-direction: column-reverse !important;
+  }
+  .img-reiki-kanji {
+    width: 12%;
+  }
+}
+
+@media (max-width: 769px) and (min-width: 427px) {
+  .paragraphe-1 .paragraphe-content {
+    flex: 3 1;
+  }
+
+  .paragraphe-2 .paragraphe-content, 
+  .paragraphe-3 .paragraphe-content, 
+  .paragraphe-4 .paragraphe-content {
+    flex: 1 1;
+  }
+  .paragraphe-3 {
+    flex-direction: column-reverse !important;
+  }
+  .paragraphe-2, .paragraphe-4{
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 470px) {
+  .paragraphe-2 .paragraphe-content, 
+  .paragraphe-3 .paragraphe-content, 
+  .paragraphe-4 .paragraphe-content {
+    flex: 1 1;
+  }
+}
+
+

@@ -23,7 +23,7 @@ const Menu = ({ ...props }) => {
   const end = (
     <Button
       label='Prendre rendez-vous'
-      className='p-button-outlined p-button-rounded '
+      className='p-button-secondary p-button-text'
     />
   );
   const className = 'm-1';
@@ -46,12 +46,12 @@ const Menu = ({ ...props }) => {
       'contact',
     ];
 
-    const exists = entires.indexOf(windowPathName) != -1;
+    const exists = entires.indexOf(windowPathName) !== -1;
 
-    if (pathName == windowPathName && exists) {
+    if (pathName === windowPathName && exists) {
       return selectedClassName;
     }
-    if (pathName == 'qui-suis-je' && !exists) {
+    if (pathName === 'qui-suis-je' && !exists) {
       return selectedClassName;
     }
     return className;
