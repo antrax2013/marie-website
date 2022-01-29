@@ -28,7 +28,7 @@ const Reiki = () => {
           </p>
           <ul>
             <ol>
-              <i>Rei</i> : c'est l'universaolté, le saint, le don, l'esprit
+              <i>Rei</i> : c'est l'universalité, le saint, le don, l'esprit
             </ol>
             <ol>
               <i>Ki</i> : c'est l'energie. Elle existe dans toutes les

@@ -15,7 +15,7 @@ const Adresse = () => {
       <p>
         <Button className='facebook p-0'>
           <i className='pi pi-facebook px-2'></i>
-          <span>Facebook</span>
+          <span className='facebook'>Facebook</span>
         </Button>
       </p>
     </>

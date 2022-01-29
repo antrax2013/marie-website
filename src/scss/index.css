@@ -24,7 +24,7 @@ body {
   font-size: 14px !important;
 }
 
-p, a, span:not(.p-button-label):not(.p-button-icon), td,  h3{
+p, a, span:not(.p-button-label):not(.p-button-icon):not(.facebook), td,  h3{
   color: var(--text-color) !important;
 }
 
@@ -45,7 +45,7 @@ li:before {
   content: ॐ;
 }
 
-h1, h2, strong {
+h1, h2, strong, i:not(.pi) {
   color: var(--primary-color) !important;
 }
 
