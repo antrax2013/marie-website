@@ -1,4 +1,4 @@
-:root {
+/* :root { /* vert * /
   --text-color: #282828 !important;
   --text-color-secondary: #a0a0a0 !important;
   --primary-color-text: #ffffff !important;
@@ -10,18 +10,30 @@
   --shadow:rgba(128, 128, 128, 0.1) !important;
   --shadow-ligth:rgba(255, 255, 255, 0.9) !important;
   --grey-medium:rgba(128, 128, 128) !important;
+} */
+
+:root { /* organge */
+  --text-color: #3f2509 !important;
+  --text-color-secondary: #e0a14e !important;
+  --primary-color-text: #ffffff !important;
+  --primary-color: #ff6200 !important;
+  --secondary-color-text: #ff6200 !important;
+  --secondary-color:#ffb554 !important;
+  --background-main-color: #eeeeee !important;
+  --background-color: #f0f0f0 !important;
+  --shadow:rgba(128, 128, 128, 0.1) !important;
+  --shadow-ligth:rgba(255, 255, 255, 0.9) !important;
+  --grey-medium:rgba(128, 128, 128) !important;
 }
 
 body {
   color: var(--text-color);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Amita', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-main-color);
-  font-size: 14px !important;
+  font-size: 16px !important;
 }
 
 p, a, span:not(.p-button-label):not(.p-button-icon):not(.facebook), td,  h3{
@@ -51,7 +63,7 @@ h1, h2, strong, i:not(.pi) {
 
 h1:not(.aside) {
   margin: inherit;
-  padding: 0.83em 0;
+  padding: 0.83em 0 0 0;
   margin-top: 0.2rem;  
 }
 
@@ -66,30 +78,51 @@ h1:not(.aside) {
 }
 
 header {
-  background-color: var(--background-color);
-  background-image:
-  /* linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), */
-  url("../assets/header.png");
-  background-size: cover;
-  background-position: left top;
+  background-color:#1F1B17;
   height: 40vh;
-  flex-direction: row;
   align-items: flex-start;
+}
+
+header article {
+  background-image: url("../assets/header_5.png");
+  background-size: contain;
+  background-position: right bottom;
+  width: 100%;
+  height: 75%;
+  background-repeat: no-repeat;
 }
 
 header nav {
   width: 100%;
 }
 
+.logo {
+  width: 1.5rem;
+}
+
 .title {
-  display: flex;
+  display: flex;  
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: left; 
+  padding-left: 4rem;
+  font-size: 1.1rem;
+}
+
+
+.title .logo {
+  flex: 1;
+  padding-top: 2.7rem
+}
+
+.title .logo img {
+  width: 150px;
 }
 
 .title h1 {
-  color: var(--background-color) !important;
+  color: var(--secondary-color) !important;
+  text-align: left;
+  flex: 5;
 }
 
 main.content {
@@ -119,7 +152,7 @@ article {
   padding-bottom: 1rem;
 }
 
-article h1:not(.aside) {
+article:not(.title) h1:not(.aside) {
   box-shadow: -0.5rem 0 0 0 var(--secondary-color);
   display: inline-block;
   position: relative;
@@ -127,30 +160,18 @@ article h1:not(.aside) {
   left: -0.6rem;
 }
 
-/* article h1:not(.aside)::after {
-  position: absolute;
-  width: 3rem;
-  display: block;
-  height: 4px;
-  bottom: 0.5rem;
-  background-color: var(--secondary-color);
-  content: "";
-} */
-
-
 article section aside {
   flex: 1 1;
   align-items: center;
 }
 
-
 .article-footer {
   background-color: var(--background-color);
-  padding-bottom: 30px;  
+  padding-bottom: 1.5rem;  
 }
 
 .article-footer section {
-  margin: 0 1rem;
+  margin: 0rem 1rem 1.5rem;
   padding: 0 1rem;
 }
 
@@ -173,13 +194,13 @@ footer {
 footer a,
 footer a:hover,
 footer a:active {
-  color: var(--grey-medium) !important;
+  color: var(--primary-color) !important;
 }
 
 .bottom-right-fixed {
   position: fixed !important;
   right: 10px;
-  bottom: 27px;
+  bottom: 2.65rem;
   z-index: 2;
   cursor: pointer;
   background-color: var(--background-color) !important;
@@ -211,6 +232,10 @@ footer a:active {
   main, aside {
     flex: 1 1;
     margin: 0;
+  }
+  .title {
+    font-size: 1rem;
+    align-items:unset;
   }
 }
 

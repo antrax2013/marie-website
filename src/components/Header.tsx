@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Menu from './tools/Menu';
-import logo from '../assets/fleur-vie.svg';
+import logo from '../assets/logo512.png';
 
 const Header = () => {
   return (
@@ -10,9 +10,9 @@ const Header = () => {
       </nav>
       <article className='title'>
         <div className='logo'>
-          <img src={logo} className='App-logo' alt='logo' />
+          <img alt='logo' src={logo} />
         </div>
-        <h1>{process.env.REACT_APP_META_MAIN_TILTE_LIGTH}</h1>
+        <h1>Marie COPHIGNON - Thérapeute energétique</h1>
       </article>
     </>
   );

@@ -1,5 +1,6 @@
 import { Menubar } from 'primereact/menubar';
 import { Button } from 'primereact/button';
+import logo from '../../assets/logo512.png';
 
 interface item {
   label: string;
@@ -8,18 +9,7 @@ interface item {
 }
 
 const Menu = ({ ...props }) => {
-  // const start = (
-  //   <img
-  //     alt='logo'
-  //     src='showcase/images/logo.png'
-  //     onError={(e) =>
-  //       (e.target.src =
-  //         'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png')
-  //     }
-  //     height='40'
-  //     className='mr-2'
-  //   ></img>
-  // );
+  const start = <img alt='logo' src={logo} className='logo' />;
   const end = (
     <Button
       label='Prendre rendez-vous'
@@ -88,7 +78,7 @@ const Menu = ({ ...props }) => {
     },
   ];
 
-  return <Menubar model={items} {...props} end={end} />;
+  return <Menubar model={items} {...props} start={start} end={end} />;
 };
 
 export default Menu;
