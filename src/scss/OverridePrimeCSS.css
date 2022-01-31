@@ -1,5 +1,7 @@
+.p-component {
+  font-family: 'Amita', cursive;
+}
 
-/* Buttons */
 .p-button:not(.bottom-right-fixed) {
   padding: 0.2rem 0.75rem;
 }
@@ -8,6 +10,7 @@ nav .p-menuitem .p-menuitem-text {
   font-size: 0.9rem; 
 }
 
+.p-menubar .p-menubar-button,
 .bottom-right-fixed,
 .p-button-secondary,
 .p-button-icon-only,
@@ -44,6 +47,7 @@ nav .p-menubar-mobile-active .p-menubar-button:active,
   /* border-top : 1px solid #c0c0c0;
   border-bottom : 1px solid #c0c0c0; */
 }
+
 
 .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
   padding: 0.2rem 0.75rem;

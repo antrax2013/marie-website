@@ -12,7 +12,11 @@ const Header = () => {
         <div className='logo'>
           <img alt='logo' src={logo} />
         </div>
-        <h1>Marie COPHIGNON - Thérapeute energétique</h1>
+        <h1>
+          Marie COPHIGNON
+          <br />
+          Thérapeute energétique
+        </h1>
       </article>
     </>
   );

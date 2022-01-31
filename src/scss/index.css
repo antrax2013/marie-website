@@ -96,8 +96,9 @@ header nav {
   width: 100%;
 }
 
-.logo {
+nav .logo {
   width: 1.5rem;
+  display: flex;
 }
 
 .title {
@@ -116,7 +117,7 @@ header nav {
 }
 
 .title .logo img {
-  width: 150px;
+  width: 100px;
 }
 
 .title h1 {
@@ -234,8 +235,15 @@ footer a:active {
     margin: 0;
   }
   .title {
-    font-size: 1rem;
     align-items:unset;
+  }
+  .title h1 {
+    text-align: right; 
+    padding-right: 0.5rem;
+    font-size: 1rem;
+  }
+  .title .logo {
+    display: none;
   }
 }
 
@@ -243,9 +251,31 @@ footer a:active {
   main {
     flex: 2 1;
   }
+  .title {
+    align-items:unset;
+    padding-left: 2rem;
+  }
+  .title .logo {
+    display: none;
+  }
+}
+@media (min-width: 770px) {
+  nav .logo {
+    width: 1.7rem;
+  }
+  .title h1 {
+    align-items:center;
+  }
 }
 
-@media (min-width: 1520px) {
+@media (min-width: 1024px) {
+  .title .logo img {
+    width: 150px;
+  }
+}
+
+
+@media (min-width: 1520px) {  
   #root {
     display: flex;
     flex: 1;
@@ -254,6 +284,10 @@ footer a:active {
     justify-content: center;
   }
   .App {
+    max-width: 1520px;
+  }
+  
+  footer {
     max-width: 1520px;
   }
 }

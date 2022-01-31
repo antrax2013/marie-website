@@ -6,7 +6,7 @@ const Footer = () => {
       </span>
       <span className='hidden md:inline-flex m-1'> - </span>
       <span className='m-1'>
-        rdv{' '}
+        Rdv{' '}
         <a type='tel' href={`tel:${process.env.REACT_APP_META_NUMTEL}`}>
           {process.env.REACT_APP_META_NUMTEL}
         </a>{' '}
