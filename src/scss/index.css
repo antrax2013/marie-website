@@ -36,7 +36,10 @@ body {
   font-size: 16px !important;
 }
 
-p, a, span:not(.p-button-label):not(.p-button-icon):not(.facebook), td,  h3{
+p, a, 
+span:not(.p-button-label):not(.p-button-icon):not(.facebook):not(.asterix), 
+td,
+h3{
   color: var(--text-color) !important;
 }
 
@@ -57,8 +60,14 @@ li:before {
   content: ॐ;
 }
 
-h1, h2, strong, i:not(.pi) {
+h1, 
+h2, 
+strong, i:not(.pi) {
   color: var(--primary-color) !important;
+}
+
+.asterix {
+  color: var(--secondary-color) !important;
 }
 
 h1:not(.aside) {
@@ -66,7 +75,6 @@ h1:not(.aside) {
   padding: 0.83em 0 0 0;
   margin-top: 0.2rem;  
 }
-
 
 .App-body {
   padding: 0 1rem;   
@@ -109,7 +117,6 @@ nav .logo {
   padding-left: 4rem;
   font-size: 1.1rem;
 }
-
 
 .title .logo {
   flex: 1;

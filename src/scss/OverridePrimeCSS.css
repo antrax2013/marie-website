@@ -2,6 +2,23 @@
   font-family: 'Amita', cursive;
 }
 
+label {
+  margin-right: 1rem;
+  display: flex;
+}
+
+.p-inputtext {display: flex;}
+
+.p-error {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.p-button:not(.facebook):not(.bottom-right-fixed):not(.p-button-secondary) {
+  background: var(--primary-color) !important;
+  border: var(--primary-color) !important;
+}
+
 .p-button:not(.bottom-right-fixed) {
   padding: 0.2rem 0.75rem;
 }
