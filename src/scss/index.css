@@ -84,7 +84,7 @@ header {
 }
 
 header article {
-  background-image: url("../assets/header_5.png");
+  background-image: url("../assets/background-header.png");
   background-size: contain;
   background-position: right bottom;
   width: 100%;
