@@ -1,5 +1,9 @@
-.p-component {
+.p-component, .p-dropdown-label {
   font-family: 'Amita', cursive;
+}
+
+.p-component:not(.p-button), .p-dropdown-label {
+  color:var(--text-color) !important;
 }
 
 label {
@@ -8,6 +12,12 @@ label {
 }
 
 .p-inputtext {display: flex;}
+
+.p-component:not(.p-button):hover,
+.p-component:not(.p-button):active,
+.p-component:not(.p-button):focus {
+  border-color: var(--secondary-color) !important;;
+}
 
 .p-error {
   display: flex;

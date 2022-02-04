@@ -6,19 +6,25 @@ import { classNames } from 'primereact/utils';
 import { useFormik } from 'formik';
 import { useState } from 'react';
 import '../../scss/elements/pages/Contact.scss';
+import { Email, IMail } from '../../modules/email';
+import { Dropdown } from 'primereact/dropdown';
 
 interface ierror {
-  nom: string | undefined;
-  email: string | undefined;
-  prenom: string | undefined;
-  telephone: string | undefined;
-  message: string | undefined;
-  sujet: string | undefined;
+  nom?: string;
+  email?: string;
+  prenom?: string;
+  telephone?: string;
+  message?: string;
+  sujet?: string;
 }
 
 const Contact = () => {
-  const [formData, setFormData] = useState({});
-  const [showMessage, setShowMessage] = useState(false);
+  const [enableSendButton, setEnableSendButton] = useState(true);
+
+  const sujets = [
+    { label: 'Prise de rendez-vous', value: 'Prise de rendez-vous' },
+    { label: 'Demande de renseignements', value: 'Demande de renseignements' },
+  ];
 
   const formik = useFormik({
     initialValues: {
@@ -27,17 +33,10 @@ const Contact = () => {
       prenom: '',
       telephone: '',
       message: '',
-      sujet: '',
+      sujet: sujets[0].value,
     },
     validate: (data) => {
-      let errors: ierror = {
-        nom: undefined,
-        email: undefined,
-        prenom: undefined,
-        telephone: undefined,
-        message: undefined,
-        sujet: undefined,
-      };
+      let errors: ierror = {};
 
       if (data.nom.length === 0) {
         errors.nom = 'Votre nom est obligatoire.';
@@ -59,23 +58,34 @@ const Contact = () => {
         errors.email = "Votre adresse email n'est pas valide.";
       }
 
-      if (data.telephone.length !== 0) {
-        if (
-          !/^(0|\+33 )[1-9]([-. ]?[0-9]{2} ){3}([-. ]?[0-9]{2})$/i.test(
-            data.telephone
-          )
-        ) {
-          errors.telephone = "Votre numéro de téléphone n'est pas valide.";
-        }
-      }
-
+      // if (data.telephone.length !== 0) {
+      //   // if (
+      //   //   !/^(0|\+33 )[1-9]([-. ]?[0-9]{2} ){3}([-. ]?[0-9]{2})$/i.test(
+      //   //     data.telephone
+      //   //   )
+      //   // ) {
+      //   errors.telephone = "Votre numéro de téléphone n'est pas valide.";
+      //   //}
+      // }
       return errors;
     },
     onSubmit: (data) => {
-      setFormData(data);
-      setShowMessage(true);
+      const message: IMail = {
+        from_email: formik.values.email,
+        to_name: formik.values.nom + ' ' + formik.values.prenom,
+        message: formik.values.message,
+        subject: formik.values.sujet ?? '',
+        tel: formik.values.telephone,
+      };
 
-      formik.resetForm();
+      Email.sendEmail(message)
+        .then(() => {
+          formik.resetForm();
+          //anti flood
+          setEnableSendButton(false);
+          setTimeout(() => setEnableSendButton(true), 10000);
+        })
+        .catch((error: any) => console.error(error));
     },
   });
 
@@ -130,7 +140,6 @@ const Contact = () => {
             value={formik.values.telephone}
             onChange={formik.handleChange}
             mask='99.99.99.99.99'
-            placeholder='99.99.99.99.99'
           ></InputMask>
           {getFormErrorMessage('telephone')}
         </div>
@@ -148,6 +157,18 @@ const Contact = () => {
           {getFormErrorMessage('email')}
         </div>
         <div className='field'>
+          <label htmlFor='sujet'>
+            Sujet <span className='asterix'>*</span>
+          </label>
+          <Dropdown
+            id='sujet'
+            name='sujet'
+            value={formik.values.sujet}
+            onChange={formik.handleChange}
+            options={sujets}
+          />
+          {/* {getFormErrorMessage('sujet')} */}
+          <br />
           <label htmlFor='message'>
             Message <span className='asterix'>*</span>
           </label>
@@ -164,7 +185,7 @@ const Contact = () => {
           {getFormErrorMessage('message')}
         </div>
         <div className='form-footer'>
-          <Button type='submit' label='Envoyer' />
+          <Button type='submit' label='Envoyer' disabled={!enableSendButton} />
         </div>
       </form>
     </article>
