@@ -14,6 +14,9 @@ const Menu = ({ ...props }) => {
     <Button
       label='Prendre rendez-vous'
       className='p-button-secondary p-button-text'
+      onClick={(e: any) => {
+        let url = 'https://cyrilreiki.youcanbook.me';
+      }}
     />
   );
   const className = 'm-1';
@@ -49,7 +52,7 @@ const Menu = ({ ...props }) => {
 
   let items: item[] = [
     {
-      label: 'Qui suis-je',
+      label: 'Qui suis-je ?',
       command: () => {
         onClick('qui-suis-je');
       },

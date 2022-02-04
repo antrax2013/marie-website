@@ -1,0 +1,9 @@
+@mixin ombre-portee-panneau {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 5px 5px 5px 5px var(--shadow);
+  background-color: var(--background-color);
+  margin: 0 1rem;
+  padding: 0 1rem;
+  flex-direction: column;
+}

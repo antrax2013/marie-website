@@ -1,9 +1,8 @@
 import React from 'react';
-import './scss/App.css';
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.css';
-import './scss/OverridePrimeCSS.css';
+import './scss/elements/OverridePrimeCSS.scss';
 import 'primeflex/primeflex.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -14,6 +13,7 @@ import Massage5Continents from './components/pages/Massage-5-continents';
 import Contact from './components/pages/Contact';
 import Footer from './components/Footer';
 import Adresse from './components/pages/Adresse';
+import PlanDuSite from './components/pages/Site-Map';
 import PolitiqueConfidentialite from './components/pages/Politique-condfidentialite';
 import FooterMenu from './components/tools/Footer-Menu';
 import ScrollButton from './components/tools/Scrollbutton';
@@ -41,7 +41,7 @@ function App() {
                 path='politique-de-confidentialite'
                 element={<PolitiqueConfidentialite />}
               />
-              {/* <Route path='plan-du-site' element={<PlanDuSite />} /> */}
+              <Route path='plan-du-site' element={<PlanDuSite />} />
               <Route path='*' element={<QuiSuisJe />} />
             </Routes>
             <ScrollButton />

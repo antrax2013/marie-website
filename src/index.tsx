@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './scss/index.css';
+import './scss/elements/index.scss';
 import App from './App';
 
 //https://www.search-foresight.com/bonnes-pratiques-seo-frameworks-javascript/

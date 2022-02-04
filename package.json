@@ -18,15 +18,17 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "sass": "^1.49.4",
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "start npm run compile-sass && react-scripts start",
     "old-start": "react-app-rewired start --scripts-version react-scripts-ts",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile-sass": "sass --watch src/Scss/elements/:src/Css/ --no-source-map -s compressed"
   },
   "eslintConfig": {
     "extends": [

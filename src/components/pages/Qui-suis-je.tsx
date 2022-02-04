@@ -1,7 +1,7 @@
 const QuiSuisJe = () => {
   return (
     <article>
-      <h1>QuiSuisJe</h1>
+      <h1>Qui suis-je ?</h1>
       <h2>Lorem ipsum dolor sit amet?</h2>
       <p>
         Lorem ipsum dolor sit amet. Aut voluptatem praesentium et fugit dolorem

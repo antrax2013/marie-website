@@ -5,7 +5,7 @@ import { InputText } from 'primereact/inputtext';
 import { classNames } from 'primereact/utils';
 import { useFormik } from 'formik';
 import { useState } from 'react';
-import '../../scss/pages/Contact.css';
+import '../../scss/elements/pages/Contact.scss';
 
 interface ierror {
   nom: string | undefined;

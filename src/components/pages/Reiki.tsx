@@ -3,7 +3,7 @@ import ImgReiki from '../../assets/Reiki/Reiki.svg';
 import ImgReikiTete from '../../assets/Reiki/Reiki-tete.jpg';
 import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.jpg';
 import ImgReikiPied from '../../assets/Reiki/Reiki-pied.jpg';
-import '../../scss/pages/Reiki.css';
+import '../../scss/elements/pages/Reiki.scss';
 
 const Reiki = () => {
   return (
