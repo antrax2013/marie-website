@@ -1,5 +1,6 @@
+import React from 'react';
 import { Menubar } from 'primereact/menubar';
-import { Button } from 'primereact/button';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logo512.png';
 
 interface item {
@@ -11,14 +12,12 @@ interface item {
 const Menu = ({ ...props }) => {
   const start = <img alt='logo' src={logo} className='logo' />;
   const end = (
-    <Button
-      label='Prendre rendez-vous'
-      className='p-button-secondary p-button-text'
-      onClick={(e: any) => {
-        let url = 'https://cyrilreiki.youcanbook.me';
-      }}
-    />
+    <a href={process.env.REACT_APP_URLRDV} rel='external' target={'_blank'}>
+      Prendre rendez-vous
+    </a>
   );
+  console.log(process.env.ACTIVE_RDV);
+
   const className = 'm-1';
   const selectedClassName = 'm-1 selected';
 
@@ -81,7 +80,14 @@ const Menu = ({ ...props }) => {
     },
   ];
 
-  return <Menubar model={items} {...props} start={start} end={end} />;
+  return (
+    <Menubar
+      model={items}
+      {...props}
+      start={start}
+      end={process.env.REACT_APP_ACTIVERDV == '1' && end}
+    />
+  );
 };
 
 export default Menu;

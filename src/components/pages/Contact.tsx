@@ -4,10 +4,11 @@ import { InputMask } from 'primereact/inputmask';
 import { InputText } from 'primereact/inputtext';
 import { classNames } from 'primereact/utils';
 import { useFormik } from 'formik';
-import { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import '../../scss/elements/pages/Contact.scss';
 import { Email, IMail } from '../../modules/email';
 import { Dropdown } from 'primereact/dropdown';
+import { Toast } from 'primereact/toast';
 
 interface ierror {
   nom?: string;
@@ -20,9 +21,11 @@ interface ierror {
 
 const Contact = () => {
   const [enableSendButton, setEnableSendButton] = useState(true);
+  const toast = useRef(null) as any;
 
   const sujets = [
     { label: 'Prise de rendez-vous', value: 'Prise de rendez-vous' },
+    { label: 'Informations de suivi', value: 'Informations de suivi' },
     { label: 'Demande de renseignements', value: 'Demande de renseignements' },
   ];
 
@@ -58,15 +61,6 @@ const Contact = () => {
         errors.email = "Votre adresse email n'est pas valide.";
       }
 
-      // if (data.telephone.length !== 0) {
-      //   // if (
-      //   //   !/^(0|\+33 )[1-9]([-. ]?[0-9]{2} ){3}([-. ]?[0-9]{2})$/i.test(
-      //   //     data.telephone
-      //   //   )
-      //   // ) {
-      //   errors.telephone = "Votre numéro de téléphone n'est pas valide.";
-      //   //}
-      // }
       return errors;
     },
     onSubmit: (data) => {
@@ -81,11 +75,29 @@ const Contact = () => {
       Email.sendEmail(message)
         .then(() => {
           formik.resetForm();
+          if (toast.current) {
+            toast.current.show({
+              severity: 'success',
+              summary: "Envoi d'email",
+              detail: 'Votre email a été envoyé avec succès',
+              life: 3000,
+            });
+          }
           //anti flood
           setEnableSendButton(false);
           setTimeout(() => setEnableSendButton(true), 10000);
         })
-        .catch((error: any) => console.error(error));
+        .catch((error: any) => {
+          if (toast.current) {
+            toast.current.show({
+              severity: 'error',
+              summary: "Envoi d'email",
+              detail: "Une erreur est survenue lors de l'envoi de votre email",
+              life: 13000,
+            });
+          }
+          console.error(error);
+        });
     },
   });
 
@@ -103,6 +115,7 @@ const Contact = () => {
   return (
     <article className='contact'>
       <h1>Contact</h1>
+      <Toast ref={toast} />
       <form onSubmit={formik.handleSubmit}>
         <div className='field'>
           <label htmlFor='nom'>
@@ -167,7 +180,6 @@ const Contact = () => {
             onChange={formik.handleChange}
             options={sujets}
           />
-          {/* {getFormErrorMessage('sujet')} */}
           <br />
           <label htmlFor='message'>
             Message <span className='asterix'>*</span>

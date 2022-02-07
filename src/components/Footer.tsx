@@ -9,11 +9,19 @@ const Footer = () => {
         Rdv{' '}
         <a type='tel' href={`tel:${process.env.REACT_APP_META_NUMTEL}`}>
           {process.env.REACT_APP_META_NUMTEL}
-        </a>{' '}
-        ou en ligne{' '}
-        <a href={process.env.REACT_APP_META_URLRDV} rel='external'>
-          cliquez ici
         </a>
+        {process.env.REACT_APP_ACTIVERDV == '1' && (
+          <>
+            ou en ligne{' '}
+            <a
+              href={process.env.REACT_APP_URLRDV}
+              rel='external'
+              target={'_blank'}
+            >
+              cliquez ici
+            </a>
+          </>
+        )}
       </span>
     </section>
   );

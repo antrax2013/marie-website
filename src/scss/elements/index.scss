@@ -11,8 +11,8 @@ body {
   font-size: 16px !important;
 }
 
-p, a, 
-span:not(.p-button-label):not(.p-button-icon):not(.facebook):not(.asterix):not(.p-menuitem-text), 
+p, 
+span:not(.p-button-label):not(.p-button-icon):not(.facebook):not(.asterix):not(.p-menuitem-text):not(.p-toast-summary):not(.p-toast-message-icon), 
 td,
 h3{
   color: var(--text-color) !important;
@@ -20,6 +20,16 @@ h3{
 
 p{
   text-align: justify;
+}
+
+a,
+a:hover,
+a:active {
+  color: var(--primary-color) !important;  
+}
+
+a:not(:hover) {
+  text-decoration: none;
 }
 
 ul {
@@ -162,11 +172,7 @@ footer {
   display: flex;
 }
 
-footer a,
-footer a:hover,
-footer a:active {
-  color: var(--primary-color) !important;
-}
+
 
 .bottom-right-fixed {
   position: fixed !important;
