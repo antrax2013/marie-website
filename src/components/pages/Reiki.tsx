@@ -44,11 +44,11 @@ const Reiki = () => {
             l'équilibre du corps et de l'esprit.
           </p>
           <p>
-            <strong>
+            <b>
               Un soin <em>Reiki</em>, en aucun cas, ne substitue à un traitement
               médical allopathique. Le <em>Reiki</em> ne soigne pas, il
               accompagne vers la guérison.
-            </strong>
+            </b>
           </p>
         </section>
       </section>
@@ -61,10 +61,10 @@ const Reiki = () => {
             bébés, enfants, adultes, personnes âgées, les animaux, les
             plantes...
           </p>
-          <strong>
+          <b>
             En cas de troubles psychotiques, schizophréniques ou de dissociation
             de la personnalité, le <em>Reiki</em> est contre indiqué.
-          </strong>
+          </b>
           <p>
             Sinon dans les autres cas, il n'y a pas de contre indication et ce
             quelque soit la distance.

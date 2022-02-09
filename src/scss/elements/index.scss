@@ -12,6 +12,7 @@ body {
 }
 
 p, 
+i:not(.pi),
 span:not(.p-button-label):not(.p-button-icon):not(.facebook):not(.asterix):not(.p-menuitem-text):not(.p-toast-summary):not(.p-toast-message-icon), 
 td,
 h3{
@@ -47,7 +48,7 @@ li:before {
 
 h1, 
 h2, 
-strong, i:not(.pi) {
+b {
   color: var(--primary-color) !important;
 }
 
