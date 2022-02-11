@@ -1,3 +1,4 @@
+.M5C {
 article > section {
   display: flex;
   flex: 1 1;
@@ -5,12 +6,16 @@ article > section {
   flex-direction: row;
 }
 
-article section aside {
+article section:not(.paragraphe-2-2) aside {
   height: 100%;
   width: 100%;
 }
 
-article section aside > div {
+article section.paragraphe-2-2 aside > div {
+  display: block;
+}
+
+article section:not(.paragraphe-2-2) aside > div {
   display: flex;
   justify-content: center;
 }
@@ -46,7 +51,18 @@ article section aside > div {
   flex: 1 1;
 }
 
-.img-reiki-tete, .img-reiki-genou {
+.paragraphe-2-2 aside {
+  justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-m5c-tete, .img-m5c-pied {
+  border-radius: 25px;
+  transform: rotate(90deg);
+}
+
+.img-m5c-genou {
   width: 80%;
   height: 80%;
   border-radius: 25px;
@@ -68,7 +84,7 @@ article section aside > div {
   .paragraphe-3 {
     flex-direction: column-reverse !important;
   }
-  .img-reiki-kanji {
+  .img-m5c-kanji {
     width: 12%;
   }
 }
@@ -99,4 +115,4 @@ article section aside > div {
   }
 }
 
-
+}
