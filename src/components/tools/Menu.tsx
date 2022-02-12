@@ -16,7 +16,6 @@ const Menu = ({ ...props }) => {
       Prendre rendez-vous
     </a>
   );
-  console.log(process.env.ACTIVE_RDV);
 
   const className = 'm-1';
   const selectedClassName = 'm-1 selected';

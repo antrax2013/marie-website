@@ -10,9 +10,6 @@ const SiteMap = () => {
           <a href='/reiki'>Reiki</a>
         </li>
         <li>
-          <a href='/reiki'>Reiki</a>
-        </li>
-        <li>
           <a href='/massage-des-5-continents'>Massage des 5 Continents</a>
         </li>
         <li>

@@ -65,11 +65,11 @@ const Reiki = () => {
             </p>
             <b>
               En cas de troubles psychotiques, schizophréniques ou de
-              dissociation de la personnalité, le <em>Reiki</em> est contre
-              indiqué.
+              dissociation de la personnalité, le <em>Reiki</em> est
+              contre-indiqué.
             </b>
             <p>
-              Sinon dans les autres cas, il n'y a pas de contre indication et ce
+              Sinon dans les autres cas, il n'y a pas de contre-indication et ce
               quelque soit la distance.
             </p>
           </section>
@@ -102,21 +102,23 @@ const Reiki = () => {
               Le <em>Reiki</em> favorise le bien-être physique, émotionnel,
               psychliogique et psychique. Il apporte détente, confort, bien-être
               et équilibre. Il agit sur :
-              <ul>
-                <li>le stress, l'anxiété, burn-out</li>
-                <li>la fatigue, insomnie, manque de vitalité</li>
-                <li>
-                  les état émotionnel, perte de confiance, blocages, schémas
-                  répétitifs
-                </li>
-                <li>
-                  les douleurs chroniques, tensions musculaires et articulaires{' '}
-                </li>
-                <li>
-                  Accompagnement au changement que ce soit dans la vie personnel
-                  ou professionel
-                </li>
-              </ul>
+            </p>
+            <ul>
+              <li>le stress, l'anxiété, burn-out</li>
+              <li>la fatigue, insomnie, manque de vitalité</li>
+              <li>
+                les état émotionnel, perte de confiance, blocages, schémas
+                répétitifs
+              </li>
+              <li>
+                les douleurs chroniques, tensions musculaires et articulaires{' '}
+              </li>
+              <li>
+                Accompagnement au changement que ce soit dans la vie personnel
+                ou professionel
+              </li>
+            </ul>
+            <p>
               Par son approche hliistique le soin <em>Reiki</em> contribue à
               libèrer les blocages et les tensions, renforce le système
               immunitaire, atténue la douleur et élimine les toxines. Il apporte
@@ -151,11 +153,6 @@ const Reiki = () => {
                 ressenti durant le soin.
               </li>
             </ul>
-            <p>
-              Mon savoir faire, mes qualités d'écoute et d'empathie sont à votre
-              service pour vous accompagner vers le bien être et la guérison.
-              J'adapte, mes soins selon vos besoins.
-            </p>
           </section>
           <aside>
             <div>
@@ -167,6 +164,15 @@ const Reiki = () => {
               />
             </div>
           </aside>
+        </section>
+        <section className='paragraphe-5'>
+          <section className='paragraphe-content'>
+            <p>
+              Mon savoir faire, mes qualités d'écoute et d'empathie sont à votre
+              service pour vous accompagner vers le bien être et la guérison.
+              J'adapte, mes soins selon vos besoins.
+            </p>
+          </section>
         </section>
       </article>
     </div>

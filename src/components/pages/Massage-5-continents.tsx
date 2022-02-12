@@ -37,16 +37,15 @@ const Massage5Continents = () => {
           </aside>
           <section className='paragraphe-content'>
             <section>
-              <p>
-                Les techniques de massages utilisées sont basées sur :
-                <ul>
-                  <li> Le massage hawaïen Lomi-Lomi </li>
-                  <li> Le massage californien </li>
-                  <li> Le massage suédois </li>
-                  <li> Le massage Ayurvédique </li>
-                  <li> Le massage Tui-Na</li>
-                </ul>
-              </p>
+              <p>Les techniques de massages utilisées sont basées sur :</p>
+              <ul>
+                <li> Le massage hawaïen Lomi-Lomi </li>
+                <li> Le massage californien </li>
+                <li> Le massage suédois </li>
+                <li> Le massage Ayurvédique </li>
+                <li> Le massage Tui-Na</li>
+              </ul>
+
               <p>
                 Pour le soin energétique, j'ai choisi de m'appuier sur les
                 techniques de soin du <em>Reiki</em>.
@@ -56,38 +55,34 @@ const Massage5Continents = () => {
         </section>
         <section className='paragraphe-1-2'>
           <section className='paragraphe-content'>
-            <p>
-              Les huiles végétales :{' '}
-              <ul>
-                <li> Huile d'avocat</li>
-                <li> huile d'amande douce </li>
-                <li> huile de macadamia </li>
-                <li> huile d'argan </li>
-                <li>Huile de noyau d'abricot </li>
-              </ul>
-            </p>
+            <p>Les huiles végétales : </p>
+            <ul>
+              <li> Huile d'avocat</li>
+              <li> huile d'amande douce </li>
+              <li> huile de macadamia </li>
+              <li> huile d'argan </li>
+              <li>Huile de noyau d'abricot </li>
+            </ul>
           </section>
           <section className='paragraphe-content he'>
-            <p>
-              Les huiles essentielles :{' '}
-              <ul className='ul-he'>
-                <li> Romarin</li>
-                <li> Eucalyptus</li>
-                <li> Niaouli</li>
-                <li> Citron</li>
-                <li> Cyprès</li>
-                <li> Lavande</li>
-                <li> Tea tree</li>
-                <li> Menthe poivrée</li>
-                <li> Ylang-ylang</li>
-                <li> Géranium</li>
-                <li> Orange douce</li>
-                <li> Myrrhe</li>
-                <li> Ravintsara</li>
-                <li> Gingembre</li>
-                <li> Sarriette</li>
-              </ul>
-            </p>
+            <p>Les huiles essentielles : </p>
+            <ul className='ul-he'>
+              <li> Romarin</li>
+              <li> Eucalyptus</li>
+              <li> Niaouli</li>
+              <li> Citron</li>
+              <li> Cyprès</li>
+              <li> Lavande</li>
+              <li> Tea tree</li>
+              <li> Menthe poivrée</li>
+              <li> Ylang-ylang</li>
+              <li> Géranium</li>
+              <li> Orange douce</li>
+              <li> Myrrhe</li>
+              <li> Ravintsara</li>
+              <li> Gingembre</li>
+              <li> Sarriette</li>
+            </ul>
           </section>
         </section>
         <ParagraphSeparator />
@@ -107,50 +102,48 @@ const Massage5Continents = () => {
             <div>
               <img
                 src={ImgReikiTete}
-                className='img-m5c-tete'
+                className='img-m5c-tete img-verticale'
                 alt='Soin Reiki - Apposition des mains sur le visage'
                 title='Soin Reiki - Apposition des mains sur le visage'
               />
             </div>
-            {/* <div>
+            <div>
               <img
                 src={ImgReikiTete}
-                className='img-m5c-tete'
+                className='img-m5c-tete img-horizontale'
                 alt='Soin Reiki - Apposition des mains sur le visage'
                 title='Soin Reiki - Apposition des mains sur le visage'
               />
-            </div> */}
+            </div>
           </aside>
           <section className='paragraphe-content'>
             <p>
-              Le <em>Massage Des 5 Continents</em> est contre indiqué pour :{' '}
-              <ul>
-                <li> Les femmes enceintes</li>
-                <li> Les personnes atteintes de cancer </li>
-                <li>
-                  {' '}
-                  Les personnes souffrant de troubles psychotiques,
-                  schizophréniques ou de dissociation de la personnalité
-                </li>
-                <li> Les enfants </li>
-              </ul>
+              Le <em>Massage Des 5 Continents</em> est contre-indiqué pour :{' '}
             </p>
+            <ul>
+              <li> Les femmes enceintes</li>
+              <li> Les personnes atteintes de cancer </li>
+              <li>
+                {' '}
+                Les personnes souffrant de troubles psychotiques,
+                schizophréniques ou de dissociation de la personnalité
+              </li>
+              <li> Les enfants </li>
+            </ul>
+
             <p>
               En raison de la présence des huiles essentielles, il est
               recommandé de n'utiliser que des huiles végétales pour :{' '}
-              <ul>
-                <li> Les femmes enceintes ou allaitantes</li>
-                <li> Les personnes épileptiques </li>
-                <li> Les personnes atteintes de cancer</li>
-                <li>
-                  {' '}
-                  Les personnes suivant un traitement homéopathique fort{' '}
-                </li>
-                <li> Les personnes hypersensibles</li>
-                <li> Les personnes asthmatiques</li>
-              </ul>
-              <b>En cas de doute, je n'utiliserai que des huiles végétales.</b>
             </p>
+            <ul>
+              <li> Les femmes enceintes ou allaitantes</li>
+              <li> Les personnes épileptiques </li>
+              <li> Les personnes atteintes de cancer</li>
+              <li> Les personnes suivant un traitement homéopathique fort </li>
+              <li> Les personnes hypersensibles</li>
+              <li> Les personnes asthmatiques</li>
+            </ul>
+            <b>En cas de doute, je n'utiliserai que des huiles végétales.</b>
           </section>
         </section>
         <section className='paragraphe-2'>
@@ -167,7 +160,20 @@ const Massage5Continents = () => {
           </section>
         </section>
         <ParagraphSeparator />
-        <section className='paragraphe-3'>
+        <section className='paragraphe-3-1'>
+          <section className='paragraphe-content'>
+            <h2>Pour quelles raisons consulter ?</h2>
+            <p>
+              Le <em>Massage des 5 Continents</em> est un massage biodynamique.
+              Il reveille les processus naturels d'auto-guérison. Il permet de
+              se décharger des toxines et des mémoires émotionnelles, laissant
+              place à des energies de plaisir et de vie. Le{' '}
+              <em>Massage des 5 Continents</em> apporte un lâcher prise physique
+              et mental profond et durable.
+            </p>
+          </section>
+        </section>
+        <section className='paragraphe-3-2'>
           <aside>
             <div>
               <img
@@ -179,27 +185,18 @@ const Massage5Continents = () => {
             </div>
           </aside>
           <section className='paragraphe-content'>
-            <h2>Pour quelles raisons consulter ?</h2>
             <p>
-              Le <em>Massage des 5 Continents</em> est un massage biodynamique.
-              Il reveille les processus naturels d'auto-guérison. Il permet de
-              se décharger des toxines et des mémoires émotionnelles, laissant
-              place à des energies de plaisir et de vie. Le{' '}
-              <em>Massage des 5 Continents</em> apporte un lâcher prise physique
-              et mental profond et durable.
+              <em>Massage des 5 Continents</em> n'est :
             </p>
-            <p>
-              <b>
-                <em>Massage des 5 Continents</em> n'est :
-                <ul>
-                  <li>Ni une pratique de la masso-kinésithérapie</li>
-                  <li>Ni une pratique médicale</li>
-                  <li>Ni massages naturistes</li>
-                  <li>Ni tantriques</li>
-                  <li>Ni à caractère sexuel</li>
-                </ul>
-              </b>
-            </p>
+            <b>
+              <ul>
+                <li>Ni une pratique de la masso-kinésithérapie</li>
+                <li>Ni une pratique médicale</li>
+                <li>Ni massages naturistes</li>
+                <li>Ni tantriques</li>
+                <li>Ni à caractère sexuel</li>
+              </ul>
+            </b>
           </section>
         </section>
         <ParagraphSeparator />
@@ -214,8 +211,8 @@ const Massage5Continents = () => {
               <li>
                 Nous commençons par entretien pour échanger, ensemble, sur les
                 raisons qui vous motivent à recevoir le{' '}
-                <em>Massage des 5 Continents</em> et sur les éventuelles contre
-                indications par rapport aux huiles essentielles.
+                <em>Massage des 5 Continents</em> et sur les éventuelles
+                contre-indications par rapport aux huiles essentielles.
               </li>
             </ul>
           </section>
@@ -247,7 +244,16 @@ const Massage5Continents = () => {
             <div>
               <img
                 src={ImgReikiPied}
-                className='img-m5c-tete'
+                className='img-m5c-pied img-verticale'
+                alt='Soin Reiki - Apposition des mains sur les pieds'
+                title='Soin Reiki - Apposition des mains sur les pieds'
+              />
+            </div>
+
+            <div>
+              <img
+                src={ImgReikiPied}
+                className='img-m5c-pied img-horizontale'
                 alt='Soin Reiki - Apposition des mains sur les pieds'
                 title='Soin Reiki - Apposition des mains sur les pieds'
               />
@@ -268,8 +274,8 @@ const Massage5Continents = () => {
               biens faits, l'utilisation de plusieurs huiles esssentielles n’est
               pas anodine. Elles ne sont pas recommandées à tout le monde. Afin
               de sastisfaire une plus grand nombre, il est possible de
-              n'utiliser que des huiles végetales. Je m'adapte à vos contres
-              indications.
+              n'utiliser que des huiles végetales. Je m'adapte à vos
+              contre-indications.
             </p>
           </section>
         </section>
