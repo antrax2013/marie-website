@@ -48,6 +48,8 @@
   }    
 }
 
+
+
 @media (max-width: 1024px) {
   .Reiki {
       article section {
@@ -64,17 +66,9 @@
 
 
 @media (min-width: 1025px) {
-
   .Reiki aside {
     flex-direction: inherit;
   }
-  // .Reiki {
-  //   .paragraphe-2 .paragraphe-content, 
-  //   .paragraphe-3 .paragraphe-content, 
-  //   .paragraphe-4 .paragraphe-content {
-  //     flex: 1 1;
-  //   }
-  // }
 }
 
 
