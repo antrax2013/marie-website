@@ -237,6 +237,9 @@ footer {
 }
 
 @media (max-width: 769px) and (min-width: 427px) {
+  li {
+    text-align: inherit;
+  }
   main {
     flex: 2 1;
   }

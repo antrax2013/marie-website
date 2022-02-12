@@ -5,24 +5,17 @@
     justify-content: flex-start;
     flex-direction: row;    
   }
-
-  article > section:not(.paragraphe-1-2) {
-    align-items: center;
-  }
   
-  article section:not(.paragraphe-2-2) aside {
-    height: 100%;
-    width: 100%;
-  }
-
-  article section.paragraphe-2-2 aside > div {
-    display: block;
-  }
-
-  article section:not(.paragraphe-2-2) aside > div {
+  article section aside > div {
     display: flex;
     justify-content: center;
   }  
+
+  aside {
+    justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+  }
 
   .paragraphe-1-1 .paragraphe-content,
   .paragraphe-1-2 .paragraphe-content.he,
@@ -31,6 +24,11 @@
   .paragraphe-4 .paragraphe-content {
     flex: 2 1;
   }
+
+  .paragraphe-1 .paragraphe-content,
+  .paragraphe-1-2 .paragraphe-content{
+    flex: 1 1;
+  } 
 
   .paragraphe-1-2 .paragraphe-content.he li {
     display: inline-block;
@@ -41,114 +39,86 @@
     content:"";
     display: list-item;
     position: absolute;
-  }
-
-
-  .paragraphe-1 .paragraphe-content,
-  .paragraphe-1-2 .paragraphe-content{
-    flex: 1 1;
-  }
-
-  .paragraphe-2-2 aside {
-    justify-content: space-around;
-      display: flex;
-      flex-direction: column;
-  }
+  }  
 
   .img-m5c{
     width: 100%;
     height: 100%;
   }
 
-  .img-horizontale {
-    display: none;
-  }
-
-  .img-verticale {
-    border-radius: 25px;
-    transform: rotate(90deg);
-  }
-
-  .img-m5c-genou {
+  img:not(.img-m5c)  {
+    display: flex;
     width: 80%;
     height: 80%;
     border-radius: 25px;
   }
-
-
-  .paragraphe-3, .paragraphe-4 {
-    align-items: center;
-  }
-
-  .paragraphe-3 .paragraphe-content  {
-    margin-left: 1rem;
-  }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 769px) {
+    .M5C {
+      article section {
+        flex-direction: column;
+      }
+      article section aside > div {
+        display: flex !important;
+        justify-content: center;
+      }
+      
+      .paragraphe-3 {
+        flex-direction: column-reverse !important;
+      }
+  
+      .paragraphe-3 .paragraphe-content {
+        margin-left: 0;
+      }
+  
+      .ul-he {
+        display: flex !important;
+        flex-direction: column;
+      }
+  
+      .img-m5c {
+        width: 50% !important;
+      }
+      
+    }
+  }
+
+@media (min-width: 770px) {
   .M5C {
-    article section {
-      flex-direction: column;
+    article section:not(.paragraphe-2-2) aside {
+      height: 100%;
+      width: 100%;
     }
-    article section aside > div {
-      display: flex !important;
+  
+    article section.paragraphe-2-2 aside > div {
+      display: block;
+    }
+
+    article section.paragraphe-4 aside > div {
+      display: block;
+    }
+
+    .paragraphe-2-2 .paragraphe-content, 
+    .paragraphe-3-2 .paragraphe-content, 
+    .paragraphe-4 .paragraphe-content {
+      flex: 1 1;
+    }
+
+    .paragraphe-3-2, .paragraphe-4,.paragraphe-3-2 aside {
+      align-items: center;
+    }
+
+    .paragraphe-2-2, .paragraphe-4 {
+      flex-direction: column !important;
+    }
+
+    .paragraphe-4 aside {
       justify-content: center;
-    }
-    
-    .paragraphe-3 {
-      flex-direction: column-reverse !important;
-    }
-
-    .paragraphe-3 .paragraphe-content {
-      margin-left: 0;
-    }
-
-    .ul-he {
-      display: flex !important;
-      flex-direction: column;
-    }
-
-    .img-verticale {
-      display: none;
-    }
-
-    .img-horizontale  {
+      align-items: center;
       display: flex;
-      width: 80%;
-      height: 80%;
-      border-radius: 25px;
-    }  
-
-    .img-m5c {
-      width: 50% !important;
-    }
-    
-  }
-}
-
-@media (max-width: 769px) and (min-width: 427px) {
-  .paragraphe-1 .paragraphe-content {
-    flex: 3 1;
-  }
-
-  .paragraphe-2 .paragraphe-content, 
-  .paragraphe-3 .paragraphe-content, 
-  .paragraphe-4 .paragraphe-content {
-    flex: 1 1;
-  }
-  .paragraphe-3 {
-    flex-direction: column-reverse !important;
-  }
-  .paragraphe-2, .paragraphe-4{
-    flex-direction: column !important;
-  }
-}
-
-@media (max-width: 1025px) and (min-width: 470px) {
-  .paragraphe-2 .paragraphe-content, 
-  .paragraphe-3 .paragraphe-content, 
-  .paragraphe-4 .paragraphe-content {
-    flex: 1 1;
+      flex-direction: column;
+    }    
   }
 }
 

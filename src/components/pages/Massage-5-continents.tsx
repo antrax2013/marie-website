@@ -102,14 +102,6 @@ const Massage5Continents = () => {
             <div>
               <img
                 src={ImgReikiTete}
-                className='img-m5c-tete img-verticale'
-                alt='Soin Reiki - Apposition des mains sur le visage'
-                title='Soin Reiki - Apposition des mains sur le visage'
-              />
-            </div>
-            <div>
-              <img
-                src={ImgReikiTete}
                 className='img-m5c-tete img-horizontale'
                 alt='Soin Reiki - Apposition des mains sur le visage'
                 title='Soin Reiki - Apposition des mains sur le visage'
@@ -241,15 +233,6 @@ const Massage5Continents = () => {
             </ul>
           </section>
           <aside>
-            <div>
-              <img
-                src={ImgReikiPied}
-                className='img-m5c-pied img-verticale'
-                alt='Soin Reiki - Apposition des mains sur les pieds'
-                title='Soin Reiki - Apposition des mains sur les pieds'
-              />
-            </div>
-
             <div>
               <img
                 src={ImgReikiPied}
