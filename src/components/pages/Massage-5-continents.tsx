@@ -1,10 +1,8 @@
 import ParagraphSeparator from '../tools/Paragraph-Separator';
 import ImgM5C from '../../assets/M5C/massage-5-continents.png';
-import ImgHE from '../../assets/M5C/huile-essentielle.jpg';
-
-import ImgReikiTete from '../../assets/Reiki/Reiki-tete.jpg';
-import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.jpg';
-import ImgReikiPied from '../../assets/Reiki/Reiki-pied.jpg';
+import ImgM5CColonne from '../../assets/M5C/m5c-colonne.png';
+import ImgM5CDos from '../../assets/M5C/m5c-bas-dos.png';
+import ImgM5CBras from '../../assets/M5C/m5c-bras.png';
 import '../../scss/elements/pages/M5C.scss';
 
 const Massage5Continents = () => {
@@ -101,28 +99,29 @@ const Massage5Continents = () => {
           <aside>
             <div>
               <img
-                src={ImgReikiTete}
-                className='img-m5c-tete img-horizontale'
-                alt='Soin Reiki - Apposition des mains sur le visage'
-                title='Soin Reiki - Apposition des mains sur le visage'
+                src={ImgM5CColonne}
+                className='img-m5c-colonne'
+                alt='Massage des 5 Continents - Massage du haut de la colonne vertebrale'
+                title='Massage des 5 Continents - Massage du haut de la colonne vertebrale'
               />
             </div>
           </aside>
           <section className='paragraphe-content'>
-            <p>
-              Le <em>Massage Des 5 Continents</em> est contre-indiqué pour :{' '}
-            </p>
-            <ul>
-              <li> Les femmes enceintes</li>
-              <li> Les personnes atteintes de cancer </li>
-              <li>
-                {' '}
-                Les personnes souffrant de troubles psychotiques,
-                schizophréniques ou de dissociation de la personnalité
-              </li>
-              <li> Les enfants </li>
-            </ul>
-
+            <b>
+              <p>
+                Le <em>Massage Des 5 Continents</em> est contre-indiqué pour :{' '}
+              </p>
+              <ul>
+                <li> Les femmes enceintes</li>
+                <li> Les personnes atteintes de cancer </li>
+                <li>
+                  {' '}
+                  Les personnes souffrant de troubles psychotiques,
+                  schizophréniques ou de dissociation de la personnalité
+                </li>
+                <li> Les enfants </li>
+              </ul>
+            </b>
             <p>
               En raison de la présence des huiles essentielles, il est
               recommandé de n'utiliser que des huiles végétales pour :{' '}
@@ -169,10 +168,10 @@ const Massage5Continents = () => {
           <aside>
             <div>
               <img
-                src={ImgReikiGenou}
-                className='img-m5c-genou'
-                alt='Soin Reiki - Apposition des mains sur le genou'
-                title='Soin Reiki - Apposition des mains sur le genou'
+                src={ImgM5CDos}
+                className='img-m5c-dos'
+                alt='Massage des 5 Continents - Massage du bas du dos'
+                title='Massage des 5 Continents - Massage du bas du dos'
               />
             </div>
           </aside>
@@ -235,10 +234,10 @@ const Massage5Continents = () => {
           <aside>
             <div>
               <img
-                src={ImgReikiPied}
-                className='img-m5c-pied img-horizontale'
-                alt='Soin Reiki - Apposition des mains sur les pieds'
-                title='Soin Reiki - Apposition des mains sur les pieds'
+                src={ImgM5CBras}
+                className='img-m5c-bras'
+                alt='Massage des 5 Continents - Massage du bras'
+                title='Massage des 5 Continents - Massage du bras'
               />
             </div>
           </aside>

@@ -1,8 +1,8 @@
 import ParagraphSeparator from '../tools/Paragraph-Separator';
 import ImgReiki from '../../assets/Reiki/Reiki.svg';
-import ImgReikiTete from '../../assets/Reiki/Reiki-tete.jpg';
-import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.jpg';
-import ImgReikiPied from '../../assets/Reiki/Reiki-pied.jpg';
+import ImgReikiVentre from '../../assets/Reiki/Reiki-ventre.png';
+import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.png';
+import ImgReikiPied from '../../assets/Reiki/Reiki-pied.png';
 import '../../scss/elements/pages/Reiki.scss';
 
 const Reiki = () => {
@@ -76,10 +76,10 @@ const Reiki = () => {
           <aside>
             <div>
               <img
-                src={ImgReikiTete}
-                className='img-reiki-tete'
-                alt='Soin Reiki - Apposition des mains sur le visage'
-                title='Soin Reiki - Apposition des mains sur le visage'
+                src={ImgReikiVentre}
+                className='img-reiki-ventre'
+                alt='Soin Reiki - Apposition des mains sur le ventre'
+                title='Soin Reiki - Apposition des mains sur le ventre'
               />
             </div>
           </aside>
