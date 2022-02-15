@@ -2,42 +2,54 @@ const QuiSuisJe = () => {
   return (
     <article>
       <h1>Qui suis-je ?</h1>
-      <h2>Lorem ipsum dolor sit amet?</h2>
       <p>
-        Lorem ipsum dolor sit amet. Aut voluptatem praesentium et fugit dolorem
-        et ullam est commodi adipisci? Aut consequatur maxime et repudiandae
-        laborum sed sint deleniti ea consequatur optio 33 quibusdam facilis. Ut
-        labore magnam non soluta recusandae sit fugiat similique ab quae alias
-        ea expedita modi ut doloremque sint? At dolorem voluptatem qui
-        architecto voluptates eos nihil facere?
+        Infirmière par vocation depuis 17 ans, mon métier de cœur, j’ai pris la
+        décision de prendre soin des autres différement. Prendre soin des
+        autres, pour moi, c'est prendre le temps, être à l’écoute, être
+        pleinement disponible pour pouvoir accompagner autrement.
       </p>
-      <h2>Lorem ipsum dolor sit amet?</h2>
       <p>
-        Et harum error et assumenda incidunt qui laborum recusandae qui eligendi
-        vero. Aut accusantium soluta id iste quos ut reiciendis reprehenderit
-        iure minus. Sit consequatur provident et dolor corporis et excepturi
-        minus et dolorem nemo ut explicabo perspiciatis.
+        N'ayant trouvé moi même de réponses à des maux personnels dans la
+        médecine traditionnelle, je me suis tournée vers des prises en charge
+        alternatives: l’hypnose, la réflexologie, la naturopathie, les huiles
+        essentiels, l’homéopathie, le{' '}
+        <a href='/reiki'>
+          <em>Reiki</em>
+        </a>{' '}
+        … J'y ai trouvé un réel soulagement. Cela m’a fait prendre conscience
+        que l’on pouvait prendre soin de soi, et des autres, de multiples
+        façons.
       </p>
-      <h2>Lorem ipsum dolor sit amet?</h2>
       <p>
-        Aut maxime neque id ullam autem 33 possimus quibusdam! Eius eius id
-        voluptatem aperiam rem aperiam necessitatibus cum placeat voluptas est
-        sapiente voluptatem ea praesentium. Ut harum provident non repellat
-        nostrum ea quos galisum ut sint Quis quasi consectetur.
+        Je me suis, dans un premier temps, formée à l'utilisation des huiles
+        essentielles. Puis j'ai rencontré de belles personnes qui m'ont permises
+        de découvrir les soins energétiques. Elles m'ont donné l'envie, il y a
+        deux ans de me former au{' '}
+        <a href='/reiki'>
+          <em>Reiki</em>
+        </a>{' '}
       </p>
-      <h2>Lorem ipsum dolor sit amet?</h2>
       <p>
-        Aut maxime neque id ullam autem 33 possimus quibusdam! Eius eius id
-        voluptatem aperiam rem aperiam necessitatibus cum placeat voluptas est
-        sapiente voluptatem ea praesentium. Ut harum provident non repellat
-        nostrum ea quos galisum ut sint Quis quasi consectetur.
+        Les huiles essentielles et le{' '}
+        <a href='/reiki'>
+          <em>Reiki</em>
+        </a>
+        , sont des aliés précieux de mon quotidien. Je ne saurais plus m'en
+        passer. Ils m'aident à faire face aux aléas de la vie.
       </p>
-      <h2>Lorem ipsum dolor sit amet?</h2>
       <p>
-        Aut maxime neque id ullam autem 33 possimus quibusdam! Eius eius id
-        voluptatem aperiam rem aperiam necessitatibus cum placeat voluptas est
-        sapiente voluptatem ea praesentium. Ut harum provident non repellat
-        nostrum ea quos galisum ut sint Quis quasi consectetur.
+        Le{' '}
+        <a href='/massage-des-5-continents'>
+          <em>Massage des 5 Continents</em>
+        </a>{' '}
+        est le complément idéal des pratiques qui me passionnent. M'y former
+        m'est apparu comme une évidence. Il Combine à la fois l'utilisation des
+        huiles essentielles, du Reiki et différentes techniques de massages.
+      </p>
+      <p>
+        Pouvoir apporter soulagement physique, psychique et émotionnel aux
+        personnes qui m’entourent est un véritable cadeau. Et je souhaite
+        partager celà avec vous.
       </p>
     </article>
   );

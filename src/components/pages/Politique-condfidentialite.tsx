@@ -59,7 +59,7 @@ const PolitiqueConfidentialite = () => {
         sélectionnant le réglage approprié dans le navigateur. Le visiteur du
         site peut aussi empêcher Google de recueillir des informations (y
         compris l’adresse IP) via les cookies et de traiter ces informations en
-        téléchargeant et installant ce plug-in dans son navigateur :
+        téléchargeant et installant ce plug-in dans son navigateur :{' '}
         <a
           href='http://tools.google.com/dlpage/gaoptout'
           target='_blank'
@@ -77,15 +77,15 @@ const PolitiqueConfidentialite = () => {
       <p>
         Pour plus d’informations sur le traitement et l’utilisation des données
         par Google, les paramétrages et les possibilités de désactivation,
-        veuillez consulter la politique de confidentialité de Google
+        veuillez consulter la politique de confidentialité de Google{' '}
         <a
           href='https://policies.google.com/privacy'
           target='_blank'
           rel='noopener'
         >
           (https://policies.google.com/privacy)
-        </a>
-        ainsi que les paramètres de Google Ads
+        </a>{' '}
+        ainsi que les paramètres de Google Ads{' '}
         <a
           href='https://adssettings.google.com/authenticated'
           target='_blank'
