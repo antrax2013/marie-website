@@ -1,0 +1,77 @@
+.Consultations {
+  article > section {
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  article section aside > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  aside {
+    justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .asterix {
+    color: var(--primary-color) !important;
+  }
+
+  .paragraphe-1 .paragraphe-content, 
+  .paragraphe-2 .paragraphe-content, 
+  .paragraphe-3 .paragraphe-content {
+    flex: 2 1;
+    align-items: center;
+  }
+
+  .paragraphe-1  {
+    margin-top: 1rem;
+  }
+
+  img  {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+  }    
+}
+
+
+
+@media (max-width: 768px) and (min-width: 427px) {
+  .Consultations {
+      .img-qui-suis-je-moi {
+        width: 50%;
+        height: 50%;
+    }
+    .paragraphe-1 .paragraphe-content {
+      flex: 1 1;
+    }
+    article section aside {
+      flex: 2 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Consultations {
+      article section {
+      flex-direction: column;
+    }
+  }
+}
+
+
+@media (min-width: 769px) {
+  .Consultations aside {
+    flex-direction: inherit;
+  }
+}
+
+
+

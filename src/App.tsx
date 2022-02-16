@@ -17,6 +17,7 @@ import PlanDuSite from './components/pages/Site-Map';
 import PolitiqueConfidentialite from './components/pages/Politique-condfidentialite';
 import FooterMenu from './components/tools/Footer-Menu';
 import ScrollButton from './components/tools/Scrollbutton';
+import Consultations from './components/pages/Consultation';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
                 path='massage-des-5-continents'
                 element={<Massage5Continents />}
               />
+              <Route path='consultations' element={<Consultations />} />
               <Route path='contact' element={<Contact />} />
               <Route
                 path='politique-de-confidentialite'

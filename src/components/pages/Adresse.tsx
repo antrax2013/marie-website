@@ -1,15 +1,16 @@
 import { Button } from 'primereact/button';
-import { Helmet } from 'react-helmet';
 
 const Adresse = () => {
   return (
-    <>
-      <h1 className='aside'>Adresse</h1>
+    <div className='adresse'>
+      <h1 className='aside'>Consultations</h1>
+      <p>Consultations au cabinet le jeudi :</p>
       <ul>
-        <ol>17 rue des Paquerettes</ol>
-        <ol>78310 Maurepas</ol>
+        <ol>1 rue le Corbusier</ol>
+        <ol>78280 Guyancourt</ol>
         <ol>Tél: {process.env.REACT_APP_META_NUMTEL}</ol>
       </ul>
+      <p>A domicile les autres jours de la semaine</p>
       <h2>Horaires d'ouverture</h2>
       <p>Du lundi au Samedi 9h-19h </p>
       <p>
@@ -21,7 +22,7 @@ const Adresse = () => {
           <span className='facebook'>Facebook</span>
         </Button>
       </p>
-    </>
+    </div>
   );
 };
 

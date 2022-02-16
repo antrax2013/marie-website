@@ -11,11 +11,34 @@ interface item {
 
 const Menu = ({ ...props }) => {
   const start = <img alt='logo' src={logo} className='logo' />;
-  const end = (
-    <a href={process.env.REACT_APP_URLRDV} rel='external' target={'_blank'}>
-      Prendre rendez-vous
-    </a>
-  );
+  const end = () => {
+    switch (process.env.REACT_APP_ACTIVERDV || '0') {
+      case '1':
+        return (
+          <a
+            href={process.env.REACT_APP_URLRDV}
+            rel='external'
+            target={'_blank'}
+          >
+            Prendre rendez-vous
+          </a>
+        );
+        break;
+      case '2':
+        return (
+          <a
+            href={'tel:' + process.env.REACT_APP_META_NUMTEL}
+            rel='external'
+            target={'_blank'}
+          >
+            Prendre rendez-vous : {process.env.REACT_APP_META_NUMTEL}
+          </a>
+        );
+        break;
+      default:
+        return <></>;
+    }
+  };
 
   const className = 'm-1';
   const selectedClassName = 'm-1 selected';
@@ -34,6 +57,7 @@ const Menu = ({ ...props }) => {
       'qui-suis-je',
       'reiki',
       'massage-des-5-continents',
+      'consultations',
       'contact',
     ];
 
@@ -71,6 +95,13 @@ const Menu = ({ ...props }) => {
       },
     },
     {
+      label: 'Consultations',
+      className: getClassName('consultations'),
+      command: () => {
+        onClick('consultations');
+      },
+    },
+    {
       label: 'Contact',
       className: getClassName('contact'),
       command: () => {
@@ -79,14 +110,7 @@ const Menu = ({ ...props }) => {
     },
   ];
 
-  return (
-    <Menubar
-      model={items}
-      {...props}
-      start={start}
-      end={process.env.REACT_APP_ACTIVERDV == '1' && end}
-    />
-  );
+  return <Menubar model={items} {...props} start={start} end={end} />;
 };
 
 export default Menu;

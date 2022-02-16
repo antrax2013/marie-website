@@ -10,12 +10,16 @@ const Header = () => {
       </nav>
       <article className='title'>
         <div className='logo'>
-          <img alt='logo' src={logo} />
+          <img
+            alt='une fleur de vie, le logo du site'
+            title='une fleur de vie, le logo du site'
+            src={logo}
+          />
         </div>
         <h1>
-          Marie COPHIGNON
+          {process.env.REACT_APP_META_NAME}
           <br />
-          Thérapeute energétique
+          {process.env.REACT_APP_META_TITLE}
         </h1>
       </article>
     </>
