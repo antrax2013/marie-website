@@ -64,7 +64,7 @@ const Menu = ({ ...props }) => {
       },
     },
     {
-      label: 'Massage des 5 Continents',
+      label: 'Massage Des 5 Continents',
       className: getClassName('massage-des-5-continents'),
       command: () => {
         onClick('massage-des-5-continents');

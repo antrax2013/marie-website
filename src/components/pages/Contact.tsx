@@ -9,6 +9,7 @@ import '../../scss/elements/pages/Contact.scss';
 import { Email, IMail } from '../../modules/email';
 import { Dropdown } from 'primereact/dropdown';
 import { Toast } from 'primereact/toast';
+import MetaTag from '../tools/MetaTag';
 
 interface ierror {
   nom?: string;
@@ -112,95 +113,112 @@ const Contact = () => {
     );
   };
 
+  const head = () => {
+    return (
+      <MetaTag
+        title='Contact'
+        description="Mes différents soins énergétiques vous intéressent, vous avez des questions ou vous voulez me partager vos retours d'expérience. Pour me contacter utilisez le formulaire ci-dessous."
+        resume='Restons en contact.'
+      />
+    );
+  };
+
   return (
-    <article className='contact'>
-      <h1>Contact</h1>
-      <Toast ref={toast} />
-      <form onSubmit={formik.handleSubmit}>
-        <div className='field'>
-          <label htmlFor='nom'>
-            Nom <span className='asterix'>*</span>
-          </label>
-          <InputText
-            id='nom'
-            name='nom'
-            value={formik.values.nom}
-            onChange={formik.handleChange}
-            className={classNames({ 'p-invalid': isFormFieldValid('nom') })}
-          />
-          {getFormErrorMessage('nom')}
-        </div>
-        <div className='field'>
-          <label htmlFor='prenom'>
-            Prénom <span className='asterix'>*</span>
-          </label>
-          <InputText
-            id='prenom'
-            name='prenom'
-            value={formik.values.prenom}
-            onChange={formik.handleChange}
-            className={classNames({
-              'p-invalid': isFormFieldValid('prenom'),
-            })}
-          />
-          {getFormErrorMessage('prenom')}
-        </div>
-        <div className='field'>
-          <label htmlFor='telephone'>Téléphone</label>
-          <InputMask
-            id='telephone'
-            name='telephone'
-            value={formik.values.telephone}
-            onChange={formik.handleChange}
-            mask='99.99.99.99.99'
-          ></InputMask>
-          {getFormErrorMessage('telephone')}
-        </div>
-        <div className='field'>
-          <label htmlFor='email'>
-            Email <span className='asterix'>*</span>
-          </label>
-          <InputText
-            id='email'
-            name='email'
-            value={formik.values.email}
-            onChange={formik.handleChange}
-            className={classNames({ 'p-invalid': isFormFieldValid('email') })}
-          />
-          {getFormErrorMessage('email')}
-        </div>
-        <div className='field'>
-          <label htmlFor='sujet'>
-            Sujet <span className='asterix'>*</span>
-          </label>
-          <Dropdown
-            id='sujet'
-            name='sujet'
-            value={formik.values.sujet}
-            onChange={formik.handleChange}
-            options={sujets}
-          />
-          <br />
-          <label htmlFor='message'>
-            Message <span className='asterix'>*</span>
-          </label>
-          <InputTextarea
-            id='message'
-            rows={5}
-            cols={30}
-            value={formik.values.message}
-            onChange={formik.handleChange}
-            className={classNames({
-              'p-invalid': isFormFieldValid('message'),
-            })}
-          />
-          {getFormErrorMessage('message')}
-        </div>
-        <div className='form-footer'>
-          <Button type='submit' label='Envoyer' disabled={!enableSendButton} />
-        </div>
-      </form>
-    </article>
+    <>
+      {head()}
+      <article className='contact'>
+        <h1>Contact</h1>
+        <Toast ref={toast} />
+        <form onSubmit={formik.handleSubmit}>
+          <div className='field'>
+            <label htmlFor='nom'>
+              Nom <span className='asterix'>*</span>
+            </label>
+            <InputText
+              id='nom'
+              name='nom'
+              value={formik.values.nom}
+              onChange={formik.handleChange}
+              className={classNames({ 'p-invalid': isFormFieldValid('nom') })}
+            />
+            {getFormErrorMessage('nom')}
+          </div>
+          <div className='field'>
+            <label htmlFor='prenom'>
+              Prénom <span className='asterix'>*</span>
+            </label>
+            <InputText
+              id='prenom'
+              name='prenom'
+              value={formik.values.prenom}
+              onChange={formik.handleChange}
+              className={classNames({
+                'p-invalid': isFormFieldValid('prenom'),
+              })}
+            />
+            {getFormErrorMessage('prenom')}
+          </div>
+          <div className='field'>
+            <label htmlFor='telephone'>Téléphone</label>
+            <InputMask
+              id='telephone'
+              name='telephone'
+              value={formik.values.telephone}
+              onChange={formik.handleChange}
+              mask='99.99.99.99.99'
+            ></InputMask>
+            {getFormErrorMessage('telephone')}
+          </div>
+          <div className='field'>
+            <label htmlFor='email'>
+              Email <span className='asterix'>*</span>
+            </label>
+            <InputText
+              id='email'
+              name='email'
+              value={formik.values.email}
+              onChange={formik.handleChange}
+              className={classNames({ 'p-invalid': isFormFieldValid('email') })}
+            />
+            {getFormErrorMessage('email')}
+          </div>
+          <div className='field'>
+            <label htmlFor='sujet'>
+              Sujet <span className='asterix'>*</span>
+            </label>
+            <Dropdown
+              id='sujet'
+              name='sujet'
+              value={formik.values.sujet}
+              onChange={formik.handleChange}
+              options={sujets}
+            />
+            <br />
+            <label htmlFor='message'>
+              Message <span className='asterix'>*</span>
+            </label>
+            <InputTextarea
+              id='message'
+              rows={5}
+              cols={30}
+              value={formik.values.message}
+              onChange={formik.handleChange}
+              className={classNames({
+                'p-invalid': isFormFieldValid('message'),
+              })}
+            />
+            {getFormErrorMessage('message')}
+          </div>
+          <div className='form-footer'>
+            <Button
+              type='submit'
+              label='Envoyer'
+              disabled={!enableSendButton}
+            />
+          </div>
+        </form>
+      </article>
+    </>
   );
 };
 
