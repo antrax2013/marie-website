@@ -29,7 +29,7 @@ const Massage5Continents = () => {
             <section className='paragraphe-content'>
               <p>
                 Le <em>Massage Des 5 Continents</em> est une technique, qui
-                combine différentes méthodes de massages, un soin energétique et
+                combine différentes méthodes de massages, un soin énergétique et
                 des huiles végétales et des huiles essentielles. Cette
                 association fait du <em>Massage Des 5 Continents</em> un massage
                 unique, puissant permettant un lâcher prise physique et mental.
@@ -59,7 +59,7 @@ const Massage5Continents = () => {
                 </ul>
 
                 <p>
-                  Pour le soin energétique, j'ai choisi de m'appuier sur les
+                  Pour le soin énergétique, j'ai choisi de m'appuyer sur les
                   techniques de soin du <em>Reiki</em>.
                 </p>
               </section>
@@ -70,10 +70,10 @@ const Massage5Continents = () => {
               <p>Les huiles végétales : </p>
               <ul>
                 <li> Huile d'avocat</li>
-                <li> huile d'amande douce </li>
+                <li> Huile d'amande douce </li>
                 <li> huile de macadamia </li>
                 <li> huile d'argan </li>
-                <li>Huile de noyau d'abricot </li>
+                <li> Huile de noyau d'abricot </li>
               </ul>
             </section>
             <section className='paragraphe-content he'>
@@ -115,8 +115,8 @@ const Massage5Continents = () => {
                 <img
                   src={ImgM5CColonne}
                   className='img-m5c-colonne'
-                  alt='Massage Des 5 Continents - Massage du haut de la colonne vertebrale'
-                  title='Massage Des 5 Continents - Massage du haut de la colonne vertebrale'
+                  alt='Massage Des 5 Continents - Massage du haut de la colonne vertébrale'
+                  title='Massage Des 5 Continents - Massage du haut de la colonne vertébrale'
                 />
               </div>
             </aside>
@@ -173,7 +173,7 @@ const Massage5Continents = () => {
               <h2>Pour quelles raisons consulter ?</h2>
               <p>
                 Le <em>Massage des 5 Continents</em> est un massage
-                biodynamique. Il reveille les processus naturels
+                biodynamique. Il réveille les processus naturels
                 d'auto-guérison. Il permet de se décharger des toxines et des
                 mémoires émotionnelles, laissant place à des energies de plaisir
                 et de vie. Le <em>Massage des 5 Continents</em> apporte un
@@ -208,9 +208,7 @@ const Massage5Continents = () => {
             </section>
           </section>
           <ParagraphSeparator />
-          <h2>
-            Comment se déroule une séance de le Massage Des 5 Continents ?
-          </h2>
+          <h2>Comment se déroule une séance de Massage Des 5 Continents ?</h2>
           <section className='paragraphe-4'>
             <section className='paragraphe-content'>
               <p>
@@ -231,7 +229,7 @@ const Massage5Continents = () => {
             <section className='paragraphe-content'>
               <ul>
                 <li>
-                  Lors du soin, vous êtes dévétu, allongé confortablement sur ma
+                  Lors du soin, vous êtes dévêtu, allongé confortablement sur ma
                   table de soin. Je vous recouvre d'une serviette pour ne pas
                   prendre froid. Je diffuse une musique douce et agréable qui
                   contribue à votre détente. Je commence le massage par
@@ -242,7 +240,7 @@ const Massage5Continents = () => {
                   but de lâcher prise, revitaliser et stimuler votre système
                   immunitaire. Cette première partie du{' '}
                   <em>Massage Des 5 Continents</em>, s'achève sur un soin
-                  energétique. Le Reiki permet de faire circuler l'énergie
+                  énergétique. Le Reiki permet de faire circuler l'énergie
                   vitale directement à l'intérieur de votre corps, là où vous en
                   avez besoin. Pour la seconde partie du massage, je vais masser
                   voter ventre, vos bras et vos jambes. L'enchainement du
@@ -271,13 +269,13 @@ const Massage5Continents = () => {
                 </li>
               </ul>
               <p>
-                Mon savoir faire, mes qualités d'écoute et d'empathie sont à
+                Mon savoir-faire, mes qualités d'écoute et d'empathie sont à
                 votre service pour vous accompagner durant cette séance. Malgré
                 leurs biens faits, l'utilisation de plusieurs huiles
-                esssentielles n’est pas anodine. Elles ne sont pas recommandées
-                à tout le monde. Afin de sastisfaire une plus grand nombre, il
-                est possible de n'utiliser que des huiles végetales. Je m'adapte
-                à vos contre-indications.
+                essentielles n’est pas anodine. Elles ne sont pas recommandées à
+                tout le monde. Afin de satisfaire un plus grand nombre, il est
+                possible de n'utiliser que des huiles végétales. Je m'adapte à
+                vos contre-indications.
               </p>
             </section>
           </section>

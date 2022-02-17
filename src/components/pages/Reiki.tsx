@@ -41,7 +41,7 @@ const Reiki = () => {
             </aside>
             <section className='paragraphe-content'>
               <p>
-                Le <em>Reiki</em> signifie en Japonnais Energie de vie
+                Le <em>Reiki</em> signifie en Japonais Energie de vie
                 universelle.
               </p>
               <ul>
@@ -49,11 +49,11 @@ const Reiki = () => {
                   <i>Rei</i> : c'est l'universalité, le saint, le don, l'esprit
                 </ol>
                 <ol>
-                  <i>Ki</i> : c'est l'energie. Elle existe dans toutes les
+                  <i>Ki</i> : c'est l'énergie. Elle existe dans toutes les
                   traditions. Elle est appelée, selon la tradition, Qi,
                   Kundalini, lumière ou encore Esprit Saint chez les
                   Chrétiens... Elle est également appelée la source ou la
-                  consience universelle.
+                  conscience universelle.
                 </ol>
               </ul>
               <p>
@@ -87,7 +87,7 @@ const Reiki = () => {
               </b>
               <p>
                 Sinon dans les autres cas, il n'y a pas de contre-indication et
-                ce quelque soit la distance.
+                ce quel que soit la distance.
               </p>
             </section>
             <aside>
@@ -117,27 +117,27 @@ const Reiki = () => {
               <h2>Pour quelles raisons consulter ?</h2>
               <p>
                 Le <em>Reiki</em> favorise le bien-être physique, émotionnel,
-                psychliogique et psychique. Il apporte détente, confort,
+                psychplogique et psychique. Il apporte détente, confort,
                 bien-être et équilibre. Il agit sur :
               </p>
               <ul>
-                <li>le stress, l'anxiété, burn-out</li>
-                <li>la fatigue, insomnie, manque de vitalité</li>
+                <li>Le stress, l'anxiété, burn-out</li>
+                <li>La fatigue, insomnie, manque de vitalité</li>
                 <li>
-                  les état émotionnel, perte de confiance, blocages, schémas
+                  Les états émotionnels, perte de confiance, blocages, schémas
                   répétitifs
                 </li>
                 <li>
-                  les douleurs chroniques, tensions musculaires et articulaires{' '}
+                  Les douleurs chroniques, tensions musculaires et articulaires{' '}
                 </li>
                 <li>
                   Accompagnement au changement que ce soit dans la vie personnel
-                  ou professionel
+                  ou professionnel
                 </li>
               </ul>
               <p>
-                Par son approche hliistique le soin <em>Reiki</em> contribue à
-                libèrer les blocages et les tensions, renforce le système
+                Par son approche holisitque le soin <em>Reiki</em> contribue à
+                libérer les blocages et les tensions, renforce le système
                 immunitaire, atténue la douleur et élimine les toxines. Il
                 apporte des bienfaits dans tous les domaines de la vie.
               </p>
@@ -158,10 +158,10 @@ const Reiki = () => {
                 </li>
                 <li>
                   Lors du soin, vous êtes habillé, allongé confortablement sur
-                  ma table de soin. Pendant que je procéde à une série
-                  d'appositions douces des mains sur les différentes partie de
+                  ma table de soin. Pendant que je procède à une série
+                  d'appositions douces des mains sur les différentes parties de
                   votre corps, je diffuse une musique agréable qui contribue à
-                  votre détente et votre bien être. Laissez-vous aller, lachez
+                  votre détente et votre bien être. Laissez-vous aller, lâchez
                   prise. Profitez de cet instant de douceur et de calme,
                   l'énergie du <em>Reiki</em> se diffuse là où vous en avez
                   besoin.
@@ -186,8 +186,8 @@ const Reiki = () => {
           <section className='paragraphe-5'>
             <section className='paragraphe-content'>
               <p>
-                Mon savoir faire, mes qualités d'écoute et d'empathie sont à
-                votre service pour vous accompagner vers le bien être et la
+                Mon savoir-faire, mes qualités d'écoute et d'empathie sont à
+                votre service pour vous accompagner vers le bien-être et la
                 guérison. J'adapte, mes soins selon vos besoins.
               </p>
             </section>

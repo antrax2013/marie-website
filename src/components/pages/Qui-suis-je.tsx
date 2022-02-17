@@ -8,7 +8,7 @@ const QuiSuisJe = () => {
     return (
       <MetaTag
         title={process.env.REACT_APP_META_MAIN_TILTE || 'Qui suis-je ?'}
-        description='Infirmière par vocation, mon métier de cœur, je veux prendre soin des autres différement: prendre le temps, être à l’écoute, être
+        description='Infirmière par vocation, mon métier de cœur, je veux prendre soin des autres différemment: prendre le temps, être à l’écoute, être
         pleinement disponible pour pouvoir accompagner autrement.'
         resume='Infirmière par vocation, je veux prendre soin des autres, de vous différement. Etre là pour vous.'
         forceTitle={true}
@@ -42,10 +42,10 @@ const QuiSuisJe = () => {
                 autrement.
               </p>
               <p>
-                N'ayant trouvé moi même de réponses à des maux personnels dans
-                la médecine traditionnelle, je me suis tournée vers des prises
-                en charge alternatives: l’hypnose, la réflexologie, la
-                naturopathie, les huiles essentiels, l’homéopathie, le{' '}
+                N'ayant trouvé de réponse à des maux personnels dans la médecine
+                traditionnelle, je me suis tournée vers des prises en charge
+                alternatives: l’hypnose, la réflexologie, la naturopathie, les
+                huiles essentiels, l’homéopathie, le{' '}
                 <a href='/reiki'>
                   <em>Reiki</em>
                 </a>{' '}
@@ -61,7 +61,7 @@ const QuiSuisJe = () => {
               <p>
                 Je me suis, dans un premier temps, formée à l'utilisation des
                 huiles essentielles. Puis j'ai rencontré de belles personnes qui
-                m'ont permises de découvrir les soins energétiques. Elles m'ont
+                m'ont permises de découvrir les soins énergétiques. Elles m'ont
                 donné l'envie, il y a deux ans de me former au{' '}
                 <a href='/reiki'>
                   <em>Reiki</em>
@@ -72,7 +72,7 @@ const QuiSuisJe = () => {
                 <a href='/reiki'>
                   <em>Reiki</em>
                 </a>
-                , sont des aliés précieux de mon quotidien. Je ne saurais plus
+                , sont des alliés précieux de mon quotidien. Je ne saurais plus
                 m'en passer. Ils m'aident à faire face aux aléas de la vie.
               </p>
               <p>
@@ -93,7 +93,7 @@ const QuiSuisJe = () => {
               <p>
                 Pouvoir apporter soulagement physique, psychique et émotionnel
                 aux personnes qui m’entourent est un véritable cadeau. Et je
-                souhaite partager celà avec vous.
+                souhaite partager cela avec vous.
               </p>
             </section>
           </section>
