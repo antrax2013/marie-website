@@ -25,11 +25,13 @@ p{
 a,
 a:hover,
 a:active {
-  color: var(--primary-color) !important;  
+  color: var(--primary-color) !important; 
+  display: contents; 
 }
 
 a:not(:hover) {
   text-decoration: none;
+  display: contents;
 }
 
 ul {

@@ -12,7 +12,7 @@ const Massage5Continents = () => {
       <MetaTag
         title='Massage Des 5 continents'
         description='Le Massage Des 5 Continents est un massage combinant différentes méthodes de massages, un soin énergétique Reiki et 
-      des huiles essentielles pour un lâcher prise physique et mental.'
+      des huiles essentielles. Un lâcher prise physique et mental durable.'
         resume="Le massage Des 5 continents: l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien être."
       />
     );

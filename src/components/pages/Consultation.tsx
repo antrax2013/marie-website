@@ -8,7 +8,7 @@ const Consultations = () => {
     return (
       <MetaTag
         title={'Consultations'}
-        description="Pour mes consultations, je accueille, tous les jeudis au cabinet de Carole Jacob et d'Anne Nicolas à Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile."
+        description='Pour mes consultations, je vous accueille, tous les jeudis au cabinet de Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile.'
         resume='Organisation de mes consultations.'
       />
     );
@@ -19,8 +19,8 @@ const Consultations = () => {
       {head()}
       <div className='Consultations'>
         <article>
-          <h1>Mes consultations</h1>
-          <section className='paragraphe-1'>
+          <h1>Consultations</h1>
+          <section className='paragraphe-1-1'>
             <h2>Organisations de mes consultations</h2>
             <section className='paragraphe-content'>
               <p>
@@ -50,32 +50,42 @@ const Consultations = () => {
                 consulte à domicile.
               </p>
             </section>
-            <ParagraphSeparator />
+          </section>
+          <ParagraphSeparator />
+          <section className='paragraphe-1-2'>
             <section className='paragraphe-content'>
               <h3>Consultation au cabinet de Guyancourt</h3>
               <p>Le cabinet se trouve au:</p>
               <ul>
-                <ol>1 rue Le Corbusier</ol>
+                <ol>1, rue Le Corbusier</ol>
                 <ol>78280 Guyancourt</ol>
               </ul>
-              <aside>
-                <div>
+            </section>
+            <aside>
+              <div>
+                <a
+                  target={'_blank'}
+                  href={process.env.REACT_APP_LINK_CABINET_CAROLE}
+                  rel='external'
+                >
                   <img
                     src={ImgMap}
                     className='img-consultations-map'
                     alt='Plan du quartier 1 rue Le Corbusier à Guyancourt'
                     title='Plan du quartier 1 rue Le Corbusier à Guyancourt'
                   />
-                </div>
-              </aside>
-            </section>
-            <section className='paragraphe-content'>
+                </a>
+              </div>
+            </aside>
+          </section>
+          <section className='paragraphe-1-3'>
+            <section className='paragraphe-content perimetre'>
               <h3>Consultation à domicile</h3>
               <p>
                 Je me déplace à votre domicile sur Saint-Quentin-en-Yvelines et
                 ses environs :
               </p>
-              <ul>
+              <ul className='ul-perimetre'>
                 <li>Maurepas</li>
                 <li>Elancourt</li>
                 <li>Coignières</li>
@@ -88,14 +98,14 @@ const Consultations = () => {
               </ul>
               <p>
                 {' '}
-                Je peux, ponctuellement, consulter en dehors du périmètre.
-                Appeler moi pour que l'on voit ce qu'il est possible de faire.
+                Je peux, ponctuellement, consulter en dehors de ce périmètre.
+                Appelez moi pour que l'on voit ce qu'il est possible de faire.
               </p>
               <p>
-                Pour travailler dans des conditions optimale, j'ai besoin d'un
-                espace calme et dégagé d'environ 2m x 1.5m pour que je puisse
-                déployer ma table de massage et disposer d'assez de place pour
-                tourner autour.
+                Pour travailler dans des conditions optimales, j'ai besoin d'un
+                espace calme et dégagé d'environ 2m&nbsp;x&nbsp;1.5m pour que je
+                puisse déployer ma table de massage et disposer d'assez de place
+                pour tourner autour.
               </p>
             </section>
           </section>
@@ -104,13 +114,16 @@ const Consultations = () => {
             <h2>Tarifs et préstations</h2>
             <section className='paragraphe-content'>
               <p>
-                Pour les prestatations à domicile, dans le périmètre
-                géographique ci-dessus, j'applique une majoration de 5€ pour le
-                temps de déplacement et les frais d'essence. Je peux,
+                Pour les prestatations à domicile, j'applique une majoration de
+                5€ pour le temps de déplacement et les frais d'essence. Je peux,
                 ponctuellement, consulter en dehors de mon périmètre. Auquel cas
-                appeler moi pour que l'on détermine à l'avance le tarif de la
+                appelez moi pour que l'on détermine à l'avance le tarif de la
                 majoration.
               </p>
+            </section>
+          </section>
+          <section className='paragraphe-2-1'>
+            <section className='paragraphe-content'>
               <h3>Soins Reiki</h3>
               <ul>
                 <li>Au cabinet: 70€</li>
@@ -119,6 +132,17 @@ const Consultations = () => {
                   Soin à distance <span className='asterix'>*</span>: 60€
                 </li>
               </ul>
+            </section>
+            <section className='paragraphe-content'>
+              <h3>Massage Des 5 Continents</h3>
+              <ul>
+                <li>Au cabinet: 90€</li>
+                <li>A domicile: 95€</li>
+              </ul>
+            </section>
+          </section>
+          <section className='paragraphe-3'>
+            <section className='paragraphe-content'>
               <p>
                 <i>
                   <span className='asterix'>*</span> Il est possible, en Reiki,
@@ -128,11 +152,6 @@ const Consultations = () => {
                   soin.
                 </i>
               </p>
-              <h3>Massage Des 5 Continents</h3>
-              <ul>
-                <li>Au cabinet: 90€</li>
-                <li>A domicile: 95€</li>
-              </ul>
             </section>
           </section>
         </article>

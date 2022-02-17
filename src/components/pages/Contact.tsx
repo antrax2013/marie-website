@@ -117,7 +117,7 @@ const Contact = () => {
     return (
       <MetaTag
         title='Contact'
-        description="Mes différents soins énergétiques vous intéressent, vous avez des questions ou vous voulez me partager vos retours d'expérience. Pour me contacter utilisez le formulaire ci-dessous."
+        description="Mes différents soins énergétiques vous intéressent, vous avez des questions ou vous voulez partager, avec moi, vos retours d'expérience. Pour me contacter par email utilisez ce formulaire."
         resume='Restons en contact.'
       />
     );

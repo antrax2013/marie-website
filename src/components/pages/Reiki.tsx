@@ -158,13 +158,11 @@ const Reiki = () => {
                 </li>
                 <li>
                   Lors du soin, vous êtes habillé, allongé confortablement sur
-                  ma table de soin. Pendant que je procède à une série
-                  d'appositions douces des mains sur les différentes parties de
-                  votre corps, je diffuse une musique agréable qui contribue à
-                  votre détente et votre bien être. Laissez-vous aller, lâchez
-                  prise. Profitez de cet instant de douceur et de calme,
-                  l'énergie du <em>Reiki</em> se diffuse là où vous en avez
-                  besoin.
+                  ma table de soin. Je procède à une série d'appositions douces
+                  des mains sur les différentes parties de votre corps.
+                  Laissez-vous aller, lâchez prise. Profitez de cet instant de
+                  douceur et de calme, l'énergie du <em>Reiki</em> se diffuse là
+                  où vous en avez besoin.
                 </li>
                 <li>
                   La séance se termine par un échange pour connaitre votre
