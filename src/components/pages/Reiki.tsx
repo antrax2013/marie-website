@@ -41,7 +41,7 @@ const Reiki = () => {
             </aside>
             <section className='paragraphe-content'>
               <p>
-                Le <em>Reiki</em> signifie en Japonais Energie de vie
+                Le <em>Reiki</em> signifie en Japonais énergie de vie
                 universelle.
               </p>
               <ul>
@@ -76,7 +76,7 @@ const Reiki = () => {
           <section className='paragraphe-2'>
             <section className='paragraphe-content'>
               <p>
-                Le <em>Reiki</em> est un soin holisitque doux qui convient à
+                Le <em>Reiki</em> est un soin holistique doux qui convient à
                 tous : bébés, enfants, adultes, personnes âgées, les animaux,
                 les plantes...
               </p>

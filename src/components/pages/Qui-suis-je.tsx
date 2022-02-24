@@ -62,7 +62,7 @@ const QuiSuisJe = () => {
                 Je me suis, dans un premier temps, formée à l'utilisation des
                 huiles essentielles. Puis j'ai rencontré de belles personnes qui
                 m'ont permises de découvrir les soins énergétiques. Elles m'ont
-                donné l'envie, il y a deux ans de me former au{' '}
+                donnée l'envie, il y a deux ans de me former au{' '}
                 <a href='/reiki'>
                   <em>Reiki</em>
                 </a>{' '}
@@ -81,7 +81,7 @@ const QuiSuisJe = () => {
                   <em>Massage Des 5 Continents</em>
                 </a>{' '}
                 est le complément idéal des pratiques qui me passionnent. M'y
-                former m'est apparu comme une évidence. Il Combine à la fois
+                former m'est apparu comme une évidence. Il combine à la fois
                 l'utilisation des huiles essentielles, du Reiki et différentes
                 techniques de massages.
               </p>
