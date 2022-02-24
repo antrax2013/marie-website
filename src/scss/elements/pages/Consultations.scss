@@ -1,21 +1,18 @@
+@import '../rules/_mixins.scss';
+
 .Consultations {
   article > section {
-    display: flex;
-    flex: 1 1;
-    justify-content: flex-start;
+    @include article-section;
     flex-direction: column;
     align-items: flex-start;
   }
 
   article section aside > div {
-    display: flex;
-    justify-content: center;
+    @include flex-content-center;
   }
 
   aside {
-    justify-content: space-around;
-      display: flex;
-      flex-direction: column;
+    @include paragraphe-img-container;
   }
 
   .asterix {
@@ -51,10 +48,7 @@
   }  
   
   img  {
-    display: flex;
-    width: 80%;
-    height: 80%;
-    border-radius: 25px;
+    @include paragraphe-img;
   }
 
   .img-consultations-map {

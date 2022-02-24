@@ -1,20 +1,16 @@
+@import '../rules/_mixins.scss';
+
 .Reiki {
   article > section {
-    display: flex;
-    flex: 1 1;
-    justify-content: flex-start;
-    flex-direction: row;
+    @include article-section;
   }
 
   article section aside > div {
-    display: flex;
-    justify-content: center;
+    @include flex-content-center;
   }
 
   aside {
-    justify-content: space-around;
-      display: flex;
-      flex-direction: column;
+    @include paragraphe-img-container;
   }
 
   .paragraphe-1 .paragraphe-content {
@@ -28,8 +24,7 @@
   .paragraphe-2 .paragraphe-content, 
   .paragraphe-3 .paragraphe-content, 
   .paragraphe-4 .paragraphe-content {
-    flex: 2 1;
-    align-items: center;
+    @include paragraphe-txt-container;
   }
 
   .paragraphe-3 .paragraphe-content  {
@@ -41,10 +36,7 @@
   }
   
   img:not(.img-reiki-kanji)  {
-    display: flex;
-    width: 80%;
-    height: 80%;
-    border-radius: 25px;
+    @include paragraphe-img;
   }    
 }
 

@@ -1,28 +1,23 @@
+@import '../rules/_mixins.scss';
+
 .QuiSuisJe {
   article > section {
-    display: flex;
-    flex: 1 1;
-    justify-content: flex-start;
-    flex-direction: row;
+    @include article-section;
     align-items: center;
   }
 
   article section aside > div {
-    display: flex;
-    justify-content: center;
+    @include flex-content-center;
   }
 
   aside {
-    justify-content: space-around;
-      display: flex;
-      flex-direction: column;
+    @include paragraphe-img-container;
   }
 
   .paragraphe-1 .paragraphe-content, 
   .paragraphe-2 .paragraphe-content, 
   .paragraphe-3 .paragraphe-content {
-    flex: 2 1;
-    align-items: center;
+    @include paragraphe-txt-container;
   }
 
   .paragraphe-1  {
@@ -30,10 +25,7 @@
   }
 
   img  {
-    display: flex;
-    width: 80%;
-    height: 80%;
-    border-radius: 25px;
+    @include paragraphe-img;
   }    
 }
 
