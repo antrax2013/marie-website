@@ -1,4 +1,5 @@
 import { Button } from 'primereact/button';
+import openInNewTab from '../tools/OpenInNewTab';
 
 const Adresse = () => {
   return (
@@ -29,12 +30,19 @@ const Adresse = () => {
         </ol>
       </ul>
       <p>Consultations à domicile les autres jours de la semaine</p>
-      <p>
-        <Button className='facebook p-0'>
-          <i className='pi pi-facebook px-2'></i>
-          <span className='facebook'>Facebook</span>
-        </Button>
-      </p>
+      {process.env.REACT_APP_ACTIVEFB && (
+        <p>
+          <Button
+            className='facebook p-0'
+            onClick={() => {
+              openInNewTab(process.env.REACT_APP_URLFB || '');
+            }}
+          >
+            <i className='pi pi-facebook px-2'></i>
+            <span className='facebook'>Facebook</span>
+          </Button>
+        </p>
+      )}
     </div>
   );
 };
