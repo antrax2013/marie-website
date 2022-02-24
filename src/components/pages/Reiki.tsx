@@ -41,7 +41,7 @@ const Reiki = () => {
             </aside>
             <section className='paragraphe-content'>
               <p>
-                Le <em>Reiki</em> signifie en Japonais énergie de vie
+                Le <em>Reiki</em> signifie en japonais énergie de vie
                 universelle.
               </p>
               <ul>
@@ -49,11 +49,9 @@ const Reiki = () => {
                   <i>Rei</i> : c'est l'universalité, le saint, le don, l'esprit
                 </ol>
                 <ol>
-                  <i>Ki</i> : c'est l'énergie. Elle existe dans toutes les
-                  traditions. Elle est appelée, selon la tradition, Qi,
-                  Kundalini, lumière ou encore Esprit Saint chez les
-                  Chrétiens... Elle est également appelée la source ou la
-                  conscience universelle.
+                  <i>Ki</i> : c'est l'énergie. Selon la tradition, on l'appelle
+                  : Qi, Kundalini, lumière, la source ou la conscience
+                  universelle ou encore Esprit Saint chez les Chrétiens...
                 </ol>
               </ul>
               <p>
@@ -121,18 +119,19 @@ const Reiki = () => {
                 bien-être et équilibre. Il agit sur :
               </p>
               <ul>
-                <li>Le stress, l'anxiété, burn-out</li>
-                <li>La fatigue, insomnie, manque de vitalité</li>
+                <li>Le stress, l'anxiété, le burn-out</li>
+                <li>La fatigue, l'insomnie, le manque de vitalité</li>
                 <li>
-                  Les états émotionnels, perte de confiance, blocages, schémas
-                  répétitifs
+                  Les états émotionnels, la perte de confiance, les blocages,
+                  les schémas répétitifs
                 </li>
                 <li>
-                  Les douleurs chroniques, tensions musculaires et articulaires{' '}
+                  Les tensions musculaires, les douleurs chroniques et
+                  articulaires{' '}
                 </li>
                 <li>
-                  Accompagnement au changement que ce soit dans la vie personnel
-                  ou professionnel
+                  Il accompagne au changement que ce soit dans la vie
+                  personnelle ou professionnelle
                 </li>
               </ul>
               <p>

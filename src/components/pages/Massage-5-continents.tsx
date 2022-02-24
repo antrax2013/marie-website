@@ -29,7 +29,7 @@ const Massage5Continents = () => {
             <section className='paragraphe-content'>
               <p>
                 Le <em>Massage Des 5 Continents</em> est une technique, qui
-                combine différentes méthodes de massages, un soin énergétique et
+                combine différentes méthodes de massages, un soin énergétique,
                 des huiles végétales et des huiles essentielles. Cette
                 association fait du <em>Massage Des 5 Continents</em> un massage
                 unique, puissant permettant un lâcher prise physique et mental.
@@ -104,8 +104,8 @@ const Massage5Continents = () => {
               <p>
                 Durant le <em>Massage Des 5 Continents</em>, je masse votre dos,
                 votre ventre, vos bras et vos jambes. Si pour des raisons
-                médicales, certaines zones sont contre-indiquées, j'adapterais
-                le massage en conséquence.
+                médicales, certaines zones sont contre-indiquées, j'adapterai le
+                massage en conséquence.
               </p>
             </section>
           </section>
@@ -141,7 +141,7 @@ const Massage5Continents = () => {
                 recommandé de n'utiliser que des huiles végétales pour :{' '}
               </p>
               <ul>
-                <li> Les femmes enceintes ou allaitantes</li>
+                <li> Les femmes allaitantes</li>
                 <li> Les personnes épileptiques </li>
                 <li> Les personnes atteintes de cancer</li>
                 <li>
@@ -200,9 +200,9 @@ const Massage5Continents = () => {
                 <ul>
                   <li>Ni une pratique de la masso-kinésithérapie</li>
                   <li>Ni une pratique médicale</li>
-                  <li>Ni massages naturistes</li>
-                  <li>Ni tantriques</li>
-                  <li>Ni à caractère sexuel</li>
+                  <li>Ni un massage naturiste</li>
+                  <li>Ni un massage tantrique</li>
+                  <li>Ni un massage à caractère sexuel</li>
                 </ul>
               </b>
             </section>
@@ -231,21 +231,21 @@ const Massage5Continents = () => {
                 <li>
                   Lors du soin, vous êtes dévêtu, allongé confortablement sur ma
                   table de soin. Je vous recouvre d'une serviette pour ne pas
-                  prendre froid. Je diffuse une musique douce et agréable qui
-                  contribue à votre détente. Je commence le massage par
-                  l'application d'un complexe d'huiles détoxifiantes au niveau
-                  du dos puis des jambes. Nous passons ensuite à la partie
-                  relaxation du dos et des jambes. A l'aide d'un complexe
-                  d'huiles, de massages doux, je stimule votre organisme dans le
-                  but de lâcher prise, revitaliser et stimuler votre système
+                  prendre froid. Je commence le massage par l'application d'un
+                  complexe d'huiles détoxifiantes au niveau du dos puis des
+                  jambes. Nous passons ensuite à la partie relaxation du dos et
+                  des jambes. <br /> A l'aide d'un complexe d'huiles, de
+                  massages doux, je stimule votre organisme dans le but de
+                  lâcher prise, revitaliser et stimuler votre système
                   immunitaire. Cette première partie du{' '}
                   <em>Massage Des 5 Continents</em>, s'achève sur un soin
                   énergétique. Le Reiki permet de faire circuler l'énergie
                   vitale directement à l'intérieur de votre corps, là où vous en
-                  avez besoin. Pour la seconde partie du massage, je vais masser
-                  voter ventre, vos bras et vos jambes. L'enchainement du
-                  massage est identique à la première partie: une phase
-                  détoxifiante, une phase relaxante et un soin Reiki.
+                  avez besoin. <br />
+                  Pour la seconde partie du massage, je masse votre ventre, vos
+                  bras et vos jambes. Le déroulé du massage est identique à la
+                  première partie: une phase détoxifiante, une phase relaxante
+                  et un soin Reiki.
                 </li>
               </ul>
             </section>

@@ -117,8 +117,8 @@ const Consultations = () => {
                 Pour les prestatations à domicile, j'applique une majoration de
                 5€ pour le temps de déplacement et les frais d'essence. Je peux,
                 ponctuellement, consulter en dehors de mon périmètre. Auquel cas
-                appelez moi pour que l'on détermine à l'avance le tarif de la
-                majoration.
+                appelez moi pour que l'on convienne à l'avance du tarif de la
+                consultation.
               </p>
             </section>
           </section>

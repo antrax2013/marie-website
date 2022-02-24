@@ -22,14 +22,14 @@ p{
   text-align: justify;
 }
 
-a,
-a:hover,
-a:active {
+a:not(.p-menubar-button),
+a:not(.p-menubar-button):hover,
+a:not(.p-menubar-button):active {
   color: var(--primary-color) !important; 
   display: contents; 
 }
 
-a:not(:hover) {
+a:not(.p-menubar-button):not(:hover) {
   text-decoration: none;
   display: contents;
 }

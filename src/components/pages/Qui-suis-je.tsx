@@ -45,7 +45,7 @@ const QuiSuisJe = () => {
                 N'ayant trouvé de réponse à des maux personnels dans la médecine
                 traditionnelle, je me suis tournée vers des prises en charge
                 alternatives: l’hypnose, la réflexologie, la naturopathie, les
-                huiles essentiels, l’homéopathie, le{' '}
+                huiles essentielles, l’homéopathie, le{' '}
                 <a href='/reiki'>
                   <em>Reiki</em>
                 </a>{' '}
@@ -81,7 +81,7 @@ const QuiSuisJe = () => {
                   <em>Massage Des 5 Continents</em>
                 </a>{' '}
                 est le complément idéal des pratiques qui me passionnent. M'y
-                former m'est apparu comme une évidence. Il combine à la fois
+                former m'est apparue comme une évidence. Il combine à la fois
                 l'utilisation des huiles essentielles, du Reiki et différentes
                 techniques de massages.
               </p>
