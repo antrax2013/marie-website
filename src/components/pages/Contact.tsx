@@ -103,12 +103,12 @@ const Contact = () => {
   });
 
   const isFormFieldValid = (name: string) =>
-    !!(eval(`formik.touched.${name}`) && eval(`formik.errors.${name}`));
+    !!(Reflect.get(formik.touched, name) && Reflect.get(formik.errors, name));
 
   const getFormErrorMessage = (name: string) => {
     return (
       isFormFieldValid(name) && (
-        <small className='p-error'>{eval(`formik.errors.${name}`)}</small>
+        <small className='p-error'>{Reflect.get(formik.errors, name)}</small>
       )
     );
   };
