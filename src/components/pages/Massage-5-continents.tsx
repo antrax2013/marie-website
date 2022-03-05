@@ -243,9 +243,10 @@ const Massage5Continents = () => {
                   vitale directement à l'intérieur de votre corps, là où vous en
                   avez besoin. <br />
                   Pour la seconde partie du massage, je masse votre ventre, vos
-                  bras et vos jambes. Le déroulé du massage est identique à la
-                  première partie: une phase détoxifiante, une phase relaxante
-                  et un soin Reiki.
+                  jambes, vos bras, vos mains et le haut du torse. Le déroulé du
+                  massage est identique à la première partie: une phase
+                  détoxifiante, une phase relaxante et un soin Reiki. Je conclue
+                  le soin par un massage, doux de votre visage.
                 </li>
               </ul>
             </section>
