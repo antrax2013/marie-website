@@ -11,7 +11,7 @@ interface item {
 const Menu = ({ ...props }) => {
   const start = <img alt='logo' src={logo} className='logo' />;
   const end = () => {
-    switch (process.env.REACT_APP_ACTIVERDV || '0') {
+    switch (process.env.REACT_APP_ACTIVERDV || 0) {
       case '1':
         return (
           <a

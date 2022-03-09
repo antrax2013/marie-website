@@ -30,7 +30,7 @@ const Adresse = () => {
         </ol>
       </ul>
       <p>Consultations à domicile les autres jours de la semaine</p>
-      {process.env.REACT_APP_ACTIVEFB && (
+      {process.env.REACT_APP_ACTIVEFB == '1' && (
         <p>
           <Button
             className='facebook p-0'
