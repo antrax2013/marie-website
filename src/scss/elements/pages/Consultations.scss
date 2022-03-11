@@ -55,6 +55,13 @@
     width: 50%;
     height: 50%;
   }
+
+  .map iframe {
+    @include ombre-portee-panneau;
+    border:none;
+    width:600px;
+    height:250px
+  }
 }
 
 @media (max-width: 427px) {
@@ -63,7 +70,10 @@
       flex-direction: column;
       align-items: inherit !important;
     }
-  }
+    .map iframe {
+      width:250px;
+    }
+  }  
 }
 
 @media (max-width: 768px) {
@@ -93,6 +103,16 @@
     .img-consultations-map {
       width: 80%;
       height: 80%;
+    }
+    
+  }
+}
+
+@media (max-width: 1024px) {
+  .Consultations {
+    .map iframe {
+      height:200px;
+      width:450px;
     }
   }
 }

@@ -62,19 +62,11 @@ const Consultations = () => {
               </ul>
             </section>
             <aside>
-              <div>
-                <a
-                  target={'_blank'}
-                  href={process.env.REACT_APP_LINK_CABINET_CAROLE}
-                  rel='external'
-                >
-                  <img
-                    src={ImgMap}
-                    className='img-consultations-map'
-                    alt='Plan du quartier 1 rue Le Corbusier à Guyancourt'
-                    title='Plan du quartier 1 rue Le Corbusier à Guyancourt'
-                  />
-                </a>
+              <div className='map'>
+                <iframe
+                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657.4474125145919!2d2.0711613275401377!3d48.76681317927859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e680b8df551913%3A0x4c47046451eeaf2f!2s1%20Rue%20le%20Corbusier%2C%2078280%20Guyancourt!5e0!3m2!1sfr!2sfr!4v1647003179533!5m2!1sfr!2sfr'
+                  loading='lazy'
+                ></iframe>
               </div>
             </aside>
           </section>
