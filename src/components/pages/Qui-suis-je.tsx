@@ -36,9 +36,9 @@ const QuiSuisJe = () => {
             <section className='paragraphe-content'>
               <p>
                 Infirmière par vocation depuis 17 ans, mon métier de cœur, j’ai
-                pris la décision de prendre soin des autres différement. Prendre
-                soin des autres, pour moi, c'est prendre le temps, être à
-                l’écoute, être pleinement disponible pour pouvoir accompagner
+                pris la décision de prendre soin des autres différemment.
+                Prendre soin des autres, pour moi, c'est prendre le temps, être
+                à l’écoute, être pleinement disponible pour pouvoir accompagner
                 autrement.
               </p>
               <p>
@@ -61,8 +61,8 @@ const QuiSuisJe = () => {
               <p>
                 Je me suis, dans un premier temps, formée à l'utilisation des
                 huiles essentielles. Puis j'ai rencontré de belles personnes qui
-                m'ont permises de découvrir les soins énergétiques. Elles m'ont
-                donnée l'envie, il y a deux ans de me former au{' '}
+                m'ont permise de découvrir les soins énergétiques. Elles m'ont
+                donné l'envie, il y a deux ans de me former au{' '}
                 <a href='/reiki'>
                   <em>Reiki</em>
                 </a>{' '}
@@ -81,9 +81,9 @@ const QuiSuisJe = () => {
                   <em>Massage Des 5 Continents</em>
                 </a>{' '}
                 est le complément idéal des pratiques qui me passionnent. M'y
-                former m'est apparue comme une évidence. Il combine à la fois
+                former m'est apparu comme une évidence. Il combine à la fois
                 l'utilisation des huiles essentielles, du Reiki et différentes
-                techniques de massages.
+                techniques de massage.
               </p>
             </section>
           </section>
