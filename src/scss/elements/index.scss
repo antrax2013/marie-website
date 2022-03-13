@@ -164,7 +164,11 @@ article section aside {
 
 .article-footer {
   background-color: var(--background-color);
-  padding-bottom: 1.5rem;  
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .article-footer section {
@@ -215,6 +219,11 @@ footer {
   padding-right: 1rem !important;
 }
 
+.siret {
+  font-size: 0.75em;
+  padding-right: 35px;
+}
+
 @media (max-width: 426px) {
   li {
     text-align: inherit;
@@ -240,6 +249,16 @@ footer {
   }
   .title .logo {
     display: none;
+  }
+
+  .article-footer {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .siret {
+    display: block;
+    text-align: center;
   }
 }
 

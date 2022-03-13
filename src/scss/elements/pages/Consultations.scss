@@ -64,7 +64,7 @@
   }
 }
 
-@media (max-width: 427px) {
+@media (max-width: 426px) {
   .Consultations {
     .paragraphe-1-2 {
       flex-direction: column;
@@ -108,7 +108,16 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) and (min-width: 427px) {
+  .Consultations {
+    .map iframe {
+      height:200px;
+      width:275px;
+    }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
   .Consultations {
     .map iframe {
       height:200px;

@@ -112,6 +112,7 @@ const Consultations = () => {
                 appelez moi pour que l'on convienne à l'avance du tarif de la
                 consultation.
               </p>
+              <p>Règlement par chèque ou espèces</p>
             </section>
           </section>
           <section className='paragraphe-2-1'>
