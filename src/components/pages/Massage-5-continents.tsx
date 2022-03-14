@@ -70,10 +70,10 @@ const Massage5Continents = () => {
               <p>Les huiles végétales : </p>
               <ul>
                 <li> Huile d'avocat</li>
-                <li> Huile d'amande douce </li>
-                <li> huile de macadamia </li>
-                <li> huile d'argan </li>
-                <li> Huile de noyau d'abricot </li>
+                <li> Huile d'amande douce</li>
+                <li> Huile de macadamia</li>
+                <li> Huile d'argan</li>
+                <li> Huile de noyau d'abricot</li>
               </ul>
             </section>
             <section className='paragraphe-content he'>
