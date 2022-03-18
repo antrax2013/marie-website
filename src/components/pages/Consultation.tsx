@@ -8,7 +8,7 @@ const Consultations = () => {
     return (
       <MetaTag
         title={'Consultations'}
-        description='Pour mes consultations, je vous accueille, tous les jeudis au cabinet de Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile.'
+        description='Pour mes consultations, je vous accueille, tous les jeudis au cabinet de Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile sur Saint Quentin en Yvelines.'
         resume='Organisation de mes consultations.'
       />
     );
@@ -140,7 +140,7 @@ const Consultations = () => {
                 <i>
                   <span className='asterix'>*</span> Il est possible, en Reiki,
                   de faire des soins à distance. Je ne souhaite, cependant, pas
-                  ouvrir cette prattique à tous mes patients. Je la resérve
+                  ouvrir cette pratique à tous mes patients. Je la résérve
                   uniquement aux personnes à qui j'ai déjà fait au moins un
                   soin.
                 </i>

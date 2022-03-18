@@ -217,8 +217,8 @@ const Massage5Continents = () => {
               </p>
               <ul>
                 <li>
-                  Nous commençons par entretien pour échanger, ensemble, sur les
-                  raisons qui vous motivent à recevoir le{' '}
+                  Nous commençons par un entretien pour échanger, ensemble, sur
+                  les raisons qui vous motivent à recevoir le{' '}
                   <em>Massage Des 5 Continents</em> et sur les éventuelles
                   contre-indications par rapport aux huiles essentielles.
                 </li>
@@ -229,8 +229,8 @@ const Massage5Continents = () => {
             <section className='paragraphe-content'>
               <ul>
                 <li>
-                  Lors du soin, vous êtes dévêtu, allongé confortablement sur ma
-                  table de soin. Je vous recouvre d'une serviette pour ne pas
+                  Lors du soin, vous êtes dévêtus, allongés confortablement sur
+                  ma table de soin. Je vous recouvre d'une serviette pour ne pas
                   prendre froid. Je commence le massage par l'application d'un
                   complexe d'huiles détoxifiantes au niveau du dos puis des
                   jambes. Nous passons ensuite à la partie relaxation du dos et
@@ -272,11 +272,11 @@ const Massage5Continents = () => {
               <p>
                 Mon savoir-faire, mes qualités d'écoute et d'empathie sont à
                 votre service pour vous accompagner durant cette séance. Malgré
-                leurs biens faits, l'utilisation de plusieurs huiles
-                essentielles n’est pas anodine. Elles ne sont pas recommandées à
-                tout le monde. Afin de satisfaire un plus grand nombre, il est
-                possible de n'utiliser que des huiles végétales. Je m'adapte à
-                vos contre-indications.
+                leurs bienfaits, l'utilisation de plusieurs huiles essentielles
+                n’est pas anodine. Elles ne sont pas recommandées à tout le
+                monde. Afin de satisfaire un plus grand nombre, il est possible
+                de n'utiliser que des huiles végétales. Je m'adapte à vos
+                contre-indications.
               </p>
             </section>
           </section>

@@ -62,7 +62,7 @@ const Reiki = () => {
               </p>
               <p>
                 <b>
-                  Un soin <em>Reiki</em>, en aucun cas, ne substitue à un
+                  Un soin <em>Reiki</em>, en aucun cas, ne se substitue à un
                   traitement médical allopathique. Le <em>Reiki</em> ne soigne
                   pas, il accompagne vers la guérison.
                 </b>
@@ -85,7 +85,7 @@ const Reiki = () => {
               </b>
               <p>
                 Sinon dans les autres cas, il n'y a pas de contre-indication et
-                ce quel que soit la distance.
+                ce quelle que soit la distance.
               </p>
             </section>
             <aside>
@@ -115,7 +115,7 @@ const Reiki = () => {
               <h2>Pour quelles raisons consulter ?</h2>
               <p>
                 Le <em>Reiki</em> favorise le bien-être physique, émotionnel,
-                psychplogique et psychique. Il apporte détente, confort,
+                psychologique et psychique. Il apporte détente, confort,
                 bien-être et équilibre. Il agit sur :
               </p>
               <ul>
@@ -152,11 +152,12 @@ const Reiki = () => {
               </p>
               <ul>
                 <li>
-                  Nous commençons par entretien pour échanger, ensemble, sur les
-                  raisons qui vous motivent à recevoir un soin <em>Reiki</em>.
+                  Nous commençons par un entretien pour échanger, ensemble, sur
+                  les raisons qui vous motivent à recevoir un soin{' '}
+                  <em>Reiki</em>.
                 </li>
                 <li>
-                  Lors du soin, vous êtes habillé, allongé confortablement sur
+                  Lors du soin, vous êtes habillés, allongés confortablement sur
                   ma table de soin. Je procède à une série d'appositions douces
                   des mains sur les différentes parties de votre corps.
                   Laissez-vous aller, lâchez prise. Profitez de cet instant de
@@ -185,7 +186,7 @@ const Reiki = () => {
               <p>
                 Mon savoir-faire, mes qualités d'écoute et d'empathie sont à
                 votre service pour vous accompagner vers le bien-être et la
-                guérison. J'adapte, mes soins selon vos besoins.
+                guérison. J'adapte mes soins selon vos besoins.
               </p>
             </section>
           </section>

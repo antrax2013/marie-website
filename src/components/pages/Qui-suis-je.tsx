@@ -91,9 +91,9 @@ const QuiSuisJe = () => {
           <section className='paragraphe-3'>
             <section className='paragraphe-content'>
               <p>
-                Pouvoir apporter soulagement physique, psychique et émotionnel
-                aux personnes qui m’entourent est un véritable cadeau. Et je
-                souhaite partager cela avec vous.
+                Pouvoir apporter un soulagement physique, psychique et
+                émotionnel aux personnes qui m’entourent est un véritable
+                cadeau. Et je souhaite partager cela avec vous.
               </p>
             </section>
           </section>
