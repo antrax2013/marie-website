@@ -1,6 +1,6 @@
 import MetaTag from '../tools/MetaTag';
 import ParagraphSeparator from '../tools/Paragraph-Separator';
-import ImgMoi from '../../assets/moi.jpg';
+import ImgMoi from '../../assets/moi.avif';
 import '../../scss/elements/pages/QuiSuisJe.scss';
 
 const QuiSuisJe = () => {
