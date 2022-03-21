@@ -29,7 +29,10 @@ const Adresse = () => {
           </a>
         </ol>
       </ul>
-      <p>Consultations à domicile les autres jours de la semaine</p>
+      <p>
+        Les autres jours de la semaine, je consulte à domicile sur Saint
+        Quentin-en-Yvelines et ses environs{' '}
+      </p>
       {process.env.REACT_APP_ACTIVEFB == '1' && (
         <p>
           <Button
