@@ -8,8 +8,7 @@ const QuiSuisJe = () => {
     return (
       <MetaTag
         title={process.env.REACT_APP_META_MAIN_TILTE || 'Qui suis-je ?'}
-        description='Infirmière par vocation, mon métier de cœur, je veux prendre soin des autres différemment: prendre le temps, être à l’écoute, être
-        pleinement disponible pour pouvoir accompagner autrement.'
+        description='Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 continents (M5C)... Marie COPHIGNON'
         resume='Infirmière par vocation, je veux prendre soin des autres, de vous différement. Etre là pour vous.'
         forceTitle={true}
       />
