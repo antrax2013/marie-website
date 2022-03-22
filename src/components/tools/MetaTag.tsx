@@ -39,6 +39,11 @@ const MetaTag: React.FC<{
       property: `twitter:description`,
       content: description,
     },
+    ,
+    {
+      itemprop: `description`,
+      content: description,
+    },
   ];
 
   return <Helmet title={_title.toString()} meta={meta} />;
