@@ -6,10 +6,11 @@ interface item {
   label: string;
   command: () => void;
   className: string;
+  url: string;
 }
 
 const Menu = ({ ...props }) => {
-  const start = <img alt='logo' src={logo} className='logo' />;
+  const start = <img alt='logo ' itemProp='logo' src={logo} className='logo' />;
   const end = () => {
     switch (process.env.REACT_APP_ACTIVERDV || 0) {
       case '1':
@@ -74,6 +75,7 @@ const Menu = ({ ...props }) => {
   let items: item[] = [
     {
       label: 'Qui suis-je ?',
+      url: '/qui-suis-je',
       command: () => {
         onClick('qui-suis-je');
       },
@@ -81,6 +83,7 @@ const Menu = ({ ...props }) => {
     },
     {
       label: 'Reiki',
+      url: '/reiki',
       className: getClassName('reiki'),
       command: () => {
         onClick('reiki');
@@ -88,6 +91,7 @@ const Menu = ({ ...props }) => {
     },
     {
       label: 'Massage Des 5 Continents',
+      url: '/massage-des-5-continents',
       className: getClassName('massage-des-5-continents'),
       command: () => {
         onClick('massage-des-5-continents');
@@ -95,6 +99,7 @@ const Menu = ({ ...props }) => {
     },
     {
       label: 'Consultations',
+      url: '/consultations',
       className: getClassName('consultations'),
       command: () => {
         onClick('consultations');
@@ -102,6 +107,7 @@ const Menu = ({ ...props }) => {
     },
     {
       label: 'Contact',
+      url: '/contact',
       className: getClassName('contact'),
       command: () => {
         onClick('contact');

@@ -3,7 +3,12 @@ import openInNewTab from '../tools/OpenInNewTab';
 
 const Adresse = () => {
   return (
-    <div className='adresse'>
+    <div
+      className='adresse'
+      itemProp='address'
+      itemScope
+      itemType='https://schema.org/PostalAddress'
+    >
       <h2>Horaires d'ouverture</h2>
       <p>Du lundi au vendredi 09h00-19h00</p>
       <p>
@@ -21,17 +26,25 @@ const Adresse = () => {
         le jeudi :
       </p>
       <ul>
-        <ol>1 rue le Corbusier</ol>
-        <ol>78280 Guyancourt</ol>
         <ol>
-          <a href={`tel:${process.env.REACT_APP_META_NUMTEL}`}>
-            Tél: {process.env.REACT_APP_META_NUMTEL}
-          </a>
+          <span itemProp='streetAddress'>1 rue le Corbusier</span>
+        </ol>
+        <ol>
+          <span itemProp='postalCode'>78280</span>{' '}
+          <span itemProp='addressLocality'>Guyancourt</span>
+        </ol>
+        <ol>
+          <span itemProp='telephone'>
+            <a href={`tel:${process.env.REACT_APP_META_NUMTEL}`}>
+              Tél: {process.env.REACT_APP_META_NUMTEL}
+            </a>
+          </span>
         </ol>
       </ul>
       <p>
-        Les autres jours de la semaine, je consulte à domicile sur Saint
-        Quentin-en-Yvelines et ses environs{' '}
+        Les autres jours de la semaine, je consulte à domicile sur{' '}
+        <span itemProp='addressRegion'>Saint Quentin-en-Yvelines</span> et ses
+        environs{' '}
       </p>
       {process.env.REACT_APP_ACTIVEFB == '1' && (
         <p>

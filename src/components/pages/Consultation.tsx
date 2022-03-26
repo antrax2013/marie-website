@@ -53,12 +53,22 @@ const Consultations = () => {
           </section>
           <ParagraphSeparator />
           <section className='paragraphe-1-2'>
-            <section className='paragraphe-content'>
+            <section
+              className='paragraphe-content'
+              itemProp='address'
+              itemScope
+              itemType='https://schema.org/PostalAddress'
+            >
               <h3>Consultation au cabinet de Guyancourt</h3>
               <p>Le cabinet se trouve au:</p>
               <ul>
-                <ol>1, rue Le Corbusier</ol>
-                <ol>78280 Guyancourt</ol>
+                <ol>
+                  <span itemProp='streetAddress'>1, rue Le Corbusier</span>
+                </ol>
+                <ol>
+                  <span itemProp='postalCode'>78280</span>{' '}
+                  <span itemProp='addressLocality'>Guyancourt</span>
+                </ol>
               </ul>
             </section>
             <aside>

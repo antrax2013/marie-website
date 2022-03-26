@@ -62,8 +62,12 @@
         "founders": "Marie COPHIGNON",
         "image" : "https://marie.cophignon.net/static/media/logo512.b4ea2ac5c99c7e0dd07e.png",
         "logo" : "https://marie.cophignon.net/static/media/logo512.b4ea2ac5c99c7e0dd07e.png",
+        "url": "https://marie.cophignon.net"
         "telephone" : "07.73.55.27.70",
-        "areaServed" : "Saint Quentin-en-Yvelines",
+        "areaServed": {
+          "@type": "City",
+          "name": "Saint Quentin-en-Yvelines"
+        },
         "address" : {
           "@type" : "PostalAddress",
           "streetAddress" : "1 rue le Corbusier",
@@ -72,7 +76,27 @@
           "postalCode" : "78280"
         },
         "openinghours" : "Du lundi au vendredi 09:00-19:00",
-        "paymentAccepted" : "Espèces, chéque" 
+        "paymentAccepted" : "Espèces, chéque",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Soins énergétiques",
+          "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reiki"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Massage Des 5 continents (M5C)"
+            }
+          }
+        ]
+        } 
         }
       }
       </script>
