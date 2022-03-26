@@ -8,7 +8,7 @@ const QuiSuisJe = () => {
     return (
       <MetaTag
         title={process.env.REACT_APP_META_MAIN_TILTE || 'Qui suis-je ?'}
-        description='Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 continents (M5C)... Marie COPHIGNON'
+        description='Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 Continents (M5C)... Marie COPHIGNON'
         resume='Infirmière par vocation, je veux prendre soin des autres, de vous différement. Etre là pour vous.'
         forceTitle={true}
       />
@@ -77,7 +77,7 @@ const QuiSuisJe = () => {
               <p>
                 Le{' '}
                 <a href='/massage-des-5-continents'>
-                  <em>Massage Des 5 Continents</em>
+                  <em>Massage des 5 Continents</em>
                 </a>{' '}
                 est le complément idéal des pratiques qui me passionnent. M'y
                 former m'est apparu comme une évidence. Il combine à la fois

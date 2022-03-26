@@ -10,7 +10,7 @@ const Reiki = () => {
   const head = () => {
     return (
       <MetaTag
-        title='Le Reiki'
+        title='Soin Reiki'
         description="Le Reiki est un soin énergétique par apposition des mains. Il apporte un
         supplément d'énergie à l'organisme et participe au retour à
         l'équilibre du corps et de l'esprit."

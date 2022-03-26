@@ -5,7 +5,7 @@ const SiteMap = () => {
     return (
       <MetaTag
         title='Plan du site'
-        description='Le plan du site. Vous trouverez le lien vers les différentes pages qui le compose : Reiki, Massage Des 5 Continents et plus encore...'
+        description='Le plan du site. Vous trouverez le lien vers les différentes pages qui le compose : Reiki, Massage des 5 Continents et plus encore...'
         resume='Le plan du site pour ne pas vous perdre.'
       />
     );
@@ -24,7 +24,7 @@ const SiteMap = () => {
             <a href='/reiki'>Reiki</a>
           </li>
           <li>
-            <a href='/massage-des-5-continents'>Massage Des 5 Continents</a>
+            <a href='/massage-des-5-continents'>Massage des 5 Continents</a>
           </li>
           <li>
             <a href='/consultations'>Consultations</a>

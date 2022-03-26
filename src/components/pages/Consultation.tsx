@@ -137,7 +137,7 @@ const Consultations = () => {
               </ul>
             </section>
             <section className='paragraphe-content'>
-              <h3>Massage Des 5 Continents</h3>
+              <h3>Massage des 5 Continents</h3>
               <ul>
                 <li>Au cabinet: 90€</li>
                 <li>A domicile: 95€</li>

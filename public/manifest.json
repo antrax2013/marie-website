@@ -40,12 +40,12 @@
   "display": "standalone",
   "theme_color": "#f0f0f0",
   "background_color": "#f0f0f0",
-  "description": "Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 continents (M5C)... Marie COPHIGNON",
+  "description": "Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 Continents (M5C)... Marie COPHIGNON",
   "shortcuts": [
     {
       "name":"Qui suis-je?",
       "short_name":"Qui suis-je?",
-      "description":"Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 continents (M5C)... Marie COPHIGNON",
+      "description":"Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 Continents (M5C)... Marie COPHIGNON",
       "url":"/qui-suis-je"
     },
     {
@@ -55,9 +55,9 @@
       "url":"/reiki"
     },
     {
-      "name":"Massage Des 5 Continents",
+      "name":"Massage des 5 Continents",
       "short_name":"M5C",
-      "description":"Le Massage Des 5 Continents est un massage combinant différentes méthodes de massages, un soin énergétique Reiki et des huiles essentielles. Un lâcher prise physique et mental durable.",
+      "description":"Le Massage des 5 Continents est un massage combinant différentes méthodes de massages, un soin énergétique Reiki et des huiles essentielles. Un lâcher prise physique et mental durable.",
       "url":"/massage-des-5-continents"
     },
     {
@@ -75,7 +75,7 @@
     {
       "name":"Le plan du site",
       "short_name":"Le plan du site",
-      "description":"Le plan du site. Vous trouverez le lien vers les différentes pages qui le compose : Reiki, Massage Des 5 Continents et plus encore...",
+      "description":"Le plan du site. Vous trouverez le lien vers les différentes pages qui le compose : Reiki, Massage des 5 Continents et plus encore...",
       "url":"/plan-du-site"
     }
   ]

@@ -10,10 +10,10 @@ const Massage5Continents = () => {
   const head = () => {
     return (
       <MetaTag
-        title='Massage Des 5 continents'
-        description='Le Massage Des 5 Continents est un massage combinant différentes méthodes de massages, un soin énergétique Reiki et 
+        title='Massage des 5 Continents'
+        description='Le Massage es 5 continents, ou M5C, est un massage combinant différentes méthodes de massages, un soin énergétique Reiki et 
       des huiles essentielles. Un lâcher prise physique et mental durable.'
-        resume="Le massage Des 5 continents: l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien être."
+        resume="Le Massage des 5 Continents (M5C): l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien être."
       />
     );
   };
@@ -23,16 +23,17 @@ const Massage5Continents = () => {
       {head()}
       <div className='M5C'>
         <article>
-          <h1>Massage Des 5 continents</h1>
-          <h2>Qu'est-ce que le Massage Des 5 continents ?</h2>
+          <h1>Massage des 5 Continents</h1>
+          <h2>Qu'est-ce que le Massage des 5 Continents ?</h2>
           <section className='paragraphe-1'>
             <section className='paragraphe-content'>
               <p>
-                Le <em>Massage Des 5 Continents</em> est une technique, qui
-                combine différentes méthodes de massages, un soin énergétique,
-                des huiles végétales et des huiles essentielles. Cette
-                association fait du <em>Massage Des 5 Continents</em> un massage
-                unique, puissant permettant un lâcher prise physique et mental.
+                Le <em>Massage des 5 Continents</em>, ou M5C, est une technique,
+                qui combine différentes méthodes de massages, un soin
+                énergétique, des huiles végétales et des huiles essentielles.
+                Cette association fait du <em>Massage des 5 Continents</em> un
+                massage unique, puissant permettant un lâcher prise physique et
+                mental.
               </p>
             </section>
           </section>
@@ -42,8 +43,8 @@ const Massage5Continents = () => {
                 <img
                   src={ImgM5C}
                   className='img-m5c'
-                  alt='Massage Des 5 continents'
-                  title='logo du Massage Des 5 continents'
+                  alt='Massage des 5 Continents'
+                  title='logo du Massage des 5 Continents'
                 />
               </div>
             </aside>
@@ -98,11 +99,11 @@ const Massage5Continents = () => {
             </section>
           </section>
           <ParagraphSeparator />
-          <h2>Qui peut recevoir le Massage Des 5 Continents ?</h2>
+          <h2>Qui peut recevoir le Massage des 5 Continents ?</h2>
           <section className='paragraphe-2'>
             <section className='paragraphe-content'>
               <p>
-                Durant le <em>Massage Des 5 Continents</em>, je masse votre dos,
+                Durant le <em>Massage des 5 Continents</em>, je masse votre dos,
                 votre ventre, vos bras et vos jambes. Si pour des raisons
                 médicales, certaines zones sont contre-indiquées, j'adapterai le
                 massage en conséquence.
@@ -115,15 +116,15 @@ const Massage5Continents = () => {
                 <img
                   src={ImgM5CColonne}
                   className='img-m5c-colonne'
-                  alt='Massage Des 5 Continents - Massage du haut de la colonne vertébrale'
-                  title='Massage Des 5 Continents - Massage du haut de la colonne vertébrale'
+                  alt='Massage des 5 Continents - Massage du haut de la colonne vertébrale'
+                  title='Massage des 5 Continents - Massage du haut de la colonne vertébrale'
                 />
               </div>
             </aside>
             <section className='paragraphe-content'>
               <b>
                 <p>
-                  Le <em>Massage Des 5 Continents</em> est contre-indiqué pour :{' '}
+                  Le <em>Massage des 5 Continents</em> est contre-indiqué pour :{' '}
                 </p>
                 <ul>
                   <li> Les femmes enceintes</li>
@@ -160,8 +161,8 @@ const Massage5Continents = () => {
                 <i>
                   A noter que certaines huiles utilisées sont photosensibles. Il
                   convient donc de ne pas s'exposer au soleil après un{' '}
-                  <em>Massage Des 5 Continents</em>. Il est également préférable
-                  de manger léger avant un <em>Massage Des 5 Continents</em>, de
+                  <em>Massage des 5 Continents</em>. Il est également préférable
+                  de manger léger avant un <em>Massage des 5 Continents</em>, de
                   retirer bijoux et piercings.
                 </i>
               </p>
@@ -187,14 +188,14 @@ const Massage5Continents = () => {
                 <img
                   src={ImgM5CDos}
                   className='img-m5c-dos'
-                  alt='Massage Des 5 Continents - Massage du bas du dos'
-                  title='Massage Des 5 Continents - Massage du bas du dos'
+                  alt='Massage des 5 Continents - Massage du bas du dos'
+                  title='Massage des 5 Continents - Massage du bas du dos'
                 />
               </div>
             </aside>
             <section className='paragraphe-content'>
               <p>
-                Le <em>Massage Des 5 Continents</em> n'est :
+                Le <em>Massage des 5 Continents</em> n'est :
               </p>
               <b>
                 <ul>
@@ -208,18 +209,18 @@ const Massage5Continents = () => {
             </section>
           </section>
           <ParagraphSeparator />
-          <h2>Comment se déroule une séance de Massage Des 5 Continents ?</h2>
+          <h2>Comment se déroule une séance de Massage des 5 Continents ?</h2>
           <section className='paragraphe-4'>
             <section className='paragraphe-content'>
               <p>
-                Le <em>Massage Des 5 Continents</em> dure environ 1h15 et se
+                Le <em>Massage des 5 Continents</em> dure environ 1h15 et se
                 déroule en 3 temps :
               </p>
               <ul>
                 <li>
                   Nous commençons par un entretien pour échanger, ensemble, sur
                   les raisons qui vous motivent à recevoir le{' '}
-                  <em>Massage Des 5 Continents</em> et sur les éventuelles
+                  <em>Massage des 5 Continents</em> et sur les éventuelles
                   contre-indications par rapport aux huiles essentielles.
                 </li>
               </ul>
@@ -238,7 +239,7 @@ const Massage5Continents = () => {
                   massages doux, je stimule votre organisme dans le but de
                   lâcher prise, revitaliser et stimuler votre système
                   immunitaire. Cette première partie du{' '}
-                  <em>Massage Des 5 Continents</em>, s'achève sur un soin
+                  <em>Massage des 5 Continents</em>, s'achève sur un soin
                   énergétique. Le Reiki permet de faire circuler l'énergie
                   vitale directement à l'intérieur de votre corps, là où vous en
                   avez besoin. <br />
@@ -255,8 +256,8 @@ const Massage5Continents = () => {
                 <img
                   src={ImgM5CBras}
                   className='img-m5c-bras'
-                  alt='Massage Des 5 Continents - Massage du bras'
-                  title='Massage Des 5 Continents - Massage du bras'
+                  alt='Massage des 5 Continents - Massage du bras'
+                  title='Massage des 5 Continents - Massage du bras'
                 />
               </div>
             </aside>

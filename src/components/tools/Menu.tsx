@@ -90,7 +90,7 @@ const Menu = ({ ...props }) => {
       },
     },
     {
-      label: 'Massage Des 5 Continents',
+      label: 'Massage des 5 Continents',
       url: '/massage-des-5-continents',
       className: getClassName('massage-des-5-continents'),
       command: () => {
