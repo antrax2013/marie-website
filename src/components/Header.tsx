@@ -14,6 +14,7 @@ const Header = () => {
             alt='une fleur de vie, le logo du site'
             title='une fleur de vie, le logo du site'
             src={logo}
+            loading='lazy'
           />
         </div>
         <h1>

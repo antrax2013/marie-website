@@ -36,6 +36,7 @@ const Reiki = () => {
                   className='img-reiki-kanji'
                   alt='Reiki'
                   title='Reiki en kanji'
+                  loading='lazy'
                 />
               </div>
             </aside>
@@ -95,6 +96,7 @@ const Reiki = () => {
                   className='img-reiki-ventre'
                   alt='Soin Reiki - Apposition des mains sur le ventre'
                   title='Soin Reiki - Apposition des mains sur le ventre'
+                  loading='lazy'
                 />
               </div>
             </aside>
@@ -108,6 +110,7 @@ const Reiki = () => {
                   className='img-reiki-genou'
                   alt='Soin Reiki - Apposition des mains sur le genou'
                   title='Soin Reiki - Apposition des mains sur le genou'
+                  loading='lazy'
                 />
               </div>
             </aside>
@@ -177,6 +180,7 @@ const Reiki = () => {
                   className='img-reiki-tete'
                   alt='Soin Reiki - Apposition des mains sur les pieds'
                   title='Soin Reiki - Apposition des mains sur les pieds'
+                  loading='lazy'
                 />
               </div>
             </aside>

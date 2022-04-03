@@ -45,6 +45,7 @@ const Massage5Continents = () => {
                   className='img-m5c'
                   alt='Massage des 5 Continents'
                   title='logo du Massage des 5 Continents'
+                  loading='lazy'
                 />
               </div>
             </aside>
@@ -118,6 +119,7 @@ const Massage5Continents = () => {
                   className='img-m5c-colonne'
                   alt='Massage des 5 Continents - Massage du haut de la colonne vertébrale'
                   title='Massage des 5 Continents - Massage du haut de la colonne vertébrale'
+                  loading='lazy'
                 />
               </div>
             </aside>
@@ -190,6 +192,7 @@ const Massage5Continents = () => {
                   className='img-m5c-dos'
                   alt='Massage des 5 Continents - Massage du bas du dos'
                   title='Massage des 5 Continents - Massage du bas du dos'
+                  loading='lazy'
                 />
               </div>
             </aside>
@@ -258,6 +261,7 @@ const Massage5Continents = () => {
                   className='img-m5c-bras'
                   alt='Massage des 5 Continents - Massage du bras'
                   title='Massage des 5 Continents - Massage du bras'
+                  loading='lazy'
                 />
               </div>
             </aside>

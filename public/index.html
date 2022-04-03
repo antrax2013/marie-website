@@ -38,6 +38,8 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Amita&display=swap"
       rel="stylesheet"
@@ -56,7 +58,8 @@
       {
         "@context" : "http://schema.org",
         "@type" : "HealthClub",
-        "name" : "Marie COPHIGNON Thérapeute énergétique",
+        "additionalType": "Soins énergétiques",
+        "name" : "Marie COPHIGNON - Thérapeute énergétique",
         "legalName" : "Marie COPHIGNON Thérapeute énergétique",
         "leiCode": "910 427 988 00019",
         "founders": "Marie COPHIGNON",
@@ -85,14 +88,16 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Reiki"
+              "name": "Reiki",
+              "url": "https://marie.cophignon.net/reiki"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Massage des 5 Continents (M5C)"
+              "name": "Massage des 5 Continents (M5C)",
+              "url": "https://marie.cophignon.net/massage-des-5-continents"
             }
           }
         ]
@@ -100,6 +105,56 @@
         }
       }
       </script>
+
+      <script type="application/ld+json">
+        {
+         "@context": "https://schema.org",
+         "@type": "ItemList",
+         "itemListElement": [
+           {
+             "@type": "ListItem",
+             "position": "1",
+             "item": {
+               "@type": "SiteNavigationElement",
+               "url": "https://marie.cophignon.net/qui-suis-je",
+               "name": "Qui suis-je ?",
+               "description": "Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 continents (M5C)... Marie COPHIGNON"
+             }          
+           },
+           {
+             "@type": "ListItem",
+             "position": "2",
+             "item": {
+               "@type": "SiteNavigationElement",
+               "url": "https://marie.cophignon.net/reiki",
+               "name": "reiki",
+               "description": "Le Reiki est un soin énergétique par apposition des mains. Il apporte un  supplément d'énergie à l'organisme et participe au retour à l'équilibre du corps et de l'esprit."
+             }          
+           },
+           {
+             "@type": "ListItem",
+             "position": "3",
+             "item": {
+               "@type": "SiteNavigationElement",
+               "url": "https://marie.cophignon.net/massage-des-5-continents",
+               "name": "Massage des 5 continents (M5C)",
+               "description": "Le massage Des 5 continents (M5C): l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien être."
+             }          
+           },
+           {
+             "@type": "ListItem",
+             "position": "4",
+             "item": {
+               "@type": "SiteNavigationElement",
+               "url": "https://marie.cophignon.net/consultations",
+               "name": "Consultations",
+               "description": "Pour mes consultations, je vous accueille, tous les jeudis au cabinet de Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile sur Saint Quentin en Yvelines."
+             }          
+           }
+         ]
+      
+    }
+    </script>
   </head>
   <body>
     <noscript>Ce site pour fonctionner nécessite l'activation des Javascripts.<br />You

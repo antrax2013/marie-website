@@ -29,6 +29,7 @@ const QuiSuisJe = () => {
                   className='img-qui-suis-je-moi'
                   alt='Marie Cophignon'
                   title='Marie Cophignon'
+                  loading='lazy'
                 />
               </div>
             </aside>
