@@ -11,7 +11,7 @@ const Massage5Continents = () => {
     return (
       <MetaTag
         title='Massage des 5 Continents'
-        description='Le Massage es 5 continents, ou M5C, est un massage combinant différentes méthodes de massages, un soin énergétique Reiki et 
+        description='Le Massage des 5 Continents, ou M5C, est un massage combinant différentes méthodes de massages, un soin énergétique Reiki et 
       des huiles essentielles. Un lâcher prise physique et mental durable.'
         resume="Le Massage des 5 Continents (M5C): l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien être."
       />
