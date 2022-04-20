@@ -5,11 +5,11 @@ import logo from '../assets/logo512.png';
 const Header = () => {
   return (
     <>
-      <nav>
+      <nav itemScope itemType='https://schema.org/SiteNavigationElement'>
         <Menu />
       </nav>
       <article className='title'>
-        <div className='logo'>
+        <div className='logo' itemProp='logo'>
           <img
             alt='une fleur de vie, le logo du site'
             title='une fleur de vie, le logo du site'

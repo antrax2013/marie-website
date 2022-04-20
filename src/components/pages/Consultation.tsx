@@ -111,6 +111,41 @@ const Consultations = () => {
               </p>
             </section>
           </section>
+          <section className='paragraphe-1-2'>
+            <section
+              className='paragraphe-content'
+              itemProp='address'
+              itemScope
+              itemType='https://schema.org/PostalAddress'
+            >
+              <h3>Consultation au siège</h3>
+              <p>
+                Exceptionnellement, je peux vous recevoir au siège de
+                l'entreprise qui se trouve à l'adresse suivante:
+              </p>
+              <ul>
+                <ol>
+                  <span itemProp='streetAddress'>
+                    14, place des Ardennes
+                    <br />
+                    Résidence la Villeparc
+                  </span>
+                </ol>
+                <ol>
+                  <span itemProp='postalCode'>78310</span>{' '}
+                  <span itemProp='addressLocality'>Maurepas</span>
+                </ol>
+              </ul>
+            </section>
+            <aside>
+              <div className='map'>
+                <iframe
+                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1036.03599635786!2d1.941998706708694!3d48.77110700579321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6836f3dee7473%3A0x7e1a20a8e00e22a4!2s14%20Pl.%20des%20Ardennes%2C%2078310%20Maurepas!5e0!3m2!1sfr!2sfr!4v1650452143181!5m2!1sfr!2sfr'
+                  loading='lazy'
+                ></iframe>
+              </div>
+            </aside>
+          </section>
           <ParagraphSeparator />
           <section className='paragraphe-2'>
             <h2>Tarifs et préstations</h2>

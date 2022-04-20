@@ -10,7 +10,21 @@ interface item {
 }
 
 const Menu = ({ ...props }) => {
-  const start = <img alt='logo ' itemProp='logo' src={logo} className='logo' />;
+  const itemTemplate = (item: any, options: any) => {
+    return (
+      <span itemProp='name'>
+        <a
+          itemProp='url'
+          className={options.className}
+          onClick={options.onClick}
+          href={item.url}
+        >
+          <span className={options.labelClassName}>{item.label}</span>
+        </a>
+      </span>
+    );
+  };
+  const start = <img alt='logo' src={logo} className='logo' />;
   const end = () => {
     switch (process.env.REACT_APP_ACTIVERDV || 0) {
       case '1':
@@ -72,9 +86,12 @@ const Menu = ({ ...props }) => {
     return className;
   };
 
-  let items: item[] = [
+  let items: any[] = [
     {
       label: 'Qui suis-je ?',
+      template: (item: any, options: any) => {
+        return itemTemplate(item, options);
+      },
       url: '/qui-suis-je',
       command: () => {
         onClick('qui-suis-je');
@@ -83,6 +100,9 @@ const Menu = ({ ...props }) => {
     },
     {
       label: 'Reiki',
+      template: (item: any, options: any) => {
+        return itemTemplate(item, options);
+      },
       url: '/reiki',
       className: getClassName('reiki'),
       command: () => {
@@ -91,6 +111,9 @@ const Menu = ({ ...props }) => {
     },
     {
       label: 'Massage des 5 Continents',
+      template: (item: any, options: any) => {
+        return itemTemplate(item, options);
+      },
       url: '/massage-des-5-continents',
       className: getClassName('massage-des-5-continents'),
       command: () => {
@@ -99,6 +122,9 @@ const Menu = ({ ...props }) => {
     },
     {
       label: 'Consultations',
+      template: (item: any, options: any) => {
+        return itemTemplate(item, options);
+      },
       url: '/consultations',
       className: getClassName('consultations'),
       command: () => {
@@ -107,6 +133,9 @@ const Menu = ({ ...props }) => {
     },
     {
       label: 'Contact',
+      template: (item: any, options: any) => {
+        return itemTemplate(item, options);
+      },
       url: '/contact',
       className: getClassName('contact'),
       command: () => {
