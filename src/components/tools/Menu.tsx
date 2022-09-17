@@ -12,7 +12,7 @@ interface item {
 const Menu = ({ ...props }) => {
   const itemTemplate = (item: any, options: any) => {
     return (
-      <span itemProp='name'>
+      <span itemProp='name' role='menuitem'>
         <a
           itemProp='url'
           className={options.className}
