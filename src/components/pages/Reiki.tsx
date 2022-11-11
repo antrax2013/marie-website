@@ -187,6 +187,21 @@ const Reiki = () => {
           </section>
           <section className='paragraphe-5'>
             <section className='paragraphe-content'>
+              <h3>
+                Le soin <em>Reiki</em> ciblé
+              </h3>
+              <p>
+                Le soin ciblé est un soin <em>Reiki</em> plus court, 30 minutes
+                environ, qui va à l'essentiel. Il est particulièrement adapté
+                aux troubles d'ordre physique localisés : douleurs de dos, de
+                genoux, de ventre... Il se concentre sur une zone du corps en
+                particulier nécessitant généralement plusieurs séances espacées
+                dans le temps.
+              </p>
+            </section>
+          </section>
+          <section className='paragraphe-5'>
+            <section className='paragraphe-content'>
               <p>
                 Mon savoir-faire, mes qualités d'écoute et d'empathie sont à
                 votre service pour vous accompagner vers le bien-être et la

@@ -146,52 +146,6 @@ const Consultations = () => {
               </div>
             </aside>
           </section>
-          <ParagraphSeparator />
-          <section className='paragraphe-2'>
-            <h2>Tarifs et préstations</h2>
-            <section className='paragraphe-content'>
-              <p>
-                Pour les prestatations à domicile, j'applique une majoration de
-                5€ pour le temps de déplacement et les frais d'essence. Je peux,
-                ponctuellement, consulter en dehors de mon périmètre. Auquel cas
-                appelez moi pour que l'on convienne à l'avance du tarif de la
-                consultation.
-              </p>
-              <p>Règlement par chèque ou espèces</p>
-            </section>
-          </section>
-          <section className='paragraphe-2-1'>
-            <section className='paragraphe-content'>
-              <h3>Soins Reiki</h3>
-              <ul>
-                <li>Au cabinet: 70€</li>
-                <li>A domicile: 75€</li>
-                <li>
-                  Soin à distance <span className='asterix'>*</span>: 60€
-                </li>
-              </ul>
-            </section>
-            <section className='paragraphe-content'>
-              <h3>Massage des 5 Continents</h3>
-              <ul>
-                <li>Au cabinet: 90€</li>
-                <li>A domicile: 95€</li>
-              </ul>
-            </section>
-          </section>
-          <section className='paragraphe-3'>
-            <section className='paragraphe-content'>
-              <p>
-                <i>
-                  <span className='asterix'>*</span> Il est possible, en Reiki,
-                  de faire des soins à distance. Je ne souhaite, cependant, pas
-                  ouvrir cette pratique à tous mes patients. Je la résérve
-                  uniquement aux personnes à qui j'ai déjà fait au moins un
-                  soin.
-                </i>
-              </p>
-            </section>
-          </section>
         </article>
       </div>
     </>

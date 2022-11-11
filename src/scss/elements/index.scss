@@ -228,7 +228,9 @@ footer {
   li {
     text-align: inherit;
   }
-
+  .p-menubar .p-menubar-end {
+    font-size: 0.9em;
+  }
   .App-body {
     flex: unset;
     flex-direction: unset;

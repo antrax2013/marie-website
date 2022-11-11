@@ -67,15 +67,16 @@ const Menu = ({ ...props }) => {
       .replace('/', '')
       .toLowerCase();
 
-    let entires: string[] = [
+    let entries: string[] = [
       'qui-suis-je',
       'reiki',
       'massage-des-5-continents',
       'consultations',
+      'offres',
       'contact',
     ];
 
-    const exists = entires.indexOf(windowPathName) !== -1;
+    const exists = entries.indexOf(windowPathName) !== -1;
 
     if (pathName === windowPathName && exists) {
       return selectedClassName;
@@ -118,6 +119,17 @@ const Menu = ({ ...props }) => {
       className: getClassName('massage-des-5-continents'),
       command: () => {
         onClick('massage-des-5-continents');
+      },
+    },
+    {
+      label: 'Tarifs et Offres',
+      template: (item: any, options: any) => {
+        return itemTemplate(item, options);
+      },
+      url: '/offres',
+      className: getClassName('offres'),
+      command: () => {
+        onClick('offres');
       },
     },
     {

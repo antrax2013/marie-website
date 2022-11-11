@@ -18,6 +18,7 @@ import PolitiqueConfidentialite from './components/pages/Politique-condfidential
 import FooterMenu from './components/tools/Footer-Menu';
 import ScrollButton from './components/tools/Scrollbutton';
 import Consultations from './components/pages/Consultation';
+import Offres from './components/pages/Offres';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
                 element={<Massage5Continents />}
               />
               <Route path='consultations' element={<Consultations />} />
+              <Route path='offres' element={<Offres />} />
               <Route path='contact' element={<Contact />} />
               <Route
                 path='politique-de-confidentialite'

@@ -1,0 +1,75 @@
+@import '../rules/_mixins.scss';
+
+.Offres {
+  article > section {
+    @include article-section;
+    align-items: center;
+  }
+
+  article section aside > div {
+    @include flex-content-center;
+  }
+
+  aside {
+    @include paragraphe-img-container;
+  }
+
+  .paragraphe-1 .paragraphe-content, 
+  .paragraphe-2 .paragraphe-content, 
+  .paragraphe-3 .paragraphe-content,
+  .paragraphe-4 .paragraphe-content
+  .paragraphe-5 .paragraphe-content,
+  .paragraphe-6 .paragraphe-content{
+    @include paragraphe-txt-container;
+  }
+
+  .paragraphe-6 {
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }    
+
+  .paragraphe-6 .paragraphe-content,
+  img.img-carte-cadeau {
+    display: block;
+    width: 100%;
+  }
+
+  .paragraphe-content table th:not(:first-child),
+  .paragraphe-content table td:not(:first-child){
+    text-align: right;
+  }
+
+  .paragraphe-content table {border-collapse: collapse;}
+  .paragraphe-content table td, .paragraphe-content table th {
+    padding: 0px 0.5em;
+  }
+
+  .paragraphe-1  {
+    margin-top: 1rem;
+  }
+}
+
+
+@media (max-width: 427px) {
+  .Offres {
+    .paragraphe-content table td, .paragraphe-content table th {
+      font-size: 0.9em;
+    }
+    .paragraphe-3, .paragraphe-4 {
+      flex-direction: column;
+      align-items: flex-start;
+    }    
+  }
+}
+
+@media (max-width: 768px) {
+  .Offres {
+    .paragraphe-content table td, .paragraphe-content table th {
+      font-size: 0.85em;
+    }
+  }  
+}
+
+
+
