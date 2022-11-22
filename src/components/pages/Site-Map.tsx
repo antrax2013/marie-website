@@ -33,6 +33,9 @@ const SiteMap = () => {
             <a href='/contact'>Contact</a>
           </li>
           <li>
+            <a href='/offres'>Tarifs et Offres</a>
+          </li>
+          <li>
             <a href='/politique-de-confidentialite'>
               Politique de confidentialite
             </a>
