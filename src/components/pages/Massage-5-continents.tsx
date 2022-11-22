@@ -249,8 +249,9 @@ const Massage5Continents = () => {
                   Pour la seconde partie du massage, je masse votre ventre, vos
                   jambes, vos bras, vos mains et le haut du torse. Le déroulé du
                   massage est identique à la première partie: une phase
-                  détoxifiante, une phase relaxante et un soin Reiki. Je conclue
-                  le soin par un massage, doux de votre visage.
+                  détoxifiante, une phase relaxante et un soin énergétique
+                  Reiki. Je conclue le soin par un massage, doux de votre
+                  visage.
                 </li>
               </ul>
             </section>
@@ -280,8 +281,8 @@ const Massage5Continents = () => {
                 leurs bienfaits, l'utilisation de plusieurs huiles essentielles
                 n’est pas anodine. Elles ne sont pas recommandées à tout le
                 monde. Afin de satisfaire un plus grand nombre, il est possible
-                de n'utiliser que des huiles végétales. Je m'adapte à vos
-                contre-indications.
+                de n'utiliser que des huiles végétales. J'adapte mes soins
+                énergétiques à vos contre-indications.
               </p>
             </section>
           </section>

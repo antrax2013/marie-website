@@ -8,9 +8,8 @@ const Offres = () => {
     return (
       <MetaTag
         title={'Tarifs et Offres'}
-        description='Je vous propose, sur Saint Quentin en Yvelines, différentes offres pour mes soins Reiki et Massage des 5 Continents, ou M5C. Venez les découvrir.'
-        resume='Mes offres de soins Reiki et Massage des 5 Continents, ou M5C, sont adaptées au plus près de vos besoins.'
-        forceTitle={true}
+        description='Je vous propose, sur Saint Quentin en Yvelines, différentes offres pour mes soins énergétiques Reiki et Massage des 5 Continents (M5C). Venez les découvrir.'
+        resume='Mes offres de soins énergétiques Reiki et Massage des 5 Continents, ou M5C, sont adaptées au plus près de vos besoins.'
       />
     );
   };
@@ -24,9 +23,41 @@ const Offres = () => {
           <section className='paragraphe-1'>
             <section className='paragraphe-content'>
               <p>
-                Dans cette espace, vous allez retrouver les tarifs, offres et
-                promotions, pour les soins <em>Reiki</em> ou{' '}
+                Dans cette espace, vous allez retrouver mes tarifs, offres et
+                promotions pour mes soins énergétiques <em>Reiki</em> et{' '}
                 <em>Massage des 5 Continents</em> (<em>M5C</em>).
+              </p>
+              <i>Règlement par chèque ou espèces</i>
+              <h2>Les soins energétiques</h2>
+              <ul>
+                <ol>Soins Reiki</ol>
+                <li>
+                  <a href='#reiki-holistique-tarifs'>
+                    Soin énergétique holistique - 01h00
+                  </a>
+                </li>
+                <li>
+                  <a href='#reiki-cible-tarifs'>
+                    Soin énergétique ciblé - 0h30
+                  </a>
+                </li>
+                <ol>Massage des 5 Continents (M5C)</ol>
+                <li>
+                  <a href='#m5c-tarifs'>Massage énergétique - 01h30</a>
+                </li>
+              </ul>
+              <h2>Les offres découvertes et partages</h2>
+              <li>
+                <a href='#parrainage'>Parrainage</a>
+              </li>
+              <li>
+                <a href='#carte-cadeau'>Carte cadeau</a>
+              </li>
+              <p>
+                Mon savoir-faire, mes qualités d'écoute et d'empathie sont à
+                votre service pour vous accompagner durant vos séances. J'adapte
+                mes soins énergétiques à vos besoins et contre-indications,
+                faisant de chaque soin un instant unique. Votre instant.
               </p>
             </section>
           </section>
@@ -35,19 +66,20 @@ const Offres = () => {
           <section className='paragraphe-2'>
             <section className='paragraphe-content'>
               <p>
-                Pour les prestatations à domicile, j'applique une majoration de
-                5€, sur le tarif de la séance, pour le temps de déplacement et
-                les frais d'essence. Je peux, ponctuellement, consulter en
-                dehors de mon périmètre. Auquel cas appelez moi pour que l'on
-                convienne à l'avance du tarif de la consultation.
+                Pour les soins énergétiques à domicile, j'applique une
+                majoration de 5€, sur le tarif de la séance, pour le temps de
+                déplacement et les frais d'essence. Je peux, ponctuellement,
+                consulter en dehors de mon périmètre. Auquel cas appelez moi
+                pour que l'on convienne à l'avance du tarif de la consultation.
               </p>
-              <i>Règlement par chèque ou espèces</i>
             </section>
           </section>
           <h3>Soins Reiki</h3>
-          <section className='paragraphe-3'>
+          <section className='paragraphe-3' id='#reiki-tarifs'>
             <section className='paragraphe-content'>
-              <h4>Soin holistique - 01h00</h4>
+              <h4 id='reiki-holistique-tarifs'>
+                Soin énergétique holistique - 01h00
+              </h4>
               <table>
                 <tr>
                   <th>&nbsp;</th>
@@ -77,7 +109,7 @@ const Offres = () => {
               </table>
             </section>
             <section className='paragraphe-content'>
-              <h4>Soin ciblé - 0h30</h4>
+              <h4 id='reiki-cible-tarifs'>Soin énergétique ciblé - 0h30</h4>
               <table>
                 <tr>
                   <th>&nbsp;</th>
@@ -107,8 +139,8 @@ const Offres = () => {
               </table>
             </section>
           </section>
-          <h4>
-            Soin à distance{' '}
+          <h4 id='#reiki-distance-tarifs'>
+            Soin énergétique à distance{' '}
             <a href='#asterix'>
               <span className='asterix'>*</span>
             </a>
@@ -128,10 +160,10 @@ const Offres = () => {
               </p>
             </section>
           </section>
-          <h3>Massage des 5 Continents (M5C)</h3>
+          <h3 id='m5c-tarifs'>Massage des 5 Continents (M5C)</h3>
           <section className='paragraphe-5'>
             <section className='paragraphe-content'>
-              <h4>Soin - 01h30</h4>
+              <h4>Massage énergétique - 01h30</h4>
               <table>
                 <tr>
                   <th>&nbsp;</th>
@@ -162,12 +194,28 @@ const Offres = () => {
             </section>
           </section>
           <ParagraphSeparator />
-          <h2>Carte cadeau</h2>
+          <h2>Les offres découvertes et partages</h2>
+          <h3 id='parrainage'>Parrainage</h3>
           <section className='paragraphe-6'>
             <section className='paragraphe-content'>
               <p>
-                D'une validté de un an, la carte cadeau est l'idéale pour offir
-                un soin à un proche.
+                Lors de votre soin énergétique, vous recevrez une carte de
+                parrainage à votre nom. Si quelqu'un, lors d'une séance, me
+                remet votre carte, il bénéficiera immédiatement d'une réduction
+                pour le soin énergétique en cours et vous bénéficierez d'une
+                réduction lors votre prochaine séance.
+              </p>
+            </section>
+          </section>
+          <ParagraphSeparator />
+          <h3 id='carte-cadeau'>Carte cadeau</h3>
+          <section className='paragraphe-7'>
+            <section className='paragraphe-content'>
+              <p>
+                D'une validté de un an, la carte cadeau vous permet d'offir un
+                moment de douceur, hors du temps, à de vos proches. Vous
+                choisissez le ou les soins énergétiques dont vous souhaitez
+                faire bénéficier.
               </p>
             </section>
             <aside>

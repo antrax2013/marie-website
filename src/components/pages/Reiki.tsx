@@ -75,9 +75,9 @@ const Reiki = () => {
           <section className='paragraphe-2'>
             <section className='paragraphe-content'>
               <p>
-                Le <em>Reiki</em> est un soin holistique doux qui convient à
-                tous : bébés, enfants, adultes, personnes âgées, les animaux,
-                les plantes...
+                Le <em>Reiki</em> est un soin énergétique holistique doux qui
+                convient à tous : bébés, enfants, adultes, personnes âgées, les
+                animaux, les plantes...
               </p>
               <b>
                 En cas de troubles psychotiques, schizophréniques ou de
@@ -138,15 +138,15 @@ const Reiki = () => {
                 </li>
               </ul>
               <p>
-                Par son approche holisitque le soin <em>Reiki</em> contribue à
-                libérer les blocages et les tensions, renforce le système
-                immunitaire, atténue la douleur et élimine les toxines. Il
-                apporte des bienfaits dans tous les domaines de la vie.
+                Par son approche holisitque le soin énergétique <em>Reiki</em>{' '}
+                contribue à libérer les blocages et les tensions, renforce le
+                système immunitaire, atténue la douleur et élimine les toxines.
+                Il apporte des bienfaits dans tous les domaines de la vie.
               </p>
             </section>
           </section>
           <ParagraphSeparator />
-          <h2>Comment se déroule un soin Reiki ?</h2>
+          <h2>Comment se déroule un soin énergétique Reiki ?</h2>
           <section className='paragraphe-4'>
             <section className='paragraphe-content'>
               <p>
@@ -156,13 +156,13 @@ const Reiki = () => {
               <ul>
                 <li>
                   Nous commençons par un entretien pour échanger, ensemble, sur
-                  les raisons qui vous motivent à recevoir un soin{' '}
+                  les raisons qui vous motivent à recevoir un soin énergétique{' '}
                   <em>Reiki</em>.
                 </li>
                 <li>
-                  Lors du soin, vous êtes habillés, allongés confortablement sur
-                  ma table de soin. Je procède à une série d'appositions douces
-                  des mains sur les différentes parties de votre corps.
+                  Durant la séance, vous êtes habillés, allongés confortablement
+                  sur ma table de soin. Je procède à une série d'appositions
+                  douces des mains sur les différentes parties de votre corps.
                   Laissez-vous aller, lâchez prise. Profitez de cet instant de
                   douceur et de calme, l'énergie du <em>Reiki</em> se diffuse là
                   où vous en avez besoin.
@@ -188,15 +188,15 @@ const Reiki = () => {
           <section className='paragraphe-5'>
             <section className='paragraphe-content'>
               <h3>
-                Le soin <em>Reiki</em> ciblé
+                Le soin énergétique <em>Reiki</em> ciblé
               </h3>
               <p>
-                Le soin ciblé est un soin <em>Reiki</em> plus court, 30 minutes
-                environ, qui va à l'essentiel. Il est particulièrement adapté
-                aux troubles d'ordre physique localisés : douleurs de dos, de
-                genoux, de ventre... Il se concentre sur une zone du corps en
-                particulier nécessitant généralement plusieurs séances espacées
-                dans le temps.
+                Le soin énergétique ciblé est un soin <em>Reiki</em> plus court,
+                d'une durée de 30 minutes environ, qui va à l'essentiel. Il est
+                particulièrement adapté aux troubles d'ordre physique localisés
+                : douleurs de dos, de genoux, de ventre... Il se concentre sur
+                une zone du corps en particulier nécessitant généralement
+                plusieurs séances espacées dans le temps.
               </p>
             </section>
           </section>
@@ -205,7 +205,7 @@ const Reiki = () => {
               <p>
                 Mon savoir-faire, mes qualités d'écoute et d'empathie sont à
                 votre service pour vous accompagner vers le bien-être et la
-                guérison. J'adapte mes soins selon vos besoins.
+                guérison. J'adapte mes soins énergétiques selon vos besoins.
               </p>
             </section>
           </section>

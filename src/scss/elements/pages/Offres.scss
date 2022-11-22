@@ -19,17 +19,18 @@
   .paragraphe-3 .paragraphe-content,
   .paragraphe-4 .paragraphe-content
   .paragraphe-5 .paragraphe-content,
-  .paragraphe-6 .paragraphe-content{
+  .paragraphe-6 .paragraphe-content
+  .paragraphe-7 .paragraphe-content{
     @include paragraphe-txt-container;
   }
 
-  .paragraphe-6 {
+  .paragraphe-7 {
     flex-direction: column;
     align-items: center;
     flex: 1;
   }    
 
-  .paragraphe-6 .paragraphe-content,
+  .paragraphe-7 .paragraphe-content,
   img.img-carte-cadeau {
     display: block;
     width: 100%;
