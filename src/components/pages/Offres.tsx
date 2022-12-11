@@ -48,6 +48,9 @@ const Offres = () => {
               </ul>
               <h2>Les offres découvertes et partages</h2>
               <li>
+                <a href='#decouverte'>Offre découverte</a>
+              </li>
+              <li>
                 <a href='#parrainage'>Parrainage</a>
               </li>
               <li>
@@ -195,15 +198,27 @@ const Offres = () => {
           </section>
           <ParagraphSeparator />
           <h2>Les offres découvertes et partages</h2>
+          <h3 id='parrainage'>Offre découverte</h3>
+          <section className='paragraphe-8'>
+            <section className='paragraphe-content'>
+              <p>
+                Pour votre premier soin énergétique, vous bénéficierez de
+                l'offre découverte. A ce titre une réduction de 10€ sera
+                appliquée lors de votre première séance et ce quelque soit le
+                soin énergétique que vous avez choisi.
+              </p>
+            </section>
+          </section>
+          <ParagraphSeparator />
           <h3 id='parrainage'>Parrainage</h3>
           <section className='paragraphe-6'>
             <section className='paragraphe-content'>
               <p>
                 Lors de votre soin énergétique, vous recevrez une carte de
                 parrainage à votre nom. Si quelqu'un, lors d'une séance, me
-                remet votre carte, il bénéficiera immédiatement d'une réduction
-                pour le soin énergétique en cours et vous bénéficierez d'une
-                réduction lors votre prochaine séance.
+                remet votre carte, il profitera d'une réduction immédiate pour
+                le soin énergétique en cours et vous bénéficierez d'une remise
+                sur votre prochaine séance.
               </p>
             </section>
           </section>
@@ -213,9 +228,7 @@ const Offres = () => {
             <section className='paragraphe-content'>
               <p>
                 D'une validté de un an, la carte cadeau vous permet d'offir un
-                moment de douceur, hors du temps, à de vos proches. Vous
-                choisissez le ou les soins énergétiques dont vous souhaitez
-                faire bénéficier.
+                moment de douceur, hors du temps, à de vos proches.
               </p>
             </section>
             <aside>
