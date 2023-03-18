@@ -69,6 +69,7 @@ const Menu = ({ ...props }) => {
 
     let entries: string[] = [
       'qui-suis-je',
+      'massage-assis-methode-eas',
       'reiki',
       'massage-des-5-continents',
       'consultations',
@@ -100,14 +101,14 @@ const Menu = ({ ...props }) => {
       className: getClassName('qui-suis-je'),
     },
     {
-      label: 'Reiki',
+      label: 'Massage assis méthode EAS®',
       template: (item: any, options: any) => {
         return itemTemplate(item, options);
       },
-      url: '/reiki',
-      className: getClassName('reiki'),
+      url: '/massage-assis-methode-eas',
+      className: getClassName('massage-assis-methode-eas'),
       command: () => {
-        onClick('reiki');
+        onClick('massage-assis-methode-eas');
       },
     },
     {
@@ -119,6 +120,17 @@ const Menu = ({ ...props }) => {
       className: getClassName('massage-des-5-continents'),
       command: () => {
         onClick('massage-des-5-continents');
+      },
+    },
+    {
+      label: 'Reiki',
+      template: (item: any, options: any) => {
+        return itemTemplate(item, options);
+      },
+      url: '/reiki',
+      className: getClassName('reiki'),
+      command: () => {
+        onClick('reiki');
       },
     },
     {

@@ -21,6 +21,9 @@ const SiteMap = () => {
             <a href='/'>Qui suis-je ?</a>
           </li>
           <li>
+            <a href='/massage-assis-methode-eas'>Massage assis méthode EAS®</a>
+          </li>
+          <li>
             <a href='/reiki'>Reiki</a>
           </li>
           <li>

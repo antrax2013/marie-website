@@ -8,8 +8,8 @@ const Offres = () => {
     return (
       <MetaTag
         title={'Tarifs et Offres'}
-        description='Je vous propose, sur Saint Quentin en Yvelines, différentes offres pour mes soins énergétiques Reiki et Massage des 5 Continents (M5C). Venez les découvrir.'
-        resume='Mes offres de soins énergétiques Reiki et Massage des 5 Continents, ou M5C, sont adaptées au plus près de vos besoins.'
+        description='Je vous propose, sur Saint Quentin en Yvelines, différentes offres pour mes soins énergétiques Reiki, massage assis méthode EAS® et Massage des 5 Continents (M5C). Venez les découvrir.'
+        resume='Mes offres de soins énergétiques Reiki, massage assis méthode EAS® et Massage des 5 Continents, ou M5C, sont ajustées au plus près de vos besoins.'
       />
     );
   };
@@ -24,13 +24,37 @@ const Offres = () => {
             <section className='paragraphe-content'>
               <p>
                 Dans cette espace, vous allez retrouver mes tarifs, offres et
-                promotions pour mes soins énergétiques <em>Reiki</em> et{' '}
+                promotions pour mes soins énergétiques <em>Reiki</em>,{' '}
+                <em>massage assis méthode EAS®</em> et{' '}
                 <em>Massage des 5 Continents</em> (<em>M5C</em>).
               </p>
-              <i>Règlement par chèque ou espèces</i>
+              <p>
+                La durée des séances est aproximativement le temps que nous
+                allons consacrer ensemble à votre bien être. Elle comprend à la
+                fois la durée du soin mais également, le temps d'échanges
+                nécessaires à leur bon déroulement. Ce temps, est important. Il
+                me permet de connaitre vos souhaits, vos besoins et déterminer,
+                ensemble, vos éventuelles contre-indications. Ainsi, je peux
+                personnaliser mes soins et m'assurer qu'il vous sera profitable.
+                Dans le cas contraire, il sera plus sage d'annuler la séance.
+              </p>
+              <i>Règlement par chèque ou espèces uniquement.</i>
               <h2>Les soins energétiques</h2>
               <ul>
-                <ol>Soins Reiki</ol>
+                <ol>Les massages energétiques </ol>
+                <li>
+                  <a href='#massage-assis-methode-EAS-tarifs'>
+                    Massage assis méthode EAS® - durée variable
+                  </a>
+                </li>
+                <li>
+                  <a href='#m5c-tarifs'>
+                    Massage des 5 Continents (M5C) - 01h30
+                  </a>
+                </li>
+
+                <br />
+                <ol>Les soins Reiki</ol>
                 <li>
                   <a href='#reiki-holistique-tarifs'>
                     Soin énergétique holistique - 01h00
@@ -41,11 +65,8 @@ const Offres = () => {
                     Soin énergétique ciblé - 0h30
                   </a>
                 </li>
-                <ol>Massage des 5 Continents (M5C)</ol>
-                <li>
-                  <a href='#m5c-tarifs'>Massage énergétique - 01h30</a>
-                </li>
               </ul>
+              <br />
               <h2>Les offres découvertes et partages</h2>
               <li>
                 <a href='#decouverte'>Offre découverte</a>
@@ -69,7 +90,7 @@ const Offres = () => {
           <section className='paragraphe-2'>
             <section className='paragraphe-content'>
               <p>
-                Pour les soins énergétiques à domicile, j'applique une
+                Pour tous mes soins énergétiques à domicile, j'applique une
                 majoration de 5€, sur le tarif de la séance, pour le temps de
                 déplacement et les frais d'essence. Je peux, ponctuellement,
                 consulter en dehors de mon périmètre. Auquel cas appelez moi
@@ -77,6 +98,96 @@ const Offres = () => {
               </p>
             </section>
           </section>
+
+          <h3>Massages énergétiques</h3>
+          <section className='paragraphe-3'>
+            <section className='paragraphe-content'>
+              <h4 id='massage-assis-methode-EAS-tarifs'>
+                Massage assis méthode EAS®
+              </h4>
+              <i>
+                Validation en cours. Ce soin sera disponible avant l'été 2023.
+              </i>
+              <table>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>Cabinet</th>
+                  <th>Domicile</th>
+                  <th colSpan={5}>
+                    Entreprise{' '}
+                    <span className='asterix' id='asterix'>
+                      *
+                    </span>
+                  </th>
+                </tr>
+                <tr>
+                  <td>durée 0h20</td>
+                  <td>20 €</td>
+                  <td>25 €</td>
+                </tr>
+                <tr>
+                  <td>durée 0h35</td>
+                  <td>40 €</td>
+                  <td>45 €</td>
+                </tr>
+                <tr>
+                  <td>durée 0h50</td>
+                  <td>60 €</td>
+                  <td>65 €</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </section>
+            <section className='paragraphe-content'>
+              <h4 id='m5c-tarifs'>Massage des 5 Continents (M5C) - 01h30</h4>
+              <table>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>Cabinet</th>
+                  <th>Domicile</th>
+                </tr>
+                <tr>
+                  <td>à l’unité</td>
+                  <td>90 €</td>
+                  <td>95 €</td>
+                </tr>
+                <tr>
+                  <td>pack 3 soins</td>
+                  <td>260 €</td>
+                  <td>275 €</td>
+                </tr>
+                <tr>
+                  <td>pack 6 soins</td>
+                  <td>500 €</td>
+                  <td>530 €</td>
+                </tr>
+                <tr>
+                  <td>pack 12 soins</td>
+                  <td>990 €</td>
+                  <td>1 050 €</td>
+                </tr>
+              </table>
+            </section>
+          </section>
+          <section className='paragraphe-4'>
+            <section className='paragraphe-content'>
+              <p>
+                <i>
+                  <span className='asterix' id='asterix'>
+                    *
+                  </span>{' '}
+                  Massage assis méthode EAS® en entreprise, tarif de la
+                  prestation sur devis.
+                </i>
+              </p>
+            </section>
+          </section>
+          <br />
+
           <h3>Soins Reiki</h3>
           <section className='paragraphe-3' id='#reiki-tarifs'>
             <section className='paragraphe-content'>
@@ -163,42 +274,9 @@ const Offres = () => {
               </p>
             </section>
           </section>
-          <h3 id='m5c-tarifs'>Massage des 5 Continents (M5C)</h3>
-          <section className='paragraphe-5'>
-            <section className='paragraphe-content'>
-              <h4>Massage énergétique - 01h30</h4>
-              <table>
-                <tr>
-                  <th>&nbsp;</th>
-                  <th>Cabinet</th>
-                  <th>Domicile</th>
-                </tr>
-                <tr>
-                  <td>à l’unité</td>
-                  <td>90 €</td>
-                  <td>95 €</td>
-                </tr>
-                <tr>
-                  <td>pack 3 soins</td>
-                  <td>260 €</td>
-                  <td>275 €</td>
-                </tr>
-                <tr>
-                  <td>pack 6 soins</td>
-                  <td>500 €</td>
-                  <td>530 €</td>
-                </tr>
-                <tr>
-                  <td>pack 12 soins</td>
-                  <td>990 €</td>
-                  <td>1 050 €</td>
-                </tr>
-              </table>
-            </section>
-          </section>
           <ParagraphSeparator />
           <h2>Les offres découvertes et partages</h2>
-          <h3 id='parrainage'>Offre découverte</h3>
+          <h3 id='decouverte'>Offre découverte</h3>
           <section className='paragraphe-8'>
             <section className='paragraphe-content'>
               <p>

@@ -3,7 +3,7 @@
 .Offres {
   article > section {
     @include article-section;
-    align-items: center;
+    align-items: flex-start;;
   }
 
   article section aside > div {

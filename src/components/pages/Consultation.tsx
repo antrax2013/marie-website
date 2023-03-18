@@ -32,14 +32,15 @@ const Consultations = () => {
                 </a>
               </p>
               <p>
-                Le jeudi, j'aurais le plaisir de vous recevoir au cabinet de{' '}
+                Le jeudi, j'aurais le plaisir de vous recevoir au cabinet que je
+                partage avec{' '}
                 <a
                   href='https://www.reflexologie-carolejacob.fr'
                   target='_blank'
                 >
                   Carole Jacob
                 </a>{' '}
-                et d'
+                et{' '}
                 <a
                   href='https://www.annenicolaskinesiologue.com/'
                   target='_blank'
@@ -60,7 +61,7 @@ const Consultations = () => {
               itemType='https://schema.org/PostalAddress'
             >
               <h3>Consultation au cabinet de Guyancourt</h3>
-              <p>Le cabinet se trouve au:</p>
+              <p>Le cabinet se trouve au :</p>
               <ul>
                 <ol>
                   <span itemProp='streetAddress'>1, rue Le Corbusier</span>
@@ -97,6 +98,7 @@ const Consultations = () => {
                 <li>Guyancourt</li>
                 <li>Montigny-le-Bretonneux</li>
                 <li>Voisins-le-Bretonneux</li>
+                <li>Plaisir</li>
               </ul>
               <p>
                 {' '}
@@ -106,8 +108,8 @@ const Consultations = () => {
               <p>
                 Pour travailler dans des conditions optimales, j'ai besoin d'un
                 espace calme et dégagé d'environ 2m&nbsp;x&nbsp;1.5m pour que je
-                puisse déployer ma table de massage et disposer d'assez de place
-                pour tourner autour.
+                puisse installer ma table de massage et disposer d'assez de
+                place pour ciculer autour.
               </p>
             </section>
           </section>
@@ -121,7 +123,7 @@ const Consultations = () => {
               <h3>Consultation au siège</h3>
               <p>
                 Exceptionnellement, je peux vous recevoir au siège de
-                l'entreprise qui se trouve à l'adresse suivante:
+                l'entreprise qui se trouve à l'adresse suivante :
               </p>
               <ul>
                 <ol>

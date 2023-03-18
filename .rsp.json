@@ -2,9 +2,11 @@
   "routes": [
     "/",
     "/qui-suis-je",
-    "/reiki",
+    "/massage-assis-methode-eas",    
     "/massage-des-5-continents",
+    "/reiki",
     "/consultations",
+    "/offres",
     "/contact",
     "/plan-du-site",
     "/politique-de-confidentialite"] 

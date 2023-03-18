@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import QuiSuisJe from './components/pages/Qui-suis-je';
 import Reiki from './components/pages/Reiki';
+import MassageAssisMethodeEAS from './components/pages/Massage-assis-methode-eas';
 import Massage5Continents from './components/pages/Massage-5-continents';
 import Contact from './components/pages/Contact';
 import Footer from './components/Footer';
@@ -33,6 +34,10 @@ function App() {
               <Route path='/' element={<QuiSuisJe />} />
               <Route path='qui-suis-je' element={<QuiSuisJe />} />
               <Route index element={<QuiSuisJe />} />
+              <Route
+                path='massage-assis-methode-eas'
+                element={<MassageAssisMethodeEAS />}
+              />
               <Route path='reiki' element={<Reiki />} />
               <Route
                 path='massage-des-5-continents'

@@ -62,7 +62,7 @@ const QuiSuisJe = () => {
                 Je me suis, dans un premier temps, formée à l'utilisation des
                 huiles essentielles. Puis j'ai rencontré de belles personnes qui
                 m'ont permise de découvrir les soins énergétiques. Elles m'ont
-                donné l'envie, il y a deux ans de me former au{' '}
+                donné l'envie, en 2020, de me former au{' '}
                 <a href='/reiki'>
                   <em>Reiki</em>
                 </a>{' '}
@@ -78,12 +78,22 @@ const QuiSuisJe = () => {
               <p>
                 Le{' '}
                 <a href='/massage-des-5-continents'>
-                  <em>Massage des 5 Continents</em>
+                  <em>Massage des 5 Continents (M5C)</em>
                 </a>{' '}
                 est le complément idéal des pratiques qui me passionnent. M'y
-                former m'est apparu comme une évidence. Il combine à la fois
-                l'utilisation des huiles essentielles, du Reiki et différentes
-                techniques de massage.
+                former, en 2022, m'est apparu comme une évidence. Il combine à
+                la fois l'utilisation des huiles essentielles, du Reiki et
+                différentes techniques de massage.
+              </p>
+              <p>
+                Désireuse d'enrichir mes techniques de massages, je me suis
+                récement formée, début 2023, au{' '}
+                <a href='/massage-assis-methode-eas'>
+                  <em>massage assis méthode EAS®</em>
+                </a>{' '}
+                , un massage énergétique de bien être, relaxant et libérateur.
+                Il s'appuie sur une approche différente que j'aurais plaisir à
+                vous faire découvrir prochainement.
               </p>
             </section>
           </section>
