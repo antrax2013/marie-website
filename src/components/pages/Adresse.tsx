@@ -47,7 +47,7 @@ const Adresse = () => {
         environs{' '}
       </p>
       {process.env.REACT_APP_ACTIVEFB == '1' && (
-        <p>
+        <p className='social-networks'>
           <Button
             className='facebook p-0'
             onClick={() => {
@@ -56,6 +56,15 @@ const Adresse = () => {
           >
             <i className='pi pi-facebook px-2'></i>
             <span className='facebook'>Facebook</span>
+          </Button>
+          <Button
+            className='linkedin p-0'
+            onClick={() => {
+              openInNewTab(process.env.REACT_APP_URLLinkedIn || '');
+            }}
+          >
+            <i className='pi pi-linkedin px-2'></i>
+            <span className='LinkedIn'>LinkedIn</span>
           </Button>
         </p>
       )}

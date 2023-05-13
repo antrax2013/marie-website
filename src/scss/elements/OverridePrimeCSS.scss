@@ -24,7 +24,7 @@ label {
   margin-left: 1rem;
 }
 
-.p-button:not(.facebook):not(.bottom-right-fixed):not(.p-button-secondary) {
+.p-button:not(.facebook):not(.linkedin):not(.bottom-right-fixed):not(.p-button-secondary) {
   background: var(--primary-color) !important;
   border: var(--primary-color) !important;
 }
@@ -33,7 +33,7 @@ label {
   padding: 0.2rem 0.75rem;
 }
 
-nav .p-menuitem .p-menuitem-text {
+nav .p-menuitem .p-menuitem-text, .p-menubar-end {
   font-size: 0.9rem; 
 }
 
@@ -84,4 +84,10 @@ nav .p-menubar-mobile-active .p-menubar-button:active,
 
 .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
   padding: 0.2rem 0.75rem;
+}
+
+@media (min-width: 1024px) and (max-width: 1150px)  {
+  nav .p-menuitem .p-menuitem-text, .p-menubar-end {
+    font-size: 0.75rem; 
+  }
 }

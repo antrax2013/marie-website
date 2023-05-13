@@ -26,7 +26,11 @@
 
   img  {
     @include paragraphe-img;
-  }    
+  }  
+  
+  .img-qui-suis-je-moi{
+    aspect-ratio: auto 320 / 383;
+  }
 }
 
 

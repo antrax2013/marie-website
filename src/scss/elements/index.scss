@@ -13,7 +13,7 @@ body {
 
 p, 
 i:not(.pi),
-span:not(.p-button-label):not(.p-button-icon):not(.facebook):not(.asterix):not(.p-menuitem-text):not(.p-toast-summary):not(.p-toast-message-icon), 
+span:not(.p-button-label):not(.p-button-icon):not(.facebook):not(.linkedin):not(.asterix):not(.p-menuitem-text):not(.p-toast-summary):not(.p-toast-message-icon), 
 td{
   color: var(--text-color) !important;
 }
@@ -126,6 +126,7 @@ nav .logo {
 
 .title .logo img {
   width: 100px;
+  aspect-ratio: auto 100 / 100;
 }
 
 .title h1 {
@@ -212,11 +213,26 @@ footer {
   font-size: 1.1rem;
 }
 
-.facebook span {
+.social-networks {
+  display: flex !important;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.social-networks button {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+.facebook span, .linkedin span {
   color: var(--primary-color-text) !important;
   padding-bottom: 0.1rem;
   padding-left: 0.5rem !important;
   padding-right: 1rem !important;
+}
+
+.linkedin span {
+  background-color: white !important;
+  border: none;
 }
 
 .siret {

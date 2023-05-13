@@ -105,9 +105,9 @@ const Offres = () => {
               <h4 id='massage-assis-methode-EAS-tarifs'>
                 Massage assis méthode EAS®
               </h4>
-              <i>
+              <b>
                 Validation en cours. Ce soin sera disponible avant l'été 2023.
-              </i>
+              </b>
               <table>
                 <tr>
                   <th>&nbsp;</th>
@@ -122,8 +122,8 @@ const Offres = () => {
                 </tr>
                 <tr>
                   <td>durée 0h20</td>
-                  <td>20 €</td>
                   <td>25 €</td>
+                  <td>30 €</td>
                 </tr>
                 <tr>
                   <td>durée 0h35</td>
@@ -131,9 +131,9 @@ const Offres = () => {
                   <td>45 €</td>
                 </tr>
                 <tr>
-                  <td>durée 0h50</td>
-                  <td>60 €</td>
-                  <td>65 €</td>
+                  <td>durée 0h45</td>
+                  <td>50 €</td>
+                  <td>55 €</td>
                 </tr>
                 <tr>
                   <td></td>

@@ -35,7 +35,7 @@ const MassageAssisMethodeEAS = () => {
                 >
                   <b>É</b>cole des <b>A</b>rts du <b>S</b>ouffle (EAS®)
                 </a>{' '}
-                de Nouzonville. Fondé sur des techniques énégertiques de la
+                de Nouzonville. Fondé sur des techniques énegertiques de la
                 médecine traditionnelle chinoise des méridiens et des points
                 shiatsu, il apporte un apaisement profond et durable.
               </p>
@@ -44,10 +44,7 @@ const MassageAssisMethodeEAS = () => {
                 permet de relaxer, détendre et redynamiser rapidement le corps
                 et l'esprit.
               </p>
-              <i>
-                Je suis en train de finaliser le cursus. Ce soin sera disponible
-                avant l'été 2023.
-              </i>
+              <i>Ce soin sera disponible avant l'été 2023.</i>
             </section>
           </section>
           <ParagraphSeparator />
@@ -142,7 +139,7 @@ const MassageAssisMethodeEAS = () => {
               </b>
             </section>
           </section>
-          <ParagraphSeparator />
+          {/* <ParagraphSeparator />
           <h2>Comment se déroule une séance de assage assis méthode EAS® ?</h2>
           <section className='paragraphe-4'>
             <section className='paragraphe-content'>
@@ -178,7 +175,7 @@ const MassageAssisMethodeEAS = () => {
                   alt='Massage des 5 Continents - Massage du bras'
                   title='Massage des 5 Continents - Massage du bras'
                   loading='lazy'
-                /> */}
+                /> * /}
               </div>
             </aside>
           </section>
@@ -197,7 +194,7 @@ const MassageAssisMethodeEAS = () => {
                 contre-indications.
               </p>
             </section>
-          </section>
+          </section> */}
         </article>
       </div>
     </>
