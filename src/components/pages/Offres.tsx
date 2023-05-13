@@ -98,7 +98,6 @@ const Offres = () => {
               </p>
             </section>
           </section>
-
           <h3>Massages énergétiques</h3>
           <section className='paragraphe-3'>
             <section className='paragraphe-content'>
