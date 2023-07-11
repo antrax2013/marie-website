@@ -281,8 +281,8 @@ const Offres = () => {
               <p>
                 Pour votre premier soin énergétique, vous bénéficierez de
                 l'offre découverte. A ce titre une réduction de 10€ sera
-                appliquée lors de votre première séance et ce quelque soit le
-                soin énergétique que vous avez choisi.
+                appliquée lors de votre première séance pour tout soin d'un
+                montant supérieur ou égal à 50€.
               </p>
             </section>
           </section>
