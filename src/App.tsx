@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.css';
@@ -20,26 +20,26 @@ import FooterMenu from './components/tools/Footer-Menu';
 import ScrollButton from './components/tools/Scrollbutton';
 import Consultations from './components/pages/Consultation';
 import Offres from './components/pages/Offres';
-import { Messages } from 'primereact/messages';
+// import { Messages } from 'primereact/messages';
 
 const App = () => {
-  const message: any = useRef(null);
+  // const message: any = useRef(null);
 
-  useEffect(() => {
-    if (
-      message.current &&
-      !JSON.parse(sessionStorage.getItem('hiddeMessage') ?? 'false')
-    ) {
-      message.current.show([
-        {
-          severity: 'info',
-          detail:
-            ' Fermé pour congés annuels du 29/07/2023 au 15/08/2023 inclus',
-          sticky: true,
-        },
-      ]);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (
+  //     message.current &&
+  //     !JSON.parse(sessionStorage.getItem('hiddeMessage') ?? 'false')
+  //   ) {
+  //     message.current.show([
+  //       {
+  //         severity: 'info',
+  //         detail:
+  //           ' Fermé pour congés annuels du 29/07/2023 au 15/08/2023 inclus',
+  //         sticky: true,
+  //       },
+  //     ]);
+  //   }
+  // }, []);
 
   return (
     <div className='App'>
@@ -48,12 +48,12 @@ const App = () => {
           <Header />
         </header>
         <div className='App-cp danger'>
-          <Messages
+          {/* <Messages
             ref={message}
             onRemove={() =>
               sessionStorage.setItem('hiddeMessage', JSON.stringify(true))
             }
-          />
+          /> */}
         </div>
         <div className='App-body'>
           <main className='content'>
