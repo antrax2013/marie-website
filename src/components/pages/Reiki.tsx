@@ -10,11 +10,11 @@ const Reiki = () => {
   const head = () => {
     return (
       <MetaTag
-        title='Soin Reiki'
-        description="Le Reiki est un soin énergétique par apposition des mains. Il apporte un
+        title='Soin Reiki Usui'
+        description="Le Reiki Usui est un soin énergétique par apposition des mains. Il apporte un
         supplément d'énergie à l'organisme et participe au retour à
         l'équilibre du corps et de l'esprit."
-        resume="Le Reiki est un soin énergétique holisitque
+        resume="Le Reiki Usui est un soin énergétique holisitque
         par apposition des mains venant du Japon. Ce n'est pas un massage."
       />
     );
@@ -25,9 +25,9 @@ const Reiki = () => {
       {head()}
       <div className='Reiki'>
         <article>
-          <h1>Reiki</h1>
+          <h1>Reiki Usui</h1>
 
-          <h2>Qu'est-ce que le Reiki ?</h2>
+          <h2>Qu'est-ce que le Reiki Usui ?</h2>
           <section className='paragraphe-1'>
             <aside>
               <div>
@@ -56,28 +56,38 @@ const Reiki = () => {
                 </ol>
               </ul>
               <p>
-                Le <em>Reiki</em> est une méthode d'harmonisation énergétique
-                par apposition des mains. Ce n'est pas un massage. Il apporte un
-                supplément d'énergie à l'organisme et participe au retour à
-                l'équilibre du corps et de l'esprit.
+                Le <em>Reiki Usui</em> est une méthode d'harmonisation
+                énergétique par apposition des mains. Elle a été fondée par le
+                Japonais Mikao Usui à la suite d’une révélation mystique qui
+                l’aurait conduit à la fin du XIX<sup>éme</sup> siècle à recevoir
+                les « clefs de la guérison ».
               </p>
               <p>
+                Ce n'est pas un massage. Il apporte un supplément d'énergie à
+                l'organisme et participe au retour à l'équilibre du corps et de
+                l'esprit.
+              </p>
+            </section>
+          </section>
+          <section>
+            <section>
+              <p>
                 <b>
-                  Un soin <em>Reiki</em>, en aucun cas, ne se substitue à un
-                  traitement médical allopathique. Le <em>Reiki</em> ne soigne
-                  pas, il accompagne vers la guérison.
+                  Un soin <em>Reiki Usui</em>, en aucun cas, ne se substitue à
+                  un traitement médical allopathique. Le <em>Reiki Usui</em> ne
+                  soigne pas, il accompagne vers la guérison.
                 </b>
               </p>
             </section>
           </section>
           <ParagraphSeparator />
-          <h2>Qui peut recevoir du Reiki ?</h2>
+          <h2>Qui peut recevoir du Reiki Usui ?</h2>
           <section className='paragraphe-2'>
             <section className='paragraphe-content'>
               <p>
-                Le <em>Reiki</em> est un soin énergétique holistique doux qui
-                convient à tous : bébés, enfants, adultes, personnes âgées, les
-                animaux, les plantes...
+                Le <em>Reiki Usui</em> est un soin énergétique holistique doux
+                qui convient à tous : bébés, enfants, adultes, personnes âgées,
+                les animaux, les plantes...
               </p>
               <b>
                 En cas de troubles psychotiques, schizophréniques ou de
@@ -94,8 +104,8 @@ const Reiki = () => {
                 <img
                   src={ImgReikiVentre}
                   className='img-reiki-ventre'
-                  alt='Soin Reiki - Apposition des mains sur le ventre'
-                  title='Soin Reiki - Apposition des mains sur le ventre'
+                  alt='Soin Reiki Usui - Apposition des mains sur le ventre'
+                  title='Soin Reiki Usui - Apposition des mains sur le ventre'
                   loading='lazy'
                 />
               </div>
@@ -108,8 +118,8 @@ const Reiki = () => {
                 <img
                   src={ImgReikiGenou}
                   className='img-reiki-genou'
-                  alt='Soin Reiki - Apposition des mains sur le genou'
-                  title='Soin Reiki - Apposition des mains sur le genou'
+                  alt='Soin Reiki Usui - Apposition des mains sur le genou'
+                  title='Soin Reiki Usui - Apposition des mains sur le genou'
                   loading='lazy'
                 />
               </div>
@@ -117,9 +127,9 @@ const Reiki = () => {
             <section className='paragraphe-content'>
               <h2>Pour quelles raisons consulter ?</h2>
               <p>
-                Le <em>Reiki</em> favorise le bien-être physique, émotionnel,
-                psychologique et psychique. Il apporte détente, confort,
-                bien-être et équilibre. Il agit sur :
+                Le <em>Reiki Usui</em> favorise le bien-être physique,
+                émotionnel, psychologique et psychique. Il apporte détente,
+                confort, bien-être et équilibre. Il agit sur :
               </p>
               <ul>
                 <li>Le stress, l'anxiété, le burn-out</li>
@@ -138,26 +148,27 @@ const Reiki = () => {
                 </li>
               </ul>
               <p>
-                Par son approche holisitque le soin énergétique <em>Reiki</em>{' '}
-                contribue à libérer les blocages et les tensions, renforce le
-                système immunitaire, atténue la douleur et élimine les toxines.
-                Il apporte des bienfaits dans tous les domaines de la vie.
+                Par son approche holisitque le soin énergétique{' '}
+                <em>Reiki Usui</em> contribue à libérer les blocages et les
+                tensions, renforce le système immunitaire, atténue la douleur et
+                élimine les toxines. Il apporte des bienfaits dans tous les
+                domaines de la vie.
               </p>
             </section>
           </section>
           <ParagraphSeparator />
-          <h2>Comment se déroule un soin énergétique Reiki ?</h2>
+          <h2>Comment se déroule un soin énergétique Reiki Usui ?</h2>
           <section className='paragraphe-4'>
             <section className='paragraphe-content'>
               <p>
-                Une séance type de <em>Reiki</em> dure environ 1h00 et se
+                Une séance type de <em>Reiki Usui</em> dure environ 1h00 et se
                 déroule en 3 temps :
               </p>
               <ul>
                 <li>
                   Nous commençons par un entretien pour échanger, ensemble, sur
                   les raisons qui vous motivent à recevoir un soin énergétique{' '}
-                  <em>Reiki</em>.
+                  <em>Reiki Usui</em>.
                 </li>
                 <li>
                   Durant la séance, vous êtes habillés, allongés confortablement
@@ -178,8 +189,8 @@ const Reiki = () => {
                 <img
                   src={ImgReikiPied}
                   className='img-reiki-tete'
-                  alt='Soin Reiki - Apposition des mains sur les pieds'
-                  title='Soin Reiki - Apposition des mains sur les pieds'
+                  alt='Soin Reiki Usui - Apposition des mains sur les pieds'
+                  title='Soin Reiki Usui - Apposition des mains sur les pieds'
                   loading='lazy'
                 />
               </div>
@@ -188,15 +199,15 @@ const Reiki = () => {
           <section className='paragraphe-5'>
             <section className='paragraphe-content'>
               <h3>
-                Le soin énergétique <em>Reiki</em> ciblé
+                Le soin énergétique <em>Reiki Usui</em> ciblé
               </h3>
               <p>
-                Le soin énergétique ciblé est un soin <em>Reiki</em> plus court,
-                d'une durée de 30 minutes environ, qui va à l'essentiel. Il est
-                particulièrement adapté aux troubles d'ordre physique localisés
-                : douleurs de dos, de genoux, de ventre... Il se concentre sur
-                une zone du corps en particulier nécessitant généralement
-                plusieurs séances espacées dans le temps.
+                Le soin énergétique ciblé est un soin <em>Reiki Usui</em> plus
+                court, d'une durée de 30 minutes environ, qui va à l'essentiel.
+                Il est particulièrement adapté aux troubles d'ordre physique
+                localisés : douleurs de dos, de genoux, de ventre... Il se
+                concentre sur une zone du corps en particulier nécessitant
+                généralement plusieurs séances espacées dans le temps.
               </p>
             </section>
           </section>

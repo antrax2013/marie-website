@@ -8,8 +8,8 @@ const Offres = () => {
     return (
       <MetaTag
         title={'Tarifs et Offres'}
-        description='Je vous propose, sur Saint Quentin en Yvelines, différentes offres pour mes soins énergétiques Reiki, massage assis méthode EAS® et Massage des 5 Continents (M5C). Venez les découvrir.'
-        resume='Mes offres de soins énergétiques Reiki, massage assis méthode EAS® et Massage des 5 Continents, ou M5C, sont ajustées au plus près de vos besoins.'
+        description='Maitre Reiki Usui, je vous propose, sur Saint Quentin en Yvelines, différentes offres pour mes soins énergétiques Reiki Usui, massage assis méthode EAS® et Massage des 5 Continents (M5C). Venez les découvrir.'
+        resume='Mes offres de soins énergétiques Reiki Usui, massage assis méthode EAS® et Massage des 5 Continents, ou M5C, sont ajustées au plus près de vos besoins.'
       />
     );
   };
@@ -29,14 +29,22 @@ const Offres = () => {
                 <em>Massage des 5 Continents</em> (<em>M5C</em>).
               </p>
               <p>
+                <b>
+                  En aucun cas, un soin énergétique ne se substitue à un
+                  traitement médical allopathique. Mes soins énergétiques ne
+                  soignent pas, ils vous accompagnent vers la guérison.
+                </b>
+              </p>
+              <p>
                 La durée des séances est aproximativement le temps que nous
                 allons consacrer ensemble à votre bien être. Elle comprend à la
                 fois la durée du soin mais également, le temps d'échanges
                 nécessaires à leur bon déroulement. Ce temps, est important. Il
-                me permet de connaitre vos souhaits, vos besoins et déterminer,
-                ensemble, vos éventuelles contre-indications. Ainsi, je peux
-                personnaliser mes soins et m'assurer qu'il vous sera profitable.
-                Dans le cas contraire, il sera plus sage d'annuler la séance.
+                me permet de connaitre vos souhaits, vos besoins et de
+                déterminer, ensemble, vos éventuelles contre-indications. Ainsi,
+                je peux personnaliser mes soins et m'assurer qu'il vous sera
+                profitable. Dans le cas contraire, il sera plus sage d'annuler
+                la séance.
               </p>
               <i>Règlement par chèque ou espèces uniquement.</i>
               <h2>Les soins energétiques</h2>
@@ -54,7 +62,7 @@ const Offres = () => {
                 </li>
 
                 <br />
-                <ol>Les soins Reiki</ol>
+                <ol>Les soins Reiki Usui</ol>
                 <li>
                   <a href='#reiki-holistique-tarifs'>
                     Soin énergétique holistique - 01h00
@@ -104,9 +112,6 @@ const Offres = () => {
               <h4 id='massage-assis-methode-EAS-tarifs'>
                 Massage assis méthode EAS®
               </h4>
-              <b>
-                Validation en cours. Ce soin sera disponible avant l'été 2023.
-              </b>
               <table>
                 <tr>
                   <th>&nbsp;</th>
@@ -187,7 +192,7 @@ const Offres = () => {
           </section>
           <br />
 
-          <h3>Soins Reiki</h3>
+          <h3>Soins Reiki Usui</h3>
           <section className='paragraphe-3' id='#reiki-tarifs'>
             <section className='paragraphe-content'>
               <h4 id='reiki-holistique-tarifs'>
@@ -253,7 +258,7 @@ const Offres = () => {
             </section>
           </section>
           <h4 id='#reiki-distance-tarifs'>
-            Soin énergétique à distance{' '}
+            Soin Reiki Usui à distance{' '}
             <a href='#asterix'>
               <span className='asterix'>*</span>
             </a>
@@ -266,9 +271,9 @@ const Offres = () => {
                   <span className='asterix' id='asterix'>
                     *
                   </span>{' '}
-                  Bien qu'il soit possible, en Reiki, de faire des soins à
+                  Bien qu'il soit possible, en Reiki Usui, de faire des soins à
                   distance. Je ne souhaite pas ouvrir cette pratique à tous mes
-                  patients.
+                  clients.
                 </i>
               </p>
             </section>

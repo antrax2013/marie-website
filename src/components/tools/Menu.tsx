@@ -123,7 +123,7 @@ const Menu = ({ ...props }) => {
       },
     },
     {
-      label: 'Reiki',
+      label: 'Reiki Usui',
       template: (item: any, options: any) => {
         return itemTemplate(item, options);
       },

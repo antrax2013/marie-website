@@ -44,7 +44,10 @@ const MassageAssisMethodeEAS = () => {
                 permet de relaxer, détendre et redynamiser rapidement le corps
                 et l'esprit.
               </p>
-              <i>Ce soin sera disponible avant l'été 2023.</i>
+              <p>
+                De part sa durée ajustable, il est parfaitement adapté au monde
+                de l'entreprise.
+              </p>
             </section>
           </section>
           <ParagraphSeparator />

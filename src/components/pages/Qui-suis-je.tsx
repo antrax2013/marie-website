@@ -8,8 +8,8 @@ const QuiSuisJe = () => {
     return (
       <MetaTag
         title={process.env.REACT_APP_META_MAIN_TILTE || 'Qui suis-je ?'}
-        description='Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 Continents (M5C)... Marie COPHIGNON'
-        resume='Infirmière par vocation, je veux prendre soin des autres, de vous différement. Etre là pour vous.'
+        description='Maitre Reiki Usui, je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki Usui, Massage des 5 Continents (M5C), Massage assis méthode EAS®... Marie COPHIGNON'
+        resume='Infirmière par vocation, Maitre Reiki Usui, je veux prendre soin des autres, de vous différement. Etre là pour vous.'
         forceTitle={true}
       />
     );
@@ -35,7 +35,7 @@ const QuiSuisJe = () => {
             </aside>
             <section className='paragraphe-content'>
               <p>
-                Infirmière par vocation depuis 17 ans, mon métier de cœur, j’ai
+                Infirmière par vocation depuis 18 ans, mon métier de cœur, j’ai
                 pris la décision de prendre soin des autres différemment.
                 Prendre soin des autres, pour moi, c'est prendre le temps, être
                 à l’écoute, être pleinement disponible pour pouvoir accompagner
@@ -47,7 +47,7 @@ const QuiSuisJe = () => {
                 alternatives: l’hypnose, la réflexologie, la naturopathie, les
                 huiles essentielles, l’homéopathie, le{' '}
                 <a href='/reiki'>
-                  <em>Reiki</em>
+                  <em>Reiki Usui</em>
                 </a>{' '}
                 … J'y ai trouvé un réel soulagement. Cela m’a fait prendre
                 conscience que l’on pouvait prendre soin de soi, et des autres,
@@ -61,11 +61,21 @@ const QuiSuisJe = () => {
               <p>
                 Je me suis, dans un premier temps, formée à l'utilisation des
                 huiles essentielles. Puis j'ai rencontré de belles personnes qui
-                m'ont permise de découvrir les soins énergétiques. Elles m'ont
+                m'ont permises de découvrir les soins énergétiques. Elles m'ont
                 donné l'envie, en 2020, de me former au{' '}
                 <a href='/reiki'>
-                  <em>Reiki</em>
+                  <em>Reiki Usui</em>
+                </a>
+                . Par la suite, j'ai reçu l'initiation du second degré de{' '}
+                <a href='/reiki'>
+                  <em>Reiki Usui</em>
                 </a>{' '}
+                en 2021. Puis, en septembre 2023, j'ai reçu la dernière
+                initiation de{' '}
+                <a href='/reiki'>
+                  <em>Reiki Usui</em>
+                </a>
+                , le 3<sup>éme</sup> degré dit degré des Maîtres.
               </p>
               <p>
                 Les huiles essentielles et le{' '}
@@ -92,8 +102,12 @@ const QuiSuisJe = () => {
                   <em>massage assis méthode EAS®</em>
                 </a>{' '}
                 , un massage énergétique de bien être, relaxant et libérateur.
-                Il s'appuie sur une approche différente que j'aurais plaisir à
-                vous faire découvrir prochainement.
+                Il s'appuie sur une approche très différente de celle du{' '}
+                <a href='/massage-des-5-continents'>
+                  <em>Massage des 5 Continents (M5C)</em>
+                </a>
+                . De part sa durée ajustable, il est parfaitement adapté au
+                monde de l'entreprise.
               </p>
             </section>
           </section>
