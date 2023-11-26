@@ -90,19 +90,18 @@ header {
   background-color:#1F1B17;
   height: 40vh;
   align-items: flex-start;
-}
 
-header article {
-  background-image: url("../../assets/background-header.png");
-  background-size: contain;
-  background-position: right bottom;
-  width: 100%;
-  height: 75%;
-  background-repeat: no-repeat;
-}
-
-header nav {
-  width: 100%;
+  article {
+    background-image: url("../../assets/background-header.png");
+    background-size: contain;
+    background-position: right bottom;
+    width: 100%;
+    height: 75%;
+    background-repeat: no-repeat;
+  }
+  nav {
+    width: 100%;
+  }
 }
 
 nav .logo {
@@ -117,23 +116,24 @@ nav .logo {
   justify-content: left; 
   padding-left: 4rem;
   font-size: 1.1rem;
+
+  h1 {
+    color: var(--secondary-color) !important;
+    text-align: left;
+    flex: 5;
+  }
+
+  .logo {
+    flex: 1;
+    padding-top: 2.7rem
+
+    img {
+      width: 100px;
+      aspect-ratio: auto 100 / 100;
+    }
+  }
 }
 
-.title .logo {
-  flex: 1;
-  padding-top: 2.7rem
-}
-
-.title .logo img {
-  width: 100px;
-  aspect-ratio: auto 100 / 100;
-}
-
-.title h1 {
-  color: var(--secondary-color) !important;
-  text-align: left;
-  flex: 5;
-}
 
 main.content {
   flex: 4 1;
@@ -148,6 +148,11 @@ aside.content {
 
 article {
   padding-bottom: 1rem;
+
+  section aside {
+    flex: 1 1;
+    align-items: center;
+  }
 }
 
 article:not(.title) h1:not(.aside) {
@@ -158,11 +163,6 @@ article:not(.title) h1:not(.aside) {
   left: -0.6rem;
 }
 
-article section aside {
-  flex: 1 1;
-  align-items: center;
-}
-
 .article-footer {
   background-color: var(--background-color);
   padding-bottom: 1.5rem;
@@ -170,16 +170,17 @@ article section aside {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  section {
+    margin: 0rem 1rem 1.5rem;
+    padding: 0 1rem;
+  }
+
+  button span { 
+    font-size: 0.8rem;
+  }
 }
 
-.article-footer section {
-  margin: 0rem 1rem 1.5rem;
-  padding: 0 1rem;
-}
-
-.article-footer button span { 
-  font-size: 0.8rem;
-}
 
 footer {
   background-color: var(--shadow-ligth);
@@ -192,8 +193,6 @@ footer {
   width: 100%;
   display: flex;
 }
-
-
 
 .bottom-right-fixed {
   position: fixed !important;
@@ -217,23 +216,42 @@ footer {
   display: flex !important;
   flex-flow: row wrap;
   justify-content: space-around;
-}
-.social-networks button {
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
+
+  button {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+
+    span {
+      padding-bottom: 0.1rem;
+      padding-left: 0.5rem !important;
+      padding-right: 1rem !important;
+      background-color: white !important;
+      border: none;
+      color: black !important;
+    }
+
+    span:hover {
+      background-color: #fafafa !important;
+      font-weight: bold;
+    }
+  }
+  .twitter {
+    background-color: black !important;
+    border-color: black !important;  
+  }
+  .twitter:hover {
+    background-color: #333 !important;    
+  }  
+  .instagram {
+    background: linear-gradient(45deg, rgb(244,185,15) 0%,rgb(183,3,160) 50%) !important;  
+    border-color: #DB6F49 !important;
+  }
+  .instagram:hover {
+    background: linear-gradient(45deg, rgba(244,185,15,0.5) 0%,rgba(183,3,160,0.5) 50%) !important;    
+  }
 }
 
-.facebook span, .linkedin span {
-  color: var(--primary-color-text) !important;
-  padding-bottom: 0.1rem;
-  padding-left: 0.5rem !important;
-  padding-right: 1rem !important;
-}
 
-.linkedin span {
-  background-color: white !important;
-  border: none;
-}
 
 .siret {
   font-size: 0.75em;
