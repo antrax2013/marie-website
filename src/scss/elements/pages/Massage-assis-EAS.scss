@@ -1,6 +1,6 @@
 @import '../rules/_mixins.scss';
 
-.Reiki {
+.MA-EAS {
   article > section {
     @include article-section;
   }
@@ -14,28 +14,19 @@
   }
 
   .paragraphe-1 .paragraphe-content {
-    flex: 7 1;
+    flex: 4 1;
   }
 
   .paragraphe-1 .paragraphe-content ol i {
     color: var(--primary-color) !important;
   }
 
-  .paragraphe-2 .paragraphe-content, 
-  .paragraphe-3 .paragraphe-content, 
-  .paragraphe-4 .paragraphe-content {
+  .paragraphe-2-2 .paragraphe-content, 
+  .paragraphe-3-2 .paragraphe-content {
     @include paragraphe-txt-container;
   }
-
-  .paragraphe-3 .paragraphe-content  {
-    margin-left: 1rem;
-  }
-
-  .img-eas-chaise {
-    width: 70%;
-  }
   
-  img:not(.img-eas-chaise)  {
+  img  {
     @include paragraphe-img;
   }    
 }
@@ -43,22 +34,20 @@
 
 
 @media (max-width: 1024px) {
-  .Reiki {
+  .MA-EAS {
       article section {
       flex-direction: column;
     }
-    .paragraphe-3 {
-      flex-direction: column-reverse !important;
-    }
+    
     .img-eas-chaise {
-      width: 12%;
+      width: 50%;
     }
   }
 }
 
 
 @media (min-width: 1025px) {
-  .Reiki aside {
+  .MA-EAS aside {
     flex-direction: inherit;
   }
 }
