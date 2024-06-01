@@ -1,4 +1,3 @@
-import React from 'react';
 import { Menubar } from 'primereact/menubar';
 import logo from '../../assets/logo512.png';
 
@@ -10,7 +9,7 @@ interface item {
 }
 
 const Menu = ({ ...props }) => {
-	const itemTemplate = (item: any, options: any) => {
+	const itemTemplate = (item: item, options: any) => {
 		return (
 			<span itemProp='name' role='menuitem'>
 				<a

@@ -11,6 +11,7 @@
     "@types/node": "^16.11.21",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@types/react-lazy-load-image-component": "^1.6.4",
     "formik": "^2.2.9",
     "path": "^0.12.7",
     "primeflex": "^3.1.2",
@@ -19,6 +20,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-lazy-load-image-component": "^1.6.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-spa-prerender": "^1.0.14",
@@ -34,7 +36,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "compile-sass": "sass --watch src/scss/elements/:public/css --no-source-map -s compressed",
-    "postbuild":"react-spa-prerender"
+    "postbuild": "react-spa-prerender"
   },
   "eslintConfig": {
     "extends": [

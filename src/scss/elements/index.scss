@@ -92,7 +92,8 @@ header {
   align-items: flex-start;
 
   article {
-    background-image: url("../../assets/background-header.png");
+    --background-image-lazy: url("../../assets/background-header.png");
+    background-image: var(--background-image-lazy);
     background-size: contain;
     background-position: right bottom;
     width: 100%;
@@ -134,6 +135,9 @@ nav .logo {
   }
 }
 
+.lazy-load-image-background {
+  display: contents;
+}
 
 main.content {
   flex: 4 1;
