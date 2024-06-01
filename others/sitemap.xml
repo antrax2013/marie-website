@@ -7,7 +7,7 @@
 
 <url>
   <loc>https://marie.cophignon.net/</loc>
-  <lastmod>2023-11-23T11:50:00+00:00</lastmod>
+  <lastmod>2024-06-01T13:00:00+00:00</lastmod>
 </url>
 
 <url>
@@ -32,7 +32,7 @@
 
 <url>
   <loc>https://marie.cophignon.net/consultations</loc>
-  <lastmod>2023-08-16T07:15:00+00:00</lastmod>
+  <lastmod>2024-06-01T13:00:00+00:00</lastmod>
 </url>
 
 <url>
@@ -53,6 +53,11 @@
 <url>
   <loc>https://marie.cophignon.net/plan-du-site</loc>  
   <lastmod>2023-08-16T07:15:00+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://marie.cophignon.net/erreur-404</loc>  
+  <lastmod>2024-06-01T13:00:00+00:00</lastmod>
 </url>
 
 </urlset>
