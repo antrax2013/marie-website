@@ -19,33 +19,42 @@
     color: var(--primary-color) !important;
   }
 
-  .paragraphe-1-2, .paragraphe-2-1 {
-    flex-direction: row;
+  .paragraphe-2-1,
+  .paragraphe-2-2,
+  .paragraphe-2-4 {
+    .section-header, .section-content {
+      display: block;
+      width: 100%;
+    }
+    .section-content > div {
+      display: flex;
+      flex-direction: row;
+      .section-adresse {
+        flex: 1;
+        align-items: stretch;
+        text-align: center;
+      }
+      .section-map {
+        flex: 2;
+        align-items: center;        
+      }
+    }
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;    
   }
 
-  .paragraphe-2-1 {
-    align-items: flex-start;
+  .paragraphe-2-3 { 
+    .paragraphe-content.perimetre li {
+      display: inline-block;
+      width: 50%;
+    }
+    .paragraphe-content ul>li:before {
+      content:"";
+      display: list-item;
+      position: absolute;
+    }  
   }
-
-  .paragraphe-2-1 .paragraphe-content {
-    display: inline-block;
-    width: 45%;
-  }
-
-  .paragraphe-1 {
-    margin-top: 1rem;
-  }
-
-  .paragraphe-1-3 .paragraphe-content.perimetre li {
-    display: inline-block;
-    width: 50%;
-  }
-
-  .paragraphe-1-3 .paragraphe-content ul>li:before {
-    content:"";
-    display: list-item;
-    position: absolute;
-  }  
   
   img  {
     @include paragraphe-img;
@@ -66,9 +75,13 @@
 
 @media (max-width: 426px) {
   .Consultations {
-    .paragraphe-1-2 {
-      flex-direction: column;
-      align-items: inherit !important;
+    .paragraphe-2-1,
+    .paragraphe-2-2,
+    .paragraphe-2-4 {
+      .section-content > div {
+        flex-direction: column;
+        align-items: inherit !important;
+      }
     }
     .map iframe {
       width:250px;
@@ -82,22 +95,15 @@
       flex-direction: column;
     }
 
-    .paragraphe-1-2 {
+    .paragraphe-2-1,
+    .paragraphe-2-2,
+    .paragraphe-2-4 {
       align-items: end;
     }
 
-    .paragraphe-1-3 .paragraphe-content.perimetre li {
+    .paragraphe-2-3 .paragraphe-content.perimetre li {
       display: block !important;
       width: 100%;
-    }
-    .paragraphe-2-1, .paragraphe-2-1 .paragraphe-content ul  {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .paragraphe-2-1 .paragraphe-content
-    {
-      width: unset;
     }
 
     .img-consultations-map {
