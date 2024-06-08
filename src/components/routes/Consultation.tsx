@@ -1,7 +1,6 @@
 import MetaTag from '../tools/MetaTag';
 import ParagraphSeparator from '../tools/Paragraph-Separator';
-import '../../scss/elements/pages/Consultations.scss';
-import PanneauLateral from './Panneau-lateral';
+import '../../scss/routes/Consultations.scss';
 import { Adresse } from '../tools/Adresse';
 
 const Consultations = () => {
@@ -9,7 +8,7 @@ const Consultations = () => {
 		return (
 			<MetaTag
 				title={'Consultations'}
-				description='Pour mes consultations, je vous accueille, tous les lundis au cabinet à Elancourt et les jeudis à Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile sur Saint Quentin en Yvelines.'
+				description='Pour mes consultations, je vous accueille en cabinet, tous les lundis au cabinet à Elancourt et les jeudis à Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile sur Saint Quentin en Yvelines.'
 				resume='Organisation de mes consultations.'
 			/>
 		);
@@ -36,8 +35,8 @@ const Consultations = () => {
 								vendredi de 09h00 à 19h00. Pour prendre rendez-vous, je suis
 								joignable par téléphone au{' '}
 								<span itemProp='telephone'>
-									<a href={`tel:${process.env.REACT_APP_META_NUMTEL}`}>
-										{process.env.REACT_APP_META_NUMTEL}
+									<a href={`tel:${import.meta.env.VITE_META_NUMTEL}`}>
+										{import.meta.env.VITE_META_NUMTEL}
 									</a>
 								</span>
 							</p>

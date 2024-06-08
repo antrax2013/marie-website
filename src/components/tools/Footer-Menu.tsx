@@ -1,6 +1,6 @@
 import { Button } from 'primereact/button';
 
-const FooterMenu = ({ ...props }) => {
+const FooterMenu = (/*{ ...props }*/) => {
 	const onClick = (index: string) => {
 		window.location.pathname = '/' + index;
 	};

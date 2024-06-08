@@ -1,4 +1,4 @@
-interface Address {
+interface iAddress {
 	title?: string;
 	descprition?: string;
 	floor?: string;
@@ -21,8 +21,8 @@ export const Adresse = ({
 	map,
 	latitude,
 	longitude,
-	...props
-}: Address) => {
+}: /*...props*/
+iAddress) => {
 	return (
 		<>
 			<section className='section-header'>

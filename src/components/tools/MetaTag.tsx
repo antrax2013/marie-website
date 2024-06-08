@@ -1,52 +1,58 @@
-import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const MetaTag: React.FC<{
-  title: string;
-  description: string;
-  resume: string;
-  forceTitle?: boolean;
-}> = ({ title, description, resume, forceTitle }) => {
-  const _title: string =
-    forceTitle === true
-      ? title
-      : `${title} - ${process.env.REACT_APP_META_MAIN_TILTE_LIGTH || ''}`;
+interface iMetaTag {
+	title: string;
+	description: string;
+	resume: string;
+	forceTitle?: boolean;
+}
 
-  const meta: any[] = [
-    {
-      name: `description`,
-      content: description,
-    },
-    //Open tags pour Faceboock et messenger
-    {
-      property: `og:title`,
-      content: _title,
-    },
-    {
-      property: `og:description`,
-      content: description,
-    },
-    //Twitter
-    {
-      property: `twitter:card`,
-      content: resume,
-    },
-    {
-      property: `twitter:title`,
-      content: _title,
-    },
-    {
-      property: `twitter:description`,
-      content: description,
-    },
-    ,
-    {
-      itemprop: `description`,
-      content: description,
-    },
-  ];
+interface iMeta {
+	name?: string;
+	content: string;
+	property?: string;
+	itemprop?: string;
+}
 
-  return <Helmet title={_title.toString()} meta={meta} />;
+const MetaTag = ({ title, description, resume, forceTitle }: iMetaTag) => {
+	const _title: string =
+		forceTitle === true
+			? title
+			: `${title} - ${import.meta.env.VITE_META_MAIN_TITLE_LIGTH || ''}`;
+
+	const meta = [
+		{
+			name: `description`,
+			content: description,
+		},
+		{
+			//Open tags pour Faceboock et messenger
+			property: `og:title`,
+			content: _title,
+		},
+		{
+			property: `og:description`,
+			content: description,
+		},
+		{
+			property: `twitter:card`,
+			content: resume,
+		},
+		{
+			property: `twitter:title`,
+			content: _title,
+		},
+		{
+			property: `twitter:description`,
+			content: description,
+		},
+		{
+			itemprop: `description`,
+			content: description,
+		},
+	] as iMeta[];
+
+	return <Helmet title={_title.toString()} meta={meta} />;
 };
 
 export default MetaTag;

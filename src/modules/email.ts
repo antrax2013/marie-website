@@ -12,10 +12,11 @@ export interface IMail {
 export class Email {
 
   public static sendEmail = async (email : IMail) => {
-    init("user_IqJ4It0DMUudiOwBRh7dM");
+    const userId :string = import.meta.env.VITE_USER_MAIL_ID;
+    init(userId);
     return emailjs.send(
-      process.env.REACT_APP_SERVICE_MAIL_ID??"service_tcd76lf",
-      process.env.REACT_APP_TEMPLATE_MAIL_ID??"template_moufnqi",
+      import.meta.env.VITE_SERVICE_MAIL_ID,
+      import.meta.env.VITE_TEMPLATE_MAIL_ID,
       {
         from_name: email.to_name,
         to_name: email.to_name,
@@ -24,7 +25,7 @@ export class Email {
         subject:email.subject,
         telephone:email.tel
       },
-      process.env.REACT_APP_USER_MAIL_ID??"user_IqJ4It0DMUudiOwBRh7dM");
+      userId);
   };
   
 }

@@ -2,7 +2,7 @@ import ParagraphSeparator from '../tools/Paragraph-Separator';
 import ImgMA_EAS from '../../assets/Massage-assis-EAS/massage-assis-eas-chaise.png';
 import ImgMA_EAS_Cou from '../../assets/Massage-assis-EAS/massage-assis-eas-cou.png';
 import ImgMA_EAS_Lombaires from '../../assets/Massage-assis-EAS/massage-assis-eas-lombaires.png';
-import '../../scss/elements/pages/Massage-assis-EAS.scss';
+import '../../scss/routes/Massage-assis-EAS.scss';
 import MetaTag from '../tools/MetaTag';
 
 const MassageAssisMethodeEAS = () => {

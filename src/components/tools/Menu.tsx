@@ -1,15 +1,9 @@
 import { Menubar } from 'primereact/menubar';
 import logo from '../../assets/logo512.png';
-
-interface item {
-	label: string;
-	command: () => void;
-	className: string;
-	url: string;
-}
+import { MenuItem, MenuItemOptions } from 'primereact/menuitem';
 
 const Menu = ({ ...props }) => {
-	const itemTemplate = (item: item, options: any) => {
+	const itemTemplate = (item: MenuItem, options: MenuItemOptions) => {
 		return (
 			<span itemProp='name' role='menuitem'>
 				<a
@@ -25,11 +19,11 @@ const Menu = ({ ...props }) => {
 	};
 	const start = <img alt='logo' src={logo} className='logo' />;
 	const end = () => {
-		switch (process.env.REACT_APP_ACTIVERDV || 0) {
+		switch (import.meta.env.VITE_ACTIVERDV || 0) {
 			case '1':
 				return (
 					<a
-						href={process.env.REACT_APP_URLRDV}
+						href={import.meta.env.VITE_URLRDV}
 						rel='external'
 						target={'_blank'}
 					>
@@ -42,11 +36,11 @@ const Menu = ({ ...props }) => {
 					<>
 						Prendre rendez-vous :{' '}
 						<a
-							href={'tel:' + process.env.REACT_APP_META_NUMTEL}
+							href={'tel:' + import.meta.env.VITE_META_NUMTEL}
 							rel='external'
 							target={'_blank'}
 						>
-							{process.env.REACT_APP_META_NUMTEL}
+							{import.meta.env.VITE_META_NUMTEL}
 						</a>
 					</>
 				);
@@ -69,7 +63,7 @@ const Menu = ({ ...props }) => {
 			.replace('/', '')
 			.toLowerCase();
 
-		let entries: string[] = [
+		const entries: string[] = [
 			'qui-suis-je',
 			'massage-assis-methode-eas',
 			'reiki',
@@ -90,10 +84,10 @@ const Menu = ({ ...props }) => {
 		return className;
 	};
 
-	let items: any[] = [
+	const items: MenuItem[] = [
 		{
 			label: 'Qui suis-je ?',
-			template: (item: any, options: any) => {
+			template: (item: MenuItem, options: MenuItemOptions) => {
 				return itemTemplate(item, options);
 			},
 			url: '/qui-suis-je',
@@ -104,7 +98,7 @@ const Menu = ({ ...props }) => {
 		},
 		{
 			label: 'Massage assis méthode EAS®',
-			template: (item: any, options: any) => {
+			template: (item: MenuItem, options: MenuItemOptions) => {
 				return itemTemplate(item, options);
 			},
 			url: '/massage-assis-methode-eas',
@@ -115,7 +109,7 @@ const Menu = ({ ...props }) => {
 		},
 		{
 			label: 'Massage des 5 Continents',
-			template: (item: any, options: any) => {
+			template: (item: MenuItem, options: MenuItemOptions) => {
 				return itemTemplate(item, options);
 			},
 			url: '/massage-des-5-continents',
@@ -126,7 +120,7 @@ const Menu = ({ ...props }) => {
 		},
 		{
 			label: 'Reiki Usui',
-			template: (item: any, options: any) => {
+			template: (item: MenuItem, options: MenuItemOptions) => {
 				return itemTemplate(item, options);
 			},
 			url: '/reiki',
@@ -137,7 +131,7 @@ const Menu = ({ ...props }) => {
 		},
 		{
 			label: 'Tarifs et Offres',
-			template: (item: any, options: any) => {
+			template: (item: MenuItem, options: MenuItemOptions) => {
 				return itemTemplate(item, options);
 			},
 			url: '/offres',
@@ -148,7 +142,7 @@ const Menu = ({ ...props }) => {
 		},
 		{
 			label: 'Consultations',
-			template: (item: any, options: any) => {
+			template: (item: MenuItem, options: MenuItemOptions) => {
 				return itemTemplate(item, options);
 			},
 			url: '/consultations',
@@ -159,7 +153,7 @@ const Menu = ({ ...props }) => {
 		},
 		{
 			label: 'Contact',
-			template: (item: any, options: any) => {
+			template: (item: MenuItem, options: MenuItemOptions) => {
 				return itemTemplate(item, options);
 			},
 			url: '/contact',
