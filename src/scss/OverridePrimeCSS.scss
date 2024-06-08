@@ -54,7 +54,8 @@ nav .p-menuitem:not(.selected) .p-menuitem-text {
 }
 
 nav .p-menuitem.selected .p-menuitem-text {
-  color: var(--secondary-color) !important;
+  color: var(--text-color) !important;
+  border-bottom: 0.08em solid var(--primary-color) !important;
 }
 
 .bottom-right-fixed:hover,

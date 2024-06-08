@@ -1,67 +1,43 @@
 {
-  "name": "website",
-  "version": "1.1.0",
+  "name": "marie-cophignon-net",
   "private": true,
-  "dependencies": {
-    "@emailjs/browser": "^3.4.0",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.4.0",
-    "@types/node": "^16.11.21",
-    "@types/react": "^17.0.38",
-    "@types/react-dom": "^17.0.11",
-    "@types/react-lazy-load-image-component": "^1.6.4",
-    "formik": "^2.2.9",
-    "path": "^0.12.7",
-    "primeflex": "^3.1.2",
-    "primeicons": "^5.0.0",
-    "primereact": "^7.2.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-lazy-load-image-component": "^1.6.0",
-    "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.0",
-    "react-spa-prerender": "^1.0.14",
-    "react-transition-group": "^4.4.2",
-    "sass": "^1.49.4",
-    "typescript": "^4.5.5",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "2.0.0",
+  "type": "module",
   "scripts": {
-    "start": "start npm run compile-sass && react-scripts start",
-    "old-start": "react-app-rewired start --scripts-version react-scripts-ts",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "compile-sass": "sass --watch src/scss/elements/:public/css --no-source-map -s compressed",
+    "dev": "vite",
+    "dev:sass": "start npm run compile-sass && vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "compile-sass": "sass --watch src/scss/:public/css --no-source-map -s compressed",
     "postbuild": "react-spa-prerender"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "@types/react-helmet": "^6.1.11",
+    "@types/react-router-hash-link": "^2.4.9",
+    "formik": "^2.4.6",
+    "primeflex": "^3.3.1",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.6.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.23.1",
+    "react-router-hash-link": "^2.4.3"
   },
   "devDependencies": {
-    "@types/react-helmet": "^6.1.5",
-    "copy-webpack-plugin": "^10.2.2",
-    "react-app-rewired": "^2.2.1",
-    "webpack": "^5.67.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.3"
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "react-spa-prerender": "^1.0.14",
+    "sass": "^1.77.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
   }
 }

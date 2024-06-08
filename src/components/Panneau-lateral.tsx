@@ -1,5 +1,6 @@
 import { Button } from 'primereact/button';
-import openInNewTab from '../tools/OpenInNewTab';
+import { HashLink as Link } from 'react-router-hash-link';
+import openInNewTab from './tools/OpenInNewTab';
 
 const PanneauLateral = () => {
 	return (
@@ -21,8 +22,8 @@ const PanneauLateral = () => {
 				<p>
 					<span itemProp='telephone'>
 						Tél :{' '}
-						<a href={`tel:${process.env.REACT_APP_META_NUMTEL}`}>
-							{process.env.REACT_APP_META_NUMTEL}
+						<a href={`tel:${import.meta.env.VITE_META_NUMTEL}`}>
+							{import.meta.env.VITE_META_NUMTEL}
 						</a>
 					</span>
 				</p>
@@ -36,9 +37,14 @@ const PanneauLateral = () => {
 					>
 						Le lundi à{' '}
 						<span itemProp='addressLocality'>
-							<a href='/consultations#elancourt'>Elancourt</a>
-						</span>{' '}
-						(<span itemProp='postalCode'>78990</span>)
+							<Link
+								to='/consultations#elancourt'
+								title='Lien vers l’adresse du cabinet d’Elancourt'
+							>
+								Elancourt
+							</Link>{' '}
+							(<span itemProp='postalCode'>78990</span>)
+						</span>
 					</p>
 				</div>
 				<div>
@@ -50,8 +56,13 @@ const PanneauLateral = () => {
 					>
 						Le jeudi à{' '}
 						<span itemProp='addressLocality'>
-							<a href='/consultations#guyancourt'>Guyancourt</a> (
-							<span itemProp='postalCode'>78280</span>)
+							<Link
+								to='/consultations#guyancourt'
+								title='Lien vers l’adresse du cabinet de Guyancourt'
+							>
+								Guyancourt
+							</Link>{' '}
+							(<span itemProp='postalCode'>78280</span>)
 						</span>
 					</p>
 				</div>
@@ -64,12 +75,12 @@ const PanneauLateral = () => {
 				</p>
 			</div>
 			<div>
-				{process.env.REACT_APP_ACTIVEFB == '1' && (
+				{import.meta.env.VITE_ACTIVEFB == '1' && (
 					<p className='social-networks'>
 						<Button
 							className='facebook p-0'
 							onClick={() => {
-								openInNewTab(process.env.REACT_APP_URLFB || '');
+								openInNewTab(import.meta.env.VITE_URLFB || '');
 							}}
 						>
 							<i className='pi pi-facebook px-2'></i>
@@ -78,7 +89,7 @@ const PanneauLateral = () => {
 						<Button
 							className='twitter p-0'
 							onClick={() => {
-								openInNewTab(process.env.REACT_APP_URLTwitter || '');
+								openInNewTab(import.meta.env.VITE_URLTwitter || '');
 							}}
 						>
 							<i className='pi pi-twitter px-2'></i>
@@ -87,7 +98,7 @@ const PanneauLateral = () => {
 						<Button
 							className='instagram p-0'
 							onClick={() => {
-								openInNewTab(process.env.REACT_APP_URLInstagram || '');
+								openInNewTab(import.meta.env.VITE_URLInstagram || '');
 							}}
 						>
 							<i className='pi pi-instagram px-2'></i>
@@ -96,7 +107,7 @@ const PanneauLateral = () => {
 						<Button
 							className='linkedin p-0'
 							onClick={() => {
-								openInNewTab(process.env.REACT_APP_URLLinkedIn || '');
+								openInNewTab(import.meta.env.VITE_URLLinkedIn || '');
 							}}
 						>
 							<i className='pi pi-linkedin px-2'></i>

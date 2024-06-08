@@ -1,14 +1,5 @@
 import MetaTag from '../tools/MetaTag';
 
-interface ierror {
-	nom?: string;
-	email?: string;
-	prenom?: string;
-	telephone?: string;
-	message?: string;
-	sujet?: string;
-}
-
 export const Error404 = () => {
 	const head = () => {
 		return (

@@ -1,29 +1,27 @@
-import React from 'react';
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.css';
-import './scss/elements/OverridePrimeCSS.scss';
+import './scss/OverridePrimeCSS.scss';
 import 'primeflex/primeflex.css';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
-import Header from './components/Header';
-import QuiSuisJe from './components/pages/Qui-suis-je';
-import Reiki from './components/pages/Reiki';
-import MassageAssisMethodeEAS from './components/pages/Massage-assis-methode-eas';
-import Massage5Continents from './components/pages/Massage-5-continents';
-import Contact from './components/pages/Contact';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
-import PanneauLateral from './components/pages/Panneau-lateral';
-import PlanDuSite from './components/pages/Site-Map';
-import PolitiqueConfidentialite from './components/pages/Politique-condfidentialite';
+import Header from './components/Header';
+import Consultations from './components/routes/Consultation';
+import Contact from './components/routes/Contact';
+import { Error404 } from './components/routes/Error404';
+import Massage5Continents from './components/routes/Massage-5-continents';
+import MassageAssisMethodeEAS from './components/routes/Massage-assis-methode-eas';
+import Offres from './components/routes/Offres';
+import PanneauLateral from './components/Panneau-lateral';
+import PolitiqueConfidentialite from './components/routes/Politique-condfidentialite';
+import QuiSuisJe from './components/routes/Qui-suis-je';
+import Reiki from './components/routes/Reiki';
 import FooterMenu from './components/tools/Footer-Menu';
 import ScrollButton from './components/tools/Scrollbutton';
-import Consultations from './components/pages/Consultation';
-import Offres from './components/pages/Offres';
-import { Error404 } from './components/pages/Error404';
-// import { Messages } from 'primereact/messages';
+import PlanDuSite from './components/routes/Site-Map';
 
-const App = () => {
+function App() {
 	// const message: any = useRef(null);
 
 	// useEffect(() => {
@@ -97,6 +95,6 @@ const App = () => {
 			</footer>
 		</div>
 	);
-};
+}
 
 export default App;

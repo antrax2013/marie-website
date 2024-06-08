@@ -92,7 +92,7 @@ header {
   align-items: flex-start;
 
   article {
-    --background-image-lazy: url("../../assets/background-header.png");
+    --background-image-lazy: url("../assets/background-header.png");
     background-image: var(--background-image-lazy);
     background-size: contain;
     background-position: right bottom;
@@ -232,6 +232,8 @@ footer {
       background-color: white !important;
       border: none;
       color: black !important;
+      display: inline-block;
+      width: 90px;
     }
 
     span:hover {
@@ -312,9 +314,12 @@ footer {
   .title {
     align-items:unset;
     padding-left: 2rem;
+    .logo {
+      display: none;
+    }
   }
-  .title .logo {
-    display: none;
+  header {
+    height: 37vh;
   }
 }
 @media (min-width: 770px) {
@@ -326,15 +331,24 @@ footer {
   }
 }
 
-@media (min-width: 426px) and (max-width: 1024px) {
+@media (min-width: 426px) and (max-width: 1023px) {
   aside.content ul {
     padding-left: 0 ;
-  }  
+  }
+  .title {
+    h1:not(.aside) {
+      margin-top: 0.7em;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
-  .title .logo img {
-    width: 150px;
+  .title {
+    .logo img {
+      padding-top: 0.85em;
+      width: 150px;
+    }
+    padding-bottom: 0.5em;
   }
 }
 
@@ -350,8 +364,18 @@ footer {
   .App {
     max-width: 1520px;
   }
+
+  header {
+    height: 35vh;
+  }
   
   footer {
     max-width: 1520px;
+  }
+}
+
+@media (min-width: 2000px) {  
+  header {
+    height: 25vh;
   }
 }

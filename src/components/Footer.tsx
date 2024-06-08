@@ -8,15 +8,15 @@ const Footer = () => {
 			<span className='m-1'>
 				Rdv{' '}
 				<span itemProp='telephone'>
-					<a type='tel' href={`tel:${process.env.REACT_APP_META_NUMTEL}`}>
-						{process.env.REACT_APP_META_NUMTEL}
+					<a type='tel' href={`tel:${import.meta.env.VITE_META_NUMTEL}`}>
+						{import.meta.env.VITE_META_NUMTEL}
 					</a>
 				</span>
-				{process.env.REACT_APP_ACTIVERDV == '1' && (
+				{import.meta.env.VITE_ACTIVERDV == '1' && (
 					<>
 						ou en ligne{' '}
 						<a
-							href={process.env.REACT_APP_URLRDV}
+							href={import.meta.env.VITE_URLRDV}
 							rel={'external'}
 							target={'_blank'}
 						>
