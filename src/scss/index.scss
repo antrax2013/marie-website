@@ -88,7 +88,7 @@ h1:not(.aside) {
 
 header {
   background-color:#1F1B17;
-  height: 40vh;
+  height: 20vh;
   align-items: flex-start;
 
   article {
@@ -129,7 +129,7 @@ nav .logo {
     padding-top: 2.7rem
 
     img {
-      width: 100px;
+      height: 130px !important;
       aspect-ratio: auto 100 / 100;
     }
   }
@@ -264,7 +264,7 @@ footer {
   padding-right: 35px;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 600px) {
   li {
     text-align: inherit;
   }
@@ -280,17 +280,20 @@ footer {
   main, aside {
     flex: 1 1;
     margin: 0;
-  }
+  } 
+
   .title {
     align-items:unset;
-  }
-  .title h1 {
-    text-align: right; 
-    padding-right: 0.5rem;
-    font-size: 1rem;
-  }
-  .title .logo {
-    display: none;
+    
+    h1 {
+      text-align: right; 
+      padding-right: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .logo {
+      display: none;
+    }
   }
 
   .article-footer {
@@ -304,34 +307,8 @@ footer {
   }
 }
 
-@media (max-width: 769px) and (min-width: 427px) {
-  li {
-    text-align: inherit;
-  }
-  main {
-    flex: 2 1;
-  }
-  .title {
-    align-items:unset;
-    padding-left: 2rem;
-    .logo {
-      display: none;
-    }
-  }
-  header {
-    height: 37vh;
-  }
-}
-@media (min-width: 770px) {
-  nav .logo {
-    width: 1.7rem;
-  }
-  .title h1 {
-    align-items:center;
-  }
-}
 
-@media (min-width: 426px) and (max-width: 1023px) {
+@media (min-width: 426px) and (max-width: 691px) {
   aside.content ul {
     padding-left: 0 ;
   }
@@ -342,13 +319,55 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
-  .title {
+@media (min-width: 701px) and (max-width: 960px) {
+  li {
+    text-align: inherit;
+  }
+  main {
+    flex: 2 1;
+  }
+  .title {   
+    h1:not(.aside) {
+      margin-top: inherit !important;
+    }
+
+    align-items:unset;
+    padding-left: 2rem;
+
+    .logo {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 961px) { 
+  nav .logo {
+    width: 1.7rem;
+  }
+  .title {    
+    padding-bottom: 0.5em;
+    h1:not(.aside) {
+      padding-top: inherit !important;
+      margin-top: inherit !important;
+    }
     .logo img {
       padding-top: 0.85em;
-      width: 150px;
+      height: 130px;
     }
-    padding-bottom: 0.5em;
+    align-items:center;
+  } 
+}
+
+@media (min-width: 961px) and (max-width: 1023px) { 
+  .title {    
+    .logo img {
+      padding-top: inherit;
+      height: 115px !important;
+    }
+  }
+  
+  nav .p-menuitem .p-menuitem-text, .p-menubar-end {
+    font-size: 0.68rem;
   }
 }
 
@@ -363,19 +382,9 @@ footer {
   }
   .App {
     max-width: 1520px;
-  }
-
-  header {
-    height: 35vh;
-  }
+  }  
   
   footer {
     max-width: 1520px;
-  }
-}
-
-@media (min-width: 2000px) {  
-  header {
-    height: 25vh;
   }
 }
