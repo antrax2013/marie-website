@@ -331,7 +331,7 @@ footer {
       margin-top: inherit !important;
     }
 
-    align-items:unset;
+    align-items:center;
     padding-left: 2rem;
 
     .logo {
@@ -340,28 +340,28 @@ footer {
   }
 }
 
-@media (min-width: 961px) { 
+@media (min-width: 920px) { 
   nav .logo {
     width: 1.7rem;
   }
   .title {    
     padding-bottom: 0.5em;
     h1:not(.aside) {
-      padding-top: inherit !important;
       margin-top: inherit !important;
     }
+    .logo {
+      display: inherit;
+    }
     .logo img {
-      padding-top: 0.85em;
       height: 130px;
     }
     align-items:center;
   } 
 }
 
-@media (min-width: 961px) and (max-width: 1023px) { 
+@media (min-width: 961px) and (max-width: 1024px) { 
   .title {    
-    .logo img {
-      padding-top: inherit;
+    .logo img {      
       height: 115px !important;
     }
   }
