@@ -1,32 +1,21 @@
-# React + TypeScript + Vite
+# Site web de Marie Cophignon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Node.js CI](https://github.com/antrax2013/marie-website/actions/workflows/main.yml/badge.svg)](https://github.com/antrax2013/marie-website/actions/workflows/main.yml)
 
-Currently, two official plugins are available:
+[Le site](https://maire.cophignon.net) présente l'activité professionnelle de Marie en tant que hérapeute énergétique. Elle propose différent type de soins énergétiques :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Massage assis méthode EAS®](https://marie.cophignon.net/massage-assis-methode-eas)
+- [Massage des 5 Continents](https://marie.cophignon.net/massage-des-5-continents)
+- [Reiki Usui](https://marie.cophignon.net/reiki)
 
-## Expanding the ESLint configuration
+Elle consulte du lundi au vendredi de 09h00 à 19h00.
+Elle vous reçois en cabinet :
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Le lundi à Elancourt
+- Le jeudi à Guyancourt
 
-- Configure the top-level `parserOptions` property like this:
+Les autres jours de la semaine elle se déplace à domicile.
 
-```js
-export default {
-	// other rules...
-	parserOptions: {
-		ecmaVersion: 'latest',
-		sourceType: 'module',
-		project: ['./tsconfig.json', './tsconfig.node.json'],
-		tsconfigRootDir: __dirname,
-	},
-};
-```
+# Auteur
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-
-- CI : https://dev.to/dyarleniber/setting-up-a-ci-cd-workflow-on-github-actions-for-a-react-app-with-github-pages-and-codecov-4hnp
+[![build](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/cyril-cophignon-b58b5a5b/)
