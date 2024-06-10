@@ -7,21 +7,29 @@ import 'primeflex/primeflex.css';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Consultations from './components/routes/Consultation';
-import Contact from './components/routes/Contact';
-import { Error404 } from './components/routes/Error404';
-import Massage5Continents from './components/routes/Massage-5-continents';
-import MassageAssisMethodeEAS from './components/routes/Massage-assis-methode-eas';
-import Offres from './components/routes/Offres';
-import PanneauLateral from './components/Panneau-lateral';
-import PolitiqueConfidentialite from './components/routes/Politique-condfidentialite';
-import QuiSuisJe from './components/routes/Qui-suis-je';
-import Reiki from './components/routes/Reiki';
-import FooterMenu from './components/tools/Footer-Menu';
-import ScrollButton from './components/tools/Scrollbutton';
-import PlanDuSite from './components/routes/Site-Map';
+import { lazy } from 'react';
 
-function App() {
+const Consultations = lazy(() => import('./components/routes/Consultation'));
+const Contact = lazy(() => import('./components/routes/Contact'));
+const Error404 = lazy(() => import('./components/routes/Error404'));
+const Massage5Continents = lazy(
+	() => import('./components/routes/Massage-5-continents')
+);
+const MassageAssisMethodeEAS = lazy(
+	() => import('./components/routes/Massage-assis-methode-eas')
+);
+const Offres = lazy(() => import('./components/routes/Offres'));
+const PanneauLateral = lazy(() => import('./components/Panneau-lateral'));
+const PolitiqueConfidentialite = lazy(
+	() => import('./components/routes/Politique-condfidentialite')
+);
+const QuiSuisJe = lazy(() => import('./components/routes/Qui-suis-je'));
+const Reiki = lazy(() => import('./components/routes/Reiki'));
+const FooterMenu = lazy(() => import('./components/tools/Footer-Menu'));
+const ScrollButton = lazy(() => import('./components/tools/Scrollbutton'));
+const PlanDuSite = lazy(() => import('./components/routes/Site-Map'));
+
+const App = () => {
 	// const message: any = useRef(null);
 
 	// useEffect(() => {
@@ -95,6 +103,6 @@ function App() {
 			</footer>
 		</div>
 	);
-}
+};
 
 export default App;

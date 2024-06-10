@@ -1,6 +1,6 @@
 import MetaTag from '../tools/MetaTag';
 
-export const Error404 = () => {
+const Error404 = () => {
 	const head = () => {
 		return (
 			<MetaTag
@@ -22,3 +22,4 @@ export const Error404 = () => {
 		</>
 	);
 };
+export default Error404;
