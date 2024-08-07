@@ -117,7 +117,7 @@ const Contact = () => {
 		return (
 			<MetaTag
 				title='Contact'
-				description="Mes différents soins énergétiques vous intéressent, vous avez des questions ou vous voulez partager, avec moi, vos retours d'expérience. Pour me contacter par email utilisez ce formulaire."
+				description="Mes différents soins et massages énergétiques vous intéressent, vous avez des questions ou vous voulez partager, avec moi, vos retours d'expérience, pour me contacter par email utilisez ce formulaire."
 				resume='Restons en contact.'
 			/>
 		);
@@ -129,6 +129,16 @@ const Contact = () => {
 			<article className='contact'>
 				<h1>Contact</h1>
 				<Toast ref={toast} />
+				<section className='paragraphe-1'>
+					<section className='paragraphe-content'>
+						<p>
+							Mes différents soins et massages énergétiques vous intéressent,
+							vous avez des questions ou vous voulez partager, avec moi, vos
+							retours d'expérience, vous pouvez me contacter par email en
+							utilisant le formulaire ci-dessous.
+						</p>
+					</section>
+				</section>
 				<form onSubmit={formik.handleSubmit}>
 					<div className='field'>
 						<label htmlFor='nom'>

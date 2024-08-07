@@ -9,8 +9,8 @@ const QuiSuisJe = () => {
 		return (
 			<MetaTag
 				title={import.meta.env.VITE_META_MAIN_TITLE || 'Qui suis-je ?'}
-				description='Maitre Reiki Usui, je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki Usui, Massage des 5 Continents (M5C), Massage assis méthode EAS®... Marie COPHIGNON'
-				resume='Infirmière par vocation, Maitre Reiki Usui, je veux prendre soin des autres, de vous différement. Etre là pour vous.'
+				description='Massothérapeute énergétique et Maitre Reiki Usui, je vous propose, sur Saint Quentin en Yvelines, différents soins et massages énergétiques pour votre bien être: Reiki Usui, Massage des 5 Continents (M5C), Massage assis méthode EAS®... Marie COPHIGNON'
+				resume='Infirmière par vocation, Massothérapeute énergétique et Maitre Reiki Usui, je veux prendre soin des autres, de vous différement. Etre là pour vous.'
 				forceTitle={true}
 			/>
 		);
@@ -34,6 +34,12 @@ const QuiSuisJe = () => {
 							</div>
 						</aside>
 						<section className='paragraphe-content'>
+							<p>
+								<em>Massothérapeute énergétique</em> et{' '}
+								<em>Maitre Reiki Usui</em>, je vous propose, depuis mars 2022,
+								sur Saint Quentin en Yvelines, différents soins et massages
+								énergétiques pour votre bien être.
+							</p>
 							<p>
 								Infirmière par vocation depuis 18 ans, mon métier de cœur, j’ai
 								pris la décision de prendre soin des autres différemment.

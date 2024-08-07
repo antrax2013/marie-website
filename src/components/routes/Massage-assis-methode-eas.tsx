@@ -112,14 +112,15 @@ const MassageAssisMethodeEAS = () => {
 						<section className='paragraphe-content'>
 							<h2>Pour quelles raisons consulter ?</h2>
 							<p>
-								Le <em>massage assis méthode EAS®</em> est un massage de bien
-								être. Il soulage les douleurs musculaires et libère l'esprit.
+								Le <em>massage assis méthode EAS®</em> est un massage
+								énergétique de bien être. Il soulage les douleurs musculaires et
+								libère l'esprit.
 							</p>
 							<p>
 								Par son action relaxante, il favorise la reconnexion au corps et
 								ses sensations. Ainsi, après une séance de{' '}
-								<em>massage assis méthode EAS®</em>, on ressort plus à l'écoute
-								de son corps, plus vigilant, plus disponible.
+								<em>massage assis méthode EAS®</em>, vous en ressortirez plus à
+								l'écoute de votre corps, plus vigilant(e), plus disponible.
 							</p>
 							<p>
 								Ses effets sont reconnus en entreprise sur la productivité et le

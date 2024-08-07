@@ -21,7 +21,7 @@ const MassageAssisMethodeEAS = lazy(
 const Offres = lazy(() => import('./components/routes/Offres'));
 const PanneauLateral = lazy(() => import('./components/Panneau-lateral'));
 const PolitiqueConfidentialite = lazy(
-	() => import('./components/routes/Politique-condfidentialite')
+	() => import('./components/routes/Politique-confidentialite')
 );
 const QuiSuisJe = lazy(() => import('./components/routes/Qui-suis-je'));
 const Reiki = lazy(() => import('./components/routes/Reiki'));
