@@ -2,7 +2,6 @@ import MetaTag from '../tools/MetaTag';
 import ParagraphSeparator from '../tools/Paragraph-Separator';
 import ImgMoi from '../../assets/moi500x.jpg';
 import '../../scss/routes/QuiSuisJe.scss';
-import { HashLink as Link } from 'react-router-hash-link';
 
 const QuiSuisJe = () => {
 	const head = () => {
@@ -117,21 +116,21 @@ const QuiSuisJe = () => {
 							</p>
 							<p>
 								Depuis le 1er Juin 2024, en complément du jeudi au cabinet de
-								<Link
-									to='/consultations#guyancourt'
+								<a
+									href='/consultations#guyancourt'
 									title='Lien vers l’adresse du cabinet de Guyancourt'
 								>
 									{' '}
 									Guyancourt
-								</Link>{' '}
+								</a>{' '}
 								(78280), je peux maintenant vous accueillir tous les lundis,
 								toujours sur rendez-vous uniquement, à{' '}
-								<Link
-									to='/consultations#elancourt'
+								<a
+									href='/consultations#elancourt'
 									title='Lien vers l’adresse du cabinet d’Elancourt'
 								>
 									Elancourt
-								</Link>{' '}
+								</a>{' '}
 								(78990) aux Nouveaux Horizons.
 							</p>
 						</section>
