@@ -1,5 +1,4 @@
 import { Button } from 'primereact/button';
-import { HashLink as Link } from 'react-router-hash-link';
 import openInNewTab from './tools/OpenInNewTab';
 
 const PanneauLateral = () => {
@@ -37,12 +36,12 @@ const PanneauLateral = () => {
 					>
 						Le lundi à{' '}
 						<span itemProp='addressLocality'>
-							<Link
-								to='/consultations#elancourt'
+							<a
+								href='/consultations#elancourt'
 								title='Lien vers l’adresse du cabinet d’Elancourt'
 							>
 								Elancourt
-							</Link>{' '}
+							</a>{' '}
 							(<span itemProp='postalCode'>78990</span>)
 						</span>
 					</p>
@@ -56,12 +55,12 @@ const PanneauLateral = () => {
 					>
 						Le jeudi à{' '}
 						<span itemProp='addressLocality'>
-							<Link
-								to='/consultations#guyancourt'
+							<a
+								href='/consultations#guyancourt'
 								title='Lien vers l’adresse du cabinet de Guyancourt'
 							>
 								Guyancourt
-							</Link>{' '}
+							</a>{' '}
 							(<span itemProp='postalCode'>78280</span>)
 						</span>
 					</p>

@@ -2,6 +2,7 @@ import MetaTag from '../tools/MetaTag';
 import ParagraphSeparator from '../tools/Paragraph-Separator';
 import '../../scss/routes/Consultations.scss';
 import { Adresse } from '../tools/Adresse';
+import { useEffect } from 'react';
 
 const Consultations = () => {
 	const head = () => {
@@ -13,6 +14,29 @@ const Consultations = () => {
 			/>
 		);
 	};
+
+	const scrollToLocation = () => {
+		const { hash } = window.location;
+		if (hash !== '') {
+			let retries = 0;
+			const id = hash.replace('#', '');
+			const scroll = () => {
+				retries += 0;
+				if (retries > 50) return;
+				const element = document.getElementById(id);
+				if (element) {
+					setTimeout(() => element.scrollIntoView(), 0);
+				} else {
+					setTimeout(scroll, 100);
+				}
+			};
+			scroll();
+		}
+	};
+
+	useEffect(() => {
+		scrollToLocation();
+	});
 
 	return (
 		<>
@@ -123,7 +147,9 @@ const Consultations = () => {
 										'Voisins-le-Bretonneux',
 										'Plaisir',
 									].map((city) => (
-										<li itemProp='areaServed'>{city}</li>
+										<li itemProp='areaServed' key={`li-${city}`}>
+											{city}
+										</li>
 									))}
 								</ul>
 							</section>

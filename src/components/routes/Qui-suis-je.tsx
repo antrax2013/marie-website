@@ -2,15 +2,14 @@ import MetaTag from '../tools/MetaTag';
 import ParagraphSeparator from '../tools/Paragraph-Separator';
 import ImgMoi from '../../assets/moi500x.jpg';
 import '../../scss/routes/QuiSuisJe.scss';
-import { HashLink as Link } from 'react-router-hash-link';
 
 const QuiSuisJe = () => {
 	const head = () => {
 		return (
 			<MetaTag
 				title={import.meta.env.VITE_META_MAIN_TITLE || 'Qui suis-je ?'}
-				description='Maitre Reiki Usui, je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki Usui, Massage des 5 Continents (M5C), Massage assis méthode EAS®... Marie COPHIGNON'
-				resume='Infirmière par vocation, Maitre Reiki Usui, je veux prendre soin des autres, de vous différement. Etre là pour vous.'
+				description='Massothérapeute énergétique et Maitre Reiki Usui, je vous propose, sur Saint Quentin en Yvelines, différents soins et massages énergétiques pour votre bien être: Reiki Usui, Massage des 5 Continents (M5C), Massage assis méthode EAS®... Marie COPHIGNON'
+				resume='Infirmière par vocation, Massothérapeute énergétique et Maitre Reiki Usui, je veux prendre soin des autres, de vous différement. Etre là pour vous.'
 				forceTitle={true}
 			/>
 		);
@@ -34,6 +33,12 @@ const QuiSuisJe = () => {
 							</div>
 						</aside>
 						<section className='paragraphe-content'>
+							<p>
+								<em>Massothérapeute énergétique</em> et{' '}
+								<em>Maitre Reiki Usui</em>, je vous propose, depuis mars 2022,
+								sur Saint Quentin en Yvelines, différents soins et massages
+								énergétiques pour votre bien être.
+							</p>
 							<p>
 								Infirmière par vocation depuis 18 ans, mon métier de cœur, j’ai
 								pris la décision de prendre soin des autres différemment.
@@ -111,21 +116,21 @@ const QuiSuisJe = () => {
 							</p>
 							<p>
 								Depuis le 1er Juin 2024, en complément du jeudi au cabinet de
-								<Link
-									to='/consultations#guyancourt'
+								<a
+									href='/consultations#guyancourt'
 									title='Lien vers l’adresse du cabinet de Guyancourt'
 								>
 									{' '}
 									Guyancourt
-								</Link>{' '}
+								</a>{' '}
 								(78280), je peux maintenant vous accueillir tous les lundis,
 								toujours sur rendez-vous uniquement, à{' '}
-								<Link
-									to='/consultations#elancourt'
+								<a
+									href='/consultations#elancourt'
 									title='Lien vers l’adresse du cabinet d’Elancourt'
 								>
 									Elancourt
-								</Link>{' '}
+								</a>{' '}
 								(78990) aux Nouveaux Horizons.
 							</p>
 						</section>
