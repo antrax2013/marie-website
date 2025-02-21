@@ -3,6 +3,7 @@ import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.css';
 import './scss/OverridePrimeCSS.scss';
 import 'primeflex/primeflex.css';
+import { Message } from 'primereact/message';
 
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
@@ -30,24 +31,6 @@ const ScrollButton = lazy(() => import('./components/tools/Scrollbutton'));
 const PlanDuSite = lazy(() => import('./components/routes/Site-Map'));
 
 const App = () => {
-	// const message: any = useRef(null);
-
-	// useEffect(() => {
-	//   if (
-	//     message.current &&
-	//     !JSON.parse(sessionStorage.getItem('hiddeMessage') ?? 'false')
-	//   ) {
-	//     message.current.show([
-	//       {
-	//         severity: 'info',
-	//         detail:
-	//           ' Fermé pour congés annuels du 29/07/2023 au 15/08/2023 inclus',
-	//         sticky: true,
-	//       },
-	//     ]);
-	//   }
-	// }, []);
-
 	return (
 		<div className='App'>
 			<BrowserRouter>
@@ -55,12 +38,21 @@ const App = () => {
 					<Header />
 				</header>
 				<div className='App-cp danger'>
-					{/* <Messages
-            ref={message}
-            onRemove={() =>
-              sessionStorage.setItem('hiddeMessage', JSON.stringify(true))
-            }
-          /> */}
+					<Message
+						className='border-primary w-full justify-content-center message'
+						severity='secondary'
+						content={
+							<>
+								<a
+									href='/offres#promotion'
+									title='Cliquez sur ce lien pour plus d’information sur la promotion en cours.'
+								>
+									✨ Promotion ✨<br />
+									Le coffret Duo est de retour jusqu’à fin février...
+								</a>
+							</>
+						}
+					/>
 				</div>
 				<div className='App-body'>
 					<main className='content'>
@@ -78,6 +70,7 @@ const App = () => {
 								element={<Massage5Continents />}
 							/>
 							<Route path='consultations' element={<Consultations />} />
+
 							<Route path='offres' element={<Offres />} />
 							<Route path='contact' element={<Contact />} />
 							<Route

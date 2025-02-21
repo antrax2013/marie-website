@@ -2,6 +2,7 @@ import MetaTag from '../tools/MetaTag';
 import ParagraphSeparator from '../tools/Paragraph-Separator';
 import '../../scss/routes/Offres.scss';
 import ImgCarteCadeau from '../../assets/Offres/carte-cadeau.png';
+import { Panel } from 'primereact/panel';
 
 const Offres = () => {
 	const head = () => {
@@ -48,6 +49,36 @@ const Offres = () => {
 							</p>
 							<i>Règlement par chèque ou espèces uniquement.</i>
 							<h2>Les soins energétiques</h2>
+							<div id='promotion'>
+								<Panel header='Promotion - le retour du coffret Duo'>
+									<p className='m-0'>
+										Le coffret Duo est de retour jusqu'à fin février... Mixez
+										vos envies.
+									</p>
+									<p className='m-0'>
+										20€ de remise si vous prenez 2 soins au choix, identiques ou
+										différents, parmi :
+									</p>
+									<ul>
+										<li>✨ Soin Reiki Usui</li>
+										<li>✨ Massage des 5 continents</li>
+										<li>
+											✨ Massage du dos assis méthode EAS® de 45 min<sup>*</sup>
+											<br />
+											<i>
+												<sup>*</sup> Les massages du dos de 20 min et de 35 min
+												ne bénéficient pas de la réduction.
+											</i>
+										</li>
+									</ul>
+									<p className='m-0'>
+										<b>Les soins sont valables 4 mois après l'achat.</b>
+									</p>
+									<p className='m-0'>
+										Mixez vos envies, pour vous ou pour offrir 🎁.
+									</p>
+								</Panel>
+							</div>
 							<ul>
 								<ol>Les massages energétiques </ol>
 								<li>
@@ -113,67 +144,71 @@ const Offres = () => {
 								Massage assis méthode EAS®
 							</h4>
 							<table>
-								<tr>
-									<th>&nbsp;</th>
-									<th>Cabinet</th>
-									<th>Domicile</th>
-									<th colSpan={5}>
-										Entreprise{' '}
-										<span className='asterix' id='asterix'>
-											*
-										</span>
-									</th>
-								</tr>
-								<tr>
-									<td>durée 0h20</td>
-									<td>25 €</td>
-									<td>30 €</td>
-								</tr>
-								<tr>
-									<td>durée 0h35</td>
-									<td>40 €</td>
-									<td>45 €</td>
-								</tr>
-								<tr>
-									<td>durée 0h45</td>
-									<td>50 €</td>
-									<td>55 €</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
+								<tbody>
+									<tr>
+										<th>&nbsp;</th>
+										<th>Cabinet</th>
+										<th>Domicile</th>
+										<th colSpan={5}>
+											Entreprise{' '}
+											<span className='asterix' id='asterix'>
+												*
+											</span>
+										</th>
+									</tr>
+									<tr>
+										<td>durée 0h20</td>
+										<td>25 €</td>
+										<td>30 €</td>
+									</tr>
+									<tr>
+										<td>durée 0h35</td>
+										<td>40 €</td>
+										<td>45 €</td>
+									</tr>
+									<tr>
+										<td>durée 0h45</td>
+										<td>50 €</td>
+										<td>55 €</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
 							</table>
 						</section>
 						<section className='paragraphe-content'>
 							<h4 id='m5c-tarifs'>Massage des 5 Continents (M5C) - 01h30</h4>
 							<table>
-								<tr>
-									<th>&nbsp;</th>
-									<th>Cabinet</th>
-									<th>Domicile</th>
-								</tr>
-								<tr>
-									<td>à l’unité</td>
-									<td>90 €</td>
-									<td>95 €</td>
-								</tr>
-								<tr>
-									<td>pack 3 soins</td>
-									<td>260 €</td>
-									<td>275 €</td>
-								</tr>
-								<tr>
-									<td>pack 6 soins</td>
-									<td>500 €</td>
-									<td>530 €</td>
-								</tr>
-								<tr>
-									<td>pack 12 soins</td>
-									<td>990 €</td>
-									<td>1&nbsp;050 €</td>
-								</tr>
+								<tbody>
+									<tr>
+										<th>&nbsp;</th>
+										<th>Cabinet</th>
+										<th>Domicile</th>
+									</tr>
+									<tr>
+										<td>à l’unité</td>
+										<td>90 €</td>
+										<td>95 €</td>
+									</tr>
+									<tr>
+										<td>pack 3 soins</td>
+										<td>260 €</td>
+										<td>275 €</td>
+									</tr>
+									<tr>
+										<td>pack 6 soins</td>
+										<td>500 €</td>
+										<td>530 €</td>
+									</tr>
+									<tr>
+										<td>pack 12 soins</td>
+										<td>990 €</td>
+										<td>1&nbsp;050 €</td>
+									</tr>
+								</tbody>
 							</table>
 						</section>
 					</section>
@@ -199,61 +234,65 @@ const Offres = () => {
 								Soin énergétique holistique - 01h00
 							</h4>
 							<table>
-								<tr>
-									<th>&nbsp;</th>
-									<th>Cabinet</th>
-									<th>Domicile</th>
-								</tr>
-								<tr>
-									<td>à l’unité</td>
-									<td>70 €</td>
-									<td>75 €</td>
-								</tr>
-								<tr>
-									<td>pack 3 soins</td>
-									<td>200 €</td>
-									<td>235 €</td>
-								</tr>
-								<tr>
-									<td>pack 6 soins</td>
-									<td>390 €</td>
-									<td>420 €</td>
-								</tr>
-								<tr>
-									<td>pack 12 soins</td>
-									<td>770 €</td>
-									<td>830 €</td>
-								</tr>
+								<tbody>
+									<tr>
+										<th>&nbsp;</th>
+										<th>Cabinet</th>
+										<th>Domicile</th>
+									</tr>
+									<tr>
+										<td>à l’unité</td>
+										<td>70 €</td>
+										<td>75 €</td>
+									</tr>
+									<tr>
+										<td>pack 3 soins</td>
+										<td>200 €</td>
+										<td>235 €</td>
+									</tr>
+									<tr>
+										<td>pack 6 soins</td>
+										<td>390 €</td>
+										<td>420 €</td>
+									</tr>
+									<tr>
+										<td>pack 12 soins</td>
+										<td>770 €</td>
+										<td>830 €</td>
+									</tr>
+								</tbody>
 							</table>
 						</section>
 						<section className='paragraphe-content'>
 							<h4 id='reiki-cible-tarifs'>Soin énergétique ciblé - 0h30</h4>
 							<table>
-								<tr>
-									<th>&nbsp;</th>
-									<th>Cabinet</th>
-									<th>Domicile</th>
-								</tr>
-								<tr>
-									<td>à l’unité</td>
-									<td>40 €</td>
-									<td>45 €</td>
-								</tr>
-								<tr>
-									<td>pack 3 soins</td>
-									<td>115 €</td>
-									<td>130 €</td>
-								</tr>
-								<tr>
-									<td>pack 6 soins</td>
-									<td>225 €</td>
-									<td>255 €</td>
-								</tr>
-								<tr>
-									<td>pack 12 soins</td>
-									<td>440 €</td>
-									<td>500 €</td>
-								</tr>
+								<tbody>
+									<tr>
+										<th>&nbsp;</th>
+										<th>Cabinet</th>
+										<th>Domicile</th>
+									</tr>
+									<tr>
+										<td>à l’unité</td>
+										<td>40 €</td>
+										<td>45 €</td>
+									</tr>
+									<tr>
+										<td>pack 3 soins</td>
+										<td>115 €</td>
+										<td>130 €</td>
+									</tr>
+									<tr>
+										<td>pack 6 soins</td>
+										<td>225 €</td>
+										<td>255 €</td>
+									</tr>
+									<tr>
+										<td>pack 12 soins</td>
+										<td>440 €</td>
+										<td>500 €</td>
+									</tr>
+								</tbody>
 							</table>
 						</section>
 					</section>
