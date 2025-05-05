@@ -44,11 +44,12 @@ const App = () => {
 						content={
 							<>
 								<a
-									href='/offres#promotion'
-									title='Cliquez sur ce lien pour plus d’information sur la promotion en cours.'
+									href='https://fb.me/e/3aKRIyi8x'
+									title='Cliquez sur ce lien pour plus d’information sur la 3ᵉ édition du salon "Les Sens en Éveil"'
 								>
-									✨ Promotion ✨<br />
-									Le coffret Duo est de retour jusqu’à fin février...
+									✨ salon "Les Sens en Éveil" ✨<br />
+									Je serai présente sur le salon à la ferme du Manet à Montigny
+									(78) le 18 mai 2025
 								</a>
 							</>
 						}
