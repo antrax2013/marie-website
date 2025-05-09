@@ -2,7 +2,7 @@ import MetaTag from '../tools/MetaTag';
 import ParagraphSeparator from '../tools/Paragraph-Separator';
 import '../../scss/routes/Offres.scss';
 import ImgCarteCadeau from '../../assets/Offres/carte-cadeau.png';
-import { Panel } from 'primereact/panel';
+// import { Panel } from 'primereact/panel';
 
 const Offres = () => {
 	const head = () => {
@@ -49,7 +49,7 @@ const Offres = () => {
 							</p>
 							<i>Règlement par chèque ou espèces uniquement.</i>
 							<h2>Les soins energétiques</h2>
-							<div id='promotion'>
+							{/* <div id='promotion'>
 								<Panel header='Promotion - le retour du coffret Duo'>
 									<p className='m-0'>
 										Le coffret Duo est de retour jusqu'à fin février... Mixez
@@ -78,7 +78,7 @@ const Offres = () => {
 										Mixez vos envies, pour vous ou pour offrir 🎁.
 									</p>
 								</Panel>
-							</div>
+							</div> */}
 							<ul>
 								<ol>Les massages energétiques </ol>
 								<li>
