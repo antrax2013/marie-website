@@ -1,56 +1,50 @@
-@import '../rules/_mixins.scss';
+@use '../rules/mixins';
 
 .MA-EAS {
-  article > section {
-    @include article-section;
-  }
+	article > section {
+		@include mixins.article-section;
+	}
 
-  article section aside > div {
-    @include flex-content-center;
-  }
+	article section aside > div {
+		@include mixins.flex-content-center;
+	}
 
-  aside {
-    @include paragraphe-img-container;
-  }
+	aside {
+		@include mixins.paragraphe-img-container;
+	}
 
-  .paragraphe-1 .paragraphe-content {
-    flex: 4 1;
-  }
+	.paragraphe-1 .paragraphe-content {
+		flex: 4 1;
+	}
 
-  .paragraphe-1 .paragraphe-content ol i {
-    color: var(--primary-color) !important;
-  }
+	.paragraphe-1 .paragraphe-content ol i {
+		color: var(--primary-color) !important;
+	}
 
-  .paragraphe-2-2 .paragraphe-content, 
-  .paragraphe-3-2 .paragraphe-content {
-    @include paragraphe-txt-container;
-  }
-  
-  img  {
-    @include paragraphe-img;
-  }    
+	.paragraphe-2-2 .paragraphe-content,
+	.paragraphe-3-2 .paragraphe-content {
+		@include mixins.paragraphe-txt-container;
+	}
+
+	img {
+		@include mixins.paragraphe-img;
+	}
 }
-
-
 
 @media (max-width: 1024px) {
-  .MA-EAS {
-      article section {
-      flex-direction: column;
-    }
-    
-    .img-eas-chaise {
-      width: 50%;
-    }
-  }
-}
+	.MA-EAS {
+		article section {
+			flex-direction: column;
+		}
 
+		.img-eas-chaise {
+			width: 50%;
+		}
+	}
+}
 
 @media (min-width: 1025px) {
-  .MA-EAS aside {
-    flex-direction: inherit;
-  }
+	.MA-EAS aside {
+		flex-direction: inherit;
+	}
 }
-
-
-
