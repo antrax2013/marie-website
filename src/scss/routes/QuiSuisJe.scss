@@ -1,69 +1,63 @@
-@import '../rules/_mixins.scss';
+@use '../rules/mixins';
 
 .QuiSuisJe {
-  article > section {
-    @include article-section;
-    align-items: center;
-  }
+	article > section {
+		@include mixins.article-section;
+		align-items: center;
+	}
 
-  article section aside > div {
-    @include flex-content-center;
-  }
+	article section aside > div {
+		@include mixins.flex-content-center;
+	}
 
-  aside {
-    @include paragraphe-img-container;
-  }
+	aside {
+		@include mixins.paragraphe-img-container;
+	}
 
-  .paragraphe-1 .paragraphe-content, 
-  .paragraphe-2 .paragraphe-content, 
-  .paragraphe-3 .paragraphe-content {
-    @include paragraphe-txt-container;
-  }
+	.paragraphe-1 .paragraphe-content,
+	.paragraphe-2 .paragraphe-content,
+	.paragraphe-3 .paragraphe-content {
+		@include mixins.paragraphe-txt-container;
+	}
 
-  .paragraphe-1  {
-    margin-top: 1rem;
-  }
+	.paragraphe-1 {
+		margin-top: 1rem;
+	}
 
-  img  {
-    @include paragraphe-img;
-  }  
-  
-  .img-qui-suis-je-moi{
-    aspect-ratio: auto 320 / 383;
-  }
+	img {
+		@include mixins.paragraphe-img;
+	}
+
+	.img-qui-suis-je-moi {
+		aspect-ratio: auto 320 / 383;
+	}
 }
 
-
-
 @media (max-width: 768px) and (min-width: 427px) {
-  .QuiSuisJe {
-      .img-qui-suis-je-moi {
-        width: 50%;
-        height: 50%;
-    }
-    .paragraphe-1 .paragraphe-content {
-      flex: 1 1;
-    }
-    article section aside {
-      flex: 2 1;
-    }
-  }
+	.QuiSuisJe {
+		.img-qui-suis-je-moi {
+			width: 50%;
+			height: 50%;
+		}
+		.paragraphe-1 .paragraphe-content {
+			flex: 1 1;
+		}
+		article section aside {
+			flex: 2 1;
+		}
+	}
 }
 
 @media (max-width: 768px) {
-  .QuiSuisJe {
-      article section {
-      flex-direction: column;
-    }
-  }
+	.QuiSuisJe {
+		article section {
+			flex-direction: column;
+		}
+	}
 }
-
 
 @media (min-width: 769px) {
-  .QuiSuisJe aside {
-    flex-direction: inherit;
-  }
+	.QuiSuisJe aside {
+		flex-direction: inherit;
+	}
 }
-
-
-

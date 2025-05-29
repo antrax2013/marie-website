@@ -1,143 +1,139 @@
-@import '../rules/_mixins.scss';
+@use '../rules/mixins';
 
 .Consultations {
-  article > section {
-    @include article-section;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+	article > section {
+		@include mixins.article-section;
+		flex-direction: column;
+		align-items: flex-start;
+	}
 
-  article section aside > div {
-    @include flex-content-center;
-  }
+	article section aside > div {
+		@include mixins.flex-content-center;
+	}
 
-  aside {
-    @include paragraphe-img-container;
-  }
+	aside {
+		@include mixins.paragraphe-img-container;
+	}
 
-  .asterix {
-    color: var(--primary-color) !important;
-  }
+	.asterix {
+		color: var(--primary-color) !important;
+	}
 
-  .paragraphe-2-1,
-  .paragraphe-2-2,
-  .paragraphe-2-4 {
-    .section-header, .section-content {
-      display: block;
-      width: 100%;
-    }
-    .section-content > div {
-      display: flex;
-      flex-direction: row;
-      .section-adresse {
-        flex: 1;
-        align-items: stretch;
-        text-align: center;
-      }
-      .section-map {
-        flex: 2;
-        align-items: center;        
-      }
-    }
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1em;    
-  }
+	.paragraphe-2-1,
+	.paragraphe-2-2,
+	.paragraphe-2-4 {
+		.section-header,
+		.section-content {
+			display: block;
+			width: 100%;
+		}
+		.section-content > div {
+			display: flex;
+			flex-direction: row;
+			.section-adresse {
+				flex: 1;
+				align-items: stretch;
+				text-align: center;
+			}
+			.section-map {
+				flex: 2;
+				align-items: center;
+			}
+		}
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 1em;
+	}
 
-  .paragraphe-2-3 { 
-    .paragraphe-content.perimetre li {
-      display: inline-block;
-      width: 50%;
-    }
-    .paragraphe-content ul>li:before {
-      content:"";
-      display: list-item;
-      position: absolute;
-    }  
-  }
-  
-  img  {
-    @include paragraphe-img;
-  }
+	.paragraphe-2-3 {
+		.paragraphe-content.perimetre li {
+			display: inline-block;
+			width: 50%;
+		}
+		.paragraphe-content ul > li:before {
+			content: '';
+			display: list-item;
+			position: absolute;
+		}
+	}
 
-  .img-consultations-map {
-    width: 50%;
-    height: 50%;
-  }
+	img {
+		@include mixins.paragraphe-img;
+	}
 
-  .map iframe {
-    @include ombre-portee-panneau;
-    border:none;
-    width:600px;
-    height:250px
-  }
+	.img-consultations-map {
+		width: 50%;
+		height: 50%;
+	}
+
+	.map iframe {
+		@include mixins.ombre-portee-panneau;
+		border: none;
+		width: 600px;
+		height: 250px;
+	}
 }
 
 @media (max-width: 426px) {
-  .Consultations {
-    .paragraphe-2-1,
-    .paragraphe-2-2,
-    .paragraphe-2-4 {
-      .section-content > div {
-        flex-direction: column;
-        align-items: inherit !important;
-      }
-    }
-    .map iframe {
-      width:250px;
-    }
-  }  
+	.Consultations {
+		.paragraphe-2-1,
+		.paragraphe-2-2,
+		.paragraphe-2-4 {
+			.section-content > div {
+				flex-direction: column;
+				align-items: inherit !important;
+			}
+		}
+		.map iframe {
+			width: 250px;
+		}
+	}
 }
 
 @media (max-width: 768px) {
-  .Consultations {
-    article section {
-      flex-direction: column;
-    }
+	.Consultations {
+		article section {
+			flex-direction: column;
+		}
 
-    .paragraphe-2-1,
-    .paragraphe-2-2,
-    .paragraphe-2-4 {
-      align-items: end;
-    }
+		.paragraphe-2-1,
+		.paragraphe-2-2,
+		.paragraphe-2-4 {
+			align-items: end;
+		}
 
-    .paragraphe-2-3 .paragraphe-content.perimetre li {
-      display: block !important;
-      width: 100%;
-    }
+		.paragraphe-2-3 .paragraphe-content.perimetre li {
+			display: block !important;
+			width: 100%;
+		}
 
-    .img-consultations-map {
-      width: 80%;
-      height: 80%;
-    }
-    
-  }
+		.img-consultations-map {
+			width: 80%;
+			height: 80%;
+		}
+	}
 }
 
 @media (max-width: 768px) and (min-width: 427px) {
-  .Consultations {
-    .map iframe {
-      height:200px;
-      width:275px;
-    }
-  }
+	.Consultations {
+		.map iframe {
+			height: 200px;
+			width: 275px;
+		}
+	}
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
-  .Consultations {
-    .map iframe {
-      height:200px;
-      width:450px;
-    }
-  }
+	.Consultations {
+		.map iframe {
+			height: 200px;
+			width: 450px;
+		}
+	}
 }
-
 
 @media (min-width: 769px) {
-  .Consultations aside {
-    flex-direction: inherit;
-  }
+	.Consultations aside {
+		flex-direction: inherit;
+	}
 }
-
-
-
