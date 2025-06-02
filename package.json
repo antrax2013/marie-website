@@ -13,7 +13,7 @@
 		"postbuild": "react-spa-prerender && purgecss -v --css build/assets/*.css --content build/*.html build/assets/*.js --output . --safelist p-toast p-toast-top-right p-ripple-disabled p-toast-message p-toast-message-content p-toast-message-success p-toast-message-enter-done p-icon p-toast-message-icon p-toast-message-text p-toast-summary p-toast-detail p-toast-icon-close p-link"
 	},
 	"dependencies": {
-		"@emailjs/browser": "^4.3.3",
+		"@emailjs/browser": "^4.4.1",
 		"@types/react-helmet": "^6.1.11",
 		"formik": "^2.4.6",
 		"primeflex": "^4.0.0",
