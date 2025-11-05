@@ -67,26 +67,16 @@ const Consultations = () => {
 							<p>J'aurais le plaisir de vous recevoir en cabinet :</p>
 							<ul>
 								<li>
-									Le lundi, au cabinet que je partage avec{' '}
-									<a href='https://www.valerie-meguedad.fr/' target='_blank'>
-										Valérie Meguedad
-									</a>{' '}
-									à <a href='#elancourt'>Elancourt</a>.
+									Le lundi, au cabinet des Nouveaux Horizons à{' '}
+									<a href='#elancourt'>Elancourt</a>.
 								</li>
 								<li>
-									Le jeudi, au cabinet que je partage avec{' '}
+									Le jeudi, au cabinet Blowball que je partage avec{' '}
 									<a
 										href='https://www.reflexologie-carolejacob.fr'
 										target='_blank'
 									>
 										Carole Jacob
-									</a>{' '}
-									et{' '}
-									<a
-										href='https://www.annenicolaskinesiologue.com/'
-										target='_blank'
-									>
-										Anne Nicolas
 									</a>{' '}
 									à <a href='#guyancourt'>Guyancourt</a>.
 								</li>
@@ -100,7 +90,7 @@ const Consultations = () => {
 					<ParagraphSeparator />
 					<section className='paragraphe-2-2' id='elancourt'>
 						<Adresse
-							title='Consultation au cabinet d&rsquo;Elancourt'
+							title='Consultation au cabinet des Nouveaux Horizons à Elancourt'
 							descprition='Le cabinet se trouve à l&rsquo;adresse suivante :'
 							floor='au rez-de-chaussée'
 							streetAddress='6, résidence Les Nouveaux Horizons'
@@ -113,8 +103,8 @@ const Consultations = () => {
 					</section>
 					<section className='paragraphe-2-1' id='guyancourt'>
 						<Adresse
-							title='Consultation au cabinet de Guyancourt'
-							descprition='Le cabinet se trouve à l&rsquo;adresse suivante :'
+							title='Consultation au cabinet Blowball de Guyancourt'
+							descprition='Le cabinet Blowball se trouve à l&rsquo;adresse suivante :'
 							floor='au rez-de-chaussée'
 							streetAddress='1, rue Le Corbusier'
 							postalCode='78280'
