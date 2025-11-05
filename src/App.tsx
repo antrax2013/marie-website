@@ -44,12 +44,12 @@ const App = () => {
 						content={
 							<>
 								<a
-									href='https://www.billetweb.fr/porte-ouverte-cabinet-blowball'
-									title='Cliquez sur ce lien pour réserver votre participation aux portes ouvertes du cabinet Blowball'
+									href='https://fb.me/e/1PYGeWXkGl'
+									title='Cliquez sur ce lien pour plus d’informations sur le salon du Bien-être de Maurepas.'
 								>
-									✨ portes ouvertes cabinet Blowball ✨<br />
-									Je serai présente aux portes ouvertes du cabinet Blowball à
-									Guynacourt (78) le 07 septembre 2025 de 09h30 à 13h00.
+									✨ salon du Bien-être à Maurepas ✨<br />
+									Je serai présente au salon du Bien-être à Maurepas (78),
+									L’Être au Naturel, le 23 novembre 2025 de 10h30 à 18h30.
 								</a>
 							</>
 						}

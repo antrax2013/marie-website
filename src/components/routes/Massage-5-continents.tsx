@@ -209,6 +209,13 @@ const Massage5Continents = () => {
 									<li>Ni un massage à caractère sexuel</li>
 								</ul>
 							</b>
+							<p>
+								<b>
+									Le <em>Massage des 5 Continents</em> est un massage en
+									sous-vêtement, torse nu, de ce fait il n'est proposé qu'aux
+									personnes majeures.
+								</b>
+							</p>
 						</section>
 					</section>
 					<ParagraphSeparator />

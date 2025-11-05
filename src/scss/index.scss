@@ -265,6 +265,11 @@ footer {
 	}
 }
 
+.text-third,
+i.text-third {
+	color: var(--tertiary-color) !important;
+}
+
 .message {
 	text-align: center;
 	> a {
