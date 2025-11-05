@@ -44,12 +44,12 @@ const App = () => {
 						content={
 							<>
 								<a
-									href='https://fb.me/e/3aKRIyi8x'
-									title='Cliquez sur ce lien pour plus d’information sur la 3ᵉ édition du salon "Les Sens en Éveil"'
+									href='https://www.billetweb.fr/porte-ouverte-cabinet-blowball'
+									title='Cliquez sur ce lien pour réserver votre participation aux portes ouvertes du cabinet Blowball'
 								>
-									✨ salon "Les Sens en Éveil" ✨<br />
-									Je serai présente sur le salon à la ferme du Manet à Montigny
-									(78) le 18 mai 2025
+									✨ portes ouvertes cabinet Blowball ✨<br />
+									Je serai présente aux portes ouvertes du cabinet Blowball à
+									Guynacourt (78) le 07 septembre 2025 de 09h30 à 13h00.
 								</a>
 							</>
 						}
