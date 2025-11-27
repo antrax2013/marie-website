@@ -126,7 +126,7 @@ const Contact = () => {
 	return (
 		<>
 			{head()}
-			<article className='contact'>
+			<div className='article contact'>
 				<h1>Contact</h1>
 				<Toast ref={toast} />
 				<section className='paragraphe-1'>
@@ -188,7 +188,9 @@ const Contact = () => {
 							name='email'
 							value={formik.values.email}
 							onChange={formik.handleChange}
-							className={classNames({ 'p-invalid': isFormFieldValid('email') })}
+							className={classNames({
+								'p-invalid': isFormFieldValid('email'),
+							})}
 						/>
 						{getFormErrorMessage('email')}
 					</div>
@@ -227,7 +229,7 @@ const Contact = () => {
 						/>
 					</div>
 				</form>
-			</article>
+			</div>
 		</>
 	);
 };

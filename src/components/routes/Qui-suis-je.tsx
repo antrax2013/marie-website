@@ -19,7 +19,7 @@ const QuiSuisJe = () => {
 		<>
 			{head()}
 			<div className='QuiSuisJe'>
-				<article>
+				<div className='article'>
 					<h1>Qui suis-je ?</h1>
 					<section className='paragraphe-1'>
 						<aside>
@@ -145,7 +145,7 @@ const QuiSuisJe = () => {
 							</p>
 						</section>
 					</section>
-				</article>
+				</div>
 			</div>
 		</>
 	);

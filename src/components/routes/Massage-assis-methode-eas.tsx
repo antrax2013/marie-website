@@ -20,7 +20,7 @@ const MassageAssisMethodeEAS = () => {
 		<>
 			{head()}
 			<div className='MA-EAS'>
-				<article>
+				<div className='article'>
 					<h1>Le massage assis méthode EAS®</h1>
 					<h2>Qu'est-ce que le massage assis méthode EAS® ?</h2>
 					<section className='paragraphe-1'>
@@ -211,7 +211,7 @@ const MassageAssisMethodeEAS = () => {
               </p>
             </section>
           </section> */}
-				</article>
+				</div>
 			</div>
 		</>
 	);

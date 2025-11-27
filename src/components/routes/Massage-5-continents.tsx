@@ -22,7 +22,7 @@ const Massage5Continents = () => {
 		<>
 			{head()}
 			<div className='M5C'>
-				<article>
+				<div className='article'>
 					<h1>Massage des 5 Continents</h1>
 					<h2>Qu'est-ce que le Massage des 5 Continents ?</h2>
 					<section className='paragraphe-1'>
@@ -209,6 +209,13 @@ const Massage5Continents = () => {
 									<li>Ni un massage à caractère sexuel</li>
 								</ul>
 							</b>
+							<p>
+								<b>
+									Le <em>Massage des 5 Continents</em> est un massage en
+									sous-vêtement, torse nu, de ce fait il n'est proposé qu'aux
+									personnes majeures.
+								</b>
+							</p>
 						</section>
 					</section>
 					<ParagraphSeparator />
@@ -286,7 +293,7 @@ const Massage5Continents = () => {
 							</p>
 						</section>
 					</section>
-				</article>
+				</div>
 			</div>
 		</>
 	);

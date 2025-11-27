@@ -4,6 +4,12 @@ import openInNewTab from './tools/OpenInNewTab';
 const PanneauLateral = () => {
 	return (
 		<>
+			<div>
+				<p className='text-third'>
+					Les soins sur mineurs sont réalisés uniquement en présence d’un
+					adulte.
+				</p>
+			</div>
 			<div
 				itemProp='provider'
 				itemScope

@@ -19,7 +19,7 @@ const Offres = () => {
 		<>
 			{head()}
 			<div className='Offres'>
-				<article>
+				<div className='article'>
 					<h1>Mes offres de soins</h1>
 					<section className='paragraphe-1'>
 						<section className='paragraphe-content'>
@@ -80,7 +80,7 @@ const Offres = () => {
 								</Panel>
 							</div> */}
 							<ul>
-								<ol>Les massages energétiques </ol>
+								<ol>Les massages energétiques</ol>
 								<li>
 									<a href='#massage-assis-methode-EAS-tarifs'>
 										Massage assis méthode EAS® - durée variable
@@ -88,10 +88,10 @@ const Offres = () => {
 								</li>
 								<li>
 									<a href='#m5c-tarifs'>
-										Massage des 5 Continents (M5C) - 01h30
+										<em className='asterix text-third'>*</em> Massage des 5
+										Continents (M5C) - 01h30
 									</a>
 								</li>
-
 								<br />
 								<ol>Les soins Reiki Usui</ol>
 								<li>
@@ -105,6 +105,12 @@ const Offres = () => {
 									</a>
 								</li>
 							</ul>
+							<p>
+								<i className='text-third'>
+									(*) Le Massage des 5 Continents n'est accessible qu'aux
+									personnes majeures.
+								</i>
+							</p>
 							<br />
 							<h2>Les offres découvertes et partages</h2>
 							<li>
@@ -364,7 +370,7 @@ const Offres = () => {
 							</div>
 						</aside>
 					</section>
-				</article>
+				</div>
 			</div>
 		</>
 	);

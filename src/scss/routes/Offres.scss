@@ -1,12 +1,12 @@
 @use '../rules/mixins';
 
 .Offres {
-	article > section {
+	.article > section {
 		@include mixins.article-section;
 		align-items: flex-start;
 	}
 
-	article section aside > div {
+	.article section aside > div {
 		@include mixins.flex-content-center;
 	}
 

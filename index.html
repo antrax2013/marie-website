@@ -1,204 +1,215 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>%VITE_META_MAIN_TITLE%</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>%VITE_META_MAIN_TITLE%</title>
 
-    <meta name="robots" content="index, follow" />
-    <meta http-equiv="Content-Language" content="fr-FR" />
-    <meta http-equiv="Cache-Control" content="max-age=604800, stale-while-revalidate=86400" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />    
-    <meta property="author" content="%VITE_META_AUTHOR%" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: light)"
-      content="white"
-    />
+		<meta name="robots" content="index, follow" />
+		<meta http-equiv="Content-Language" content="fr-FR" />
+		<meta
+			http-equiv="Cache-Control"
+			content="max-age=604800, stale-while-revalidate=86400"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="author" content="%VITE_META_AUTHOR%" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: light)"
+			content="white"
+		/>
 
-        <!-- https://www.skyminds.net/les-balises-meta-indispensables-pour-les-reseaux-sociaux-facebook-twitter-google-pinterest/ -->
+		<!-- https://www.skyminds.net/les-balises-meta-indispensables-pour-les-reseaux-sociaux-facebook-twitter-google-pinterest/ -->
 
-    <!-- Schema.org meta for Google+ -->
-    <meta itemprop="name" content="%VITE_META_MAIN_TITLE%" />
-    <meta itemprop="image" content="/logo192.png" />
+		<!-- Schema.org meta for Google+ -->
+		<meta itemprop="name" content="%VITE_META_MAIN_TITLE%" />
+		<meta itemprop="image" content="/logo192.png" />
 
-    <!-- Twitter summary card with large image must be at least 280x150px -->
-    <meta name="twitter:site" content="%VITE_META_DOMAINE%" />
-    <meta name="twitter:creator" content="%VITE_META_AUTHOR%" />
-    <meta name="twitter:image" content="/logo192.png" />
+		<!-- Twitter summary card with large image must be at least 280x150px -->
+		<meta name="twitter:site" content="%VITE_META_DOMAINE%" />
+		<meta name="twitter:creator" content="%VITE_META_AUTHOR%" />
+		<meta name="twitter:image" content="/logo192.png" />
 
-    <!-- Open Graph meta (Facebook, Linkedin) -->
-    <meta property="og:url" content="%VITE_META_URL%" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:site_name" content="%VITE_META_DOMAINE%" />
-    <!-- <meta property="og:image" content="/logo192.png" />
+		<!-- Open Graph meta (Facebook, Linkedin) -->
+		<meta property="og:url" content="%VITE_META_URL%" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="fr_FR" />
+		<meta property="og:site_name" content="%VITE_META_DOMAINE%" />
+		<!-- <meta property="og:image" content="/logo192.png" />
 
     <link rel="apple-touch-icon" href="/logo192.png" /> -->
-    <!--
+		<!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <!-- <link rel="manifest" href="/manifest.json" /> -->
+		<!-- <link rel="manifest" href="/manifest.json" /> -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amita&display=fallback"
-      rel="stylesheet"
-      as="font"
-      crossorigin
-    />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Amita&display=fallback"
+			rel="stylesheet"
+			as="font"
+			crossorigin
+		/>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HTCTEBBBQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-2HTCTEBBBQ"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
 
-      gtag('config', 'G-2HTCTEBBBQ');
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context" : "http://schema.org",
-        "@type" : "HealthClub",
-        "additionalType": "Soins énergétiques",
-        "name" : "Marie COPHIGNON - Massothérapeute énergétique",
-        "legalName" : "Marie COPHIGNON Thérapeute énergétique",
-        "leiCode": "910 427 988 00019",
-        "iso6523Code":"0009:91042798800019",
-        "founders": "Marie COPHIGNON",
-        "foundingDate" :"2022-03-01",
-        "image" : "https://marie.cophignon.net/logo192.png",
-        "logo" : "https://marie.cophignon.net/logo192.png",
-        "url": "https://marie.cophignon.net",
-        "telephone" : "07.73.55.27.70",
-        "areaServed": {
-          "@type": "City",
-          "name": "Saint Quentin-en-Yvelines"
-        },
-        "address" : {
-          "@type" : "PostalAddress",
-          "streetAddress" : "6, résidence Les Nouveaux Horizons",
-          "addressLocality" : "Elancourt",
-          "addressRegion" : "Saint Quentin-en-Yvelines",
-          "postalCode" : "78990"
-        },
-        "openinghours" : "Du lundi au vendredi 09:00-19:00",
-        "paymentAccepted" : "Espèces, chéque",
-        "sameAs": ["https://massagedes5continents.com/membres/8424/Cophignon-Marie/"],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Soins énergétiques",
-          "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Reiki Usui",
-              "url": "https://marie.cophignon.net/reiki",
-              "providerMobility": "consultation à domicile possible"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Massage des 5 Continents (M5C)",
-              "url": "https://marie.cophignon.net/massage-des-5-continents",
-              "providerMobility": "consultation à domicile possible"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Massage assis méthode EAS®",
-              "url": "https://marie.cophignon.net/massage-assis-methode-eas",
-              "providerMobility": "consultation à domicile possible"
-            }
-          }
-        ]
-        } 
-      }
-      </script>
+			gtag('config', 'G-2HTCTEBBBQ');
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "HealthClub",
+				"additionalType": "Soins énergétiques",
+				"name": "Marie COPHIGNON - Massothérapeute énergétique",
+				"legalName": "Marie COPHIGNON Thérapeute énergétique",
+				"leiCode": "910 427 988 00019",
+				"iso6523Code": "0009:91042798800019",
+				"founders": "Marie COPHIGNON",
+				"foundingDate": "2022-03-01",
+				"image": "https://marie.cophignon.net/logo192.png",
+				"logo": "https://marie.cophignon.net/logo192.png",
+				"url": "https://marie.cophignon.net",
+				"telephone": "07.73.55.27.70",
+				"areaServed": {
+					"@type": "City",
+					"name": "Saint Quentin-en-Yvelines"
+				},
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "6, résidence Les Nouveaux Horizons",
+					"addressLocality": "Elancourt",
+					"addressRegion": "Saint Quentin-en-Yvelines",
+					"postalCode": "78990"
+				},
+				"openinghours": "Du lundi au vendredi 09:00-19:00",
+				"paymentAccepted": "Espèces, chéque",
+				"sameAs": [
+					"https://massagedes5continents.com/membres/8424/Cophignon-Marie/"
+				],
+				"hasOfferCatalog": {
+					"@type": "OfferCatalog",
+					"name": "Soins énergétiques",
+					"itemListElement": [
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "Reiki Usui",
+								"url": "https://marie.cophignon.net/reiki",
+								"providerMobility": "consultation à domicile possible"
+							}
+						},
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "Massage des 5 Continents (M5C)",
+								"url": "https://marie.cophignon.net/massage-des-5-continents",
+								"providerMobility": "consultation à domicile possible"
+							}
+						},
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "Massage assis méthode EAS®",
+								"url": "https://marie.cophignon.net/massage-assis-methode-eas",
+								"providerMobility": "consultation à domicile possible"
+							}
+						}
+					]
+				}
+			}
+		</script>
 
-      <script type="application/ld+json">
-        {
-         "@context": "https://schema.org",
-         "@type": "ItemList",
-         "itemListElement": [
-           {
-             "@type": "ListItem",
-             "position": "1",
-             "item": {
-               "@type": "SiteNavigationElement",
-               "url": "https://marie.cophignon.net/qui-suis-je",
-               "name": "Qui suis-je ?",
-               "description": "Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 continents (M5C)... Marie COPHIGNON"
-             }          
-           },
-           {
-            "@type": "ListItem",
-            "position": "2",
-            "item": {
-              "@type": "SiteNavigationElement",
-              "url": "https://marie.cophignon.net/massage-assis-methode-eas",
-              "name": "Massage assis méthode EAS®",
-              "description": "Le massage assis méthode EAS®, est un massage énergétique, assis, de bien être, fondé sur les théories énergétiques chinoises."
-            }          
-           },           
-           {
-             "@type": "ListItem",
-             "position": "3",
-             "item": {
-               "@type": "SiteNavigationElement",
-               "url": "https://marie.cophignon.net/massage-des-5-continents",
-               "name": "Massage des 5 Continents (M5C)",
-               "description": "Le Massage des 5 Continents (M5C): l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien être."
-             }          
-           },
-           {
-            "@type": "ListItem",
-            "position": "4",
-            "item": {
-              "@type": "SiteNavigationElement",
-              "url": "https://marie.cophignon.net/massage-des-5-continents",
-              "name": "Massage des 5 Continents (M5C)",
-              "description": "Le Massage des 5 Continents (M5C): l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien être."
-             }          
-           },
-           {
-             "@type": "ListItem",
-             "position": "5",
-             "item": {
-               "@type": "SiteNavigationElement",
-               "url": "https://marie.cophignon.net/consultations",
-               "name": "Consultations",
-               "description": "Pour mes consultations, je vous accueille, tous les lundis au cabinet de Elancourt et tous les jeudis au cabinet de Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile sur Saint Quentin en Yvelines."
-             }          
-           },
-           {
-            "@type": "ListItem",
-            "position": "5",
-            "item": {
-              "@type": "SiteNavigationElement",
-              "url": "https://marie.cophignon.net/contact",
-              "name": "Contact",
-              "description": "Mes différents soins énergétiques vous intéressent, vous avez des questions ou vous voulez partager, avec moi, vos retours d'expérience. Pour me contacter par email utilisez ce formulaire."
-            }          
-          }
-         ]
-      
-    }
-    </script>    
-  </head>
-  <body>
-    <noscript>Ce site pour fonctionner nécessite l'activation des Javascripts.<br />You
-      need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "ItemList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": "1",
+						"item": {
+							"@type": "SiteNavigationElement",
+							"url": "https://marie.cophignon.net/qui-suis-je",
+							"name": "Qui suis-je ?",
+							"description": "Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 continents (M5C)... Marie COPHIGNON"
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": "2",
+						"item": {
+							"@type": "SiteNavigationElement",
+							"url": "https://marie.cophignon.net/massage-assis-methode-eas",
+							"name": "Massage assis méthode EAS®",
+							"description": "Le massage assis méthode EAS®, est un massage énergétique, assis, de bien être, fondé sur les théories énergétiques chinoises."
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": "3",
+						"item": {
+							"@type": "SiteNavigationElement",
+							"url": "https://marie.cophignon.net/massage-des-5-continents",
+							"name": "Massage des 5 Continents (M5C)",
+							"description": "Le Massage des 5 Continents (M5C): l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien être."
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": "4",
+						"item": {
+							"@type": "SiteNavigationElement",
+							"url": "https://marie.cophignon.net/massage-des-5-continents",
+							"name": "Massage des 5 Continents (M5C)",
+							"description": "Le Massage des 5 Continents (M5C): l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien être."
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": "5",
+						"item": {
+							"@type": "SiteNavigationElement",
+							"url": "https://marie.cophignon.net/consultations",
+							"name": "Consultations",
+							"description": "Pour mes consultations, je vous accueille, tous les lundis au cabinet de Elancourt et tous les jeudis au cabinet de Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile sur Saint Quentin en Yvelines."
+						}
+					},
+					{
+						"@type": "ListItem",
+						"position": "5",
+						"item": {
+							"@type": "SiteNavigationElement",
+							"url": "https://marie.cophignon.net/contact",
+							"name": "Contact",
+							"description": "Mes différents soins énergétiques vous intéressent, vous avez des questions ou vous voulez partager, avec moi, vos retours d'expérience. Pour me contacter par email utilisez ce formulaire."
+						}
+					}
+				]
+			}
+		</script>
+	</head>
+	<body>
+		<noscript
+			>Ce site pour fonctionner nécessite l'activation des Javascripts.<br />You
+			need to enable JavaScript to run this app.</noscript
+		>
+		<div id="root"></div>
+		<script type="module" src="/src/main.tsx"></script>
+	</body>
 </html>

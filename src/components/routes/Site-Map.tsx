@@ -14,7 +14,7 @@ const SiteMap = () => {
 	return (
 		<>
 			{head()}
-			<article>
+			<div className='article'>
 				<h1>Le plan du site</h1>
 				<ul>
 					<li>
@@ -47,7 +47,7 @@ const SiteMap = () => {
 						<a href='/erreur-404'>Erreur 404</a>
 					</li>
 				</ul>
-			</article>
+			</div>
 		</>
 	);
 };

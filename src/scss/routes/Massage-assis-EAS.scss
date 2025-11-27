@@ -1,11 +1,11 @@
 @use '../rules/mixins';
 
 .MA-EAS {
-	article > section {
+	.article > section {
 		@include mixins.article-section;
 	}
 
-	article section aside > div {
+	.article section aside > div {
 		@include mixins.flex-content-center;
 	}
 
@@ -33,7 +33,7 @@
 
 @media (max-width: 1024px) {
 	.MA-EAS {
-		article section {
+		.article section {
 			flex-direction: column;
 		}
 

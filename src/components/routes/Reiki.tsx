@@ -24,7 +24,7 @@ const Reiki = () => {
 		<>
 			{head()}
 			<div className='Reiki'>
-				<article>
+				<div className='article'>
 					<h1>Reiki Usui</h1>
 
 					<h2>Qu'est-ce que le Reiki Usui ?</h2>
@@ -220,7 +220,7 @@ const Reiki = () => {
 							</p>
 						</section>
 					</section>
-				</article>
+				</div>
 			</div>
 		</>
 	);
