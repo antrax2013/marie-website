@@ -22,7 +22,7 @@ const Massage5Continents = () => {
 		<>
 			{head()}
 			<div className='M5C'>
-				<article>
+				<div className='article'>
 					<h1>Massage des 5 Continents</h1>
 					<h2>Qu'est-ce que le Massage des 5 Continents ?</h2>
 					<section className='paragraphe-1'>
@@ -293,7 +293,7 @@ const Massage5Continents = () => {
 							</p>
 						</section>
 					</section>
-				</article>
+				</div>
 			</div>
 		</>
 	);

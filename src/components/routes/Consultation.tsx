@@ -42,7 +42,7 @@ const Consultations = () => {
 		<>
 			{head()}
 			<div className='Consultations'>
-				<article>
+				<div className='article'>
 					<h1>Consultations</h1>
 					<section className='paragraphe-1-1'>
 						<h2>Organisations de mes consultations</h2>
@@ -169,7 +169,7 @@ const Consultations = () => {
 							longitude='1.942598'
 						/>
 					</section>
-				</article>
+				</div>
 			</div>
 		</>
 	);

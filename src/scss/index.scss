@@ -151,7 +151,7 @@ aside.content {
 	@include mixins.ombre-portee-panneau;
 }
 
-article {
+.article {
 	padding-bottom: 1rem;
 
 	section aside {
@@ -160,7 +160,7 @@ article {
 	}
 }
 
-article:not(.title) h1:not(.aside) {
+.article:not(.title) h1:not(.aside) {
 	box-shadow: -0.5rem 0 0 0 var(--secondary-color);
 	display: inline-block;
 	position: relative;

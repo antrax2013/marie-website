@@ -19,7 +19,7 @@ const Offres = () => {
 		<>
 			{head()}
 			<div className='Offres'>
-				<article>
+				<div className='article'>
 					<h1>Mes offres de soins</h1>
 					<section className='paragraphe-1'>
 						<section className='paragraphe-content'>
@@ -370,7 +370,7 @@ const Offres = () => {
 							</div>
 						</aside>
 					</section>
-				</article>
+				</div>
 			</div>
 		</>
 	);

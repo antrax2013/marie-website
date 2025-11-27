@@ -1,13 +1,13 @@
 @use '../rules/mixins';
 
 .Consultations {
-	article > section {
+	.article > section {
 		@include mixins.article-section;
 		flex-direction: column;
 		align-items: flex-start;
 	}
 
-	article section aside > div {
+	.article section aside > div {
 		@include mixins.flex-content-center;
 	}
 
@@ -92,7 +92,7 @@
 
 @media (max-width: 768px) {
 	.Consultations {
-		article section {
+		.article section {
 			flex-direction: column;
 		}
 

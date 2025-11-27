@@ -1,11 +1,11 @@
 @use '../rules/mixins';
 
 .M5C {
-	article > section {
+	.article > section {
 		@include mixins.article-section;
 	}
 
-	article section aside > div {
+	.article section aside > div {
 		@include mixins.flex-content-center;
 	}
 
@@ -49,10 +49,10 @@
 
 @media (max-width: 769px) {
 	.M5C {
-		article section {
+		.article section {
 			flex-direction: column;
 		}
-		article section aside > div {
+		.article section aside > div {
 			display: flex !important;
 			justify-content: center;
 		}
@@ -78,16 +78,16 @@
 
 @media (min-width: 770px) {
 	.M5C {
-		article section:not(.paragraphe-2-2) aside {
+		.article section:not(.paragraphe-2-2) aside {
 			height: 100%;
 			width: 100%;
 		}
 
-		article section.paragraphe-2-2 aside > div {
+		.article section.paragraphe-2-2 aside > div {
 			display: block;
 		}
 
-		article section.paragraphe-4 aside > div {
+		.article section.paragraphe-4 aside > div {
 			display: block;
 		}
 
