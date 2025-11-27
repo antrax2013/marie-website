@@ -31,8 +31,13 @@
 		"@typescript-eslint/parser": "^8.24.1",
 		"@vitejs/plugin-react-swc": "^3.5.0",
 		"eslint": "^9.14.0",
+<<<<<<< HEAD
 		"eslint-plugin-react-hooks": "^7.0.1",
+		"eslint-plugin-react-refresh": "^0.4.6",
+=======
+		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.4.24",
+>>>>>>> 34a9dae (Bump eslint-plugin-react-refresh from 0.4.7 to 0.4.24)
 		"purgecss": "^7.0.2",
 		"react-spa-prerender": "^1.0.10",
 		"sass": "^1.89.0",
