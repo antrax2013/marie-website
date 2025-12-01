@@ -15,7 +15,7 @@
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
 		"@types/react-helmet": "^6.1.11",
-		"formik": "^2.4.6",
+		"formik": "^2.4.9",
 		"primeflex": "^4.0.0",
 		"primeicons": "^7.0.0",
 		"primereact": "^10.9.2",
