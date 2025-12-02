@@ -3,16 +3,12 @@ import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.css';
 import './scss/OverridePrimeCSS.scss';
 import 'primeflex/primeflex.css';
-import { Message } from 'primereact/message';
-
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import Footer from './components/Footer';
-import Header from './components/Header';
 import { lazy } from 'react';
+import Message from './components/fragments/Message';
 
-const Consultations = lazy(() => import('./components/routes/Consultation'));
-const Contact = lazy(() => import('./components/routes/Contact'));
-const Error404 = lazy(() => import('./components/routes/Error404'));
+// Routes
+const Accueil = lazy(() => import('./components/routes/Accueil'));
 const Massage5Continents = lazy(
 	() => import('./components/routes/Massage-5-continents')
 );
@@ -20,47 +16,43 @@ const MassageAssisMethodeEAS = lazy(
 	() => import('./components/routes/Massage-assis-methode-eas')
 );
 const Offres = lazy(() => import('./components/routes/Offres'));
-const PanneauLateral = lazy(() => import('./components/Panneau-lateral'));
+const Consultations = lazy(() => import('./components/routes/Consultation'));
+const Contact = lazy(() => import('./components/routes/Contact'));
+const Error404 = lazy(() => import('./components/routes/Error404'));
+const QuiSuisJe = lazy(() => import('./components/routes/Qui-suis-je'));
+const Reiki = lazy(() => import('./components/routes/Reiki'));
+const PlanDuSite = lazy(() => import('./components/routes/Site-Map'));
 const PolitiqueConfidentialite = lazy(
 	() => import('./components/routes/Politique-confidentialite')
 );
-const QuiSuisJe = lazy(() => import('./components/routes/Qui-suis-je'));
-const Reiki = lazy(() => import('./components/routes/Reiki'));
-const FooterMenu = lazy(() => import('./components/tools/Footer-Menu'));
-const ScrollButton = lazy(() => import('./components/tools/Scrollbutton'));
-const PlanDuSite = lazy(() => import('./components/routes/Site-Map'));
+
+// Menu
+const FooterLinks = lazy(() => import('./components/fragments/Footer-Links'));
+
+const Header = lazy(() => import('./components/fragments/Header'));
+const Footer = lazy(() => import('./components/fragments/Footer'));
+const FooterMenu = lazy(() => import('./components/fragments/Footer-Menu'));
+const ScrollButton = lazy(() => import('./components/fragments/Scrollbutton'));
 
 const App = () => {
 	return (
-		<div className='App'>
+		<div className='App' itemScope itemType='https://schema.org/WebPage'>
 			<BrowserRouter>
+				<Message
+					link='https://fb.me/e/1PYGeWXkGl'
+					content='Je serai présente aux portes ouvertes des espaces bien-être de Coffret d’Alumine à Plaisir (78), les weekend du 13/14 et 20/21 décembre de 14h00 à 18h00.'
+					alt='Cliquez sur ce lien pour plus d’informations.'
+				/>
 				<header className='flex flex-wrap'>
 					<Header />
 				</header>
-				<div className='App-cp danger'>
-					<Message
-						className='border-primary w-full justify-content-center message'
-						severity='secondary'
-						content={
-							<>
-								<a
-									href='https://fb.me/e/1PYGeWXkGl'
-									title='Cliquez sur ce lien pour plus d’informations sur le salon du Bien-être de Maurepas.'
-								>
-									✨ salon du Bien-être à Maurepas ✨<br />
-									Je serai présente au salon du Bien-être à Maurepas (78),
-									L’Être au Naturel, le 23 novembre 2025 de 10h30 à 18h30.
-								</a>
-							</>
-						}
-					/>
-				</div>
+				<div className='App-cp danger'></div>
 				<div className='App-body'>
-					<main className='content'>
+					<main className='content' itemProp='mainEntity'>
 						<Routes>
-							<Route path='/' element={<QuiSuisJe />} />
+							<Route path='/' element={<Accueil />} />
+							<Route index element={<Accueil />} />
 							<Route path='qui-suis-je' element={<QuiSuisJe />} />
-							<Route index element={<QuiSuisJe />} />
 							<Route
 								path='massage-assis-methode-eas'
 								element={<MassageAssisMethodeEAS />}
@@ -83,18 +75,18 @@ const App = () => {
 							<Route path='*' element={<Navigate replace to='/erreur-404' />} />
 						</Routes>
 						<ScrollButton />
+						<FooterLinks />
 					</main>
-					<aside className='content'>
-						<PanneauLateral />
-					</aside>
 				</div>
-				<section className='article-footer'>
-					<FooterMenu />
-				</section>
+				<footer>
+					<section className='footer-container'>
+						<FooterMenu />
+					</section>
+					<div className='footer-overlay'>
+						<Footer />
+					</div>
+				</footer>
 			</BrowserRouter>
-			<footer>
-				<Footer />
-			</footer>
 		</div>
 	);
 };

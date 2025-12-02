@@ -1,0 +1,51 @@
+.social-networks-container {
+	display: inline-block;
+	.social-networks {
+		display: flex !important;
+		flex-flow: row wrap;
+		justify-content: space-around;
+
+		button {
+			margin-right: 1rem;
+			padding: 0.4rem 0.2rem !important;
+
+			span {
+				padding-bottom: 0.1rem;
+				padding-left: 0.5rem !important;
+				padding-right: 1rem !important;
+				background-color: white !important;
+				border: none;
+				color: black !important;
+				display: inline-block;
+				width: 90px;
+			}
+
+			span:hover {
+				background-color: #fafafa !important;
+				font-weight: bold;
+			}
+		}
+		.twitter {
+			background-color: black !important;
+			border-color: black !important;
+		}
+		.twitter:hover {
+			background-color: #333 !important;
+		}
+		.instagram {
+			background: linear-gradient(
+				45deg,
+				rgb(244, 185, 15) 0%,
+				rgb(183, 3, 160) 50%
+			) !important;
+			border-color: #db6f49 !important;
+		}
+		.instagram:hover {
+			background: linear-gradient(
+				45deg,
+				rgba(244, 185, 15, 0.5) 0%,
+				rgba(183, 3, 160, 0.5) 50%
+			) !important;
+		}
+	}
+}

@@ -1,5 +1,5 @@
-import MetaTag from '../tools/MetaTag';
-import ParagraphSeparator from '../tools/Paragraph-Separator';
+import MetaTag from '../../modules/MetaTag';
+import ParagraphSeparator from '../fragments/Paragraph-Separator';
 import '../../scss/routes/Offres.scss';
 import ImgCarteCadeau from '../../assets/Offres/carte-cadeau.png';
 // import { Panel } from 'primereact/panel';

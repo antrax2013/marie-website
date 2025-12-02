@@ -1,10 +1,10 @@
-import ParagraphSeparator from '../tools/Paragraph-Separator';
+import ParagraphSeparator from '../fragments/Paragraph-Separator';
 import ImgM5C from '../../assets/M5C/massage-5-continents.png';
 import ImgM5CColonne from '../../assets/M5C/m5c-colonne.png';
 import ImgM5CDos from '../../assets/M5C/m5c-bas-dos.png';
 import ImgM5CBras from '../../assets/M5C/m5c-bras.png';
 import '../../scss/routes/M5C.scss';
-import MetaTag from '../tools/MetaTag';
+import MetaTag from '../../modules/MetaTag';
 
 const Massage5Continents = () => {
 	const head = () => {

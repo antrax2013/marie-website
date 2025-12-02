@@ -1,7 +1,7 @@
-import MetaTag from '../tools/MetaTag';
-import ParagraphSeparator from '../tools/Paragraph-Separator';
+import MetaTag from '../../modules/MetaTag';
+import ParagraphSeparator from '../fragments/Paragraph-Separator';
 import '../../scss/routes/Consultations.scss';
-import { Adresse } from '../tools/Adresse';
+import { Adresse } from '../fragments/Adresse';
 import { useEffect } from 'react';
 
 const Consultations = () => {

@@ -1,5 +1,5 @@
-import MetaTag from '../tools/MetaTag';
-import ParagraphSeparator from '../tools/Paragraph-Separator';
+import MetaTag from '../../modules/MetaTag';
+import ParagraphSeparator from '../fragments/Paragraph-Separator';
 import ImgMoi from '../../assets/moi500x.jpg';
 import '../../scss/routes/QuiSuisJe.scss';
 
@@ -29,6 +29,7 @@ const QuiSuisJe = () => {
 									className='img-qui-suis-je-moi'
 									alt='Marie Cophignon'
 									title='Marie Cophignon'
+									loading='lazy'
 								/>
 							</div>
 						</aside>

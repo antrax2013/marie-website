@@ -6,10 +6,10 @@ import { classNames } from 'primereact/utils';
 import { useFormik } from 'formik';
 import { useRef, useState } from 'react';
 import '../../scss/routes/Contact.scss';
-import { Email, IMail } from '../../modules/email';
+import { Email, iMail } from '../../modules/email';
 import { Dropdown } from 'primereact/dropdown';
 import { Toast } from 'primereact/toast';
-import MetaTag from '../tools/MetaTag';
+import MetaTag from '../../modules/MetaTag';
 
 interface iError {
 	nom?: string;
@@ -65,7 +65,7 @@ const Contact = () => {
 			return errors;
 		},
 		onSubmit: () => {
-			const message: IMail = {
+			const message: iMail = {
 				from_email: formik.values.email,
 				to_name: formik.values.nom + ' ' + formik.values.prenom,
 				message: formik.values.message,

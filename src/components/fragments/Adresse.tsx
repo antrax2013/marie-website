@@ -35,7 +35,7 @@ iAddress) => {
 				itemScope
 				itemType='https://schema.org/HealthClub'
 			>
-				<div>
+				<address>
 					<div className='section-adresse'>
 						<span
 							className='paragraphe-content'
@@ -76,7 +76,7 @@ iAddress) => {
 							</div>
 						</aside>
 					)}
-				</div>
+				</address>
 			</section>
 		</>
 	);

@@ -1,10 +1,10 @@
-import ParagraphSeparator from '../tools/Paragraph-Separator';
+import ParagraphSeparator from '../fragments/Paragraph-Separator';
 import ImgReiki from '../../assets/Reiki/Reiki.svg';
 import ImgReikiVentre from '../../assets/Reiki/Reiki-ventre.png';
 import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.png';
 import ImgReikiPied from '../../assets/Reiki/Reiki-pied.png';
 import '../../scss/routes/Reiki.scss';
-import MetaTag from '../tools/MetaTag';
+import MetaTag from '../../modules/MetaTag';
 
 const Reiki = () => {
 	const head = () => {

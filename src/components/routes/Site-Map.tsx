@@ -1,4 +1,4 @@
-import MetaTag from '../tools/MetaTag';
+import MetaTag from '../../modules/MetaTag';
 
 const SiteMap = () => {
 	const head = () => {
