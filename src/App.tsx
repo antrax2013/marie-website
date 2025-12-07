@@ -44,12 +44,13 @@ const App = () => {
 						content={
 							<>
 								<a
-									href='https://fb.me/e/1PYGeWXkGl'
-									title='Cliquez sur ce lien pour plus d’informations sur le salon du Bien-être de Maurepas.'
+									href='https://www.facebook.com/permalink.php?story_fbid=pfbid02aT94GYPdw9ZWN5AziFGhzcs71G1KVqbAP1hUUyCnowr6Dzg6mw3HP6WZbe2ghXTFl&id=61573954084460'
+									title='Cliquez sur ce lien pour plus d’informations.'
 								>
-									✨ salon du Bien-être à Maurepas ✨<br />
-									Je serai présente au salon du Bien-être à Maurepas (78),
-									L’Être au Naturel, le 23 novembre 2025 de 10h30 à 18h30.
+									✨ Portes ouvertes à Plaisir ✨<br />
+									Je serai présente aux portes ouvertes des espaces bien-être de
+									Coffret d'Alumine à Plaisir (78), les weekend du 13/14 et
+									20/21 décembre de 14h00 à 18h00.
 								</a>
 							</>
 						}

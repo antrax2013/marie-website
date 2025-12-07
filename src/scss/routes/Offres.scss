@@ -56,11 +56,11 @@
 	.Offres {
 		.paragraphe-content table td,
 		.paragraphe-content table th {
-			font-size: 0.9em;
+			font-size: 0.72em !important;
 		}
 		.paragraphe-3,
 		.paragraphe-4 {
-			flex-direction: column;
+			flex-direction: column !important;
 			align-items: flex-start;
 		}
 	}
