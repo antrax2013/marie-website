@@ -1,61 +1,178 @@
 @use '../rules/mixins';
 
 .Reiki {
-	.article > section {
-		@include mixins.article-section;
+	.first-header-2 {
+		.first-header-2-container {
+			.header-2-container {
+				.bg-image-alternative-container-img-ventre-reiki {
+					img {
+						max-height: 250px;
+					}
+				}
+
+				.bg-image-container-img-ventre-reiki {
+					--background-image-lazy: url('../../assets/Reiki/Reiki-ventre.png');
+					background-image: var(--background-image-lazy) !important;
+					border-top-right-radius: 25px;
+					border-bottom-right-radius: 25px;
+					.bg-image-container-content {
+						img {
+							max-height: 300px;
+						}
+					}
+				}
+			}
+		}
 	}
 
-	.article section aside > div {
-		@include mixins.flex-content-center;
+	.reiki-usui-description-container {
+		.reiki-usui-description-main-content {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-evenly;
+			align-items: center;
+			@include mixins.ombre-portee-basse-panneau;
+			padding: 1rem;
+
+			.bg-image-alternative-container-img-logo-reiki {
+				img {
+					max-height: 150px;
+				}
+			}
+
+			.bg-image-container-img-logo-reiki {
+				--background-image-lazy: url('../../assets/Reiki/Reiki.svg');
+				background-image: var(--background-image-lazy) !important;
+				border-bottom-left-radius: 25px;
+				.bg-image-container-content {
+					margin: 1rem;
+					img {
+						max-height: 150px;
+					}
+				}
+			}
+
+			.reiki-usui-description-content {
+				padding: 0rem 1rem;
+			}
+		}
 	}
 
-	aside {
-		@include mixins.paragraphe-img-container;
+	.reiki-usui-benefits {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+
+		.reiki-usui-benefits-lists {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+		}
+
+		.reiki-usui-benefits-lists,
+		.reiki-usui-benefits-disclaimers {
+			flex-basis: 50vw;
+		}
 	}
 
-	.paragraphe-1 .paragraphe-content {
-		flex: 7 1;
+	.reiki-usui-targets-container {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+		.reiki-usui-targets-lists {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+		}
+
+		.reiki-usui-targets-lists,
+		.reiki-usui-target-disclaimer-list {
+			flex-basis: 50vw;
+		}
 	}
 
-	.paragraphe-1 .paragraphe-content ol i {
-		color: var(--primary-color) !important;
-	}
+	.reiki-usui-prices-container {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+		.reiki-usui-prices-content {
+			.reiki-usui-prices-inner-content {
+				display: flex;
+				text-align: right;
+				flex-flow: row;
+				justify-content: space-evenly;
+			}
 
-	.paragraphe-2 .paragraphe-content,
-	.paragraphe-3 .paragraphe-content,
-	.paragraphe-4 .paragraphe-content {
-		@include mixins.paragraphe-txt-container;
-	}
-
-	.paragraphe-3 .paragraphe-content {
-		margin-left: 1rem;
-	}
-
-	.img-eas-chaise {
-		width: 70%;
-	}
-
-	img:not(.img-eas-chaise) {
-		@include mixins.paragraphe-img;
+			.reiki-usui-prices-cta {
+				padding: 1.5rem;
+				.cta-primary {
+					margin-right: 1.5rem;
+				}
+			}
+		}
 	}
 }
-
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 	.Reiki {
-		.article section {
-			flex-direction: column;
+		.first-header-2 {
+			.first-header-2-container {
+				.header-2-container {
+					.header-2-content {
+						padding-top: 0rem !important;
+						padding-bottom: 0rem !important;
+
+						h1 {
+							padding-top: 0.25rem;
+							font-size: 1.6rem;
+						}
+
+						.header-2-sub-title {
+							font-size: 0.8rem;
+							justify-content: unset !important;
+						}
+
+						.header-2-cta {
+							flex-flow: column !important;
+							.cta-container-row {
+								flex-flow: column !important;
+								margin-bottom: 0.5rem;
+							}
+						}
+					}
+				}
+			}
 		}
-		.paragraphe-3 {
-			flex-direction: column-reverse !important;
+		.reiki-usui-description-main-content,
+		.reiki-usui-benefits-lists,
+		.reiki-usui-benefits-disclaimers,
+		.reiki-usui-targets-lists,
+		.reiki-usui-target-disclaimer-list,
+		.reiki-usui-prices-content,
+		.reiki-usui-prices-inner-content {
+			flex-flow: column !important;
+			flex-basis: inherit !important;
 		}
-		.img-eas-chaise {
-			width: 12%;
+
+		.reiki-usui-prices-panel {
+			h4 {
+				text-align: left;
+			}
+		}
+
+		.reiki-usui-prices-image-content,
+		.bg-image-alternative-container {
+			img:not(.vertical) {
+				width: 250px;
+				max-height: unset !important;
+			}
 		}
 	}
 }
 
-@media (min-width: 1025px) {
-	.Reiki aside {
-		flex-direction: inherit;
+@media (min-width: 768px) and (max-width: 1023px) {
+	.Reiki {
+		.reiki-usui-prices-inner-content {
+			padding-left: 0.5rem;
+		}
+		img.img-lombaires {
+			max-width: 300px !important;
+		}
 	}
 }

@@ -1,21 +1,30 @@
 import ParagraphSeparator from '../fragments/Paragraph-Separator';
 import ImgReiki from '../../assets/Reiki/Reiki.svg';
 import ImgReikiVentre from '../../assets/Reiki/Reiki-ventre.png';
-import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.png';
-import ImgReikiPied from '../../assets/Reiki/Reiki-pied.png';
+//import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.png';
+//import ImgReikiPied from '../../assets/Reiki/Reiki-pied.png';
 import '../../scss/routes/Reiki.scss';
 import MetaTag from '../../modules/MetaTag';
+import BgMcImageContainer from '../fragments/McImageContainers/BgMcImageContainer';
+import CtaRendezVous from '../fragments/Ctas/RendezVous';
+import CtaOffres from '../fragments/Ctas/Offres';
+import BgMcImageAlternativeContainer from '../fragments/McImageContainers/BgMcImageAlternativeContainer';
+import ReviewContainer from '../fragments/Reviews-Container';
+import SocialNetworks from '../fragments/Social-Neworks';
+import Faq from '../fragments/Faq';
+import { ReikiFaqItems } from '../entities/faq-items/reiki-faq-items';
+//import McImage from '../fragments/McImage';
+import { PricesReikiH } from '../fragments/Prices/reiki-holistique';
+import { PricesReikiC } from '../fragments/Prices/reiki-cible';
+import Cta from '../fragments/Cta';
 
 const Reiki = () => {
 	const head = () => {
 		return (
 			<MetaTag
-				title='Soin Reiki Usui'
-				description="Le Reiki Usui est un soin énergétique par apposition des mains. Il apporte un
-        supplément d'énergie à l'organisme et participe au retour à
-        l'équilibre du corps et de l'esprit."
-				resume="Le Reiki Usui est un soin énergétique holisitque
-        par apposition des mains venant du Japon. Ce n'est pas un massage."
+				title='Reiki Usui'
+				description='Séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies. Un moment de douceur et de recentrage.'
+				resume='Séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies. Un moment de douceur et de recentrage.'
 			/>
 		);
 	};
@@ -23,203 +32,279 @@ const Reiki = () => {
 	return (
 		<>
 			{head()}
-			<div className='Reiki'>
-				<div className='article'>
-					<h1>Reiki Usui</h1>
+			<div className='Reiki' itemScope itemType='https://schema.org/Offer'>
+				<div className='first-header-2'>
+					<div className='first-header-2-container'>
+						<div className='header-2-container'>
+							<div className='header-2-content'>
+								<h1 itemProp='name'>
+									Le Reiki Usui – un soin énergétique doux, libérateur et
+									universel
+								</h1>
+								<div className='header-2-description'>
+									<p className='header-2-sub-title'>
+										Besoin de relâcher la pression, de calmer le mental, de
+										retrouver une sensation d’unité, de paix intérieure ?
+									</p>
+									<p>
+										Offrez‑vous un soin Reiki Usui avec un Maître Reiki : une
+										expérience subtile où l’énergie circule, apaise, rééquilibre
+										et vous accompagne vers un mieux‑être global.
+									</p>
+									<p>
+										À Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, en
+										cabinet ou à domicile, ouvrez un espace de calme où le
+										mental se pose, le corps se relâche et l’énergie retrouve
+										son chemin naturel.
+									</p>
+									<BgMcImageAlternativeContainer
+										path={ImgReikiVentre}
+										className='img-ventre-reiki'
+										alt='Maître Reiki Usui posant les mains sur le ventre du patient dans un soin Reiki favorisant l’apaisement intérieur'
+									/>
+								</div>
+								<div className='header-2-cta'>
+									<div className='cta-container-row header-2-cta-container'>
+										<CtaRendezVous />
+										<CtaOffres />
+									</div>
+									<blockquote className='cta-blockquote'>
+										Un soin énergétique qui réinstalle l’harmonie et libère
+										l’énergie vitale.
+									</blockquote>
+								</div>
+							</div>
+							<BgMcImageContainer
+								path={ImgReikiVentre}
+								className={'img-ventre-reiki'}
+								alt={
+									'Maître Reiki Usui posant les mains sur le ventre du patient dans un soin Reiki favorisant l’apaisement intérieur'
+								}
+							/>
+						</div>
+					</div>
+				</div>
+				<ParagraphSeparator />
+				<div
+					className='reiki-usui-description-container'
+					itemProp='description'
+				>
+					<div className='reiki-usui-description-main-content'>
+						<BgMcImageContainer
+							path={ImgReiki}
+							className='img-logo-reiki vertical'
+							alt='Kanji japonais représentant le mot Reiki'
+						/>
+						<div className='reiki-usui-description-content'>
+							<p>
+								Le Reiki Usui est une méthode énergétique japonaise douce et
+								naturelle qui soutient l’équilibre du corps, du mental et des
+								émotions. Par l’apposition des mains, il favorise la détente,
+								apaise les tensions et accompagne vers un mieux‑être global.
+							</p>
+							<BgMcImageAlternativeContainer
+								path={ImgReiki}
+								className='img-logo-reiki vertical'
+								alt='Kanji japonais représentant le mot Reiki'
+							/>
+							<p>
+								Ma pratique s’inscrit dans la lignée traditionnelle du Reiki
+								Usui, dans le respect des enseignements transmis depuis Mikao
+								Usui, par Carole Jacob, ma formatrice et amie. Je veille à
+								préserver la simplicité, l’authenticité et l’esprit originel de
+								cette méthode du XIX<sup>éme</sup> siècle, en offrant un soin
+								fidèle à ses valeurs et à sa philosophie.
+							</p>
+							<p>
+								Recevoir un soin Reiki Usui, c’est s’offrir un moment de calme
+								où l’énergie circule à nouveau, où les tensions se relâchent et
+								où l’harmonie intérieure peut se réinstaller. Que ce soit pour
+								apaiser le stress, retrouver de la vitalité, accompagner un
+								changement ou simplement prendre soin de soi, le Reiki Usui
+								ouvre un espace de douceur et de rééquilibrage profond.
+							</p>
+						</div>
+					</div>
+				</div>
+				<ParagraphSeparator />
+				<div className='reiki-usui-benefits-containers'>
+					<h2 className='center-secondary-title'>
+						Les bienfaits du Reiki Usui
+					</h2>
+					<div className='reiki-usui-benefits'>
+						<p>
+							Le Reiki Usui est un soin énergétique holistique doux par
+							apposition des mains. Il offre de nombreux bienfaits en agissant
+							en douceur sur les tensions physiques, émotionnelles et mentales.
+							Il apporte un supplément d'énergie à l'organisme et participe au
+							retour à l'équilibre du corps et de l'esprit.
+						</p>
+						<div className='reiki-usui-benefits-lists'>
+							<div className='reiki-usui-benefits-list'>
+								<p>Le Reiki Usui permet de :</p>
+								<ul>
+									<li>Libérer les blocages et les tensions</li>
+									<li>Renforcer le système immunitaire</li>
+									<li>Favoriser un lâcher‑prise profond</li>
+									<li>Atténuer les douleurs et élimine les toxines</li>
+									<li>Stimuler les processus naturels d’auto‑guérison</li>
+									<li>Réharmoniser et apaiser le corps et l'esprit</li>
+								</ul>
+							</div>
+							<div className='reiki-usui-benefits-disclaimers'>
+								<p>Le Reiki Usui n'est pas :</p>
+								<ul className='disclaimer'>
+									<li>Un massage ou une technique de manipulation du corps</li>
+									<li>
+										Un substitut à un traitement médical ou à un suivi
+										thérapeutique
+									</li>
+									<li>
+										Une méthode qui exige d’adhérer à un système de pensée
+										particulier
+									</li>
+									<li>
+										Un diagnostic, une analyse ou une interprétation de
+										symptômes
+									</li>
+								</ul>
+							</div>
+						</div>
+						<blockquote>
+							Un souffle bienveillant qui accompagne vos forces intérieures,
+							sans jamais s’y substituer.
+						</blockquote>
+					</div>
+				</div>
+				<ParagraphSeparator />
+				<div className='reiki-usui-targets-container'>
+					<h3>À qui s’adresse le Reiki Usui ?</h3>
+					<p>
+						Le Reiki Usui est un soin énergétique holistique doux qui convient à
+						tous : bébés, enfants, adultes, personnes âgées, les animaux, les
+						plantes...
+					</p>
 
-					<h2>Qu'est-ce que le Reiki Usui ?</h2>
-					<section className='paragraphe-1'>
-						<aside>
-							<div>
-								<img
-									src={ImgReiki}
-									className='img-reiki-kanji'
-									alt='Reiki'
-									title='Reiki en kanji'
-									loading='lazy'
-								/>
-							</div>
-						</aside>
-						<section className='paragraphe-content'>
+					<div className='reiki-usui-targets-lists'>
+						<div className='reiki-usui-target-list'>
 							<p>
-								Le <em>Reiki</em> signifie en japonais énergie de vie
-								universelle.
+								Il est particulièrement adaptée si vous recherchez un soutien
+								pour faire face :
 							</p>
 							<ul>
-								<ol>
-									<i>Rei</i> : c'est l'universalité, le saint, le don, l'esprit
-								</ol>
-								<ol>
-									<i>Ki</i> : c'est l'énergie. Selon la tradition, on l'appelle
-									: Qi, Kundalini, lumière, la source ou la conscience
-									universelle ou encore Esprit Saint chez les Chrétiens...
-								</ol>
-							</ul>
-							<p>
-								Le <em>Reiki Usui</em> est une méthode d'harmonisation
-								énergétique par apposition des mains. Elle a été fondée par le
-								Japonais Mikao Usui à la suite d’une révélation mystique qui
-								l’aurait conduit à la fin du XIX<sup>éme</sup> siècle à recevoir
-								les « clefs de la guérison ».
-							</p>
-							<p>
-								Ce n'est pas un massage. Il apporte un supplément d'énergie à
-								l'organisme et participe au retour à l'équilibre du corps et de
-								l'esprit.
-							</p>
-						</section>
-					</section>
-					<section>
-						<section>
-							<p>
-								<b>
-									Un soin <em>Reiki Usui</em>, en aucun cas, ne se substitue à
-									un traitement médical allopathique. Le <em>Reiki Usui</em> ne
-									soigne pas, il accompagne vers la guérison.
-								</b>
-							</p>
-						</section>
-					</section>
-					<ParagraphSeparator />
-					<h2>Qui peut recevoir du Reiki Usui ?</h2>
-					<section className='paragraphe-2'>
-						<section className='paragraphe-content'>
-							<p>
-								Le <em>Reiki Usui</em> est un soin énergétique holistique doux
-								qui convient à tous : bébés, enfants, adultes, personnes âgées,
-								les animaux, les plantes...
-							</p>
-							<b>
-								En cas de troubles psychotiques, schizophréniques ou de
-								dissociation de la personnalité, le <em>Reiki</em> est
-								contre-indiqué.
-							</b>
-							<p>
-								Sinon dans les autres cas, il n'y a pas de contre-indication et
-								ce quelle que soit la distance.
-							</p>
-						</section>
-						<aside>
-							<div>
-								<img
-									src={ImgReikiVentre}
-									className='img-reiki-ventre'
-									alt='Soin Reiki Usui - Apposition des mains sur le ventre'
-									title='Soin Reiki Usui - Apposition des mains sur le ventre'
-									loading='lazy'
-								/>
-							</div>
-						</aside>
-					</section>
-					<ParagraphSeparator />
-					<section className='paragraphe-3'>
-						<aside>
-							<div>
-								<img
-									src={ImgReikiGenou}
-									className='img-reiki-genou'
-									alt='Soin Reiki Usui - Apposition des mains sur le genou'
-									title='Soin Reiki Usui - Apposition des mains sur le genou'
-									loading='lazy'
-								/>
-							</div>
-						</aside>
-						<section className='paragraphe-content'>
-							<h2>Pour quelles raisons consulter ?</h2>
-							<p>
-								Le <em>Reiki Usui</em> favorise le bien-être physique,
-								émotionnel, psychologique et psychique. Il apporte détente,
-								confort, bien-être et équilibre. Il agit sur :
-							</p>
-							<ul>
-								<li>Le stress, l'anxiété, le burn-out</li>
-								<li>La fatigue, l'insomnie, le manque de vitalité</li>
+								<li>Au stress, à l'anxiété ou au burn-out</li>
+								<li>A la fatigue, l'insomnie ou manque de vitalité</li>
 								<li>
-									Les états émotionnels, la perte de confiance, les blocages,
-									les schémas répétitifs
+									A des états émotionnels, la perte de confiance, des blocages
+									ou des schémas répétitifs
 								</li>
 								<li>
-									Les tensions musculaires, les douleurs chroniques et
-									articulaires{' '}
+									A des tensions musculaires, des douleurs chroniques,
+									articulaires ou inflamatoires
 								</li>
 								<li>
-									Il accompagne au changement que ce soit dans la vie
-									personnelle ou professionnelle
+									Au changement que ce soit dans la vie personnelle ou
+									professionnelle
 								</li>
 							</ul>
-							<p>
-								Par son approche holisitque le soin énergétique{' '}
-								<em>Reiki Usui</em> contribue à libérer les blocages et les
-								tensions, renforce le système immunitaire, atténue la douleur et
-								élimine les toxines. Il apporte des bienfaits dans tous les
-								domaines de la vie.
-							</p>
-						</section>
-					</section>
-					<ParagraphSeparator />
-					<h2>Comment se déroule un soin énergétique Reiki Usui ?</h2>
-					<section className='paragraphe-4'>
-						<section className='paragraphe-content'>
-							<p>
-								Une séance type de <em>Reiki Usui</em> dure environ 1h00 et se
-								déroule en 3 temps :
-							</p>
-							<ul>
+						</div>
+						<div className='reiki-usui-target-disclaimer-list'>
+							<p>Il ne covient pas en cas : </p>
+							<ul className='disclaimer'>
 								<li>
-									Nous commençons par un entretien pour échanger, ensemble, sur
-									les raisons qui vous motivent à recevoir un soin énergétique{' '}
-									<em>Reiki Usui</em>.
-								</li>
-								<li>
-									Durant la séance, vous êtes habillés, allongés confortablement
-									sur ma table de soin. Je procède à une série d'appositions
-									douces des mains sur les différentes parties de votre corps.
-									Laissez-vous aller, lâchez prise. Profitez de cet instant de
-									douceur et de calme, l'énergie du <em>Reiki</em> se diffuse là
-									où vous en avez besoin.
-								</li>
-								<li>
-									La séance se termine par un échange pour connaitre votre
-									ressenti durant le soin.
+									De troubles psychotiques, schizophréniques ou de dissociation
+									de la personnalité
 								</li>
 							</ul>
-						</section>
-						<aside>
-							<div>
-								<img
-									src={ImgReikiPied}
-									className='img-reiki-tete'
-									alt='Soin Reiki Usui - Apposition des mains sur les pieds'
-									title='Soin Reiki Usui - Apposition des mains sur les pieds'
-									loading='lazy'
+						</div>
+					</div>
+					<blockquote>
+						Chaque séance est une halte bienfaisante, adaptée à ce que votre
+						corps, votre cœur et votre énergie traversent ici et maintenant.
+					</blockquote>
+				</div>
+				<ParagraphSeparator />
+				<div className='reiki-usui-prices-container'>
+					<h3>Tarifs 2026 des soins énergétiques Reiki Usui</h3>
+					<div className='reiki-usui-prices-content'>
+						<div className='reiki-usui-prices-inner-content'>
+							<div className='reiki-usui-prices-panel'>
+								<PricesReikiH title='Soin Reiki Usui holistique séance 1h00 - 45 mins de soin' />
+								<br />
+								<p>
+									<h4 className='inline'>Soin Reiki Usui à distance</h4>{' '}
+									<span className='asterix'>*</span> :{' '}
+									<span itemProp='price'>60,00</span>
+									<span itemProp='priceCurrency'>€</span>
+								</p>
+							</div>
+							<div className='reiki-usui-prices-panel'>
+								<PricesReikiC title='Soin Reiki Usui ciblé séance 0h30 - 25 mins de soin' />
+							</div>
+						</div>
+						<div className='cta-container-row footer-cta-container'>
+							<div className='cta-container-row footer-cta-container reiki-usui-prices-cta'>
+								<CtaRendezVous />
+								<Cta
+									link='/offres-et-tarifs#reiki-tarifs'
+									title={
+										'Cliquez ici pour découvrir mes soins offres de soins, carte cadeau, packs et promotions.'
+									}
+									ctaLinkClassName='cta-secondary'
+									ctaText='Découvrir mes offres de soins'
 								/>
 							</div>
-						</aside>
-					</section>
-					<section className='paragraphe-5'>
-						<section className='paragraphe-content'>
-							<h3>
-								Le soin énergétique <em>Reiki Usui</em> ciblé
-							</h3>
+							<blockquote className='cta-blockquote'>
+								Là où la douceur s’installe, l’équilibre renaît.
+							</blockquote>
+						</div>
+						<div className='reiki-usui-prices-legende'>
 							<p>
-								Le soin énergétique ciblé est un soin <em>Reiki Usui</em> plus
-								court, d'une durée de 30 minutes environ, qui va à l'essentiel.
-								Il est particulièrement adapté aux troubles d'ordre physique
-								localisés : douleurs de dos, de genoux, de ventre... Il se
-								concentre sur une zone du corps en particulier nécessitant
-								généralement plusieurs séances espacées dans le temps.
+								<i>
+									<span className='asterix'>*</span> Le Reiki Usui peut se
+									pratiquer à distance, mais seulement lorsque cette approche
+									est pertinente pour la personne.
+								</i>
 							</p>
-						</section>
-					</section>
-					<section className='paragraphe-5'>
-						<section className='paragraphe-content'>
-							<p>
-								Mon savoir-faire, mes qualités d'écoute et d'empathie sont à
-								votre service pour vous accompagner vers le bien-être et la
-								guérison. J'adapte mes soins énergétiques selon vos besoins.
-							</p>
-						</section>
-					</section>
+						</div>
+					</div>
+				</div>
+				<ParagraphSeparator />
+				{/* Avis */}
+				<div className='review-container'>
+					<ReviewContainer filter='Reiki' />
+				</div>
+				<div className='social-networks-container'>
+					<SocialNetworks />
+				</div>
+				<ParagraphSeparator />
+				{/* FAQ */}
+				<div
+					className='faq-container'
+					itemScope
+					itemType='https://schema.org/FAQPage'
+				>
+					<div className='faq-main-container'>
+						<h2>Les questions fréquentes</h2>
+						<div className='faq-content'>
+							<Faq items={ReikiFaqItems} />
+						</div>
+					</div>
+				</div>
+				<ParagraphSeparator />
+				<div className='footer-cta'>
+					<h2>Prêt(e) à vous offrir un moment rien que pour vous ?</h2>
+					<p>
+						Si vous ressentez l’élan de vous accorder un temps de calme, de
+						recentrage et de douceur, je vous invite à prendre rendez‑vous. Une
+						séance de Reiki Usui peut être l’occasion de vous reconnecter à
+						vous‑même et de laisser votre énergie retrouver son chemin naturel
+						vers l’équilibre.
+					</p>
+					<div className='cta-container-row footer-cta-container'>
+						<CtaRendezVous />
+						<CtaOffres />
+					</div>
 				</div>
 			</div>
 		</>

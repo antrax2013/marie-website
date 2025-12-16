@@ -1,0 +1,114 @@
+{
+	"@context": "http://schema.org",
+	"@type": "LocalBusiness",
+	"additionalType": "Soins énergétiques",
+	"name": "Marie Cophignon - Soins énergétiques & Massages bien-être",
+	"legalName": "Marie COPHIGNON Thérapeute énergétique",
+	"leiCode": "910 427 988 00019",
+	"iso6523Code": "0009:91042798800019",
+	"founders": "Marie COPHIGNON",
+	"foundingDate": "2022-03-01",
+	"image": "https://marie.cophignon.net/logo192.png",
+	"logo": "https://marie.cophignon.net/logo192.png",
+	"url": "https://marie.cophignon.net",
+	"description": "Soins énergétiques Reiki, Massage des 5 Continents et massage assis méthode EAS® à Guyancourt, Élancourt et à domicile sur Saint-Quentin-en-Yvelines.",
+	"telephone": "07.73.55.27.70",
+	"areaServed": [
+		"Guyancourt",
+		"Élancourt",
+		"Saint-Quentin-en-Yvelines",
+		"Montigny-le-Bretonneux",
+		"Voisins-le-Bretonneux",
+		"Trappes",
+		"Maurepas",
+		"La Verrière",
+		"Magny-les-Hameaux",
+		"Coignières"
+	],
+	"address": [
+		{
+			"@type": "PostalAddress",
+			"streetAddress": "1, rue Le Corbusier",
+			"addressLocality": "Guyancourt",
+			"postalCode": "78280",
+			"addressCountry": "FR"
+		},
+		{
+			"@type": "PostalAddress",
+			"streetAddress": "6, résidence Les Nouveaux Horizons",
+			"addressLocality": "Élancourt",
+			"postalCode": "78990",
+			"addressCountry": "FR"
+		}
+	],
+	"serviceArea": {
+		"@type": "Place",
+		"name": "Agglomération de Saint-Quentin-en-Yvelines"
+	},
+	"openinghours": "Du lundi au vendredi 09:00-19:00",
+	"paymentAccepted": "Espèces, chéque",
+	"sameAs": ["https://massagedes5continents.com/membres/8424/Cophignon-Marie/"],
+	"makesOffer": [
+		{
+			"@type": "Offer",
+			"name": "Soin Reiki Usui",
+			"description": "Soin énergétique holistique ou ciblé.",
+			"price": "40-75 EUR"
+		},
+		{
+			"@type": "Offer",
+			"name": "Massage des 5 Continents (M5C)",
+			"description": "Massage énergétique complet de 1h30.",
+			"price": "80-95 EUR"
+		},
+		{
+			"@type": "Offer",
+			"name": "Massage assis méthode EAS®",
+			"description": "Massage du dos assis, durée variable.",
+			"price": "25-55 EUR"
+		},
+		{
+			"@type": "Offer",
+			"name": "Coffret Duo",
+			"description": "2 soins au choix avec 20€ de réduction hors massages du dos de 20 min et de 35 min."
+		},
+		{
+			"@type": "Offer",
+			"name": "Offre découverte",
+			"description": "10€ de réduction sur votre premier soin ≥ 50€."
+		},
+		{
+			"@type": "Offer",
+			"name": "Parrainage",
+			"description": "Réductions pour le parrain et le filleul."
+		},
+		{
+			"@type": "Offer",
+			"name": "Carte cadeau",
+			"description": "Carte cadeau valable 1 an."
+		}
+	],
+	"hasOfferCatalog": {
+		"@type": "OfferCatalog",
+		"name": "Catalogue des soins énergétiques et massages",
+		"itemListElement": [
+			{
+				"@type": "OfferCatalog",
+				"name": "Soins Reiki Usui",
+				"itemListElement": [
+					{ "@type": "Offer", "name": "Soin holistique 1h" },
+					{ "@type": "Offer", "name": "Soin ciblé 30 min" },
+					{ "@type": "Offer", "name": "Soin Reiki à distance" }
+				]
+			},
+			{
+				"@type": "OfferCatalog",
+				"name": "Massages énergétiques",
+				"itemListElement": [
+					{ "@type": "Offer", "name": "Massage assis EAS®" },
+					{ "@type": "Offer", "name": "Massage des 5 Continents (M5C)" }
+				]
+			}
+		]
+	}
+}

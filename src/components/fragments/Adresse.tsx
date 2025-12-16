@@ -6,6 +6,7 @@ interface iAddress {
 	postalCode?: string;
 	addressLocality?: string;
 	map?: string;
+	mapWidth?: number;
 	latitude?: string;
 	longitude?: string;
 	id?: string;
@@ -19,24 +20,33 @@ export const Adresse = ({
 	postalCode,
 	addressLocality: locality,
 	map,
+	mapWidth,
 	latitude,
 	longitude,
 }: /*...props*/
 iAddress) => {
 	return (
-		<>
-			<section className='section-header'>
-				<h3>{title}</h3>
-				{!!descprition && <p>{descprition}</p>}
-			</section>
-			<section
+		<div className='address-container'>
+			<div className='section-header'>{!!title && <h4>{title}</h4>}</div>
+			<div
 				className='section-content'
-				itemProp='provider'
 				itemScope
 				itemType='https://schema.org/HealthClub'
 			>
 				<address>
+					{!!map && (
+						<div className='section-map'>
+							<div className='map' itemProp='hasMap'>
+								<iframe
+									src={map}
+									width={mapWidth || 300}
+									loading='lazy'
+								></iframe>
+							</div>
+						</div>
+					)}
 					<div className='section-adresse'>
+						{!!descprition && <p>{descprition}</p>}
 						<span
 							className='paragraphe-content'
 							itemProp='address'
@@ -69,15 +79,8 @@ iAddress) => {
 							<meta itemProp='longitude' content={longitude} />
 						</span>
 					)}
-					{!!map && (
-						<aside className='section-map'>
-							<div className='map' itemProp='hasMap'>
-								<iframe src={map} loading='lazy'></iframe>
-							</div>
-						</aside>
-					)}
 				</address>
-			</section>
-		</>
+			</div>
+		</div>
 	);
 };

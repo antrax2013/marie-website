@@ -1,7 +1,6 @@
 import MetaTag from '../../modules/MetaTag';
 import ParagraphSeparator from '../fragments/Paragraph-Separator';
 import '../../scss/routes/Consultations.scss';
-import { Adresse } from '../fragments/Adresse';
 import { useEffect } from 'react';
 
 const Consultations = () => {
@@ -9,7 +8,7 @@ const Consultations = () => {
 		return (
 			<MetaTag
 				title={'Consultations'}
-				description='Pour mes consultations, je vous accueille en cabinet, tous les lundis au cabinet à Elancourt et les jeudis à Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile sur Saint Quentin en Yvelines.'
+				description='Pour mes consultations, je vous accueille en cabinet, tous les lundis au cabinet à Élancourt et les jeudis à Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile sur Saint Quentin en Yvelines.'
 				resume='Organisation de mes consultations.'
 			/>
 		);
@@ -68,7 +67,7 @@ const Consultations = () => {
 							<ul>
 								<li>
 									Le lundi, au cabinet des Nouveaux Horizons à{' '}
-									<a href='#elancourt'>Elancourt</a>.
+									<a href='#elancourt'>Élancourt</a>.
 								</li>
 								<li>
 									Le jeudi, au cabinet Blowball que je partage avec{' '}
@@ -88,32 +87,8 @@ const Consultations = () => {
 						</section>
 					</section>
 					<ParagraphSeparator />
-					<section className='paragraphe-2-2' id='elancourt'>
-						<Adresse
-							title='Consultation au cabinet des Nouveaux Horizons à Elancourt'
-							descprition='Le cabinet se trouve à l&rsquo;adresse suivante :'
-							floor='au rez-de-chaussée'
-							streetAddress='6, résidence Les Nouveaux Horizons'
-							postalCode='78990'
-							addressLocality='Elancourt'
-							map='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5259.333417438771!2d1.9490288128986093!3d48.76916077120053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e68371362865c9%3A0xa6281787cf5df1d!2s6%20R%C3%A9s%20les%20Nouveaux%20Horizons%2C%2078990%20%C3%89lancourt%2C%20France!5e0!3m2!1sfr!2snl!4v1717231208343!5m2!1sfr!2snl'
-							latitude='48.769486'
-							longitude='1.951657'
-						/>
-					</section>
-					<section className='paragraphe-2-1' id='guyancourt'>
-						<Adresse
-							title='Consultation au cabinet Blowball de Guyancourt'
-							descprition='Le cabinet Blowball se trouve à l&rsquo;adresse suivante :'
-							floor='au rez-de-chaussée'
-							streetAddress='1, rue Le Corbusier'
-							postalCode='78280'
-							addressLocality='Guyancourt'
-							map='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657.4474125145919!2d2.0711613275401377!3d48.76681317927859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e680b8df551913%3A0x4c47046451eeaf2f!2s1%20Rue%20le%20Corbusier%2C%2078280%20Guyancourt!5e0!3m2!1sfr!2sfr!4v1647003179533!5m2!1sfr!2sfr'
-							latitude='48.766979'
-							longitude='2.071681'
-						/>
-					</section>
+					<section className='paragraphe-2-2' id='elancourt'></section>
+					<section className='paragraphe-2-1' id='guyancourt'></section>
 
 					<section className='paragraphe-2-3'>
 						<section className='paragraphe-content perimetre'>
@@ -127,7 +102,7 @@ const Consultations = () => {
 								<ul className='ul-perimetre'>
 									{[
 										'Maurepas',
-										'Elancourt',
+										'Élancourt',
 										'Coignières',
 										'La Verrière',
 										'Le Mesnil-Saint-Denis',
@@ -156,19 +131,7 @@ const Consultations = () => {
 							</p>
 						</section>
 					</section>
-					<section className='paragraphe-2-4'>
-						<Adresse
-							title='Consultation au siège'
-							descprition='Exceptionnellement, je peux vous recevoir au siège de
-              l&rsquo;entreprise qui se trouve à l&rsquo;adresse suivante :'
-							streetAddress='14, place des Ardennes résidence la Villeparc'
-							postalCode='78310'
-							addressLocality='Maurepas'
-							map='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.546307818326!2d1.9400818128986803!3d48.771459771200966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6836f3dee7473%3A0x7e1a20a8e00e22a4!2s14%20Pl.%20des%20Ardennes%2C%2078310%20Maurepas%2C%20France!5e0!3m2!1sfr!2snl!4v1717231741310!5m2!1sfr!2snl'
-							latitude='48.771601'
-							longitude='1.942598'
-						/>
-					</section>
+					<section className='paragraphe-2-4'></section>
 				</div>
 			</div>
 		</>

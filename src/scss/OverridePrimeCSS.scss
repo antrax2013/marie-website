@@ -74,9 +74,10 @@ nav {
 		}
 
 		.p-menubar-start,
-		.p-menubar-root-list,
-		.p-menubar-end,
-		.p-menuitem-content {
+		//.p-menubar-root-list,
+		.p-menubar-end
+		//.p-menuitem-content
+		{
 			display: flex !important;
 		}
 

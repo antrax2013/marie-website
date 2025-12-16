@@ -1,3 +1,5 @@
+import '../../scss/fragments/Cta.scss';
+
 export interface iCta {
 	link: string;
 	ctaLinkClassName?: string;

@@ -2,10 +2,13 @@ import { Carousel } from 'primereact/carousel';
 import * as avis from '../../assets/avis.json';
 import { useState } from 'react';
 import google from '../../assets/icon-google.svg';
+import { iReviewsCarousel } from './Reviews-Container';
 
-const ReviewsCarousel = () => {
+const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 	const data = { ...avis };
-	const [products, _] = useState(data.avis);
+	const [products, _] = useState(
+		!!filter ? data.avis.filter((a) => a.tags == filter) : data.avis,
+	);
 
 	//https://ceciletrias.fr/
 	const productTemplate = (item: any) => {
@@ -28,7 +31,7 @@ const ReviewsCarousel = () => {
 						</p>
 						<img
 							className='carousel-social-network-icon'
-							alt={`le logo de : réseau social source du commentaire`}
+							alt={`Logo Google utilisé pour illustrer les avis clients`}
 							src={google}
 						/>
 					</div>

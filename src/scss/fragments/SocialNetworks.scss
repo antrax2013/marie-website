@@ -1,5 +1,7 @@
 .social-networks-container {
-	display: inline-block;
+	margin: 0.5rem;
+	display: flex;
+	justify-content: center;
 	.social-networks {
 		display: flex !important;
 		flex-flow: row wrap;

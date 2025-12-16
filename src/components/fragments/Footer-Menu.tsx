@@ -15,13 +15,12 @@ const FooterMenu = (/*{ ...props }*/) => {
 						>
 							<div className='logo-container' itemProp='logo'>
 								<img
-									alt='une fleur de vie, le logo du site'
-									title='une fleur de vie, le logo du site'
+									alt='Fleur de vie utilisée comme logo pour illustrer le bien-être et l’harmonisation énergétique'
 									loading='lazy'
 									src={Logo}
 								/>
 							</div>
-							<div className='address-container'>
+							<div className='main-address-container'>
 								<Adresse
 									title='Marie COPHIGNON - Massothérapeute énergétique'
 									streetAddress='14, place des Ardennes résidence la Villeparc'
@@ -61,9 +60,9 @@ const FooterMenu = (/*{ ...props }*/) => {
 					<span className='asterix' id='disclaimers'>
 						*
 					</span>{' '}
-					Les soins Reki Usui et massages énergétiques ne se substitutent pas un
-					traitement médical ou thérapeutique. Les soins et massages ne sont pas
-					à carctère sexuel. Pour les mineurs la présence d’un adulte
+					Les soins Reiki Usui et massages énergétiques ne se substitutent pas
+					un traitement médical ou thérapeutique. Les soins et massages ne sont
+					pas à carctère sexuel. Pour les mineurs la présence d’un adulte
 					accompagnant durant toute la séance est obligatoire.
 				</p>
 			</div>

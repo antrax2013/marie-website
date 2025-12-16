@@ -24,10 +24,31 @@ const Contact = () => {
 	const [enableSendButton, setEnableSendButton] = useState(true);
 	const toast = useRef<Toast>(null);
 
+	const tag =
+		new URLSearchParams(window.location.search).get('sujet') ??
+		'prise-rendez-vous';
+
 	const sujets = [
-		{ label: 'Prise de rendez-vous', value: 'Prise de rendez-vous' },
-		{ label: 'Informations de suivi', value: 'Informations de suivi' },
-		{ label: 'Demande de renseignements', value: 'Demande de renseignements' },
+		{
+			label: 'Prise de rendez-vous',
+			value: 'Prise de rendez-vous',
+			tag: 'prise-rendez-vous',
+		},
+		{
+			label: 'Informations de suivi',
+			value: 'Informations de suivi',
+			tag: 'suivi',
+		},
+		{
+			label: 'Demande de devis',
+			value: 'Demande de devis',
+			tag: 'demande-de-devis',
+		},
+		{
+			label: 'Demande de renseignements',
+			value: 'Demande de renseignements',
+			tag: 'demande-de-renseignements',
+		},
 	];
 
 	const formik = useFormik({
@@ -37,7 +58,7 @@ const Contact = () => {
 			prenom: '',
 			telephone: '',
 			message: '',
-			sujet: sujets[0].value,
+			sujet: sujets.filter((s) => s.tag === tag)[0]?.value ?? sujets[0].value,
 		},
 		validate: (data) => {
 			const errors: iError = {};
@@ -117,8 +138,8 @@ const Contact = () => {
 		return (
 			<MetaTag
 				title='Contact'
-				description="Mes différents soins et massages énergétiques vous intéressent, vous avez des questions ou vous voulez partager, avec moi, vos retours d'expérience, pour me contacter par email utilisez ce formulaire."
-				resume='Restons en contact.'
+				description='Prenez rendez‑vous pour un massage énergétique ou une séance de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Contact simple et rapide pour votre moment bien‑être.'
+				resume='Prenez rendez‑vous pour un massage énergétique ou une séance de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Contact simple et rapide pour votre moment bien‑être.'
 			/>
 		);
 	};

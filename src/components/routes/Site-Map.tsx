@@ -5,8 +5,8 @@ const SiteMap = () => {
 		return (
 			<MetaTag
 				title='Plan du site'
-				description='Le plan du site. Vous trouverez le lien vers les différentes pages qui le compose : Reiki Usui, Massage des 5 Continents et plus encore...'
-				resume='Le plan du site pour ne pas vous perdre.'
+				description='Plan des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
+				resume='Plan des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
 			/>
 		);
 	};
@@ -18,13 +18,16 @@ const SiteMap = () => {
 				<h1>Le plan du site</h1>
 				<ul>
 					<li>
-						<a href='/'>Qui suis-je ?</a>
+						<a href='/'>Accueil</a>
+					</li>
+					<li>
+						<a href='/qui-suis-je'>Qui suis-je ?</a>
 					</li>
 					<li>
 						<a href='/massage-assis-methode-eas'>Massage assis méthode EAS®</a>
 					</li>
 					<li>
-						<a href='/reiki'>Reiki Usui</a>
+						<a href='/reiki-usui'>Reiki Usui</a>
 					</li>
 					<li>
 						<a href='/massage-des-5-continents'>Massage des 5 Continents</a>
@@ -36,7 +39,10 @@ const SiteMap = () => {
 						<a href='/contact'>Contact</a>
 					</li>
 					<li>
-						<a href='/offres'>Tarifs et Offres</a>
+						<a href='/offres-et-tarifs'>Offres et Tarifs</a>
+					</li>
+					<li>
+						<a href='/mentions-legales'>Mentions legales</a>
 					</li>
 					<li>
 						<a href='/politique-de-confidentialite'>

@@ -1,5 +1,5 @@
 import Cta, { iCta } from './Cta';
-import McImage, { iImage } from './Image';
+import McImage, { iImage } from './McImage';
 
 export interface iProduct {
 	header: string | JSX.Element;
@@ -24,7 +24,7 @@ const Product = ({
 		<div
 			className='products-header-container'
 			itemScope
-			itemType='https://schema.org/Service'
+			itemType='https://schema.org/Offer'
 		>
 			<div className='product-content'>
 				<meta itemProp='category' content={category} />
@@ -43,12 +43,11 @@ const Product = ({
 				<div className='product-description-2'>
 					<p itemProp='description'>{content}</p>
 				</div>
-				<div className='product-cta'>
+				<div className='product-cta cta-container-column'>
 					<Cta
 						link={cta.link}
 						title={cta.title}
 						ctaLinkClassName={cta.ctaLinkClassName}
-						target='_self'
 					/>
 					<blockquote className='cta-blockquote'>{bloquoteContent}</blockquote>
 				</div>

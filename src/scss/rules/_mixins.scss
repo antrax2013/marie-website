@@ -54,3 +54,26 @@
 	height: 80%;
 	border-radius: 25px;
 }
+
+@mixin svg-secondary-color-text {
+	filter: brightness(0) saturate(100%) invert(89%) sepia(27%) saturate(1385%)
+		hue-rotate(318deg) brightness(89%) contrast(96%);
+}
+
+@mixin svg-primary-color {
+	filter: brightness(0) saturate(100%) invert(47%) sepia(61%) saturate(4234%)
+		hue-rotate(1deg) brightness(101%) contrast(106%);
+}
+@mixin svg-text-color {
+	filter: brightness(0) saturate(100%) invert(14%) sepia(7%) saturate(6039%)
+		hue-rotate(353deg) brightness(101%) contrast(95%);
+}
+
+@mixin svg-tertiary-color {
+	filter: brightness(0) saturate(100%) invert(12%) sepia(72%) saturate(4189%)
+		hue-rotate(272deg) brightness(76%) contrast(119%);
+}
+@mixin svg-secondary-color {
+	filter: brightness(0) saturate(100%) invert(80%) sepia(66%) saturate(2917%)
+		hue-rotate(325deg) brightness(119%) contrast(108%);
+}

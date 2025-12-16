@@ -1,17 +1,23 @@
 export interface iFaqItem {
 	question: string;
-	response: string | JSX.Element;
+	response: any; //JSX.Element;
 }
 
 const FaqItemComponent = (item: iFaqItem) => {
 	return (
-		<div className='faq-item'>
+		<div className='faq-item' itemScope itemType='https://schema.org/Question'>
 			{' '}
-			<h3 className='faq-question' itemProp='category' content='question'>
+			<h3 className='faq-question' itemProp='text' content='question'>
 				{item.question}
 			</h3>
-			<div className='faq-response' itemProp='category' content='answer'>
-				{item.response}
+			<div
+				className='faq-response'
+				itemProp='suggestedAnswer acceptedAnswer'
+				itemScope
+				itemType='https://schema.org/Answer'
+				content='answer'
+			>
+				<span itemProp='text'>{item.response}</span>
 			</div>
 		</div>
 	);

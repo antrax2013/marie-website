@@ -20,20 +20,22 @@ const Menu = ({ ...props }) => {
 	const start = (
 		<div className='title' itemScope itemType='https://schema.org/HealthClub'>
 			<a
-				href={`https://${import.meta.env.VITE_META_DOMAINE}`}
+				href='/'
 				className='accueil'
 				title='Cliquez ici pour retourner à la page d’accueil'
 			>
 				<img
 					itemProp='logo'
-					alt='le logo du site Massothérapeute énergétique - Marie Cophignon : une fleur de vie'
+					alt='Fleur de vie utilisée comme logo pour illustrer le bien-être et l’harmonisation énergétique'
 					src={logo}
 					className='logo'
-					title='le logo du site Massothérapeute énergétique - Marie Cophignon : une fleur de vie'
 					loading='lazy'
 				/>
 				<span itemProp='name' className='nom-site'>
-					{import.meta.env.VITE_META_NAME} - {import.meta.env.VITE_META_TITLE}
+					<span className='name-marie'>
+						{import.meta.env.VITE_META_NAME} -{' '}
+					</span>
+					{import.meta.env.VITE_META_TITLE}
 				</span>
 			</a>
 		</div>
@@ -95,7 +97,7 @@ const Menu = ({ ...props }) => {
 					template: (item: MenuItem, options: MenuItemOptions) => {
 						return itemTemplate(item, options);
 					},
-					url: '/reiki',
+					url: '/reiki-usui',
 					className: getClassName('reiki'),
 					command: () => {
 						onClick('reiki');
@@ -115,17 +117,17 @@ const Menu = ({ ...props }) => {
 			},
 			className: getClassName('qui-suis-je'),
 		},
-		// {
-		// 	label: 'Tarifs et Offres',
-		// 	template: (item: MenuItem, options: MenuItemOptions) => {
-		// 		return itemTemplate(item, options);
-		// 	},
-		// 	url: '/offres',
-		// 	className: getClassName('offres'),
-		// 	command: () => {
-		// 		onClick('offres');
-		// 	},
-		// },
+		{
+			label: 'Tarifs et Offres',
+			template: (item: MenuItem, options: MenuItemOptions) => {
+				return itemTemplate(item, options);
+			},
+			url: '/offres-et-tarifs',
+			className: getClassName('offres-et-tarifs'),
+			command: () => {
+				onClick('offres-et-tarifs');
+			},
+		},
 		// {
 		// 	label: 'Consultations',
 		// 	template: (item: MenuItem, options: MenuItemOptions) => {

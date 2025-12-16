@@ -13,9 +13,9 @@ const FooterLinks = () => {
 				onClick={() => onClick('politique-de-confidentialite')}
 			/>
 			<Button
-				label='Informations légales'
+				label='Mentions légales'
 				className='p-button-secondary p-button-text'
-				onClick={() => onClick('informations-légales')}
+				onClick={() => onClick('mentions-legales')}
 			/>
 			<Button
 				label='Plan du site'

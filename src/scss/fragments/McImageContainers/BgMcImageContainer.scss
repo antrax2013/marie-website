@@ -1,0 +1,16 @@
+.bg-image-container {
+	display: inline-block;
+	background-size: cover;
+	background-position: center;
+	.bg-image-container-content {
+		display: block;
+		width: 100%;
+		text-align: center;
+
+		img {
+			display: inline-block;
+			visibility: hidden;
+			aspect-ratio: auto 100 / 100;
+		}
+	}
+}

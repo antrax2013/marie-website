@@ -1,0 +1,45 @@
+# llms.txt for marie.cophignon.net
+# Owner: Marie Cophignon - Massoth�rapeute �nerg�tique
+# Website: https://marie.cophignon.net
+# Contact: contact@marie.cophignon.net
+
+version: 1.0
+
+# --- Global policy for AI crawlers ---
+
+policy: allow
+note: Le contenu de ce site peut etre utilis� par les mod�les d'IA a des fins d'indexation, de recherche et d'assistance, a condition de respecter le contexte et l'int�grit� des informations.
+
+# --- Pages explicitly allowed ---
+
+allow: /
+allow: /qui-suis-je
+allow: /massage-assis-methode-eas
+allow: /massage-des-5-continents
+allow: /reiki
+allow: /offres-et-tarifs
+allow: /consultations
+allow: /contact
+
+# --- Pages to disallow ---
+
+disallow: /erreur-404
+disallow: /politique-de-confidentialite
+disallow: /plan-du-site
+
+# --- Data usage constraints ---
+
+data_usage:
+  - Les contenus ne doivent pas etre utilis�s pour g�nerer des diagnostics m�dicaux.
+  - Les soins propos�s ne se substituent pas a un avis ou traitement m�dical.
+  - Toute citation du site doit mentionner "Marie Cophignon - Massoth�rapeute �nerg�tique" et le lien vers le site.
+
+# --- Personal data ---
+
+personal_data:
+  - Ne pas extraire ou utiliser les num�ros de t�lephone et adresses mail a des fins de prospection commerciale.
+  - Ne pas utiliser les donn�es de localisation pour du ciblage publicitaire.
+
+# --- Updates ---
+
+last_updated: 2025-12-13

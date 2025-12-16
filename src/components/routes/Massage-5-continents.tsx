@@ -2,18 +2,28 @@ import ParagraphSeparator from '../fragments/Paragraph-Separator';
 import ImgM5C from '../../assets/M5C/massage-5-continents.png';
 import ImgM5CColonne from '../../assets/M5C/m5c-colonne.png';
 import ImgM5CDos from '../../assets/M5C/m5c-bas-dos.png';
-import ImgM5CBras from '../../assets/M5C/m5c-bras.png';
+//import ImgM5CBras from '../../assets/M5C/m5c-bras.png';
 import '../../scss/routes/M5C.scss';
 import MetaTag from '../../modules/MetaTag';
+import BgMcImageAlternativeContainer from '../fragments/McImageContainers/BgMcImageAlternativeContainer';
+import CtaRendezVous from '../fragments/Ctas/RendezVous';
+import CtaOffres from '../fragments/Ctas/Offres';
+import BgMcImageContainer from '../fragments/McImageContainers/BgMcImageContainer';
+import McImage from '../fragments/McImage';
+import Cta from '../fragments/Cta';
+import ReviewContainer from '../fragments/Reviews-Container';
+import SocialNetworks from '../fragments/Social-Neworks';
+import Faq from '../fragments/Faq';
+import { M5CFaqItems } from '../entities/faq-items/m5c-faq-items';
+import { PricesM5C } from '../fragments/Prices/massage-5-continents';
 
 const Massage5Continents = () => {
 	const head = () => {
 		return (
 			<MetaTag
 				title='Massage des 5 Continents'
-				description='Le Massage des 5 Continents, ou M5C, est un massage combinant différentes méthodes de massages, un soin énergétique Reiki et 
-      des huiles essentielles. Un lâcher prise physique et mental durable.'
-				resume="Le Massage des 5 Continents (M5C): l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien être."
+				description='Un soin puissant mêlant massage, énergie et aromathérapie. Le Massage 5 Continents (M5C), sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.'
+				resume='Un soin puissant mêlant massage, énergie et aromathérapie. Le Massage 5 Continents (M5C), sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.'
 			/>
 		);
 	};
@@ -21,278 +31,312 @@ const Massage5Continents = () => {
 	return (
 		<>
 			{head()}
-			<div className='M5C'>
-				<div className='article'>
-					<h1>Massage des 5 Continents</h1>
-					<h2>Qu'est-ce que le Massage des 5 Continents ?</h2>
-					<section className='paragraphe-1'>
-						<section className='paragraphe-content'>
-							<p>
-								Le <em>Massage des 5 Continents</em>, ou M5C, est une technique,
-								qui combine différentes méthodes de massages, un soin
-								énergétique, des huiles végétales et des huiles essentielles.
-								Cette association fait du <em>Massage des 5 Continents</em> un
-								massage unique, puissant permettant un lâcher prise physique et
-								mental.
-							</p>
-						</section>
-					</section>
-					<section className='paragraphe-1-1'>
-						<aside>
-							<div>
-								<img
-									src={ImgM5C}
-									className='img-m5c'
-									alt='Massage des 5 Continents'
-									title='logo du Massage des 5 Continents'
-									loading='lazy'
-								/>
+			<div className='M5C' itemScope itemType='https://schema.org/Offer'>
+				<div className='first-header-2'>
+					<div className='first-header-2-container'>
+						<div className='header-2-container'>
+							<div className='header-2-content'>
+								<h1 itemProp='name'>
+									Le Massage des 5 Continents (M5C) - un soin holistique, une
+									méthode signature, un bien‑être profond
+								</h1>
+								<div className='header-2-description'>
+									<p className='header-2-sub-title'>
+										Besoin de ralentir, de souffler, de respirer, de lâcher
+										prise ?
+									</p>
+									<p>
+										Offrez‑vous un soin complet et unique. Le massage des 5
+										continents, entre les mains d’une praticienne certifiée,
+										réunit des techniques de massage venues des quatre coins du
+										monde, un soin énergétique{' '}
+										<a
+											href='/reiki-usui'
+											title='En savoir plus sur le Reiki Usui'
+										>
+											Reiki Usui
+										</a>{' '}
+										et les propriétés thérapeutiques d’huiles essentielles.
+									</p>
+									<p>
+										Sur Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, à
+										domicile ou en entreprise, offrez‑vous un instant suspendu
+										où le rythme ralentit, où l’esprit se libère.
+									</p>
+									<BgMcImageAlternativeContainer
+										path={ImgM5CDos}
+										className='img-bas-dos'
+										alt='Massothérapeute réalisant un massage des 5 continents sur le bas du dos pour favoriser une détente profonde'
+									/>
+								</div>
+								<div className='header-2-cta'>
+									<div className='cta-container-row header-2-cta-container'>
+										<CtaRendezVous />
+										<CtaOffres />
+									</div>
+									<blockquote className='cta-blockquote'>
+										Un soin complet, profond et biodynamique pour un
+										lâcher‑prise physique et mental.
+									</blockquote>
+								</div>
 							</div>
-						</aside>
-						<section className='paragraphe-content'>
-							<section>
-								<p>Les techniques de massages utilisées sont basées sur :</p>
-								<ul>
-									<li> Le massage hawaïen Lomi-Lomi </li>
-									<li> Le massage californien </li>
-									<li> Le massage suédois </li>
-									<li> Le massage Ayurvédique </li>
-									<li> Le massage Tui-Na</li>
-								</ul>
+							<BgMcImageContainer
+								path={ImgM5CDos}
+								className={'img-bas-dos'}
+								alt='Massothérapeute réalisant un massage des 5 continents sur le bas du dos pour favoriser une détente profonde'
+							/>
+						</div>
+					</div>
+				</div>
 
-								<p>
-									Pour le soin énergétique, j'ai choisi de m'appuyer sur les
-									techniques de soin du <em>Reiki</em>.
-								</p>
-							</section>
-						</section>
-					</section>
-					<section className='paragraphe-1-2'>
-						<section className='paragraphe-content'>
-							<p>Les huiles végétales : </p>
-							<ul>
-								<li> Huile d'avocat</li>
-								<li> Huile d'amande douce</li>
-								<li> Huile de macadamia</li>
-								<li> Huile d'argan</li>
-								<li> Huile de noyau d'abricot</li>
-							</ul>
-						</section>
-						<section className='paragraphe-content he'>
-							<p>Les huiles essentielles : </p>
-							<ul className='ul-he'>
-								<li> Romarin</li>
-								<li> Eucalyptus</li>
-								<li> Niaouli</li>
-								<li> Citron</li>
-								<li> Cyprès</li>
-								<li> Lavande</li>
-								<li> Tea tree</li>
-								<li> Menthe poivrée</li>
-								<li> Ylang-ylang</li>
-								<li> Géranium</li>
-								<li> Orange douce</li>
-								<li> Myrrhe</li>
-								<li> Ravintsara</li>
-								<li> Gingembre</li>
-								<li> Sarriette</li>
-							</ul>
-						</section>
-					</section>
-					<ParagraphSeparator />
-					<h2>Qui peut recevoir le Massage des 5 Continents ?</h2>
-					<section className='paragraphe-2'>
-						<section className='paragraphe-content'>
+				<ParagraphSeparator />
+				<div
+					className='massage-cinq-continents-description-container'
+					itemProp='description'
+				>
+					<div className='massage-cinq-continents-description-main-content'>
+						<BgMcImageContainer
+							path={ImgM5C}
+							className='img-logo-M5C'
+							alt='Logo de la Fédération du Massage des 5 Continents attestant de la certification'
+						/>
+						<div className='massage-cinq-continents-description-content'>
 							<p>
-								Durant le <em>Massage des 5 Continents</em>, je masse votre dos,
-								votre ventre, vos bras et vos jambes. Si pour des raisons
-								médicales, certaines zones sont contre-indiquées, j'adapterai le
-								massage en conséquence.
+								Le{' '}
+								<em>
+									<b>M</b>assage des <b>5</b> <b>C</b>ontinents (<b>M5C</b>)
+								</em>
+								, est un soin unique qui réunit massage, soin énergétique et
+								complexes d’huiles essentielles pour agir en profondeur sur le
+								corps et l'esprit. Cette combinaison subtile détoxifie, relâche,
+								rééquilibre et revitalise, offrant un soin complet aux effets
+								durables.
 							</p>
-						</section>
-					</section>
-					<section className='paragraphe-2-2'>
-						<aside>
-							<div>
-								<img
-									src={ImgM5CColonne}
-									className='img-m5c-colonne'
-									alt='Massage des 5 Continents - Massage du haut de la colonne vertébrale'
-									title='Massage des 5 Continents - Massage du haut de la colonne vertébrale'
-									loading='lazy'
-								/>
-							</div>
-						</aside>
-						<section className='paragraphe-content'>
-							<b>
-								<p>
-									Le <em>Massage des 5 Continents</em> est contre-indiqué pour :{' '}
-								</p>
-								<ul>
-									<li> Les femmes enceintes</li>
-									<li> Les personnes atteintes de cancer </li>
-									<li>
-										{' '}
-										Les personnes souffrant de troubles psychotiques,
-										schizophréniques ou de dissociation de la personnalité
-									</li>
-									<li> Les enfants </li>
-								</ul>
-							</b>
+							<BgMcImageAlternativeContainer
+								path={ImgM5C}
+								className='img-logo-M5C'
+								alt='Logo de la Fédération du Massage des 5 Continents attestant de la certification'
+							/>
 							<p>
-								En raison de la présence des huiles essentielles, il est
-								recommandé de n'utiliser que des huiles végétales pour :{' '}
+								Ce massage se pratique en sous‑vêtement et englobe tout le corps
+								: dos, jambes, ventre, bras haut du torse, mains et visage. Son
+								action biodynamisante soutient les processus naturels
+								d’auto‑guérison. Il permet de se libérer des toxines et des
+								mémoires émotionnelles, ouvrant la voie à des énergies plus
+								légères et plus vivantes.
 							</p>
-							<ul>
-								<li> Les femmes allaitantes</li>
-								<li> Les personnes épileptiques </li>
-								<li> Les personnes atteintes de cancer</li>
-								<li>
-									{' '}
-									Les personnes suivant un traitement homéopathique fort{' '}
-								</li>
-								<li> Les personnes hypersensibles</li>
-								<li> Les personnes asthmatiques</li>
-							</ul>
-							<b>En cas de doute, je n'utiliserai que des huiles végétales.</b>
-						</section>
-					</section>
-					<section className='paragraphe-2'>
-						<section className='paragraphe-content'>
 							<p>
+								Que ce soit pour un moment de détente, pour prendre soin de vous
+								ou simplement pour vous faire plaisir, ce massage offre un temps
+								pour souffler et vous recentrer. Il aide à traverser le stress,
+								la fatigue ou les tensions accumulées, et permet de retrouver
+								calme et harmonie.
+							</p>
+							<p>
+								Je suis aujourd’hui membre de la{' '}
 								<i>
-									A noter que certaines huiles utilisées sont photosensibles. Il
-									convient donc de ne pas s'exposer au soleil après un{' '}
-									<em>Massage des 5 Continents</em>. Il est également préférable
-									de manger léger avant un <em>Massage des 5 Continents</em>, de
-									retirer bijoux et piercings.
+									<a
+										href='https://massagedes5continents.com/membres/8424/cophignon-marie/'
+										title='Cliquez pour accéder à ma fiche praticien de la Fédération du Massage des 5 Continents.'
+										target='_blank'
+									>
+										Fédération du Massage des 5 Continents
+									</a>
 								</i>
+								, engagée à pratiquer cette méthode avec authenticité,
+								bienveillance et fidélité à ses valeurs.
 							</p>
-						</section>
-					</section>
-					<ParagraphSeparator />
-					<section className='paragraphe-3-1'>
-						<section className='paragraphe-content'>
-							<h2>Pour quelles raisons consulter ?</h2>
-							<p>
-								Le <em>Massage des 5 Continents</em> est un massage
-								biodynamique. Il réveille les processus naturels
-								d'auto-guérison. Il permet de se décharger des toxines et des
-								mémoires émotionnelles, laissant place à des energies de plaisir
-								et de vie. Le <em>Massage des 5 Continents</em> apporte un
-								lâcher prise physique et mental profond et durable.
-							</p>
-						</section>
-					</section>
-					<section className='paragraphe-3-2'>
-						<aside>
-							<div>
-								<img
-									src={ImgM5CDos}
-									className='img-m5c-dos'
-									alt='Massage des 5 Continents - Massage du bas du dos'
-									title='Massage des 5 Continents - Massage du bas du dos'
-									loading='lazy'
-								/>
-							</div>
-						</aside>
-						<section className='paragraphe-content'>
-							<p>
-								Le <em>Massage des 5 Continents</em> n'est :
-							</p>
-							<b>
+							<b>Ce massage est destiné exclusivement aux adultes majeurs.</b>
+						</div>
+					</div>
+				</div>
+				<ParagraphSeparator />
+
+				<div className='massage-cinq-continents-benefits-containers'>
+					<h2 className='center-secondary-title'>
+						Les bienfaits du Massage des 5 Continents
+					</h2>
+					<div className='massage-cinq-continents-benefits'>
+						<p>
+							Le Massage des 5 Continents agit durablement grâce à l’alliance de
+							techniques de massage issues des quatre coins du monde :
+							Lomi‑Lomi, massage californien, suédois, Tuina, acupression et
+							pratiques ayurvédiques. Combiné à un soin énergétique{' '}
+							<a href='/reiki-usui' title='En savoir plus sur le Reiki Usui'>
+								Reiki Usui
+							</a>
+							et aux propriétés thérapeutiques d’huiles essentielles
+							spécifiques, sélectionnée pour leurs synergies, ce massage
+							biodynamique stimule les processus naturels d’auto‑guérison,
+							libère les blocages émotionnels et détoxifie l’organisme.
+						</p>
+						<div className='massage-cinq-continents-benefits-lists'>
+							<div className='massage-cinq-continents-benefits-list'>
+								<p>Le Massage des 5 Continents apporte :</p>
 								<ul>
-									<li>Ni une pratique de la masso-kinésithérapie</li>
-									<li>Ni une pratique médicale</li>
-									<li>Ni un massage naturiste</li>
-									<li>Ni un massage tantrique</li>
-									<li>Ni un massage à caractère sexuel</li>
+									<li>Une libération des tensions physiques et musculaires</li>
+									<li>Un apaisement mental et une réduction du stress</li>
+									<li>Un lâcher‑prise profond</li>
+									<li>
+										Une stimulation des processus naturels d’auto‑guérison
+									</li>
+									<li>
+										Une détoxification du corps en aidant l'élimination des
+										toxines{' '}
+									</li>
+									<li>
+										Une réactivation de la circulation de l’énergie vitale
+									</li>
+									<li>
+										Un Allègement des charges émotionnelles et des blocages
+									</li>
+									<li>Une amélioration la qualité du sommeil</li>
+									<li>Un soutien à la vitalité et une sensation de légèreté</li>
+									<li>Un recentrage et une meilleure connexion à soi</li>
 								</ul>
-							</b>
-							<p>
-								<b>
-									Le <em>Massage des 5 Continents</em> est un massage en
-									sous-vêtement, torse nu, de ce fait il n'est proposé qu'aux
-									personnes majeures.
-								</b>
-							</p>
-						</section>
-					</section>
-					<ParagraphSeparator />
-					<h2>Comment se déroule une séance de Massage des 5 Continents ?</h2>
-					<section className='paragraphe-4'>
-						<section className='paragraphe-content'>
-							<p>
-								Le <em>Massage des 5 Continents</em> dure environ 1h15 et se
-								déroule en 3 temps :
-							</p>
+							</div>
+							<div className='massage-cinq-continents-benefits-disclaimers'>
+								<p>Le Massage des 5 Continents n'est pas :</p>
+								<ul className='disclaimer'>
+									<li>Une pratique de la masso-kinésithérapie</li>
+									<li>Une pratique médicale</li>
+									<li>Un massage naturiste</li>
+									<li>Un massage tantrique</li>
+									<li>Un massage à caractère sexuel</li>
+								</ul>
+							</div>
+						</div>
+						<blockquote>
+							Quand le corps se détend, l’énergie circule et l’esprit respire.
+						</blockquote>
+					</div>
+				</div>
+				<ParagraphSeparator />
+				<div className='massage-cinq-continents-targets-container'>
+					<h3>À qui s’adresse le Massage des 5 Continents ?</h3>
+					<p>
+						Ce soin holistique convient à toute personne souhaitant s’offrir un
+						véritable lâcher‑prise, tant physique que mental.
+					</p>
+					<b>Ce massage est destiné exclusivement aux adultes majeurs.</b>
+
+					<div className='massage-cinq-continents-targets-lists'>
+						<div className='massage-cinq-continents-target-list'>
+							<p>Il est particulièrement adapté si vous recherchez : </p>
 							<ul>
-								<li>
-									Nous commençons par un entretien pour échanger, ensemble, sur
-									les raisons qui vous motivent à recevoir le{' '}
-									<em>Massage des 5 Continents</em> et sur les éventuelles
-									contre-indications par rapport aux huiles essentielles.
-								</li>
+								<li>une pause ressourçante dans un rythme de vie soutenu</li>
+								<li>un soutien pour mieux gérer le stress</li>
+								<li>un moment pour vous reconnecter à votre corps</li>
+								<li>un soin raffiné et profond</li>
+								<li>un massage pensé comme une expérience unique</li>
 							</ul>
-						</section>
-					</section>
-					<section className='paragraphe-4'>
-						<section className='paragraphe-content'>
-							<ul>
+						</div>
+						<div className='massage-cinq-continents-target-disclaimer-list'>
+							<p>Il est contre-indiqué pour : </p>
+							<ul className='disclaimer'>
+								<li>Les femmes enceintes</li>
+								<li>Les personnes atteintes de cancer</li>
 								<li>
-									Lors du soin, vous êtes dévêtus, allongés confortablement sur
-									ma table de soin. Je vous recouvre d'une serviette pour ne pas
-									prendre froid. Je commence le massage par l'application d'un
-									complexe d'huiles détoxifiantes au niveau du dos puis des
-									jambes. Nous passons ensuite à la partie relaxation du dos et
-									des jambes. <br /> A l'aide d'un complexe d'huiles, de
-									massages doux, je stimule votre organisme dans le but de
-									lâcher prise, revitaliser et stimuler votre système
-									immunitaire. Cette première partie du{' '}
-									<em>Massage des 5 Continents</em>, s'achève sur un soin
-									énergétique. Le Reiki permet de faire circuler l'énergie
-									vitale directement à l'intérieur de votre corps, là où vous en
-									avez besoin. <br />
-									Pour la seconde partie du massage, je masse votre ventre, vos
-									jambes, vos bras, vos mains et le haut du torse. Le déroulé du
-									massage est identique à la première partie: une phase
-									détoxifiante, une phase relaxante et un soin énergétique
-									Reiki. Je conclue le soin par un massage, doux de votre
-									visage.
+									Les personnes souffrant de troubles psychotiques,
+									schizophréniques ou de dissociation de la personnalité
 								</li>
+								<li>Les enfants</li>
 							</ul>
-						</section>
-						<aside>
-							<div>
-								<img
-									src={ImgM5CBras}
-									className='img-m5c-bras'
-									alt='Massage des 5 Continents - Massage du bras'
-									title='Massage des 5 Continents - Massage du bras'
-									loading='lazy'
+						</div>
+					</div>
+					<p>
+						L’usage des huiles essentielles demande une attention particulière.
+						Pour les femmes allaitantes, les personnes épileptiques,
+						asthmatiques, hypersensibles, atteintes de cancer ou suivant un
+						traitement médical ou homéopathique, certaines huiles essentielles
+						peuvent être déconseillées. En cas de doute, ou si votre situation
+						le nécessite, j’utiliserai exclusivement des huiles végétales afin
+						de garantir un soin adapté et en toute sécurité. N'hésitez pas à me
+						le signaler.
+					</p>
+					<p>
+						Par ailleurs, certaines huiles utilisées étant photosensibles, il
+						est recommandé de ne pas s’exposer au soleil après un Massage des 5
+						Continents. Il est également préférable de manger léger avant le
+						soin et de retirer bijoux et piercings afin de profiter pleinement
+						de la séance.
+					</p>
+					<blockquote>
+						Chaque séance est une bulle régénérante, accordée à votre état du
+						moment pour vous offrir exactement ce dont vous avez besoin.
+					</blockquote>
+				</div>
+				<ParagraphSeparator />
+				<div className='massage-cinq-continents-prices-container'>
+					<h3>Tarifs 2026 du Massage des 5 Continents</h3>
+					<div className='massage-cinq-continents-prices-content'>
+						<div className='massage-cinq-continents-prices-image-content'>
+							<McImage
+								path={ImgM5CColonne}
+								className='img-lombaires'
+								alt='Massothérapeute effectuant un massage des 5 continents pour détendre le haut du dos et harmoniser l’énergie'
+							/>
+							<blockquote>
+								Un soin qui honore le corps et apaise l’esprit: un moment unique
+								pour vous.
+							</blockquote>
+						</div>
+						<div className='massage-cinq-continents-prices-inner-content'>
+							<PricesM5C title='Séance de 1h30 - 70 mins de soin' />
+							<div className='cta-container-row footer-cta-container massage-cinq-continents-prices-cta'>
+								<CtaRendezVous />
+								<Cta
+									link='/offres-et-tarifs#massage-5-contients-tarifs'
+									title={
+										'Cliquez ici pour découvrir mes soins offres de soins, carte cadeau, packs et promotions.'
+									}
+									ctaLinkClassName='cta-secondary'
+									ctaText='Découvrir mes offres de soins'
 								/>
 							</div>
-						</aside>
-					</section>
-					<section className='paragraphe-4'>
-						<section className='paragraphe-content'>
-							<ul>
-								<li>
-									La séance se termine par un échange pour connaitre votre
-									ressenti durant le soin.
-								</li>
-							</ul>
-							<p>
-								Mon savoir-faire, mes qualités d'écoute et d'empathie sont à
-								votre service pour vous accompagner durant cette séance. Malgré
-								leurs bienfaits, l'utilisation de plusieurs huiles essentielles
-								n’est pas anodine. Elles ne sont pas recommandées à tout le
-								monde. Afin de satisfaire un plus grand nombre, il est possible
-								de n'utiliser que des huiles végétales. J'adapte mes soins
-								énergétiques à vos contre-indications.
-							</p>
-						</section>
-					</section>
+						</div>
+					</div>
+				</div>
+				<ParagraphSeparator />
+				{/* Avis */}
+				<div className='review-container'>
+					<ReviewContainer filter='M5C' />
+				</div>
+				<div className='social-networks-container'>
+					<SocialNetworks />
+				</div>
+				{/* FAQ */}
+				<ParagraphSeparator />
+				<div
+					className='faq-container'
+					itemScope
+					itemType='https://schema.org/FAQPage'
+				>
+					<div className='faq-main-container'>
+						<h2>Les questions fréquentes</h2>
+						<div className='faq-content'>
+							<Faq items={M5CFaqItems} />
+						</div>
+					</div>
+				</div>
+				<ParagraphSeparator />
+				<div className='footer-cta'>
+					<h2>Envie de découvrir le Massage des 5 Continents ?</h2>
+					<p>
+						Accordez‑vous une bulle de douceur, un moment pour respirer
+						pleinement, relâcher ce qui pèse et vous recentrer. Sur
+						Saint‑Quentin‑en‑Yvelines, à Élancourt et Guyancourt, à domicile ou
+						en entreprise, le Massage des 5 Continents invite le corps à se
+						détendre, à se resourcer et l’esprit à s’alléger.
+					</p>
+					<p>
+						Contactez-moi pour réserver votre séance ou obtenir plus
+						d’informations.
+					</p>
+					<div className='cta-container-row footer-cta-container'>
+						<CtaRendezVous />
+						<CtaOffres />
+					</div>
 				</div>
 			</div>
 		</>

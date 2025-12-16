@@ -5,7 +5,8 @@ const PanneauLateral = () => {
 				Du lundi au vendredi{' '}
 				<meta itemProp='openingHours' content='Mo-Fr 09:00-19:00' />
 				09h00-19h00 sur <u className='underline'>rendez-vous uniquement</u>.
-				<br />
+			</p>
+			<p>
 				Je consulte en cabinet{' '}
 				<span
 					itemProp='address'
@@ -16,9 +17,9 @@ const PanneauLateral = () => {
 					<span itemProp='addressLocality'>
 						<a
 							href='/consultations#elancourt'
-							title='Lien vers l’adresse du cabinet d’Elancourt'
+							title='Lien vers l’adresse du cabinet d’Élancourt'
 						>
-							Elancourt
+							Élancourt
 						</a>{' '}
 						(<span itemProp='postalCode'>78990</span>)
 					</span>
@@ -41,19 +42,18 @@ const PanneauLateral = () => {
 						(<span itemProp='postalCode'>78280</span>)
 					</span>
 				</span>
-				<br />
+			</p>
+			<p>
 				<span itemScope itemType='https://schema.org/Service'>
 					Les autres jours de la semaine, je consulte à domicile sur{' '}
 					<span itemProp='areaServed'>Saint Quentin-en-Yvelines</span> et ses
-					environs :
-					<br />
-					<em itemProp='areaServed'>Maurepas</em>,{' '}
+					environs : <em itemProp='areaServed'>Maurepas</em>,{' '}
 					<em itemProp='areaServed'>Montigny-le-Bretonneux</em>,{' '}
 					<em itemProp='areaServed'>Plaisir</em>,{' '}
 					<em itemProp='areaServed'>Voisins-le-Bretonneux</em>,{' '}
 					<em itemProp='areaServed'>Coignières</em>,{' '}
 					<em itemProp='areaServed'>La Verrière</em>,{' '}
-					<em itemProp='areaServed'>Trappes</em>,<br />{' '}
+					<em itemProp='areaServed'>Trappes</em>,{' '}
 					<em itemProp='areaServed'>Le Mesnil-Saint-Denis</em>,{' '}
 					<em itemProp='areaServed'>Élancourt</em> et{' '}
 					<em itemProp='areaServed'>Guyancourt</em>.

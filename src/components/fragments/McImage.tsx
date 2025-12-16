@@ -2,7 +2,7 @@ export interface iImage {
 	path: string;
 	className: string;
 	alt: string;
-	title: string;
+	title?: string;
 }
 
 const McImage = ({ path, className, alt, title }: iImage) => {

@@ -1,15 +1,15 @@
 {
-  "routes": [
-    "/",
-    "/qui-suis-je",
-    "/massage-assis-methode-eas",    
-    "/massage-des-5-continents",
-    "/reiki",
-    "/consultations",
-    "/offres",
-    "/contact",
-    "/plan-du-site",
-    "/erreur-404",
-    "/politique-de-confidentialite"] 
-
+	"routes": [
+		"/accueil",
+		"/qui-suis-je",
+		"/massage-assis-methode-eas",
+		"/massage-des-5-continents",
+		"/reiki-usui",
+		"/offres-et-tarifs",
+		"/contact",
+		"/mentions-legales",
+		"/plan-du-site",
+		"/erreur-404",
+		"/politique-de-confidentialite"
+	]
 }
