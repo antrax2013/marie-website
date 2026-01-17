@@ -44,13 +44,13 @@ const App = () => {
 						content={
 							<>
 								<a
-									href='https://www.facebook.com/permalink.php?story_fbid=pfbid02aT94GYPdw9ZWN5AziFGhzcs71G1KVqbAP1hUUyCnowr6Dzg6mw3HP6WZbe2ghXTFl&id=61573954084460'
+									href='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid09V9H9QgejdRqpwbsrhiqetJiikoiXv3uAUcB1os9sq5mzoa7yQbWWec2cLMdzC8Gl%26id%3D61570202349589'
 									title='Cliquez sur ce lien pour plus d’informations.'
 								>
-									✨ Portes ouvertes à Plaisir ✨<br />
-									Je serai présente aux portes ouvertes des espaces bien-être de
-									Coffret d'Alumine à Plaisir (78), les weekend du 13/14 et
-									20/21 décembre de 14h00 à 18h00.
+									✨ Portes ouvertes à Guyancourt ✨<br />
+									Retrouvez‑moi lors des portes ouvertes du cabinet de bien‑être
+									Blowball à Guyancourt (78) le dimanche 25 janvier, de 09h30 à
+									13h00.
 								</a>
 							</>
 						}

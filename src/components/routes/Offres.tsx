@@ -2,7 +2,7 @@ import MetaTag from '../tools/MetaTag';
 import ParagraphSeparator from '../tools/Paragraph-Separator';
 import '../../scss/routes/Offres.scss';
 import ImgCarteCadeau from '../../assets/Offres/carte-cadeau.png';
-// import { Panel } from 'primereact/panel';
+import { Panel } from 'primereact/panel';
 
 const Offres = () => {
 	const head = () => {
@@ -49,25 +49,26 @@ const Offres = () => {
 							</p>
 							<i>Règlement par chèque ou espèces uniquement.</i>
 							<h2>Les soins energétiques</h2>
-							{/* <div id='promotion'>
-								<Panel header='Promotion - le retour du coffret Duo'>
+							<div id='promotion'>
+								<Panel header='Le Coffret Duo est de retour jusqu’à fin février !'>
 									<p className='m-0'>
-										Le coffret Duo est de retour jusqu'à fin février... Mixez
-										vos envies.
+										Composez votre duo de soins selon vis envies et profitez de
+										20€ de remise sur l’ensemble.
 									</p>
 									<p className='m-0'>
-										20€ de remise si vous prenez 2 soins au choix, identiques ou
-										différents, parmi :
+										Choisissez 2 soins au choix, identiques ou différents, parmi
+										:
 									</p>
 									<ul>
 										<li>✨ Soin Reiki Usui</li>
 										<li>✨ Massage des 5 continents</li>
 										<li>
-											✨ Massage du dos assis méthode EAS® de 45 min<sup>*</sup>
+											✨ Massage du dos assis - méthode EAS® - 45 min
+											<sup>*</sup>
 											<br />
 											<i>
 												<sup>*</sup> Les massages du dos de 20 min et de 35 min
-												ne bénéficient pas de la réduction.
+												ne sont pas concernés par la réduction.
 											</i>
 										</li>
 									</ul>
@@ -75,10 +76,10 @@ const Offres = () => {
 										<b>Les soins sont valables 4 mois après l'achat.</b>
 									</p>
 									<p className='m-0'>
-										Mixez vos envies, pour vous ou pour offrir 🎁.
+										🎁 À savourer pour soi ou à offrir… Mixez vos envies.
 									</p>
 								</Panel>
-							</div> */}
+							</div>
 							<ul>
 								<ol>Les massages energétiques</ol>
 								<li>
@@ -116,6 +117,7 @@ const Offres = () => {
 							<li>
 								<a href='#decouverte'>Offre découverte</a>
 							</li>
+							Mixez vos envies, pour vous ou pour offrir 🎁
 							<li>
 								<a href='#parrainage'>Parrainage</a>
 							</li>
