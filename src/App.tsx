@@ -9,6 +9,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { lazy } from 'react';
+import POBlowball2026Jan from './components/routes/Evenements/PO-Blowball-2026-Jan';
 
 const Consultations = lazy(() => import('./components/routes/Consultation'));
 const Contact = lazy(() => import('./components/routes/Contact'));
@@ -44,7 +45,7 @@ const App = () => {
 						content={
 							<>
 								<a
-									href='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid09V9H9QgejdRqpwbsrhiqetJiikoiXv3uAUcB1os9sq5mzoa7yQbWWec2cLMdzC8Gl%26id%3D61570202349589'
+									href='/portes-ouvertes-bien-etre-reiki-massage-saint-quentin-en-yvelines-janvier-2026'
 									title='Cliquez sur ce lien pour plus d’informations.'
 								>
 									✨ Portes ouvertes à Guyancourt ✨<br />
@@ -74,6 +75,10 @@ const App = () => {
 							<Route path='consultations' element={<Consultations />} />
 
 							<Route path='offres' element={<Offres />} />
+							<Route
+								path='portes-ouvertes-bien-etre-reiki-massage-saint-quentin-en-yvelines-janvier-2026'
+								element={<POBlowball2026Jan />}
+							/>
 							<Route path='contact' element={<Contact />} />
 							<Route
 								path='politique-de-confidentialite'

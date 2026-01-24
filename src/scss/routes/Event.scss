@@ -1,0 +1,65 @@
+@use '../rules/mixins';
+
+.Event {
+	.article > section {
+		@include mixins.article-section;
+	}
+
+	.article section aside > div {
+		@include mixins.flex-content-center;
+	}
+
+	.location {
+		.section-header,
+		.section-content {
+			display: block;
+			width: 100%;
+		}
+		.section-content > div {
+			display: flex;
+			flex-direction: row;
+			.section-adresse {
+				flex: 1;
+				align-items: stretch;
+				text-align: center;
+			}
+			.section-map {
+				flex: 2;
+				align-items: center;
+			}
+		}
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 1em;
+	}
+}
+
+@media (max-width: 767px) {
+	.Event {
+		.location {
+			.section-content > div {
+				flex-direction: column !important;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.Event {
+		.article {
+			h1 {
+				font-size: 1.4rem !important;
+			}
+		}
+
+		.article section {
+			flex-direction: column;
+		}
+	}
+}
+
+@media (min-width: 1025px) {
+	.Event aside {
+		flex-direction: inherit;
+	}
+}

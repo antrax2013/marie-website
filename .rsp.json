@@ -1,15 +1,16 @@
 {
-  "routes": [
-    "/",
-    "/qui-suis-je",
-    "/massage-assis-methode-eas",    
-    "/massage-des-5-continents",
-    "/reiki",
-    "/consultations",
-    "/offres",
-    "/contact",
-    "/plan-du-site",
-    "/erreur-404",
-    "/politique-de-confidentialite"] 
-
+	"routes": [
+		"/",
+		"/qui-suis-je",
+		"/massage-assis-methode-eas",
+		"/massage-des-5-continents",
+		"/reiki",
+		"/consultations",
+		"/offres",
+		"/portes-ouvertes-bien-etre-reiki-massage-saint-quentin-en-yvelines-janvier-2026",
+		"/contact",
+		"/plan-du-site",
+		"/erreur-404",
+		"/politique-de-confidentialite"
+	]
 }

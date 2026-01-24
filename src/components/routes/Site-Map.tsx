@@ -39,6 +39,11 @@ const SiteMap = () => {
 						<a href='/offres'>Tarifs et Offres</a>
 					</li>
 					<li>
+						<a href='/portes-ouvertes-bien-etre-reiki-massage-saint-quentin-en-yvelines-janvier-2026'>
+							Portes ouvertes du cabinet Blowball 25/01/2026
+						</a>
+					</li>
+					<li>
 						<a href='/politique-de-confidentialite'>
 							Politique de confidentialite
 						</a>
