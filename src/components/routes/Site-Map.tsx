@@ -16,6 +16,10 @@ const SiteMap = () => {
 			{head()}
 			<div className='article'>
 				<h1>Le plan du site</h1>
+				<h2>
+					Les pages de présentations de mon activité de massages énergétiques et
+					de soin Reiki Usui{' '}
+				</h2>
 				<ul>
 					<li>
 						<a href='/'>Qui suis-je ?</a>
@@ -38,11 +42,28 @@ const SiteMap = () => {
 					<li>
 						<a href='/offres'>Tarifs et Offres</a>
 					</li>
-					<li>
-						<a href='/portes-ouvertes-bien-etre-reiki-massage-saint-quentin-en-yvelines-janvier-2026'>
-							Portes ouvertes du cabinet Blowball 25/01/2026
-						</a>
-					</li>
+				</ul>
+				<h2>
+					Les pages liées à des acutalités, des événements ou des offres
+					ponctuelles
+				</h2>
+				<ul>
+					<ul>
+						<li>
+							<a href='/portes-ouvertes-bien-etre-reiki-massage-saint-quentin-en-yvelines-janvier-2026'>
+								Portes ouvertes du cabinet Blowball 25/01/2026
+							</a>
+						</li>
+						<li>
+							<a href='/soin-massage-eas-tambour-sqy-plaisir-yvelines'>
+								Le soin duo massages assis méthode EAS® - Tambour Unité -
+								Plaisir
+							</a>
+						</li>
+					</ul>
+				</ul>
+				<h1>Les autres pages</h1>
+				<ul>
 					<li>
 						<a href='/politique-de-confidentialite'>
 							Politique de confidentialite

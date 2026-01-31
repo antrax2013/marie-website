@@ -9,27 +9,33 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { lazy } from 'react';
-import POBlowball2026Jan from './components/routes/Evenements/PO-Blowball-2026-Jan';
 
 const Consultations = lazy(() => import('./components/routes/Consultation'));
 const Contact = lazy(() => import('./components/routes/Contact'));
 const Error404 = lazy(() => import('./components/routes/Error404'));
 const Massage5Continents = lazy(
-	() => import('./components/routes/Massage-5-continents')
+	() => import('./components/routes/Massage-5-continents'),
 );
 const MassageAssisMethodeEAS = lazy(
-	() => import('./components/routes/Massage-assis-methode-eas')
+	() => import('./components/routes/Massage-assis-methode-eas'),
 );
 const Offres = lazy(() => import('./components/routes/Offres'));
 const PanneauLateral = lazy(() => import('./components/Panneau-lateral'));
 const PolitiqueConfidentialite = lazy(
-	() => import('./components/routes/Politique-confidentialite')
+	() => import('./components/routes/Politique-confidentialite'),
 );
 const QuiSuisJe = lazy(() => import('./components/routes/Qui-suis-je'));
 const Reiki = lazy(() => import('./components/routes/Reiki'));
 const FooterMenu = lazy(() => import('./components/tools/Footer-Menu'));
 const ScrollButton = lazy(() => import('./components/tools/Scrollbutton'));
 const PlanDuSite = lazy(() => import('./components/routes/Site-Map'));
+
+const POBlowball2026Jan = lazy(
+	() => import('./components/routes/Evenements/PO-Blowball-2026-Jan'),
+);
+const DuoTambourEAS = lazy(
+	() => import('./components/routes/Evenements/Duo-EAS-Tambour-Unite'),
+);
 
 const App = () => {
 	return (
@@ -45,13 +51,12 @@ const App = () => {
 						content={
 							<>
 								<a
-									href='/portes-ouvertes-bien-etre-reiki-massage-saint-quentin-en-yvelines-janvier-2026'
-									title='Cliquez sur ce lien pour plus d’informations.'
+									href='/soin-massage-eas-tambour-sqy-plaisir-yvelines'
+									title='Cliquez sur ce lien pour plus d’informations sur le soin duo.'
 								>
-									✨ Portes ouvertes à Guyancourt ✨<br />
-									Retrouvez‑moi lors des portes ouvertes du cabinet de bien‑être
-									Blowball à Guyancourt (78) le dimanche 25 janvier, de 09h30 à
-									13h00.
+									✨ Duo Massage et Tambour ✨<br />
+									Découvrez un soin énergétique et vibratoire inédit à Plaisir
+									(SQY-Yvelines) les 31 janvier et 14 mars 2026.
 								</a>
 							</>
 						}
@@ -78,6 +83,10 @@ const App = () => {
 							<Route
 								path='portes-ouvertes-bien-etre-reiki-massage-saint-quentin-en-yvelines-janvier-2026'
 								element={<POBlowball2026Jan />}
+							/>
+							<Route
+								path='soin-massage-eas-tambour-sqy-plaisir-yvelines'
+								element={<DuoTambourEAS />}
 							/>
 							<Route path='contact' element={<Contact />} />
 							<Route
