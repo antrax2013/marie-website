@@ -18,11 +18,9 @@ const Accueil = () => {
 	const head = () => {
 		return (
 			<MetaTag
-				title={`Massages & Reiki en Yvelines - ${
-					import.meta.env.VITE_META_MAIN_TITLE
-				}`}
-				description='Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, énergie et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.'
-				resume='Massages énergétiques et Reiki Usui dans les Yvelines sur Élancourt et Guyancourt ou en soins à domicile. Relaxation, énergie et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.'
+				title={`Massages & Reiki en Yvelines`}
+				description='Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.'
+				resume='Massages énergétiques et Reiki Usui dans les Yvelines sur Élancourt et Guyancourt ou en soins à domicile. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.'
 			/>
 		);
 	};

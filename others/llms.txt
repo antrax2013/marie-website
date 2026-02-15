@@ -1,45 +1,68 @@
-# llms.txt for marie.cophignon.net
-# Owner: Marie Cophignon - Massoth�rapeute �nerg�tique
-# Website: https://marie.cophignon.net
-# Contact: contact@marie.cophignon.net
+# LLMs.txt for Massages énergétiques &amp; Reiki Usui dans les Yvelines
 
-version: 1.0
+> Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.
 
-# --- Global policy for AI crawlers ---
+## Project Details
+
+- **Brand**: Massage Reiki.fr
+- **Website**: https://massage-reiki.fr
+- **Owner**: Marie Cophignon - Massothérapeute énergétique
+- **Description**: Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.
+- **Contact**: marie@cophignon.net
+
+version: 1.2
+
+## Domains:
+
+- [marie.cophignon.net](https://marie.cophignon.net)
+- [massage-reiki.fr](https://massage-reiki.fr)
+- [massages-reiki.fr](https://massages-reiki.fr)
+
+## Key Pages
+- [Homepage](https://massage-reiki.fr)
+- [Le massage assis méthode EAS®](https://massage-reiki.fr/massage-assis-methode-eas)
+- [Le Massage des 5 Continents (M5C)](https://massage-reiki.fr/massage-des-5-continents)
+- [Le Reiki Usui ](https://massage-reiki.fr/reiki-usui)
+- [Massothérapeute énergétique, Maitre Reiki Usui](https://massage-reiki.fr/qui-suis-je)
+- [Tarifs et offres](https://massage-reiki.fr/offres-et-tarifs)
+- [Forumulaire de contact](https://massage-reiki.fr/contact)
+
+# Global policy for AI crawlers
+
+## AI Crawler Rules
 
 policy: allow
-note: Le contenu de ce site peut etre utilis� par les mod�les d'IA a des fins d'indexation, de recherche et d'assistance, a condition de respecter le contexte et l'int�grit� des informations.
+note: Le contenu de ce site peut etre utilisé par les modéles d'IA a des fins d'indexation, de recherche et d'assistance, a condition de respecter le contexte et l'intégrité des informations.
 
-# --- Pages explicitly allowed ---
+User-agent: *
+Allow: : /
+Allow: : /qui-suis-je
+Allow: : /massage-assis-methode-eas
+Allow: : /massage-des-5-continents
+Allow: : /reiki-usui
+Allow: : /offres-et-tarifs
+Allow: : /contact
+Disallow: : /erreur-404
+Disallow: : /politique-de-confidentialite
+Disallow: : /plan-du-site
 
-allow: /
-allow: /qui-suis-je
-allow: /massage-assis-methode-eas
-allow: /massage-des-5-continents
-allow: /reiki
-allow: /offres-et-tarifs
-allow: /consultations
-allow: /contact
-
-# --- Pages to disallow ---
-
-disallow: /erreur-404
-disallow: /politique-de-confidentialite
-disallow: /plan-du-site
+Crawl-delay: 10
+Sitemap: https://massage-reiki.fr/sitemap.xml
+Host: massage-reiki.fr
 
 # --- Data usage constraints ---
 
 data_usage:
-  - Les contenus ne doivent pas etre utilis�s pour g�nerer des diagnostics m�dicaux.
-  - Les soins propos�s ne se substituent pas a un avis ou traitement m�dical.
-  - Toute citation du site doit mentionner "Marie Cophignon - Massoth�rapeute �nerg�tique" et le lien vers le site.
+  - Les contenus ne doivent pas etre utilisés pour génerer des diagnostics médicaux.
+  - Les soins proposés ne se substituent pas a un avis ou traitement médical.
+  - Toute citation du site doit mentionner "Marie Cophignon - Massothérapeute énergétique" et le lien vers le site.
 
 # --- Personal data ---
 
 personal_data:
-  - Ne pas extraire ou utiliser les num�ros de t�lephone et adresses mail a des fins de prospection commerciale.
-  - Ne pas utiliser les donn�es de localisation pour du ciblage publicitaire.
+  - Ne pas extraire ou utiliser les numéros de téléphone et adresses mail a des fins de prospection commerciale.
+  - Ne pas utiliser les données de localisation pour du ciblage publicitaire.
 
 # --- Updates ---
 
-last_updated: 2025-12-13
+last_updated: 2026-02-15

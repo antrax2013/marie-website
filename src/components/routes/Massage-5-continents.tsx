@@ -22,8 +22,8 @@ const Massage5Continents = () => {
 		return (
 			<MetaTag
 				title='Massage des 5 Continents'
-				description='Un soin puissant mêlant massage, énergie et aromathérapie. Le Massage 5 Continents (M5C), sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.'
-				resume='Un soin puissant mêlant massage, énergie et aromathérapie. Le Massage 5 Continents (M5C), sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.'
+				description='Un soin puissant mêlant massage, soin énergétique et aromathérapie. Le Massage 5 Continents (M5C), sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.'
+				resume='Un soin puissant mêlant massage, soin énergétique et aromathérapie. Le Massage 5 Continents (M5C), sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.'
 			/>
 		);
 	};

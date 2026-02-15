@@ -36,11 +36,11 @@
 			"type": "image/png"
 		}
 	],
-	"start_url": "https://marie.cophignon.net",
+	"start_url": "https://massage-reiki.fr",
 	"display": "standalone",
 	"theme_color": "#f0f0f0",
 	"background_color": "#f0f0f0",
-	"description": "Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, énergie et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.",
+	"description": "Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.",
 	"shortcuts": [
 		{
 			"name": "Qui suis-je?",
@@ -58,7 +58,7 @@
 		{
 			"name": "Massage des 5 Continents",
 			"short_name": "M5C",
-			"description": "Un soin puissant mêlant massage, énergie et aromathérapie. Le Massage 5 Continents sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.",
+			"description": "Un soin puissant mêlant massage, soin énergétique et aromathérapie. Le Massage 5 Continents sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.",
 			"url": "/massage-des-5-continents"
 		},
 		{
