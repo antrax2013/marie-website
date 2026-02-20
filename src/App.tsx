@@ -45,7 +45,7 @@ const App = () => {
 					<Header />
 				</header>
 				<div className='App-cp danger'>
-					<Message
+					{/* <Message
 						className='border-primary w-full justify-content-center message'
 						severity='secondary'
 						content={
@@ -57,6 +57,21 @@ const App = () => {
 									✨ Duo Massage et Tambour ✨<br />
 									Découvrez un soin énergétique et vibratoire inédit à Plaisir
 									(SQY-Yvelines) les 31 janvier et 14 mars 2026.
+								</a>
+							</>
+						}
+					/> */}
+					<Message
+						className='border-primary w-full justify-content-center message'
+						severity='secondary'
+						content={
+							<>
+								<a
+									href='/offres'
+									title='Cliquez sur ce lien pour plus d’informations sur le coffret duo.'
+								>
+									✨ Le coffret duo est de retour et disponible jusqu’à fin
+									février. ✨
 								</a>
 							</>
 						}
