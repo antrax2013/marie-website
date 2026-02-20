@@ -26,7 +26,12 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 					className='carousel-social-network-icon'
 				>
 					<div className='author-review-container'>
-						<p className='author-review' itemProp='author'>
+						<p
+							className='author-review'
+							itemProp='author'
+							itemScope
+							itemType='https://schema.org/Person'
+						>
 							{item.auteur}
 						</p>
 						<img
