@@ -3,6 +3,7 @@ import * as avis from '../../assets/avis.json';
 import { useState } from 'react';
 import google from '../../assets/icon-google.svg';
 import { iReviewsCarousel } from './Reviews-Container';
+import { Badge } from 'primereact/badge';
 
 const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 	const data = { ...avis };
@@ -10,7 +11,29 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 		!!filter ? data.avis.filter((a) => a.tags == filter) : data.avis,
 	);
 
-	//https://ceciletrias.fr/
+	const responsiveOptions = [
+		{
+			breakpoint: '1400px',
+			numVisible: 2,
+			numScroll: 1,
+		},
+		{
+			breakpoint: '1199px',
+			numVisible: 3,
+			numScroll: 1,
+		},
+		{
+			breakpoint: '767px',
+			numVisible: 2,
+			numScroll: 1,
+		},
+		{
+			breakpoint: '575px',
+			numVisible: 1,
+			numScroll: 1,
+		},
+	];
+
 	const productTemplate = (item: any) => {
 		return (
 			<div
@@ -65,6 +88,17 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 					<p className='content-review' itemProp='reviewBody'>
 						{item.commentaire}
 					</p>
+					<p className='content-review' itemProp='reviewBody'>
+						{item.tags == 'M5C' && (
+							<Badge value='Massage des 5 continents' severity='danger'></Badge>
+						)}
+						{item.tags == 'EAS' && (
+							<Badge value='Massage assis méthd. EAS®' severity='info'></Badge>
+						)}
+						{item.tags == 'Reiki' && (
+							<Badge value='Reiki Usui' severity='success'></Badge>
+						)}
+					</p>
 				</a>
 			</div>
 		);
@@ -76,6 +110,7 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 			numScroll={1}
 			numVisible={3}
 			itemTemplate={productTemplate}
+			responsiveOptions={responsiveOptions}
 			circular
 		/>
 	);
