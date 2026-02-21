@@ -16,7 +16,6 @@ const MassageAssisMethodeEAS = lazy(
 	() => import('./components/routes/Massage-assis-methode-eas'),
 );
 const Offres = lazy(() => import('./components/routes/Offres'));
-const Consultations = lazy(() => import('./components/routes/Consultation'));
 const Contact = lazy(() => import('./components/routes/Contact'));
 const Error404 = lazy(() => import('./components/routes/Error404'));
 const QuiSuisJe = lazy(() => import('./components/routes/Qui-suis-je'));
@@ -34,7 +33,6 @@ const FooterLinks = lazy(() => import('./components/fragments/Footer-Links'));
 
 import Header from './components/fragments/Header';
 
-// const Header = lazy(() => import('./components/fragments/Header'));
 const Footer = lazy(() => import('./components/fragments/Footer'));
 const FooterMenu = lazy(() => import('./components/fragments/Footer-Menu'));
 const ScrollButton = lazy(() => import('./components/fragments/Scrollbutton'));
@@ -67,8 +65,6 @@ const App = () => {
 								path='massage-des-5-continents'
 								element={<Massage5Continents />}
 							/>
-							<Route path='consultations' element={<Consultations />} />
-
 							<Route path='offres-et-tarifs' element={<Offres />} />
 							<Route path='contact' element={<Contact />} />
 							<Route

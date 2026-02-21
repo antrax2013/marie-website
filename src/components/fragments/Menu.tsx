@@ -18,7 +18,7 @@ const Menu = ({ ...props }) => {
 		);
 	};
 	const start = (
-		<div className='title' itemScope itemType='https://schema.org/HealthClub'>
+		<div className='title'>
 			<a
 				href='/'
 				className='accueil'
@@ -128,17 +128,6 @@ const Menu = ({ ...props }) => {
 				onClick('offres-et-tarifs');
 			},
 		},
-		// {
-		// 	label: 'Consultations',
-		// 	template: (item: MenuItem, options: MenuItemOptions) => {
-		// 		return itemTemplate(item, options);
-		// 	},
-		// 	url: '/consultations',
-		// 	className: getClassName('consultations'),
-		// 	command: () => {
-		// 		onClick('consultations');
-		// 	},
-		// },
 		{
 			label: 'Contact',
 			template: (item: MenuItem, options: MenuItemOptions) => {

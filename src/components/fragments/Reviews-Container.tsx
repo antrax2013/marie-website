@@ -10,7 +10,11 @@ const ReviewContainer = ({ filter }: iReviewsCarousel) => {
 	return (
 		<div className='review-main-container'>
 			<h2 className='center-secondary-title'>Témoignages clients</h2>
-			<ReviewsCarousel filter={filter} />
+			<div className='review-carousel-container'>
+				<div className='review-carousel-internal-container'>
+					<ReviewsCarousel filter={filter} />
+				</div>
+			</div>
 			<div className='review-cta'>
 				<div className='review-cta-container'>
 					<Cta

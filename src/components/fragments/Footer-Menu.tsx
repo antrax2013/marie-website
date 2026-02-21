@@ -1,6 +1,8 @@
 import Logo from '../../assets/logo512.png';
 import PanneauLateral from './Panneau-lateral';
 import { Adresse } from './Adresse';
+const tel = import.meta.env.VITE_META_NUMTEL;
+const name = import.meta.env.VITE_META_MAIN_TITLE_LIGTH;
 
 const FooterMenu = (/*{ ...props }*/) => {
 	return (
@@ -11,10 +13,14 @@ const FooterMenu = (/*{ ...props }*/) => {
 						<div
 							className='entreprise-flex-container'
 							itemScope
-							itemType='https://schema.org/HealthClub'
+							itemType='https://schema.org/LocalBusiness'
 						>
+							<meta itemProp='name' content={name} />
+							<meta itemProp='telephone' content={tel} />
+
 							<div className='logo-container' itemProp='logo'>
 								<img
+									itemProp='image'
 									alt='Fleur de vie utilisée comme logo pour illustrer le bien-être et l’harmonisation énergétique'
 									loading='lazy'
 									src={Logo}

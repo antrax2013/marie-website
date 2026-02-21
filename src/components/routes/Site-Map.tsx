@@ -33,9 +33,6 @@ const SiteMap = () => {
 						<a href='/massage-des-5-continents'>Massage des 5 Continents</a>
 					</li>
 					<li>
-						<a href='/consultations'>Consultations</a>
-					</li>
-					<li>
 						<a href='/contact'>Contact</a>
 					</li>
 					<li>

@@ -12,7 +12,7 @@ const FaqItemComponent = (item: iFaqItem) => {
 			itemType='https://schema.org/Question'
 		>
 			{' '}
-			<h3 className='faq-question' itemProp='text' content='question'>
+			<h3 className='faq-question' itemProp='name' content='question'>
 				{item.question}
 			</h3>
 			<div

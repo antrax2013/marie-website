@@ -1,6 +1,16 @@
+const tel = import.meta.env.VITE_META_NUMTEL;
+const name = import.meta.env.VITE_META_MAIN_TITLE_LIGTH;
+
 const PanneauLateral = () => {
 	return (
-		<div itemProp='provider' itemScope itemType='https://schema.org/HealthClub'>
+		<div
+			itemProp='provider'
+			itemScope
+			itemType='https://schema.org/LocalBusiness'
+		>
+			<meta itemProp='name' content={name} />
+			<meta itemProp='image' />
+			<meta itemProp='telephone' content={tel} />
 			<p>
 				Du lundi au vendredi{' '}
 				<meta itemProp='openingHours' content='Mo-Fr 09:00-19:00' />
@@ -15,13 +25,18 @@ const PanneauLateral = () => {
 				>
 					tous les lundis à{' '}
 					<span itemProp='addressLocality'>
+						<meta
+							itemProp='streetAddress'
+							content='6, résidence Les Nouveaux Horizons'
+						/>
 						<a
-							href='/consultations#elancourt'
+							href='/qui-suis-je#elancourt'
 							title='Lien vers l’adresse du cabinet d’Élancourt'
 						>
 							Élancourt
 						</a>{' '}
 						(<span itemProp='postalCode'>78990</span>)
+						<meta itemProp='addressCountry' content='France' />
 					</span>
 				</span>
 				<span
@@ -30,16 +45,17 @@ const PanneauLateral = () => {
 					itemScope
 					itemType='https://schema.org/PostalAddress'
 				>
-					{' '}
-					et tous les jeudis à{' '}
+					<meta itemProp='streetAddress' content='1, rue Le Corbusier' /> et
+					tous les jeudis à{' '}
 					<span itemProp='addressLocality'>
 						<a
-							href='/consultations#guyancourt'
+							href='/qui-suis-je#guyancourt'
 							title='Lien vers l’adresse du cabinet de Guyancourt'
 						>
 							Guyancourt
 						</a>{' '}
 						(<span itemProp='postalCode'>78280</span>)
+						<meta itemProp='addressCountry' content='France' />
 					</span>
 				</span>
 			</p>

@@ -60,7 +60,9 @@ p,
 i:not(.pi),
 span:not(.p-button-label):not(.p-button-icon):not(.facebook):not(.linkedin):not(
 		.asterix
-	):not(.p-menuitem-text):not(.p-toast-summary):not(.p-toast-message-icon),
+	):not(.p-menuitem-text):not(.p-toast-summary):not(.p-toast-message-icon):not(
+		.p-badge
+	),
 td {
 	color: var(--text-color) !important;
 }
