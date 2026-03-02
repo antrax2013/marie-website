@@ -1,7 +1,6 @@
 import { Carousel } from 'primereact/carousel';
 import * as avis from '../../assets/avis.json';
 import { useState } from 'react';
-import google from '../../assets/icon-google.svg';
 import { iReviewsCarousel } from './Reviews-Container';
 import { Badge } from 'primereact/badge';
 
@@ -58,7 +57,7 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 					<a
 						href={item.url}
 						target='_blank'
-						title={`Consulter l'avis laissé par ${item.auteur} sur Google `}
+						title={`Consulter l'avis laissé par ${item.auteur} sur ${item.reseau}`}
 						className='carousel-social-network-icon'
 					>
 						<div className='author-review-container'>
@@ -70,11 +69,8 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 							>
 								<span itemProp='name'>{item.auteur}</span>
 							</p>
-							<img
-								className='carousel-social-network-icon'
-								alt={`Logo Google utilisé pour illustrer les avis clients`}
-								src={google}
-							/>
+
+							<i className={`pi px-2 pi-${item.reseau}`}></i>
 						</div>
 
 						<div className='carousel-item-header-container'>

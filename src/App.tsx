@@ -37,13 +37,23 @@ const Footer = lazy(() => import('./components/fragments/Footer'));
 const FooterMenu = lazy(() => import('./components/fragments/Footer-Menu'));
 const ScrollButton = lazy(() => import('./components/fragments/Scrollbutton'));
 
+// Actualités
+const SoinMassageTambour = lazy(
+	() => import('./components/routes/actualites/SoinMassageTambour'),
+);
+
 const App = () => {
 	return (
 		<div className='App'>
 			<BrowserRouter>
-				<Message
+				{/* <Message
 					link='/offres-et-tarifs'
 					content='Le coffret duo est de retour et disponible jusqu’à fin février.'
+					alt='Cliquez sur ce lien pour plus d’informations.'
+				/> */}
+				<Message
+					link='/actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'
+					content='14 Mars 2026 - Massage assis méthode EAS® & Tambour Unité : le soin duo à Plaisir'
 					alt='Cliquez sur ce lien pour plus d’informations.'
 				/>
 				<header className='flex flex-wrap'>
@@ -70,6 +80,11 @@ const App = () => {
 							<Route
 								path='politique-de-confidentialite'
 								element={<PolitiqueConfidentialite />}
+							/>
+							{/* Actualités */}
+							<Route
+								path='actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'
+								element={<SoinMassageTambour />}
 							/>
 							<Route path='mentions-legales' element={<MentionsLegales />} />
 							<Route path='plan-du-site' element={<PlanDuSite />} />

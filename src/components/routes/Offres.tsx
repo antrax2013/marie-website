@@ -6,7 +6,7 @@ import { PricesMassageEAS } from '../fragments/Prices/massage-assis-eas-prices';
 import { PricesM5C } from '../fragments/Prices/massage-5-continents';
 import { PricesReikiH } from '../fragments/Prices/reiki-holistique';
 import { PricesReikiC } from '../fragments/Prices/reiki-cible';
-import { Panel } from 'primereact/panel';
+// import { Panel } from 'primereact/panel';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import ReviewContainer from '../fragments/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
@@ -58,7 +58,7 @@ const Offres = () => {
 						</div>
 					</div>
 				</div>
-				<ParagraphSeparator />
+				{/* <ParagraphSeparator />
 				<div className='promotion'>
 					<Panel header='Promotion - le retour du coffret Duo'>
 						<h2>✨ Coffret Duo — Offre limitée</h2>
@@ -85,7 +85,7 @@ const Offres = () => {
 							<CtaRendezVous />
 						</div>
 					</Panel>
-				</div>
+				</div> */}
 				<ParagraphSeparator />
 				<div className='prices-header'>
 					<h2 className='center-secondary-title '>

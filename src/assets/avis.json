@@ -6,7 +6,8 @@
 			"date": "25/01/2026",
 			"url": "https://maps.app.goo.gl/XS2Kcicxqi4H7jQL8",
 			"commentaire": "Totale détente du corps et de l'esprit, je recommande vivement pour un moment de détente complet",
-			"tags": "EAS"
+			"tags": "EAS",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Cathou Turbolinette",
@@ -14,7 +15,8 @@
 			"date": "23/01/2026",
 			"url": "https://maps.app.goo.gl/MeuwqXu28semqv7V9",
 			"commentaire": "Un moment suspendu, à l’écoute de mes ressentis sous les mains douces et expertes de Marie. Tout est là pour vous faire lâcher prise et vous amener vers la sérénité. Merci pour ce moment...",
-			"tags": "M5C"
+			"tags": "M5C",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Myriam Hoeppe",
@@ -22,7 +24,8 @@
 			"date": "17/12/2025",
 			"url": "https://maps.app.goo.gl/Q52qos6eejFRrhK68",
 			"commentaire": "Que du bonheur le massage les cinq continents. De la zenitude à 200%. Allez-y.,,,",
-			"tags": "M5C"
+			"tags": "M5C",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Alexa Nigro Groelly",
@@ -30,7 +33,8 @@
 			"date": "02/10/2025",
 			"url": "https://share.google/HTvNSlUIeAKqrHSEG",
 			"commentaire": "J ai testé hier soir un massage des 5 continents. Marie est venue avec tout le matériel même la musique. Les huiles sentent bon. Les massages sont puissants et bienveillants. Je referai avec plaisir.",
-			"tags": "M5C"
+			"tags": "M5C",
+			"reseau": "google"
 		},
 		{
 			"auteur": "LallieL",
@@ -38,15 +42,26 @@
 			"date": "30/09/2025",
 			"url": "https://share.google/JZzvS1WaZf50vV1dW",
 			"commentaire": "J’ai passé un agréable moment de détente. Marie est attentionnée, douce et elle aime ce qu’elle fait. Je vous la recommande si vous souhaitez un bon massage et prendre soin de vous !",
-			"tags": "M5C"
+			"tags": "M5C",
+			"reseau": "google"
+		},
+		{
+			"auteur": "Sandra Juldiz Médium",
+			"note": "⭐⭐⭐⭐⭐",
+			"date": "08/05/2025",
+			"url": "https://www.facebook.com/SandraJuldizMedium/posts/pfbid0UMZmWdTjVqsc2YGhU9vfY4ZmxNgtGATA4wX1zTFQfrbt7bsuopGDVSCUm29YDkzBl",
+			"commentaire": "J'ai testé le massage des 5 continents de Marie, et ça m'a fait un bien fou! Merci pour ce moment magique qui fait du bien, aussi bien au corps qu'à l'âme, j'en suis ressortie toute joyeuse!😍",
+			"tags": "M5C",
+			"reseau": "facebook"
 		},
 		{
 			"auteur": "Sandra Juldiz",
 			"note": "⭐⭐⭐⭐⭐",
-			"date": "28/04/2025",
+			"date": "08/05/2025",
 			"url": "https://share.google/g9eaIuuQ4TTWtWOa6",
 			"commentaire": "J’ai testé le massage des 5 continents de Marie, et ça m’a fait un bien fou! Merci pour ce moment magique qui fait du bien, aussi bien au corps qu’à l’âme, j’en suis ressortie toute joyeuse!😍",
-			"tags": "M5C"
+			"tags": "M5C",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Valérie G",
@@ -54,7 +69,8 @@
 			"date": "27/11/2024",
 			"url": "https://share.google/Se0JLNvzjBPHZwSfU",
 			"commentaire": "J ai testé hier soir un massage des 5 continents. Marie est venue avec tout le matériel même la musique. Les huiles sentent bon. Les massages sont puissants et bienveillants. Je referai avec plaisir.",
-			"tags": "M5C"
+			"tags": "M5C",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Cecile BERTRAND",
@@ -62,7 +78,8 @@
 			"date": "25/11/2024",
 			"url": "https://share.google/AScSHKA2Fw0fkwdRD",
 			"commentaire": "Une belle découverte du massage EAS. Tonique, efficace, doux et réellement relaxant ! Merci à Marie pour sa gentillesse et sa douceur ! Je reviendrais régulièrement et avec plaisir !",
-			"tags": "EAS"
+			"tags": "EAS",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Christelle Ribeiro",
@@ -70,7 +87,8 @@
 			"date": "18/07/2024",
 			"url": "https://share.google/i0WJaw5E2ceucVxXU",
 			"commentaire": "Une belle découverte du massage EAS. Tonique, efficace, doux et réellement relaxant ! Merci à Marie pour sa gentillesse et sa douceur ! Je reviendrais régulièrement et avec plaisir !",
-			"tags": "EAS"
+			"tags": "EAS",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Marion Lanoes",
@@ -78,7 +96,17 @@
 			"date": "23/03/2024",
 			"url": "https://share.google/Rpe0DA1iVvHMG9cAy",
 			"commentaire": "Très belle découverte du Reiki avec Marie ! Je vous la recommande !",
-			"tags": "Reiki"
+			"tags": "Reiki",
+			"reseau": "google"
+		},
+		{
+			"auteur": "Sophie Quarato",
+			"note": "⭐⭐⭐⭐⭐",
+			"date": "16/03/2024",
+			"url": "https://www.facebook.com/sophie.quarato/posts/pfbid0FNTDh2ouTmXjAFzy6QHGeyyXka7rTt3PSmRkkQdykMfJS6MNnds4nsNiQmU31ZqLl",
+			"commentaire": "La découverte des soins prodigués par Marie a été un moment unique de détente et de bien-être. Je n’hésites pas à faire appel à elle quand j’en ai besoin.",
+			"tags": "Reiki",
+			"reseau": "facebook"
 		},
 		{
 			"auteur": "Marlene Lepere",
@@ -86,7 +114,8 @@
 			"date": "23/01/2024",
 			"url": "https://share.google/vgpjmtYRs4CkhDDFy",
 			"commentaire": "Mille mercis Marie !!! Je n’ai jamais reçu un tel massage (5 continents). Un pur moment de bonheur et de bien-être. Soins alliant massages et reiki. Tellement douée !!! Très professionnelle et beaucoup de douceur. Je recommande vivement ces soins. À très bientôt !",
-			"tags": "M5C"
+			"tags": "M5C",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Monique ALLIGNE",
@@ -94,7 +123,8 @@
 			"date": "19/10/2023",
 			"url": "https://share.google/iApNvRtQDAu0Vt7Yj",
 			"commentaire": "Je recommande vivement Marie pour la qualité de ses massages. Une professionnelle attentive, à l’écoute agissant avec sérieux. Allez y les yeux fermés",
-			"tags": "M5C"
+			"tags": "M5C",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Amandine VALTAT (“Ayorana”)",
@@ -102,7 +132,8 @@
 			"date": "06/06/2023",
 			"url": "https://share.google/3oq1d2h1QES6A0eTy",
 			"commentaire": "Petite séance reiki sur ma cheville suite à une entorse, très agréable et relaxante ! A refaire ☺️",
-			"tags": "Reiki"
+			"tags": "Reiki",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Valérie Langella",
@@ -110,7 +141,8 @@
 			"date": "26/05/2023",
 			"url": "https://share.google/DXhk2mS6DWVMOb4JZ",
 			"commentaire": "Excellent moment avec Marie très douce et très pro. Merci encore",
-			"tags": "M5C"
+			"tags": "M5C",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Severine Henry",
@@ -118,7 +150,17 @@
 			"date": "23/05/2023",
 			"url": "https://share.google/Qgk7N2yc6D4TForNN",
 			"commentaire": "Lieu zen ou l’ont peut se ressourcer avec une superbe professionnelle.",
-			"tags": "Reiki"
+			"tags": "Reiki",
+			"reseau": "google"
+		},
+		{
+			"auteur": "Stéphanie Gourdet Duchene",
+			"note": "⭐⭐⭐⭐⭐",
+			"date": "22/09/2022",
+			"url": "https://www.facebook.com/stephanie.gourdetduchene/posts/pfbid02DCkWcYD9UWtsV3pMc7XVa21vZ7UMmUaL1ZdhDZyCoy82xAXTuFq4UBQd89sUNZhel",
+			"commentaire": "découverte du massage des 5 continents, un moment de détente extraordinaire. Le mélange de massage, huiles et énergie est sensationnel. je recommande vivement et hâte de recommencer cette expérience.",
+			"tags": "M5C",
+			"reseau": "facebook"
 		},
 		{
 			"auteur": "Francine Quarato",
@@ -126,7 +168,8 @@
 			"date": "22/09/2022",
 			"url": "https://share.google/gff0mbF9z7yD1dmLa",
 			"commentaire": "Détente et bien-être....on est bien, on se sent bien, moment de relaxation intense... Bravo..",
-			"tags": "Reiki"
+			"tags": "Reiki",
+			"reseau": "google"
 		},
 		{
 			"auteur": "patricia bourcois",
@@ -134,7 +177,8 @@
 			"date": "22/09/2022",
 			"url": "https://share.google/Rd8gbXRPS4Im4lAJi",
 			"commentaire": "Merci Marie pour ce moment de détente, de douceur. Nous avons tous besoin de retrouver un peu de sérénité et de bien être. C est avec plaisir que je reviendrai pour une séance ZEN. Merci 🙏🏻😊",
-			"tags": "Reiki"
+			"tags": "Reiki",
+			"reseau": "google"
 		},
 		{
 			"auteur": "Leonardo QUARATO",
@@ -142,7 +186,8 @@
 			"date": "22/09/2022",
 			"url": "https://share.google/eLE0ToHbyXszBFPwD",
 			"commentaire": "Une réelle sensation de bien être et de soulagement. Merci.",
-			"tags": "Reiki"
+			"tags": "Reiki",
+			"reseau": "google"
 		}
 	]
 }
