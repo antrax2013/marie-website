@@ -31,10 +31,10 @@ const ScrollButton = lazy(() => import('./components/tools/Scrollbutton'));
 const PlanDuSite = lazy(() => import('./components/routes/Site-Map'));
 
 const POBlowball2026Jan = lazy(
-	() => import('./components/routes/Evenements/PO-Blowball-2026-Jan'),
+	() => import('./components/routes/evenements/PO-Blowball-2026-Jan'),
 );
 const DuoTambourEAS = lazy(
-	() => import('./components/routes/Evenements/Duo-EAS-Tambour-Unite'),
+	() => import('./components/routes/evenements/Duo-EAS-Tambour-Unite'),
 );
 
 const App = () => {
@@ -45,7 +45,7 @@ const App = () => {
 					<Header />
 				</header>
 				<div className='App-cp danger'>
-					{/* <Message
+					<Message
 						className='border-primary w-full justify-content-center message'
 						severity='secondary'
 						content={
@@ -60,8 +60,8 @@ const App = () => {
 								</a>
 							</>
 						}
-					/> */}
-					<Message
+					/>
+					{/* <Message
 						className='border-primary w-full justify-content-center message'
 						severity='secondary'
 						content={
@@ -75,7 +75,7 @@ const App = () => {
 								</a>
 							</>
 						}
-					/>
+					/> */}
 				</div>
 				<div className='App-body'>
 					<main className='content'>
