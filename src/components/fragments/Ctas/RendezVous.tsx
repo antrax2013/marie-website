@@ -1,4 +1,4 @@
-import Cta from '../Cta';
+import Cta from './Cta';
 
 const CtaRendezVous = () => {
 	return (
@@ -10,14 +10,12 @@ const CtaRendezVous = () => {
 				ctaLinkClassName='cta-primary phone md:hidden'
 				ctaText='☏ Prendre rendez-vous'
 				meta={`itemProp='telephone'`}
-				
 			/>
 			<Cta
 				link='/contact?sujet=prise-rendez-vous'
 				title={'Contactez-moi pour prendre rendez-vous.'}
 				ctaLinkClassName='cta-primary pc hidden md:flex'
 				ctaText='Prendre rendez-vous'
-				
 			/>
 		</>
 	);

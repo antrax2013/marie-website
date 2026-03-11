@@ -1,5 +1,5 @@
 import { Carousel } from 'primereact/carousel';
-import * as avis from '../../assets/avis.json';
+import * as avis from '../../../assets/avis.json';
 import { useState } from 'react';
 import { iReviewsCarousel } from './Reviews-Container';
 import { Badge } from 'primereact/badge';

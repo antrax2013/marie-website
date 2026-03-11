@@ -1,17 +1,17 @@
-import MetaTag from '../../modules/MetaTag';
-import ParagraphSeparator from '../fragments/Paragraph-Separator';
+import MetaTag from '../fragments/Tools/MetaTag';
+import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgMoi from '../../assets/Accueil/moi500x.jpg';
 
 import '../../scss/routes/Accueil.scss';
 
-import Faq from '../fragments/Faq';
+import Faq from '../fragments/FAQ/Faq';
 import SocialNetworks from '../fragments/Social-Neworks';
 import Product, { iProduct } from '../fragments/Product';
-import McImage from '../fragments/McImage';
-import Cta from '../fragments/Cta';
+import McImage from '../fragments/McImage/McImage';
+import Cta from '../fragments/Ctas/Cta';
 import { AccueilFaqItems } from '../entities/faq-items/accueil-faq-items';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
-import ReviewContainer from '../fragments/Reviews-Container';
+import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import { products } from '../entities/product-items/products';
 
 const Accueil = () => {

@@ -1,6 +1,6 @@
-import Cta from './Cta';
+import Cta from '../Ctas/Cta';
 import ReviewsCarousel from './Reviews-Carousel';
-import '../../scss/fragments/ReviewContainer.scss';
+import '../../../scss/fragments/ReviewContainer.scss';
 
 export interface iReviewsCarousel {
 	filter?: string;

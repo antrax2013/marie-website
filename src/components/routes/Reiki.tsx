@@ -1,22 +1,22 @@
-import ParagraphSeparator from '../fragments/Paragraph-Separator';
+import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgReiki from '../../assets/Reiki/Reiki.svg';
 import ImgReikiVentre from '../../assets/Reiki/Reiki-ventre.png';
 //import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.png';
 //import ImgReikiPied from '../../assets/Reiki/Reiki-pied.png';
 import '../../scss/routes/Reiki.scss';
-import MetaTag from '../../modules/MetaTag';
-import BgMcImageContainer from '../fragments/McImageContainers/BgMcImageContainer';
+import MetaTag from '../fragments/Tools/MetaTag';
+import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import CtaOffres from '../fragments/Ctas/Offres';
-import BgMcImageAlternativeContainer from '../fragments/McImageContainers/BgMcImageAlternativeContainer';
-import ReviewContainer from '../fragments/Reviews-Container';
+import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
+import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
-import Faq from '../fragments/Faq';
+import Faq from '../fragments/FAQ/Faq';
 import { ReikiFaqItems } from '../entities/faq-items/reiki-faq-items';
 //import McImage from '../fragments/McImage';
 import { PricesReikiH } from '../fragments/Prices/reiki-holistique';
 import { PricesReikiC } from '../fragments/Prices/reiki-cible';
-import Cta from '../fragments/Cta';
+import Cta from '../fragments/Ctas/Cta';
 
 const Reiki = () => {
 	const head = () => {

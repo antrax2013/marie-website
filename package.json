@@ -10,7 +10,7 @@
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
 		"compile-sass": "sass --watch src/scss/:public/css --no-source-map -s compressed",
-		"postbuild": "react-spa-prerender && powershell -File .\\post-build.ps1 -m https://massage-reiki.fr -s https://marie.cophignon.net -t https://massages-reiki.fr"
+		"postbuild": "react-spa-prerender && powershell -File .\\post-build.ps1 -m massage-reiki.fr -s marie.cophignon.net -t massages-reiki.fr"
 	},
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",

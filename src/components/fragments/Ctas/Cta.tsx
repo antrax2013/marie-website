@@ -1,4 +1,4 @@
-import '../../scss/fragments/Cta.scss';
+import '../../../scss/fragments/Cta.scss';
 
 export interface iCta {
 	link: string;

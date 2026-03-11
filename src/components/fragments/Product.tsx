@@ -1,5 +1,5 @@
-import Cta, { iCta } from './Cta';
-import McImage, { iImage } from './McImage';
+import Cta, { iCta } from './Ctas/Cta';
+import McImage, { iImage } from './McImage/McImage';
 
 export interface iProduct {
 	header: string | JSX.Element;

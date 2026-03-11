@@ -136,39 +136,6 @@
 					margin-block-end: unset !important;
 					margin-block-start: unset !important;
 				}
-
-				.address-container {
-					display: inline-block;
-					address {
-						display: flex;
-						align-items: center;
-						margin: 0.5rem;
-						flex-direction: row;
-						flex-wrap: nowrap;
-						width: 100%;
-
-						.section-adresse {
-							flex-basis: 50%;
-							padding: 0 1.5rem;
-							p {
-								margin-bottom: 0rem;
-							}
-							ul {
-								margin-top: 0rem;
-								padding-left: 0rem;
-
-								li {
-									display: inline-block;
-								}
-							}
-						}
-					}
-					iframe {
-						border: none;
-						@include mixins.border-rounded;
-						@include mixins.ombre-portee-basse-panneau;
-					}
-				}
 			}
 		}
 	}
@@ -212,27 +179,6 @@
 				align-items: start !important;
 				width: 100% !important;
 				padding: 0rem !important;
-
-				.address-container {
-					text-align: center;
-					width: 100% !important;
-					.section-content {
-						address {
-							margin: 0rem !important;
-							flex-direction: column !important;
-							align-items: start !important;
-							text-align: start;
-
-							.section-map {
-								width: 100% !important;
-								text-align: center;
-							}
-							.section-adresse {
-								width: 100% !important;
-							}
-						}
-					}
-				}
 
 				.center-area {
 					flex-direction: column !important;

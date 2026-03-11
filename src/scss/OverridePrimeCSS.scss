@@ -1,4 +1,6 @@
-.carousel-item-main-container {
+.carousel-item-main-container,
+.BlogArticle,
+.ActusEtNews {
 	.p-badge {
 		font-family: var(--text-front-family) !important;
 		color: var(--primary-color-text) !important;
@@ -15,9 +17,25 @@
 	.p-badge.p-badge-info {
 		background-color: var(--secondary-color-text) !important;
 	}
+
+	.p-badge.p-badge-secondary {
+		background-color: var(--cyan-500) !important;
+	}
+
+	.p-badge.p-badge-contrast {
+		background-color: var(--green-500) !important;
+	}
+
+	.p-badge.p-badge-warning {
+		background-color: var(--pink-500) !important;
+	}
 }
 
-.p-component:not(.p-carousel):not(.p-badge),
+.p-card {
+	font-size: inherit;
+}
+
+.p-component:not(.p-carousel):not(.p-badge):not(.p-card),
 .p-dropdown-label {
 	font-family: 'Amita', cursive;
 }

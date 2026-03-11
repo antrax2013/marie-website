@@ -8,9 +8,9 @@
 	"iso6523Code": "0009:91042798800019",
 	"founders": "Marie COPHIGNON",
 	"foundingDate": "2022-03-01",
-	"image": "##main-web-site-url##/logo192.png",
-	"logo": "##main-web-site-url##/logo192.png",
-	"url": "##main-web-site-url##",
+	"image": "https://##main-web-site-url##/logo192.png",
+	"logo": "https://##main-web-site-url##/logo192.png",
+	"url": "https://##main-web-site-url##",
 	"description": "Soins énergétiques Reiki, Massage des 5 Continents et massage assis méthode EAS® à Guyancourt, Élancourt et à domicile sur Saint-Quentin-en-Yvelines.",
 	"telephone": "07.73.55.27.70",
 	"areaServed": [
@@ -50,8 +50,8 @@
 	"priceRange": "25-95 EUR",
 	"sameAs": [
 		"https://massagedes5continents.com/membres/8424/Cophignon-Marie/",
-		"##tertiary-web-site-url##/",
-		"##secondary-web-site-url##/"
+		"https://##tertiary-web-site-url##/",
+		"https://##secondary-web-site-url##/"
 	],
 	"makesOffer": [
 		{

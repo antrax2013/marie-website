@@ -1,9 +1,9 @@
 import ImgSoin1 from '../../../assets/Actualites/massage-tambour/soin-duo-massage-eas-tambour-unite-marie-floriane-en-cours.jpg';
 import ImgSoin2 from '../../../assets/Actualites/massage-tambour/soin-duo-massage-eas-tambour-unite-marie-floriane.jpg';
-import MetaTag from '../../../modules/MetaTag';
+import MetaTag from '../../fragments/Tools/MetaTag';
 import '../../../scss/routes/Blog.scss';
 import { Adresse } from '../../fragments/Adresse';
-import ParagraphSeparator from '../../fragments/Paragraph-Separator';
+import ParagraphSeparator from '../../fragments/Tools/Paragraph-Separator';
 
 const DuoTambourEAS = () => {
 	const head = () => {

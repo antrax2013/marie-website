@@ -139,6 +139,17 @@ const Menu = ({ ...props }) => {
 				onClick('contact');
 			},
 		},
+		{
+			label: 'Actualités',
+			template: (item: MenuItem, options: MenuItemOptions) => {
+				return itemTemplate(item, options);
+			},
+			url: '/articles-et-actualites',
+			className: getClassName('actualites'),
+			command: () => {
+				onClick('actualites');
+			},
+		},
 	];
 
 	return <Menubar model={items} {...props} start={start} />;

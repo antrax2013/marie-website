@@ -1,4 +1,4 @@
-import MetaTag from '../../modules/MetaTag';
+import MetaTag from '../fragments/Tools/MetaTag';
 
 const Error404 = () => {
 	const head = () => {

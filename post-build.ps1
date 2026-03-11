@@ -36,7 +36,7 @@ $tertiaryTemplate = "##tertiary-web-site-url##"
 # } 
 
 # Get all files in the directory
-$files = Get-ChildItem -Path $directory -File
+$files = Get-ChildItem -Path $directory -File -Recurse
 
 # Iterate through each file
 foreach ($file in $files) {

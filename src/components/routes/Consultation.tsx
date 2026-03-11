@@ -1,5 +1,5 @@
-import MetaTag from '../../modules/MetaTag';
-import ParagraphSeparator from '../fragments/Paragraph-Separator';
+import MetaTag from '../fragments/Tools/MetaTag';
+import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import '../../scss/routes/Consultations.scss';
 import { useEffect } from 'react';
 

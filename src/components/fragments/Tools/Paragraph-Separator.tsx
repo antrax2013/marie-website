@@ -1,4 +1,4 @@
-import separator from '../../assets/separator.svg';
+import separator from '../../../assets/separator.svg';
 
 const ParagraphSeparator = () => {
 	return (

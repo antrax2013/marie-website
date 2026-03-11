@@ -1,4 +1,6 @@
-import MetaTag from '../../modules/MetaTag';
+import { events } from '../entities/blog/events/events';
+import { iBlog } from '../fragments/Blog/IBlog';
+import MetaTag from '../fragments/Tools/MetaTag';
 
 const SiteMap = () => {
 	const head = () => {
@@ -10,6 +12,8 @@ const SiteMap = () => {
 			/>
 		);
 	};
+
+	const articles: iBlog[] = [...events];
 
 	return (
 		<>
@@ -54,6 +58,13 @@ const SiteMap = () => {
 							duo à Plaisir
 						</a>
 					</li>
+					{articles.map((article: iBlog, i: number) => (
+						<li key={`article-${i}`}>
+							<a
+								href={`articles/${article.slug}`}
+							>{`${article.date.toLocaleDateString()} - ${article.metas.title}`}</a>
+						</li>
+					))}
 				</ul>
 				<h2>Autres pages</h2>
 				<ul>

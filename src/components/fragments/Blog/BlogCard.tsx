@@ -1,0 +1,62 @@
+import { Card } from 'primereact/card';
+import { iBlog } from './IBlog';
+import McImage from '../McImage/McImage';
+import Cta from '../Ctas/Cta';
+import { Badge } from 'primereact/badge';
+import { getBadgeSeverityFromTag } from '../../../modules/helpers';
+
+import '../../../scss/fragments/BlogCard.scss';
+
+const BlogCard = ({ slug, metas, date, tags, images, type }: iBlog) => {
+	const thumbnail = images[0];
+	const header = <h2>{metas.title}</h2>;
+	const footer = (
+		<Cta
+			link={`/articles/${slug}`}
+			title={`Lire le post sur l’${type} : ${metas.title}`}
+			ctaText='Lire la suite'
+			ctaLinkClassName='cta-secondary'
+		/>
+	);
+
+	const key = Math.random() * 1000000;
+
+	return (
+		<div className='BlogCard'>
+			<Card
+				footer={footer}
+				header={header}
+				className='blog-card-main-container md:w-25rem'
+				key={`card-${key}`}
+			>
+				<div className='blog-card-first-container'>
+					<div className='blog-card-img-container'>
+						<McImage
+							path={thumbnail.path}
+							className={'blog-card-thumbnail'}
+							alt={thumbnail.alt}
+							key={`img-${key}`}
+						/>
+					</div>
+					<p>
+						<b>{type}</b> - <i>{date.toLocaleDateString()}</i>
+					</p>
+				</div>
+				<p>{metas.description}</p>
+				<div className='blog-card-tags'>
+					{tags.map((tag: string, i: number) => (
+						<span className='blog-card-tag'>
+							<Badge
+								value={tag}
+								severity={getBadgeSeverityFromTag(tag)}
+								key={`tag-${key}-${i}`}
+							/>
+						</span>
+					))}
+				</div>
+			</Card>
+		</div>
+	);
+};
+
+export default BlogCard;

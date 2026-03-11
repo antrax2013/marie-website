@@ -1,5 +1,5 @@
-import MetaTag from '../../modules/MetaTag';
-import ParagraphSeparator from '../fragments/Paragraph-Separator';
+import MetaTag from '../fragments/Tools/MetaTag';
+import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import '../../scss/routes/Offres.scss';
 //import ImgCarteCadeau from '../../assets/Offres/carte-cadeau.png';
 import { PricesMassageEAS } from '../fragments/Prices/massage-assis-eas-prices';
@@ -8,9 +8,9 @@ import { PricesReikiH } from '../fragments/Prices/reiki-holistique';
 import { PricesReikiC } from '../fragments/Prices/reiki-cible';
 // import { Panel } from 'primereact/panel';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
-import ReviewContainer from '../fragments/Reviews-Container';
+import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
-import Faq from '../fragments/Faq';
+import Faq from '../fragments/FAQ/Faq';
 
 import { OfrresFaqItems as OffresFaqItems } from '../entities/faq-items/offres-faq-items';
 

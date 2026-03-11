@@ -23,7 +23,7 @@ export class Email {
 				subject: email.subject,
 				telephone: email.tel,
 			},
-			userId
+			userId,
 		);
 	};
 }

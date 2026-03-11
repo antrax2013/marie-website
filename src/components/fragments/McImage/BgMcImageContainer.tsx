@@ -1,4 +1,4 @@
-import McImage, { iImage } from '../McImage';
+import McImage, { iImage } from './McImage';
 import '../../../scss/fragments/McImageContainers/BgMcImageContainer.scss';
 
 const BgMcImageContainer = ({ path, className, alt, title }: iImage) => {

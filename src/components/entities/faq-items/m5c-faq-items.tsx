@@ -1,4 +1,4 @@
-import { iFaqItem } from '../../fragments/Faq-Item';
+import { iFaqItem } from '../../fragments/FAQ/Faq-Item';
 
 export const M5CFaqItems: Array<iFaqItem> = [
 	{

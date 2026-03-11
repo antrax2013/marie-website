@@ -1,11 +1,11 @@
-import MetaTag from '../../modules/MetaTag';
-import ParagraphSeparator from '../fragments/Paragraph-Separator';
+import MetaTag from '../fragments/Tools/MetaTag';
+import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgMoi from '../../assets/moi500x.jpg';
 import '../../scss/routes/QuiSuisJe.scss';
-import Cta from '../fragments/Cta';
-import McImage from '../fragments/McImage';
+import Cta from '../fragments/Ctas/Cta';
+import McImage from '../fragments/McImage/McImage';
 import { Adresse } from '../fragments/Adresse';
-import Faq from '../fragments/Faq';
+import Faq from '../fragments/FAQ/Faq';
 import { QuiSuisJeFaqItems } from '../entities/faq-items/qui-suis-je-faq-items';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 
@@ -107,7 +107,7 @@ const QuiSuisJe = () => {
 					<h2 className='center-secondary-title'>Mon parcours, ma formation</h2>
 					<div className='career-header-3-containers'>
 						<div className='career-content'>
-							<h3>Infirmière, mon métier de coeur</h3>
+							<h3>Infirmière, mon métier de cœur</h3>
 							<p>
 								Infirmière diplômée d’état en 2005, formée à l’IFSI de Reims,
 								j’ai passé 18 années à accompagner, écouter, rassurer, soutenir,

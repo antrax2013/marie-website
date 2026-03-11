@@ -7,7 +7,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 import Message from './components/fragments/Message';
 
-// Routes
+// Menu
 const Accueil = lazy(() => import('./components/routes/Accueil'));
 const Massage5Continents = lazy(
 	() => import('./components/routes/Massage-5-continents'),
@@ -17,29 +17,36 @@ const MassageAssisMethodeEAS = lazy(
 );
 const Offres = lazy(() => import('./components/routes/Offres'));
 const Contact = lazy(() => import('./components/routes/Contact'));
-const Error404 = lazy(() => import('./components/routes/Error404'));
 const QuiSuisJe = lazy(() => import('./components/routes/Qui-suis-je'));
 const Reiki = lazy(() => import('./components/routes/Reiki'));
+
+// Blog
+const ActusEtNews = lazy(() => import('./components/routes/Actus-et-News'));
+const BlogArticle = lazy(
+	() => import('./components/fragments/Blog/BlogArticle'),
+);
+const SoinMassageTambour = lazy(
+	() => import('./components/routes/actualites/SoinMassageTambour'),
+);
+
+// Autres routes
 const PlanDuSite = lazy(() => import('./components/routes/Site-Map'));
 const MentionsLegales = lazy(
 	() => import('./components/routes/Mentions-Legales'),
 );
+const Error404 = lazy(() => import('./components/routes/Error404'));
 const PolitiqueConfidentialite = lazy(
 	() => import('./components/routes/Politique-confidentialite'),
 );
 
-// Menu
+// Elements de mise en page
 const FooterLinks = lazy(() => import('./components/fragments/Footer-Links'));
-
-import Header from './components/fragments/Header';
+const Header = lazy(() => import('./components/fragments/Header'));
 
 const Footer = lazy(() => import('./components/fragments/Footer'));
 const FooterMenu = lazy(() => import('./components/fragments/Footer-Menu'));
-const ScrollButton = lazy(() => import('./components/fragments/Scrollbutton'));
-
-// Actualités
-const SoinMassageTambour = lazy(
-	() => import('./components/routes/actualites/SoinMassageTambour'),
+const ScrollButton = lazy(
+	() => import('./components/fragments/Tools/Scrollbutton'),
 );
 
 const App = () => {
@@ -81,11 +88,18 @@ const App = () => {
 								path='politique-de-confidentialite'
 								element={<PolitiqueConfidentialite />}
 							/>
+
+							{/* Blog */}
+							<Route path='articles-et-actualites' element={<ActusEtNews />} />
+							<Route path='/articles/:slug' element={<BlogArticle />} />
+
 							{/* Actualités */}
 							<Route
 								path='actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'
 								element={<SoinMassageTambour />}
 							/>
+
+							{/* Divers */}
 							<Route path='mentions-legales' element={<MentionsLegales />} />
 							<Route path='plan-du-site' element={<PlanDuSite />} />
 							<Route path='erreur-404' element={<Error404 />} />

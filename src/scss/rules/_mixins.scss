@@ -3,26 +3,37 @@
 }
 
 @mixin top-border-rounded {
-	border-top-left-radius: 23.5px;
-	border-top-right-radius: 23.5px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 }
 
 @mixin btn-border-rounded {
 	border-radius: 10px;
 }
 
+@mixin ombre-portee {
+	box-shadow: 5px 5px 5px 5px var(--shadow);
+	background-color: var(--background-color);
+}
+
 @mixin ombre-portee-panneau {
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px;
-	box-shadow: 5px 5px 5px 5px var(--shadow);
-	background-color: var(--background-color);
+	@include ombre-portee;
 }
 
 @mixin ombre-portee-basse-panneau {
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	box-shadow: 5px 5px 5px 5px var(--shadow);
-	background-color: var(--background-color);
+	@include ombre-portee;
+}
+
+@mixin truncate {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
 }
 
 @mixin article-section {

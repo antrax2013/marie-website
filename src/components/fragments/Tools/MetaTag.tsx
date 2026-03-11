@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-interface iMetaTag {
+export interface iMetaTag {
 	title: string;
 	description: string;
 	resume: string;

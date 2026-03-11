@@ -9,7 +9,7 @@ import '../../scss/routes/Contact.scss';
 import { Email, iMail } from '../../modules/email';
 import { Dropdown } from 'primereact/dropdown';
 import { Toast } from 'primereact/toast';
-import MetaTag from '../../modules/MetaTag';
+import MetaTag from '../fragments/Tools/MetaTag';
 
 interface iError {
 	nom?: string;

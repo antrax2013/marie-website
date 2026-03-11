@@ -1,19 +1,19 @@
-import ParagraphSeparator from '../fragments/Paragraph-Separator';
+import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgM5C from '../../assets/M5C/massage-5-continents.png';
 import ImgM5CColonne from '../../assets/M5C/m5c-colonne.png';
 import ImgM5CDos from '../../assets/M5C/m5c-bas-dos.png';
 //import ImgM5CBras from '../../assets/M5C/m5c-bras.png';
 import '../../scss/routes/M5C.scss';
-import MetaTag from '../../modules/MetaTag';
-import BgMcImageAlternativeContainer from '../fragments/McImageContainers/BgMcImageAlternativeContainer';
+import MetaTag from '../fragments/Tools/MetaTag';
+import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import CtaOffres from '../fragments/Ctas/Offres';
-import BgMcImageContainer from '../fragments/McImageContainers/BgMcImageContainer';
-import McImage from '../fragments/McImage';
-import Cta from '../fragments/Cta';
-import ReviewContainer from '../fragments/Reviews-Container';
+import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
+import McImage from '../fragments/McImage/McImage';
+import Cta from '../fragments/Ctas/Cta';
+import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
-import Faq from '../fragments/Faq';
+import Faq from '../fragments/FAQ/Faq';
 import { M5CFaqItems } from '../entities/faq-items/m5c-faq-items';
 import { PricesM5C } from '../fragments/Prices/massage-5-continents';
 
