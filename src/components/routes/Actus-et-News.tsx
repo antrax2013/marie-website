@@ -8,11 +8,40 @@ import ImgCocon from '../../assets/Actualites/serviette-pierres-et-bougies-xs.jp
 const ActusEtNews = () => {
 	const head = () => {
 		return (
-			<MetaTag
-				title='Blog Bien‑être — Reiki, Massage, Actualités, Évènements'
-				description='Blog ##main-web-site-url## : articles et actualités bien-être à propos de mes massages et soins énergétiques sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Votre bien‑être commence ici.'
-				resume='Mes articles et actualités pour prendre en main votre bien‑être dès aujourd’hui, sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
-			/>
+			<>
+				<MetaTag
+					title='Blog Bien‑être — Reiki, Massage, Actualités, Évènements'
+					description='Blog ##main-web-site-url## : articles et actualités bien-être à propos de mes massages et soins énergétiques sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Votre bien‑être commence ici.'
+					resume='Mes articles et actualités pour prendre en main votre bien‑être dès aujourd’hui, sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
+				/>
+				{/* <script type='application/ld+json'>
+				{
+					"@context": "https://schema.org",
+					"@type": "BlogPosting",
+					"headline": "Nouvelle salle pluridisciplinaire de massage et Reiki à Guyancourt",
+					"description": "Découvrez la nouvelle salle pluridisciplinaire disponible chaque jeudi au cabinet Blowball à Guyancourt : massages, Reiki Usui, Massage des 5 Continents. Massages à domicile sur Saint-Quentin-en-Yvelines et séances le lundi à Élancourt.",
+					"author": {
+						"@type": "Person",
+						"name": "Ton Nom"
+					},
+					"publisher": {
+						"@type": "Organization",
+						"name": "Cabinet Blowball",
+						"logo": {
+							"@type": "ImageObject",
+							"url": "https://ton-site.fr/logo.png"
+						}
+					},
+					"mainEntityOfPage": {
+						"@type": "WebPage",
+						"@id": "https://ton-site.fr/salle-pluridisciplinaire-massage-reiki-guyancourt"
+					},
+					"image": "https://ton-site.fr/images/nouvelle-salle-guyancourt.jpg",
+					"datePublished": "2024-01-01",
+					"dateModified": "2024-01-01"
+				}
+				</script> */}
+			</>
 		);
 	};
 
