@@ -21,9 +21,8 @@ const MassageAssisMethodeEAS = () => {
 	const head = () => {
 		return (
 			<MetaTag
-				title='Massage assis méthode EAS®'
-				description='Profitez du massage du dos assis méthode EAS® sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise : détente profonde, relâchement des tensions et regain d’énergie en quelques minutes.'
-				resume='Profitez du massage du dos assis méthode EAS® sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise : détente profonde, relâchement des tensions et regain d’énergie en quelques minutes.'
+				title='Massage du dos assis EAS® à SQY – Marie Cophignon '
+				description='Massage du dos assis EAS® à SQY, idéal en entreprise pour réduire le stress et libérer les tensions. Disponible aussi en cabinet et à domicile.'
 			/>
 		);
 	};

@@ -6,7 +6,6 @@ const Error404 = () => {
 			<MetaTag
 				title='Erreur 404'
 				description="La page demandée n'existe pas ou plus."
-				resume='Erreur 404'
 			/>
 		);
 	};

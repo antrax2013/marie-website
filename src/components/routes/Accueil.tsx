@@ -18,16 +18,15 @@ const Accueil = () => {
 	const head = () => {
 		return (
 			<MetaTag
-				title={`Massages & Reiki en Yvelines`}
-				description='Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.'
-				resume='Massages énergétiques et Reiki Usui dans les Yvelines sur Élancourt et Guyancourt ou en soins à domicile. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.'
+				title={`Reiki, Massages Assis & Soins Énergétiques à SQY`}
+				description={`Reiki Usui, massages du dos assis et soins énergétiques à SQY. Séances en cabinet, à domicile ou en entreprise pour libérer stress et tensions.`}
 			/>
 		);
 	};
 
 	return (
 		<>
-			{head()}
+			{head()}‍
 			<div className='Accueil'>
 				{/* Hero */}
 				<div className='hero'>

@@ -11,7 +11,6 @@ export const BlogEvent20250922EASPetitfils: iBlog = {
 			'Massage du dos assis méthode EAS® en entreprise, agence Petit-fils Plaisir',
 		description:
 			'Séance de massage assis méthode EAS® à Plaisir, SQY, Yvelines : bien‑être en entreprise, détente musculaire et regain d’énergie pour vos équipes.',
-		resume: '',
 	},
 	date: new Date('2025-11-25'),
 	tags: [

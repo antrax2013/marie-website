@@ -12,7 +12,6 @@ const ActusEtNews = () => {
 				<MetaTag
 					title='Blog Bien‑être — Reiki, Massage, Actualités, Évènements'
 					description='Blog ##main-web-site-url## : articles et actualités bien-être à propos de mes massages et soins énergétiques sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Votre bien‑être commence ici.'
-					resume='Mes articles et actualités pour prendre en main votre bien‑être dès aujourd’hui, sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
 				/>
 				{/* <script type='application/ld+json'>
 				{

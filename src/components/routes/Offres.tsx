@@ -19,9 +19,8 @@ const Offres = () => {
 		return (
 			<>
 				<MetaTag
-					title={'Tarifs et Offres'}
-					description='Consultez les tarifs des massages énergétique et séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Des soins adaptés à vos besoins pour un bien‑être durable.'
-					resume='Consultez les tarifs des massages énergétique et séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Des soins adaptés à vos besoins pour un bien‑être durable.'
+					title={'Tarifs et Offres – Massages & Reiki Usui à SQY'}
+					description='Découvrez les tarifs et offres des massages énergétiques et séances de Reiki Usui à SQY, Élancourt et Guyancourt. En cabinet, à domicile ou en entreprise, des soins adaptés pour un bien‑être durable.'
 				/>
 			</>
 		);

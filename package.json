@@ -24,9 +24,9 @@
 		"react-router-dom": "^7.2.0"
 	},
 	"devDependencies": {
-		"@types/react-helmet": "^6.1.11",
 		"@types/react": "^18.2.66",
 		"@types/react-dom": "^18.2.22",
+		"@types/react-helmet": "^6.1.11",
 		"@typescript-eslint/eslint-plugin": "^8.24.1",
 		"@typescript-eslint/parser": "^8.24.1",
 		"@vitejs/plugin-react-swc": "^3.5.0",

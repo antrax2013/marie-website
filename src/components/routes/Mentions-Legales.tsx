@@ -4,9 +4,8 @@ const MentionsLegales = () => {
 	const head = () => {
 		return (
 			<MetaTag
-				title='Mentions légales'
-				description='Les mentions legales des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
-				resume='Les mentions legales des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
+				title='Mentions légales – Massages & Reiki Usui à SQY'
+				description='Mentions légales des sites marie.cophignon.net, massage‑reiki.fr et massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint‑Quentin‑en‑Yvelines, à Élancourt et Guyancourt, en cabinet, à domicile ou en entreprise.'
 			/>
 		);
 	};

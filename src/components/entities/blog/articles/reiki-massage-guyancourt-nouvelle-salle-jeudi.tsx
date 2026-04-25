@@ -16,7 +16,6 @@ export const BlogArticleCabinetGrandeSalle: iBlog = {
 		title: 'Massage Guyancourt – Reiki Usui & bien‑être | Cabinet Blowball',
 		description:
 			'Découvrez mon nouvel espace de massage à Guyancourt chaque jeudi : Reiki Usui, Massage des 5 Continents et massages du dos assis EAS®. À Élancourt ou domicile le reste de la semaine sur SQY.',
-		resume: '',
 	},
 	date: new Date('2026-04-06'),
 	tags: ['St Quentin-en-Yvelines', 'Cabinet Blowball', 'Guyancourt'],

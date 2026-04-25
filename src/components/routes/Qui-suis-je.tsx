@@ -13,10 +13,8 @@ const QuiSuisJe = () => {
 	const head = () => {
 		return (
 			<MetaTag
-				title={import.meta.env.VITE_META_MAIN_TITLE}
-				description='Découvrez mon parcours et ma philosophie autour des massages énergétiques et du Reiki Usui. Une approche bienveillante et personnalisée sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise, pour votre bien‑être.'
-				resume='Découvrez mon parcours et ma philosophie autour des massages énergétiques et du Reiki Usui. Une approche bienveillante et personnalisée sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise, pour votre bien‑être.'
-				forceTitle={true}
+				title='Marie Cophignon – Massages & Reiki à SQY'
+				description='Maître Reiki Usui, massage du dos assis et Massage des 5 Continents à SQY, Élancourt et Guyancourt. Découvrez mon parcours et une approche bienveillante et personnalisée, en cabinet, à domicile ou en entreprise.'
 			/>
 		);
 	};

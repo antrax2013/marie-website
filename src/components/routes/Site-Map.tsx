@@ -6,9 +6,8 @@ const SiteMap = () => {
 	const head = () => {
 		return (
 			<MetaTag
-				title='Plan du site'
-				description='Plan des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
-				resume='Plan des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
+				title='Plan du site – Massages & Reiki Usui à SQY'
+				description='Plan des sites marie.cophignon.net, massage‑reiki.fr et massages‑reiki.fr, dédiés aux massages bien‑être et au Reiki Usui sur Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt.'
 			/>
 		);
 	};

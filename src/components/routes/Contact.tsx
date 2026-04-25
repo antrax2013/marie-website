@@ -137,9 +137,8 @@ const Contact = () => {
 	const head = () => {
 		return (
 			<MetaTag
-				title='Contact'
-				description='Prenez rendez‑vous pour un massage énergétique ou une séance de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Contact simple et rapide pour votre moment bien‑être.'
-				resume='Prenez rendez‑vous pour un massage énergétique ou une séance de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Contact simple et rapide pour votre moment bien‑être.'
+				title='Contact – Massages & Reiki Usui à SQY'
+				description='Prenez rendez‑vous pour un massage énergétique ou une séance de Reiki Usui à SQY, Élancourt et Guyancourt. En cabinet, à domicile ou en entreprise, un contact simple et rapide pour votre moment bien‑être.'
 			/>
 		);
 	};

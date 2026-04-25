@@ -4,9 +4,8 @@ const PolitiqueConfidentialite = () => {
 	const head = () => {
 		return (
 			<MetaTag
-				title='Politique de confidentialité'
-				description="Notre politique de confidentialité est stricte et dans le respect de la RGPD. Nous ne partageons pas vos données personnelles. Nous ne faisons qu'observer l'utilisation de notre site dans le but d'améliorer sa visibilité."
-				resume='Notre politique de confidentialité est stricte et dans le respect de la RGPD. Nous ne partageons pas vos données personnelles.'
+				title='Politique de confidentialité – Massages & Reiki Usui à SQY'
+				description='Notre politique de confidentialité respecte strictement le RGPD. Aucune donnée personnelle n’est partagée. Seules des statistiques anonymes sont utilisées pour améliorer la visibilité du site.'
 			/>
 		);
 	};

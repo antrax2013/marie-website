@@ -10,7 +10,6 @@ export const BlogArticleMassageSurChiseSQY: iBlog = {
 		title: 'Massage sur chaise en entreprise à SQY (78)',
 		description:
 			'Le massage sur chaise séduit de plus en plus les entreprises autour de Saint Quentin-en-Yvelines. Découvrez ses bienfaits, son déroulement et pourquoi il améliore la QVT et réduit le stress au travail.',
-		resume: '',
 	},
 	date: new Date('2026-04-03'),
 	tags: [

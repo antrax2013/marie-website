@@ -30,11 +30,7 @@ const BlogArticle = () => {
 
 	const head = () => {
 		return (
-			<MetaTag
-				title={data.metas.title}
-				description={data.metas.description}
-				resume={data.metas.description || data.metas.description}
-			/>
+			<MetaTag title={data.metas.title} description={data.metas.description} />
 		);
 	};
 

@@ -11,7 +11,6 @@ export const BlogEvent20260125POCabinetBlowBall: iBlog = {
 		title: 'Porte ouverte du cabinet Blowball à Guyancourt 25 janvier 2026',
 		description:
 			'Portes ouvertes du cabinet Blowball à Guyancourt : massages du dos assis EAS® et Reiki Usui pour découvrir le bien‑être à Saint‑Quentin‑en‑Yvelines.',
-		resume: '',
 	},
 	date: new Date('2026-01-30'),
 	tags: [

@@ -11,7 +11,6 @@ const DuoTambourEAS = () => {
 			<MetaTag
 				title='Soin énergétique à Plaisir (78) – Massage assis EAS® & Tambour Unité'
 				description='Offrez-vous un soin énergétique unique à Plaisir (78) : massage assis méthode EAS® et tambour unité avec Marie Cophignon et Flofa Art à Saint-Quentin-en-Yvelines. Sur rendez-vous, les 31 janvier et 14 mars 2026.'
-				resume='Un soin énergétique inédit à Plaisir dans les Yvelines : massage assis méthode EAS® et tambour unité. Deux praticiennes, deux dates, un seul rendez-vous avec votre bien-être.'
 			/>
 		);
 	};

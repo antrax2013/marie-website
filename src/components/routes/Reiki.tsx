@@ -24,7 +24,6 @@ const Reiki = () => {
 			<MetaTag
 				title='Reiki Usui'
 				description='Séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies. Un moment de douceur et de recentrage.'
-				resume='Séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies. Un moment de douceur et de recentrage.'
 			/>
 		);
 	};

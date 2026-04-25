@@ -21,9 +21,8 @@ const Massage5Continents = () => {
 	const head = () => {
 		return (
 			<MetaTag
-				title='Massage des 5 Continents'
-				description='Un soin puissant mêlant massage, soin énergétique et aromathérapie. Le Massage 5 Continents (M5C), sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.'
-				resume='Un soin puissant mêlant massage, soin énergétique et aromathérapie. Le Massage 5 Continents (M5C), sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.'
+				title='Reiki Usui – Soin énergétique à SQY'
+				description='Séances de Reiki Usui à SQY, Élancourt et Guyancourt. Un soin énergétique doux pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies, en cabinet, à domicile ou en entreprise.'
 			/>
 		);
 	};
