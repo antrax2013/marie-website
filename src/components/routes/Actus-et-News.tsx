@@ -1,19 +1,13 @@
 import '../../scss/routes/Actues-et-News.scss';
 import BlogCardsContainer from '../fragments/Blog/BlogCards-Container';
 import McImage from '../fragments/McImage/McImage';
-import MetaTag from '../fragments/Tools/MetaTag';
+import MetaTag from '../fragments/MetaTags/MetaTag';
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgCocon from '../../assets/Actualites/serviette-pierres-et-bougies-xs.jpg';
 
 const ActusEtNews = () => {
-	const head = () => {
-		return (
-			<>
-				<MetaTag
-					title='Blog Bien‑être — Reiki, Massage, Actualités, Évènements'
-					description='Blog ##main-web-site-url## : articles et actualités bien-être à propos de mes massages et soins énergétiques sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Votre bien‑être commence ici.'
-				/>
-				{/* <script type='application/ld+json'>
+	{
+		/* <script type='application/ld+json'>
 				{
 					"@context": "https://schema.org",
 					"@type": "BlogPosting",
@@ -39,14 +33,12 @@ const ActusEtNews = () => {
 					"datePublished": "2024-01-01",
 					"dateModified": "2024-01-01"
 				}
-				</script> */}
-			</>
-		);
-	};
+				</script> */
+	}
 
 	return (
 		<>
-			{head()}
+			<MetaTag tag='articles-et-actualites' />
 			<div className='article ActusEtNews'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>

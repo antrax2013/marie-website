@@ -9,7 +9,7 @@ import '../../scss/routes/Contact.scss';
 import { Email, iMail } from '../../modules/email';
 import { Dropdown } from 'primereact/dropdown';
 import { Toast } from 'primereact/toast';
-import MetaTag from '../fragments/Tools/MetaTag';
+import MetaTag from '../fragments/MetaTags/MetaTag';
 
 interface iError {
 	nom?: string;
@@ -134,18 +134,9 @@ const Contact = () => {
 		);
 	};
 
-	const head = () => {
-		return (
-			<MetaTag
-				title='Contact – Massages & Reiki Usui à SQY'
-				description='Prenez rendez‑vous pour un massage énergétique ou une séance de Reiki Usui à SQY, Élancourt et Guyancourt. En cabinet, à domicile ou en entreprise, un contact simple et rapide pour votre moment bien‑être.'
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
+			<MetaTag tag='contact' />
 			<div className='article contact'>
 				<h1>Contact</h1>
 				<Toast ref={toast} />

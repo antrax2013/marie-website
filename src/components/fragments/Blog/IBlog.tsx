@@ -1,9 +1,6 @@
 import { iImage } from '../McImage/McImage';
-import { iMetaTag } from '../Tools/MetaTag';
-
 export interface iBlog {
 	slug: string;
-	metas: iMetaTag;
 	date: Date;
 	tags: string[];
 	images: iImage[];

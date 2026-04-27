@@ -7,11 +7,6 @@ import image3 from '../../../../assets/Actualites/20260125-portes-ouvertes-bien-
 export const BlogEvent20260125POCabinetBlowBall: iBlog = {
 	h1: 'Portes ouvertes du cabinet Blowball à Guyancourt',
 	slug: '20260125-portes-ouvertes-bien-etre-reiki-massage-saint-quentin-en-yvelines',
-	metas: {
-		title: 'Porte ouverte du cabinet Blowball à Guyancourt 25 janvier 2026',
-		description:
-			'Portes ouvertes du cabinet Blowball à Guyancourt : massages du dos assis EAS® et Reiki Usui pour découvrir le bien‑être à Saint‑Quentin‑en‑Yvelines.',
-	},
 	date: new Date('2026-01-30'),
 	tags: [
 		'Massage du dos assis méth. EAS®',

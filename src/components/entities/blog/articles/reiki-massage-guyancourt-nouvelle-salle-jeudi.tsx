@@ -12,11 +12,6 @@ import img3 from '../../../../assets/Actualites/grande-salle-cabinet-blowball/gr
 export const BlogArticleCabinetGrandeSalle: iBlog = {
 	h1: 'Nouvelle espace au cabinet Blowball à Guyancourt',
 	slug: 'reiki-massage-guyancourt-cabinet-blowball',
-	metas: {
-		title: 'Massage Guyancourt – Reiki Usui & bien‑être | Cabinet Blowball',
-		description:
-			'Découvrez mon nouvel espace de massage à Guyancourt chaque jeudi : Reiki Usui, Massage des 5 Continents et massages du dos assis EAS®. À Élancourt ou domicile le reste de la semaine sur SQY.',
-	},
 	date: new Date('2026-04-06'),
 	tags: ['St Quentin-en-Yvelines', 'Cabinet Blowball', 'Guyancourt'],
 	images: [

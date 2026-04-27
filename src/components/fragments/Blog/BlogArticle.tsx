@@ -8,7 +8,7 @@ import { iImage } from '../McImage/McImage';
 import { getBadgeSeverityFromTag } from '../../../modules/helpers';
 
 import '../../../scss/fragments/BlogArticle.scss';
-import MetaTag from '../Tools/MetaTag';
+import MetaTag from '../MetaTags/MetaTag';
 
 const BlogArticle = () => {
 	const { slug } = useParams<{ slug: string }>();
@@ -28,18 +28,12 @@ const BlogArticle = () => {
 		return <img src={item.path} alt={item.alt} style={{ width: '50px' }} />;
 	};
 
-	const head = () => {
-		return (
-			<MetaTag title={data.metas.title} description={data.metas.description} />
-		);
-	};
-
 	return (
 		<>
-			{head()}
+			<MetaTag tag={data.slug} />
 			<article className='article BlogArticle'>
 				<div className='article-container'>
-					<h1>{data.h1 ?? data.metas.title}</h1>
+					<h1>{data.h1}</h1>
 					<div className='article-main-container'>
 						<div className='article-content-container'>
 							<p>

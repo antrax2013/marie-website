@@ -6,12 +6,6 @@ import thumbnail from '../../../../assets/Actualites/20250922-massage-dos-assis-
 export const BlogEvent20250922EASPetitfils: iBlog = {
 	h1: 'Massage du dos assis en entreprise : une pause bien‑être pour booster l’énergie des équipes',
 	slug: '20250922-massage-dos-assis-eas-entreprise-petit-fils-plaisir',
-	metas: {
-		title:
-			'Massage du dos assis méthode EAS® en entreprise, agence Petit-fils Plaisir',
-		description:
-			'Séance de massage assis méthode EAS® à Plaisir, SQY, Yvelines : bien‑être en entreprise, détente musculaire et regain d’énergie pour vos équipes.',
-	},
 	date: new Date('2025-11-25'),
 	tags: [
 		'Massage du dos assis méth. EAS®',

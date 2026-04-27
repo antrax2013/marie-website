@@ -4,7 +4,7 @@ import ImgReikiVentre from '../../assets/Reiki/Reiki-ventre.png';
 //import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.png';
 //import ImgReikiPied from '../../assets/Reiki/Reiki-pied.png';
 import '../../scss/routes/Reiki.scss';
-import MetaTag from '../fragments/Tools/MetaTag';
+import MetaTag from '../fragments/MetaTags/MetaTag';
 import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import CtaOffres from '../fragments/Ctas/Offres';
@@ -19,18 +19,9 @@ import { PricesReikiC } from '../fragments/Prices/reiki-cible';
 import Cta from '../fragments/Ctas/Cta';
 
 const Reiki = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Reiki Usui'
-				description='Séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies. Un moment de douceur et de recentrage.'
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
+			<MetaTag tag='reiki-usui' />
 			<div className='Reiki' itemScope itemType='https://schema.org/Offer'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
@@ -230,12 +221,12 @@ const Reiki = () => {
 							<div className='reiki-usui-prices-panel'>
 								<PricesReikiH title='Soin Reiki Usui holistique séance 1h00 - 45 mins de soin' />
 								<br />
-								<p>
+								<div>
 									<h4 className='inline'>Soin Reiki Usui à distance</h4>{' '}
 									<span className='asterix'>*</span> :{' '}
 									<span itemProp='price'>60,00</span>
 									<span itemProp='priceCurrency'>€</span>
-								</p>
+								</div>
 							</div>
 							<div className='reiki-usui-prices-panel'>
 								<PricesReikiC title='Soin Reiki Usui ciblé séance 0h30 - 25 mins de soin' />

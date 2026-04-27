@@ -1,22 +1,13 @@
 import { events } from '../entities/blog/events/events';
 import { iBlog } from '../fragments/Blog/IBlog';
-import MetaTag from '../fragments/Tools/MetaTag';
+import MetaTag from '../fragments/MetaTags/MetaTag';
 
 const SiteMap = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Plan du site – Massages & Reiki Usui à SQY'
-				description='Plan des sites marie.cophignon.net, massage‑reiki.fr et massages‑reiki.fr, dédiés aux massages bien‑être et au Reiki Usui sur Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt.'
-			/>
-		);
-	};
-
 	const articles: iBlog[] = [...events];
 
 	return (
 		<>
-			{head()}
+			<MetaTag tag='plan-du-site' />
 			<div className='article'>
 				<h1>Le plan du site</h1>
 				<ul>
@@ -61,7 +52,7 @@ const SiteMap = () => {
 						<li key={`article-${i}`}>
 							<a
 								href={`articles/${article.slug}`}
-							>{`${article.date.toLocaleDateString()} - ${article.metas.title}`}</a>
+							>{`${article.date.toLocaleDateString()} - ${article.h1}`}</a>
 						</li>
 					))}
 				</ul>

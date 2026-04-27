@@ -6,14 +6,20 @@ import { Badge } from 'primereact/badge';
 import { getBadgeSeverityFromTag } from '../../../modules/helpers';
 
 import '../../../scss/fragments/BlogCard.scss';
+import Metas from '../../fragments/MetaTags/metas.json';
+import { iMetaTag } from '../MetaTags/IMetaTag';
 
-const BlogCard = ({ slug, metas, date, tags, images, type }: iBlog) => {
+const BlogCard = ({ slug, date, tags, images, type, h1 }: iBlog) => {
 	const thumbnail = images[0];
-	const header = <h2>{metas.title}</h2>;
+	const meta: iMetaTag = Metas.metas.find((m) => m.key === slug) || {
+		title: '',
+		description: '',
+	};
+	const header = <h2>{h1 ?? meta.title}</h2>;
 	const footer = (
 		<Cta
 			link={`/articles/${slug}`}
-			title={`Lire le post sur l’${type} : ${metas.title}`}
+			title={`Lire le post sur l’${type} : ${h1 ?? meta.title}`}
 			ctaText='Lire la suite'
 			ctaLinkClassName='cta-secondary'
 		/>
@@ -42,15 +48,11 @@ const BlogCard = ({ slug, metas, date, tags, images, type }: iBlog) => {
 						<b>{type}</b> - <i>{date.toLocaleDateString()}</i>
 					</p>
 				</div>
-				<p>{metas.description}</p>
+				<p>{meta.description}</p>
 				<div className='blog-card-tags'>
 					{tags.map((tag: string, i: number) => (
-						<span className='blog-card-tag'>
-							<Badge
-								value={tag}
-								severity={getBadgeSeverityFromTag(tag)}
-								key={`tag-${key}-${i}`}
-							/>
+						<span className='blog-card-tag' key={`tag-${key}-${i}`}>
+							<Badge value={tag} severity={getBadgeSeverityFromTag(tag)} />
 						</span>
 					))}
 				</div>

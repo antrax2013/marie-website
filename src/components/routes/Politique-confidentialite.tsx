@@ -1,18 +1,9 @@
-import MetaTag from '../fragments/Tools/MetaTag';
+import MetaTag from '../fragments/MetaTags/MetaTag';
 
 const PolitiqueConfidentialite = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Politique de confidentialité – Massages & Reiki Usui à SQY'
-				description='Notre politique de confidentialité respecte strictement le RGPD. Aucune donnée personnelle n’est partagée. Seules des statistiques anonymes sont utilisées pour améliorer la visibilité du site.'
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
+			<MetaTag tag='politique-de-confidentialite' />
 			<div className='article'>
 				<h1>Politique de confidentialité</h1>
 				<h2>

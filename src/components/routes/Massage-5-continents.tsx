@@ -4,7 +4,7 @@ import ImgM5CColonne from '../../assets/M5C/m5c-colonne.png';
 import ImgM5CDos from '../../assets/M5C/m5c-bas-dos.png';
 //import ImgM5CBras from '../../assets/M5C/m5c-bras.png';
 import '../../scss/routes/M5C.scss';
-import MetaTag from '../fragments/Tools/MetaTag';
+import MetaTag from '../fragments/MetaTags/MetaTag';
 import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import CtaOffres from '../fragments/Ctas/Offres';
@@ -18,18 +18,9 @@ import { M5CFaqItems } from '../entities/faq-items/m5c-faq-items';
 import { PricesM5C } from '../fragments/Prices/massage-5-continents';
 
 const Massage5Continents = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Reiki Usui – Soin énergétique à SQY'
-				description='Séances de Reiki Usui à SQY, Élancourt et Guyancourt. Un soin énergétique doux pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies, en cabinet, à domicile ou en entreprise.'
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
+			<MetaTag tag='massage-des-5-continents' />
 			<div className='M5C' itemScope itemType='https://schema.org/Offer'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>

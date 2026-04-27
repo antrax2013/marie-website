@@ -1,4 +1,4 @@
-import MetaTag from '../fragments/Tools/MetaTag';
+import MetaTag from '../fragments/MetaTags/MetaTag';
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import '../../scss/routes/Offres.scss';
 //import ImgCarteCadeau from '../../assets/Offres/carte-cadeau.png';
@@ -15,20 +15,9 @@ import Faq from '../fragments/FAQ/Faq';
 import { OfrresFaqItems as OffresFaqItems } from '../entities/faq-items/offres-faq-items';
 
 const Offres = () => {
-	const head = () => {
-		return (
-			<>
-				<MetaTag
-					title={'Tarifs et Offres – Massages & Reiki Usui à SQY'}
-					description='Découvrez les tarifs et offres des massages énergétiques et séances de Reiki Usui à SQY, Élancourt et Guyancourt. En cabinet, à domicile ou en entreprise, des soins adaptés pour un bien‑être durable.'
-				/>
-			</>
-		);
-	};
-
 	return (
 		<>
-			{head()}
+			<MetaTag tag='offres-et-tarifs' />
 			<section className='Offres'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>

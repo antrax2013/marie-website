@@ -105,7 +105,6 @@ const BlogCards = () => {
 					<BlogCard
 						key={`blogCard-${key}-${i}`}
 						slug={card.slug}
-						metas={card.metas}
 						date={card.date}
 						tags={card.tags}
 						images={card.images}

@@ -6,11 +6,6 @@ import thumbnail from '../../../../assets/Actualites/massage-en-entreprise/massa
 export const BlogArticleMassageSurChiseSQY: iBlog = {
 	h1: 'Massage sur chaise en entreprise sur Saint Quentin-en-Yvelines : pourquoi les entreprises l’adoptent ?',
 	slug: 'massage-sur-chaise-entreprise-saint-quentin-en-yvelines',
-	metas: {
-		title: 'Massage sur chaise en entreprise à SQY (78)',
-		description:
-			'Le massage sur chaise séduit de plus en plus les entreprises autour de Saint Quentin-en-Yvelines. Découvrez ses bienfaits, son déroulement et pourquoi il améliore la QVT et réduit le stress au travail.',
-	},
 	date: new Date('2026-04-03'),
 	tags: [
 		'Massage du dos assis méth. EAS®',

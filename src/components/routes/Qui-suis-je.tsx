@@ -1,4 +1,4 @@
-import MetaTag from '../fragments/Tools/MetaTag';
+import MetaTag from '../fragments/MetaTags/MetaTag';
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgMoi from '../../assets/moi500x.jpg';
 import '../../scss/routes/QuiSuisJe.scss';
@@ -10,18 +10,9 @@ import { QuiSuisJeFaqItems } from '../entities/faq-items/qui-suis-je-faq-items';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 
 const QuiSuisJe = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Marie Cophignon – Massages & Reiki à SQY'
-				description='Maître Reiki Usui, massage du dos assis et Massage des 5 Continents à SQY, Élancourt et Guyancourt. Découvrez mon parcours et une approche bienveillante et personnalisée, en cabinet, à domicile ou en entreprise.'
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
+			<MetaTag tag='qui-suis-je' />
 			<div className='QuiSuisJe'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>

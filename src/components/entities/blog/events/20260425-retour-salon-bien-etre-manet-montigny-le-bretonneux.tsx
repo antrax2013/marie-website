@@ -8,11 +8,6 @@ import ParagraphSeparator from '../../../fragments/Tools/Paragraph-Separator';
 export const BlogEvent20260412RetourSalonSensEveil4: iBlog = {
 	h1: 'Retour sur le Salon du Bien‑Être Les Sens en Éveil à la Ferme du Manet',
 	slug: '20260425-retour-salon-bien-etre-manet-montigny-78',
-	metas: {
-		title: 'Retour sur le Salon du Bien‑Être à la Ferme du Manet – SQY',
-		description:
-			'Découvrez mon retour sur le salon Les Sens en Éveil à la Ferme du Manet : massages assis EAS®, duo massage‑tambour et rencontres à Saint‑Quentin‑en‑Yvelines.',
-	},
 	date: new Date('2026-04-25'),
 	tags: [
 		'Massage du dos assis méth. EAS®',

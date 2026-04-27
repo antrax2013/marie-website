@@ -10,12 +10,6 @@ import drapreau from '../../../../assets/Actualites/20260412-salon-bien-etre-man
 export const BlogEvent20260412SalonSensEveil4: iBlog = {
 	h1: 'Salon du bien-être, les Sens En Eveil – 4ème édition',
 	slug: '20260412-salon-bien-etre-manet-montigny-le-bretonneux',
-	metas: {
-		title:
-			'Salon du bien-être, les Sens En Eveil – 4ème édition, Montigny-le-bretonneux 12 avril 2026',
-		description:
-			'Retrouvez-moi au salon Les Sens en Éveil à Montigny-le-Bretonneux et découvrez le massage du dos assis EAS®, 15 minutes pour relâcher les tensions.',
-	},
 	date: new Date('2026-03-21'),
 	tags: [
 		'Massage du dos assis méth. EAS®',

@@ -1,4 +1,4 @@
-import MetaTag from '../fragments/Tools/MetaTag';
+import MetaTag from '../fragments/MetaTags/MetaTag';
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgMoi from '../../assets/Accueil/moi500x.jpg';
 
@@ -15,18 +15,9 @@ import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import { products } from '../entities/product-items/products';
 
 const Accueil = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title={`Reiki, Massages Assis & Soins Énergétiques à SQY`}
-				description={`Reiki Usui, massages du dos assis et soins énergétiques à SQY. Séances en cabinet, à domicile ou en entreprise pour libérer stress et tensions.`}
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}‍
+			<MetaTag tag='index' />
 			<div className='Accueil'>
 				{/* Hero */}
 				<div className='hero'>

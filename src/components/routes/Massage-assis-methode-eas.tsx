@@ -4,7 +4,7 @@ import ImgMA_EAS_Trapezes from '../../assets/Massage-assis-EAS/massage-assis-eas
 import ImgMA_EAS_Epaules from '../../assets/Massage-assis-EAS/massage-assis-eas-épaule.png';
 import ImgMA_EAS_Lombaires from '../../assets/Massage-assis-EAS/massage-assis-eas-lombaires.png';
 import '../../scss/routes/Massage-assis-EAS.scss';
-import MetaTag from '../fragments/Tools/MetaTag';
+import MetaTag from '../fragments/MetaTags/MetaTag';
 import Cta from '../fragments/Ctas/Cta';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import Faq from '../fragments/FAQ/Faq';
@@ -18,18 +18,9 @@ import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
 
 const MassageAssisMethodeEAS = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Massage du dos assis EAS® à SQY – Marie Cophignon '
-				description='Massage du dos assis EAS® à SQY, idéal en entreprise pour réduire le stress et libérer les tensions. Disponible aussi en cabinet et à domicile.'
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
+			<MetaTag tag='massage-assis-methode-eas' />
 			<div className='MA-EAS' itemScope itemType='https://schema.org/Offer'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>

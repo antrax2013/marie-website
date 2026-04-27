@@ -1,18 +1,8 @@
-import MetaTag from '../fragments/Tools/MetaTag';
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import '../../scss/routes/Consultations.scss';
 import { useEffect } from 'react';
 
 const Consultations = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title={'Consultations'}
-				description='Pour mes consultations, je vous accueille en cabinet, tous les lundis au cabinet à Élancourt et les jeudis à Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile sur Saint Quentin en Yvelines.'
-			/>
-		);
-	};
-
 	const scrollToLocation = () => {
 		const { hash } = window.location;
 		if (hash !== '') {
@@ -38,7 +28,6 @@ const Consultations = () => {
 
 	return (
 		<>
-			{head()}
 			<div className='Consultations'>
 				<div className='article'>
 					<h1>Consultations</h1>

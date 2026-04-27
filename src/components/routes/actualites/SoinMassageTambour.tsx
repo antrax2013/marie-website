@@ -1,23 +1,14 @@
 import ImgSoin1 from '../../../assets/Actualites/massage-tambour/soin-duo-massage-eas-tambour-unite-marie-floriane-en-cours.jpg';
 import ImgSoin2 from '../../../assets/Actualites/massage-tambour/soin-duo-massage-eas-tambour-unite-marie-floriane.jpg';
-import MetaTag from '../../fragments/Tools/MetaTag';
+import MetaTag from '../../fragments/MetaTags/MetaTag';
 import '../../../scss/routes/Blog.scss';
 import { Adresse } from '../../fragments/Adresse';
 import ParagraphSeparator from '../../fragments/Tools/Paragraph-Separator';
 
 const DuoTambourEAS = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Soin énergétique à Plaisir (78) – Massage assis EAS® & Tambour Unité'
-				description='Offrez-vous un soin énergétique unique à Plaisir (78) : massage assis méthode EAS® et tambour unité avec Marie Cophignon et Flofa Art à Saint-Quentin-en-Yvelines. Sur rendez-vous, les 31 janvier et 14 mars 2026.'
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
+			<MetaTag tag='actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines' />
 			<div className='Blog'>
 				<div className='article' itemScope itemType='https://schema.org/Event'>
 					<h1>
