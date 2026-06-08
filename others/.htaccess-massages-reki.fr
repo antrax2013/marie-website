@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^massages-reiki\.fr$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.massages-reiki\.fr$
+RewriteRule ^(.*)$ https://massage-reiki.fr/$1 [R=301,L]

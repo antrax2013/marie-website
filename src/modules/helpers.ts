@@ -17,6 +17,7 @@ export const getBadgeSeverityFromTag = (
 		case 'Reiki Usui':
 			return 'success';
 		case 'Salon':
+		case 'Portes ouvertes':
 		case 'Porte ouverte':
 		case 'Atelier':
 		case 'Massage en entreprise':
