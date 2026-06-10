@@ -31,10 +31,10 @@ const ScrollButton = lazy(() => import('./components/tools/Scrollbutton'));
 const PlanDuSite = lazy(() => import('./components/routes/Site-Map'));
 
 const POBlowball2026Jan = lazy(
-	() => import('./components/routes/evenements/PO-Blowball-2026-Jan'),
+	() => import('./components/routes/Evenements/PO-Blowball-2026-Jan'),
 );
 const DuoTambourEAS = lazy(
-	() => import('./components/routes/evenements/Duo-EAS-Tambour-Unite'),
+	() => import('./components/routes/Evenements/Duo-EAS-Tambour-Unite'),
 );
 
 const App = () => {
@@ -51,12 +51,11 @@ const App = () => {
 						content={
 							<>
 								<a
-									href='/soin-massage-eas-tambour-sqy-plaisir-yvelines'
-									title='Cliquez sur ce lien pour plus d’informations sur le soin duo.'
+									href='https://massages-reiki.fr'
+									title='Retrouvez moi sur mon nouveau site'
 								>
-									✨ Duo Massage et Tambour ✨<br />
-									Découvrez un soin énergétique et vibratoire inédit à Plaisir
-									(SQY-Yvelines) les 31 janvier et 14 mars 2026.
+									🚨 Le site est en cours de migration, retrouvez moi sur
+									massages-reiki.fr 🚨
 								</a>
 							</>
 						}
