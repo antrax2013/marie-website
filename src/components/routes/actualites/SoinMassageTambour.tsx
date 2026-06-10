@@ -119,7 +119,7 @@ const DuoTambourEAS = () => {
 										</span>
 									</li>
 								</ul>
-								<h3>Dates</h3>
+								{/* <h3>Dates</h3>
 								<ul>
 									<li>
 										<strong>
@@ -135,7 +135,7 @@ const DuoTambourEAS = () => {
 										</strong>{' '}
 										– de 14h à 18h
 									</li>
-								</ul>
+								</ul> */}
 								<p className='rdv'>
 									<em>Uniquement sur rendez-vous</em>
 								</p>

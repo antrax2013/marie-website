@@ -60,7 +60,7 @@ const App = () => {
 				/> */}
 				<Message
 					link='/actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'
-					content='14 Mars 2026 - Massage assis méthode EAS® & Tambour Unité : le soin duo à Plaisir'
+					content='Nouveau - Massage assis méthode EAS® & Tambour Unité : le soin duo à Plaisir'
 					alt='Cliquez sur ce lien pour plus d’informations.'
 				/>
 				<header className='flex flex-wrap'>

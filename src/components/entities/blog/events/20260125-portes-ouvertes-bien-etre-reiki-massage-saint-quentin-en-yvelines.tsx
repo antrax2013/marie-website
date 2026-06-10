@@ -11,7 +11,7 @@ export const BlogEvent20260125POCabinetBlowBall: iBlog = {
 	tags: [
 		'Massage du dos assis méth. EAS®',
 		'Reiki Usui',
-		'Porte ouverte',
+		'Portes ouvertes',
 		'Guyancourt',
 		'Cabinet Blowball',
 	],

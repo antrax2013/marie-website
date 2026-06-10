@@ -13,7 +13,7 @@ export const BlogEvent20260531PortesOuvertesPrintemps2026: iBlog = {
 	date: new Date('2026-05-21'),
 	tags: [
 		'Massage du dos assis méth. EAS®',
-		'Portes Ouvertes',
+		'Portes ouvertes',
 		'Duo Massage - Tambour Unité',
 		'Plaisir',
 	],

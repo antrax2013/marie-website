@@ -9,6 +9,7 @@ import { getBadgeSeverityFromTag } from '../../../modules/helpers';
 
 import '../../../scss/fragments/BlogArticle.scss';
 import MetaTag from '../MetaTags/MetaTag';
+import SharePopup from '../Tools/SharePopup';
 
 const BlogArticle = () => {
 	const { slug } = useParams<{ slug: string }>();
@@ -34,6 +35,9 @@ const BlogArticle = () => {
 			<article className='article BlogArticle'>
 				<div className='article-container'>
 					<h1>{data.h1}</h1>
+					<section className='icon-panel'>
+						<SharePopup url={window.location.href} title='{data.h1}' />
+					</section>
 					<div className='article-main-container'>
 						<div className='article-content-container'>
 							<p>
