@@ -1,13 +1,11 @@
 import { events } from '../entities/blog/events/events';
 import { iBlog } from '../fragments/Blog/IBlog';
-import MetaTag from '../fragments/MetaTags/MetaTag';
 
 const SiteMap = () => {
 	const articles: iBlog[] = [...events];
 
 	return (
 		<>
-			<MetaTag tag='plan-du-site' />
 			<div className='article'>
 				<h1>Le plan du site</h1>
 				<ul>
@@ -35,6 +33,14 @@ const SiteMap = () => {
 					</li>
 					<li>
 						<a href='/massage-des-5-continents'>Massage des 5 Continents</a>
+					</li>
+				</ul>
+				<h2>Mes préstations</h2>
+				<ul>
+					<li>
+						<a href='/soins-a-domicile-saint-quentin-en-yvelines'>
+							Soins à domicile
+						</a>
 					</li>
 				</ul>
 				<h2>

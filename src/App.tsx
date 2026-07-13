@@ -15,6 +15,14 @@ const Massage5Continents = lazy(
 const MassageAssisMethodeEAS = lazy(
 	() => import('./components/routes/Massage-assis-methode-eas'),
 );
+// const MassageEnEntreprise = lazy(
+// 	() => import('./components/routes/Massage-en-entreprise'),
+// );
+const SoinADomicile = lazy(() => import('./components/routes/Soin-a-domicile'));
+const MassageAssisTambourUnite = lazy(
+	() => import('./components/routes/Massage-assis-tambour-unite'),
+);
+
 const Offres = lazy(() => import('./components/routes/Offres'));
 const Contact = lazy(() => import('./components/routes/Contact'));
 const QuiSuisJe = lazy(() => import('./components/routes/Qui-suis-je'));
@@ -73,6 +81,10 @@ const App = () => {
 							<Route path='/accueil' element={<Accueil />} />
 							<Route index element={<Accueil />} />
 							<Route path='qui-suis-je' element={<QuiSuisJe />} />
+							<Route path='offres-et-tarifs' element={<Offres />} />
+							<Route path='contact' element={<Contact />} />
+
+							{/* Soins */}
 							<Route
 								path='massage-assis-methode-eas'
 								element={<MassageAssisMethodeEAS />}
@@ -82,24 +94,34 @@ const App = () => {
 								path='massage-des-5-continents'
 								element={<Massage5Continents />}
 							/>
-							<Route path='offres-et-tarifs' element={<Offres />} />
-							<Route path='contact' element={<Contact />} />
 							<Route
-								path='politique-de-confidentialite'
-								element={<PolitiqueConfidentialite />}
+								path='massage-assis-tambour-unite'
+								element={<MassageAssisTambourUnite />}
 							/>
 
-							{/* Blog */}
-							<Route path='articles-et-actualites' element={<ActusEtNews />} />
-							<Route path='/articles/:slug' element={<BlogArticle />} />
+							{/* Préstations */}
+							{/* <Route
+								path='massage-en-entreprise'
+								element={<MassageEnEntreprise />}
+							/> */}
+							<Route
+								path='soins-a-domicile-saint-quentin-en-yvelines'
+								element={<SoinADomicile />}
+							/>
 
 							{/* Actualités */}
+							<Route path='articles-et-actualites' element={<ActusEtNews />} />
+							<Route path='/articles/:slug' element={<BlogArticle />} />
 							<Route
 								path='actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'
 								element={<SoinMassageTambour />}
 							/>
 
 							{/* Divers */}
+							<Route
+								path='politique-de-confidentialite'
+								element={<PolitiqueConfidentialite />}
+							/>
 							<Route path='mentions-legales' element={<MentionsLegales />} />
 							<Route path='plan-du-site' element={<PlanDuSite />} />
 							<Route path='erreur-404' element={<Error404 />} />

@@ -1,9 +1,6 @@
-import MetaTag from '../fragments/MetaTags/MetaTag';
-
 const PolitiqueConfidentialite = () => {
 	return (
 		<>
-			<MetaTag tag='politique-de-confidentialite' />
 			<div className='article'>
 				<h1>Politique de confidentialité</h1>
 				<h2>

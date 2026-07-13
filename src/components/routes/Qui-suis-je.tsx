@@ -1,4 +1,3 @@
-import MetaTag from '../fragments/MetaTags/MetaTag';
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgMoi from '../../assets/moi500x.jpg';
 import '../../scss/routes/QuiSuisJe.scss';
@@ -12,7 +11,6 @@ import CtaRendezVous from '../fragments/Ctas/RendezVous';
 const QuiSuisJe = () => {
 	return (
 		<>
-			<MetaTag tag='qui-suis-je' />
 			<div className='QuiSuisJe'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
@@ -43,12 +41,20 @@ const QuiSuisJe = () => {
 									</div>
 									<p>
 										Depuis mars 2022, sur Saint-Quentin en Yvelines, à Élancourt
-										et Guyancourt, à domicile ou en entreprise, j’accompagne les
-										adultes en recherche de relaxation profonde, de mieux-être
-										et de rééquilibrage énergétique, dans un cadre
-										professionnel, doux et respectueux. Chaque séance est pensée
-										comme une pause régénérante, adaptée à votre état physique,
-										émotionnel et énergétique du moment.
+										et Guyancourt, à{' '}
+										<a
+											href='/soins-a-domicile-saint-quentin-en-yvelines'
+											title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+											className='underline'
+										>
+											domicile
+										</a>{' '}
+										ou en entreprise, j’accompagne les adultes en recherche de
+										relaxation profonde, de mieux-être et de rééquilibrage
+										énergétique, dans un cadre professionnel, doux et
+										respectueux. Chaque séance est pensée comme une pause
+										régénérante, adaptée à votre état physique, émotionnel et
+										énergétique du moment.
 									</p>
 									<blockquote className='size-xl-visible hidden cta-blockquote'>
 										Pouvoir apporter un soulagement physique, psychique et
@@ -301,8 +307,15 @@ const QuiSuisJe = () => {
 							<h3>Consultations à domicile</h3>
 							<div>
 								<p>
-									Je me déplace à votre domicile sur Saint-Quentin-en-Yvelines
-									ses environs :
+									Je me déplace à votre{' '}
+									<a
+										href='/soins-a-domicile-saint-quentin-en-yvelines'
+										title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+										className='underline'
+									>
+										domicile
+									</a>{' '}
+									sur Saint-Quentin-en-Yvelines ses environs :
 								</p>
 								<div className='center-area'>
 									<ul>
@@ -325,8 +338,15 @@ const QuiSuisJe = () => {
 									Appelez moi pour que l'on voit ce qu'il est possible de faire.
 								</p>
 								<p className='disclaimer text-third'>
-									Lorsque je me déplace à domicile, les tarifs des soins sont
-									majorés de 5,00€.
+									Lorsque je me déplace à{' '}
+									<a
+										href='/soins-a-domicile-saint-quentin-en-yvelines'
+										title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+										className='underline'
+									>
+										domicile
+									</a>
+									, les tarifs des soins sont majorés de 5,00€.
 								</p>
 								<p>
 									Pour travailler dans des conditions optimales, j'ai besoin

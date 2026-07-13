@@ -4,7 +4,6 @@ import ImgReikiVentre from '../../assets/Reiki/Reiki-ventre.png';
 //import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.png';
 //import ImgReikiPied from '../../assets/Reiki/Reiki-pied.png';
 import '../../scss/routes/Reiki.scss';
-import MetaTag from '../fragments/MetaTags/MetaTag';
 import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import CtaOffres from '../fragments/Ctas/Offres';
@@ -21,7 +20,6 @@ import Cta from '../fragments/Ctas/Cta';
 const Reiki = () => {
 	return (
 		<>
-			<MetaTag tag='reiki-usui' />
 			<div className='Reiki' itemScope itemType='https://schema.org/Offer'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
@@ -43,9 +41,16 @@ const Reiki = () => {
 									</p>
 									<p>
 										À Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, en
-										cabinet ou à domicile, ouvrez un espace de calme où le
-										mental se pose, le corps se relâche et l’énergie retrouve
-										son chemin naturel.
+										cabinet ou à{' '}
+										<a
+											href='/soins-a-domicile-saint-quentin-en-yvelines'
+											title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+											className='underline'
+										>
+											domicile
+										</a>
+										, ouvrez un espace de calme où le mental se pose, le corps
+										se relâche et l’énergie retrouve son chemin naturel.
 									</p>
 									<BgMcImageAlternativeContainer
 										path={ImgReikiVentre}

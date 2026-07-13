@@ -14,7 +14,7 @@ const PanneauLateral = () => {
 			<p>
 				Du lundi au vendredi{' '}
 				<meta itemProp='openingHours' content='Mo-Fr 09:00-19:00' />
-				09h00-19h00 sur <u className='underline'>rendez-vous uniquement</u>.
+				09h00-19h00 sur <b>rendez-vous uniquement</b>.
 			</p>
 			<p>
 				Je consulte en cabinet{' '}
@@ -61,9 +61,16 @@ const PanneauLateral = () => {
 			</p>
 			<p>
 				<span itemScope itemType='https://schema.org/Service'>
-					Les autres jours de la semaine, je consulte à domicile sur{' '}
-					<span itemProp='areaServed'>Saint Quentin-en-Yvelines</span> et ses
-					environs : <em itemProp='areaServed'>Maurepas</em>,{' '}
+					Les autres jours de la semaine, je consulte à{' '}
+					<a
+						href='/soins-a-domicile-saint-quentin-en-yvelines'
+						title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+						className='underline'
+					>
+						domicile
+					</a>{' '}
+					sur <span itemProp='areaServed'>Saint Quentin-en-Yvelines</span> et
+					ses environs : <em itemProp='areaServed'>Maurepas</em>,{' '}
 					<em itemProp='areaServed'>Montigny-le-Bretonneux</em>,{' '}
 					<em itemProp='areaServed'>Plaisir</em>,{' '}
 					<em itemProp='areaServed'>Voisins-le-Bretonneux</em>,{' '}
@@ -75,6 +82,17 @@ const PanneauLateral = () => {
 					<em itemProp='areaServed'>Guyancourt</em>.
 					<meta itemProp='providerMobility' content='dynamic' />
 				</span>
+			</p>
+			<p>
+				Pour les soins en entreprise,{' '}
+				<a
+					href='/contact'
+					className='underline'
+					title='Contactez-moi pour vos soins en entreprise'
+				>
+					contactez-moi
+				</a>
+				.
 			</p>
 		</div>
 	);

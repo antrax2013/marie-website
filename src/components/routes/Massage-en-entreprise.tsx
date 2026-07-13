@@ -16,7 +16,7 @@ import Faq from '../fragments/FAQ/Faq';
 import { M5CFaqItems } from '../entities/faq-items/m5c-faq-items';
 import { PricesM5C } from '../fragments/Prices/massage-5-continents';
 
-const Massage5Continents = () => {
+const MassageEnEntreprise = () => {
 	return (
 		<>
 			<div className='M5C' itemScope itemType='https://schema.org/Offer'>
@@ -345,4 +345,4 @@ const Massage5Continents = () => {
 	);
 };
 
-export default Massage5Continents;
+export default MassageEnEntreprise;

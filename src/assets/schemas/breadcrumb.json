@@ -47,6 +47,16 @@
 			"position": "5",
 			"item": {
 				"@type": "SiteNavigationElement",
+				"url": "https://##main-web-site-url##/soins-a-domicile-saint-quentin-en-yvelines",
+				"name": "Soins à domicile à Saint-Quentin-en-Yvelines",
+				"description": "Reiki Usui, Massage des 5 Continents et massage assis EAS® à domicile sur Saint‑Quentin‑en‑Yvelines. Confort, qualité et sérénité."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "6",
+			"item": {
+				"@type": "SiteNavigationElement",
 				"url": "https://##main-web-site-url##/offres-et-tarifs",
 				"name": "Tarifs et Offres",
 				"description": "Consultez les tarifs des massages énergétique et séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Des soins adaptés à vos besoins pour un bien‑être durable."
@@ -54,7 +64,7 @@
 		},
 		{
 			"@type": "ListItem",
-			"position": "6",
+			"position": "7",
 			"item": {
 				"@type": "SiteNavigationElement",
 				"url": "https://##main-web-site-url##/contact",
@@ -64,7 +74,7 @@
 		},
 		{
 			"@type": "ListItem",
-			"position": "7",
+			"position": "8",
 			"item": {
 				"@type": "SiteNavigationElement",
 				"url": "https://##main-web-site-url##/politique-de-confidentialite",
@@ -74,7 +84,7 @@
 		},
 		{
 			"@type": "ListItem",
-			"position": "8",
+			"position": "9",
 			"item": {
 				"@type": "SiteNavigationElement",
 				"url": "https://##main-web-site-url##/mentions-legales",
@@ -84,7 +94,7 @@
 		},
 		{
 			"@type": "ListItem",
-			"position": "9",
+			"position": "10",
 			"item": {
 				"@type": "SiteNavigationElement",
 				"url": "https://##main-web-site-url##/plan-du-site",
@@ -94,7 +104,7 @@
 		},
 		{
 			"@type": "ListItem",
-			"position": "10",
+			"position": "11",
 			"item": {
 				"@type": "SiteNavigationElement",
 				"url": "https://##main-web-site-url##//erreur-404",

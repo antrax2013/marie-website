@@ -59,8 +59,20 @@ const Menu = ({ ...props }) => {
 			pathName === 'mes-soins' &&
 			(windowPathName.includes('massage-assis-methode-eas') ||
 				windowPathName.includes('massage-des-5-continents') ||
+				windowPathName.includes('massage-assis-tambour-unite') ||
 				windowPathName.includes('reiki'))
 		) {
+			return selectedClassName;
+		}
+		if (
+			pathName === 'mes-prestations' &&
+			(windowPathName.includes('soins-a-domicile-saint-quentin-en-yvelines') ||
+				windowPathName.includes('massage-en-entreprise') ||
+				windowPathName.includes('massage-en-cabinet'))
+		) {
+			return selectedClassName;
+		}
+		if (pathName === 'actualites' && windowPathName.includes('articles')) {
 			return selectedClassName;
 		}
 		return className;
@@ -103,8 +115,55 @@ const Menu = ({ ...props }) => {
 						onClick('reiki');
 					},
 				},
+				// {
+				// 	label: 'Massage assis & Tambour Unité',
+				// 	template: (item: MenuItem, options: MenuItemOptions) => {
+				// 		return itemTemplate(item, options);
+				// 	},
+				// 	url: '/massage-assis-tambour-unite',
+				// 	className: getClassName('massage-assis-tambour-unite'),
+				// 	command: () => {
+				// 		onClick('massage-assis-tambour-unite');
+				// 	},
+				// },
 			],
 			className: getClassName('mes-soins'),
+		},
+		{
+			label: 'Mes préstations',
+			items: [
+				// {
+				// 	label: 'Massage en entreprise',
+				// 	template: (item: MenuItem, options: MenuItemOptions) => {
+				// 		return itemTemplate(item, options);
+				// 	},
+				// 	url: '/massage-en-entreprise',
+				// 	className: getClassName('massage-en-entreprise'),
+				// },
+				{
+					label: 'Soins à domicile',
+					template: (item: MenuItem, options: MenuItemOptions) => {
+						return itemTemplate(item, options);
+					},
+					url: '/soins-a-domicile-saint-quentin-en-yvelines',
+					className: getClassName('soins-a-domicile-saint-quentin-en-yvelines'),
+					command: () => {
+						onClick('soins-a-domicile-saint-quentin-en-yvelines');
+					},
+				},
+				// {
+				// 	label: 'Massage en cabinet',
+				// 	template: (item: MenuItem, options: MenuItemOptions) => {
+				// 		return itemTemplate(item, options);
+				// 	},
+				// 	url: '/massage-en-cabinet',
+				// 	className: getClassName('massage-en-cabinet'),
+				// 	command: () => {
+				// 		onClick('massage-en-cabinet');
+				// 	},
+				// },
+			],
+			className: getClassName('mes-prestations'),
 		},
 		{
 			label: 'Qui suis-je ?',

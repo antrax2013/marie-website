@@ -1,7 +1,6 @@
 import '../../scss/routes/Actues-et-News.scss';
 import BlogCardsContainer from '../fragments/Blog/BlogCards-Container';
 import McImage from '../fragments/McImage/McImage';
-import MetaTag from '../fragments/MetaTags/MetaTag';
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgCocon from '../../assets/Actualites/serviette-pierres-et-bougies-xs.jpg';
 
@@ -38,7 +37,6 @@ const ActusEtNews = () => {
 
 	return (
 		<>
-			<MetaTag tag='articles-et-actualites' />
 			<div className='article ActusEtNews'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
@@ -80,7 +78,15 @@ const ActusEtNews = () => {
 									<p>
 										Retrouvez aussi les dernières informations sur mes ateliers
 										bien‑être, mes événements locaux et mes offres de soins, que
-										ce soit en cabinet, à domicile ou en entreprise.
+										ce soit en cabinet, à{' '}
+										<a
+											href='/soins-a-domicile-saint-quentin-en-yvelines'
+											title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+											className='underline'
+										>
+											domicile
+										</a>{' '}
+										ou en entreprise.
 									</p>
 								</div>
 								<blockquote>

@@ -4,7 +4,6 @@ import ImgMA_EAS_Trapezes from '../../assets/Massage-assis-EAS/massage-assis-eas
 import ImgMA_EAS_Epaules from '../../assets/Massage-assis-EAS/massage-assis-eas-épaule.png';
 import ImgMA_EAS_Lombaires from '../../assets/Massage-assis-EAS/massage-assis-eas-lombaires.png';
 import '../../scss/routes/Massage-assis-EAS.scss';
-import MetaTag from '../fragments/MetaTags/MetaTag';
 import Cta from '../fragments/Ctas/Cta';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import Faq from '../fragments/FAQ/Faq';
@@ -20,7 +19,6 @@ import SocialNetworks from '../fragments/Social-Neworks';
 const MassageAssisMethodeEAS = () => {
 	return (
 		<>
-			<MetaTag tag='massage-assis-methode-eas' />
 			<div className='MA-EAS' itemScope itemType='https://schema.org/Offer'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
@@ -32,8 +30,7 @@ const MassageAssisMethodeEAS = () => {
 								</h1>
 								<div className='header-2-description'>
 									<p className='header-2-sub-title'>
-										Besoin de ralentir, de souffler, de respirer, de lâcher
-										prise ?
+										Et si une courte pause pouvait transformer votre journée ?
 									</p>
 									<p>
 										Offrez‑vous quelques minutes de massage du dos assis Méthode
@@ -42,9 +39,16 @@ const MassageAssisMethodeEAS = () => {
 										l’énergie du corps.
 									</p>
 									<p>
-										Sur Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, à
-										domicile ou en entreprise, ouvrez une parenthèse de douceur
-										où le temps ralentit et où le quotidien s’efface.
+										Sur Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, à{' '}
+										<a
+											href='/soins-a-domicile-saint-quentin-en-yvelines'
+											title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+											className='underline'
+										>
+											domicile
+										</a>{' '}
+										ou en entreprise, ouvrez une parenthèse de douceur où le
+										temps ralentit et où le quotidien s’efface.
 									</p>
 									<BgMcImageAlternativeContainer
 										path={ImgMA_EAS}
@@ -285,13 +289,13 @@ const MassageAssisMethodeEAS = () => {
 									l’attention que vous portez à vos talents.
 								</p>
 								<div className='eas-entreprise-cta cta-container-row'>
-									<Cta
+									{/* <Cta
 										link='/massage-en-entreprise'
 										title={
 											'CLiquez ici pour découvrir les biens-faits du massage en entreprise'
 										}
 										ctaLinkClassName='cta-tertiary'
-									/>
+									/> */}
 									<Cta
 										link='/contact?sujet=demande-de-devis'
 										title={'Demandez un devis'}
@@ -328,9 +332,16 @@ const MassageAssisMethodeEAS = () => {
 					<p>
 						Offrez-vous une parenthèse de douceur, un moment pour respirer,
 						relâcher et vous recentrer. Sur Saint-Quentin en Yvelines, à
-						Élancourt et Guyancourt, à domicile ou en entreprise, le massage
-						assis méthode EAS® est une invitation à renouer avec votre corpset
-						lâcher le mental.
+						Élancourt et Guyancourt, à{' '}
+						<a
+							href='/soins-a-domicile-saint-quentin-en-yvelines'
+							title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+							className='underline'
+						>
+							domicile
+						</a>{' '}
+						ou en entreprise, le massage assis méthode EAS® est une invitation à
+						renouer avec votre corpset lâcher le mental.
 					</p>
 					<p>
 						Contactez-moi pour réserver votre séance ou obtenir plus

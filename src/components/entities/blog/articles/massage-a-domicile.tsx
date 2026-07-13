@@ -4,6 +4,8 @@ import thumbnail from '../../../../assets/Actualites/massage-domicile/massage-do
 import img1 from '../../../../assets/Actualites/massage-domicile/massage-domicile-2.png';
 import img2 from '../../../../assets/Actualites/massage-domicile/massage-domicile-3.png';
 import ParagraphSeparator from '../../../fragments/Tools/Paragraph-Separator';
+import Cta from '../../../fragments/Ctas/Cta';
+import CtaDevis from '../../../fragments/Ctas/Devis';
 
 export const BlogArticleMassageADomicilesSQY: iBlog = {
 	h1: 'Massage à domicile à Saint‑Quentin‑en‑Yvelines, Maurepas, Élancourt et Guyancourt – Bien‑être et détente chez vous',
@@ -30,7 +32,16 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 	content: (
 		<>
 			<p>
-				Le massage à domicile fait partie de mes services proposés sur{' '}
+				Le{' '}
+				<u>
+					<a
+						href='/soins-a-domicile-saint-quentin-en-yvelines'
+						title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+					>
+						massage à domicile
+					</a>{' '}
+				</u>
+				fait partie de mes services proposés sur{' '}
 				<b>Saint‑Quentin‑en‑Yvelines</b>, notamment à{' '}
 				<b>Maurepas, Élancourt, Guyancourt, Montigny‑le‑Bretonneux, Plaisir</b>{' '}
 				et leurs alentours. Dans cette zone dynamique où le rythme de vie est
@@ -43,12 +54,20 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 				Un confort absolu, le moment réconfort une fois mon travail terminé.
 			</blockquote>
 			<p>
-				Recevoir l’<b>un de mes massages à domicile</b>, que vous soyez à{' '}
-				<b>Maurepas, Guyancourt</b> ou dans une autre commune de
-				Saint‑Quentin‑en‑Yvelines, c’est profiter d’un soin sans avoir à gérer
-				les trajets, les bouchons ou le stress du retour. Vous restez dans votre
-				cocon, ce qui prolonge naturellement les effets relaxants et apaisants
-				du massage.
+				Recevoir l’
+				<u>
+					<a
+						href='/soins-a-domicile-saint-quentin-en-yvelines'
+						title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+					>
+						un de mes massages à domicile
+					</a>
+				</u>
+				, que vous soyez à <b>Maurepas, Guyancourt</b> ou dans une autre commune
+				de Saint‑Quentin‑en‑Yvelines, c’est profiter d’un soin sans avoir à
+				gérer les trajets, les bouchons ou le stress du retour. Vous restez dans
+				votre cocon, ce qui prolonge naturellement les effets relaxants et
+				apaisants du massage.
 			</p>
 			<h3>Une expérience 100 % personnalisée</h3>
 			<p>
@@ -71,6 +90,11 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 			<div className='cta-container'>
 				<div className='cta-container-row'>
 					<CtaContactezMoi />
+					<Cta
+						link={'/soins-a-domicile-saint-quentin-en-yvelines'}
+						title={'En savoir plus sur mes soins à domicile'}
+						ctaText={'En savoir plus'}
+					/>
 				</div>
 			</div>
 			<ParagraphSeparator />
@@ -125,8 +149,11 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 			<p>
 				Globalement sur l'ensemble des communes de l’agglomération de{' '}
 				<b>Saint‑Quentin‑en‑Yvelines</b>. Je peux étendre mon périmètre au
-				besoin, sur devis.
+				besoin, sur devis. <br />
+				<br />
+				<CtaDevis />
 			</p>
+
 			<h2>Comment se déroule une séance bien-être à domicile ?</h2>
 			<p>
 				Une séance bien‑être à domicile se déroule dans un cadre simple,
@@ -172,10 +199,18 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 			<p>
 				Que vous viviez à{' '}
 				<b>Saint‑Quentin‑en‑Yvelines, Maurepas, Élancourt, Guyancourt</b> ou
-				dans les communes voisines, mes massages à domicile offrent une solution
-				simple, pratique et profondément relaxante. Un moment rien qu’à vous,
-				dans votre propre cocon, pour relâcher la pression, apaiser le mental et
-				retrouver votre énergie.
+				dans les communes voisines,{' '}
+				<u>
+					<a
+						href='/soins-a-domicile-saint-quentin-en-yvelines'
+						title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+					>
+						mes massages à domicile
+					</a>
+				</u>{' '}
+				offrent une solution simple, pratique et profondément relaxante. Un
+				moment rien qu’à vous, dans votre propre cocon, pour relâcher la
+				pression, apaiser le mental et retrouver votre énergie.
 			</p>
 
 			<div className='cta-container'>

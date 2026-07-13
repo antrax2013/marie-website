@@ -1,9 +1,6 @@
-import MetaTag from '../fragments/MetaTags/MetaTag';
-
 const MentionsLegales = () => {
 	return (
 		<>
-			<MetaTag tag='mentions-legales' />
 			<div>
 				<h1>Informations légales</h1>
 				<div>

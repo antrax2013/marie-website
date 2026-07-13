@@ -1,4 +1,3 @@
-import MetaTag from '../fragments/MetaTags/MetaTag';
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgMoi from '../../assets/Accueil/moi500x.jpg';
 
@@ -17,7 +16,6 @@ import { products } from '../entities/product-items/products';
 const Accueil = () => {
 	return (
 		<>
-			<MetaTag tag='index' />
 			<div className='Accueil'>
 				{/* Hero */}
 				<div className='hero'>
@@ -29,7 +27,15 @@ const Accueil = () => {
 									Réduisez le stress, relâchez les tensions et retrouvez un
 									équilibre durable grâce à des massages énergétiques et des
 									soins Reiki Usui personnalisés, sur Saint-Quentin en Yvelines,
-									à Élancourt et Guyancourt, à domicile ou en entreprise.
+									à Élancourt et Guyancourt, à{' '}
+									<a
+										href='/soins-a-domicile-saint-quentin-en-yvelines'
+										title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+										className='underline'
+									>
+										domicile
+									</a>{' '}
+									ou en entreprise.
 								</p>
 								<div className='hero-cta'>
 									<CtaRendezVous />
@@ -78,12 +84,20 @@ const Accueil = () => {
 									</p>
 									<p>
 										Depuis 2022, sur Saint-Quentin en Yvelines, à Élancourt et
-										Guyancourt, à domicile ou en entreprise, j’accompagne les
-										adultes en recherche de relaxation profonde, de mieux-être
-										et de rééquilibrage énergétique, dans un cadre
-										professionnel, doux et respectueux. Chaque séance est pensée
-										comme une pause régénérante, adaptée à votre état physique,
-										émotionnel et énergétique du moment.
+										Guyancourt, à{' '}
+										<a
+											href='/soins-a-domicile-saint-quentin-en-yvelines'
+											title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+											className='underline'
+										>
+											domicile
+										</a>{' '}
+										ou en entreprise, j’accompagne les adultes en recherche de
+										relaxation profonde, de mieux-être et de rééquilibrage
+										énergétique, dans un cadre professionnel, doux et
+										respectueux. Chaque séance est pensée comme une pause
+										régénérante, adaptée à votre état physique, émotionnel et
+										énergétique du moment.
 									</p>
 								</div>
 								<div className='header-2-cta'>

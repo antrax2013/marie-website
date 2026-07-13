@@ -9,7 +9,6 @@ import '../../scss/routes/Contact.scss';
 import { Email, iMail } from '../../modules/email';
 import { Dropdown } from 'primereact/dropdown';
 import { Toast } from 'primereact/toast';
-import MetaTag from '../fragments/MetaTags/MetaTag';
 
 interface iError {
 	nom?: string;
@@ -136,7 +135,6 @@ const Contact = () => {
 
 	return (
 		<>
-			<MetaTag tag='contact' />
 			<div className='article contact'>
 				<h1>Contact</h1>
 				<Toast ref={toast} />

@@ -6,10 +6,18 @@ export const OfrresFaqItems: Array<iFaqItem> = [
 		response: (
 			<>
 				<p>
-					Oui, je me déplace à domicile ou en entreprise sur
-					Saint‑Quentin‑en‑Yvelines. Il m’est également possible d’intervenir
-					ponctuellement en dehors de ce secteur. N’hésitez pas à m’appeler afin
-					que nous voyions ensemble ce qui peut être envisagé.
+					Oui, je me déplace à{' '}
+					<a
+						href='/soins-a-domicile-saint-quentin-en-yvelines'
+						title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+						className='underline'
+					>
+						domicile
+					</a>{' '}
+					ou en entreprise sur Saint‑Quentin‑en‑Yvelines. Il m’est également
+					possible d’intervenir ponctuellement en dehors de ce secteur.
+					N’hésitez pas à m’appeler afin que nous voyions ensemble ce qui peut
+					être envisagé.
 				</p>
 				<p>
 					Pour garantir un soin de qualité, j’ai besoin d’un espace calme et

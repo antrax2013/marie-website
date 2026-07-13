@@ -8,7 +8,6 @@ import { iImage } from '../McImage/McImage';
 import { getBadgeSeverityFromTag } from '../../../modules/helpers';
 
 import '../../../scss/fragments/BlogArticle.scss';
-import MetaTag from '../MetaTags/MetaTag';
 import SharePopup from '../Tools/SharePopup';
 
 const BlogArticle = () => {
@@ -31,7 +30,6 @@ const BlogArticle = () => {
 
 	return (
 		<>
-			<MetaTag tag={data.slug} />
 			<article className='article BlogArticle'>
 				<div className='article-container'>
 					<h1>{data.h1}</h1>

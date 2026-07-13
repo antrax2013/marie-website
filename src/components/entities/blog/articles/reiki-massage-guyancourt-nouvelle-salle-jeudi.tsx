@@ -49,11 +49,15 @@ export const BlogArticleCabinetGrandeSalle: iBlog = {
 			<h2>Un nouvel espace pensé pour votre bien-être</h2>
 			<p>
 				Cet espace a été pensé pour accueillir mes différentes pratiques : le
-				Reiki Usui, le Massage des 5 Continents, ainsi que mes massages du dos
-				assis, selon la méthode EAS®. Ces approches complémentaires permettent
-				de relâcher les tensions, d’apaiser le mental et de rééquilibrer
-				l’énergie, dans un environnement calme et harmonieux au cœur de
-				Saint‑Quentin‑en‑Yvelines.
+				<a href='/reiki-usui'>Reiki Usui</a>, le{' '}
+				<a href='/massage-des-5-continents'>Massage des 5 Continents</a>, ainsi
+				que mes{' '}
+				<a href='/massage-assis-methode-eas'>
+					massages du dos assis, selon la méthode EAS®
+				</a>
+				. Ces approches complémentaires permettent de relâcher les tensions,
+				d’apaiser le mental et de rééquilibrer l’énergie, dans un environnement
+				calme et harmonieux au cœur de Saint‑Quentin‑en‑Yvelines.
 			</p>
 			<h2>Pourquoi venir au cabinet Blowball ?</h2>
 			<ul>
@@ -84,7 +88,15 @@ export const BlogArticleCabinetGrandeSalle: iBlog = {
 			</h2>
 			<p>
 				En dehors du jeudi, je propose toujours mes massages et soins
-				énergétiques à domicile ou en entreprise sur l’ensemble des communes de
+				énergétiques à{' '}
+				<a
+					href='/soins-a-domicile-saint-quentin-en-yvelines'
+					title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+					className='underline'
+				>
+					domicile
+				</a>{' '}
+				ou en entreprise sur l’ensemble des communes de
 				Saint‑Quentin‑en‑Yvelines : Guyancourt, Montigny‑le‑Bretonneux,
 				Voisins‑le‑Bretonneux, Élancourt, Trappes, Maurepas, Coignières et les
 				alentours. Ce service permet de bénéficier d’un soin personnalisé sans

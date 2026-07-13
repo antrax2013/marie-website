@@ -68,7 +68,7 @@ const FooterMenu = (/*{ ...props }*/) => {
 					</span>{' '}
 					Les soins Reiki Usui et massages énergétiques ne se substitutent pas
 					un traitement médical ou thérapeutique. Les soins et massages ne sont
-					pas à carctère sexuel. Pour les mineurs la présence d’un adulte
+					pas à caractère sexuel. Pour les mineurs la présence d’un adulte
 					accompagnant durant toute la séance est obligatoire.
 				</p>
 			</div>

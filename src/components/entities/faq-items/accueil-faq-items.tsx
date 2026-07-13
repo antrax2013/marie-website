@@ -36,9 +36,15 @@ export const AccueilFaqItems: Array<iFaqItem> = [
 				<p>
 					Je consulte en cabinet, le lundi sur <em>Élancourt</em> et le jeudi
 					sur <em>Guyancourt</em>. Je me déplace également à{' '}
-					<strong>domicile</strong> et en <strong>entreprise</strong>, sur les
-					communes de l’agglomération de{' '}
-					<strong>Saint-Quentin-en-Yvelines</strong> et ses alentours (
+					<a
+						href='/soins-a-domicile-saint-quentin-en-yvelines'
+						title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
+						className='underline'
+					>
+						domicile
+					</a>{' '}
+					et en <strong>entreprise</strong>, sur les communes de l’agglomération
+					de <strong>Saint-Quentin-en-Yvelines</strong> et ses alentours (
 					<em>Maurepas</em>, <em>Montigny-le-Bretonneux</em>, <em>Plaisir</em>,{' '}
 					<em>Voisins-le-Bretonneux</em>, <em>Coignières</em>,{' '}
 					<em>La Verrière</em>, <em>Trappes</em>, <em>Le Mesnil-Saint-Denis</em>
