@@ -3,37 +3,39 @@
 		{
 			"key": "index",
 			"title": "Reiki, Massages Assis & Soins Énergétiques à SQY",
-			"description": "Reiki Usui, massages du dos assis et soins énergétiques à SQY. Séances en cabinet, à domicile ou en entreprise pour libérer stress et tensions."
+			"description": "Reiki Usui, massages du dos assis et soins énergétiques à SQY. Séances en cabinet, à domicile ou en entreprise pour libérer stress et tensions.",
+			"canonical": "/"
 		},
 		{
 			"key": "qui-suis-je",
 			"title": "Marie Cophignon – Massages & Reiki à SQY",
-			"description": "Maître Reiki Usui, massage du dos assis et Massage des 5 Continents à SQY, Élancourt et Guyancourt. Découvrez mon parcours et une approche bienveillante et personnalisée, en cabinet, à domicile ou en entreprise."
+			"description": "Reiki Usui, massage du dos assis et Massage des 5 Continents à SQY, Élancourt et Guyancourt. Une approche bienveillante et personnalisée."
 		},
 		{
 			"key": "articles-et-actualites",
 			"title": "Blog Bien‑être — Reiki, Massage, Actualités, Évènements",
-			"description": "Blog ##main-web-site-url## : articles et actualités bien-être à propos de mes massages et soins énergétiques sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Votre bien‑être commence ici."
+			"description": "Blog ##main-web-site-url## : articles bien‑être sur mes massages et soins énergétiques à SQY, en cabinet, en entreprise ou à domicile."
 		},
 		{
 			"key": "contact",
 			"title": "Contact – Massages & Reiki Usui à SQY",
-			"description": "Prenez rendez‑vous pour un massage énergétique ou une séance de Reiki Usui à SQY, Élancourt et Guyancourt. En cabinet, à domicile ou en entreprise, un contact simple et rapide pour votre moment bien‑être."
+			"description": "Massage énergétique & Reiki Usui à SQY, Élancourt et Guyancourt. Cabinet, domicile ou entreprise, un contact pour votre moment bien‑être.",
+			"canonical": "/contact"
 		},
 		{
 			"key": "erreur-404",
 			"title": "Erreur 404 – Massages & Reiki Usui à SQY",
-			"description": "La page demandée n'existe pas ou plus."
+			"description": "La page demandée n’existe pas ou plus."
 		},
 		{
 			"key": "reiki-usui",
 			"title": "Reiki Usui – Soin énergétique à SQY",
-			"description": "Séances de Reiki Usui à SQY, Élancourt et Guyancourt. Un soin énergétique doux pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies, en cabinet, à domicile ou en entreprise."
+			"description": "Reiki Usui à SQY, Élancourt et Guyancourt. Un soin énergétique doux pour réduire le stress et apaiser l’esprit, en cabinet ou à domicile."
 		},
 		{
 			"key": "massage-des-5-continents",
 			"title": "Massage des 5 Continents à SQY – Marie Cophignon",
-			"description": "Massage des 5 Continents à SQY, Élancourt et Guyancourt. Soin holistique alliant massage, Reiki Usui et aromathérapie, en cabinet, à domicile ou en entreprise pour revitaliser corps et esprit."
+			"description": "Massage des 5 Continents à SQY, Élancourt et Guyancourt. Soin holistique alliant massage, Reiki Usui et aromathérapie, en cabinet ou à domicile."
 		},
 		{
 			"key": "massage-assis-methode-eas",
@@ -46,59 +48,64 @@
 			"description": "Reiki Usui, Massage des 5 Continents et massage assis EAS® à domicile sur Saint‑Quentin‑en‑Yvelines. Confort, qualité et sérénité."
 		},
 		{
+			"key": "massage-en-entreprise-saint-quentin-en-yvelines",
+			"title": "Massage en entreprise à Saint‑Quentin‑en‑Yvelines – QVCT",
+			"description": "Massage en entreprise à SQY, détente, énergie et réduction du stress. Massage du dos assis EAS® pour améliorer la QVCT, à Saint‑Quentin‑en‑Yvelines"
+		},
+		{
 			"key": "mentions-legales",
 			"title": "Mentions légales – Massages & Reiki Usui à SQY",
-			"description": "Mentions légales des sites marie.cophignon.net, massage‑reiki.fr et massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint‑Quentin‑en‑Yvelines, à Élancourt et Guyancourt, en cabinet, à domicile ou en entreprise."
+			"description": "Mentions légales du site, praticienne en massages bien‑être et Reiki Usui à Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt."
 		},
 		{
 			"key": "offres-et-tarifs",
 			"title": "Tarifs et Offres – Massages & Reiki Usui à SQY",
-			"description": "Découvrez les tarifs et offres des massages énergétiques et séances de Reiki Usui à SQY, Élancourt et Guyancourt. En cabinet, à domicile ou en entreprise, des soins adaptés pour un bien‑être durable."
+			"description": "Découvrez les tarifs et offres des massages énergétiques et séances de Reiki Usui à SQY, Élancourt et Guyancourt. En cabinet, à domicile ou en entreprise"
 		},
 		{
 			"key": "politique-de-confidentialite",
 			"title": "Politique de confidentialité – Massages & Reiki Usui à SQY",
-			"description": "Notre politique de confidentialité respecte strictement le RGPD. Aucune donnée personnelle n’est partagée. Seules des statistiques anonymes sont utilisées pour améliorer la visibilité du site."
+			"description": "Notre politique de confidentialité respecte strictement le RGPD. Aucune donnée personnelle n’est partagée."
 		},
 		{
 			"key": "plan-du-site",
 			"title": "Plan du site – Massages & Reiki Usui à SQY",
-			"description": "Notre politique de confidentialité respecte strictement le RGPD. Aucune donnée personnelle n’est partagée. Seules des statistiques anonymes sont utilisées pour améliorer la visibilité du site."
+			"description": "Le plan du site. Vous trouverez le lien vers les différentes pages qui le compose : Reiki Usui, Massage des 5 Continents et plus encore..."
 		},
 		{
 			"key": "soin-massage-eas-tambour-sqy-plaisir-yvelines",
-			"title": "Soin énergétique à Plaisir (78) – Massage assis EAS® & Tambour Unité",
-			"description": "Offrez-vous un soin énergétique unique à Plaisir (78) : massage assis méthode EAS® et tambour unité avec Marie Cophignon et Flofa Art à Saint-Quentin-en-Yvelines."
+			"title": "Soin énergétique à Plaisir – Massage assis EAS® & Tambour Unité",
+			"description": "Soin énergétique unique à Plaisir (78) : massage assis méthode EAS® et tambour unité avec Marie Cophignon et Flofa Art à Saint-Quentin-en-Yvelines."
 		},
 		{
 			"key": "20250922-massage-dos-assis-eas-entreprise-petit-fils-plaisir",
-			"title": "Massage du dos assis méthode EAS® en entreprise, agence Petit-fils Plaisir",
+			"title": "Massage du dos assis méthode EAS® en entreprise - Petit-fils Plaisir",
 			"description": "Séance de massage assis méthode EAS® à Plaisir, SQY, Yvelines : bien‑être en entreprise, détente musculaire et regain d’énergie pour vos équipes."
 		},
 		{
 			"key": "20260125-portes-ouvertes-bien-etre-reiki-massage-saint-quentin-en-yvelines",
-			"title": "Porte ouverte du cabinet Blowball à Guyancourt 25 janvier 2026",
-			"description": "Portes ouvertes du cabinet Blowball à Guyancourt : massages du dos assis EAS® et Reiki Usui pour découvrir le bien‑être à Saint‑Quentin‑en‑Yvelines."
+			"title": "Porte ouverte du cabinet Blowball à Guyancourt 25/01/2026",
+			"description": "Portes ouvertes du cabinet Blowball à Guyancourt : massages du dos assis EAS® et Reiki Usui, le bien‑être à Saint‑Quentin‑en‑Yvelines."
 		},
 		{
 			"key": "20260412-salon-bien-etre-manet-montigny-le-bretonneux",
-			"title": "Salon du bien-être, les Sens En Eveil – 4ème édition, Montigny-le-bretonneux 12 avril 2026",
+			"title": "Salon bien-être, les Sens En Eveil 2026 – 4ème édition",
 			"description": "Retrouvez-moi au salon Les Sens en Éveil à Montigny-le-Bretonneux et découvrez le massage du dos assis EAS®, 15 minutes pour relâcher les tensions."
 		},
 		{
 			"key": "reiki-massage-guyancourt-cabinet-blowball",
 			"title": "Massage Guyancourt – Reiki Usui & bien‑être | Cabinet Blowball",
-			"description": "Découvrez mon nouvel espace de massage à Guyancourt chaque jeudi : Reiki Usui, Massage des 5 Continents et massages du dos assis EAS®. À Élancourt ou domicile le reste de la semaine sur SQY."
+			"description": "Découvrez mon nouvel espace de massage à Guyancourt chaque jeudi : Reiki Usui, Massage des 5 Continents et massages du dos assis EAS®."
 		},
 		{
 			"key": "massage-sur-chaise-entreprise-saint-quentin-en-yvelines",
 			"title": "Massage sur chaise en entreprise à SQY (78)",
-			"description": "Le massage sur chaise séduit de plus en plus les entreprises autour de Saint Quentin-en-Yvelines. Découvrez ses bienfaits, son déroulement et pourquoi il améliore la QVT et réduit le stress au travail."
+			"description": "Le massage sur chaise en entreprises autour de Saint Quentin-en-Yvelines. Découvrez ses bienfaits, son déroulement et il contribue à la QVCT."
 		},
 		{
 			"key": "20260425-retour-salon-bien-etre-manet-montigny-78",
-			"title": "Retour sur le Salon du Bien‑Être à la Ferme du Manet – SQY",
-			"description": "Découvrez mon retour sur le salon Les Sens en Éveil à la Ferme du Manet : massages assis EAS®, duo massage‑tambour et rencontres à Saint‑Quentin‑en‑Yvelines."
+			"title": "Salon du Bien‑Être à la Ferme du Manet 2026 – SQY",
+			"description": "Découvrez le salon Les Sens en Éveil à la Ferme du Manet : massages assis EAS®, duo massage‑tambour et rencontres à Saint‑Quentin‑en‑Yvelines."
 		},
 		{
 			"key": "20260430-retour-initiation-test-musculaire-kinesio",
@@ -112,8 +119,8 @@
 		},
 		{
 			"key": "massage-domicile-saint-quentin-yvelines",
-			"title": "Massage à domicile à Saint‑Quentin‑en‑Yvelines, Maurepas, Élancourt, Guyancourt",
-			"description": "Profitez d’un massage à domicile à Saint‑Quentin‑en‑Yvelines, Maurepas, Élancourt, Plaisir et Guyancourt. Relaxation, bien‑être et soins personnalisés directement chez vous."
+			"title": "Massage à domicile à SQY, Maurepas, Élancourt, Guyancourt",
+			"description": "Profitez d’un massage à domicile à SQY, Maurepas, Élancourt, Plaisir et Guyancourt. Relaxation, bien‑être et soins personnalisés directement chez vous."
 		}
 	]
 }

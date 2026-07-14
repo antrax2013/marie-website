@@ -38,6 +38,11 @@ const SiteMap = () => {
 				<h2>Mes préstations</h2>
 				<ul>
 					<li>
+						<a href='/massage-en-entreprise-saint-quentin-en-yvelines'>
+							Massage en entreprise
+						</a>
+					</li>
+					<li>
 						<a href='/soins-a-domicile-saint-quentin-en-yvelines'>
 							Soins à domicile
 						</a>

@@ -68,7 +68,13 @@
 			"url": "/reiki-usui"
 		},
 		{
-			"name": "Soins à domicile à Saint-Quentin-en-Yvelines",
+			"name": "Massage en entreprise à Saint‑Quentin‑en‑Yvelines – Bien‑être au travail",
+			"short_name": "Massage en entreprise SQY",
+			"description": "Massage en entreprise à SQY : détente, énergie et réduction du stress. Massage du dos assis EAS® pour améliorer la QVCT. Interventions sur Saint‑Quentin‑en‑Yvelines et environs.",
+			"url": "/massage-en-entreprise-saint-quentin-en-yvelines"
+		},
+		{
+			"name": "Soins à domicile sur Saint-Quentin-en-Yvelines",
 			"short_name": "Soins à domicile SQY",
 			"description": "Reiki Usui, Massage des 5 Continents et massage assis EAS® à domicile sur Saint‑Quentin‑en‑Yvelines. Confort, qualité et sérénité.",
 			"url": "/soins-a-domicile-saint-quentin-en-yvelines"

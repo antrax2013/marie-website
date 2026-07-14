@@ -15,9 +15,9 @@ const Massage5Continents = lazy(
 const MassageAssisMethodeEAS = lazy(
 	() => import('./components/routes/Massage-assis-methode-eas'),
 );
-// const MassageEnEntreprise = lazy(
-// 	() => import('./components/routes/Massage-en-entreprise'),
-// );
+const MassageEnEntreprise = lazy(
+	() => import('./components/routes/Massage-en-entreprise'),
+);
 const SoinADomicile = lazy(() => import('./components/routes/Soin-a-domicile'));
 const MassageAssisTambourUnite = lazy(
 	() => import('./components/routes/Massage-assis-tambour-unite'),
@@ -100,10 +100,10 @@ const App = () => {
 							/>
 
 							{/* Préstations */}
-							{/* <Route
-								path='massage-en-entreprise'
+							<Route
+								path='massage-en-entreprise-saint-quentin-en-yvelines'
 								element={<MassageEnEntreprise />}
-							/> */}
+							/>
 							<Route
 								path='soins-a-domicile-saint-quentin-en-yvelines'
 								element={<SoinADomicile />}

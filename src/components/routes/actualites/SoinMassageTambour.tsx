@@ -2,6 +2,7 @@ import ImgSoin1 from '../../../assets/Actualites/massage-tambour/soin-duo-massag
 import ImgSoin2 from '../../../assets/Actualites/massage-tambour/soin-duo-massage-eas-tambour-unite-marie-floriane.jpg';
 import '../../../scss/routes/Blog.scss';
 import { Adresse } from '../../fragments/Adresse';
+import McLinkMEAS from '../../fragments/McLinks/McLink-Massage-EAS';
 import ParagraphSeparator from '../../fragments/Tools/Paragraph-Separator';
 
 const DuoTambourEAS = () => {
@@ -21,13 +22,11 @@ const DuoTambourEAS = () => {
 								<p>
 									Offrez-vous un moment de reconnexion profonde avec ce soin
 									unique, entre Empire du Milieu et Grand Nord, proposé par{' '}
-									<em>Marie Cophignon</em>, praticienne en{' '}
-									<a
-										href='/massage-assis-methode-eas'
-										title='En savoir plus sur le massage assis méthode EAS®'
-									>
-										massage assis méthode EAS®
-									</a>{' '}
+									<em>Marie Cophignon</em>, praticienne en
+									<McLinkMEAS
+										text='Massage du dos assis méthode EAS®'
+										className='strong'
+									/>
 									à Saint-Quentin-en-Yvelines, et <em>Floriane Fagot</em> (Flofa
 									Art et Vibration), sonothérapeute à Plaisir, et son tambour
 									unité.
@@ -66,10 +65,11 @@ const DuoTambourEAS = () => {
 							ralentit.
 						</p>
 						<p>
-							Marie pose ses mains avec justesse. Par le massage assis méthode
-							EAS®, elle invite votre corps à se délester de ses tensions, à se
-							réancrer, à respirer à nouveau. Chaque pression, chaque mouvement
-							est une clé qui ouvre une porte vers plus de présence.
+							Marie pose ses mains avec justesse. Par le massage du dos assis
+							méthode EAS®, elle invite votre corps à se délester de ses
+							tensions, à se réancrer, à respirer à nouveau. Chaque pression,
+							chaque mouvement est une clé qui ouvre une porte vers plus de
+							présence.
 						</p>
 						<p>
 							Derrière vous, un souffle ancien s’élève. Le tambour Unité,

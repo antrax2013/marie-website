@@ -1,8 +1,6 @@
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgReiki from '../../assets/Reiki/Reiki.svg';
 import ImgReikiVentre from '../../assets/Reiki/Reiki-ventre.png';
-//import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.png';
-//import ImgReikiPied from '../../assets/Reiki/Reiki-pied.png';
 import '../../scss/routes/Reiki.scss';
 import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
@@ -12,10 +10,10 @@ import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
 import Faq from '../fragments/FAQ/Faq';
 import { ReikiFaqItems } from '../entities/faq-items/reiki-faq-items';
-//import McImage from '../fragments/McImage';
 import { PricesReikiH } from '../fragments/Prices/reiki-holistique';
 import { PricesReikiC } from '../fragments/Prices/reiki-cible';
 import Cta from '../fragments/Ctas/Cta';
+import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
 
 const Reiki = () => {
 	return (
@@ -42,15 +40,9 @@ const Reiki = () => {
 									<p>
 										À Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, en
 										cabinet ou à{' '}
-										<a
-											href='/soins-a-domicile-saint-quentin-en-yvelines'
-											title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-											className='underline'
-										>
-											domicile
-										</a>
-										, ouvrez un espace de calme où le mental se pose, le corps
-										se relâche et l’énergie retrouve son chemin naturel.
+										<McLinkSoinDomicile text='domicile' noWrap={true} />, ouvrez
+										un espace de calme où le mental se pose, le corps se relâche
+										et l’énergie retrouve son chemin naturel.
 									</p>
 									<BgMcImageAlternativeContainer
 										path={ImgReikiVentre}

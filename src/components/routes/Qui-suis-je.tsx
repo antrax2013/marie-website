@@ -7,6 +7,8 @@ import { Adresse } from '../fragments/Adresse';
 import Faq from '../fragments/FAQ/Faq';
 import { QuiSuisJeFaqItems } from '../entities/faq-items/qui-suis-je-faq-items';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
+import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
+import McLinkEnEntreprise from '../fragments/McLinks/McLink-En-Entreprise';
 
 const QuiSuisJe = () => {
 	return (
@@ -41,20 +43,14 @@ const QuiSuisJe = () => {
 									</div>
 									<p>
 										Depuis mars 2022, sur Saint-Quentin en Yvelines, à Élancourt
-										et Guyancourt, à{' '}
-										<a
-											href='/soins-a-domicile-saint-quentin-en-yvelines'
-											title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-											className='underline'
-										>
-											domicile
-										</a>{' '}
-										ou en entreprise, j’accompagne les adultes en recherche de
-										relaxation profonde, de mieux-être et de rééquilibrage
-										énergétique, dans un cadre professionnel, doux et
-										respectueux. Chaque séance est pensée comme une pause
-										régénérante, adaptée à votre état physique, émotionnel et
-										énergétique du moment.
+										et Guyancourt, à
+										<McLinkSoinDomicile text='domicile' />
+										ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />
+										, j’accompagne les adultes en recherche de relaxation
+										profonde, de mieux-être et de rééquilibrage énergétique,
+										dans un cadre professionnel, doux et respectueux. Chaque
+										séance est pensée comme une pause régénérante, adaptée à
+										votre état physique, émotionnel et énergétique du moment.
 									</p>
 									<blockquote className='size-xl-visible hidden cta-blockquote'>
 										Pouvoir apporter un soulagement physique, psychique et
@@ -237,12 +233,46 @@ const QuiSuisJe = () => {
 								<Cta
 									link='/massage-assis-methode-eas'
 									title={
-										'Cliquez ici pour découvrir le massage assis méthode EAS®.'
+										'Cliquez ici pour découvrir le massage du dos assis méthode EAS®.'
 									}
 								/>
 								<blockquote className='cta-blockquote'>
-									Le massage assis EAS®, une pause courte qui fait un grand
-									bien.
+									Le massage du dos assis EAS®, une pause courte qui fait un
+									grand bien.
+								</blockquote>
+							</div>
+						</div>
+						<div className='career-content'>
+							<h3>L’art du test musculaire de kinésiologie</h3>
+							<p>
+								Approfondir mon écoute du corps et enrichir ma palette d’un
+								nouvel outil d’accompagnement, me semblait important, aussi, en
+								avril 2026, à l’
+								<em>
+									<a
+										href='https://ecoledesartsdusouffle.com/nos-formations/initiation-art-test-musculaire/'
+										title='Cliquez pour découvrirl’ initiation art du test musculaire.'
+										target='_blank'
+									>
+										école des Arts du souffle
+									</a>
+								</em>
+								de Nouzonville dans les Ardennes, je me suis formée à l’art du
+								test musculaire. Cette technique, largement utilisée en
+								kinésiologie, m’a séduite par sa simplicité et la richesse des
+								informations qu’elle permet de mettre en lumière. Elle offre une
+								approche complémentaire du bien-être, basée sur l’écoute des
+								réponses du corps.
+							</p>
+							<p>
+								Grâce à cette initiation, j’affine aujourd’hui ma compréhension
+								globale des besoins de la personne et j’enrichis progressivement
+								ma pratique avec davantage de finesse et de justesse.
+							</p>
+							<div className='cta-container-row'>
+								<blockquote className='cta-blockquote'>
+									Le corps garde en mémoire bien des réponses, accessibles à qui
+									sait les écouter.
 								</blockquote>
 							</div>
 						</div>
@@ -307,14 +337,8 @@ const QuiSuisJe = () => {
 							<h3>Consultations à domicile</h3>
 							<div>
 								<p>
-									Je me déplace à votre{' '}
-									<a
-										href='/soins-a-domicile-saint-quentin-en-yvelines'
-										title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-										className='underline'
-									>
-										domicile
-									</a>{' '}
+									Je me déplace à votre
+									<McLinkSoinDomicile text='domicile' />
 									sur Saint-Quentin-en-Yvelines ses environs :
 								</p>
 								<div className='center-area'>
@@ -339,14 +363,8 @@ const QuiSuisJe = () => {
 								</p>
 								<p className='disclaimer text-third'>
 									Lorsque je me déplace à{' '}
-									<a
-										href='/soins-a-domicile-saint-quentin-en-yvelines'
-										title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-										className='underline'
-									>
-										domicile
-									</a>
-									, les tarifs des soins sont majorés de 5,00€.
+									<McLinkSoinDomicile text='domicile' noWrap={true} />, les
+									tarifs des soins sont majorés de 5,00€.
 								</p>
 								<p>
 									Pour travailler dans des conditions optimales, j'ai besoin

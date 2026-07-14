@@ -6,6 +6,7 @@ import conf from '../../../../assets/Actualites/2026-portes-ouvertes-printemps-c
 import bracelets from '../../../../assets/Actualites/2026-portes-ouvertes-printemps-coffret-alumine/20260531-annonce-porte-ouverte-attelier-bracelet.jpg';
 import remise from '../../../../assets/Actualites/2026-portes-ouvertes-printemps-coffret-alumine/20260531-annonce-porte-ouverte-remise.jpg';
 import ParagraphSeparator from '../../../fragments/Tools/Paragraph-Separator';
+import McLinkMEAS from '../../../fragments/McLinks/McLink-Massage-EAS';
 
 export const BlogEvent20260531PortesOuvertesPrintemps2026: iBlog = {
 	h1: 'Massages & Bien‑Être à Plaisir – Portes Ouvertes Printemps 2026',
@@ -65,8 +66,10 @@ export const BlogEvent20260531PortesOuvertesPrintemps2026: iBlog = {
 				</ul>
 
 				<p>
-					Un massage court, précis, idéal pour relâcher les tensions du haut du
-					corps et retrouver une respiration plus fluide.
+					Le
+					<McLinkMEAS text='massages du dos assis méthode EAS®' />
+					est un massage court, précis, idéal pour relâcher les tensions du haut
+					du corps et retrouver une respiration plus fluide.
 				</p>
 				<div className='cta-container'>
 					<div className='cta-container-row'>

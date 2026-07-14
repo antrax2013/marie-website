@@ -4,6 +4,7 @@ import CtaRendezVous from '../../../fragments/Ctas/RendezVous';
 
 import thumbnail from '../../../../assets/Actualites/20260425-salon-bien-etre-4-edition-manet-montigny/salon-bien-etre-le-manet-2026.jpg';
 import ParagraphSeparator from '../../../fragments/Tools/Paragraph-Separator';
+import McLinkMEAS from '../../../fragments/McLinks/McLink-Massage-EAS';
 
 export const BlogEvent20260412RetourSalonSensEveil4: iBlog = {
 	h1: 'Retour sur le Salon du Bien‑Être Les Sens en Éveil à la Ferme du Manet',
@@ -20,7 +21,7 @@ export const BlogEvent20260412RetourSalonSensEveil4: iBlog = {
 			/*640-426*/
 			path: thumbnail,
 			className: 'img',
-			alt: 'Praticien bien‑être sur son stand au salon Les Sens en Éveil à la Ferme du Manet à Montigny‑le‑Bretonneux – massages assis EAS® et soins à Saint‑Quentin‑en‑Yvelines',
+			alt: 'Praticien bien‑être sur son stand au salon Les Sens en Éveil à la Ferme du Manet à Montigny‑le‑Bretonneux – massages assis du dos EAS® et soins à Saint‑Quentin‑en‑Yvelines',
 		},
 	],
 	content: (
@@ -39,10 +40,11 @@ export const BlogEvent20260412RetourSalonSensEveil4: iBlog = {
 					Une belle occasion de faire connaître mon activité auprès des
 					habitants de Guyancourt, Maurepas, Élancourt et des communes voisines.
 				</p>
-				<h2>6 massages assis EAS® : un moment de détente immédiat</h2>
+				<h2>6 massages du dos assis EAS® : un moment de détente immédiat</h2>
 				<p>
-					Durant le salon, j’ai eu la joie de réaliser 6 massages assis EAS®,
-					une méthode douce et efficace pour relâcher les tensions du dos, des
+					Durant le salon, j’ai eu la joie de réaliser 6{' '}
+					<McLinkMEAS text='massages du dos assis méthode EAS®' noWrap={true} />
+					, une méthode douce et efficace pour relâcher les tensions du dos, des
 					épaules et de la nuque. Ce format court est idéal lors d’événements,
 					en entreprise ou pour toute personne souhaitant un moment de détente
 					rapide mais profond.
@@ -73,9 +75,10 @@ export const BlogEvent20260412RetourSalonSensEveil4: iBlog = {
 					<a href='/actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'>
 						duo "massage du dos assis ‑ tambour unité"
 					</a>
-					. Ce soin unique combine le toucher du massage du dos assis méthode
-					EAS® et la vibration du tambour unité, créant une expérience immersive
-					qui favorise l’ancrage, la détente profonde et la reconnexion à soi.
+					. Ce soin unique combine le toucher du
+					<McLinkMEAS text='massages du dos assis méthode EAS®' />
+					et la vibration du tambour unité, créant une expérience immersive qui
+					favorise l’ancrage, la détente profonde et la reconnexion à soi.
 				</p>
 				<p>
 					Les personnes qui ont testé ce duo ont partagé des ressentis très

@@ -8,6 +8,10 @@ import thumbnail from '../../../../assets/Actualites/grande-salle-cabinet-blowba
 import img1 from '../../../../assets/Actualites/grande-salle-cabinet-blowball/grande-salle-caibnet-blowball-2.jpg';
 import img2 from '../../../../assets/Actualites/grande-salle-cabinet-blowball/grande-salle-caibnet-blowball-3.jpg';
 import img3 from '../../../../assets/Actualites/grande-salle-cabinet-blowball/grande-salle-caibnet-blowball.jpg';
+import McLinkSoinDomicile from '../../../fragments/McLinks/McLink-Soins-Domicile';
+import McLinkReikiUsui from '../../../fragments/McLinks/McLink-Reiki-Usui';
+import McLinkM5C from '../../../fragments/McLinks/McLink-5-Continents';
+import McLinkMEAS from '../../../fragments/McLinks/McLink-Massage-EAS';
 
 export const BlogArticleCabinetGrandeSalle: iBlog = {
 	h1: 'Nouvelle espace au cabinet Blowball à Guyancourt',
@@ -49,15 +53,18 @@ export const BlogArticleCabinetGrandeSalle: iBlog = {
 			<h2>Un nouvel espace pensé pour votre bien-être</h2>
 			<p>
 				Cet espace a été pensé pour accueillir mes différentes pratiques : le
-				<a href='/reiki-usui'>Reiki Usui</a>, le{' '}
-				<a href='/massage-des-5-continents'>Massage des 5 Continents</a>, ainsi
-				que mes{' '}
-				<a href='/massage-assis-methode-eas'>
-					massages du dos assis, selon la méthode EAS®
-				</a>
-				. Ces approches complémentaires permettent de relâcher les tensions,
-				d’apaiser le mental et de rééquilibrer l’énergie, dans un environnement
-				calme et harmonieux au cœur de Saint‑Quentin‑en‑Yvelines.
+				<McLinkReikiUsui text='Reiki Usui' className='italic' noWrap={true} />,
+				le{' '}
+				<McLinkM5C
+					text='Massage des 5 Continents'
+					className='italic'
+					noWrap={true}
+				/>
+				, ainsi que sur mon
+				<McLinkMEAS text='Massage du dos assis méthode EAS®' />. Ces approches
+				complémentaires permettent de relâcher les tensions, d’apaiser le mental
+				et de rééquilibrer l’énergie, dans un environnement calme et harmonieux
+				au cœur de Saint‑Quentin‑en‑Yvelines.
 			</p>
 			<h2>Pourquoi venir au cabinet Blowball ?</h2>
 			<ul>
@@ -88,14 +95,8 @@ export const BlogArticleCabinetGrandeSalle: iBlog = {
 			</h2>
 			<p>
 				En dehors du jeudi, je propose toujours mes massages et soins
-				énergétiques à{' '}
-				<a
-					href='/soins-a-domicile-saint-quentin-en-yvelines'
-					title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-					className='underline'
-				>
-					domicile
-				</a>{' '}
+				énergétiques à
+				<McLinkSoinDomicile text='domicile' noWrap={true} className='italic' />
 				ou en entreprise sur l’ensemble des communes de
 				Saint‑Quentin‑en‑Yvelines : Guyancourt, Montigny‑le‑Bretonneux,
 				Voisins‑le‑Bretonneux, Élancourt, Trappes, Maurepas, Coignières et les

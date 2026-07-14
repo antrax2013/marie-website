@@ -1,3 +1,5 @@
+import McLinkSoinDomicile from './McLinks/McLink-Soins-Domicile';
+
 const tel = import.meta.env.VITE_META_NUMTEL;
 const name = import.meta.env.VITE_META_MAIN_TITLE_LIGTH;
 
@@ -61,14 +63,8 @@ const PanneauLateral = () => {
 			</p>
 			<p>
 				<span itemScope itemType='https://schema.org/Service'>
-					Les autres jours de la semaine, je consulte à{' '}
-					<a
-						href='/soins-a-domicile-saint-quentin-en-yvelines'
-						title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-						className='underline'
-					>
-						domicile
-					</a>{' '}
+					Les autres jours de la semaine, je consulte à
+					<McLinkSoinDomicile text='domicile' />
 					sur <span itemProp='areaServed'>Saint Quentin-en-Yvelines</span> et
 					ses environs : <em itemProp='areaServed'>Maurepas</em>,{' '}
 					<em itemProp='areaServed'>Montigny-le-Bretonneux</em>,{' '}

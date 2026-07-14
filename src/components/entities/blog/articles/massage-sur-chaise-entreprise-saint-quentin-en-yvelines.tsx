@@ -2,6 +2,8 @@ import { iBlog } from '../../../fragments/Blog/IBlog';
 import CtaContactezMoi from '../../../fragments/Ctas/ContactezMoi';
 import CtaDevis from '../../../fragments/Ctas/Devis';
 import thumbnail from '../../../../assets/Actualites/massage-en-entreprise/massage-du-dos-assis-en-entreprise.jpg';
+import McLinkEnEntreprise from '../../../fragments/McLinks/McLink-En-Entreprise';
+import McLinkMEAS from '../../../fragments/McLinks/McLink-Massage-EAS';
 
 export const BlogArticleMassageSurChiseSQY: iBlog = {
 	h1: 'Massage sur chaise en entreprise sur Saint Quentin-en-Yvelines : pourquoi les entreprises l’adoptent ?',
@@ -24,18 +26,21 @@ export const BlogArticleMassageSurChiseSQY: iBlog = {
 	content: (
 		<>
 			<p>
-				Le massage sur chaise en entreprise connaît un véritable essor dans les
-				Yvelines (78). De plus en plus d’organisations cherchent des solutions
-				simples et efficaces pour améliorer la qualité de vie au travail (QVT),
-				réduire le stress et renforcer la cohésion d’équipe.
+				Le
+				<McLinkEnEntreprise text='massage sur chaise en entreprise' />
+				connaît un véritable essor dans les Yvelines (78). De plus en plus
+				d’organisations cherchent des solutions simples et efficaces pour
+				améliorer la qualité de vie au travail (QVT), réduire le stress et
+				renforcer la cohésion d’équipe.
 			</p>
 			<h2>Qu’est‑ce que le massage sur chaise ?</h2>
 			<p>
-				Le massage sur chaise, que je propose, est le massage du dos assis
-				méthode EAS®. Il est issu destechniques énegertiques de la médecine
-				traditionnelle chinoise des méridiens et des points shiatsu et apporte
-				une relaxation rapide, efficace et accessible à tous. Il se pratique
-				habillé, sur une chaise ergonomique, et dure 15 minutes environ.
+				Le massage sur chaise, que je propose, est le{' '}
+				<McLinkMEAS text='Massage du dos assis méthode EAS®' noWrap={true} />.
+				Il est issu des techniques énegertiques de la médecine traditionnelle
+				chinoise des méridiens et des points shiatsu et apporte une relaxation
+				rapide, efficace et accessible à tous. Il se pratique habillé, sur une
+				chaise ergonomique, et dure 15 minutes environ.
 			</p>
 			<p>
 				Il cible principalement : le dos, la nuque, les épaules et les bras.
@@ -108,9 +113,11 @@ export const BlogArticleMassageSurChiseSQY: iBlog = {
 				Ensuite je m’occupe du reste.
 			</p>
 			<p>
-				Le massage sur chaise en entreprise dans les Yvelines est une solution
-				simple, efficace et très appréciée des collaborateurs. Il contribue à un
-				environnement de travail plus serein, plus humain et plus productif.
+				Le
+				<McLinkEnEntreprise text='massage sur chaise en entreprise' />
+				dans les Yvelines est une solution simple, efficace et très appréciée
+				des collaborateurs. Il contribue à un environnement de travail plus
+				serein, plus humain et plus productif.
 			</p>
 			<p>
 				Vous souhaitez organiser une intervention dans votre entreprise ? Je me

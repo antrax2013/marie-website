@@ -1,4 +1,7 @@
 import { iFaqItem } from '../../fragments/FAQ/Faq-Item';
+import McLinkM5C from '../../fragments/McLinks/McLink-5-Continents';
+import McLinkMEAS from '../../fragments/McLinks/McLink-Massage-EAS';
+import McLinkReikiUsui from '../../fragments/McLinks/McLink-Reiki-Usui';
 
 export const SoinDomicileFaqItems: Array<iFaqItem> = [
 	{
@@ -60,12 +63,10 @@ export const SoinDomicileFaqItems: Array<iFaqItem> = [
 		response: (
 			<p>
 				La plupart de mes soins et massages peuvent être réalisés chez vous :{' '}
-				<a href='/reiki-usui'>Reiki Usui</a>,{' '}
-				<a href='/massage-des-5-continents'>Massage des 5 Continents</a> et{' '}
-				<a href='/massage-assis-methode-eas'>
-					massage du dos assis méthode EAS®
-				</a>
-				. Lors de notre premier échange, nous déterminerons ensemble le soin le
+				<McLinkReikiUsui text='Reiki Usui' noWrap={true} />,{' '}
+				<McLinkM5C text='Massage des 5 Continents' noWrap={true} /> et{' '}
+				<McLinkMEAS text='Massage du dos assis méthode EAS®' noWrap={true} />.
+				Lors de notre premier échange, nous déterminerons ensemble le soin le
 				plus adapté à vos besoins, à vos attentes du moment et à l’espace
 				disponible.
 			</p>

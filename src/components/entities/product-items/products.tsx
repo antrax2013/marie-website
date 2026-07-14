@@ -5,7 +5,7 @@ import { iProduct } from '../../fragments/Product';
 
 export const products: iProduct[] = [
 	{
-		header: 'Le massage assis méthode EAS®',
+		header: 'Le massage du dos assis méthode EAS®',
 		description: 'Un massage énergétique rapide aux effets immédiats.',
 		image: {
 			path: MassageAssisEAS,
@@ -13,11 +13,11 @@ export const products: iProduct[] = [
 			className: 'img-massage-assis-eas',
 		},
 		content:
-			'Allié idéal au quotidien comme en entreprise, le massage assis EAS® apaise le stress, libère les tensions et invite à une détente profonde. Sur une chaise ergonomique, en quelques minutes, ce massage du dos et de la nuque, redonne vitalité, clarté d’esprit et une disponibilité intérieure précieuse.',
+			'Allié idéal au quotidien comme en entreprise, le massage du dos assis EAS® apaise le stress, libère les tensions et invite à une détente profonde. Sur une chaise ergonomique, en quelques minutes, ce massage du dos et de la nuque, redonne vitalité, clarté d’esprit et une disponibilité intérieure précieuse.',
 
 		cta: {
 			link: '/massage-assis-methode-eas',
-			title: 'Cliquez ici pour découvrir le massage assis méthode EAS®.',
+			title: 'Cliquez ici pour découvrir le massage du dos assis méthode EAS®.',
 		},
 		bloquoteContent:
 			'Un véritable soutien pour traverser avec sérénité les défis de votre journée.',

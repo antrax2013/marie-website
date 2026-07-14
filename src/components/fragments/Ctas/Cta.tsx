@@ -10,6 +10,10 @@ export interface iCta {
 	target?: string;
 }
 
+export type CtaClassNameProps = {
+	className?: string | null;
+};
+
 const Cta = ({
 	link,
 	ctaLinkClassName,

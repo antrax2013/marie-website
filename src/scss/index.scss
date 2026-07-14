@@ -136,6 +136,13 @@ label {
 	display: flex;
 }
 
+.bold {
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.italic,
+.strong,
 strong,
 .note {
 	font-weight: inherit;
@@ -498,11 +505,6 @@ i.text-third {
 		.p-menubar-start {
 			margin-left: 0.25rem !important;
 		}
-		margin-top: 0.25rem;
-		margin-bottom: 0.5rem;
-		.name-marie {
-			display: none;
-		}
 	}
 
 	.address-container {
@@ -558,6 +560,33 @@ i.text-third {
 		}
 	}
 }
+
+@media (max-width: 1185px) {
+	nav {
+		margin-top: 0.25rem;
+		margin-bottom: 0.5rem;
+	}
+}
+
+@media (min-width: 960px) and (max-width: 1330px) {
+	nav {
+		.p-menubar ul.p-menubar-root-list li.p-menuitem {
+			a.p-menuitem-link {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1330px) {
+	nav {
+		.name-marie {
+			display: none;
+		}
+	}
+}
+
 @media (min-width: 1024px) {
 	.main-footer-flex-container {
 		.address-container {

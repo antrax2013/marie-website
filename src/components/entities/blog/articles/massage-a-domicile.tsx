@@ -6,6 +6,10 @@ import img2 from '../../../../assets/Actualites/massage-domicile/massage-domicil
 import ParagraphSeparator from '../../../fragments/Tools/Paragraph-Separator';
 import Cta from '../../../fragments/Ctas/Cta';
 import CtaDevis from '../../../fragments/Ctas/Devis';
+import McLinkSoinDomicile from '../../../fragments/McLinks/McLink-Soins-Domicile';
+import McLinkReikiUsui from '../../../fragments/McLinks/McLink-Reiki-Usui';
+import McLinkM5C from '../../../fragments/McLinks/McLink-5-Continents';
+import McLinkMEAS from '../../../fragments/McLinks/McLink-Massage-EAS';
 
 export const BlogArticleMassageADomicilesSQY: iBlog = {
 	h1: 'Massage à domicile à Saint‑Quentin‑en‑Yvelines, Maurepas, Élancourt et Guyancourt – Bien‑être et détente chez vous',
@@ -32,15 +36,8 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 	content: (
 		<>
 			<p>
-				Le{' '}
-				<u>
-					<a
-						href='/soins-a-domicile-saint-quentin-en-yvelines'
-						title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-					>
-						massage à domicile
-					</a>{' '}
-				</u>
+				Le
+				<McLinkSoinDomicile text='massage à domicile' />
 				fait partie de mes services proposés sur{' '}
 				<b>Saint‑Quentin‑en‑Yvelines</b>, notamment à{' '}
 				<b>Maurepas, Élancourt, Guyancourt, Montigny‑le‑Bretonneux, Plaisir</b>{' '}
@@ -55,14 +52,10 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 			</blockquote>
 			<p>
 				Recevoir l’
-				<u>
-					<a
-						href='/soins-a-domicile-saint-quentin-en-yvelines'
-						title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-					>
-						un de mes massages à domicile
-					</a>
-				</u>
+				<McLinkSoinDomicile
+					text='un de mes massages à domicile'
+					noWrap={true}
+				/>
 				, que vous soyez à <b>Maurepas, Guyancourt</b> ou dans une autre commune
 				de Saint‑Quentin‑en‑Yvelines, c’est profiter d’un soin sans avoir à
 				gérer les trajets, les bouchons ou le stress du retour. Vous restez dans
@@ -93,7 +86,6 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 					<Cta
 						link={'/soins-a-domicile-saint-quentin-en-yvelines'}
 						title={'En savoir plus sur mes soins à domicile'}
-						ctaText={'En savoir plus'}
 					/>
 				</div>
 			</div>
@@ -109,30 +101,24 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 			</p>
 			<ul>
 				<li>
-					<strong>
-						<a href='/massage-assis-methode-eas' target='_blank'>
-							Massage du dos assis Méthode EAS®
-						</a>
-					</strong>{' '}
+					<McLinkMEAS
+						text='Massage du dos assis méthode EAS®'
+						className='strong'
+					/>
 					: un soin court, efficace et revitalisant qui apporte clarté d’esprit,
 					relâchement et disponibilité intérieure.{' '}
 					<b>Idéal sur la pause déjeuner.</b>
 				</li>
 				<li>
-					<strong>
-						<a href='/massage-des-5-continents' target='_blank'>
-							Massage des 5 Continents
-						</a>
-					</strong>{' '}
-					: un soin complet mêlant techniques du monde, aromathérapie et
-					énergétique pour une profonde reconnexion corps‑esprit.
+					<McLinkM5C text='Massage des 5 Continents' className='strong' />: un
+					soin complet mêlant techniques du monde, aromathérapie et énergétique
+					pour une profonde reconnexion corps‑esprit.
 				</li>
 				<li>
-					<strong>
-						<a href='/reiki-usui' target='_blank'>
-							Soin énergétique Reiki Usui
-						</a>
-					</strong>{' '}
+					<McLinkReikiUsui
+						text='Soin énergétique Reiki Usui'
+						className='strong'
+					/>
 					: un rééquilibrage global pour apaiser les émotions, harmoniser les
 					énergies et soutenir le bien‑être intérieur.
 				</li>
@@ -199,15 +185,8 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 			<p>
 				Que vous viviez à{' '}
 				<b>Saint‑Quentin‑en‑Yvelines, Maurepas, Élancourt, Guyancourt</b> ou
-				dans les communes voisines,{' '}
-				<u>
-					<a
-						href='/soins-a-domicile-saint-quentin-en-yvelines'
-						title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-					>
-						mes massages à domicile
-					</a>
-				</u>{' '}
+				dans les communes voisines,
+				<McLinkSoinDomicile text='un de mes massages à domicile' />
 				offrent une solution simple, pratique et profondément relaxante. Un
 				moment rien qu’à vous, dans votre propre cocon, pour relâcher la
 				pression, apaiser le mental et retrouver votre énergie.
@@ -216,6 +195,10 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 			<div className='cta-container'>
 				<div className='cta-container-row'>
 					<CtaContactezMoi />
+					<Cta
+						link={'/soins-a-domicile-saint-quentin-en-yvelines'}
+						title={'En savoir plus sur mes soins à domicile'}
+					/>
 				</div>
 			</div>
 		</>

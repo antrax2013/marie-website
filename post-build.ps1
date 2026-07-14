@@ -27,6 +27,7 @@ $secondaryTemplate = "##secondary-web-site-url##"
 $tertiaryTemplate = "##tertiary-web-site-url##"
 $titleTemplate = "<!-- ##title## -->"
 $descriptionTemplate = "<!-- ##description## -->"
+$canonicalTemplate = "<!-- ##canonical## -->"
 
 # Display URLs to confirm
 # Write-Host "Urls are main: '$mainUrl'"
@@ -60,7 +61,12 @@ foreach ($file in $files) {
 
     # Chercher la meta correspondant à la clé
     $meta = $datas.metas | Where-Object { $_.key -eq $fileName }
-    Write-Host "Injection metas dans $($file.FullName) avec title: $($meta.title) et description: $($meta.description)"
+    #Write-Host "Injection metas dans $($file.FullName) avec title: $($meta.title) et description: $($meta.description)"
+
+    if ($meta -eq $null) {
+      Write-Error "No meta found for $($fileName)"      
+      exit 1
+    }    
     
     # Read the file content
     $content = Get-Content -Path $file.FullName -Raw
@@ -70,9 +76,30 @@ foreach ($file in $files) {
     $content = $content -replace [regex]::Escape($secondaryTemplate), $secondaryUrl
     $content = $content -replace [regex]::Escape($tertiaryTemplate), $tertiaryUrl
     
-    if ($meta -ne $null) {
-      $content = $content -replace [regex]::Escape($titleTemplate), "<title>$($meta.title)</title>"
-      $content = $content -replace [regex]::Escape($descriptionTemplate), "<meta name='description' content='$($meta.description)'>"
+
+    $mandatories = @(
+        @{ name="title"; template=$titleTemplate; htmlTag="<title>{value}</title>" },
+        @{ name="description"; template=$descriptionTemplate; htmlTag="<meta name='description' content='{value}'>" }
+    )
+
+    foreach ($property in $mandatories) {
+        $value = $meta.($property.name)
+
+        Write-Host "[$($property.name)] => '$value'"
+
+        if ($null -eq $value -or "$value".Trim() -eq "") {
+            Write-Error "$($property.name) property is empty for $fileName"
+            exit 1
+        }
+
+        $rendered = $property.htmlTag.Replace("{value}", $value)
+        $content = $content -replace [regex]::Escape($property.template), $rendered
+    }
+
+    if ($null -ne $meta.canonical) {
+      $htmlTag = "<link rel='canonical' href='{value}' />"
+      $render = $htmlTag.Replace("{value}", "https://$($mainUrl.TrimEnd('/'))/$($meta.canonical.TrimStart('/'))")
+      $content = $content -replace [regex]::Escape($canonicalTemplate), $render
     }
     
     # Write the modified content back to the file

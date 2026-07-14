@@ -67,7 +67,9 @@ const Menu = ({ ...props }) => {
 		if (
 			pathName === 'mes-prestations' &&
 			(windowPathName.includes('soins-a-domicile-saint-quentin-en-yvelines') ||
-				windowPathName.includes('massage-en-entreprise') ||
+				windowPathName.includes(
+					'massage-en-entreprise-saint-quentin-en-yvelines',
+				) ||
 				windowPathName.includes('massage-en-cabinet'))
 		) {
 			return selectedClassName;
@@ -132,14 +134,19 @@ const Menu = ({ ...props }) => {
 		{
 			label: 'Mes préstations',
 			items: [
-				// {
-				// 	label: 'Massage en entreprise',
-				// 	template: (item: MenuItem, options: MenuItemOptions) => {
-				// 		return itemTemplate(item, options);
-				// 	},
-				// 	url: '/massage-en-entreprise',
-				// 	className: getClassName('massage-en-entreprise'),
-				// },
+				{
+					label: 'Massage en entreprise',
+					template: (item: MenuItem, options: MenuItemOptions) => {
+						return itemTemplate(item, options);
+					},
+					url: '/massage-en-entreprise-saint-quentin-en-yvelines',
+					className: getClassName(
+						'massage-en-entreprise-saint-quentin-en-yvelines',
+					),
+					command: () => {
+						onClick('massage-en-entreprise-saint-quentin-en-yvelines');
+					},
+				},
 				{
 					label: 'Soins à domicile',
 					template: (item: MenuItem, options: MenuItemOptions) => {

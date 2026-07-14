@@ -8,6 +8,9 @@ import SocialNetworks from '../fragments/Social-Neworks';
 import Faq from '../fragments/FAQ/Faq';
 import { SoinDomicileFaqItems } from '../entities/faq-items/soin-a-domicile';
 import CtaDevis from '../fragments/Ctas/Devis';
+import McLinkReikiUsui from '../fragments/McLinks/McLink-Reiki-Usui';
+import McLinkM5C from '../fragments/McLinks/McLink-5-Continents';
+import McLinkMEAS from '../fragments/McLinks/McLink-Massage-EAS';
 
 const SoinADomicile = () => {
 	return (
@@ -81,12 +84,14 @@ const SoinADomicile = () => {
 						<div className='massage-a-domicile-description-content'>
 							<p>
 								Que vous choisissiez un{' '}
-								<a href='/massage-assis-methode-eas'>
-									massage assis du dos méthode EAS®
-								</a>{' '}
-								, un{' '}
-								<a href='/massage-des-5-continents'>Massage des 5 Continents</a>{' '}
-								ou un soin énergétique <a href='/reiki-usui'>Reiki Usui</a>, ces
+								<McLinkMEAS
+									text='Massage du dos assis méthode EAS®'
+									noWrap={true}
+								/>
+								, un
+								<McLinkM5C text='Massage des 5 Continents' />
+								ou un soin énergétique{' '}
+								<McLinkReikiUsui text='Reiki Usui' noWrap={true} />, ces
 								pratiques agissent sur le corps, les tensions et le mental, pour
 								vous permettre de vous poser, de respirer et de retrouver une
 								sensation d’équilibre dans un espace de bien-être, le vôtre.
@@ -183,31 +188,27 @@ const SoinADomicile = () => {
 
 							<ul>
 								<li>
-									<strong>
-										<a href='/reiki-usui'>Reiki Usui</a>
-									</strong>
+									<McLinkReikiUsui text='Reiki Usui' className='strong' />
 									<br />
 									Un soin énergétique doux favorisant détente, équilibre et
 									harmonisation.
 								</li>
 
 								<li>
-									<strong>
-										<a href='/massage-des-5-continents'>
-											Massage des 5 Continents
-										</a>
-									</strong>
+									<McLinkM5C
+										text='Massage des 5 Continents'
+										className='strong'
+									/>
 									<br />
 									Un massage complet alliant différentes techniques de massage,
 									huiles essentielles et Reiki Usui.
 								</li>
 
 								<li>
-									<strong>
-										<a href='/massage-assis-methode-eas'>
-											Massage du dos assis méthode EAS®
-										</a>
-									</strong>
+									<McLinkMEAS
+										text='Massage du dos assis méthode EAS®'
+										className='strong'
+									/>
 									<br />
 									Un massage énergétique rapide permettant de relâcher les
 									tensions et de retrouver vitalité et disponibilité.
@@ -289,7 +290,7 @@ const SoinADomicile = () => {
 			<ParagraphSeparator />
 			{/* Avis */}
 			<div className='review-container'>
-				<ReviewContainer filter='M5C' />
+				<ReviewContainer />
 			</div>
 			<div className='social-networks-container'>
 				<SocialNetworks />

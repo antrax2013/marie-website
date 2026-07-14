@@ -12,6 +12,8 @@ import { AccueilFaqItems } from '../entities/faq-items/accueil-faq-items';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import { products } from '../entities/product-items/products';
+import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
+import McLinkEnEntreprise from '../fragments/McLinks/McLink-En-Entreprise';
 
 const Accueil = () => {
 	return (
@@ -27,15 +29,9 @@ const Accueil = () => {
 									Réduisez le stress, relâchez les tensions et retrouvez un
 									équilibre durable grâce à des massages énergétiques et des
 									soins Reiki Usui personnalisés, sur Saint-Quentin en Yvelines,
-									à Élancourt et Guyancourt, à{' '}
-									<a
-										href='/soins-a-domicile-saint-quentin-en-yvelines'
-										title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-										className='underline'
-									>
-										domicile
-									</a>{' '}
-									ou en entreprise.
+									à Élancourt et Guyancourt, à
+									<McLinkSoinDomicile text='domicile' />
+									ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />.
 								</p>
 								<div className='hero-cta'>
 									<CtaRendezVous />
@@ -84,20 +80,14 @@ const Accueil = () => {
 									</p>
 									<p>
 										Depuis 2022, sur Saint-Quentin en Yvelines, à Élancourt et
-										Guyancourt, à{' '}
-										<a
-											href='/soins-a-domicile-saint-quentin-en-yvelines'
-											title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-											className='underline'
-										>
-											domicile
-										</a>{' '}
-										ou en entreprise, j’accompagne les adultes en recherche de
-										relaxation profonde, de mieux-être et de rééquilibrage
-										énergétique, dans un cadre professionnel, doux et
-										respectueux. Chaque séance est pensée comme une pause
-										régénérante, adaptée à votre état physique, émotionnel et
-										énergétique du moment.
+										Guyancourt, à
+										<McLinkSoinDomicile text='domicile' />
+										ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />
+										, j’accompagne les adultes en recherche de relaxation
+										profonde, de mieux-être et de rééquilibrage énergétique,
+										dans un cadre professionnel, doux et respectueux. Chaque
+										séance est pensée comme une pause régénérante, adaptée à
+										votre état physique, émotionnel et énergétique du moment.
 									</p>
 								</div>
 								<div className='header-2-cta'>

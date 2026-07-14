@@ -15,6 +15,9 @@ import SocialNetworks from '../fragments/Social-Neworks';
 import Faq from '../fragments/FAQ/Faq';
 import { M5CFaqItems } from '../entities/faq-items/m5c-faq-items';
 import { PricesM5C } from '../fragments/Prices/massage-5-continents';
+import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
+import McLinkEnEntreprise from '../fragments/McLinks/McLink-En-Entreprise';
+import McLinkReikiUsui from '../fragments/McLinks/McLink-Reiki-Usui';
 
 const Massage5Continents = () => {
 	return (
@@ -37,26 +40,16 @@ const Massage5Continents = () => {
 										Offrez‑vous un soin complet et unique. Le massage des 5
 										continents, entre les mains d’une praticienne certifiée,
 										réunit des techniques de massage venues des quatre coins du
-										monde, un soin énergétique{' '}
-										<a
-											href='/reiki-usui'
-											title='En savoir plus sur le Reiki Usui'
-										>
-											Reiki Usui
-										</a>{' '}
+										monde, un soin énergétique
+										<McLinkReikiUsui text='Reiki Usui' />
 										et les propriétés thérapeutiques d’huiles essentielles.
 									</p>
 									<p>
-										Sur Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, à{' '}
-										<a
-											href='/soins-a-domicile-saint-quentin-en-yvelines'
-											title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-											className='underline'
-										>
-											domicile
-										</a>{' '}
-										ou en entreprise, offrez‑vous un instant suspendu où le
-										rythme ralentit, où l’esprit se libère.
+										Sur Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, à
+										<McLinkSoinDomicile text='domicile' />
+										ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />
+										, offrez‑vous un instant suspendu où le rythme ralentit, où
+										l’esprit se libère.
 									</p>
 									<BgMcImageAlternativeContainer
 										path={ImgM5CDos}
@@ -156,10 +149,8 @@ const Massage5Continents = () => {
 							Le Massage des 5 Continents agit durablement grâce à l’alliance de
 							techniques de massage issues des quatre coins du monde :
 							Lomi‑Lomi, massage californien, suédois, Tuina, acupression et
-							pratiques ayurvédiques. Combiné à un soin énergétique{' '}
-							<a href='/reiki-usui' title='En savoir plus sur le Reiki Usui'>
-								Reiki Usui
-							</a>
+							pratiques ayurvédiques. Combiné à un soin énergétique
+							<McLinkReikiUsui text='Reiki Usui' />
 							et aux propriétés thérapeutiques d’huiles essentielles
 							spécifiques, sélectionnée pour leurs synergies, ce massage
 							biodynamique stimule les processus naturels d’auto‑guérison,
@@ -321,13 +312,7 @@ const Massage5Continents = () => {
 						Accordez‑vous une bulle de douceur, un moment pour respirer
 						pleinement, relâcher ce qui pèse et vous recentrer. Sur
 						Saint‑Quentin‑en‑Yvelines, à Élancourt et Guyancourt, à{' '}
-						<a
-							href='/soins-a-domicile-saint-quentin-en-yvelines'
-							title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-							className='underline'
-						>
-							domicile
-						</a>{' '}
+						<McLinkSoinDomicile text='domicile' />
 						ou en entreprise, le Massage des 5 Continents invite le corps à se
 						détendre, à se resourcer et l’esprit à s’alléger.
 					</p>

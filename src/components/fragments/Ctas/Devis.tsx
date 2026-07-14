@@ -1,12 +1,12 @@
-import Cta from './Cta';
+import Cta, { CtaClassNameProps } from './Cta';
 
-const CtaDevis = () => {
+const CtaDevis = ({ className }: CtaClassNameProps) => {
 	return (
 		<>
 			<Cta
 				link='/contact?sujet=demande-de-devis'
 				title={'CLiquez ici pour me contacter pour un devis.'}
-				ctaLinkClassName='cta-tertiary devis'
+				ctaLinkClassName={`${className ?? 'cta-tertiary'} devis`}
 				ctaText='Demander un devis'
 			/>
 		</>

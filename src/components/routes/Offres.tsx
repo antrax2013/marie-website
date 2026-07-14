@@ -12,6 +12,8 @@ import SocialNetworks from '../fragments/Social-Neworks';
 import Faq from '../fragments/FAQ/Faq';
 
 import { OfrresFaqItems as OffresFaqItems } from '../entities/faq-items/offres-faq-items';
+import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
+import McLinkEnEntreprise from '../fragments/McLinks/McLink-En-Entreprise';
 
 const Offres = () => {
 	return (
@@ -28,15 +30,10 @@ const Offres = () => {
 								<p>
 									Je vous accueille dans mes cabinets de{' '}
 									<strong>Guyancourt</strong> et <strong>Élancourt</strong>, et
-									je me déplace également à{' '}
-									<a
-										href='/soins-a-domicile-saint-quentin-en-yvelines'
-										title='En savoir plus sur mes soins à domicile à Saint-Quentin-en-Yvelines'
-										className='underline'
-									>
-										domicile
-									</a>
-									, ou en entreprise, sur toute l’agglomération de{' '}
+									je me déplace également à
+									<McLinkSoinDomicile text='domicile' />
+									ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />,
+									sur toute l’agglomération de{' '}
 									<strong>Saint‑Quentin‑en‑Yvelines</strong>. Je propose des
 									soins énergétiques Reiki Usui, des massages assis méthode EAS®
 									et le Massage des 5 Continents (M5C), adaptés à vos besoins
@@ -231,16 +228,11 @@ const Offres = () => {
 					<p>
 						Accordez‑vous une parenthèse de douceur, un espace pour respirer
 						pleinement, relâcher les tensions et revenir à vous‑même. À
-						Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, que ce soit à{' '}
-						<a
-							href='/soins-a-domicile-saint-quentin-en-yvelines'
-							title='En savoir plus sur mes soins à domicile à Saint-Quentin-en-Yvelines'
-							className='underline'
-						>
-							domicile
-						</a>{' '}
-						ou en entreprise, mes soins invitent le corps à se détendre, à se
-						régénérer et l’esprit à s’alléger.
+						Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, que ce soit à
+						<McLinkSoinDomicile text='domicile' />
+						ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />, mes
+						soins invitent le corps à se détendre, à se régénérer et l’esprit à
+						s’alléger.
 					</p>
 					<p>
 						Contactez-moi pour réserver votre séance ou obtenir plus

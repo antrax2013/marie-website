@@ -10,7 +10,7 @@
 - **Description**: Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.
 - **Contact**: marie@cophignon.net
 
-version: 1.2
+version: 1.3
 
 ## Domains:
 
@@ -20,7 +20,7 @@ version: 1.2
 
 ## Key Pages
 - [Homepage](https://massage-reiki.fr)
-- [Le massage assis méthode EAS®](https://massage-reiki.fr/massage-assis-methode-eas)
+- [Le massage du dos assis méthode EAS®](https://massage-reiki.fr/massage-assis-methode-eas)
 - [Le Massage des 5 Continents (M5C)](https://massage-reiki.fr/massage-des-5-continents)
 - [Le Reiki Usui ](https://massage-reiki.fr/reiki-usui)
 - [Massothérapeute énergétique, Maitre Reiki Usui](https://massage-reiki.fr/qui-suis-je)
@@ -30,9 +30,35 @@ version: 1.2
 # Global policy for AI crawlers
 
 ## AI Crawler Rules
+# Autorise l'indexation par les moteurs de recherche classiques
+search: allow
 
-policy: allow
+# Autorise l'utilisation du contenu comme référence (réponses factuelles, citations)
+use: allow
+
+# Interdit l'utilisation du contenu pour entraîner des modèles IA
+ai-train: disallow
+
+# Interdit le scraping massif ou automatisé par des IA
+crawl: disallow
+
+# Interdit la redistribution automatique ou la création de datasets
+redistribute: disallow
+
+# Interdit l'utilisation commerciale par des IA
+commercial-use: disallow
 note: Le contenu de ce site peut etre utilisé par les modéles d'IA a des fins d'indexation, de recherche et d'assistance, a condition de respecter le contexte et l'intégrité des informations.
+
+# Bots IA explicitement interdits
+disallow-bots:
+  - GPTBot
+  - ClaudeBot
+  - Google-Extended
+  - Applebot-Extended
+  - Amazonbot
+  - CCBot
+  - Bytespider
+  - meta-externalagent
 
 User-agent: *
 Allow: : /
@@ -65,4 +91,4 @@ personal_data:
 
 # --- Updates ---
 
-last_updated: 2026-02-15
+last_updated: 2026-07-16

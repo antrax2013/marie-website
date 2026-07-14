@@ -3,6 +3,11 @@ import BlogCardsContainer from '../fragments/Blog/BlogCards-Container';
 import McImage from '../fragments/McImage/McImage';
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgCocon from '../../assets/Actualites/serviette-pierres-et-bougies-xs.jpg';
+import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
+import McLinkEnEntreprise from '../fragments/McLinks/McLink-En-Entreprise';
+import McLinkReikiUsui from '../fragments/McLinks/McLink-Reiki-Usui';
+import McLinkM5C from '../fragments/McLinks/McLink-5-Continents';
+import McLinkMEAS from '../fragments/McLinks/McLink-Massage-EAS';
 
 const ActusEtNews = () => {
 	{
@@ -61,16 +66,15 @@ const ActusEtNews = () => {
 									</div>
 									<p>
 										Je publie régulièrement des contenus autour du{' '}
-										<a href='/reiki-usui'>Reiki Usui</a>, des massages relaxants
-										(
-										<a href='/massage-assis-methode-eas'>
-											massage du dos assis, méthode EAS®
-										</a>
+										<McLinkReikiUsui text='Reiki Usui' />, des massages
+										relaxants (
+										<McLinkMEAS
+											text='Massage du dos assis méthode EAS®'
+											noWrap={true}
+										/>
 										,{' '}
-										<a href='/massage-des-5-continents'>
-											massage des 5 continents
-										</a>
-										) et de pratiques naturelles pour améliorer votre bien‑être.
+										<McLinkM5C text='Massage des 5 Continents' noWrap={true} />)
+										et de pratiques naturelles pour améliorer votre bien‑être.
 										Ces articles vous guident pour réduire le stress, retrouver
 										énergie et sérénité, au quotidien, autoursdes différentes
 										approches que je propose.
@@ -78,15 +82,10 @@ const ActusEtNews = () => {
 									<p>
 										Retrouvez aussi les dernières informations sur mes ateliers
 										bien‑être, mes événements locaux et mes offres de soins, que
-										ce soit en cabinet, à{' '}
-										<a
-											href='/soins-a-domicile-saint-quentin-en-yvelines'
-											title='En savoir plus sur mes soins à domicile sur Saint-Quentin-en-Yvelines'
-											className='underline'
-										>
-											domicile
-										</a>{' '}
-										ou en entreprise.
+										ce soit en cabinet, à
+										<McLinkSoinDomicile text='domicile' />
+										ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />
+										.
 									</p>
 								</div>
 								<blockquote>

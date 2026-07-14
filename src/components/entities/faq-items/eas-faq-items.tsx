@@ -2,14 +2,14 @@ import { iFaqItem } from '../../fragments/FAQ/Faq-Item';
 
 export const EASFaqItems: Array<iFaqItem> = [
 	{
-		question: 'Qui peut recevoir le massage assis méthode EAS® ?',
+		question: 'Qui peut recevoir le massage du dos assis méthode EAS® ?',
 		response: (
 			<>
 				<p>
-					Le massage assis méthode EAS® est une pratique douce et accessible. Je
-					masse votre dos, votre nuque et vos bras, les zones où s’accumulent le
-					plus souvent les tensions liées au stress, à la posture ou à la
-					fatigue.
+					Le massage du dos assis méthode EAS® est une pratique douce et
+					accessible. Je masse votre dos, votre nuque et vos bras, les zones où
+					s’accumulent le plus souvent les tensions liées au stress, à la
+					posture ou à la fatigue.
 				</p>
 				<p>
 					Dans tous les cas, je prends le temps d’échanger avec vous avant la
