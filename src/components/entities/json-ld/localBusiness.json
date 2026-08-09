@@ -1,0 +1,237 @@
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "WebSite",
+			"@id": "https://massage-reiki.fr/#website",
+			"url": "https://massage-reiki.fr",
+			"name": "Massage Reiki",
+			"publisher": {
+				"@id": "https://massage-reiki.fr/#business"
+			}
+		},
+		{
+			"@type": "Person",
+			"@id": "https://massage-reiki.fr/#marie",
+			"name": "Marie Cophignon",
+			"givenName": "Marie",
+			"familyName": "Cophignon",
+			"jobTitle": "Thérapeute énergétique et praticienne en massages bien-être",
+			"telephone": "07.73.55.27.70",
+			"url": "https://massage-reiki.fr",
+			"sameAs": [
+				"https://massagedes5continents.com/membres/8424/Cophignon-Marie/",
+				"https://massages-reiki.fr/",
+				"https://marie.cophignon.net/"
+			]
+		},
+		{
+			"@type": "LocalBusiness",
+			"additionalType": "Soins énergétiques",
+			"@id": "https://massage-reiki.fr/#business",
+			"name": "Marie Cophignon - Soins énergétiques & Massages bien-être",
+			"legalName": "Marie COPHIGNON Thérapeute énergétique",
+			"description": "Soins énergétiques Reiki Usui, Massage des 5 Continents, massage du dos assis méthode EAS®, interventions en entreprise et prestations à domicile sur Saint-Quentin-en-Yvelines.",
+			"url": "https://massage-reiki.fr/",
+			"image": "https://massage-reiki.fr/logo192.png",
+			"logo": "https://massage-reiki.fr/logo192.png",
+			"telephone": "07.73.55.27.70",
+			"founder": {
+				"@id": "https://massage-reiki.fr/#marie"
+			},
+			"foundingDate": "2022-03-01",
+			"leiCode": "91042798800019",
+			"iso6523Code": "0009:91042798800019",
+			"priceRange": "25-95 EUR",
+			"paymentAccepted": [
+				"Cash",
+				"Check",
+				"June",
+				"Banktransfer",
+				"CreditCard"
+			],
+			"serviceArea": {
+				"@type": "AdministrativeArea",
+				"name": "Saint-Quentin-en-Yvelines",
+				"@id": "https://massage-reiki.fr/serviceArea/#saint-quentin-en-yvelines"
+			},
+			"areaServed": [
+				"Guyancourt",
+				"Élancourt",
+				"Saint-Quentin-en-Yvelines",
+				"Montigny-le-Bretonneux",
+				"Voisins-le-Bretonneux",
+				"Trappes",
+				"Maurepas",
+				"La Verrière",
+				"Magny-les-Hameaux",
+				"Coignières"
+			],
+			"address": [
+				{
+					"@type": "PostalAddress",
+					"@id": "https://massage-reiki.fr/#Guyancourt",
+					"streetAddress": "1 rue Le Corbusier",
+					"addressLocality": "Guyancourt",
+					"postalCode": "78280",
+					"addressCountry": "FR"
+				},
+				{
+					"@type": "PostalAddress",
+					"@id": "https://massage-reiki.fr/#Elancourt",
+					"streetAddress": "6 résidence Les Nouveaux Horizons",
+					"addressLocality": "Élancourt",
+					"postalCode": "78990",
+					"addressCountry": "FR"
+				},
+				{
+					"@type": "PostalAddress",
+					"@id": "https://massage-reiki.fr/#Maurepas",
+					"streetAddress": "14 place des Ardennes",
+					"addressLocality": "Maurepas",
+					"postalCode": "78310",
+					"addressCountry": "FR"
+				},
+				{
+					"@type": "PostalAddress",
+					"@id": "https://massage-reiki.fr/#Plaisir",
+					"streetAddress": "5, rue Edmond Rostand",
+					"addressLocality": "Plaisir",
+					"postalCode": "78370",
+					"addressCountry": "FR"
+				}
+			],
+			"sameAs": [
+				"https://massagedes5continents.com/membres/8424/Cophignon-Marie/",
+				"https://massages-reiki.fr/",
+				"https://marie.cophignon.net/"
+			]
+		},
+		{
+			"@type": "AggregateRating",
+			"@id": "https://massage-reiki.fr/#rating",
+			"ratingValue": 5,
+			"reviewCount": 18,
+			"itemReviewed": {
+				"@id": "https://massage-reiki.fr/#business"
+			}
+		},
+		{
+			"@type": "Service",
+			"@id": "https://massage-reiki.fr/#reiki",
+			"name": "Soin Reiki Usui",
+			"description": "Soin énergétique holistique ou ciblé réalisé en présence ou à distance.",
+			"provider": {
+				"@id": "https://massage-reiki.fr/#business"
+			}
+		},
+		{
+			"@type": "Service",
+			"@id": "https://massage-reiki.fr/#m5c",
+			"name": "Massage des 5 Continents",
+			"description": "Massage énergétique complet associant plusieurs techniques de massages, un soin Reiki Usui et huiles essentielles.",
+			"provider": {
+				"@id": "https://massage-reiki.fr/#business"
+			}
+		},
+		{
+			"@type": "Service",
+			"@id": "https://massage-reiki.fr/#eas",
+			"name": "Massage assis méthode EAS®",
+			"description": "Massage du dos basé sur la méthode EAS®, des épaules et des cervicales assis sur chaise ergonomique.",
+			"provider": {
+				"@id": "https://massage-reiki.fr/#business"
+			}
+		},
+		{
+			"@type": "Service",
+			"@id": "https://massage-reiki.fr/#entreprise",
+			"name": "Massages en entreprise",
+			"description": "Séances de massage assis en entreprise, événements QVT, salons et collectivités.",
+			"provider": {
+				"@id": "https://massage-reiki.fr/#business"
+			},
+			"areaServed": {
+				"@id": "https://massage-reiki.fr/serviceArea/#saint-quentin-en-yvelines"
+			}
+		},
+		{
+			"@type": "Service",
+			"@id": "https://massage-reiki.fr/#domicile",
+			"name": "Soins énergétiques et massages à domicile",
+			"description": "Prestations à domicile sur Saint-Quentin-en-Yvelines et environs.",
+			"provider": {
+				"@id": "https://massage-reiki.fr/#business"
+			},
+			"areaServed": {
+				"@id": "https://massage-reiki.fr/serviceArea/#saint-quentin-en-yvelines"
+			}
+		},
+		{
+			"@type": "Offer",
+			"@id": "https://massage-reiki.fr/#offer-reiki",
+			"name": "Soin Reiki Usui",
+			"itemOffered": {
+				"@id": "https://massage-reiki.fr/#reiki"
+			},
+			"priceSpecification": {
+				"@type": "PriceSpecification",
+				"priceCurrency": "EUR",
+				"minPrice": 40,
+				"maxPrice": 75
+			}
+		},
+		{
+			"@type": "Offer",
+			"@id": "https://massage-reiki.fr/#offer-m5c",
+			"name": "Massage des 5 Continents",
+			"itemOffered": {
+				"@id": "https://massage-reiki.fr/#m5c"
+			},
+			"priceSpecification": {
+				"@type": "PriceSpecification",
+				"priceCurrency": "EUR",
+				"minPrice": 80,
+				"maxPrice": 95
+			}
+		},
+		{
+			"@type": "Offer",
+			"@id": "https://massage-reiki.fr/#offer-eas",
+			"name": "Massage assis méthode EAS®",
+			"itemOffered": {
+				"@id": "https://massage-reiki.fr/#eas"
+			},
+			"priceSpecification": {
+				"@type": "PriceSpecification",
+				"priceCurrency": "EUR",
+				"minPrice": 25,
+				"maxPrice": 55
+			}
+		},
+		{
+			"@type": "Offer",
+			"@id": "https://massage-reiki.fr/#offer-duo",
+			"name": "Coffret Duo",
+			"description": "Deux soins au choix avec remise de 20 €."
+		},
+		{
+			"@type": "Offer",
+			"@id": "https://massage-reiki.fr/#offer-decouverte",
+			"name": "Offre découverte",
+			"description": "10 € de réduction sur un premier soin d'une valeur minimale de 50 €."
+		},
+		{
+			"@type": "Offer",
+			"@id": "https://massage-reiki.fr/#offer-parrainage",
+			"name": "Parrainage",
+			"description": "Réduction pour le parrain et le filleul."
+		},
+		{
+			"@type": "Offer",
+			"@id": "https://massage-reiki.fr/#offer-cadeau",
+			"name": "Carte cadeau",
+			"description": "Carte cadeau valable pendant un an."
+		}
+	]
+}

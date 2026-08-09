@@ -1,9 +1,10 @@
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
-import '../../scss/routes/M5C.scss';
-// import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
-// import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
+import '../../scss/routes/MassageEnEntreprise.scss';
+import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
+import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
 
-// import Cta from '../fragments/Ctas/Cta';
+import ImgMassEntrep1 from '../../assets/Massage-entreprise/massage-du-dos-assis-entreprise-petit-fils.jpg';
+
 import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
 import Faq from '../fragments/FAQ/Faq';
@@ -48,11 +49,11 @@ const MassageEnEntreprise = () => {
 										votre organisation et aux besoins de vos équipes.
 									</p>
 
-									{/* <BgMcImageAlternativeContainer
-										path={ImgM5CDos}
-										className='img-bas-dos'
-										alt='Massothérapeute réalisant un massage des 5 continents sur le bas du dos pour favoriser une détente profonde'
-									/> */}
+									<BgMcImageAlternativeContainer
+										path={ImgMassEntrep1}
+										className='img-petit-fils vertical'
+										alt='Massage du dos assis dans les locaux de l’agence de Plaisir de l’entreprise Petit-Fils'
+									/>
 								</div>
 								<div className='header-2-cta'>
 									<div className='cta-container-row header-2-cta-container'>
@@ -65,11 +66,11 @@ const MassageEnEntreprise = () => {
 									</blockquote>
 								</div>
 							</div>
-							{/* <BgMcImageContainer
-								path={ImgM5CDos}
-								className={'img-bas-dos'}
-								alt='Massothérapeute réalisant un massage des 5 continents sur le bas du dos pour favoriser une détente profonde'
-							/> */}
+							<BgMcImageContainer
+								path={ImgMassEntrep1}
+								className={'img-petit-fils'}
+								alt='Massage du dos assis dans les locaux de l’agence de Plaisir de l’entreprise Petit-Fils'
+							/>
 						</div>
 					</div>
 				</div>

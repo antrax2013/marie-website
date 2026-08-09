@@ -7,6 +7,7 @@ import { BlogEvent20260412SalonSensEveil4 } from './20260412-salon-bien-etre-man
 import { BlogEvent20260412RetourSalonSensEveil4 } from './20260425-retour-salon-bien-etre-manet-montigny-le-bretonneux';
 import { BlogEvent20260430RetourInitTestMuscu } from './20260502-retour-initiation-test-musculaire-kinesio';
 import { BlogEvent20260531PortesOuvertesPrintemps2026 } from './20260531-portes-ouvertes-bien-etre-plaisir-78370-printemps-2026';
+import { BlogEvent20260830GmarcheEtBienEtre } from './20260830-gmarche-jouars-pontchartrain-massages-assis-june-bien-etre';
 
 export const events = [
 	BlogEvent20250922EASPetitfils,
@@ -18,4 +19,5 @@ export const events = [
 	BlogEvent20260531PortesOuvertesPrintemps2026,
 	BlogArticleMassageSurChiseSQY,
 	BlogArticleMassageADomicilesSQY,
+	BlogEvent20260830GmarcheEtBienEtre,
 ];

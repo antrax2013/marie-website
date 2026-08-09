@@ -50,7 +50,14 @@
 		{
 			"key": "massage-en-entreprise-saint-quentin-en-yvelines",
 			"title": "Massage en entreprise à Saint‑Quentin‑en‑Yvelines – QVCT",
-			"description": "Massage en entreprise à SQY, détente, énergie et réduction du stress. Massage du dos assis EAS® pour améliorer la QVCT, à Saint‑Quentin‑en‑Yvelines"
+			"description": "Massage en entreprise à SQY, détente, énergie et réduction du stress. Massage du dos assis EAS® pour améliorer la QVCT, à Saint‑Quentin‑en‑Yvelines",
+			"canonical": "/massage-en-entreprise-saint-quentin-en-yvelines"
+		},
+		{
+			"key": "massage-en-entreprise",
+			"title": "Massage en entreprise à Saint‑Quentin‑en‑Yvelines – QVCT",
+			"description": "Massage en entreprise à SQY, détente, énergie et réduction du stress. Massage du dos assis EAS® pour améliorer la QVCT, à Saint‑Quentin‑en‑Yvelines",
+			"canonical": "/massage-en-entreprise-saint-quentin-en-yvelines"
 		},
 		{
 			"key": "mentions-legales",
@@ -121,6 +128,11 @@
 			"key": "massage-domicile-saint-quentin-yvelines",
 			"title": "Massage à domicile à SQY, Maurepas, Élancourt, Guyancourt",
 			"description": "Profitez d’un massage à domicile à SQY, Maurepas, Élancourt, Plaisir et Guyancourt. Relaxation, bien‑être et soins personnalisés directement chez vous."
+		},
+		{
+			"key": "20260830-gmarche-jouars-pontchartrain-massages-assis-june-bien-etre",
+			"title": "Ğmarché du 30 août : massages assis en June et bien-être",
+			"description": "Massages assis, détente et monnaie libre : vivez le Ğmarché du 30 août, une journée bien-être et échanges humains en June."
 		}
 	]
 }

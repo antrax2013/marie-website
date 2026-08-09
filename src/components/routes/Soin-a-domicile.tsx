@@ -1,6 +1,9 @@
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
-import '../../scss/routes/M5C.scss';
-// import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
+import '../../scss/routes/SoinDomicile.scss';
+
+import ImgSoinDomicile2 from '../../assets/soin-domicile/massage-a-domicile-du-dos-assis-eas-jardin.jpg';
+import ImgSoinDomicile1 from '../../assets/soin-domicile/massage-a-domicile-du-dos-assis-eas.jpg';
+
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import CtaOffres from '../fragments/Ctas/Offres';
 import ReviewContainer from '../fragments/Reviews/Reviews-Container';
@@ -11,6 +14,8 @@ import CtaDevis from '../fragments/Ctas/Devis';
 import McLinkReikiUsui from '../fragments/McLinks/McLink-Reiki-Usui';
 import McLinkM5C from '../fragments/McLinks/McLink-5-Continents';
 import McLinkMEAS from '../fragments/McLinks/McLink-Massage-EAS';
+import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
+import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
 
 const SoinADomicile = () => {
 	return (
@@ -44,11 +49,11 @@ const SoinADomicile = () => {
 										accorder une véritable parenthèse de bien‑être sans les
 										contraintes liées aux déplacements.
 									</p>
-									{/* <BgMcImageAlternativeContainer
-										path={ImgM5CDos}
-										className='img-bas-dos'
+									<BgMcImageAlternativeContainer
+										path={ImgSoinDomicile1}
+										className='img-soin-dom-1 vertical'
 										alt='Massothérapeute réalisant un massage des 5 continents sur le bas du dos pour favoriser une détente profonde'
-									/> */}
+									/>
 								</div>
 								<div className='header-2-cta'>
 									<div className='cta-container-row header-2-cta-container'>
@@ -61,11 +66,11 @@ const SoinADomicile = () => {
 									</blockquote>
 								</div>
 							</div>
-							{/* <BgMcImageContainer
-								path={ImgM5CDos}
-								className={'img-bas-dos'}
+							<BgMcImageContainer
+								path={ImgSoinDomicile1}
+								className={'img-soin-dom-1'}
 								alt='Massothérapeute réalisant un massage des 5 continents sur le bas du dos pour favoriser une détente profonde'
-							/> */}
+							/>
 						</div>
 					</div>
 				</div>
@@ -76,11 +81,11 @@ const SoinADomicile = () => {
 					itemProp='description'
 				>
 					<div className='massage-a-domicile-description-main-content'>
-						{/* <BgMcImageContainer
-							path={ImgM5C}
-							className='img-logo-M5C'
+						<BgMcImageContainer
+							path={ImgSoinDomicile2}
+							className='img-2'
 							alt='Logo de la Fédération du Massage des 5 Continents attestant de la certification'
-						/> */}
+						/>
 						<div className='massage-a-domicile-description-content'>
 							<p>
 								Que vous choisissiez un{' '}
@@ -96,11 +101,11 @@ const SoinADomicile = () => {
 								vous permettre de vous poser, de respirer et de retrouver une
 								sensation d’équilibre dans un espace de bien-être, le vôtre.
 							</p>
-							{/* <BgMcImageAlternativeContainer
-								path={ImgM5C}
-								className='img-logo-M5C'
+							<BgMcImageAlternativeContainer
+								path={ImgSoinDomicile2}
+								className='img-2'
 								alt='Logo de la Fédération du Massage des 5 Continents attestant de la certification'
-							/> */}
+							/>
 							<p>
 								Ma pratique s’inscrit dans une approche attentive, personnalisée
 								et respectueuse de votre environnement. Je me déplace à votre
@@ -140,13 +145,27 @@ const SoinADomicile = () => {
 							route ou à affronter les sollicitations du quotidien.
 						</p>
 						<p>Il est particulièrement adapté si vous recherchez : </p>
-						<ul>
-							<li>une pause ressourçante dans un rythme de vie soutenu</li>
-							<li>un soutien pour mieux gérer le stress</li>
-							<li>un moment pour vous reconnecter à votre corps</li>
-							<li>un soin raffiné et profond</li>
-							<li>un massage pensé comme une expérience unique</li>
-						</ul>
+
+						<div className='massage-a-domicile-benefits-lists'>
+							<div className='massage-a-domicile-benefits-list'>
+								<ul>
+									<li>Une pause ressourçante dans un rythme de vie soutenu</li>
+									<li>Un soutien pour mieux gérer le stress</li>
+									<li>Un moment pour vous reconnecter à votre corps</li>
+									<li>Un soin raffiné et profond</li>
+									<li>Un massage pensé comme une expérience unique</li>
+								</ul>
+							</div>
+							<div className='massage-a-domicile-target-disclaimer-list'>
+								<ul>
+									<li>Pas de temps perdu dans les trajets</li>
+									<li>Confort et intimité de votre domicile</li>
+									<li>Installation professionnelle complète</li>
+									<li>Accompagnement personnalisé</li>
+									<li>Détente prolongée après la séance</li>
+								</ul>
+							</div>
+						</div>
 						<p>
 							Le domicile constitue souvent un cadre rassurant et familier qui
 							favorise le relâchement physique et émotionnel. Vous restez dans
@@ -159,17 +178,6 @@ const SoinADomicile = () => {
 							séance peut également être réalisée sur une terrasse, dans un
 							jardin ou dans tout autre espace calme de votre choix.
 						</p>
-						<div className='massage-a-domicile-benefits-lists'>
-							<div className='massage-a-domicile-benefits-list'>
-								<ul>
-									<li>Pas de temps perdu dans les trajets</li>
-									<li>Confort et intimité de votre domicile</li>
-									<li>Installation professionnelle complète</li>
-									<li>Accompagnement personnalisé</li>
-									<li>Détente prolongée après la séance</li>
-								</ul>
-							</div>
-						</div>
 						<blockquote>
 							La douceur de votre domicile, l’exigence d’un soin professionnel.
 						</blockquote>
@@ -177,116 +185,104 @@ const SoinADomicile = () => {
 				</div>
 				<ParagraphSeparator />
 				<div className='massage-a-domicile-targets-container'>
-					<h2>Quels soins puis-je réaliser à votre domicile ?</h2>
+					<div className='two-column-block-main-container'>
+						<div className='two-column-block'>
+							<div>
+								<h2>Quels soins puis-je réaliser à votre domicile ?</h2>
 
-					<div className='massage-a-domicile-targets-lists'>
-						<div className='massage-a-domicile-target-list'>
+								<div className='massage-a-domicile-targets-lists'>
+									<div className='massage-a-domicile-target-list'>
+										<p>
+											La plupart de mes prestations peuvent être réalisées
+											directement chez vous.
+										</p>
+										<ul>
+											<li>
+												<McLinkReikiUsui text='Reiki Usui' className='strong' />
+												<br />
+												Un soin énergétique doux favorisant détente, équilibre
+												et harmonisation.
+											</li>
+
+											<li>
+												<McLinkM5C
+													text='Massage des 5 Continents'
+													className='strong'
+												/>
+												<br />
+												Un massage complet alliant différentes techniques de
+												massage, huiles essentielles et Reiki Usui.
+											</li>
+
+											<li>
+												<McLinkMEAS
+													text='Massage du dos assis méthode EAS®'
+													className='strong'
+												/>
+												<br />
+												Un massage énergétique rapide permettant de relâcher les
+												tensions et de retrouver vitalité et disponibilité.
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div className='massage-a-domicile-prices-container'>
+									<h2>Comment se déroule une séance à domicile ?</h2>
+									<ol>
+										<li>Prise de rendez-vous et échange sur vos besoins.</li>
+										<li>Installation du matériel dans l'espace prévu.</li>
+										<li>Réalisation du soin choisi.</li>
+										<li>
+											Temps d'échange après la séance si vous le souhaitez.
+										</li>
+										<li>
+											Vous profitez pleinement des bienfaits du soin dans le
+											confort de votre domicile.
+										</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+						<div className='massage-a-domicile-prices-inner-content'>
+							<h2>Zone d'intervention à domicile</h2>
 							<p>
-								La plupart de mes prestations peuvent être réalisées directement
-								chez vous.
+								Je me déplace principalement sur Saint‑Quentin‑en‑Yvelines et
+								ses environs :
 							</p>
-
 							<ul>
-								<li>
-									<McLinkReikiUsui text='Reiki Usui' className='strong' />
-									<br />
-									Un soin énergétique doux favorisant détente, équilibre et
-									harmonisation.
-								</li>
-
-								<li>
-									<McLinkM5C
-										text='Massage des 5 Continents'
-										className='strong'
-									/>
-									<br />
-									Un massage complet alliant différentes techniques de massage,
-									huiles essentielles et Reiki Usui.
-								</li>
-
-								<li>
-									<McLinkMEAS
-										text='Massage du dos assis méthode EAS®'
-										className='strong'
-									/>
-									<br />
-									Un massage énergétique rapide permettant de relâcher les
-									tensions et de retrouver vitalité et disponibilité.
-								</li>
+								<li>Maurepas</li>
+								<li>Élancourt</li>
+								<li>Guyancourt</li>
+								<li>Montigny-le-Bretonneux</li>
+								<li>Voisins-le-Bretonneux</li>
+								<li>Trappes</li>
+								<li>Coignières</li>
+								<li>Plaisir</li>
+								<li>La Verrière</li>
+								<li>Le Mesnil-Saint-Denis</li>
 							</ul>
+							<p>
+								En dehors de cette zone, n’hésitez pas à me contacter pour que
+								nous puissions étudier ensemble la possibilité d’un déplacement.
+								<br />
+								<br />
+								<CtaDevis />
+							</p>
 						</div>
 					</div>
-					<blockquote>
-						Le plus beau voyage est parfois celui que l'on entreprend dans le
-						confort de son domicile.
-					</blockquote>
-				</div>
-				<ParagraphSeparator />
-				<div className='massage-a-domicile-prices-container'>
-					<h2>Comment se déroule une séance à domicile ?</h2>
-					<ol>
-						<li>Prise de rendez-vous et échange sur vos besoins.</li>
-						<li>Installation du matériel dans l'espace prévu.</li>
-						<li>Réalisation du soin choisi.</li>
-						<li>Temps d'échange après la séance si vous le souhaitez.</li>
-						<li>
-							Vous profitez pleinement des bienfaits du soin dans le confort de
-							votre domicile.
-						</li>
-					</ol>
 					<div className='header-2-cta'>
 						<div className='cta-container-row header-2-cta-container'>
 							<CtaRendezVous />
 							<CtaOffres />
 						</div>
+						<br />
 						<blockquote className='cta-blockquote'>
 							Là où vous vous sentez le mieux commence souvent le chemin du
 							bien-être.
 						</blockquote>
 					</div>
 				</div>
-				<div className='massage-a-domicile-prices-inner-content'>
-					<h2>Zone d'intervention à domicile</h2>
-					<p>
-						Je me déplace principalement sur Saint‑Quentin‑en‑Yvelines et ses
-						environs :
-					</p>
-					<ul>
-						<li>Maurepas</li>
-						<li>Élancourt</li>
-						<li>Guyancourt</li>
-						<li>Montigny-le-Bretonneux</li>
-						<li>Voisins-le-Bretonneux</li>
-						<li>Trappes</li>
-						<li>Coignières</li>
-						<li>Plaisir</li>
-						<li>La Verrière</li>
-						<li>Le Mesnil-Saint-Denis</li>
-					</ul>
-					<p>
-						En dehors de cette zone, n’hésitez pas à me contacter pour que nous
-						puissions étudier ensemble la possibilité d’un déplacement.
-						<br />
-						<br />
-						<CtaDevis />
-					</p>
-				</div>
-				{/* <div className='massage-a-domicile-prices-inner-content'>
-					<PricesM5C title='Séance de 1h30 - 70 mins de soin' />
-					<div className='cta-container-row footer-cta-container massage-a-domicile-prices-cta'>
-						<CtaRendezVous />
-						<Cta
-							link='/offres-et-tarifs#massage-5-contients-tarifs'
-							title={
-								'Cliquez ici pour découvrir mes soins offres de soins, carte cadeau, packs et promotions.'
-							}
-							ctaLinkClassName='cta-secondary'
-							ctaText='Découvrir mes offres de soins'
-						/>
-					</div>
-				</div> */}
 			</div>
-			{/* </div> */}
 			<ParagraphSeparator />
 			{/* Avis */}
 			<div className='review-container'>

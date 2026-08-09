@@ -1,0 +1,126 @@
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": "1",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/",
+				"name": "Accueil",
+				"description": "Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "2",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/massage-assis-methode-eas",
+				"name": "Massage assis méthode EAS®",
+				"description": "Profitez du massage assis méthode EAS® sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise : détente profonde, relâchement des tensions et regain d’énergie en quelques minutes."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "3",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/massage-des-5-continents",
+				"name": "Massage des 5 Continents (M5C)",
+				"description": "Un soin puissant mêlant massage, soin énergétique et aromathérapie. Le Massage 5 Continents (M5C), sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "4",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/reiki-usui",
+				"name": "Reiki Usui",
+				"description": "Séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies. Un moment de douceur et de recentrage."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "5",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/massage-en-entreprise-saint-quentin-en-yvelines",
+				"name": "Massage en entreprise à Saint‑Quentin‑en‑Yvelines",
+				"description": "Massage en entreprise à SQY : détente, énergie et réduction du stress. Massage du dos assis EAS® pour améliorer la QVCT. Interventions sur Saint‑Quentin‑en‑Yvelines et environs."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "6",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/soins-a-domicile-saint-quentin-en-yvelines",
+				"name": "Soins à domicile à Saint-Quentin-en-Yvelines",
+				"description": "Reiki Usui, Massage des 5 Continents et massage assis EAS® à domicile sur Saint‑Quentin‑en‑Yvelines. Confort, qualité et sérénité."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "7",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/offres-et-tarifs",
+				"name": "Tarifs et Offres",
+				"description": "Consultez les tarifs des massages énergétique et séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Des soins adaptés à vos besoins pour un bien‑être durable."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "8",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/contact",
+				"name": "Contact",
+				"description": "Besoin d’un renseignement ou envie de réserver une séance ? Contactez Massage Reiki facilement."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "9",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/politique-de-confidentialite",
+				"name": "Politique de confidentialité",
+				"description": "Informations sur la gestion des données personnelles, cookies et conformité RGPD."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "10",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/mentions-legales",
+				"name": "Mentions légales",
+				"description": "Mentions légales concernant l’éditeur du site, l’hébergeur et les responsabilités."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "11",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/plan-du-site",
+				"name": "Le plan du site",
+				"description": "Navigation complète du site Massage Reiki : pages, services, tarifs et informations légales."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "12",
+			"item": {
+				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr//erreur-404",
+				"name": "Erreur 404",
+				"description": "La page demandée est introuvable."
+			}
+		}
+	]
+}

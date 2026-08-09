@@ -6,6 +6,7 @@ import 'primeflex/primeflex.css';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 import Message from './components/fragments/Message';
+import MainJsonLd from './components/fragments/JsonLd/Main-JsonLd';
 
 // Menu
 const Accueil = lazy(() => import('./components/routes/Accueil'));
@@ -60,6 +61,7 @@ const ScrollButton = lazy(
 const App = () => {
 	return (
 		<div className='App'>
+			<MainJsonLd />
 			<BrowserRouter>
 				{/* <Message
 					link='/offres-et-tarifs'
@@ -104,6 +106,11 @@ const App = () => {
 								path='massage-en-entreprise-saint-quentin-en-yvelines'
 								element={<MassageEnEntreprise />}
 							/>
+							<Route
+								path='massage-en-entreprise'
+								element={<MassageEnEntreprise />}
+							/>
+
 							<Route
 								path='soins-a-domicile-saint-quentin-en-yvelines'
 								element={<SoinADomicile />}
