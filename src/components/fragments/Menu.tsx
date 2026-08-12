@@ -25,7 +25,6 @@ const Menu = ({ ...props }) => {
 				title='Cliquez ici pour retourner à la page d’accueil'
 			>
 				<img
-					itemProp='logo'
 					alt='Fleur de vie utilisée comme logo pour illustrer le bien-être et l’harmonisation énergétique'
 					src={logo}
 					className='logo'

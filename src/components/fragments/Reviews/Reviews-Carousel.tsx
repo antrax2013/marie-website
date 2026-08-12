@@ -45,7 +45,8 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 			<section
 				itemProp='itemReviewed'
 				itemScope
-				itemType='https://schema.org/Product'
+				itemType='https://schema.org/Service'
+				itemID={`https://massage-reiki.fr/#${item.tags.toLowerCase()}`}
 			>
 				<meta itemProp='name' content={productName} />
 				<div

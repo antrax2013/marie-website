@@ -26,7 +26,7 @@
 			]
 		},
 		{
-			"@type": "LocalBusiness",
+			"@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
 			"additionalType": "Soins énergétiques",
 			"@id": "https://massage-reiki.fr/#business",
 			"name": "Marie Cophignon - Soins énergétiques & Massages bien-être",
@@ -42,6 +42,7 @@
 			"foundingDate": "2022-03-01",
 			"leiCode": "91042798800019",
 			"iso6523Code": "0009:91042798800019",
+			"vatID": "FR91042798800019",
 			"priceRange": "25-95 EUR",
 			"paymentAccepted": [
 				"Cash",
@@ -49,6 +50,14 @@
 				"June",
 				"Banktransfer",
 				"CreditCard"
+			],
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+					"opens": "09:00",
+					"closes": "19:00"
+				}
 			],
 			"serviceArea": {
 				"@type": "AdministrativeArea",
@@ -111,7 +120,7 @@
 			"@type": "AggregateRating",
 			"@id": "https://massage-reiki.fr/#rating",
 			"ratingValue": 5,
-			"reviewCount": 18,
+			"reviewCount": 24,
 			"itemReviewed": {
 				"@id": "https://massage-reiki.fr/#business"
 			}
