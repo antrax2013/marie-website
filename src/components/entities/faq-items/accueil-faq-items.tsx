@@ -27,6 +27,30 @@ export const AccueilFaqItems: Array<iFaqItem> = [
 		),
 	},
 	{
+		question:
+			'Les soins ont-ils un caractère erotique, thérapeutique ou médical ?',
+		response: (
+			<>
+				<p>
+					Non. Tous les massages et soins énergétiques sont strictement soins de
+					confort et de bien-être professionnels,{' '}
+					<b>
+						non médicaux, non thérapeutique et sans aucun caractère sexuel ou
+						érotique
+					</b>
+					. Ils ne se substitutent ni un traitement médical ou thérapeutique ni
+					à de la kinésithérapie.
+				</p>
+				<p>
+					Je m'engage à offrir un espace sécurisant et bienveillant. En
+					contrepartie, tout manquement au respect du praticien ou tout
+					comportement inapproprié mettra fin à la séance sans remboursement ni
+					remise.
+				</p>
+			</>
+		),
+	},
+	{
 		question: 'Quels sont mes horaires d’ouverture et où me trouver ? ',
 		response: (
 			<>

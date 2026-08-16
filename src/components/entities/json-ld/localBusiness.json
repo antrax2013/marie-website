@@ -65,16 +65,30 @@
 				"@id": "https://massage-reiki.fr/serviceArea/#saint-quentin-en-yvelines"
 			},
 			"areaServed": [
-				"Guyancourt",
-				"Élancourt",
-				"Saint-Quentin-en-Yvelines",
-				"Montigny-le-Bretonneux",
-				"Voisins-le-Bretonneux",
-				"Trappes",
-				"Maurepas",
-				"La Verrière",
-				"Magny-les-Hameaux",
-				"Coignières"
+				{
+					"@type": "AdministrativeArea",
+					"name": "Saint-Quentin-en-Yvelines"
+				},
+				{
+					"@type": "AdministrativeArea",
+					"name": "Maurepas"
+				},
+				{
+					"@type": "AdministrativeArea",
+					"name": "Élancourt"
+				},
+				{
+					"@type": "AdministrativeArea",
+					"name": "Guyancourt"
+				},
+				{
+					"@type": "AdministrativeArea",
+					"name": "Montigny-le-Bretonneux"
+				},
+				{
+					"@type": "AdministrativeArea",
+					"name": "Plaisir"
+				}
 			],
 			"address": [
 				{
@@ -162,6 +176,16 @@
 			},
 			"areaServed": {
 				"@id": "https://massage-reiki.fr/serviceArea/#saint-quentin-en-yvelines"
+			},
+			"hasOfferCatalog": {
+				"@type": "OfferCatalog",
+				"name": "Massages Bien-être à pour les entreprises sur Saint-Quentin en Yvelines et ses alentours.",
+				"itemListElement": [
+					{
+						"@type": "Offer",
+						"@id": "https://massage-reiki.fr/#offer-eas"
+					}
+				]
 			}
 		},
 		{
@@ -174,6 +198,24 @@
 			},
 			"areaServed": {
 				"@id": "https://massage-reiki.fr/serviceArea/#saint-quentin-en-yvelines"
+			},
+			"hasOfferCatalog": {
+				"@type": "OfferCatalog",
+				"name": "Soins Bien-être à domicile",
+				"itemListElement": [
+					{
+						"@type": "Offer",
+						"@id": "https://massage-reiki.fr/#offer-reiki"
+					},
+					{
+						"@type": "Offer",
+						"@id": "https://massage-reiki.fr/#offer-m5c"
+					},
+					{
+						"@type": "Offer",
+						"@id": "https://massage-reiki.fr/#offer-eas"
+					}
+				]
 			}
 		},
 		{

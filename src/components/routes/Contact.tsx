@@ -230,6 +230,13 @@ const Contact = () => {
 						/>
 						{getFormErrorMessage('message')}
 					</div>
+					<p>
+						<b>
+							Soins exclusivement professionnels et non sexuels. Tout
+							comportement inapproprié interrompt immédiatement la séance
+							(prestation due).
+						</b>
+					</p>
 					<div className='form-footer'>
 						<Button
 							type='submit'

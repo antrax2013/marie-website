@@ -11,6 +11,9 @@ import McLinkReikiUsui from '../../../fragments/McLinks/McLink-Reiki-Usui';
 import McLinkM5C from '../../../fragments/McLinks/McLink-5-Continents';
 import McLinkMEAS from '../../../fragments/McLinks/McLink-Massage-EAS';
 
+import JsonLd from '../../../fragments/JsonLd/JsonLd';
+import * as ArticleLd from '../../../entities/json-ld/blog/massage-a-domicile.json';
+
 export const BlogArticleMassageADomicilesSQY: iBlog = {
 	h1: 'Massage à domicile à Saint‑Quentin‑en‑Yvelines, Maurepas, Élancourt et Guyancourt – Bien‑être et détente chez vous',
 	slug: 'massage-domicile-saint-quentin-yvelines',
@@ -35,6 +38,7 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 	],
 	content: (
 		<>
+			<JsonLd data={ArticleLd} />
 			<p>
 				Le
 				<McLinkSoinDomicile text='massage à domicile' />

@@ -100,19 +100,19 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 						</p>
 						<p>
 							<span itemProp='name'>
-								{item.tags == 'M5C' && (
+								{item.tags.toUpperCase() == 'M5C' && (
 									<Badge
 										value='Massage des 5 continents'
 										severity='danger'
 									></Badge>
 								)}
-								{item.tags == 'EAS' && (
+								{item.tags.toUpperCase() == 'EAS' && (
 									<Badge
 										value='Massage assis méthd. EAS®'
 										severity='info'
 									></Badge>
 								)}
-								{item.tags == 'Reiki' && (
+								{item.tags.toUpperCase() == 'REIKI' && (
 									<Badge value='Reiki Usui' severity='success'></Badge>
 								)}
 							</span>

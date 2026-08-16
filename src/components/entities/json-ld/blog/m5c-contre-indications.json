@@ -1,0 +1,23 @@
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "BlogPosting",
+			"@id": "https://massage-reiki.fr/articles/contre-indications-massage-5-continents/#article",
+			"headline": "Quelles sont les contre-indications du Massage des 5 Continents ?",
+			"description": "Grossesse, huiles essentielles, santé : découvrez toutes les contre-indications du Massage des 5 Continents et les alternatives grâce aux huiles végétales pures.",
+			"mainEntityOfPage": "https://massage-reiki.fr/articles/contre-indications-massage-5-continents",
+			"inLanguage": "fr-FR",
+			"datePublished": "2026-08-15T09:00:00+02:00",
+			"author": {
+				"@id": "https://massage-reiki.fr/#marie"
+			},
+			"publisher": {
+				"@id": "https://massage-reiki.fr/#marie"
+			},
+			"about": {
+				"@id": "https://massage-reiki.fr/#m5c"
+			}
+		}
+	]
+}

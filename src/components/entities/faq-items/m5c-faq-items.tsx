@@ -7,10 +7,10 @@ export const M5CFaqItems: Array<iFaqItem> = [
 			<>
 				<p>
 					Le Massage des 5 Continents s’adresse à toute personne souhaitant se
-					détendre, relâcher les tensions et retrouver une harmonie globale. Il
-					convient aussi bien aux adultes qu’aux adolescents, et peut être
-					adapté en fonction de votre sensibilité, de votre état du moment ou de
-					vos besoins spécifiques.
+					détendre, relâcher les tensions et retrouver une harmonie globale.
+					Dans ma pratique, je propose ce soin exclusivement aux adultes
+					majeurs. Il est adapté en fonction de votre sensibilité et de vos
+					besoins du moment.
 				</p>
 				<p>
 					Certaines situations demandent toutefois une attention particulière.
@@ -24,6 +24,25 @@ export const M5CFaqItems: Array<iFaqItem> = [
 					Mon intention est simple : vous offrir un soin sur-mesure, accessible
 					et respectueux de chacun, pour un moment de bien‑être en toute
 					sérénité.
+				</p>
+			</>
+		),
+	},
+	{
+		question: 'Quel est le cadre de pratique et de déontologie ?',
+		response: (
+			<>
+				<p>
+					Les soins proposés sont exclusivement dédiés au bien-être, au
+					lâcher-prise et à la santé holistique.{' '}
+					<b>Ils ne comportent aucun caractère sexuel, tantrique ou érotique</b>
+					.
+				</p>
+				<p>
+					Le massage s'effectue dans le respect strict de la personne et du
+					cadre professionnel. Tout comportement, propos ou geste déplacé
+					entraînera <b>l'interruption immédiate de la séance</b>, et
+					l'intégralité de la prestation restera due.
 				</p>
 			</>
 		),

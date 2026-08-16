@@ -176,7 +176,7 @@ const Massage5Continents = () => {
 									<li>
 										Un Allègement des charges émotionnelles et des blocages
 									</li>
-									<li>Une amélioration la qualité du sommeil</li>
+									<li>Une amélioration de la qualité du sommeil</li>
 									<li>Un soutien à la vitalité et une sensation de légèreté</li>
 									<li>Un recentrage et une meilleure connexion à soi</li>
 								</ul>
@@ -195,6 +195,21 @@ const Massage5Continents = () => {
 						<blockquote>
 							Quand le corps se détend, l’énergie circule et l’esprit respire.
 						</blockquote>
+						<h3>Une synergie unique d'huiles végétales et essentielles</h3>
+						<p>
+							Le soin s'appuie sur la richesse de 5 huiles végétales bio
+							(avocat, amande douce, macadamia, argan, noyau d'abricot)
+							associées à un complexe d'huiles essentielles ciblées aux vertus
+							détoxifiantes et relaxantes :
+						</p>
+						<ul>
+							<li>
+								<b>Huiles essentielles</b> : Arbre à thé (tea tree), citron,
+								cyprès, eucalyptus, géranium, gingembre, lavande, menthe
+								poivrée, myrrhe, niaouli, orange douce, ravintsara, romarin,
+								sarriette, ylang-ylang.
+							</li>
+						</ul>
 					</div>
 				</div>
 				<ParagraphSeparator />
@@ -204,7 +219,10 @@ const Massage5Continents = () => {
 						Ce soin holistique convient à toute personne souhaitant s’offrir un
 						véritable lâcher‑prise, tant physique que mental.
 					</p>
-					<b>Ce massage est destiné exclusivement aux adultes majeurs.</b>
+					<b>
+						Dans ma pratique, je réserve ce soin exclusivement aux adultes
+						majeurs.
+					</b>
 
 					<div className='massage-cinq-continents-targets-lists'>
 						<div className='massage-cinq-continents-target-list'>
@@ -241,11 +259,11 @@ const Massage5Continents = () => {
 						le signaler.
 					</p>
 					<p>
-						Par ailleurs, certaines huiles utilisées étant photosensibles, il
-						est recommandé de ne pas s’exposer au soleil après un Massage des 5
-						Continents. Il est également préférable de manger léger avant le
-						soin et de retirer bijoux et piercings afin de profiter pleinement
-						de la séance.
+						Par ailleurs, certaines huiles utilisées étant <b>photosensibles</b>
+						, il est recommandé de ne pas s’exposer au soleil après un Massage
+						des 5 Continents. Il est également préférable de{' '}
+						<b>manger léger avant le soin et de retirer bijoux et piercings</b>{' '}
+						afin de profiter pleinement de la séance.
 					</p>
 					<blockquote>
 						Chaque séance est une bulle régénérante, accordée à votre état du

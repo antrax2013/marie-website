@@ -12,6 +12,8 @@ export interface iCta {
 
 export type CtaClassNameProps = {
 	className?: string | null;
+	ctaText?: string | JSX.Element;
+	title?: string;
 };
 
 const Cta = ({

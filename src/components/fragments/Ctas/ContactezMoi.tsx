@@ -1,21 +1,21 @@
 import Cta, { CtaClassNameProps } from './Cta';
 
-const CtaContactezMoi = ({ className }: CtaClassNameProps) => {
+const CtaContactezMoi = ({ className, ctaText, title }: CtaClassNameProps) => {
 	return (
 		<>
 			<Cta
 				linkType='tel'
 				link='tel:07.73.55.27.70'
-				title={'Contactez-moi pour tous renseignements.'}
+				title={`${title ?? 'Contactez-moi pour tous renseignements ou réserver une séance.'}`}
 				ctaLinkClassName={`${className ?? 'cta-primary'} phone md:hidden`}
-				ctaText='☏ Contactez-moi'
+				ctaText={`${ctaText ?? '☏ Contactez-moi'}`}
 				meta={`itemProp='telephone'`}
 			/>
 			<Cta
 				link='/contact?sujet=prise-rendez-vous'
-				title={'Contactez-moi pour tous renseignements.'}
+				title={`${title ?? 'Contactez-moi pour tous renseignements ou réserver une séance.'}`}
 				ctaLinkClassName={`${className ?? 'cta-primary'} pc hidden md:flex`}
-				ctaText='Contactez-moi'
+				ctaText={`${ctaText ?? 'Contactez-moi'}`}
 			/>
 		</>
 	);

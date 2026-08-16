@@ -5,10 +5,15 @@ import { Badge } from 'primereact/badge';
 import { useEffect, useState } from 'react';
 import { Galleria } from 'primereact/galleria';
 import { iImage } from '../McImage/McImage';
-import { getBadgeSeverityFromTag } from '../../../modules/helpers';
+import {
+	getBadgeSeverityFromTag,
+	getSimilarArticles,
+} from '../../../modules/helpers';
 
 import '../../../scss/fragments/BlogArticle.scss';
 import SharePopup from '../Tools/SharePopup';
+import BlogMiniCard from './BlogMiniCard';
+import ParagraphSeparator from '../Tools/Paragraph-Separator';
 
 const BlogArticle = () => {
 	const { slug } = useParams<{ slug: string }>();
@@ -27,6 +32,8 @@ const BlogArticle = () => {
 	const thumbnailTemplate = (item: iImage) => {
 		return <img src={item.path} alt={item.alt} style={{ width: '50px' }} />;
 	};
+
+	const similars = getSimilarArticles(data, events);
 
 	return (
 		<>
@@ -69,6 +76,26 @@ const BlogArticle = () => {
 					</div>
 				</div>
 			</article>
+			<ParagraphSeparator />
+			<aside
+				className='related-articles-section'
+				aria-label='Articles connexes'
+			>
+				<h2 className='related-title'>📖 À lire aussi</h2>
+
+				<div className='related-articles-grid'>
+					{similars.map((similar) => (
+						<BlogMiniCard
+							slug={similar.slug}
+							date={similar.date}
+							images={similar.images}
+							type={similar.type}
+							tags={[]}
+							h1={similar.h1}
+						/>
+					))}
+				</div>
+			</aside>
 		</>
 	);
 };

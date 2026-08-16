@@ -52,19 +52,14 @@ export const BlogArticleCabinetGrandeSalle: iBlog = {
 			</p>
 			<h2>Un nouvel espace pensé pour votre bien-être</h2>
 			<p>
-				Cet espace a été pensé pour accueillir mes différentes pratiques : le
-				<McLinkReikiUsui text='Reiki Usui' className='italic' noWrap={true} />,
-				le{' '}
-				<McLinkM5C
-					text='Massage des 5 Continents'
-					className='italic'
-					noWrap={true}
-				/>
-				, ainsi que sur mon
-				<McLinkMEAS text='Massage du dos assis méthode EAS®' />. Ces approches
-				complémentaires permettent de relâcher les tensions, d’apaiser le mental
-				et de rééquilibrer l’énergie, dans un environnement calme et harmonieux
-				au cœur de Saint‑Quentin‑en‑Yvelines.
+				Cet espace a été pensé pour accueillir mes différentes pratiques : le{' '}
+				<McLinkReikiUsui text='Reiki Usui' noWrap={true} />, le{' '}
+				<McLinkM5C text='Massage des 5 Continents' noWrap={true} />, ainsi que
+				sur mon{' '}
+				<McLinkMEAS text='Massage du dos assis méthode EAS®' noWrap={true} />.
+				Ces approches complémentaires permettent de relâcher les tensions,
+				d’apaiser le mental et de rééquilibrer l’énergie, dans un environnement
+				calme et harmonieux au cœur de Saint‑Quentin‑en‑Yvelines.
 			</p>
 			<h2>Pourquoi venir au cabinet Blowball ?</h2>
 			<ul>

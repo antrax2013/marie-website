@@ -1,0 +1,24 @@
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "BlogPosting",
+			"@id": "https://massage-reiki.fr/articles/massage-domicile-saint-quentin-yvelines",
+			"headline": "Massage à domicile à Saint‑Quentin‑en‑Yvelines, Maurepas, Élancourt et Guyancourt – Bien‑être et détente chez vous",
+			"description": "Apportez le bien-être directement chez vous. Découvrez mes prestations de massages et soins énergétiques (Reiki, M5C, EAS) à domicile sur SQY.",
+			"mainEntityOfPage": "https://massage-reiki.fr",
+			"inLanguage": "fr-FR",
+			"datePublished": "2026-06-10T09:00:00+02:00",
+			"dateModified": "2026-06-10T09:00:00+02:00",
+			"author": {
+				"@id": "https://massage-reiki.fr/#marie"
+			},
+			"publisher": {
+				"@id": "https://massage-reiki.fr/#marie"
+			},
+			"about": {
+				"@id": "https://massage-reiki.fr/#domicile"
+			}
+		}
+	]
+}

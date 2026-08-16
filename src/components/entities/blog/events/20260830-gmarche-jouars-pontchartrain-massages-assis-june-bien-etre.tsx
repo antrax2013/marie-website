@@ -169,7 +169,8 @@ export const BlogEvent20260830GmarcheEtBienEtre: iBlog = {
 
 				<ParagraphSeparator />
 				<h2>
-					Praticienne massage à Jouars-Pontchartrain : Venez me rencontrer !
+					Pour massage profressionnel à Jouars-Pontchartrain : Venez me
+					rencontrer sur le Ğmarché !
 				</h2>
 				<p>
 					Que vous soyez déjà utilisateur de la monnaie libre ou simplement
