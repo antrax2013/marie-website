@@ -34,22 +34,13 @@ const Consultations = () => {
 					<section className='paragraphe-1-1'>
 						<h2>Organisations de mes consultations</h2>
 						<section className='paragraphe-content'>
-							<span
-								itemProp='provider'
-								itemScope
-								itemType='https://schema.org/HealthClub'
-							>
-								<meta itemProp='openingHours' content='Mo-Fr 09:00-19:00' />
-							</span>
 							<p>
 								Je consulte, uniquement sur <b>rendez-vous</b> du lundi au
 								vendredi de 09h00 à 19h00. Pour prendre rendez-vous, je suis
 								joignable par téléphone au{' '}
-								<span itemProp='telephone'>
-									<a href={`tel:${import.meta.env.VITE_META_NUMTEL}`}>
-										{import.meta.env.VITE_META_NUMTEL}
-									</a>
-								</span>
+								<a href={`tel:${import.meta.env.VITE_META_NUMTEL}`}>
+									{import.meta.env.VITE_META_NUMTEL}
+								</a>
 							</p>
 							<p>J'aurais le plaisir de vous recevoir en cabinet :</p>
 							<ul>
@@ -85,8 +76,7 @@ const Consultations = () => {
 								Je me déplace à votre domicile sur Saint-Quentin-en-Yvelines et
 								ses environs :
 							</p>
-							<section itemScope itemType='https://schema.org/Service'>
-								<meta itemProp='providerMobility' content='dynamic' />
+							<section>
 								<ul className='ul-perimetre'>
 									{[
 										'Maurepas',
@@ -100,9 +90,7 @@ const Consultations = () => {
 										'Voisins-le-Bretonneux',
 										'Plaisir',
 									].map((city) => (
-										<li itemProp='areaServed' key={`li-${city}`}>
-											{city}
-										</li>
+										<li key={`li-${city}`}>{city}</li>
 									))}
 								</ul>
 							</section>

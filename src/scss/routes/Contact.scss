@@ -2,16 +2,18 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-}
+	padding: 2rem 5rem;
 
-.article.contact form .field {
-	margin-right: 15%;
-}
+	.field {
+		margin-right: 15%;
+	}
 
-.article.contact form .form-footer {
-	display: block;
-	width: 100%;
-	text-align: center;
+	.form-footer,
+	.form-footer > p {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 @media (max-width: 426px) {

@@ -9,7 +9,6 @@ const CtaRendezVous = () => {
 				title={'Contactez-moi pour prendre rendez-vous.'}
 				ctaLinkClassName='cta-primary phone md:hidden'
 				ctaText='☏ Prendre rendez-vous'
-				meta={`itemProp='telephone'`}
 			/>
 			<Cta
 				link='/contact?sujet=prise-rendez-vous'

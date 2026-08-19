@@ -53,9 +53,9 @@ const ActusEtNews = () => {
 								</p>
 								<div className='header-2-description'>
 									<p>
-										Bienvenue la partie blog du site ##main-web-site-url##,
-										l’espace dédié au bien‑être sur Saint‑Quentin‑en‑Yvelines,
-										Élancourt et Guyancourt.
+										Bienvenue la partie blog du site massage-reiki.fr, l’espace
+										dédié au bien‑être sur Saint‑Quentin‑en‑Yvelines, Élancourt
+										et Guyancourt.
 									</p>
 									<div className='img-cocon-l-container size-l-hidden'>
 										<McImage

@@ -18,16 +18,17 @@ import { PricesM5C } from '../fragments/Prices/massage-5-continents';
 import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
 import McLinkEnEntreprise from '../fragments/McLinks/McLink-En-Entreprise';
 import McLinkReikiUsui from '../fragments/McLinks/McLink-Reiki-Usui';
+import CtaContactezMoi from '../fragments/Ctas/ContactezMoi';
 
 const Massage5Continents = () => {
 	return (
 		<>
-			<div className='M5C' itemScope itemType='https://schema.org/Offer'>
+			<div className='M5C'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
 						<div className='header-2-container'>
 							<div className='header-2-content'>
-								<h1 itemProp='name'>
+								<h1>
 									Le Massage des 5 Continents (M5C) - un soin holistique, une
 									méthode signature, un bien‑être profond
 								</h1>
@@ -78,10 +79,7 @@ const Massage5Continents = () => {
 				</div>
 
 				<ParagraphSeparator />
-				<div
-					className='massage-cinq-continents-description-container'
-					itemProp='description'
-				>
+				<div className='massage-cinq-continents-description-container'>
 					<div className='massage-cinq-continents-description-main-content'>
 						<BgMcImageContainer
 							path={ImgM5C}
@@ -270,7 +268,23 @@ const Massage5Continents = () => {
 						moment pour vous offrir exactement ce dont vous avez besoin.
 					</blockquote>
 				</div>
-				<ParagraphSeparator />
+				{/* <ParagraphSeparator /> */}
+				<br />
+				<br />
+				<blockquote className='disclaimer'>
+					📌 « Soin modulable selon votre santé.{' '}
+					<a
+						className='disclaimer-link'
+						href='/articles/contre-indications-massage-5-continents'
+						title='Un doute sur une condition médicale ? Consulter le guide complet des contre-indications.'
+						target='blank'
+					>
+						→ Voir les contre-indications et adaptations.
+					</a>{' '}
+					»
+				</blockquote>
+				<br />
+				<br />
 				<div className='massage-cinq-continents-prices-container'>
 					<h3>Tarifs 2026 du Massage des 5 Continents</h3>
 					<div className='massage-cinq-continents-prices-content'>
@@ -323,7 +337,9 @@ const Massage5Continents = () => {
 						</div>
 					</div>
 				</div>
-				<ParagraphSeparator />
+				<br />
+
+				<br />
 				<div className='footer-cta'>
 					<h2>Envie de découvrir le Massage des 5 Continents ?</h2>
 					<p>
@@ -339,9 +355,23 @@ const Massage5Continents = () => {
 						d’informations.
 					</p>
 					<div className='cta-container-row footer-cta-container'>
+						<CtaContactezMoi className='cta-secondary' />
 						<CtaRendezVous />
 						<CtaOffres />
 					</div>
+					<br />
+					<blockquote className='disclaimer'>
+						« Un doute sur une condition médicale ?{' '}
+						<a
+							className='disclaimer-link'
+							href='/articles/contre-indications-massage-5-continents'
+							title='Un doute sur une condition médicale ? Consulter le guide complet des contre-indications.'
+							target='blank'
+						>
+							Consulter le guide complet des contre-indications
+						</a>
+						. »
+					</blockquote>
 				</div>
 			</div>
 		</>

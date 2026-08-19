@@ -6,7 +6,6 @@ export interface iCta {
 	title: string;
 	ctaText?: string | JSX.Element;
 	linkType?: string;
-	meta?: string;
 	target?: string;
 }
 
@@ -22,13 +21,11 @@ const Cta = ({
 	title,
 	ctaText,
 	linkType,
-	meta,
 	target,
 }: iCta) => {
 	return (
 		<a
 			type={linkType || 'text/html'}
-			itemProp={meta || 'url'}
 			href={link}
 			className={`cta ${ctaLinkClassName || 'cta-tertiary'}`}
 			title={title}

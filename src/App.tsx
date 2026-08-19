@@ -77,7 +77,7 @@ const App = () => {
 					<Header />
 				</header>
 				<div className='App-body'>
-					<main className='content' itemProp='mainEntity'>
+					<main className='content'>
 						<Routes>
 							<Route path='/' element={<Accueil />} />
 							<Route path='/accueil' element={<Accueil />} />

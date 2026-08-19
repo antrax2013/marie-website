@@ -34,26 +34,14 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 	];
 
 	const productTemplate = (item: any) => {
-		const productName =
-			item.tags == 'M5C'
-				? 'Massage des 5 continents'
-				: item.tags == 'EAS'
-					? 'Massage assis méthode EAS®'
-					: 'Reiki Usui';
-
 		return (
-			<section
-				itemProp='itemReviewed'
-				itemScope
-				itemType='https://schema.org/Service'
-				itemID={`https://massage-reiki.fr/#${item.tags.toLowerCase()}`}
-			>
-				<meta itemProp='name' content={productName} />
+			<section>
 				<div
 					className='carousel-item-main-container'
 					itemProp='review'
 					itemScope
 					itemType='https://schema.org/Review'
+					about={`https://massage-reiki.fr/#service-${item.tags.toLowerCase()}`}
 				>
 					<a
 						href={item.url}

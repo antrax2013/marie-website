@@ -149,10 +149,14 @@ strong,
 	font-style: italic;
 }
 
-.disclaimer {
+.disclaimer,
+.disclaimer-link {
 	color: var(--tertiary-color) !important;
 	font-style: italic;
 	font-weight: bold;
+}
+.disclaimer-link {
+	text-decoration: underline !important;
 }
 
 .asterix {

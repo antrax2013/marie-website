@@ -81,10 +81,18 @@ export const BlogArticleM5cContreIndications: iBlog = {
 					adultes majeurs.
 				</li>
 			</ul>
-			<blockquote>
-				Une parenthèse sur-mesure pour libérer les tensions et vous reconnecter
-				à l'essentiel.
+			<blockquote className='disclaimer'>
+				« Un doute sur une condition médicale ?{' '}
+				<a
+					className='disclaimer-link'
+					href='/contact?sujet=demande-de-renseignements'
+					target='blank'
+				>
+					Contactez-moi.
+				</a>
+				. »
 			</blockquote>
+
 			<h2>
 				Les contre-indications relatives : l'alternative aux huiles végétales
 				pures

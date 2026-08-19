@@ -29,24 +29,24 @@ const Contact = () => {
 
 	const sujets = [
 		{
-			label: 'Prise de rendez-vous',
-			value: 'Prise de rendez-vous',
+			label: 'Prendre rendez-vous',
+			value: 'Prendre rendez-vous',
 			tag: 'prise-rendez-vous',
 		},
 		{
-			label: 'Informations de suivi',
-			value: 'Informations de suivi',
-			tag: 'suivi',
+			label: 'Renseignements / Question générale',
+			value: 'Renseignements / Question générale',
+			tag: 'demande-de-renseignements',
 		},
 		{
-			label: 'Demande de devis',
-			value: 'Demande de devis',
+			label: 'Demander un devis',
+			value: 'Demander un devis',
 			tag: 'demande-de-devis',
 		},
 		{
-			label: 'Demande de renseignements',
-			value: 'Demande de renseignements',
-			tag: 'demande-de-renseignements',
+			label: 'Autre demande',
+			value: 'Autre demande',
+			tag: 'autre',
 		},
 	];
 
@@ -63,11 +63,7 @@ const Contact = () => {
 			const errors: iError = {};
 
 			if (data.nom.length === 0) {
-				errors.nom = 'Votre nom est obligatoire.';
-			}
-
-			if (data.prenom.length === 0) {
-				errors.prenom = 'Votre prénom est obligatoire.';
+				errors.nom = 'Vos nom et prénom sont obligatoires.';
 			}
 
 			if (data.message.length === 0) {
@@ -87,7 +83,7 @@ const Contact = () => {
 		onSubmit: () => {
 			const message: iMail = {
 				from_email: formik.values.email,
-				to_name: formik.values.nom + ' ' + formik.values.prenom,
+				to_name: formik.values.nom,
 				message: formik.values.message,
 				subject: formik.values.sujet ?? '',
 				tel: formik.values.telephone,
@@ -136,22 +132,28 @@ const Contact = () => {
 	return (
 		<>
 			<div className='article contact'>
-				<h1>Contact</h1>
+				<h1>Prendre rendez-vous ou me contacter</h1>
 				<Toast ref={toast} />
 				<section className='paragraphe-1'>
 					<section className='paragraphe-content'>
 						<p>
-							Mes différents soins et massages énergétiques vous intéressent,
-							vous avez des questions ou vous voulez partager, avec moi, vos
-							retours d'expérience, vous pouvez me contacter par email en
-							utilisant le formulaire ci-dessous.
+							Vous souhaitez en savoir plus sur mes soins et massages
+							énergétiques, poser une question ou partager votre retour
+							d'expérience ? Vous pouvez me contacter directement via le
+							formulaire ci-dessous.
+						</p>
+						<p>
+							<b>Validation du rendez-vous : </b>Je vous recontacte rapidement
+							(sous 24 à 48 h) après votre demande afin de faire le point sur
+							vos besoins, échanger sur vos attentes, vérifier l'absence de
+							contre-indications et vous proposer le soin le plus adapté.
 						</p>
 					</section>
 				</section>
 				<form onSubmit={formik.handleSubmit}>
 					<div className='field'>
 						<label htmlFor='nom'>
-							Nom <span className='asterix'>*</span>
+							Nom & Prénom<span className='asterix'>*</span>
 						</label>
 						<InputText
 							id='nom'
@@ -162,32 +164,7 @@ const Contact = () => {
 						/>
 						{getFormErrorMessage('nom')}
 					</div>
-					<div className='field'>
-						<label htmlFor='prenom'>
-							Prénom <span className='asterix'>*</span>
-						</label>
-						<InputText
-							id='prenom'
-							name='prenom'
-							value={formik.values.prenom}
-							onChange={formik.handleChange}
-							className={classNames({
-								'p-invalid': isFormFieldValid('prenom'),
-							})}
-						/>
-						{getFormErrorMessage('prenom')}
-					</div>
-					<div className='field'>
-						<label htmlFor='telephone'>Téléphone</label>
-						<InputMask
-							id='telephone'
-							name='telephone'
-							value={formik.values.telephone}
-							onChange={formik.handleChange}
-							mask='99.99.99.99.99'
-						></InputMask>
-						{getFormErrorMessage('telephone')}
-					</div>
+
 					<div className='field'>
 						<label htmlFor='email'>
 							Email <span className='asterix'>*</span>
@@ -204,8 +181,19 @@ const Contact = () => {
 						{getFormErrorMessage('email')}
 					</div>
 					<div className='field'>
+						<label htmlFor='telephone'>Téléphone</label>
+						<InputMask
+							id='telephone'
+							name='telephone'
+							value={formik.values.telephone}
+							onChange={formik.handleChange}
+							mask='99.99.99.99.99'
+						></InputMask>
+						{getFormErrorMessage('telephone')}
+					</div>
+					<div className='field'>
 						<label htmlFor='sujet'>
-							Sujet <span className='asterix'>*</span>
+							Sélectionner un motif... <span className='asterix'>*</span>
 						</label>
 						<Dropdown
 							id='sujet'
@@ -230,14 +218,15 @@ const Contact = () => {
 						/>
 						{getFormErrorMessage('message')}
 					</div>
-					<p>
-						<b>
-							Soins exclusivement professionnels et non sexuels. Tout
-							comportement inapproprié interrompt immédiatement la séance
-							(prestation due).
-						</b>
-					</p>
+
 					<div className='form-footer'>
+						<p>
+							<b>
+								Soins exclusivement professionnels et non sexuels. Tout
+								comportement inapproprié interrompt immédiatement la séance
+								(prestation due).
+							</b>
+						</p>
 						<Button
 							type='submit'
 							label='Envoyer'

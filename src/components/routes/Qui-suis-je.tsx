@@ -23,16 +23,10 @@ const QuiSuisJe = () => {
 									Un accompagnement holistique personnalisé pour un bien-être
 									profond dans les Yvelines.
 								</p>
-								<div
-									className='header-2-description'
-									itemProp='founder'
-									itemScope
-									itemType='https://schema.org/Person'
-								>
+								<div className='header-2-description'>
 									<p>
-										Je suis <span itemProp='name'>Marie Cophignon</span>,{' '}
-										<span itemProp='jobTitle'>massothérapeute énergétique</span>{' '}
-										et <span itemProp='jobTitle'>maître Reiki Usui</span>.
+										Je suis Marie Cophignon, massothérapeute énergétique et{' '}
+										maître Reiki Usui.
 									</p>
 									<div className='img-moi-l-container size-l-hidden'>
 										<McImage

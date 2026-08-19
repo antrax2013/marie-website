@@ -5,9 +5,8 @@ import { MenuItem, MenuItemOptions } from 'primereact/menuitem';
 const Menu = ({ ...props }) => {
 	const itemTemplate = (item: MenuItem, options: MenuItemOptions) => {
 		return (
-			<span itemProp='name' role='menuitem'>
+			<span role='menuitem'>
 				<a
-					itemProp='url'
 					className={options.className}
 					onClick={options.onClick}
 					href={item.url}
@@ -30,7 +29,7 @@ const Menu = ({ ...props }) => {
 					className='logo'
 					loading='lazy'
 				/>
-				<span itemProp='name' className='nom-site'>
+				<span className='nom-site'>
 					<span className='name-marie'>
 						{import.meta.env.VITE_META_NAME} -{' '}
 					</span>

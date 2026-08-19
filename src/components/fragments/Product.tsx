@@ -8,7 +8,7 @@ export interface iProduct {
 	content: string | JSX.Element;
 	cta: iCta;
 	bloquoteContent: string;
-	category: string;
+	category?: string;
 }
 
 const Product = ({
@@ -18,17 +18,11 @@ const Product = ({
 	content,
 	cta,
 	bloquoteContent,
-	category,
 }: iProduct) => {
 	return (
-		<div
-			className='products-header-container'
-			itemScope
-			itemType='https://schema.org/Offer'
-		>
+		<div className='products-header-container'>
 			<div className='product-content'>
-				<meta itemProp='category' content={category} />
-				<h3 itemProp='name'>{header}</h3>
+				<h3>{header}</h3>
 				<div className='product-description'>
 					<p>{description}</p>
 				</div>
@@ -41,7 +35,7 @@ const Product = ({
 					/>
 				</div>
 				<div className='product-description-2'>
-					<p itemProp='description'>{content}</p>
+					<p>{content}</p>
 				</div>
 				<div className='product-cta cta-container-column'>
 					<Cta

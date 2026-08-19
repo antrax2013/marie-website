@@ -5,12 +5,7 @@ export interface iFaqItem {
 
 const FaqItemComponent = (item: iFaqItem) => {
 	return (
-		<div
-			className='faq-item'
-			itemProp='mainEntity'
-			itemScope
-			itemType='https://schema.org/Question'
-		>
+		<div className='faq-item' itemScope itemType='https://schema.org/Question'>
 			{' '}
 			<h3 className='faq-question' itemProp='name' content='question'>
 				{item.question}

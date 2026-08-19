@@ -10,13 +10,13 @@
 			"inLanguage": "fr-FR",
 			"datePublished": "2026-08-15T09:00:00+02:00",
 			"author": {
-				"@id": "https://massage-reiki.fr/#marie"
+				"@id": "https://massage-reiki.fr/#person-marie"
 			},
 			"publisher": {
-				"@id": "https://massage-reiki.fr/#marie"
+				"@id": "https://massage-reiki.fr/#person-marie"
 			},
 			"about": {
-				"@id": "https://massage-reiki.fr/#m5c"
+				"@id": "https://massage-reiki.fr/#service-m5c"
 			}
 		}
 	]

@@ -21,12 +21,12 @@ import McLinkEnEntreprise from '../fragments/McLinks/McLink-En-Entreprise';
 const MassageAssisMethodeEAS = () => {
 	return (
 		<>
-			<div className='MA-EAS' itemScope itemType='https://schema.org/Offer'>
+			<div className='MA-EAS'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
 						<div className='header-2-container'>
 							<div className='header-2-content'>
-								<h1 itemProp='name'>
+								<h1>
 									Le massage du dos assis méthode EAS® - un massage essentiel et
 									efficace, une détente profonde immédiate
 								</h1>
@@ -74,10 +74,7 @@ const MassageAssisMethodeEAS = () => {
 					</div>
 				</div>
 				<ParagraphSeparator />
-				<div
-					className='massage-assis-eas-description-container'
-					itemProp='description'
-				>
+				<div className='massage-assis-eas-description-container'>
 					<div className='massage-assis-eas-description-main-content'>
 						<BgMcImageContainer
 							path={ImgMA_EAS_Trapezes}

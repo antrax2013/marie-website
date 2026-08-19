@@ -67,16 +67,10 @@ const Accueil = () => {
 									Massage énergétique ou Reiki Usui, <br /> un accompagnement
 									holistique personnalisé pour votre bien-être profond.
 								</h2>
-								<div
-									className='header-2-description'
-									itemProp='founder'
-									itemScope
-									itemType='https://schema.org/Person'
-								>
+								<div className='header-2-description'>
 									<p>
-										Je suis <span itemProp='name'>Marie Cophignon</span>,{' '}
-										<span itemProp='jobTitle'>massothérapeute énergétique</span>{' '}
-										et <span itemProp='jobTitle'>Maître Reiki Usui</span>.
+										Je suis Marie Cophignon, massothérapeute énergétique et{' '}
+										Maître Reiki Usui.
 									</p>
 									<p>
 										Depuis 2022, sur Saint-Quentin en Yvelines, à Élancourt et
@@ -119,11 +113,7 @@ const Accueil = () => {
 					<h2 className='center-secondary-title '>
 						Mes offres de soins & massages énergétiques
 					</h2>
-					<div
-						className='products-header-3-containers'
-						itemScope
-						itemType='https://schema.org/ProductCollection'
-					>
+					<div className='products-header-3-containers'>
 						{products.map((p: iProduct, i: number) => (
 							<Product
 								key={`product-${i}`}

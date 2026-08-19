@@ -11,13 +11,13 @@
 			"datePublished": "2026-06-10T09:00:00+02:00",
 			"dateModified": "2026-06-10T09:00:00+02:00",
 			"author": {
-				"@id": "https://massage-reiki.fr/#marie"
+				"@id": "https://massage-reiki.fr/#person-marie"
 			},
 			"publisher": {
-				"@id": "https://massage-reiki.fr/#marie"
+				"@id": "https://massage-reiki.fr/#person-marie"
 			},
 			"about": {
-				"@id": "https://massage-reiki.fr/#domicile"
+				"@id": "https://massage-reiki.fr/#service-domicile"
 			}
 		}
 	]
