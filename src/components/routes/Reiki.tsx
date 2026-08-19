@@ -18,12 +18,12 @@ import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
 const Reiki = () => {
 	return (
 		<>
-			<div className='Reiki' itemScope itemType='https://schema.org/Offer'>
+			<div className='Reiki'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
 						<div className='header-2-container'>
 							<div className='header-2-content'>
-								<h1 itemProp='name'>
+								<h1>
 									Le Reiki Usui – un soin énergétique doux, libérateur et
 									universel
 								</h1>
@@ -72,10 +72,7 @@ const Reiki = () => {
 					</div>
 				</div>
 				<ParagraphSeparator />
-				<div
-					className='reiki-usui-description-container'
-					itemProp='description'
-				>
+				<div className='reiki-usui-description-container'>
 					<div className='reiki-usui-description-main-content'>
 						<BgMcImageContainer
 							path={ImgReiki}
@@ -220,9 +217,7 @@ const Reiki = () => {
 								<br />
 								<div>
 									<h4 className='inline'>Soin Reiki Usui à distance</h4>{' '}
-									<span className='asterix'>*</span> :{' '}
-									<span itemProp='price'>60,00</span>
-									<span itemProp='priceCurrency'>€</span>
+									<span className='asterix'>*</span> : 60,00 €
 								</div>
 							</div>
 							<div className='reiki-usui-prices-panel'>

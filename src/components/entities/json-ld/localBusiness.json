@@ -8,11 +8,14 @@
 			"name": "Massage Reiki",
 			"publisher": {
 				"@id": "https://massage-reiki.fr/#business"
+			},
+			"mainEntity": {
+				"@id": "https://massage-reiki.fr/#business"
 			}
 		},
 		{
 			"@type": "Person",
-			"@id": "https://massage-reiki.fr/#marie",
+			"@id": "https://massage-reiki.fr/#person-marie",
 			"name": "Marie Cophignon",
 			"givenName": "Marie",
 			"familyName": "Cophignon",
@@ -37,7 +40,7 @@
 			"logo": "https://massage-reiki.fr/logo192.png",
 			"telephone": "07.73.55.27.70",
 			"founder": {
-				"@id": "https://massage-reiki.fr/#marie"
+				"@id": "https://massage-reiki.fr/#person-marie"
 			},
 			"foundingDate": "2022-03-01",
 			"leiCode": "91042798800019",
@@ -93,7 +96,8 @@
 			"address": [
 				{
 					"@type": "PostalAddress",
-					"@id": "https://massage-reiki.fr/#Guyancourt",
+					"name": "Cabinet Blowball",
+					"@id": "https://massage-reiki.fr/#postal-address-guyancourt",
 					"streetAddress": "1 rue Le Corbusier",
 					"addressLocality": "Guyancourt",
 					"postalCode": "78280",
@@ -101,7 +105,8 @@
 				},
 				{
 					"@type": "PostalAddress",
-					"@id": "https://massage-reiki.fr/#Elancourt",
+					"name": "Cabinet Elancourt",
+					"@id": "https://massage-reiki.fr/#postal-address-elancourt",
 					"streetAddress": "6 résidence Les Nouveaux Horizons",
 					"addressLocality": "Élancourt",
 					"postalCode": "78990",
@@ -109,7 +114,8 @@
 				},
 				{
 					"@type": "PostalAddress",
-					"@id": "https://massage-reiki.fr/#Maurepas",
+					"name": "Siège Social",
+					"@id": "https://massage-reiki.fr/#postal-address-maurepas",
 					"streetAddress": "14 place des Ardennes",
 					"addressLocality": "Maurepas",
 					"postalCode": "78310",
@@ -117,7 +123,8 @@
 				},
 				{
 					"@type": "PostalAddress",
-					"@id": "https://massage-reiki.fr/#Plaisir",
+					"name": "Coffre d'Alumune, Espace Atelier Flofa Art & Vibration",
+					"@id": "https://massage-reiki.fr/#postal-address-plaisir",
 					"streetAddress": "5, rue Edmond Rostand",
 					"addressLocality": "Plaisir",
 					"postalCode": "78370",
@@ -127,51 +134,69 @@
 			"sameAs": [
 				"https://massagedes5continents.com/membres/8424/Cophignon-Marie/",
 				"https://massages-reiki.fr/",
-				"https://marie.cophignon.net/"
-			]
+				"https://marie.cophignon.net/",
+				"https://www.instagram.com/mariecophignon/",
+				"https://www.facebook.com/Marie-Cophignon-Th%C3%A9rapeute-%C3%A9nerg%C3%A9tique-109608565225171",
+				"https://www.linkedin.com/in/marie-cophignon-94423a60/",
+				"https://twitter.com/MCOMASSAGES78"
+			],
+			"hasOfferCatalog": {
+				"@type": "OfferCatalog",
+				"@id": "https://massage-reiki.fr/#catalogue-services"
+			}
 		},
 		{
 			"@type": "AggregateRating",
 			"@id": "https://massage-reiki.fr/#rating",
 			"ratingValue": 5,
 			"reviewCount": 24,
+			"ratingCount": 24,
 			"itemReviewed": {
+				"@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
 				"@id": "https://massage-reiki.fr/#business"
 			}
 		},
 		{
 			"@type": "Service",
-			"@id": "https://massage-reiki.fr/#reiki",
+			"@id": "https://massage-reiki.fr/#service-reiki",
 			"name": "Soin Reiki Usui",
 			"description": "Soin énergétique holistique ou ciblé réalisé en présence ou à distance.",
+			"providerMobility": "dynamic",
 			"provider": {
+				"@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
 				"@id": "https://massage-reiki.fr/#business"
 			}
 		},
 		{
 			"@type": "Service",
-			"@id": "https://massage-reiki.fr/#m5c",
+			"@id": "https://massage-reiki.fr/#service-m5c",
 			"name": "Massage des 5 Continents",
 			"description": "Massage énergétique complet associant plusieurs techniques de massages, un soin Reiki Usui et huiles essentielles.",
+			"providerMobility": "dynamic",
 			"provider": {
+				"@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
 				"@id": "https://massage-reiki.fr/#business"
 			}
 		},
 		{
 			"@type": "Service",
-			"@id": "https://massage-reiki.fr/#eas",
+			"@id": "https://massage-reiki.fr/#service-eas",
 			"name": "Massage assis méthode EAS®",
 			"description": "Massage du dos basé sur la méthode EAS®, des épaules et des cervicales assis sur chaise ergonomique.",
+			"providerMobility": "dynamic",
 			"provider": {
+				"@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
 				"@id": "https://massage-reiki.fr/#business"
 			}
 		},
 		{
 			"@type": "Service",
-			"@id": "https://massage-reiki.fr/#entreprise",
+			"@id": "https://massage-reiki.fr/#service-entreprise",
 			"name": "Massages en entreprise",
 			"description": "Séances de massage assis en entreprise, événements QVT, salons et collectivités.",
+			"providerMobility": "dynamic",
 			"provider": {
+				"@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
 				"@id": "https://massage-reiki.fr/#business"
 			},
 			"areaServed": {
@@ -182,7 +207,6 @@
 				"name": "Massages Bien-être à pour les entreprises sur Saint-Quentin en Yvelines et ses alentours.",
 				"itemListElement": [
 					{
-						"@type": "Offer",
 						"@id": "https://massage-reiki.fr/#offer-eas"
 					}
 				]
@@ -190,10 +214,12 @@
 		},
 		{
 			"@type": "Service",
-			"@id": "https://massage-reiki.fr/#domicile",
+			"@id": "https://massage-reiki.fr/#service-domicile",
 			"name": "Soins énergétiques et massages à domicile",
 			"description": "Prestations à domicile sur Saint-Quentin-en-Yvelines et environs.",
+			"providerMobility": "dynamic",
 			"provider": {
+				"@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
 				"@id": "https://massage-reiki.fr/#business"
 			},
 			"areaServed": {
@@ -204,15 +230,12 @@
 				"name": "Soins Bien-être à domicile",
 				"itemListElement": [
 					{
-						"@type": "Offer",
 						"@id": "https://massage-reiki.fr/#offer-reiki"
 					},
 					{
-						"@type": "Offer",
 						"@id": "https://massage-reiki.fr/#offer-m5c"
 					},
 					{
-						"@type": "Offer",
 						"@id": "https://massage-reiki.fr/#offer-eas"
 					}
 				]
@@ -223,7 +246,7 @@
 			"@id": "https://massage-reiki.fr/#offer-reiki",
 			"name": "Soin Reiki Usui",
 			"itemOffered": {
-				"@id": "https://massage-reiki.fr/#reiki"
+				"@id": "https://massage-reiki.fr/#service-reiki"
 			},
 			"priceSpecification": {
 				"@type": "PriceSpecification",
@@ -237,7 +260,7 @@
 			"@id": "https://massage-reiki.fr/#offer-m5c",
 			"name": "Massage des 5 Continents",
 			"itemOffered": {
-				"@id": "https://massage-reiki.fr/#m5c"
+				"@id": "https://massage-reiki.fr/#service-m5c"
 			},
 			"priceSpecification": {
 				"@type": "PriceSpecification",
@@ -251,7 +274,7 @@
 			"@id": "https://massage-reiki.fr/#offer-eas",
 			"name": "Massage assis méthode EAS®",
 			"itemOffered": {
-				"@id": "https://massage-reiki.fr/#eas"
+				"@id": "https://massage-reiki.fr/#service-eas"
 			},
 			"priceSpecification": {
 				"@type": "PriceSpecification",
@@ -283,6 +306,126 @@
 			"@id": "https://massage-reiki.fr/#offer-cadeau",
 			"name": "Carte cadeau",
 			"description": "Carte cadeau valable pendant un an."
+		},
+		{
+			"@type": "OfferCatalog",
+			"@id": "https://massage-reiki.fr/#catalogue-services",
+			"name": "Catalogue d'offres de massages et de soins énergétiques",
+			"itemListElement": [
+				{
+					"@type": "Offer",
+					"@id": "https://massage-reiki.fr/#offer-reiki"
+				},
+				{
+					"@type": "Offer",
+					"@id": "https://massage-reiki.fr/#offer-m5c"
+				},
+				{
+					"@type": "Offer",
+					"@id": "https://massage-reiki.fr/#offer-eas"
+				},
+				{
+					"@type": "Offer",
+					"@id": "https://massage-reiki.fr/#offer-duo"
+				},
+				{
+					"@type": "Offer",
+					"@id": "https://massage-reiki.fr/#offer-decouverte"
+				},
+				{
+					"@type": "Offer",
+					"@id": "https://massage-reiki.fr/#offer-parrainage"
+				},
+				{
+					"@type": "Offer",
+					"@id": "https://massage-reiki.fr/#offer-cadeau"
+				}
+			]
+		},
+		{
+			"@type": "SiteNavigationElement",
+			"@id": "https://massage-reiki.fr/#navigation",
+			"name": "Navigation principale",
+			"hasPart": [
+				{
+					"@type": "WebPage",
+					"name": "Accueil",
+					"url": "https://massage-reiki.fr/",
+					"@id": "https://massage-reiki.fr/#web-page-accueil"
+				},
+				{
+					"@type": "WebPage",
+					"name": "Qui suis-je",
+					"url": "https://massage-reiki.fr/qui-suis-je",
+					"about": "https://massage-reiki.fr/#person-marie",
+					"@id": "https://massage-reiki.fr/#web-page-qui-suis-je"
+				},
+				{
+					"@type": "WebPage",
+					"name": "Contact",
+					"url": "https://massage-reiki.fr/contact",
+					"@id": "https://massage-reiki.fr/#web-page-contact"
+				},
+				{
+					"@type": "WebPage",
+					"name": "offres-et-tarifs",
+					"url": "https://massage-reiki.fr/offres-et-tarifs",
+					"@id": "https://massage-reiki.fr/#web-page-offres-et-tarifs",
+					"about": [
+						"https://massage-reiki.fr/#offer-cadeau",
+						"https://massage-reiki.fr/#offer-parrainage",
+						"https://massage-reiki.fr/#offer-decouverte",
+						"https://massage-reiki.fr/#offer-duo",
+						"https://massage-reiki.fr/#offer-eas",
+						"https://massage-reiki.fr/#offer-m5c",
+						"https://massage-reiki.fr/#offer-reiki"
+					]
+				},
+				{
+					"@type": "WebPage",
+					"name": "Le massage du dos assis méthode EAS®",
+					"url": "https://massage-reiki.fr/massage-assis-methode-eas",
+					"@id": "https://massage-reiki.fr/#web-page-eas",
+					"about": "https://massage-reiki.fr/#offer-eas"
+				},
+				{
+					"@type": "WebPage",
+					"name": "Le Massage des 5 Continents (M5C)",
+					"url": "https://massage-reiki.fr/massage-des-5-continents",
+					"@id": "https://massage-reiki.fr/#web-page-m5c",
+					"about": "https://massage-reiki.fr/#offer-m5c"
+				},
+				{
+					"@type": "WebPage",
+					"name": "Le Reiki Usui",
+					"url": "https://massage-reiki.fr/reiki-usui",
+					"@id": "https://massage-reiki.fr/#web-page-reiki",
+					"about": "https://massage-reiki.fr/#offer-reiki"
+				},
+				{
+					"@type": "WebPage",
+					"name": "Massage en entreprise à Saint‑Quentin‑en‑Yvelines",
+					"url": [
+						"https://massage-reiki.fr/massage-en-entreprise",
+						"https://massage-reiki.fr/massage-en-entreprise-saint-quentin-en-yvelines"
+					],
+					"@id": "https://massage-reiki.fr/#web-page-entreprise",
+					"about": "https://massage-reiki.fr/#service-entreprise"
+				},
+				{
+					"@type": "WebPage",
+					"name": "Les soins à domicile à Saint‑Quentin‑en‑Yvelines",
+					"url": "https://massage-reiki.fr/soins-a-domicile-saint-quentin-en-yvelines",
+					"@id": "https://massage-reiki.fr/#web-page-domicile",
+					"about": "https://massage-reiki.fr/#service-domicile"
+				},
+				{
+					"@type": "WebPage",
+					"name": "Articles et actualités",
+					"@id": "https://massage-reiki.fr/#web-page-articles-et-actualites",
+					"url": "https://massage-reiki.fr/articles-et-actualites"
+				}
+			]
 		}
 	]
 }

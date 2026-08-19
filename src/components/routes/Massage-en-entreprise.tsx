@@ -17,16 +17,12 @@ import McLinkMEAS from '../fragments/McLinks/McLink-Massage-EAS';
 const MassageEnEntreprise = () => {
 	return (
 		<>
-			<div
-				className='MassageEnEntreprise'
-				itemScope
-				itemType='https://schema.org/Offer'
-			>
+			<div className='MassageEnEntreprise'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
 						<div className='header-2-container'>
 							<div className='header-2-content'>
-								<h1 itemProp='name'>
+								<h1>
 									Massage en entreprise à Saint‑Quentin‑en‑Yvelines - Bien-être,
 									détente et qualité de vie au travail
 								</h1>
@@ -76,16 +72,8 @@ const MassageEnEntreprise = () => {
 				</div>
 
 				<ParagraphSeparator />
-				<div
-					className='massage-a-domicile-description-container'
-					itemProp='description'
-				>
+				<div className='massage-a-domicile-description-container'>
 					<div className='massage-a-domicile-description-main-content'>
-						{/* <BgMcImageContainer
-							path={ImgM5C}
-							className='img-logo-M5C'
-							alt='Logo de la Fédération du Massage des 5 Continents attestant de la certification'
-						/> */}
 						<div className='massage-a-domicile-description-content'>
 							<p>
 								Stress, tensions musculaires, fatigue mentale ou charge de

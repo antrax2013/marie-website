@@ -9,7 +9,6 @@ const CtaContactezMoi = ({ className, ctaText, title }: CtaClassNameProps) => {
 				title={`${title ?? 'Contactez-moi pour tous renseignements ou réserver une séance.'}`}
 				ctaLinkClassName={`${className ?? 'cta-primary'} phone md:hidden`}
 				ctaText={`${ctaText ?? '☏ Contactez-moi'}`}
-				meta={`itemProp='telephone'`}
 			/>
 			<Cta
 				link='/contact?sujet=prise-rendez-vous'

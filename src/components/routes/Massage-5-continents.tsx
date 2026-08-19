@@ -22,12 +22,12 @@ import McLinkReikiUsui from '../fragments/McLinks/McLink-Reiki-Usui';
 const Massage5Continents = () => {
 	return (
 		<>
-			<div className='M5C' itemScope itemType='https://schema.org/Offer'>
+			<div className='M5C'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
 						<div className='header-2-container'>
 							<div className='header-2-content'>
-								<h1 itemProp='name'>
+								<h1>
 									Le Massage des 5 Continents (M5C) - un soin holistique, une
 									méthode signature, un bien‑être profond
 								</h1>
@@ -78,10 +78,7 @@ const Massage5Continents = () => {
 				</div>
 
 				<ParagraphSeparator />
-				<div
-					className='massage-cinq-continents-description-container'
-					itemProp='description'
-				>
+				<div className='massage-cinq-continents-description-container'>
 					<div className='massage-cinq-continents-description-main-content'>
 						<BgMcImageContainer
 							path={ImgM5C}

@@ -9,9 +9,9 @@ const DuoTambourEAS = () => {
 	return (
 		<>
 			<div className='Blog'>
-				<div className='article' itemScope itemType='https://schema.org/Event'>
+				<div className='article'>
 					<h1>
-						<span itemProp='name' className='p-button-label'>
+						<span className='p-button-label'>
 							Massage assis méthode EAS® & Tambour Unité
 						</span>{' '}
 						: le soin duo à Plaisir
@@ -57,7 +57,7 @@ const DuoTambourEAS = () => {
 						</div>
 					</div>
 					<h2>Un voyage intérieur à deux voix des Yvelines.</h2>
-					<div itemProp='description'>
+					<div>
 						<p>
 							Fermez les yeux. Vous êtes confortablement installé(e), le dos
 							soutenu, le corps relâché sur une chaise de massage enveloppante.
@@ -94,41 +94,22 @@ const DuoTambourEAS = () => {
 					<div className='dates'>
 						<div className='dates-container'>
 							<div>
-								<h3 itemScope itemType='https://schema.org/Offer'>
-									Durée et format
-								</h3>
-								<meta
-									itemProp='name'
-									content='Massage assis méthode EAS® & Tambour Unité'
-								></meta>
+								<h3>Durée et format</h3>
+
 								<ul>
-									<li>
-										Séance de 30 mins, 15 mins de soin à{' '}
-										<meta itemProp='priceCurrency' content='EUR' />
-										<span itemProp='price' content='50.00'>
-											50 €
-										</span>
-									</li>
-									<li>
-										Séance de 45 mins, 30 mins de soin à{' '}
-										<meta itemProp='priceCurrency' content='EUR' />
-										<span itemProp='price' content='90.00'>
-											90 €
-										</span>
-									</li>
+									<li>Séance de 30 mins, 15 mins de soin à 50 €</li>
+									<li>Séance de 45 mins, 30 mins de soin à 90 €</li>
 								</ul>
 								{/* <h3>Dates</h3>
 								<ul>
 									<li>
 										<strong>
-											<meta itemProp='startDate' content='2026-01-31' />
 											Samedi 31 janvier 2026
 										</strong>{' '}
 										– de 14h à 18h
 									</li>
 									<li>
 										<strong>
-											<meta itemProp='startDate' content='2026-03-14' />
 											Samedi 14 mars 2026
 										</strong>{' '}
 										– de 14h à 18h
@@ -198,17 +179,8 @@ const DuoTambourEAS = () => {
 					</p>
 					<ParagraphSeparator />
 					<h3>Lieu du soin : Plaisir, Yvelines (78)</h3>
-					<div
-						className='location'
-						itemProp='location'
-						itemScope
-						itemType='https://schema.org/Place'
-					>
-						<p>
-							<span itemProp='name'>
-								À Plaisir (78), Atelier Flofa Art & Vibration
-							</span>
-						</p>
+					<div className='location'>
+						<p>À Plaisir (78), Atelier Flofa Art & Vibration</p>
 						<Adresse
 							streetAddress='5, Rue Edmond Rostand'
 							postalCode='78370'

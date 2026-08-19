@@ -27,12 +27,9 @@
 				"url": "https://forum.monnaie-libre.fr/t/78-jouars-pontchartrain-gmarche-dimanche-30-aout-2026/34008"
 			},
 			"performer": {
-				"@id": "https://massage-reiki.fr/#marie"
-			}
-		},
-		{
-			"@type": "Service",
-			"@id": "https://massage-reiki.fr/#eas"
+				"@id": "https://massage-reiki.fr/#person-marie"
+			},
+			"about": "https://massage-reiki.fr/#service-eas"
 		}
 	]
 }

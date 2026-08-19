@@ -20,16 +20,12 @@ import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
 const SoinADomicile = () => {
 	return (
 		<>
-			<div
-				className='SoinDomicile'
-				itemScope
-				itemType='https://schema.org/Offer'
-			>
+			<div className='SoinDomicile'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
 						<div className='header-2-container'>
 							<div className='header-2-content'>
-								<h1 itemProp='name'>
+								<h1>
 									Les soins à domicile – toute la qualité d’un accompagnement
 									professionnel chez vous
 								</h1>
@@ -76,10 +72,7 @@ const SoinADomicile = () => {
 				</div>
 
 				<ParagraphSeparator />
-				<div
-					className='massage-a-domicile-description-container'
-					itemProp='description'
-				>
+				<div className='massage-a-domicile-description-container'>
 					<div className='massage-a-domicile-description-main-content'>
 						<BgMcImageContainer
 							path={ImgSoinDomicile2}

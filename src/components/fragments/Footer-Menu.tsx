@@ -1,8 +1,6 @@
 import Logo from '../../assets/logo512.png';
 import PanneauLateral from './Panneau-lateral';
 import { Adresse } from './Adresse';
-const tel = import.meta.env.VITE_META_NUMTEL;
-const name = import.meta.env.VITE_META_MAIN_TITLE_LIGTH;
 
 const FooterMenu = (/*{ ...props }*/) => {
 	return (
@@ -10,17 +8,9 @@ const FooterMenu = (/*{ ...props }*/) => {
 			<div className='main-footer-container'>
 				<div className='main-footer-flex-container'>
 					<div className='entreprise-container'>
-						<div
-							className='entreprise-flex-container'
-							itemScope
-							itemType='https://schema.org/LocalBusiness'
-						>
-							<meta itemProp='name' content={name} />
-							<meta itemProp='telephone' content={tel} />
-
-							<div className='logo-container' itemProp='logo'>
+						<div className='entreprise-flex-container'>
+							<div className='logo-container'>
 								<img
-									itemProp='image'
 									alt='Fleur de vie utilisée comme logo pour illustrer le bien-être et l’harmonisation énergétique'
 									loading='lazy'
 									src={Logo}
@@ -37,19 +27,11 @@ const FooterMenu = (/*{ ...props }*/) => {
 								/>
 								<div className='phone-container'>
 									Tél :{' '}
-									<a
-										itemProp='telephone'
-										href={`tel:${import.meta.env.VITE_META_NUMTEL}`}
-									>
+									<a href={`tel:${import.meta.env.VITE_META_NUMTEL}`}>
 										{import.meta.env.VITE_META_NUMTEL}
 									</a>
 								</div>
-								<div
-									className='siret-container'
-									itemScope
-									itemType='https://schema.org/Organization'
-								>
-									<meta itemProp='iso6523Code' content='0009:91042798800019' />
+								<div className='siret-container'>
 									<i className='siret'>N° Siret : 910 427 988 00019</i>
 								</div>
 							</div>
