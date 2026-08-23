@@ -24,82 +24,22 @@ const Accueil = () => {
 					<div className='hero-main-container'>
 						<div className='hero-container'>
 							<div className='hero-content '>
-								<h1>Massages énergétiques & Reiki Usui dans les Yvelines</h1>
+								<h1>
+									Massages énergétiques & Reiki Usui
+									<br />à Saint-Quentin en Yvelines
+								</h1>
 								<p className='hero-description'>
 									Réduisez le stress, relâchez les tensions et retrouvez un
 									équilibre durable grâce à des massages énergétiques et des
-									soins Reiki Usui personnalisés, sur Saint-Quentin en Yvelines,
-									à Élancourt et Guyancourt, à
-									<McLinkSoinDomicile text='domicile' />
-									ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />.
+									soins Reiki Usui personnalisés à Saint-Quentin en Yvelines. Je
+									vous accueille en cabinet à Élancourt et Guyancourt.
+									J'interviens également
+									<McLinkSoinDomicile text='à domicile' />
+									et <McLinkEnEntreprise text='en entreprise' noWrap={true} />.
 								</p>
 								<div className='hero-cta'>
 									<CtaRendezVous />
-									<Cta
-										link='#offres-massages-energetiques-et-soin-reiki-usui'
-										title={
-											'Cliquez pour découvrir les massages énergétiques et soin Reiki que je propose.'
-										}
-										ctaLinkClassName='cta-secondary size-l-hidden'
-										ctaText='Découvrir mes soins'
-									/>
-									<Cta
-										link='#offres-massages-energetiques-et-soin-reiki-usui'
-										title={
-											'Cliquez pour découvrir les massages énergétiques et soin Reiki que je propose.'
-										}
-										ctaLinkClassName='cta-secondary hidden size-l-visible'
-										ctaText='Découvrir mes massages et soin Reiki Usui'
-									/>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<ParagraphSeparator />
-				{/* Marie */}
-				<div className='first-header-2'>
-					<div className='first-header-2-container'>
-						<div className='header-2-container'>
-							<div className='header-2-content'>
-								<h2>
-									Massage énergétique ou Reiki Usui, <br /> un accompagnement
-									holistique personnalisé pour votre bien-être profond.
-								</h2>
-								<div className='header-2-description'>
-									<p>
-										Je suis Marie Cophignon, massothérapeute énergétique et{' '}
-										Maître Reiki Usui.
-									</p>
-									<p>
-										Depuis 2022, sur Saint-Quentin en Yvelines, à Élancourt et
-										Guyancourt, à
-										<McLinkSoinDomicile text='domicile' />
-										ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />
-										, j’accompagne les adultes en recherche de relaxation
-										profonde, de mieux-être et de rééquilibrage énergétique,
-										dans un cadre professionnel, doux et respectueux. Chaque
-										séance est pensée comme une pause régénérante, adaptée à
-										votre état physique, émotionnel et énergétique du moment.
-									</p>
-								</div>
-								<div className='header-2-cta'>
-									<Cta
-										link='/qui-suis-je'
-										title={'Cliquez pour venir découvrir mon parcours'}
-									/>
-									<blockquote className='cta-blockquote'>
-										Accordez-vous la douceur d’une pause bienveillante.
-									</blockquote>
-								</div>
-							</div>
-							<div className='header-2-image-container hidden md:inline-block'>
-								<McImage
-									path={ImgMoi}
-									className='img-qui-suis-je-moi'
-									alt='Portrait professionnel de Marie COPHIGNON, Massothérapeute énergétique et Maître Reiki Usui.'
-								/>
 							</div>
 						</div>
 					</div>
@@ -126,6 +66,53 @@ const Accueil = () => {
 								category={p.category}
 							/>
 						))}
+					</div>
+				</div>
+				<ParagraphSeparator />
+				{/* Marie */}
+				<div className='first-header-2'>
+					<div className='first-header-2-container'>
+						<div className='header-2-container'>
+							<div className='header-2-content'>
+								<h2>
+									Massage énergétique ou Reiki Usui,
+									<br />
+									un accompagnement holistique pour votre bien-être.
+								</h2>
+								<div className='header-2-description'>
+									<p>
+										Je suis Marie Cophignon, massothérapeute énergétique et{' '}
+										Maître Reiki Usui.
+									</p>
+									<p>
+										Après 18 ans comme infirmière, j'ai choisi en 2022 de
+										prendre soin des autres autrement. Prendre le temps, être à
+										l'écoute et vous accompagner avec douceur et bienveillance
+										sont devenus le cœur de ma pratique.
+										<br />
+										Chaque séance est pensée comme une parenthèse régénérante,
+										adaptée à votre état physique, émotionnel et énergétique du
+										moment.
+									</p>
+								</div>
+								<div className='header-2-cta'>
+									<Cta
+										link='/qui-suis-je'
+										title={'Cliquez pour venir découvrir mon parcours'}
+									/>
+									<blockquote className='cta-blockquote'>
+										Accordez-vous la douceur d’une pause bienveillante.
+									</blockquote>
+								</div>
+							</div>
+							<div className='header-2-image-container hidden md:inline-block'>
+								<McImage
+									path={ImgMoi}
+									className='img-qui-suis-je-moi'
+									alt='Portrait professionnel de Marie COPHIGNON, Massothérapeute énergétique et Maître Reiki Usui.'
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
 				<ParagraphSeparator />

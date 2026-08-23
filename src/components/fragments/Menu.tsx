@@ -130,7 +130,7 @@ const Menu = ({ ...props }) => {
 			className: getClassName('mes-soins'),
 		},
 		{
-			label: 'Mes préstations',
+			label: 'Mes interventions',
 			items: [
 				{
 					label: 'Massage en entreprise',
