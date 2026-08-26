@@ -35,13 +35,13 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 
 	const productTemplate = (item: any) => {
 		return (
-			<section>
+			<section itemProp='review' itemScope itemType='https://schema.org/Review'>
 				<div
 					className='carousel-item-main-container'
-					itemProp='review'
+					itemProp='itemReviewed'
 					itemScope
-					itemType='https://schema.org/Review'
-					about={`https://massage-reiki.fr/#service-${item.tags.toLowerCase()}`}
+					itemType='https://schema.org/Service'
+					itemID={`https://massage-reiki.fr/#service-${item.tags.toLowerCase()}`}
 				>
 					<a
 						href={item.url}
