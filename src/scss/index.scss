@@ -286,9 +286,11 @@ main {
 		align-items: center;
 		justify-content: right;
 
-		button span {
-			font-size: 0.8rem;
-			color: var(--grey-medium);
+		a {
+			font-size: 0.8rem !important;
+			color: var(--grey-medium) !important;
+			text-decoration: underline;
+			margin: auto 0.5rem;
 		}
 	}
 }

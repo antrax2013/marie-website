@@ -36,7 +36,7 @@ const QuiSuisJe = () => {
 										/>
 									</div>
 									<p>
-										Depuis mars 2022, sur Saint-Quentin en Yvelines, à Élancourt
+										Depuis mars 2022, sur Saint-Quentin-en-Yvelines, à Élancourt
 										et Guyancourt, à
 										<McLinkSoinDomicile text='domicile' />
 										ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />
@@ -114,7 +114,7 @@ const QuiSuisJe = () => {
 							</div>
 						</div>
 						<div className='career-content'>
-							<h3>Maitre Reiki Usui</h3>
+							<h3>Maître Reiki Usui</h3>
 							<p>
 								En 2020, je me suis formée au Reiki Usui auprès de{' '}
 								<em>
@@ -211,8 +211,8 @@ const QuiSuisJe = () => {
 									</a>
 								</em>
 								, de Nouzonville dans les Ardennes, au massage assis méthode
-								EAS®. Crée par Jean-Noël Poucet, ce massage énergétique de
-								bien‑être, est à la fois relaxant et libérateur. Il m’a séduite
+								EAS®. Créé par Jean-Noël Poucet, ce massage énergétique de
+								bien‑être est à la fois relaxant et libérateur. Il m’a séduite
 								par sa simplicité et son efficacité. Il propose une approche
 								différente du M5C, tout en restant profondément respectueuse du
 								corps et de l’énergie.
@@ -333,7 +333,7 @@ const QuiSuisJe = () => {
 								<p>
 									Je me déplace à votre
 									<McLinkSoinDomicile text='domicile' />
-									sur Saint-Quentin-en-Yvelines ses environs :
+									sur Saint-Quentin-en-Yvelines et ses environs :
 								</p>
 								<div className='center-area'>
 									<ul>
@@ -353,7 +353,7 @@ const QuiSuisJe = () => {
 								</div>
 								<p>
 									Je peux, ponctuellement, consulter en dehors de ce périmètre.
-									Appelez moi pour que l'on voit ce qu'il est possible de faire.
+									Appelez-moi pour que l'on voit ce qu'il est possible de faire.
 								</p>
 								<p className='disclaimer text-third'>
 									Lorsque je me déplace à{' '}
@@ -373,7 +373,7 @@ const QuiSuisJe = () => {
 							<div>
 								<Adresse
 									descprition='Espaces bien-être Vibration & Libellule'
-									floor='1er étages, au dessus du show room Coffret d’Alumine'
+									floor='1er étage, au-dessus du show room Coffret d’Alumine'
 									streetAddress='5, rue Edmond Rostand'
 									postalCode='78370'
 									addressLocality='Plaisir'

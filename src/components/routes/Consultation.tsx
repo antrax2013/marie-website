@@ -95,9 +95,8 @@ const Consultations = () => {
 								</ul>
 							</section>
 							<p>
-								{' '}
 								Je peux, ponctuellement, consulter en dehors de ce périmètre.
-								Appelez moi pour que l'on voit ce qu'il est possible de faire.
+								Appelez-moi pour que l'on voit ce qu'il est possible de faire.
 							</p>
 							<p>
 								Pour travailler dans des conditions optimales, j'ai besoin d'un

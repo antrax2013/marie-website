@@ -62,3 +62,8 @@ export const getSimilarArticles = (
 			.slice(0, 2)
 	);
 };
+
+export const toISODate = (date: string) => {
+	const [day, month, year] = date.split('/');
+	return `${year}-${month}-${day}`;
+};

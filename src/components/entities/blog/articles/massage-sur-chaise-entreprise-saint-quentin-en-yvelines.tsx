@@ -6,7 +6,7 @@ import McLinkEnEntreprise from '../../../fragments/McLinks/McLink-En-Entreprise'
 import McLinkMEAS from '../../../fragments/McLinks/McLink-Massage-EAS';
 
 export const BlogArticleMassageSurChiseSQY: iBlog = {
-	h1: 'Massage sur chaise en entreprise sur Saint Quentin-en-Yvelines : pourquoi les entreprises l’adoptent ?',
+	h1: 'Massage sur chaise en entreprise sur Saint-Quentin-en-Yvelines : pourquoi les entreprises l’adoptent ?',
 	slug: 'massage-sur-chaise-entreprise-saint-quentin-en-yvelines',
 	date: new Date('2026-04-03'),
 	tags: [
@@ -71,7 +71,7 @@ export const BlogArticleMassageSurChiseSQY: iBlog = {
 				<li>
 					Une solution simple à mettre en place :<br />
 					<i>
-						Je me déplace autour de Saint Quentin-en-Yvelines, avec tout le
+						Je me déplace autour de Saint-Quentin-en-Yvelines, avec tout le
 						matériel nécessaire.
 					</i>
 				</li>

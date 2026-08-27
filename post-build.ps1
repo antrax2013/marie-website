@@ -96,11 +96,11 @@ foreach ($file in $files) {
         $content = $content -replace [regex]::Escape($property.template), $rendered
     }
 
-    if ($null -ne $meta.canonical) {
-      $htmlTag = "<link rel='canonical' href='{value}' />"
-      $render = $htmlTag.Replace("{value}", "https://$($mainUrl.TrimEnd('/'))/$($meta.canonical.TrimStart('/'))")
-      $content = $content -replace [regex]::Escape($canonicalTemplate), $render
-    }
+    $canonical = if ($null -ne $meta.canonical) { $meta.canonical } else { $meta.key }
+    $htmlTag = "<link rel='canonical' href='{value}' />"
+    $render = $htmlTag.Replace("{value}", "https://$($mainUrl.TrimEnd('/'))/$($canonical.TrimStart('/'))")
+    $content = $content -replace [regex]::Escape($canonicalTemplate), $render
+    
     
     # Write the modified content back to the file
     Set-Content -Path $file.FullName -Value $content

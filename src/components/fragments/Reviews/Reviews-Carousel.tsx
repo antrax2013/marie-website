@@ -3,6 +3,7 @@ import * as avis from '../../../assets/avis.json';
 import { useState } from 'react';
 import { iReviewsCarousel } from './Reviews-Container';
 import { Badge } from 'primereact/badge';
+import { toISODate } from '../../../modules/helpers';
 
 const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 	const data = { ...avis };
@@ -35,14 +36,16 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 
 	const productTemplate = (item: any) => {
 		return (
-			<section itemProp='review' itemScope itemType='https://schema.org/Review'>
-				<div
-					className='carousel-item-main-container'
+			<section itemScope itemType='https://schema.org/Review'>
+				<span
 					itemProp='itemReviewed'
 					itemScope
-					itemType='https://schema.org/Service'
-					itemID={`https://massage-reiki.fr/#service-${item.tags.toLowerCase()}`}
+					itemType='https://schema.org/LocalBusiness'
+					itemID='https://massage-reiki.fr/#business'
 				>
+					<meta itemProp='name' content='Massage Reiki - Marie Cophignon' />
+				</span>
+				<div className='carousel-item-main-container'>
 					<a
 						href={item.url}
 						target='_blank'
@@ -66,7 +69,7 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 							<p
 								className='date-review'
 								itemProp='datePublished'
-								content={item.date}
+								content={toISODate(item.date)}
 							>
 								{item.date}
 							</p>
@@ -89,19 +92,28 @@ const ReviewsCarousel = ({ filter }: iReviewsCarousel) => {
 						<p>
 							<span itemProp='name'>
 								{item.tags.toUpperCase() == 'M5C' && (
-									<Badge
-										value='Massage des 5 continents'
-										severity='danger'
-									></Badge>
+									<>
+										<meta
+											itemProp='reviewAspect'
+											content='Massage des 5 continents'
+										/>
+										<Badge value='Massage des 5 continents' severity='danger' />
+									</>
 								)}
 								{item.tags.toUpperCase() == 'EAS' && (
-									<Badge
-										value='Massage assis méthd. EAS®'
-										severity='info'
-									></Badge>
+									<>
+										<meta
+											itemProp='reviewAspect'
+											content='Massage assis méthd. EAS®'
+										/>
+										<Badge value='Massage assis méthd. EAS®' severity='info' />
+									</>
 								)}
 								{item.tags.toUpperCase() == 'REIKI' && (
-									<Badge value='Reiki Usui' severity='success'></Badge>
+									<>
+										<meta itemProp='reviewAspect' content='Soin Reiki Usui' />
+										<Badge value='Reiki Usui' severity='success' />
+									</>
 								)}
 							</span>
 						</p>

@@ -96,7 +96,7 @@ const Reiki = () => {
 								Usui, dans le respect des enseignements transmis depuis Mikao
 								Usui, par Carole Jacob, ma formatrice et amie. Je veille à
 								préserver la simplicité, l’authenticité et l’esprit originel de
-								cette méthode du XIX<sup>éme</sup> siècle, en offrant un soin
+								cette méthode du XIX<sup>e</sup> siècle, en offrant un soin
 								fidèle à ses valeurs et à sa philosophie.
 							</p>
 							<p>
@@ -130,7 +130,7 @@ const Reiki = () => {
 									<li>Libérer les blocages et les tensions</li>
 									<li>Renforcer le système immunitaire</li>
 									<li>Favoriser un lâcher‑prise profond</li>
-									<li>Atténuer les douleurs et élimine les toxines</li>
+									<li>Atténuer les douleurs et éliminer les toxines</li>
 									<li>Stimuler les processus naturels d’auto‑guérison</li>
 									<li>Réharmoniser et apaiser le corps et l'esprit</li>
 								</ul>
@@ -172,19 +172,19 @@ const Reiki = () => {
 					<div className='reiki-usui-targets-lists'>
 						<div className='reiki-usui-target-list'>
 							<p>
-								Il est particulièrement adaptée si vous recherchez un soutien
+								Il est particulièrement adapté si vous recherchez un soutien
 								pour faire face :
 							</p>
 							<ul>
 								<li>Au stress, à l'anxiété ou au burn-out</li>
-								<li>A la fatigue, l'insomnie ou manque de vitalité</li>
+								<li>À la fatigue, l'insomnie ou au manque de vitalité</li>
 								<li>
-									A des états émotionnels, la perte de confiance, des blocages
+									À des états émotionnels, la perte de confiance, des blocages
 									ou des schémas répétitifs
 								</li>
 								<li>
-									A des tensions musculaires, des douleurs chroniques,
-									articulaires ou inflamatoires
+									À des tensions musculaires, des douleurs chroniques,
+									articulaires ou inflammatoires
 								</li>
 								<li>
 									Au changement que ce soit dans la vie personnelle ou
@@ -193,7 +193,7 @@ const Reiki = () => {
 							</ul>
 						</div>
 						<div className='reiki-usui-target-disclaimer-list'>
-							<p>Il ne covient pas en cas : </p>
+							<p>Il ne convient pas en cas : </p>
 							<ul className='disclaimer'>
 								<li>
 									De troubles psychotiques, schizophréniques ou de dissociation

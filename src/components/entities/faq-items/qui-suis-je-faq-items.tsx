@@ -21,7 +21,7 @@ export const QuiSuisJeFaqItems: Array<iFaqItem> = [
 		),
 	},
 	{
-		question: 'Quelle ma philosophie d’accompagnement ?',
+		question: 'Quelle est ma philosophie d’accompagnement ?',
 		response: (
 			<>
 				<p>

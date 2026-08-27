@@ -91,8 +91,8 @@ const Massage5Continents = () => {
 								Le{' '}
 								<em>
 									<b>M</b>assage des <b>5</b> <b>C</b>ontinents (<b>M5C</b>)
-								</em>
-								, est un soin unique qui réunit massage, soin énergétique et
+								</em>{' '}
+								est un soin unique qui réunit massage, soin énergétique et
 								complexes d’huiles essentielles pour agir en profondeur sur le
 								corps et l'esprit. Cette combinaison subtile détoxifie, relâche,
 								rééquilibre et revitalise, offrant un soin complet aux effets
@@ -105,7 +105,7 @@ const Massage5Continents = () => {
 							/>
 							<p>
 								Ce massage se pratique en sous‑vêtement et englobe tout le corps
-								: dos, jambes, ventre, bras haut du torse, mains et visage. Son
+								: dos, jambes, ventre, bras, haut du torse, mains et visage. Son
 								action biodynamisante soutient les processus naturels
 								d’auto‑guérison. Il permet de se libérer des toxines et des
 								mémoires émotionnelles, ouvrant la voie à des énergies plus
@@ -150,7 +150,7 @@ const Massage5Continents = () => {
 							pratiques ayurvédiques. Combiné à un soin énergétique
 							<McLinkReikiUsui text='Reiki Usui' />
 							et aux propriétés thérapeutiques d’huiles essentielles
-							spécifiques, sélectionnée pour leurs synergies, ce massage
+							spécifiques, sélectionnées pour leurs synergies, ce massage
 							biodynamique stimule les processus naturels d’auto‑guérison,
 							libère les blocages émotionnels et détoxifie l’organisme.
 						</p>
@@ -172,7 +172,7 @@ const Massage5Continents = () => {
 										Une réactivation de la circulation de l’énergie vitale
 									</li>
 									<li>
-										Un Allègement des charges émotionnelles et des blocages
+										Un allègement des charges émotionnelles et des blocages
 									</li>
 									<li>Une amélioration de la qualité du sommeil</li>
 									<li>Un soutien à la vitalité et une sensation de légèreté</li>
@@ -295,8 +295,8 @@ const Massage5Continents = () => {
 								alt='Massothérapeute effectuant un massage des 5 continents pour détendre le haut du dos et harmoniser l’énergie'
 							/>
 							<blockquote>
-								Un soin qui honore le corps et apaise l’esprit: un moment unique
-								pour vous.
+								Un soin qui honore le corps et apaise l’esprit : un moment
+								unique pour vous.
 							</blockquote>
 						</div>
 						<div className='massage-cinq-continents-prices-inner-content'>

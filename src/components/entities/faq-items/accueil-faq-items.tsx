@@ -38,8 +38,8 @@ export const AccueilFaqItems: Array<iFaqItem> = [
 						non médicaux, non thérapeutique et sans aucun caractère sexuel ou
 						érotique
 					</b>
-					. Ils ne se substitutent ni un traitement médical ou thérapeutique ni
-					à de la kinésithérapie.
+					. Ils ne se substitutent ni à un traitement médical ou thérapeutique
+					ni à de la kinésithérapie.
 				</p>
 				<p>
 					Je m'engage à offrir un espace sécurisant et bienveillant. En
@@ -124,7 +124,7 @@ export const AccueilFaqItems: Array<iFaqItem> = [
 				</p>
 				<p>
 					Il est essentiel de rappeler que mes soins Reiki Usui et massages
-					énergétiques ne se substitutent pas un traitement médical ou
+					énergétiques ne se substitutent pas à un traitement médical ou
 					thérapeutique. Ils n’ont pas pour vocation de guérir une maladie ou
 					une pathologie mais à vous accompagner sur votre chemin vers la
 					guérison et le mieux-être. Leur rôle est de soutenir, d’apaiser et

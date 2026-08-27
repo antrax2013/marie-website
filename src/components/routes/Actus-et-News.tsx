@@ -10,36 +10,6 @@ import McLinkM5C from '../fragments/McLinks/McLink-5-Continents';
 import McLinkMEAS from '../fragments/McLinks/McLink-Massage-EAS';
 
 const ActusEtNews = () => {
-	{
-		/* <script type='application/ld+json'>
-				{
-					"@context": "https://schema.org",
-					"@type": "BlogPosting",
-					"headline": "Nouvelle salle pluridisciplinaire de massage et Reiki à Guyancourt",
-					"description": "Découvrez la nouvelle salle pluridisciplinaire disponible chaque jeudi au cabinet Blowball à Guyancourt : massages, Reiki Usui, Massage des 5 Continents. Massages à domicile sur Saint-Quentin-en-Yvelines et séances le lundi à Élancourt.",
-					"author": {
-						"@type": "Person",
-						"name": "Ton Nom"
-					},
-					"publisher": {
-						"@type": "Organization",
-						"name": "Cabinet Blowball",
-						"logo": {
-							"@type": "ImageObject",
-							"url": "https://ton-site.fr/logo.png"
-						}
-					},
-					"mainEntityOfPage": {
-						"@type": "WebPage",
-						"@id": "https://ton-site.fr/salle-pluridisciplinaire-massage-reiki-guyancourt"
-					},
-					"image": "https://ton-site.fr/images/nouvelle-salle-guyancourt.jpg",
-					"datePublished": "2024-01-01",
-					"dateModified": "2024-01-01"
-				}
-				</script> */
-	}
-
 	return (
 		<>
 			<div className='article ActusEtNews'>
@@ -53,9 +23,9 @@ const ActusEtNews = () => {
 								</p>
 								<div className='header-2-description'>
 									<p>
-										Bienvenue la partie blog du site massage-reiki.fr, l’espace
-										dédié au bien‑être sur Saint‑Quentin‑en‑Yvelines, Élancourt
-										et Guyancourt.
+										Bienvenue dans la partie blog du site massage-reiki.fr,
+										l’espace dédié au bien‑être sur Saint‑Quentin‑en‑Yvelines,
+										Élancourt et Guyancourt.
 									</p>
 									<div className='img-cocon-l-container size-l-hidden'>
 										<McImage
@@ -66,8 +36,8 @@ const ActusEtNews = () => {
 									</div>
 									<p>
 										Je publie régulièrement des contenus autour du{' '}
-										<McLinkReikiUsui text='Reiki Usui' />, des massages
-										relaxants (
+										<McLinkReikiUsui text='Reiki Usui' noWrap={true} />, des
+										massages relaxants (
 										<McLinkMEAS
 											text='Massage du dos assis méthode EAS®'
 											noWrap={true}
@@ -76,7 +46,7 @@ const ActusEtNews = () => {
 										<McLinkM5C text='Massage des 5 Continents' noWrap={true} />)
 										et de pratiques naturelles pour améliorer votre bien‑être.
 										Ces articles vous guident pour réduire le stress, retrouver
-										énergie et sérénité, au quotidien, autoursdes différentes
+										énergie et sérénité, au quotidien, autours des différentes
 										approches que je propose.
 									</p>
 									<p>

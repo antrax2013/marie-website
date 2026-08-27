@@ -258,7 +258,7 @@ const MassageAssisTambourUnite = () => {
 								alt='Massothérapeute effectuant un massage des 5 continents pour détendre le haut du dos et harmoniser l’énergie'
 							/>
 							<blockquote>
-								Un soin qui honore le corps et apaise l’esprit: un moment unique
+								Un soin qui honore le corps et apaise l’esprit : un moment unique
 								pour vous.
 							</blockquote>
 						</div>

@@ -26,7 +26,7 @@ const PanneauLateral = () => {
 			<p>
 				Les autres jours de la semaine, je consulte à
 				<McLinkSoinDomicile text='domicile' />
-				sur Saint Quentin-en-Yvelines et ses environs : <em>Maurepas</em>,{' '}
+				sur Saint-Quentin-en-Yvelines et ses environs : <em>Maurepas</em>,{' '}
 				<em>Montigny-le-Bretonneux</em>, <em>Plaisir</em>,{' '}
 				<em>Voisins-le-Bretonneux</em>, <em>Coignières</em>,{' '}
 				<em>La Verrière</em>, <em>Trappes</em>, <em>Le Mesnil-Saint-Denis</em>,{' '}

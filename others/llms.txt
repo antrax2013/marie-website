@@ -1,13 +1,13 @@
 # LLMs.txt for Massages énergétiques &amp; Reiki Usui dans les Yvelines
 
-> Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.
+> Massages énergétiques et Reiki Usui sur Saint-Quentin-en-Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.
 
 ## Project Details
 
 - **Brand**: Massage Reiki.fr
 - **Website**: https://massage-reiki.fr
 - **Owner**: Marie Cophignon - Massothérapeute énergétique
-- **Description**: Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.
+- **Description**: Massages énergétiques et Reiki Usui sur Saint-Quentin-en-Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.
 - **Contact**: marie@cophignon.net
 
 version: 1.3

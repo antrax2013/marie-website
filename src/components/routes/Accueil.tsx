@@ -26,12 +26,12 @@ const Accueil = () => {
 							<div className='hero-content '>
 								<h1>
 									Massages énergétiques & Reiki Usui
-									<br />à Saint-Quentin en Yvelines
+									<br />à Saint-Quentin-en-Yvelines
 								</h1>
 								<p className='hero-description'>
 									Réduisez le stress, relâchez les tensions et retrouvez un
 									équilibre durable grâce à des massages énergétiques et des
-									soins Reiki Usui personnalisés à Saint-Quentin en Yvelines. Je
+									soins Reiki Usui personnalisés à Saint-Quentin-en-Yvelines. Je
 									vous accueille en cabinet à Élancourt et Guyancourt.
 									J'interviens également
 									<McLinkSoinDomicile text='à domicile' />

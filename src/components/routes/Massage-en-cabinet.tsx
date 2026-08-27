@@ -258,8 +258,8 @@ const MassageEnCabinet = () => {
 								alt='Massothérapeute effectuant un massage des 5 continents pour détendre le haut du dos et harmoniser l’énergie'
 							/>
 							<blockquote>
-								Un soin qui honore le corps et apaise l’esprit: un moment unique
-								pour vous.
+								Un soin qui honore le corps et apaise l’esprit : un moment
+								unique pour vous.
 							</blockquote>
 						</div>
 						<div className='massage-cinq-continents-prices-inner-content'>

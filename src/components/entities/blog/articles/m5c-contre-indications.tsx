@@ -182,7 +182,7 @@ export const BlogArticleM5cContreIndications: iBlog = {
 				dans le respect strict de votre santé et du cadre professionnel.
 			</p>
 			<p>
-				Je vous accueille en cabinet le lundi à Élancourt et le jeudi
+				Je vous accueille en cabinet le lundi à Élancourt et le jeudi à
 				Guyancourt, ou à domicile sur Saint-Quentin-en-Yvelines et ses environs
 				(Maurepas, Plaisir, Montigny-le-Bretonneux...).
 			</p>

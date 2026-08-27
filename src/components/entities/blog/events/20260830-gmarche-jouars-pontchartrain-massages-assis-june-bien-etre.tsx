@@ -24,7 +24,7 @@ export const BlogEvent20260830GmarcheEtBienEtre: iBlog = {
 			/*640-426*/
 			path: thumbnail,
 			className: 'img',
-			alt: 'Affiche du Ğmarché de Pontchartrain du 30 août 2026 où Marie Cophignon, pour la première fois, participera et proposera des massegs du dos assis méthode EAS.',
+			alt: 'Affiche du Ğmarché de Pontchartrain du 30 août 2026 où Marie Cophignon, pour la première fois, participera et proposera des massages du dos assis méthode EAS.',
 		},
 	],
 	content: (

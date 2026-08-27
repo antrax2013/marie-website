@@ -83,7 +83,7 @@ const MassageAssisMethodeEAS = () => {
 						/>
 						<div className='massage-assis-eas-description-content'>
 							<p>
-								Le <em>massage assis méthode EAS®</em>, est un soin énergétique,
+								Le <em>massage assis méthode EAS®</em> est un soin énergétique,
 								doux, créé par Jean‑Noël Poucet au sein de l’
 								<a
 									href='https://ecoledesartsdusouffle.com/nos-formations/massage-assis-eas/'
@@ -106,10 +106,10 @@ const MassageAssisMethodeEAS = () => {
 								l’esprit et de retrouver une meilleure connexion à son corps.
 							</p>
 							<p>
-								Par son approche ciblée, permet à ce qu'une grande majorité des
-								personnes en bénéficie, que ce soit pour un moment de détente,
-								pour relâcher des tensions musculaires ou pour retrouver une
-								meilleure disponibilité corporelle et mentale.
+								Par son approche ciblée, il permet à ce qu'une grande majorité
+								des personnes en bénéficie, que ce soit pour un moment de
+								détente, pour relâcher des tensions musculaires ou pour
+								retrouver une meilleure disponibilité corporelle et mentale.
 							</p>
 						</div>
 					</div>
@@ -189,14 +189,14 @@ const MassageAssisMethodeEAS = () => {
 									</ul>
 								</div>
 								<div className='massage-assis-eas-target-disclaimer-list'>
-									<p>Elle ne covient pas en cas : </p>
+									<p>Elle ne convient pas en cas : </p>
 									<ul className='disclaimer'>
 										<li>
 											de troubles psychotiques, schizophréniques ou de
 											dissociation de la personnalité
 										</li>
 										<li>
-											de douleurs aigües ou d'une inflamation au niveau des
+											de douleurs aiguës ou d'une inflammation au niveau des
 											zones massées
 										</li>
 									</ul>
@@ -259,7 +259,7 @@ const MassageAssisMethodeEAS = () => {
 							<div className='eas-entreprise-header'>
 								<h2 id='massage-en-entreprise'>
 									Le massage du dos assis méthode EAS® en entreprise sur
-									Saint-Quentin en Yvelines et ses alentours.
+									Saint-Quentin-en-Yvelines et ses alentours.
 								</h2>
 							</div>
 							<div className='eas-entreprise-content'>
@@ -325,7 +325,7 @@ const MassageAssisMethodeEAS = () => {
 					<h2>Envie de découvrir le massage du dos assis méthode EAS® ?</h2>
 					<p>
 						Offrez-vous une parenthèse de douceur, un moment pour respirer,
-						relâcher et vous recentrer. Sur Saint-Quentin en Yvelines, à
+						relâcher et vous recentrer. Sur Saint-Quentin-en-Yvelines, à
 						Élancourt et Guyancourt, à <McLinkSoinDomicile text='domicile' />
 						ou en entreprise, le massage du dos assis méthode EAS® est une
 						invitation à renouer avec votre corpset lâcher le mental.
