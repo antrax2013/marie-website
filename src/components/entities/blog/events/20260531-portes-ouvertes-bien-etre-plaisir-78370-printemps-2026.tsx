@@ -92,7 +92,7 @@ export const BlogEvent20260531PortesOuvertesPrintemps2026: iBlog = {
 				<div className='cta-container'>
 					<div className='cta-container-row'>
 						<Cta
-							link={'/actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'}
+							link={'/duo-massage-du-dos-assis-tambour-unite'}
 							title={
 								'En savoir plus sur le duo vibratoire : Massage du dos assis + Tambour Unité'
 							}

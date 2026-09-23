@@ -115,17 +115,17 @@ const Menu = ({ ...props }) => {
 						onClick('reiki');
 					},
 				},
-				// {
-				// 	label: 'Massage assis & Tambour Unité',
-				// 	template: (item: MenuItem, options: MenuItemOptions) => {
-				// 		return itemTemplate(item, options);
-				// 	},
-				// 	url: '/massage-assis-tambour-unite',
-				// 	className: getClassName('massage-assis-tambour-unite'),
-				// 	command: () => {
-				// 		onClick('massage-assis-tambour-unite');
-				// 	},
-				// },
+				{
+					label: 'Massage assis & Tambour Unité',
+					template: (item: MenuItem, options: MenuItemOptions) => {
+						return itemTemplate(item, options);
+					},
+					url: '/duo-massage-du-dos-assis-tambour-unite',
+					className: getClassName('massage-assis-tambour-unite'),
+					command: () => {
+						onClick('massage-assis-tambour-unite');
+					},
+				},
 			],
 			className: getClassName('mes-soins'),
 		},

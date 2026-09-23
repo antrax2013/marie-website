@@ -72,12 +72,12 @@ export const BlogEvent20260412RetourSalonSensEveil4: iBlog = {
 				<h2>3 expériences Duo Massage – Tambour Unité avec Floriane</h2>
 				<p>
 					J’ai également eu le plaisir de proposer, avec Floriane, 3 séances du{' '}
-					<a href='/actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'>
-						duo "massage du dos assis ‑ tambour unité"
+					<a href='/articles/soin-massage-eas-tambour-sqy-plaisir-yvelines'>
+						duo "massage du dos assis ‑ Tambour Unité"
 					</a>
 					. Ce soin unique combine le toucher du
 					<McLinkMEAS text='massages du dos assis méthode EAS®' />
-					et la vibration du tambour unité, créant une expérience immersive qui
+					et la vibration du Tambour Unité, créant une expérience immersive qui
 					favorise l’ancrage, la détente profonde et la reconnexion à soi.
 				</p>
 				<p>
@@ -88,9 +88,9 @@ export const BlogEvent20260412RetourSalonSensEveil4: iBlog = {
 				<div className='cta-container'>
 					<div className='cta-container-row'>
 						<Cta
-							link={'/actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'}
+							link={'/articles/soin-massage-eas-tambour-sqy-plaisir-yvelines'}
 							title={
-								'En savoir plus sur le duo massage du dos assis ‑ tambour unité'
+								'En savoir plus sur le duo massage du dos assis ‑ Tambour Unité'
 							}
 							ctaText={'Découvrir le soin'}
 						/>

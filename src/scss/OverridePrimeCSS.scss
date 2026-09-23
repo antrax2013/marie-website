@@ -19,6 +19,9 @@
 	}
 
 	.p-badge.p-badge-secondary {
+		background-color: var(--gray-600) !important;
+	}
+	.p-badge.p-badge-undefined {
 		background-color: var(--cyan-500) !important;
 	}
 

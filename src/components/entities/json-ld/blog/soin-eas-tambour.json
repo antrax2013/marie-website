@@ -1,0 +1,23 @@
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "BlogPosting",
+			"@id": "https://massage-reiki.fr/articles/soin-massage-eas-tambour-sqy-plaisir-yvelines/#article",
+			"headline": "Comment est né le Soin duo massage du dos assis - Tambour Unité ?",
+			"description": "Découvrez comment Marie et Floriane ont imaginé leur soin duo massage du dos assis - Tambour Unité, né de leur complicité et de la fusion de leurs pratiques.",
+			"mainEntityOfPage": "https://https://massage-reiki.fr/articles/soin-massage-eas-tambour-sqy-plaisir-yvelines",
+			"inLanguage": "fr-FR",
+			"datePublished": "2026-08-24T08:30:00+01:00",
+			"author": {
+				"@id": "https://massage-reiki.fr/#person-marie"
+			},
+			"publisher": {
+				"@id": "https://massage-reiki.fr/#person-marie"
+			},
+			"about": {
+				"@id": "https://massage-reiki.fr/#service-duo-massage-du-dos-assis-tambour-unite"
+			}
+		}
+	]
+}

@@ -68,6 +68,12 @@
 			"url": "/reiki-usui"
 		},
 		{
+			"name": "Soin duo massage du dos assis - Tambour Unité à Plaisir",
+			"short_name": "Massage du dos assis - Tambour Unité",
+			"description": "Découvrez à Plaisir un soin duo unique associant massage du dos assis, sons et vibrations du Tambour Unité, dans une expérience sensorielle à deux.",
+			"url": "/duo-massage-du-dos-assis-tambour-unite"
+		},
+		{
 			"name": "Massage en entreprise à Saint‑Quentin‑en‑Yvelines – Bien‑être au travail",
 			"short_name": "Massage en entreprise SQY",
 			"description": "Massage en entreprise à SQY : détente, énergie et réduction du stress. Massage du dos assis EAS® pour améliorer la QVCT. Interventions sur Saint‑Quentin‑en‑Yvelines et environs.",
@@ -92,12 +98,11 @@
 			"url": "/contact"
 		},
 		{
-			"name": "Massage assis méthode EAS® & Tambour Unité : le soin duo à Plaisir",
-			"short_name": "Massage assis méthode EAS® & Tambour Unité : le soin duo à Plaisir",
-			"description": "Offrez-vous un soin énergétique unique à Plaisir (78) : massage assis méthode EAS® et tambour unité avec Marie Cophignon et Flofa Art à Saint-Quentin-en-Yvelines. Sur rendez-vous, le 14 mars 2026.",
-			"url": "/actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines"
+			"name": "Naissance du soin duo massage du dos assis - Tambour Unité",
+			"short_name": "Naissance du massage du dos assis - Tambour Unité",
+			"description": "Découvrez comment Marie et Floriane ont imaginé leur soin duo massage du dos assis - Tambour Unité, né de leur complicité et de la fusion de leurs pratiques.",
+			"url": "/articles/soin-massage-eas-tambour-sqy-plaisir-yvelines"
 		},
-
 		{
 			"name": "Le plan du site",
 			"short_name": "Plan du site",

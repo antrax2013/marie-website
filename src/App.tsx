@@ -5,7 +5,7 @@ import './scss/OverridePrimeCSS.scss';
 import 'primeflex/primeflex.css';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
-import Message from './components/fragments/Message';
+// import Message from './components/fragments/Message';
 import MainJsonLd from './components/fragments/JsonLd/Main-JsonLd';
 
 // Menu
@@ -33,9 +33,6 @@ const Reiki = lazy(() => import('./components/routes/Reiki'));
 const ActusEtNews = lazy(() => import('./components/routes/Actus-et-News'));
 const BlogArticle = lazy(
 	() => import('./components/fragments/Blog/BlogArticle'),
-);
-const SoinMassageTambour = lazy(
-	() => import('./components/routes/actualites/SoinMassageTambour'),
 );
 
 // Autres routes
@@ -68,11 +65,11 @@ const App = () => {
 					content='Le coffret duo est de retour et disponible jusqu’à fin février.'
 					alt='Cliquez sur ce lien pour plus d’informations.'
 				/> */}
-				<Message
-					link='/actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'
+				{/* <Message
+					link='/duo-massage-du-dos-assis-tambour-unite'
 					content='Nouveau - Massage assis méthode EAS® & Tambour Unité : le soin duo à Plaisir'
 					alt='Cliquez sur ce lien pour plus d’informations.'
-				/>
+				/> */}
 				<header className='flex flex-wrap'>
 					<Header />
 				</header>
@@ -97,7 +94,7 @@ const App = () => {
 								element={<Massage5Continents />}
 							/>
 							<Route
-								path='massage-assis-tambour-unite'
+								path='duo-massage-du-dos-assis-tambour-unite'
 								element={<MassageAssisTambourUnite />}
 							/>
 
@@ -119,10 +116,6 @@ const App = () => {
 							{/* Actualités */}
 							<Route path='articles-et-actualites' element={<ActusEtNews />} />
 							<Route path='/articles/:slug' element={<BlogArticle />} />
-							<Route
-								path='actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'
-								element={<SoinMassageTambour />}
-							/>
 
 							{/* Divers */}
 							<Route

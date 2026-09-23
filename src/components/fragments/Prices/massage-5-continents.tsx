@@ -1,9 +1,5 @@
 import '../../../scss/fragments/PricesContainer.scss';
-
-export interface iPricesTable {
-	title?: string;
-	th?: string;
-}
+import { iPricesTable } from './iPricesTable';
 
 export const PricesM5C = ({ title }: iPricesTable) => {
 	return (

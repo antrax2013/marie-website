@@ -51,6 +51,17 @@
 			"position": "5",
 			"item": {
 				"@type": "SiteNavigationElement",
+				"url": "https://massage-reiki.fr/duo-massage-du-dos-assis-tambour-unite",
+				"@id": "https://massage-reiki.fr/duo-massage-du-dos-assis-tambour-unite",
+				"name": "Soin duo massage du dos assis - Tambour Unité",
+				"description": "Découvrez à Plaisir un soin duo unique associant massage du dos assis, sons et vibrations du Tambour Unité, dans une expérience sensorielle à deux."
+			}
+		},
+		{
+			"@type": "ListItem",
+			"position": "6",
+			"item": {
+				"@type": "SiteNavigationElement",
 				"url": "https://massage-reiki.fr/massage-en-entreprise-saint-quentin-en-yvelines",
 				"@id": "https://massage-reiki.fr/massage-en-entreprise-saint-quentin-en-yvelines",
 				"name": "Massage en entreprise à Saint‑Quentin‑en‑Yvelines",
@@ -59,7 +70,7 @@
 		},
 		{
 			"@type": "ListItem",
-			"position": "6",
+			"position": "7",
 			"item": {
 				"@type": "SiteNavigationElement",
 				"url": "https://massage-reiki.fr/soins-a-domicile-saint-quentin-en-yvelines",
@@ -70,7 +81,7 @@
 		},
 		{
 			"@type": "ListItem",
-			"position": "7",
+			"position": "8",
 			"item": {
 				"@type": "SiteNavigationElement",
 				"url": "https://massage-reiki.fr/offres-et-tarifs",
@@ -81,7 +92,7 @@
 		},
 		{
 			"@type": "ListItem",
-			"position": "8",
+			"position": "9",
 			"item": {
 				"@type": "SiteNavigationElement",
 				"url": "https://massage-reiki.fr/contact",
@@ -92,7 +103,7 @@
 		},
 		{
 			"@type": "ListItem",
-			"position": "9",
+			"position": "10",
 			"item": {
 				"@type": "SiteNavigationElement",
 				"url": "https://massage-reiki.fr/politique-de-confidentialite",
@@ -103,7 +114,7 @@
 		},
 		{
 			"@type": "ListItem",
-			"position": "10",
+			"position": "11",
 			"item": {
 				"@type": "SiteNavigationElement",
 				"url": "https://massage-reiki.fr/mentions-legales",
@@ -114,24 +125,13 @@
 		},
 		{
 			"@type": "ListItem",
-			"position": "11",
+			"position": "12",
 			"item": {
 				"@type": "SiteNavigationElement",
 				"url": "https://massage-reiki.fr/plan-du-site",
 				"@id": "https://massage-reiki.fr/plan-du-site",
 				"name": "Le plan du site",
 				"description": "Navigation complète du site Massage Reiki : pages, services, tarifs et informations légales."
-			}
-		},
-		{
-			"@type": "ListItem",
-			"position": "12",
-			"item": {
-				"@type": "SiteNavigationElement",
-				"url": "https://massage-reiki.fr/erreur-404",
-				"@id": "https://massage-reiki.fr/erreur-404",
-				"name": "Erreur 404",
-				"description": "La page demandée est introuvable."
 			}
 		}
 	]

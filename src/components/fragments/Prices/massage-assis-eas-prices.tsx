@@ -1,10 +1,6 @@
 import CtaDevis from '../Ctas/Devis';
 import '../../../scss/fragments/PricesContainer.scss';
-
-export interface iPricesTable {
-	title?: string;
-	th?: string;
-}
+import { iPricesTable } from './iPricesTable';
 
 export const PricesMassageEAS = ({ title }: iPricesTable) => {
 	return (
@@ -19,17 +15,17 @@ export const PricesMassageEAS = ({ title }: iPricesTable) => {
 							<th>Domicile</th>
 						</tr>
 						<tr>
-							<td>0h20</td>
+							<td>0h30</td>
 							<td>25,00 €</td>
 							<td>30,00 €</td>
 						</tr>
 						<tr>
-							<td>0h35</td>
+							<td>0h45</td>
 							<td>40,00 €</td>
 							<td>45,00 €</td>
 						</tr>
 						<tr>
-							<td>0h45</td>
+							<td>0h55</td>
 							<td>50,00 €</td>
 							<td>55,00 €</td>
 						</tr>

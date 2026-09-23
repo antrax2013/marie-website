@@ -20,6 +20,8 @@ export const getBadgeSeverityFromTag = (
 		case 'Reiki Usui'.toUpperCase():
 		case 'Reiki'.toUpperCase():
 			return 'success';
+		case 'Duo Massage - Tambour Unité'.toUpperCase():
+			return 'secondary';
 		case 'Salon'.toUpperCase():
 		case 'Initiation'.toUpperCase():
 		case 'Portes ouvertes'.toUpperCase():
@@ -31,7 +33,7 @@ export const getBadgeSeverityFromTag = (
 		case 'Promo'.toUpperCase():
 			return 'contrast';
 		default:
-			return 'secondary';
+			return undefined;
 	}
 };
 

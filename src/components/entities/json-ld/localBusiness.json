@@ -191,6 +191,17 @@
 		},
 		{
 			"@type": "Service",
+			"@id": "https://massage-reiki.fr/#service-duo-massage-du-dos-assis-tambour-unite",
+			"name": "Soin duo massage du dos assis - Tambour Unité",
+			"description": "Soin duo massage du dos assis - Tambour Unité, massage, son et vibrations à l'unission pour un soin holistique unique.",
+			"providerMobility": "dynamic",
+			"provider": {
+				"@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
+				"@id": "https://massage-reiki.fr/#business"
+			}
+		},
+		{
+			"@type": "Service",
 			"@id": "https://massage-reiki.fr/#service-entreprise",
 			"name": "Massages en entreprise",
 			"description": "Séances de massage assis en entreprise, événements QVT, salons et collectivités.",
@@ -281,6 +292,20 @@
 				"priceCurrency": "EUR",
 				"minPrice": 25,
 				"maxPrice": 55
+			}
+		},
+		{
+			"@type": "Offer",
+			"@id": "https://massage-reiki.fr/#offer-duo-massage-du-dos-assis-tambour-unite",
+			"name": "Soin duo massage du dos assis - Tambour Unité",
+			"itemOffered": {
+				"@id": "https://massage-reiki.fr/#service-duo-massage-du-dos-assis-tambour-unite"
+			},
+			"priceSpecification": {
+				"@type": "PriceSpecification",
+				"priceCurrency": "EUR",
+				"minPrice": 50,
+				"maxPrice": 90
 			}
 		},
 		{

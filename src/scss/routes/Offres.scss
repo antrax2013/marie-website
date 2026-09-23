@@ -1,6 +1,31 @@
 @use '../rules/mixins';
 
 .Offres {
+	.first-header-2 {
+		.first-header-2-container {
+			.header-2-container {
+				.bg-image-alternative-container-img-cocooning {
+					img {
+						max-height: 250px;
+					}
+				}
+
+				.bg-image-container-img-cocooning {
+					--background-image-lazy: url('../../assets/Offres/image-serviettes-lampe-de-sel.jpg');
+					background-image: var(--background-image-lazy) !important;
+					border-top-right-radius: 25px;
+					border-bottom-right-radius: 25px;
+
+					.bg-image-container-content {
+						img {
+							max-height: 300px;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.prices-content,
 	.intervention-area,
 	.offres-container {
@@ -21,6 +46,11 @@
 			.prices-paragraph-content,
 			.offres-paragraph-content {
 				width: 300px;
+			}
+
+			.prices-paragraph-content img {
+				@include mixins.btn-border-rounded;
+				width: 200px;
 			}
 		}
 
@@ -43,5 +73,8 @@
 	.prices-paragraph-container,
 	.offres-paragraph-container {
 		flex-flow: column !important;
+	}
+	.prices-paragraph-content img {
+		display: none;
 	}
 }

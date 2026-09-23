@@ -1,58 +1,54 @@
 import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
-import ImgM5C from '../../assets/M5C/massage-5-continents.png';
-import ImgM5CColonne from '../../assets/M5C/m5c-colonne.png';
-import ImgM5CDos from '../../assets/M5C/m5c-bas-dos.png';
-//import ImgM5CBras from '../../assets/M5C/m5c-bras.png';
-import '../../scss/routes/M5C.scss';
+import '../../scss/routes/Massage-assis-tambour-unite.scss';
 import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import CtaOffres from '../fragments/Ctas/Offres';
 import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
-import McImage from '../fragments/McImage/McImage';
 import Cta from '../fragments/Ctas/Cta';
 import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
 import Faq from '../fragments/FAQ/Faq';
-import { M5CFaqItems } from '../entities/faq-items/m5c-faq-items';
-import { PricesM5C } from '../fragments/Prices/massage-5-continents';
-import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
-import McLinkReikiUsui from '../fragments/McLinks/McLink-Reiki-Usui';
+import { Adresse } from '../fragments/Adresse';
+import { DuoTambUniteEASFaqItems } from '../entities/faq-items/eas-tambour-unite-faq-items';
+import { PricesMEASTambourUnite } from '../fragments/Prices/massage-eas-tambour-unite';
+
+import FloMarieMoi from '../../assets/Actualites/massage-tambour/soin-duo-massage-eas-tambour-unite-marie-floriane-en-cours.jpg';
+import FloMarie from '../../assets/Actualites/massage-tambour/soin-duo-massage-eas-tambour-unite-marie-floriane.jpg';
+import McLink from '../fragments/McLink';
 
 const MassageAssisTambourUnite = () => {
 	return (
 		<>
-			<div className='M5C'>
+			<div className='MassageAssisTambourUnite'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
 						<div className='header-2-container'>
 							<div className='header-2-content'>
 								<h1>
-									Le Massage des 5 Continents (M5C) - un soin holistique, une
-									méthode signature, un bien‑être profond
+									Soin duo massage du dos assis - Tambour Unité, quand le
+									toucher rencontre la vibration sonore
 								</h1>
 								<div className='header-2-description'>
 									<p className='header-2-sub-title'>
-										Besoin de ralentir, de souffler, de respirer, de lâcher
-										prise ?
+										Et si le massage se prolongeait au-delà du toucher ?
 									</p>
 									<p>
-										Offrez‑vous un soin complet et unique. Le massage des 5
-										continents, entre les mains d’une praticienne certifiée,
-										réunit des techniques de massage venues des quatre coins du
-										monde, un soin énergétique
-										<McLinkReikiUsui text='Reiki Usui' />
-										et les propriétés thérapeutiques d’huiles essentielles.
+										Le soin duo massage du dos assis - Tambour Unité est né de
+										la fusion de deux pratiques et de la complicité naturelle
+										qui unit Marie et Floriane. Gestes et battements s’accordent
+										à l’unisson, dans une harmonie où les rythmes du massage et
+										du Tambour Unité se répondent et s’enrichissent.
 									</p>
 									<p>
-										Sur Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, à{' '}
-										<McLinkSoinDomicile text='domicile' />
-										ou en entreprise, offrez‑vous un instant suspendu où le
-										rythme ralentit, où l’esprit se libère.
+										Proposé exclusivement à Plaisir, dans les Yvelines, au sein
+										de l’atelier Flofa Art & Vibration, ce soin vous invite à
+										vivre une expérience unique où toucher, son et vibrations
+										s’entremêlent, entre détente corporelle et voyage intérieur.
 									</p>
 									<BgMcImageAlternativeContainer
-										path={ImgM5CDos}
-										className='img-bas-dos'
-										alt='Massothérapeute réalisant un massage des 5 continents sur le bas du dos pour favoriser une détente profonde'
+										path={FloMarie}
+										className='img-flo-marie'
+										alt='Marie et Floriane posant en compagnie de la chaise de massage et du Tambour Unité.'
 									/>
 								</div>
 								<div className='header-2-cta'>
@@ -61,213 +57,243 @@ const MassageAssisTambourUnite = () => {
 										<CtaOffres />
 									</div>
 									<blockquote className='cta-blockquote'>
-										Un soin complet, profond et biodynamique pour un
-										lâcher‑prise physique et mental.
+										Vibrations des terres ancestrales, douceurs des terres de
+										l'aube.
 									</blockquote>
 								</div>
 							</div>
 							<BgMcImageContainer
-								path={ImgM5CDos}
-								className={'img-bas-dos'}
-								alt='Massothérapeute réalisant un massage des 5 continents sur le bas du dos pour favoriser une détente profonde'
+								path={FloMarie}
+								className={'img-flo-marie'}
+								alt='Marie et Floriane posant en compagnie de la chaise de massage et du Tambour unité.'
 							/>
 						</div>
 					</div>
 				</div>
 
 				<ParagraphSeparator />
-				<div className='massage-cinq-continents-description-container'>
-					<div className='massage-cinq-continents-description-main-content'>
+				<div className='massage-assis-tambour-unite-description-container'>
+					<div className='massage-assis-tambour-unite-description-main-content'>
 						<BgMcImageContainer
-							path={ImgM5C}
-							className='img-logo-M5C'
-							alt='Logo de la Fédération du Massage des 5 Continents attestant de la certification'
+							path={FloMarieMoi}
+							className='img-massage'
+							alt='Marie et Floriane en train de faire un soin duo massage du dos assis - Tambour Unité'
 						/>
-						<div className='massage-cinq-continents-description-content'>
+						<div className='massage-assis-tambour-unite-description-content'>
 							<p>
-								Le{' '}
-								<em>
-									<b>M</b>assage des <b>5</b> <b>C</b>ontinents (<b>M5C</b>)
-								</em>
-								, est un soin unique qui réunit massage, soin énergétique et
-								complexes d’huiles essentielles pour agir en profondeur sur le
-								corps et l'esprit. Cette combinaison subtile détoxifie, relâche,
-								rééquilibre et revitalise, offrant un soin complet aux effets
-								durables.
+								Le soin duo duo massage du dos assis - Tambour Unité, est une
+								expérience sensorielle créée et pratiquée à deux par Marie et
+								Floriane. Il associe les gestes du massage du dos assis, méthode
+								EAS®, aux sons et aux vibrations d’un Tambour Unité de près de
+								1,80 m, installé sur son chevalet.
 							</p>
 							<BgMcImageAlternativeContainer
-								path={ImgM5C}
-								className='img-logo-M5C'
-								alt='Logo de la Fédération du Massage des 5 Continents attestant de la certification'
+								path={FloMarieMoi}
+								className='img-massage'
+								alt='Marie et Floriane en train de faire un soin duo massage du dos assis - Tambour Unité'
 							/>
 							<p>
-								Ce massage se pratique en sous‑vêtement et englobe tout le corps
-								: dos, jambes, ventre, bras haut du torse, mains et visage. Son
-								action biodynamisante soutient les processus naturels
-								d’auto‑guérison. Il permet de se libérer des toxines et des
-								mémoires émotionnelles, ouvrant la voie à des énergies plus
-								légères et plus vivantes.
+								Mais leur soin ne repose pas sur un enchaînement appris à
+								l’avance. Leur complicité leur permet de s’écouter, de se
+								comprendre et de s’ajuster naturellement tout au long de la
+								séance. Pendant que Marie fait évoluer son massage, Floriane
+								adapte instinctivement le rythme et l’intensité du Tambour
+								Unité.
 							</p>
 							<p>
-								Que ce soit pour un moment de détente, pour prendre soin de vous
-								ou simplement pour vous faire plaisir, ce massage offre un temps
-								pour souffler et vous recentrer. Il aide à traverser le stress,
-								la fatigue ou les tensions accumulées, et permet de retrouver
-								calme et harmonie.
+								Massage, son et vibrations agissent ainsi simultanément. Le
+								toucher apporte sa propre dimension, le son crée une présence
+								enveloppante et les vibrations du Tambour Unité ajoutent une
+								sensation physique singulière. Ce n’est donc pas un massage
+								accompagné d’un tambour, mais un soin construit autour de la
+								rencontre et de la synergie de ces trois dimensions.
 							</p>
 							<p>
-								Je suis aujourd’hui membre de la{' '}
-								<i>
-									<a
-										href='https://massagedes5continents.com/membres/8424/cophignon-marie/'
-										title='Cliquez pour accéder à ma fiche praticien de la Fédération du Massage des 5 Continents.'
-										target='_blank'
-									>
-										Fédération du Massage des 5 Continents
-									</a>
-								</i>
-								, engagée à pratiquer cette méthode avec authenticité,
-								bienveillance et fidélité à ses valeurs.
+								Chaque séance est unique. Elle se construit dans l’instant, au
+								rythme du massage, du Tambour Unité et de cette entente
+								naturelle entre les deux praticiennes.
 							</p>
-							<b>Ce massage est destiné exclusivement aux adultes majeurs.</b>
+							<p>
+								Ce soin est proposé exclusivement à{' '}
+								<b>
+									l’atelier Flofa Art & Vibration, à Plaisir dans les Yvelines
+								</b>
+								.
+							</p>
 						</div>
 					</div>
 				</div>
 				<ParagraphSeparator />
-
-				<div className='massage-cinq-continents-benefits-containers'>
+				<p className='massage-assis-tambour-unite-story-link'>
+					Une idée spontanée, deux amies et deux pratiques qui se rencontrent.
+					<McLink
+						text='Découvrir comment ce soin est né'
+						target={'_blank'}
+						href={'/articles/soin-massage-eas-tambour-sqy-plaisir-yvelines'}
+					/>
+				</p>
+				<ParagraphSeparator />
+				<div className='massage-assis-tambour-unite-benefits-containers'>
 					<h2 className='center-secondary-title'>
-						Les bienfaits du Massage des 5 Continents
+						Les bienfaits du soin duo massage du dos assis - Tambour Unité
 					</h2>
-					<div className='massage-cinq-continents-benefits'>
+					<div className='massage-assis-tambour-unite-benefits'>
 						<p>
-							Le Massage des 5 Continents agit durablement grâce à l’alliance de
-							techniques de massage issues des quatre coins du monde :
-							Lomi‑Lomi, massage californien, suédois, Tuina, acupression et
-							pratiques ayurvédiques. Combiné à un soin énergétique
-							<McLinkReikiUsui text='Reiki Usui' />
-							et aux propriétés thérapeutiques d’huiles essentielles
-							spécifiques, sélectionnée pour leurs synergies, ce massage
-							biodynamique stimule les processus naturels d’auto‑guérison,
-							libère les blocages émotionnels et détoxifie l’organisme.
+							Le massage, le son et les vibrations se déploient simultanément
+							tout au long du soin. Le jeu du Tambour Unité accompagne
+							l’évolution du massage : très doux au commencement, il gagne
+							progressivement en intensité avant de revenir vers une conclusion
+							plus calme. Cette progression n’est jamais figée. Floriane
+							l’adapte instinctivement au déroulement de chaque séance.
 						</p>
-						<div className='massage-cinq-continents-benefits-lists'>
-							<div className='massage-cinq-continents-benefits-list'>
-								<p>Le Massage des 5 Continents apporte :</p>
+						<div className='massage-assis-tambour-unite-benefits-lists'>
+							<div className='massage-assis-tambour-unite-benefits-list'>
+								<p>
+									Le soin duo massage du dos assis - Tambour Unité apporte :
+								</p>
 								<ul>
-									<li>Une libération des tensions physiques et musculaires</li>
-									<li>Un apaisement mental et une réduction du stress</li>
-									<li>Un lâcher‑prise profond</li>
+									<li>Détendre rapidement le dos, la nuque et les épaules</li>
+									<li>Libérer les tensions liées au stress et à la posture</li>
+									<li>Améliorer la circulation énergétique</li>
 									<li>
-										Une stimulation des processus naturels d’auto‑guérison
+										Favoriser une meilleure respiration et un apaisement mental
 									</li>
-									<li>
-										Une détoxification du corps en aidant l'élimination des
-										toxines{' '}
-									</li>
-									<li>
-										Une réactivation de la circulation de l’énergie vitale
-									</li>
-									<li>
-										Un Allègement des charges émotionnelles et des blocages
-									</li>
-									<li>Une amélioration la qualité du sommeil</li>
-									<li>Un soutien à la vitalité et une sensation de légèreté</li>
-									<li>Un recentrage et une meilleure connexion à soi</li>
 								</ul>
 							</div>
-							<div className='massage-cinq-continents-benefits-disclaimers'>
-								<p>Le Massage des 5 Continents n'est pas :</p>
+							<div className='massage-assis-tambour-unite-benefits-disclaimers'>
+								<p>
+									Le soin duo massage du dos assis - Tambour Unité n'est pas :
+								</p>
 								<ul className='disclaimer'>
 									<li>Une pratique de la masso-kinésithérapie</li>
 									<li>Une pratique médicale</li>
-									<li>Un massage naturiste</li>
-									<li>Un massage tantrique</li>
-									<li>Un massage à caractère sexuel</li>
+									<li>Un massage naturiste, tantrique ou à caractère sexuel</li>
 								</ul>
 							</div>
 						</div>
+						<p>
+							Ce soin ne consiste pas à ajouter un simple fond sonore à un
+							massage. Il ne juxtapose pas non plus deux pratiques
+							indépendantes.
+						</p>
+						<p>
+							Tout au long de la séance, Marie et Floriane s’ajustent l’une à
+							l’autre. Les gestes du massage influencent le rythme et
+							l’intensité du Tambour Unité, tandis que les sons et les
+							vibrations participent pleinement à l’expérience. C’est cette
+							synergie qui donne au soin son caractère singulier.
+						</p>
+
 						<blockquote>
-							Quand le corps se détend, l’énergie circule et l’esprit respire.
+							L’alliance de la force qui murmure et de celle qui gronde et
+							réveille les mémoires du corps sacré.
 						</blockquote>
 					</div>
 				</div>
 				<ParagraphSeparator />
-				<div className='massage-cinq-continents-targets-container'>
-					<h3>À qui s’adresse le Massage des 5 Continents ?</h3>
+				<div className='massage-assis-tambour-unite-targets-container'>
+					<h3>
+						À qui s’adresse le soin duo massage du dos assis - Tambour Unité ?
+					</h3>
 					<p>
-						Ce soin holistique convient à toute personne souhaitant s’offrir un
-						véritable lâcher‑prise, tant physique que mental.
+						Le soin holistique s’adresse notamment aux personnes curieuses de
+						découvrir une expérience sensorielle différente, associant toucher,
+						son et vibrations.
 					</p>
-					<b>Ce massage est destiné exclusivement aux adultes majeurs.</b>
+					<p>
+						Aucune connaissance du massage du dos assis ou du Tambour Unité
+						n’est nécessaire pour en profiter.
+					</p>
 
-					<div className='massage-cinq-continents-targets-lists'>
-						<div className='massage-cinq-continents-target-list'>
+					<div className='massage-assis-tambour-unite-targets-lists'>
+						<div className='massage-assis-tambour-unite-target-list'>
 							<p>Il est particulièrement adapté si vous recherchez : </p>
 							<ul>
-								<li>une pause ressourçante dans un rythme de vie soutenu</li>
-								<li>un soutien pour mieux gérer le stress</li>
-								<li>un moment pour vous reconnecter à votre corps</li>
-								<li>un soin raffiné et profond</li>
-								<li>un massage pensé comme une expérience unique</li>
+								<li>Une pause ressourçante dans un rythme de vie soutenu</li>
+								<li>Un moment pour vous reconnecter à votre corps</li>
+								<li>Un soin énergétique doux et profond</li>
 							</ul>
 						</div>
-						<div className='massage-cinq-continents-target-disclaimer-list'>
-							<p>Il est contre-indiqué pour : </p>
+						<div className='massage-assis-tambour-unite-target-disclaimer-list'>
+							<p>Il est contre-indiqué en cas de : </p>
 							<ul className='disclaimer'>
-								<li>Les femmes enceintes</li>
-								<li>Les personnes atteintes de cancer</li>
 								<li>
-									Les personnes souffrant de troubles psychotiques,
-									schizophréniques ou de dissociation de la personnalité
+									Troubles psychotiques, schizophréniques ou de dissociation de
+									la personnalité
 								</li>
-								<li>Les enfants</li>
+								<li>
+									Douleurs aiguës ou d'une inflammation au niveau des zones
+									massées
+								</li>
 							</ul>
 						</div>
 					</div>
-					<p>
-						L’usage des huiles essentielles demande une attention particulière.
-						Pour les femmes allaitantes, les personnes épileptiques,
-						asthmatiques, hypersensibles, atteintes de cancer ou suivant un
-						traitement médical ou homéopathique, certaines huiles essentielles
-						peuvent être déconseillées. En cas de doute, ou si votre situation
-						le nécessite, j’utiliserai exclusivement des huiles végétales afin
-						de garantir un soin adapté et en toute sécurité. N'hésitez pas à me
-						le signaler.
-					</p>
-					<p>
-						Par ailleurs, certaines huiles utilisées étant photosensibles, il
-						est recommandé de ne pas s’exposer au soleil après un Massage des 5
-						Continents. Il est également préférable de manger léger avant le
-						soin et de retirer bijoux et piercings afin de profiter pleinement
-						de la séance.
-					</p>
-					<blockquote>
-						Chaque séance est une bulle régénérante, accordée à votre état du
-						moment pour vous offrir exactement ce dont vous avez besoin.
-					</blockquote>
+					<blockquote>Deux sensibilités, une seule expérience.</blockquote>
 				</div>
 				<ParagraphSeparator />
-				<div className='massage-cinq-continents-prices-container'>
-					<h3>Tarifs 2026 du Massage des 5 Continents</h3>
-					<div className='massage-cinq-continents-prices-content'>
-						<div className='massage-cinq-continents-prices-image-content'>
-							<McImage
-								path={ImgM5CColonne}
-								className='img-lombaires'
-								alt='Massothérapeute effectuant un massage des 5 continents pour détendre le haut du dos et harmoniser l’énergie'
+				<div className='massage-assis-tambour-unite-prices-container'>
+					<h2>Le déroulé du soin vibratoire</h2>
+					<h3>L’accueil – le seuil du voyage</h3>
+					<p>
+						Vous arrivez, le cœur encore pris dans le tumulte du quotidien. Ici,
+						le temps s’étire. On vous invite à vous poser, à respirer. Un
+						échange doux s’installe, sans hâte. Vos mots, vos silences, vos
+						ressentis sont accueillis avec bienveillance. Vous vous installez,
+						confortablement, sur une chaise de massage ergonomique. Le corps
+						commence déjà à se déposer.
+					</p>
+					<h3>Le soin – la traversée vibratoire</h3>
+					<p>
+						Marie pose ses mains sur vos épaules, et de ce contact, nait une
+						chaleur douce qui se diffuse, comme un souffle qui réveille
+						délicatement le corps. Sous ses gestes, les tensions se relâchent,
+						les tissus s’assouplissent, et votre esprit s’abandonne. Puis la
+						pulsation du tambour Unité s’élève, ample et profonde. Floriane fait
+						vibrer l’air, avec la douceur persistante des alizés des grandes
+						plaines. La vibration descend dans le bassin, remonte le long de la
+						colonne, ouvre la poitrine, jusqu’à atteindre des zones plus
+						profondes, plus sensibles. Les mains et le tambour se répondent, se
+						mêlent, créant un mouvement qui traverse, enveloppe, réaccorde. On
+						se sent porté(e) par un courant intérieur, intensément vivant(e),
+						comme si le corps retrouvait sa densité, sa fluidité, sa lumière.
+					</p>
+					<h3>L’intégration – le retour à soi</h3>
+					<p>
+						Le tambour s’apaise. Les mains se retirent. Le silence revient,
+						dense et habité. Vous restez là, quelques instants, à l’écoute de ce
+						qui vibre encore en vous. Un thé, un mot, un regard. Vous repartez,
+						plus léger(e), plus aligné(e), comme si quelque chose en vous
+						s’était remis à chanter.
+					</p>
+				</div>
+				<ParagraphSeparator />
+				<div className='massage-assis-tambour-unite-prices-container'>
+					<h3>Tarifs 2026 du soin duo massage du dos assis - Tambour Unité </h3>
+					<div className='massage-assis-tambour-unite-prices-content'>
+						<div className='massage-assis-tambour-unite-prices-image-content'>
+							<p>À Plaisir (78), Atelier Flofa Art & Vibration</p>
+							<Adresse
+								streetAddress='5, Rue Edmond Rostand'
+								postalCode='78370'
+								addressLocality='Plaisir'
+								map='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1276.2312208092455!2d1.9423647298532734!3d48.81519150469808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e685b4a23f8d5b%3A0xab93794cdf06c3e5!2sCoffret%20d&#39;Alumine%20*2A%20Boutique%20bien-%C3%AAtre%20%26%20%C3%A9sot%C3%A9risme!5e0!3m2!1sfr!2snl!4v1766224688840!5m2!1sfr!2snl'
+								latitude='48.815378540410144'
+								longitude='1.944225308046599'
 							/>
 							<blockquote>
-								Un soin qui honore le corps et apaise l’esprit : un moment unique
-								pour vous.
+								Deux praticiennes, deux univers, un même rythme.
 							</blockquote>
 						</div>
-						<div className='massage-cinq-continents-prices-inner-content'>
-							<PricesM5C title='Séance de 1h30 - 70 mins de soin' />
-							<div className='cta-container-row footer-cta-container massage-cinq-continents-prices-cta'>
+						<div className='massage-assis-tambour-unite-prices-inner-content'>
+							<PricesMEASTambourUnite title='Durée et format' />
+							<p>
+								Ces temps comprennent l’accueil, l’installation, le soin puis un
+								temps d’échange et d’intégration après la séance.
+							</p>
+							<div className='cta-container-row footer-cta-container massage-assis-tambour-unite-prices-cta'>
 								<CtaRendezVous />
 								<Cta
-									link='/offres-et-tarifs#massage-5-contients-tarifs'
+									link='/offres-et-tarifs#massage-eas-tamobur-unite-tarifs'
 									title={
 										'Cliquez ici pour découvrir mes soins offres de soins, carte cadeau, packs et promotions.'
 									}
@@ -281,7 +307,7 @@ const MassageAssisTambourUnite = () => {
 				<ParagraphSeparator />
 				{/* Avis */}
 				<div className='review-container'>
-					<ReviewContainer filter='M5C' />
+					<ReviewContainer />
 				</div>
 				<div className='social-networks-container'>
 					<SocialNetworks />
@@ -296,24 +322,26 @@ const MassageAssisTambourUnite = () => {
 					<div className='faq-main-container'>
 						<h2>Les questions fréquentes</h2>
 						<div className='faq-content'>
-							<Faq items={M5CFaqItems} />
+							<Faq items={DuoTambUniteEASFaqItems} />
 						</div>
 					</div>
 				</div>
 				<ParagraphSeparator />
 				<div className='footer-cta'>
-					<h2>Envie de découvrir le Massage des 5 Continents ?</h2>
+					<h2>Vivre l’expérience du soin duo</h2>
 					<p>
-						Accordez‑vous une bulle de douceur, un moment pour respirer
-						pleinement, relâcher ce qui pèse et vous recentrer. Sur
-						Saint‑Quentin‑en‑Yvelines, à Élancourt et Guyancourt, à
-						<McLinkSoinDomicile text='domicile' />
-						ou en entreprise, le Massage des 5 Continents invite le corps à se
-						détendre, à se resourcer et l’esprit à s’alléger.
+						Massage, rythme, sons et vibrations ne se succèdent pas : ils
+						évoluent ensemble. À travers leur complicité et leurs deux
+						pratiques, Marie et Floriane ont créé un soin qu’aucune des deux ne
+						pourrait proposer seule.
 					</p>
 					<p>
-						Contactez-moi pour réserver votre séance ou obtenir plus
-						d’informations.
+						Venez découvrir cette expérience singulière dans l’univers de{' '}
+						<b>Flofa Art & Vibration à Plaisir</b> et laissez-vous surprendre
+						par la rencontre du toucher et du Tambour Unité.
+					</p>
+					<p>
+						<b>Pour prendre rendez-vous, contactez Marie directement.</b>
 					</p>
 					<div className='cta-container-row footer-cta-container'>
 						<CtaRendezVous />

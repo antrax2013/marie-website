@@ -22,11 +22,6 @@
 			"description": "Massage énergétique & Reiki Usui à SQY, Élancourt & Guyancourt (cabinet, domicile, entreprise). Contactez-moi pour planifier votre soin bien-être."
 		},
 		{
-			"key": "erreur-404",
-			"title": "Erreur 404 – Massages & Reiki Usui à SQY",
-			"description": "La page demandée n’existe pas ou plus."
-		},
-		{
 			"key": "reiki-usui",
 			"title": "Reiki Usui – Soin énergétique à SQY",
 			"description": "Reiki Usui à SQY, Élancourt et Guyancourt. Un soin énergétique doux pour réduire le stress et apaiser l’esprit, en cabinet ou à domicile."
@@ -40,6 +35,11 @@
 			"key": "massage-assis-methode-eas",
 			"title": "Massage du dos assis EAS® à SQY – Marie Cophignon",
 			"description": "Massage du dos assis EAS® à SQY, idéal en entreprise pour réduire le stress et libérer les tensions. Disponible aussi en cabinet et à domicile."
+		},
+		{
+			"key": "duo-massage-du-dos-assis-tambour-unite",
+			"title": "Soin duo massage du dos assis - Tambour Unité à Plaisir",
+			"description": "Découvrez à Plaisir un soin duo unique associant massage du dos assis, sons et vibrations du Tambour Unité, dans une expérience sensorielle à deux."
 		},
 		{
 			"key": "soins-a-domicile-saint-quentin-en-yvelines",
@@ -78,10 +78,15 @@
 			"description": "Le plan du site. Vous trouverez le lien vers les différentes pages du site : Reiki Usui, Massage des 5 Continents et plus encore..."
 		},
 		{
+			"key": "erreur-404",
+			"title": "Erreur 404 – Massages & Reiki Usui à SQY",
+			"description": "La page demandée n’existe pas ou plus."
+		},
+		{
 			"key": "soin-massage-eas-tambour-sqy-plaisir-yvelines",
-			"title": "Soin énergétique à Plaisir – Massage assis EAS® & Tambour Unité",
-			"description": "Soin énergétique unique à Plaisir (78) : massage assis méthode EAS® et tambour unité avec Marie Cophignon et Flofa Art à Saint-Quentin-en-Yvelines.",
-			"canonical": "/actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines"
+			"title": "Naissance du soin duo massage du dos assis - Tambour Unité",
+			"description": "Découvrez comment Marie et Floriane ont imaginé leur soin duo massage du dos assis - Tambour Unité, né de leur complicité et de la fusion de leurs pratiques.",
+			"canonical": "/articles/soin-massage-eas-tambour-sqy-plaisir-yvelines"
 		},
 		{
 			"key": "20250922-massage-dos-assis-eas-entreprise-petit-fils-plaisir",
@@ -154,6 +159,12 @@
 			"title": "Reiki Usui pour chien : ma première séance avec Sanka",
 			"description": "Retour sur ma première séance de Reiki avec un chien : une rencontre inattendue avec Sanka, vécue dans la confiance, la douceur et la tendresse.",
 			"canonical": "/articles/reiki-usui-chien-premiere-seance"
+		},
+		{
+			"key": "soin-massage-eas-tambour-sqy-plaisir-yvelines",
+			"title": "Comment est né le Soin duo massage du dos assis - Tambour Unité ?",
+			"description": "Retour sur ma première séance de Reiki avec un chien : une rencontre inattendue avec Sanka, vécue dans la confiance, la douceur et la tendresse.",
+			"canonical": "/articles/soin-massage-eas-tambour-sqy-plaisir-yvelines"
 		}
 	]
 }

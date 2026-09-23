@@ -15,7 +15,6 @@ const SiteMap = () => {
 					<li>
 						<a href='/qui-suis-je'>Qui suis-je ?</a>
 					</li>
-
 					<li>
 						<a href='/contact'>Contact</a>
 					</li>
@@ -29,10 +28,15 @@ const SiteMap = () => {
 						<a href='/massage-assis-methode-eas'>Massage assis méthode EAS®</a>
 					</li>
 					<li>
+						<a href='/massage-des-5-continents'>Massage des 5 Continents</a>
+					</li>
+					<li>
 						<a href='/reiki-usui'>Reiki Usui</a>
 					</li>
 					<li>
-						<a href='/massage-des-5-continents'>Massage des 5 Continents</a>
+						<a href='/duo-massage-du-dos-assis-tambour-unite'>
+							Soin duo massage du dos assis - Tambour Unité
+						</a>
 					</li>
 				</ul>
 				<h2>Mes préstations</h2>
@@ -53,12 +57,6 @@ const SiteMap = () => {
 					ponctuelles
 				</h2>
 				<ul>
-					<li>
-						<a href='/actualites/soin-massage-eas-tambour-sqy-plaisir-yvelines'>
-							14/03/2026 - Massage assis méthode EAS® & Tambour Unité : le soin
-							duo à Plaisir
-						</a>
-					</li>
 					{articles.map((article: iBlog, i: number) => (
 						<li key={`article-${i}`}>
 							<a

@@ -65,11 +65,7 @@
 			display: flex;
 			flex-flow: row;
 			justify-content: space-around;
-		}
-
-		.massage-cinq-continents-benefits-lists,
-		.massage-cinq-continents-benefits-disclaimers {
-			flex-basis: 50vw;
+			align-items: flex-start;
 		}
 	}
 
@@ -80,11 +76,7 @@
 			display: flex;
 			flex-flow: row;
 			justify-content: space-around;
-		}
-
-		.massage-cinq-continents-targets-lists,
-		.massage-cinq-continents-target-disclaimer-list {
-			flex-basis: 50vw;
+			align-items: flex-start;
 		}
 	}
 
