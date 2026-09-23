@@ -9,6 +9,7 @@ import { BlogEvent20260430RetourInitTestMuscu } from './20260502-retour-initiati
 import { BlogEvent20260531PortesOuvertesPrintemps2026 } from './20260531-portes-ouvertes-bien-etre-plaisir-78370-printemps-2026';
 import { BlogEvent20260830GmarcheEtBienEtre } from './20260830-gmarche-jouars-pontchartrain-massages-assis-june-bien-etre';
 import { BlogArticleM5cContreIndications } from '../articles/m5c-contre-indications';
+import { BlogArticleReikiUsuiChien } from '../articles/soin-reiki-usui-chienne-eva';
 
 export const events = [
 	BlogEvent20250922EASPetitfils,
@@ -22,4 +23,5 @@ export const events = [
 	BlogArticleMassageADomicilesSQY,
 	BlogEvent20260830GmarcheEtBienEtre,
 	BlogArticleM5cContreIndications,
+	BlogArticleReikiUsuiChien,
 ];
