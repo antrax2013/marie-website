@@ -3,6 +3,7 @@ import {
 	AutoComplete,
 	AutoCompleteCompleteEvent,
 } from 'primereact/autocomplete';
+import { Paginator, PaginatorPageChangeEvent } from 'primereact/paginator';
 import { events } from '../../entities/blog/events/events';
 import BlogCard from './BlogCard';
 import { iBlog } from './IBlog';
@@ -29,6 +30,8 @@ const BlogCards = () => {
 	const [filteredTags, setFilteredTags] = useState<iTag[]>([]);
 
 	const { setFilters, filtered } = useBlogCardFilter(cards);
+	const [first, setFirst] = useState(0);
+	const [rows, setRows] = useState(6);
 
 	const [category, setCategory] = useState<string>('');
 	const options: IconItem[] = [
@@ -57,6 +60,30 @@ const BlogCards = () => {
 		}
 
 		setFilteredTags(filteredTags);
+	};
+
+	const onPageChange = (event: PaginatorPageChangeEvent) => {
+		setFirst(event.first);
+		setRows(event.rows);
+	};
+
+	const paginatorTemplate = {
+		layout:
+			'FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink RowsPerPageDropdown',
+		CurrentPageReport: (options: any) => {
+			return (
+				<span
+					style={{
+						color: 'var(--text-color)',
+						userSelect: 'none',
+						width: '135px',
+						textAlign: 'center',
+					}}
+				>
+					page n° {options.currentPage} / {options.totalPages}
+				</span>
+			);
+		},
 	};
 
 	const key = Math.random() * 10000000;
@@ -100,8 +127,18 @@ const BlogCards = () => {
 					</div>
 				</Fieldset>
 			</div>
+			<Paginator
+				first={first}
+				rows={rows}
+				totalRecords={filtered.length}
+				rowsPerPageOptions={[6, 12, 24]}
+				onPageChange={onPageChange}
+				template={paginatorTemplate}
+				//template={{ layout: 'PrevPageLink CurrentPageReport NextPageLink' }}
+				// template='FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink'
+			/>
 			<div className='cards-container'>
-				{filtered.map((card: iBlog, i: number) => (
+				{filtered.slice(first, first + rows).map((card: iBlog, i: number) => (
 					<BlogCard
 						key={`blogCard-${key}-${i}`}
 						slug={card.slug}
@@ -112,6 +149,16 @@ const BlogCards = () => {
 					/>
 				))}
 			</div>
+			<Paginator
+				first={first}
+				rows={rows}
+				totalRecords={filtered.length}
+				rowsPerPageOptions={[6, 12, 24]}
+				onPageChange={onPageChange}
+				template={paginatorTemplate}
+				//template={{ layout: 'PrevPageLink CurrentPageReport NextPageLink' }}
+				// template='FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink'
+			/>
 		</div>
 	);
 };

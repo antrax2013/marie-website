@@ -88,7 +88,7 @@ export const BlogEvent20260412RetourSalonSensEveil4: iBlog = {
 				<div className='cta-container'>
 					<div className='cta-container-row'>
 						<Cta
-							link={'/articles/soin-massage-eas-tambour-sqy-plaisir-yvelines'}
+							link={'/duo-massage-du-dos-assis-tambour-unite'}
 							title={
 								'En savoir plus sur le duo massage du dos assis ‑ Tambour Unité'
 							}

@@ -5,7 +5,7 @@ const CtaDevis = ({ className }: CtaClassNameProps) => {
 		<>
 			<Cta
 				link='/contact?sujet=demande-de-devis'
-				title={'CLiquez ici pour me contacter pour un devis.'}
+				title={'Cliquez ici pour me contacter pour un devis.'}
 				ctaLinkClassName={`${className ?? 'cta-tertiary'} devis`}
 				ctaText='Demander un devis'
 			/>
