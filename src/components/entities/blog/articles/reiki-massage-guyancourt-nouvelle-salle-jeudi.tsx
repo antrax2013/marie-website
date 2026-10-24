@@ -17,7 +17,12 @@ export const BlogArticleCabinetGrandeSalle: iBlog = {
 	h1: 'Nouvelle espace au cabinet Blowball à Guyancourt',
 	slug: 'reiki-massage-guyancourt-cabinet-blowball',
 	date: new Date('2026-04-06'),
-	tags: ['St Quentin-en-Yvelines', 'Cabinet Blowball', 'Guyancourt'],
+	tags: [
+		'St Quentin-en-Yvelines',
+		'Cabinet Blowball',
+		'Guyancourt',
+		'Massage bien-être',
+	],
 	images: [
 		{
 			path: thumbnail,

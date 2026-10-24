@@ -18,7 +18,7 @@ export const BlogArticleMassageADomicilesSQY: iBlog = {
 	h1: 'Massage à domicile à Saint‑Quentin‑en‑Yvelines, Maurepas, Élancourt et Guyancourt – Bien‑être et détente chez vous',
 	slug: 'massage-domicile-saint-quentin-yvelines',
 	date: new Date('2026-06-10'),
-	tags: ['Massage à domicile', 'St Quentin-en-Yvelines'],
+	tags: ['Massage à domicile', 'St Quentin-en-Yvelines', 'Massage bien-être'],
 	images: [
 		{
 			path: thumbnail,

@@ -14,7 +14,12 @@ export const BlogArticleM5cContreIndications: iBlog = {
 	h1: 'Quelles sont les contre-indications du Massage des 5 Continents ?',
 	slug: 'contre-indications-massage-5-continents',
 	date: new Date('2026-08-15'),
-	tags: ['M5C', 'Massage des 5 Continents', 'Contre-indications'],
+	tags: [
+		'M5C',
+		'Massage des 5 Continents',
+		'Contre-indications',
+		'Massage bien-être',
+	],
 	images: [
 		{
 			path: thumbnail,

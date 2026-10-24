@@ -11,6 +11,7 @@ import { BlogEvent20260830GmarcheEtBienEtre } from './20260830-gmarche-jouars-po
 import { BlogArticleM5cContreIndications } from '../articles/m5c-contre-indications';
 import { BlogArticleReikiUsuiChien } from '../articles/soin-reiki-usui-chienne-eva';
 import { BlogArticleNaissanceSoinDuoMassageTambour } from '../articles/soin-eas-tambour';
+import { BlogArticleEasOuM5C } from '../articles/massage-eas-ou-mc5';
 
 export const events = [
 	BlogEvent20250922EASPetitfils,
@@ -26,4 +27,5 @@ export const events = [
 	BlogArticleM5cContreIndications,
 	BlogArticleReikiUsuiChien,
 	BlogArticleNaissanceSoinDuoMassageTambour,
+	BlogArticleEasOuM5C,
 ];
