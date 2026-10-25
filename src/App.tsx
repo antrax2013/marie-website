@@ -36,6 +36,7 @@ import Header from './components/fragments/Header';
 const Footer = lazy(() => import('./components/fragments/Footer'));
 const FooterMenu = lazy(() => import('./components/fragments/Footer-Menu'));
 const ScrollButton = lazy(() => import('./components/fragments/Scrollbutton'));
+const ScrollButton = lazy(() => import('./components/fragments/Scrollbutton'));
 
 const App = () => {
 	return (
