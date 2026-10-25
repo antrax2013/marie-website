@@ -12,6 +12,7 @@ import { BlogArticleM5cContreIndications } from '../articles/m5c-contre-indicati
 import { BlogArticleReikiUsuiChien } from '../articles/soin-reiki-usui-chienne-eva';
 import { BlogArticleNaissanceSoinDuoMassageTambour } from '../articles/soin-eas-tambour';
 import { BlogArticleEasOuM5C } from '../articles/massage-eas-ou-mc5';
+import { BlogEvent20261122PortesOuvertesBlowball } from './20261122-portes-cabinet-blowball';
 
 export const events = [
 	BlogEvent20250922EASPetitfils,
@@ -28,4 +29,5 @@ export const events = [
 	BlogArticleReikiUsuiChien,
 	BlogArticleNaissanceSoinDuoMassageTambour,
 	BlogArticleEasOuM5C,
+	BlogEvent20261122PortesOuvertesBlowball,
 ];
