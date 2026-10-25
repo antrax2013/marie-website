@@ -2,7 +2,6 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" />
-		<title>%REACT_APP_META_MAIN_TILTE%</title>
 		<meta name="robots" content="index, follow" />
 		<meta http-equiv="Content-Language" content="fr-FR" />
 		<meta
@@ -19,10 +18,6 @@
 		/>
 
 		<!-- https://www.skyminds.net/les-balises-meta-indispensables-pour-les-reseaux-sociaux-facebook-twitter-google-pinterest/ -->
-
-		<!-- Schema.org meta for Google+ -->
-		<meta itemprop="name" content="%REACT_APP_META_MAIN_TILTE%" />
-		<meta itemprop="image" content="%PUBLIC_URL%/logo192.png" />
 
 		<!-- Twitter summary card with large image must be at least 280x150px -->
 		<meta name="twitter:site" content="%REACT_APP_META_DOMAINE%" />
@@ -68,54 +63,55 @@
 		</script>
 		<script type="application/ld+json">
 			{
-			  "@context" : "http://schema.org",
-			  "@type" : "HealthClub",
-			  "additionalType": "Soins énergétiques",
-			  "name" : "Marie COPHIGNON - Massothérapeute énergétique",
-			  "legalName" : "Marie COPHIGNON Thérapeute énergétique",
-			  "leiCode": "910 427 988 00019",
-			  "founders": "Marie COPHIGNON",
-			  "image" : "##main-web-site-url##/static/media/logo512.b4ea2ac5c99c7e0dd07e.png",
-			  "logo" : "##main-web-site-url##/static/media/logo512.b4ea2ac5c99c7e0dd07e.png",
-			  "url": "##main-web-site-url##",
-			  "telephone" : "07.73.55.27.70",
-			  "areaServed": {
-			    "@type": "City",
-			    "name": "Saint Quentin-en-Yvelines"
-			  },
-			  "address" : {
-			    "@type" : "PostalAddress",
-			    "streetAddress" : "1 rue le Corbusier",
-			    "addressLocality" : "Guyancourt",
-			    "addressRegion" : "Saint Quentin-en-Yvelines",
-			    "postalCode" : "78280"
-			  },
-			  "openinghours" : "Du lundi au vendredi 09:00-19:00",
-			  "paymentAccepted" : "Espèces, chéque",
-			  "sameAs": ["https://massagedes5continents.com/membres/8424/Cophignon-Marie/"],
-			  "hasOfferCatalog": {
-			    "@type": "OfferCatalog",
-			    "name": "Soins énergétiques",
-			    "itemListElement": [
-			    {
-			      "@type": "Offer",
-			      "itemOffered": {
-			        "@type": "Service",
-			        "name": "Reiki Usui",
-			        "url": "##main-web-site-url##/reiki-usui"
-			      }
-			    },
-			    {
-			      "@type": "Offer",
-			      "itemOffered": {
-			        "@type": "Service",
-			        "name": "Massage des 5 Continents (M5C)",
-			        "url": "##main-web-site-url##/massage-des-5-continents"
-			      }
-			    }
-			  ]
-			  }
-			  }
+				"@context": "http://schema.org",
+				"@type": "HealthClub",
+				"additionalType": "Soins énergétiques",
+				"name": "Marie COPHIGNON - Massothérapeute énergétique",
+				"legalName": "Marie COPHIGNON Thérapeute énergétique",
+				"leiCode": "910 427 988 00019",
+				"founders": "Marie COPHIGNON",
+				"image": "https://massage-reiki.fr/static/media/logo512.b4ea2ac5c99c7e0dd07e.png",
+				"logo": "https://massage-reiki.fr/static/media/logo512.b4ea2ac5c99c7e0dd07e.png",
+				"url": "https://massage-reiki.fr/",
+				"telephone": "07.73.55.27.70",
+				"areaServed": {
+					"@type": "City",
+					"name": "Saint-Quentin-en-Yvelines"
+				},
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1 rue le Corbusier",
+					"addressLocality": "Guyancourt",
+					"addressRegion": "Saint-Quentin-en-Yvelines",
+					"postalCode": "78280"
+				},
+				"openinghours": "Du lundi au vendredi 09:00-19:00",
+				"paymentAccepted": "Espèces, chéque",
+				"sameAs": [
+					"https://massagedes5continents.com/membres/8424/Cophignon-Marie/"
+				],
+				"hasOfferCatalog": {
+					"@type": "OfferCatalog",
+					"name": "Soins énergétiques",
+					"itemListElement": [
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "Reiki Usui",
+								"url": "https://massage-reiki.fr/reiki-usui"
+							}
+						},
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "Massage des 5 Continents (M5C)",
+								"url": "https://massage-reiki.fr/massage-des-5-continents"
+							}
+						}
+					]
+				}
 			}
 		</script>
 
@@ -129,9 +125,9 @@
 						"position": "1",
 						"item": {
 							"@type": "SiteNavigationElement",
-							"url": "##main-web-site-url##/qui-suis-je",
+							"url": "https://massage-reiki.fr/qui-suis-je",
 							"name": "Qui suis-je ?",
-							"description": "Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien être: Reiki, Massage des 5 continents (M5C)... Marie COPHIGNON"
+							"description": "Je vous propose, sur Saint Quentin en Yvelines, différents soins énergétiques pour votre bien-être: Reiki, Massage des 5 continents (M5C)... Marie COPHIGNON"
 						}
 					},
 					{
@@ -139,7 +135,7 @@
 						"position": "2",
 						"item": {
 							"@type": "SiteNavigationElement",
-							"url": "##main-web-site-url##/reiki-usui",
+							"url": "https://massage-reiki.fr/reiki-usui",
 							"name": "Reiki Usui",
 							"description": "Le Reiki Usui est un soin énergétique par apposition des mains. Il apporte un  supplément d'énergie à l'organisme et participe au retour à l'équilibre du corps et de l'esprit."
 						}
@@ -149,9 +145,9 @@
 						"position": "3",
 						"item": {
 							"@type": "SiteNavigationElement",
-							"url": "##main-web-site-url##/massage-des-5-continents",
+							"url": "https://massage-reiki.fr/massage-des-5-continents",
 							"name": "Massage des 5 Continents (M5C)",
-							"description": "Le Massage des 5 Continents (M5C): l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien être."
+							"description": "Le Massage des 5 Continents (M5C): l'alliance subtile de différentes techniques de massages, d'un soin énergétique Reiki et des huiles essentielles pour votre bien-être."
 						}
 					},
 					{
@@ -159,7 +155,7 @@
 						"position": "4",
 						"item": {
 							"@type": "SiteNavigationElement",
-							"url": "##main-web-site-url##/consultations",
+							"url": "https://massage-reiki.fr/consultations",
 							"name": "Consultations",
 							"description": "Pour mes consultations, je vous accueille, tous les jeudis au cabinet de Guyancourt. Les autres jours de la semaine, je me déplace à votre domicile sur Saint Quentin en Yvelines."
 						}

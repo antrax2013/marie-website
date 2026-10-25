@@ -1,0 +1,192 @@
+@use '../rules/mixins';
+
+.ActusEtNews {
+	.first-header-2 {
+		.first-header-2-container {
+			.header-2-container {
+				.header-2-content {
+					.header-2-description {
+						display: inline-block;
+
+						.img-cocon-l-container {
+							display: block;
+							width: 100%;
+							text-align: center;
+
+							.img-cocon {
+								display: inline-block;
+								aspect-ratio: auto 100 / 100;
+								max-height: 250px;
+								@include mixins.border-rounded;
+							}
+						}
+					}
+				}
+				.header-2-image-container {
+					display: inline-block;
+					--background-image-lazy: url('../../assets/Actualites/serviette-pierres-et-bougies-xs.jpg');
+					background-image: var(--background-image-lazy) !important;
+					background-size: cover;
+					background-position: center;
+					border-top-right-radius: 25px;
+					border-bottom-right-radius: 25px;
+
+					img.img-cocon {
+						display: inline-block;
+						aspect-ratio: auto 100 / 100;
+						visibility: hidden;
+						max-height: 260px;
+					}
+				}
+			}
+		}
+	}
+
+	.blog-cards-container {
+		display: flex;
+		justify-content: center;
+
+		padding-bottom: 0.5rem;
+
+		.blog-cards-card-panel {
+			width: 100%;
+
+			.board-container {
+				margin: 0.5rem;
+
+				.p-fieldset {
+					background-color: unset;
+					.p-icon.p-fieldset-toggler {
+						height: 12px;
+						width: 12px;
+					}
+					.p-fieldset-legend {
+						font-size: 0.8em;
+						background-color: unset;
+						border: none;
+						a {
+							padding: 0.5rem;
+						}
+					}
+
+					.p-fieldset-content {
+						font-size: 0.8em;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 100%;
+						padding: 0px;
+
+						.filter-item {
+							font-size: 0.8em;
+						}
+
+						.label,
+						.category-name {
+							padding-right: 0.5rem;
+							white-space: nowrap;
+						}
+
+						.card-types-filter {
+							flex: 0 0 25%;
+							display: flex;
+							align-items: center;
+
+							.category-name {
+								padding-left: 0.5rem;
+							}
+							.p-multistatecheckbox.p-checkbox.p-component {
+								.p-checkbox-box {
+									.p-checkbox-icon.p-c.pi {
+										width: 20px !important;
+										height: 19px !important;
+										padding: 2px;
+									}
+
+									border-color: var(--secondary-color-text);
+									background: unset;
+								}
+							}
+						}
+					}
+
+					.card-tags-filter {
+						flex: 0 0 75%;
+						display: flex;
+						align-items: center;
+						.autocomplete-scroll {
+							width: 100%;
+							display: inline-block;
+							.p-autocomplete-input-token input {
+								font-size: 0.8em;
+							}
+
+							.p-autocomplete-multiple-container {
+								background-color: unset;
+								display: flex !important;
+								flex-wrap: nowrap !important;
+								overflow-x: auto !important;
+								padding-left: unset;
+							}
+						}
+
+						.p-autocomplete {
+							background-color: unset !important;
+						}
+
+						.p-autocomplete-token {
+							color: var(--text-color);
+							background: var(--background-color);
+							padding-bottom: 0px;
+							padding-top: 0px;
+						}
+					}
+				}
+			}
+			.cards-container {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-start;
+				justify-content: space-evenly;
+				align-content: flex-start;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.ActusEtNews {
+		.first-header-2 {
+			.first-header-2-container {
+				.header-2-container {
+					.header-2-content {
+						padding-top: 0rem !important;
+						padding-bottom: 0rem !important;
+
+						h1 {
+							padding-top: 0.25rem;
+							font-size: 1.6rem;
+						}
+
+						.header-2-sub-title {
+							font-size: 0.8rem;
+							justify-content: unset !important;
+						}
+
+						.header-2-cta {
+							flex-flow: column !important;
+							.cta-container-row {
+								flex-flow: column !important;
+								margin-bottom: 0.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+		.p-fieldset-content {
+			flex-direction: column;
+			align-items: start !important;
+		}
+	}
+}

@@ -1,29 +1,18 @@
-import MetaTag from '../../modules/MetaTag';
-import ParagraphSeparator from '../fragments/Paragraph-Separator';
+import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgMoi from '../../assets/moi500x.jpg';
 import '../../scss/routes/QuiSuisJe.scss';
-import Cta from '../fragments/Cta';
-import McImage from '../fragments/McImage';
+import Cta from '../fragments/Ctas/Cta';
+import McImage from '../fragments/McImage/McImage';
 import { Adresse } from '../fragments/Adresse';
-import Faq from '../fragments/Faq';
+import Faq from '../fragments/FAQ/Faq';
 import { QuiSuisJeFaqItems } from '../entities/faq-items/qui-suis-je-faq-items';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
+import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
+import McLinkEnEntreprise from '../fragments/McLinks/McLink-En-Entreprise';
 
 const QuiSuisJe = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title={import.meta.env.VITE_META_MAIN_TITLE}
-				description='Découvrez mon parcours et ma philosophie autour des massages énergétiques et du Reiki Usui. Une approche bienveillante et personnalisée sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise, pour votre bien‑être.'
-				resume='Découvrez mon parcours et ma philosophie autour des massages énergétiques et du Reiki Usui. Une approche bienveillante et personnalisée sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise, pour votre bien‑être.'
-				forceTitle={true}
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
 			<div className='QuiSuisJe'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
@@ -34,16 +23,10 @@ const QuiSuisJe = () => {
 									Un accompagnement holistique personnalisé pour un bien-être
 									profond dans les Yvelines.
 								</p>
-								<div
-									className='header-2-description'
-									itemProp='founder'
-									itemScope
-									itemType='https://schema.org/Person'
-								>
+								<div className='header-2-description'>
 									<p>
-										Je suis <span itemProp='name'>Marie Cophignon</span>,{' '}
-										<span itemProp='jobTitle'>massothérapeute énergétique</span>{' '}
-										et <span itemProp='jobTitle'>maître Reiki Usui</span>.
+										Je suis Marie Cophignon, massothérapeute énergétique et{' '}
+										maître Reiki Usui.
 									</p>
 									<div className='img-moi-l-container size-l-hidden'>
 										<McImage
@@ -53,13 +36,15 @@ const QuiSuisJe = () => {
 										/>
 									</div>
 									<p>
-										Depuis mars 2022, sur Saint-Quentin en Yvelines, à Élancourt
-										et Guyancourt, à domicile ou en entreprise, j’accompagne les
-										adultes en recherche de relaxation profonde, de mieux-être
-										et de rééquilibrage énergétique, dans un cadre
-										professionnel, doux et respectueux. Chaque séance est pensée
-										comme une pause régénérante, adaptée à votre état physique,
-										émotionnel et énergétique du moment.
+										Depuis mars 2022, sur Saint-Quentin-en-Yvelines, à Élancourt
+										et Guyancourt, à
+										<McLinkSoinDomicile text='domicile' />
+										ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />
+										, j’accompagne les adultes en recherche de relaxation
+										profonde, de mieux-être et de rééquilibrage énergétique,
+										dans un cadre professionnel, doux et respectueux. Chaque
+										séance est pensée comme une pause régénérante, adaptée à
+										votre état physique, émotionnel et énergétique du moment.
 									</p>
 									<blockquote className='size-xl-visible hidden cta-blockquote'>
 										Pouvoir apporter un soulagement physique, psychique et
@@ -107,7 +92,7 @@ const QuiSuisJe = () => {
 					<h2 className='center-secondary-title'>Mon parcours, ma formation</h2>
 					<div className='career-header-3-containers'>
 						<div className='career-content'>
-							<h3>Infirmière, mon métier de coeur</h3>
+							<h3>Infirmière, mon métier de cœur</h3>
 							<p>
 								Infirmière diplômée d’état en 2005, formée à l’IFSI de Reims,
 								j’ai passé 18 années à accompagner, écouter, rassurer, soutenir,
@@ -129,7 +114,7 @@ const QuiSuisJe = () => {
 							</div>
 						</div>
 						<div className='career-content'>
-							<h3>Maitre Reiki Usui</h3>
+							<h3>Maître Reiki Usui</h3>
 							<p>
 								En 2020, je me suis formée au Reiki Usui auprès de{' '}
 								<em>
@@ -226,8 +211,8 @@ const QuiSuisJe = () => {
 									</a>
 								</em>
 								, de Nouzonville dans les Ardennes, au massage assis méthode
-								EAS®. Crée par Jean-Noël Poucet, ce massage énergétique de
-								bien‑être, est à la fois relaxant et libérateur. Il m’a séduite
+								EAS®. Créé par Jean-Noël Poucet, ce massage énergétique de
+								bien‑être est à la fois relaxant et libérateur. Il m’a séduite
 								par sa simplicité et son efficacité. Il propose une approche
 								différente du M5C, tout en restant profondément respectueuse du
 								corps et de l’énergie.
@@ -242,12 +227,46 @@ const QuiSuisJe = () => {
 								<Cta
 									link='/massage-assis-methode-eas'
 									title={
-										'Cliquez ici pour découvrir le massage assis méthode EAS®.'
+										'Cliquez ici pour découvrir le massage du dos assis méthode EAS®.'
 									}
 								/>
 								<blockquote className='cta-blockquote'>
-									Le massage assis EAS®, une pause courte qui fait un grand
-									bien.
+									Le massage du dos assis EAS®, une pause courte qui fait un
+									grand bien.
+								</blockquote>
+							</div>
+						</div>
+						<div className='career-content'>
+							<h3>L’art du test musculaire de kinésiologie</h3>
+							<p>
+								Approfondir mon écoute du corps et enrichir ma palette d’un
+								nouvel outil d’accompagnement, me semblait important, aussi, en
+								avril 2026, à l’
+								<em>
+									<a
+										href='https://ecoledesartsdusouffle.com/nos-formations/initiation-art-test-musculaire/'
+										title='Cliquez pour découvrirl’ initiation art du test musculaire.'
+										target='_blank'
+									>
+										école des Arts du souffle
+									</a>
+								</em>
+								de Nouzonville dans les Ardennes, je me suis formée à l’art du
+								test musculaire. Cette technique, largement utilisée en
+								kinésiologie, m’a séduite par sa simplicité et la richesse des
+								informations qu’elle permet de mettre en lumière. Elle offre une
+								approche complémentaire du bien-être, basée sur l’écoute des
+								réponses du corps.
+							</p>
+							<p>
+								Grâce à cette initiation, j’affine aujourd’hui ma compréhension
+								globale des besoins de la personne et j’enrichis progressivement
+								ma pratique avec davantage de finesse et de justesse.
+							</p>
+							<div className='cta-container-row'>
+								<blockquote className='cta-blockquote'>
+									Le corps garde en mémoire bien des réponses, accessibles à qui
+									sait les écouter.
 								</blockquote>
 							</div>
 						</div>
@@ -312,8 +331,9 @@ const QuiSuisJe = () => {
 							<h3>Consultations à domicile</h3>
 							<div>
 								<p>
-									Je me déplace à votre domicile sur Saint-Quentin-en-Yvelines
-									ses environs :
+									Je me déplace à votre
+									<McLinkSoinDomicile text='domicile' />
+									sur Saint-Quentin-en-Yvelines et ses environs :
 								</p>
 								<div className='center-area'>
 									<ul>
@@ -333,11 +353,12 @@ const QuiSuisJe = () => {
 								</div>
 								<p>
 									Je peux, ponctuellement, consulter en dehors de ce périmètre.
-									Appelez moi pour que l'on voit ce qu'il est possible de faire.
+									Appelez-moi pour que l'on voit ce qu'il est possible de faire.
 								</p>
 								<p className='disclaimer text-third'>
-									Lorsque je me déplace à domicile, les tarifs des soins sont
-									majorés de 5,00€.
+									Lorsque je me déplace à{' '}
+									<McLinkSoinDomicile text='domicile' noWrap={true} />, les
+									tarifs des soins sont majorés de 5,00€.
 								</p>
 								<p>
 									Pour travailler dans des conditions optimales, j'ai besoin
@@ -352,7 +373,7 @@ const QuiSuisJe = () => {
 							<div>
 								<Adresse
 									descprition='Espaces bien-être Vibration & Libellule'
-									floor='1er étages, au dessus du show room Coffret d’Alumine'
+									floor='1er étage, au-dessus du show room Coffret d’Alumine'
 									streetAddress='5, rue Edmond Rostand'
 									postalCode='78370'
 									addressLocality='Plaisir'

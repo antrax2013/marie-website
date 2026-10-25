@@ -5,9 +5,10 @@ import './scss/OverridePrimeCSS.scss';
 import 'primeflex/primeflex.css';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
-import Message from './components/fragments/Message';
+// import Message from './components/fragments/Message';
+import MainJsonLd from './components/fragments/JsonLd/Main-JsonLd';
 
-// Routes
+// Menu
 const Accueil = lazy(() => import('./components/routes/Accueil'));
 const Massage5Continents = lazy(
 	() => import('./components/routes/Massage-5-continents'),
@@ -15,48 +16,74 @@ const Massage5Continents = lazy(
 const MassageAssisMethodeEAS = lazy(
 	() => import('./components/routes/Massage-assis-methode-eas'),
 );
+const MassageEnEntreprise = lazy(
+	() => import('./components/routes/Massage-en-entreprise'),
+);
+const SoinADomicile = lazy(() => import('./components/routes/Soin-a-domicile'));
+const MassageAssisTambourUnite = lazy(
+	() => import('./components/routes/Massage-assis-tambour-unite'),
+);
+
 const Offres = lazy(() => import('./components/routes/Offres'));
 const Contact = lazy(() => import('./components/routes/Contact'));
-const Error404 = lazy(() => import('./components/routes/Error404'));
 const QuiSuisJe = lazy(() => import('./components/routes/Qui-suis-je'));
 const Reiki = lazy(() => import('./components/routes/Reiki'));
+
+// Blog
+const ActusEtNews = lazy(() => import('./components/routes/Actus-et-News'));
+const BlogArticle = lazy(
+	() => import('./components/fragments/Blog/BlogArticle'),
+);
+
+// Autres routes
 const PlanDuSite = lazy(() => import('./components/routes/Site-Map'));
 const MentionsLegales = lazy(
 	() => import('./components/routes/Mentions-Legales'),
 );
+const Error404 = lazy(() => import('./components/routes/Error404'));
 const PolitiqueConfidentialite = lazy(
 	() => import('./components/routes/Politique-confidentialite'),
 );
 
-// Menu
+// Elements de mise en page
 const FooterLinks = lazy(() => import('./components/fragments/Footer-Links'));
-
-import Header from './components/fragments/Header';
+const Header = lazy(() => import('./components/fragments/Header'));
 
 const Footer = lazy(() => import('./components/fragments/Footer'));
 const FooterMenu = lazy(() => import('./components/fragments/Footer-Menu'));
-const ScrollButton = lazy(() => import('./components/fragments/Scrollbutton'));
-const ScrollButton = lazy(() => import('./components/fragments/Scrollbutton'));
+const ScrollButton = lazy(
+	() => import('./components/fragments/Tools/Scrollbutton'),
+);
 
 const App = () => {
 	return (
 		<div className='App'>
+			<MainJsonLd />
 			<BrowserRouter>
-				<Message
+				{/* <Message
 					link='/offres-et-tarifs'
 					content='Le coffret duo est de retour et disponible jusqu’à fin février.'
 					alt='Cliquez sur ce lien pour plus d’informations.'
-				/>
+				/> */}
+				{/* <Message
+					link='/duo-massage-du-dos-assis-tambour-unite'
+					content='Nouveau - Massage assis méthode EAS® & Tambour Unité : le soin duo à Plaisir'
+					alt='Cliquez sur ce lien pour plus d’informations.'
+				/> */}
 				<header className='flex flex-wrap'>
 					<Header />
 				</header>
 				<div className='App-body'>
-					<main className='content' itemProp='mainEntity'>
+					<main className='content'>
 						<Routes>
 							<Route path='/' element={<Accueil />} />
 							<Route path='/accueil' element={<Accueil />} />
 							<Route index element={<Accueil />} />
 							<Route path='qui-suis-je' element={<QuiSuisJe />} />
+							<Route path='offres-et-tarifs' element={<Offres />} />
+							<Route path='contact' element={<Contact />} />
+
+							{/* Soins */}
 							<Route
 								path='massage-assis-methode-eas'
 								element={<MassageAssisMethodeEAS />}
@@ -66,8 +93,31 @@ const App = () => {
 								path='massage-des-5-continents'
 								element={<Massage5Continents />}
 							/>
-							<Route path='offres-et-tarifs' element={<Offres />} />
-							<Route path='contact' element={<Contact />} />
+							<Route
+								path='duo-massage-du-dos-assis-tambour-unite'
+								element={<MassageAssisTambourUnite />}
+							/>
+
+							{/* Préstations */}
+							<Route
+								path='massage-en-entreprise-saint-quentin-en-yvelines'
+								element={<MassageEnEntreprise />}
+							/>
+							<Route
+								path='massage-en-entreprise'
+								element={<MassageEnEntreprise />}
+							/>
+
+							<Route
+								path='soins-a-domicile-saint-quentin-en-yvelines'
+								element={<SoinADomicile />}
+							/>
+
+							{/* Actualités */}
+							<Route path='articles-et-actualites' element={<ActusEtNews />} />
+							<Route path='/articles/:slug' element={<BlogArticle />} />
+
+							{/* Divers */}
 							<Route
 								path='politique-de-confidentialite'
 								element={<PolitiqueConfidentialite />}

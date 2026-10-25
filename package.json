@@ -1,7 +1,7 @@
 {
 	"name": "marie-cophignon-net",
 	"private": true,
-	"version": "3.0.2",
+	"version": "3.5.3",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
@@ -10,7 +10,7 @@
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
 		"compile-sass": "sass --watch src/scss/:public/css --no-source-map -s compressed",
-		"postbuild": "react-spa-prerender && powershell -File .\\post-build.ps1 -m https://massage-reiki.fr -s https://marie.cophignon.net -t https://massages-reiki.fr"
+		"postbuild": "react-spa-prerender && powershell -File .\\post-build.ps1 -m massage-reiki.fr -s marie.cophignon.net -t massages-reiki.fr"
 	},
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
@@ -24,9 +24,9 @@
 		"react-router-dom": "^7.2.0"
 	},
 	"devDependencies": {
-		"@types/react-helmet": "^6.1.11",
 		"@types/react": "^18.2.66",
 		"@types/react-dom": "^18.2.22",
+		"@types/react-helmet": "^6.1.11",
 		"@typescript-eslint/eslint-plugin": "^8.24.1",
 		"@typescript-eslint/parser": "^8.24.1",
 		"@vitejs/plugin-react-swc": "^3.5.0",

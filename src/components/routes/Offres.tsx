@@ -1,35 +1,31 @@
-import MetaTag from '../../modules/MetaTag';
-import ParagraphSeparator from '../fragments/Paragraph-Separator';
+import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import '../../scss/routes/Offres.scss';
-//import ImgCarteCadeau from '../../assets/Offres/carte-cadeau.png';
+import ImgCocooning from '../../assets/Offres/image-serviettes-lampe-de-sel.jpg';
+import ImgEspaceDetente from '../../assets/Offres/img-espace-detente-massage-du-dos-assis.jpg';
 import { PricesMassageEAS } from '../fragments/Prices/massage-assis-eas-prices';
 import { PricesM5C } from '../fragments/Prices/massage-5-continents';
 import { PricesReikiH } from '../fragments/Prices/reiki-holistique';
 import { PricesReikiC } from '../fragments/Prices/reiki-cible';
-import { Panel } from 'primereact/panel';
+// import { Panel } from 'primereact/panel';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
-import ReviewContainer from '../fragments/Reviews-Container';
+import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
-import Faq from '../fragments/Faq';
+import Faq from '../fragments/FAQ/Faq';
 
 import { OfrresFaqItems as OffresFaqItems } from '../entities/faq-items/offres-faq-items';
+import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
+import McLinkEnEntreprise from '../fragments/McLinks/McLink-En-Entreprise';
+import { PricesMEASTambourUnite } from '../fragments/Prices/massage-eas-tambour-unite';
+import McLinkReikiUsui from '../fragments/McLinks/McLink-Reiki-Usui';
+import McLinkMEAS from '../fragments/McLinks/McLink-Massage-EAS';
+import McLinkM5C from '../fragments/McLinks/McLink-5-Continents';
+import McImage from '../fragments/McImage/McImage';
+import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
+import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
 
 const Offres = () => {
-	const head = () => {
-		return (
-			<>
-				<MetaTag
-					title={'Tarifs et Offres'}
-					description='Consultez les tarifs des massages énergétique et séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Des soins adaptés à vos besoins pour un bien‑être durable.'
-					resume='Consultez les tarifs des massages énergétique et séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Des soins adaptés à vos besoins pour un bien‑être durable.'
-				/>
-			</>
-		);
-	};
-
 	return (
 		<>
-			{head()}
 			<section className='Offres'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
@@ -42,23 +38,43 @@ const Offres = () => {
 								<p>
 									Je vous accueille dans mes cabinets de{' '}
 									<strong>Guyancourt</strong> et <strong>Élancourt</strong>, et
-									je me déplace également à domicile, ou en entreprise, sur
-									toute l’agglomération de{' '}
-									<strong>Saint‑Quentin‑en‑Yvelines</strong>. Je propose des
-									soins énergétiques Reiki Usui, des massages assis méthode EAS®
-									et le Massage des 5 Continents (M5C), adaptés à vos besoins
-									physiques, émotionnels et énergétiques.
+									je me déplace également à
+									<McLinkSoinDomicile text='domicile' />
+									ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />,
+									sur toute l’agglomération de{' '}
+									<strong>Saint‑Quentin‑en‑Yvelines</strong>.
+								</p>
+								<p>
+									Je propose des soins énergétiques{' '}
+									<McLinkReikiUsui text='Reiki Usui' noWrap={true} />, des
+									<McLinkMEAS text='massages du dos assis méthode EAS®' /> et le{' '}
+									<McLinkM5C
+										text='Massage des 5 Continents (M5C)'
+										noWrap={true}
+									/>
+									, adaptés à vos besoins physiques, émotionnels et
+									énergétiques.
 								</p>
 								<p className='disclaimer'>
 									Un soin énergétique ne remplace jamais un traitement médical.
 									Il accompagne, harmonise et soutient votre processus naturel
 									de guérison.
 								</p>
+								<BgMcImageAlternativeContainer
+									path={ImgCocooning}
+									className='img-cocooning'
+									alt='image décorative d’ambiance cocooning aux cristaux : une atmosphère chaleureuse et enveloppante mêlant serviettes douces, bougies, cristaux et lumière tamisée.'
+								/>
 							</div>
+							<BgMcImageContainer
+								path={ImgEspaceDetente}
+								className='img-cocooning'
+								alt='image décorative d’ambiance cocooning aux cristaux : une atmosphère chaleureuse et enveloppante mêlant serviettes douces, bougies, cristaux et lumière tamisée.'
+							/>
 						</div>
 					</div>
 				</div>
-				<ParagraphSeparator />
+				{/* <ParagraphSeparator />
 				<div className='promotion'>
 					<Panel header='Promotion - le retour du coffret Duo'>
 						<h2>✨ Coffret Duo — Offre limitée</h2>
@@ -85,7 +101,7 @@ const Offres = () => {
 							<CtaRendezVous />
 						</div>
 					</Panel>
-				</div>
+				</div> */}
 				<ParagraphSeparator />
 				<div className='prices-header'>
 					<h2 className='center-secondary-title '>
@@ -96,13 +112,19 @@ const Offres = () => {
 							<p>
 								La durée des séances correspond au temps que nous consacrons
 								ensemble à votre bien‑être. Elle inclut non seulement le soin en
-								lui‑même, mais aussi les échanges indispensables à son bon
-								déroulement. Ce moment de dialogue est essentiel : il me permet
-								de comprendre vos attentes, d’identifier vos besoins et de
+								lui‑même, mais aussi <b>les échanges indispensables</b> à son
+								bon déroulement.
+							</p>
+							<p>
+								Ce moment de dialogue est essentiel : il me permet de comprendre{' '}
+								<b>vos attentes</b>, d’identifier <b>vos besoins</b> et de
 								vérifier, avec vous, l’absence de contre‑indications. Grâce à
 								cela, je peux adapter mes soins afin qu’ils vous soient
-								pleinement bénéfiques. Dans le cas contraire, il sera préférable
-								de reporter ou d’annuler la séance.
+								pleinement bénéfiques.{' '}
+								<b>
+									Dans le cas contraire, il sera préférable de reporter ou
+									d’annuler la séance.
+								</b>
 							</p>
 							<p className='note'>
 								Majoration domicile : +5 € (déplacement + frais).
@@ -117,7 +139,7 @@ const Offres = () => {
 								>
 									<PricesMassageEAS title='Massage assis méthode EAS®' />
 									<p>
-										Durée au choix : 20, 35 ou 45 minutes. Idéal pour relâcher
+										Durée au choix : 30, 45 ou 55 minutes. Idéal pour relâcher
 										les tensions du dos, de la nuque et des épaules.
 									</p>
 								</section>
@@ -133,6 +155,8 @@ const Offres = () => {
 									<p className='disclaimer'>Réservé aux personnes majeures.</p>
 								</section>
 							</section>
+							<br />
+							<ParagraphSeparator />
 							<br />
 							<h3>Soins Reiki Usui</h3>
 							<section className='prices-paragraph-container' id='reiki-tarifs'>
@@ -162,6 +186,33 @@ const Offres = () => {
 									clients.
 								</i>
 							</p>
+							<br />
+							<ParagraphSeparator />
+							<br />
+							<h3>Soin duo massage du dos assis - Tambour Unité</h3>
+							<section
+								className='prices-paragraph-container'
+								id='massage-eas-tamobur-unite-tarifs'
+							>
+								<section className='prices-paragraph-content'>
+									<PricesMEASTambourUnite />
+									<p>
+										Une expérience sensorielle à deux praticiennes où massage,
+										son et vibrations évoluent à l’unisson dans une même
+										synergie.
+									</p>
+									<p className='disclaimer'>
+										Soin exclusivement à Plaisir dans les Yvelines.
+									</p>
+								</section>
+								<section className='prices-paragraph-content'>
+									<McImage
+										path={ImgEspaceDetente}
+										className='img-espace-detente'
+										alt='image decorative d’un univers bien-être et massage : une scène lumineuse et apaisante associant huiles, fleurs, bougies et matériel de massage dans une ambiance naturelle'
+									/>
+								</section>
+							</section>
 							<div className='cta-container-row footer-cta-container'>
 								<CtaRendezVous />
 							</div>
@@ -234,13 +285,17 @@ const Offres = () => {
 				</div>
 
 				<div className='footer-cta'>
-					<h2>Envie d’un instant bien-être sur SQY ?</h2>
+					<h2>
+						Envie d’un instant bien-être sur Saint-Quentin-en-Yvelines (SQY) ?
+					</h2>
 					<p>
 						Accordez‑vous une parenthèse de douceur, un espace pour respirer
 						pleinement, relâcher les tensions et revenir à vous‑même. À
 						Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, que ce soit à
-						domicile ou en entreprise, mes soins invitent le corps à se
-						détendre, à se régénérer et l’esprit à s’alléger.
+						<McLinkSoinDomicile text='domicile' />
+						ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />, mes
+						soins invitent le corps à se détendre, à se régénérer et l’esprit à
+						s’alléger.
 					</p>
 					<p>
 						Contactez-moi pour réserver votre séance ou obtenir plus

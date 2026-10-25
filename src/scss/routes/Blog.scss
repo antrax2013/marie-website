@@ -1,0 +1,91 @@
+@use '../rules/mixins';
+
+.Blog {
+	.article > section {
+		@include mixins.article-section;
+	}
+
+	.article section aside > div {
+		@include mixins.flex-content-center;
+	}
+	.citation {
+		display: block;
+		text-align: center;
+		font-size: 0.85em;
+		font-style: italic;
+		color: var(--grey-medium);
+	}
+
+	.ctas-container {
+		display: block;
+		text-align: center;
+
+		.cta-button:first-child,
+		.cta-button:first-child:hover {
+			margin-right: 2rem;
+		}
+
+		.cta-button,
+		.cta-button:hover {
+			text-decoration: none;
+			display: inline-block;
+			border-radius: 10px;
+			padding: 0.4rem 0.8rem;
+			white-space: nowrap;
+			@include mixins.ombre-portee-panneau; //border: 0.1rem solid var(--secondary-color) !important;
+		}
+
+		.cta-button {
+			color: var(--text-color) !important;
+		}
+	}
+	.dates {
+		.citation {
+			margin-top: 1.5rem;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.Blog {
+		.dates,
+		.reservation-description-footer {
+			.ctas-container {
+				a {
+					margin: 0 0 1rem 0 !important;
+				}
+			}
+		}
+
+		.rdv {
+			padding-top: 0px !important;
+			margin: 0px;
+		}
+
+		.location {
+			.section-content > div {
+				flex-direction: column !important;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.Blog {
+		.article {
+			h1 {
+				font-size: 1.4rem !important;
+			}
+		}
+
+		.article section {
+			flex-direction: column;
+		}
+	}
+}
+
+@media (min-width: 1025px) {
+	.Blog aside {
+		flex-direction: inherit;
+	}
+}

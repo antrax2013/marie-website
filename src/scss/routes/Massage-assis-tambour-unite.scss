@@ -1,0 +1,183 @@
+@use '../rules/mixins';
+
+.MassageAssisTambourUnite {
+	.massage-assis-tambour-unite-story-link {
+		font-style: italic;
+		text-align: center;
+		color: var(--tertiary-color) !important;
+	}
+
+	.first-header-2 {
+		.first-header-2-container {
+			.header-2-container {
+				.bg-image-alternative-container-img-bas-dos {
+					img {
+						max-height: 250px;
+					}
+				}
+
+				.bg-image-container-img-flo-marie {
+					--background-image-lazy: url('../../assets/Actualites/massage-tambour/soin-duo-massage-eas-tambour-unite-marie-floriane.jpg');
+					background-image: var(--background-image-lazy) !important;
+					border-top-right-radius: 25px;
+					border-bottom-right-radius: 25px;
+					.bg-image-container-content {
+						img {
+							max-height: 300px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.massage-assis-tambour-unite-description-container {
+		.massage-assis-tambour-unite-description-main-content {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-evenly;
+			align-items: center;
+			@include mixins.ombre-portee-basse-panneau;
+
+			.bg-image-alternative-container-img-massage {
+				img {
+					max-height: 250px;
+				}
+			}
+
+			.bg-image-container-img-massage {
+				--background-image-lazy: url('../../assets/Actualites/massage-tambour/soin-duo-massage-eas-tambour-unite-marie-floriane-en-cours.jpg');
+				background-image: var(--background-image-lazy) !important;
+				border-bottom-left-radius: 25px;
+				.bg-image-container-content {
+					img {
+						max-height: 300px;
+					}
+				}
+			}
+
+			.massage-assis-tambour-unite-description-content {
+				padding: 0rem 1rem;
+			}
+		}
+	}
+
+	.massage-assis-tambour-unite-benefits {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+
+		.massage-assis-tambour-unite-benefits-lists {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			align-items: flex-start;
+		}
+	}
+
+	.massage-assis-tambour-unite-targets-container {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+		.massage-assis-tambour-unite-targets-lists {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			align-items: flex-start;
+		}
+	}
+
+	.massage-assis-tambour-unite-prices-container {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+		.massage-assis-tambour-unite-prices-content {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			align-items: center;
+
+			.massage-assis-tambour-unite-prices-image-content {
+				display: flex;
+				flex-flow: column;
+				justify-content: space-around;
+				align-items: center;
+
+				img {
+					@include mixins.border-rounded;
+				}
+			}
+
+			.massage-assis-tambour-unite-prices-inner-content {
+				td {
+					text-align: right;
+				}
+				.massage-assis-tambour-unite-prices-cta {
+					padding: 1.5rem;
+					.cta-primary {
+						margin-right: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.MassageAssisTambourUnite {
+		.first-header-2 {
+			.first-header-2-container {
+				.header-2-container {
+					.header-2-content {
+						padding-top: 0rem !important;
+						padding-bottom: 0rem !important;
+
+						h1 {
+							padding-top: 0.25rem;
+							font-size: 1.6rem;
+						}
+
+						.header-2-sub-title {
+							font-size: 0.8rem;
+							justify-content: unset !important;
+						}
+
+						.header-2-cta {
+							flex-flow: column !important;
+							.cta-container-row {
+								flex-flow: column !important;
+								margin-bottom: 0.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+		.massage-assis-tambour-unite-description-main-content,
+		.massage-assis-tambour-unite-benefits-lists,
+		.massage-assis-tambour-unite-benefits-disclaimers,
+		.massage-assis-tambour-unite-targets-lists,
+		.massage-assis-tambour-unite-target-disclaimer-list,
+		.massage-assis-tambour-unite-prices-content {
+			flex-flow: column !important;
+			flex-basis: inherit !important;
+		}
+
+		.massage-assis-tambour-unite-prices-image-content,
+		.bg-image-alternative-container {
+			img:not(.vertical) {
+				width: 250px;
+				max-height: unset !important;
+			}
+			// img .vertical {
+			// 	max-height: 250px;
+			// }
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.MassageAssisTambourUnite {
+		.massage-assis-tambour-unite-prices-inner-content {
+			padding-left: 0.5rem;
+		}
+		img.img-lombaires {
+			max-width: 300px !important;
+		}
+	}
+}

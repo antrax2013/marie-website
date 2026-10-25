@@ -1,0 +1,69 @@
+@use '../rules/mixins';
+
+.MassageEnEntreprise {
+	.first-header-2 {
+		.first-header-2-container {
+			.header-2-container {
+				.bg-image-alternative-container-img-petit-fils {
+					img {
+						max-height: 250px;
+					}
+				}
+
+				.bg-image-container-img-petit-fils {
+					--background-image-lazy: url('../../assets/Massage-entreprise/massage-du-dos-assis-entreprise-petit-fils.jpg');
+					background-image: var(--background-image-lazy) !important;
+					border-top-right-radius: 25px;
+					border-bottom-right-radius: 25px;
+					.bg-image-container-content {
+						img {
+							max-height: 300px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.MassageEnEntreprise {
+		.first-header-2 {
+			.first-header-2-container {
+				.header-2-container {
+					.header-2-content {
+						padding-top: 0rem !important;
+						padding-bottom: 0rem !important;
+
+						h1 {
+							padding-top: 0.25rem;
+							font-size: 1.6rem;
+						}
+
+						.header-2-sub-title {
+							font-size: 0.8rem;
+							justify-content: unset !important;
+						}
+
+						.header-2-cta {
+							flex-flow: column !important;
+							.cta-container-row {
+								flex-flow: column !important;
+								margin-bottom: 0.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.bg-image-alternative-container {
+			img:not(.vertical) {
+				width: 250px;
+				max-height: unset !important;
+			}
+			img .vertical {
+				max-height: 250px;
+			}
+		}
+	}
+}

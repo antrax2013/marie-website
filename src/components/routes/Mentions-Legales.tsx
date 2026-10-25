@@ -1,19 +1,6 @@
-import MetaTag from '../../modules/MetaTag';
-
 const MentionsLegales = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Mentions légales'
-				description='Les mentions legales des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
-				resume='Les mentions legales des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
 			<div>
 				<h1>Informations légales</h1>
 				<div>

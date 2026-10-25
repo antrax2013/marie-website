@@ -1,19 +1,11 @@
-import MetaTag from '../../modules/MetaTag';
+import { events } from '../entities/blog/events/events';
+import { iBlog } from '../fragments/Blog/IBlog';
 
 const SiteMap = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Plan du site'
-				description='Plan des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
-				resume='Plan des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.'
-			/>
-		);
-	};
+	const articles: iBlog[] = [...events];
 
 	return (
 		<>
-			{head()}
 			<div className='article'>
 				<h1>Le plan du site</h1>
 				<ul>
@@ -24,20 +16,57 @@ const SiteMap = () => {
 						<a href='/qui-suis-je'>Qui suis-je ?</a>
 					</li>
 					<li>
-						<a href='/massage-assis-methode-eas'>Massage assis méthode EAS®</a>
-					</li>
-					<li>
-						<a href='/reiki-usui'>Reiki Usui</a>
-					</li>
-					<li>
-						<a href='/massage-des-5-continents'>Massage des 5 Continents</a>
-					</li>
-					<li>
 						<a href='/contact'>Contact</a>
 					</li>
 					<li>
 						<a href='/offres-et-tarifs'>Offres et Tarifs</a>
 					</li>
+				</ul>
+				<h2>Mes soins et massages énergétiques</h2>
+				<ul>
+					<li>
+						<a href='/massage-assis-methode-eas'>Massage assis méthode EAS®</a>
+					</li>
+					<li>
+						<a href='/massage-des-5-continents'>Massage des 5 Continents</a>
+					</li>
+					<li>
+						<a href='/reiki-usui'>Reiki Usui</a>
+					</li>
+					<li>
+						<a href='/duo-massage-du-dos-assis-tambour-unite'>
+							Soin duo massage du dos assis - Tambour Unité
+						</a>
+					</li>
+				</ul>
+				<h2>Mes préstations</h2>
+				<ul>
+					<li>
+						<a href='/massage-en-entreprise-saint-quentin-en-yvelines'>
+							Massage en entreprise
+						</a>
+					</li>
+					<li>
+						<a href='/soins-a-domicile-saint-quentin-en-yvelines'>
+							Soins à domicile
+						</a>
+					</li>
+				</ul>
+				<h2>
+					Les pages liées à des acutalités, des événements ou des offres
+					ponctuelles
+				</h2>
+				<ul>
+					{articles.map((article: iBlog, i: number) => (
+						<li key={`article-${i}`}>
+							<a
+								href={`articles/${article.slug}`}
+							>{`${article.date.toLocaleDateString()} - ${article.h1}`}</a>
+						</li>
+					))}
+				</ul>
+				<h2>Autres pages</h2>
+				<ul>
 					<li>
 						<a href='/mentions-legales'>Mentions legales</a>
 					</li>

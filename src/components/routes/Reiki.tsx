@@ -1,43 +1,29 @@
-import ParagraphSeparator from '../fragments/Paragraph-Separator';
+import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgReiki from '../../assets/Reiki/Reiki.svg';
 import ImgReikiVentre from '../../assets/Reiki/Reiki-ventre.png';
-//import ImgReikiGenou from '../../assets/Reiki/Reiki-genou.png';
-//import ImgReikiPied from '../../assets/Reiki/Reiki-pied.png';
 import '../../scss/routes/Reiki.scss';
-import MetaTag from '../../modules/MetaTag';
-import BgMcImageContainer from '../fragments/McImageContainers/BgMcImageContainer';
+import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import CtaOffres from '../fragments/Ctas/Offres';
-import BgMcImageAlternativeContainer from '../fragments/McImageContainers/BgMcImageAlternativeContainer';
-import ReviewContainer from '../fragments/Reviews-Container';
+import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
+import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
-import Faq from '../fragments/Faq';
+import Faq from '../fragments/FAQ/Faq';
 import { ReikiFaqItems } from '../entities/faq-items/reiki-faq-items';
-//import McImage from '../fragments/McImage';
 import { PricesReikiH } from '../fragments/Prices/reiki-holistique';
 import { PricesReikiC } from '../fragments/Prices/reiki-cible';
-import Cta from '../fragments/Cta';
+import Cta from '../fragments/Ctas/Cta';
+import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
 
 const Reiki = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Reiki Usui'
-				description='Séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies. Un moment de douceur et de recentrage.'
-				resume='Séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies. Un moment de douceur et de recentrage.'
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
-			<div className='Reiki' itemScope itemType='https://schema.org/Offer'>
+			<div className='Reiki'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
 						<div className='header-2-container'>
 							<div className='header-2-content'>
-								<h1 itemProp='name'>
+								<h1>
 									Le Reiki Usui – un soin énergétique doux, libérateur et
 									universel
 								</h1>
@@ -53,9 +39,10 @@ const Reiki = () => {
 									</p>
 									<p>
 										À Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, en
-										cabinet ou à domicile, ouvrez un espace de calme où le
-										mental se pose, le corps se relâche et l’énergie retrouve
-										son chemin naturel.
+										cabinet ou à{' '}
+										<McLinkSoinDomicile text='domicile' noWrap={true} />, ouvrez
+										un espace de calme où le mental se pose, le corps se relâche
+										et l’énergie retrouve son chemin naturel.
 									</p>
 									<BgMcImageAlternativeContainer
 										path={ImgReikiVentre}
@@ -85,10 +72,7 @@ const Reiki = () => {
 					</div>
 				</div>
 				<ParagraphSeparator />
-				<div
-					className='reiki-usui-description-container'
-					itemProp='description'
-				>
+				<div className='reiki-usui-description-container'>
 					<div className='reiki-usui-description-main-content'>
 						<BgMcImageContainer
 							path={ImgReiki}
@@ -112,7 +96,7 @@ const Reiki = () => {
 								Usui, dans le respect des enseignements transmis depuis Mikao
 								Usui, par Carole Jacob, ma formatrice et amie. Je veille à
 								préserver la simplicité, l’authenticité et l’esprit originel de
-								cette méthode du XIX<sup>éme</sup> siècle, en offrant un soin
+								cette méthode du XIX<sup>e</sup> siècle, en offrant un soin
 								fidèle à ses valeurs et à sa philosophie.
 							</p>
 							<p>
@@ -146,7 +130,7 @@ const Reiki = () => {
 									<li>Libérer les blocages et les tensions</li>
 									<li>Renforcer le système immunitaire</li>
 									<li>Favoriser un lâcher‑prise profond</li>
-									<li>Atténuer les douleurs et élimine les toxines</li>
+									<li>Atténuer les douleurs et éliminer les toxines</li>
 									<li>Stimuler les processus naturels d’auto‑guérison</li>
 									<li>Réharmoniser et apaiser le corps et l'esprit</li>
 								</ul>
@@ -188,19 +172,19 @@ const Reiki = () => {
 					<div className='reiki-usui-targets-lists'>
 						<div className='reiki-usui-target-list'>
 							<p>
-								Il est particulièrement adaptée si vous recherchez un soutien
+								Il est particulièrement adapté si vous recherchez un soutien
 								pour faire face :
 							</p>
 							<ul>
 								<li>Au stress, à l'anxiété ou au burn-out</li>
-								<li>A la fatigue, l'insomnie ou manque de vitalité</li>
+								<li>À la fatigue, l'insomnie ou au manque de vitalité</li>
 								<li>
-									A des états émotionnels, la perte de confiance, des blocages
+									À des états émotionnels, la perte de confiance, des blocages
 									ou des schémas répétitifs
 								</li>
 								<li>
-									A des tensions musculaires, des douleurs chroniques,
-									articulaires ou inflamatoires
+									À des tensions musculaires, des douleurs chroniques,
+									articulaires ou inflammatoires
 								</li>
 								<li>
 									Au changement que ce soit dans la vie personnelle ou
@@ -209,7 +193,7 @@ const Reiki = () => {
 							</ul>
 						</div>
 						<div className='reiki-usui-target-disclaimer-list'>
-							<p>Il ne covient pas en cas : </p>
+							<p>Il ne convient pas en cas : </p>
 							<ul className='disclaimer'>
 								<li>
 									De troubles psychotiques, schizophréniques ou de dissociation
@@ -231,12 +215,10 @@ const Reiki = () => {
 							<div className='reiki-usui-prices-panel'>
 								<PricesReikiH title='Soin Reiki Usui holistique séance 1h00 - 45 mins de soin' />
 								<br />
-								<p>
+								<div>
 									<h4 className='inline'>Soin Reiki Usui à distance</h4>{' '}
-									<span className='asterix'>*</span> :{' '}
-									<span itemProp='price'>60,00</span>
-									<span itemProp='priceCurrency'>€</span>
-								</p>
+									<span className='asterix'>*</span> : 60,00 €
+								</div>
 							</div>
 							<div className='reiki-usui-prices-panel'>
 								<PricesReikiC title='Soin Reiki Usui ciblé séance 0h30 - 25 mins de soin' />

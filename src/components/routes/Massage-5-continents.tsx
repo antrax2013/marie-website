@@ -1,42 +1,34 @@
-import ParagraphSeparator from '../fragments/Paragraph-Separator';
+import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgM5C from '../../assets/M5C/massage-5-continents.png';
 import ImgM5CColonne from '../../assets/M5C/m5c-colonne.png';
 import ImgM5CDos from '../../assets/M5C/m5c-bas-dos.png';
 //import ImgM5CBras from '../../assets/M5C/m5c-bras.png';
 import '../../scss/routes/M5C.scss';
-import MetaTag from '../../modules/MetaTag';
-import BgMcImageAlternativeContainer from '../fragments/McImageContainers/BgMcImageAlternativeContainer';
+import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
 import CtaOffres from '../fragments/Ctas/Offres';
-import BgMcImageContainer from '../fragments/McImageContainers/BgMcImageContainer';
-import McImage from '../fragments/McImage';
-import Cta from '../fragments/Cta';
-import ReviewContainer from '../fragments/Reviews-Container';
+import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
+import McImage from '../fragments/McImage/McImage';
+import Cta from '../fragments/Ctas/Cta';
+import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
-import Faq from '../fragments/Faq';
+import Faq from '../fragments/FAQ/Faq';
 import { M5CFaqItems } from '../entities/faq-items/m5c-faq-items';
 import { PricesM5C } from '../fragments/Prices/massage-5-continents';
+import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
+import McLinkEnEntreprise from '../fragments/McLinks/McLink-En-Entreprise';
+import McLinkReikiUsui from '../fragments/McLinks/McLink-Reiki-Usui';
+import CtaContactezMoi from '../fragments/Ctas/ContactezMoi';
 
 const Massage5Continents = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Massage des 5 Continents'
-				description='Un soin puissant mêlant massage, soin énergétique et aromathérapie. Le Massage 5 Continents (M5C), sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.'
-				resume='Un soin puissant mêlant massage, soin énergétique et aromathérapie. Le Massage 5 Continents (M5C), sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.'
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
-			<div className='M5C' itemScope itemType='https://schema.org/Offer'>
+			<div className='M5C'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
 						<div className='header-2-container'>
 							<div className='header-2-content'>
-								<h1 itemProp='name'>
+								<h1>
 									Le Massage des 5 Continents (M5C) - un soin holistique, une
 									méthode signature, un bien‑être profond
 								</h1>
@@ -49,19 +41,16 @@ const Massage5Continents = () => {
 										Offrez‑vous un soin complet et unique. Le massage des 5
 										continents, entre les mains d’une praticienne certifiée,
 										réunit des techniques de massage venues des quatre coins du
-										monde, un soin énergétique{' '}
-										<a
-											href='/reiki-usui'
-											title='En savoir plus sur le Reiki Usui'
-										>
-											Reiki Usui
-										</a>{' '}
+										monde, un soin énergétique
+										<McLinkReikiUsui text='Reiki Usui' />
 										et les propriétés thérapeutiques d’huiles essentielles.
 									</p>
 									<p>
 										Sur Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, à
-										domicile ou en entreprise, offrez‑vous un instant suspendu
-										où le rythme ralentit, où l’esprit se libère.
+										<McLinkSoinDomicile text='domicile' />
+										ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />
+										, offrez‑vous un instant suspendu où le rythme ralentit, où
+										l’esprit se libère.
 									</p>
 									<BgMcImageAlternativeContainer
 										path={ImgM5CDos}
@@ -90,10 +79,7 @@ const Massage5Continents = () => {
 				</div>
 
 				<ParagraphSeparator />
-				<div
-					className='massage-cinq-continents-description-container'
-					itemProp='description'
-				>
+				<div className='massage-cinq-continents-description-container'>
 					<div className='massage-cinq-continents-description-main-content'>
 						<BgMcImageContainer
 							path={ImgM5C}
@@ -105,8 +91,8 @@ const Massage5Continents = () => {
 								Le{' '}
 								<em>
 									<b>M</b>assage des <b>5</b> <b>C</b>ontinents (<b>M5C</b>)
-								</em>
-								, est un soin unique qui réunit massage, soin énergétique et
+								</em>{' '}
+								est un soin unique qui réunit massage, soin énergétique et
 								complexes d’huiles essentielles pour agir en profondeur sur le
 								corps et l'esprit. Cette combinaison subtile détoxifie, relâche,
 								rééquilibre et revitalise, offrant un soin complet aux effets
@@ -119,7 +105,7 @@ const Massage5Continents = () => {
 							/>
 							<p>
 								Ce massage se pratique en sous‑vêtement et englobe tout le corps
-								: dos, jambes, ventre, bras haut du torse, mains et visage. Son
+								: dos, jambes, ventre, bras, haut du torse, mains et visage. Son
 								action biodynamisante soutient les processus naturels
 								d’auto‑guérison. Il permet de se libérer des toxines et des
 								mémoires émotionnelles, ouvrant la voie à des énergies plus
@@ -161,12 +147,10 @@ const Massage5Continents = () => {
 							Le Massage des 5 Continents agit durablement grâce à l’alliance de
 							techniques de massage issues des quatre coins du monde :
 							Lomi‑Lomi, massage californien, suédois, Tuina, acupression et
-							pratiques ayurvédiques. Combiné à un soin énergétique{' '}
-							<a href='/reiki-usui' title='En savoir plus sur le Reiki Usui'>
-								Reiki Usui
-							</a>
+							pratiques ayurvédiques. Combiné à un soin énergétique
+							<McLinkReikiUsui text='Reiki Usui' />
 							et aux propriétés thérapeutiques d’huiles essentielles
-							spécifiques, sélectionnée pour leurs synergies, ce massage
+							spécifiques, sélectionnées pour leurs synergies, ce massage
 							biodynamique stimule les processus naturels d’auto‑guérison,
 							libère les blocages émotionnels et détoxifie l’organisme.
 						</p>
@@ -188,9 +172,9 @@ const Massage5Continents = () => {
 										Une réactivation de la circulation de l’énergie vitale
 									</li>
 									<li>
-										Un Allègement des charges émotionnelles et des blocages
+										Un allègement des charges émotionnelles et des blocages
 									</li>
-									<li>Une amélioration la qualité du sommeil</li>
+									<li>Une amélioration de la qualité du sommeil</li>
 									<li>Un soutien à la vitalité et une sensation de légèreté</li>
 									<li>Un recentrage et une meilleure connexion à soi</li>
 								</ul>
@@ -209,6 +193,21 @@ const Massage5Continents = () => {
 						<blockquote>
 							Quand le corps se détend, l’énergie circule et l’esprit respire.
 						</blockquote>
+						<h3>Une synergie unique d'huiles végétales et essentielles</h3>
+						<p>
+							Le soin s'appuie sur la richesse de 5 huiles végétales bio
+							(avocat, amande douce, macadamia, argan, noyau d'abricot)
+							associées à un complexe d'huiles essentielles ciblées aux vertus
+							détoxifiantes et relaxantes :
+						</p>
+						<ul>
+							<li>
+								<b>Huiles essentielles</b> : Arbre à thé (tea tree), citron,
+								cyprès, eucalyptus, géranium, gingembre, lavande, menthe
+								poivrée, myrrhe, niaouli, orange douce, ravintsara, romarin,
+								sarriette, ylang-ylang.
+							</li>
+						</ul>
 					</div>
 				</div>
 				<ParagraphSeparator />
@@ -218,7 +217,10 @@ const Massage5Continents = () => {
 						Ce soin holistique convient à toute personne souhaitant s’offrir un
 						véritable lâcher‑prise, tant physique que mental.
 					</p>
-					<b>Ce massage est destiné exclusivement aux adultes majeurs.</b>
+					<b>
+						Dans ma pratique, je réserve ce soin exclusivement aux adultes
+						majeurs.
+					</b>
 
 					<div className='massage-cinq-continents-targets-lists'>
 						<div className='massage-cinq-continents-target-list'>
@@ -255,18 +257,34 @@ const Massage5Continents = () => {
 						le signaler.
 					</p>
 					<p>
-						Par ailleurs, certaines huiles utilisées étant photosensibles, il
-						est recommandé de ne pas s’exposer au soleil après un Massage des 5
-						Continents. Il est également préférable de manger léger avant le
-						soin et de retirer bijoux et piercings afin de profiter pleinement
-						de la séance.
+						Par ailleurs, certaines huiles utilisées étant <b>photosensibles</b>
+						, il est recommandé de ne pas s’exposer au soleil après un Massage
+						des 5 Continents. Il est également préférable de{' '}
+						<b>manger léger avant le soin et de retirer bijoux et piercings</b>{' '}
+						afin de profiter pleinement de la séance.
 					</p>
 					<blockquote>
 						Chaque séance est une bulle régénérante, accordée à votre état du
 						moment pour vous offrir exactement ce dont vous avez besoin.
 					</blockquote>
 				</div>
-				<ParagraphSeparator />
+				{/* <ParagraphSeparator /> */}
+				<br />
+				<br />
+				<blockquote className='disclaimer'>
+					📌 « Soin modulable selon votre santé.{' '}
+					<a
+						className='disclaimer-link'
+						href='/articles/contre-indications-massage-5-continents'
+						title='Un doute sur une condition médicale ? Consulter le guide complet des contre-indications.'
+						target='blank'
+					>
+						→ Voir les contre-indications et adaptations.
+					</a>{' '}
+					»
+				</blockquote>
+				<br />
+				<br />
 				<div className='massage-cinq-continents-prices-container'>
 					<h3>Tarifs 2026 du Massage des 5 Continents</h3>
 					<div className='massage-cinq-continents-prices-content'>
@@ -277,8 +295,8 @@ const Massage5Continents = () => {
 								alt='Massothérapeute effectuant un massage des 5 continents pour détendre le haut du dos et harmoniser l’énergie'
 							/>
 							<blockquote>
-								Un soin qui honore le corps et apaise l’esprit: un moment unique
-								pour vous.
+								Un soin qui honore le corps et apaise l’esprit : un moment
+								unique pour vous.
 							</blockquote>
 						</div>
 						<div className='massage-cinq-continents-prices-inner-content'>
@@ -319,14 +337,17 @@ const Massage5Continents = () => {
 						</div>
 					</div>
 				</div>
-				<ParagraphSeparator />
+				<br />
+
+				<br />
 				<div className='footer-cta'>
 					<h2>Envie de découvrir le Massage des 5 Continents ?</h2>
 					<p>
 						Accordez‑vous une bulle de douceur, un moment pour respirer
 						pleinement, relâcher ce qui pèse et vous recentrer. Sur
-						Saint‑Quentin‑en‑Yvelines, à Élancourt et Guyancourt, à domicile ou
-						en entreprise, le Massage des 5 Continents invite le corps à se
+						Saint‑Quentin‑en‑Yvelines, à Élancourt et Guyancourt, à{' '}
+						<McLinkSoinDomicile text='domicile' />
+						ou en entreprise, le Massage des 5 Continents invite le corps à se
 						détendre, à se resourcer et l’esprit à s’alléger.
 					</p>
 					<p>
@@ -334,9 +355,23 @@ const Massage5Continents = () => {
 						d’informations.
 					</p>
 					<div className='cta-container-row footer-cta-container'>
+						<CtaContactezMoi className='cta-secondary' />
 						<CtaRendezVous />
 						<CtaOffres />
 					</div>
+					<br />
+					<blockquote className='disclaimer'>
+						« Un doute sur une condition médicale ?{' '}
+						<a
+							className='disclaimer-link'
+							href='/articles/contre-indications-massage-5-continents'
+							title='Un doute sur une condition médicale ? Consulter le guide complet des contre-indications.'
+							target='blank'
+						>
+							Consulter le guide complet des contre-indications
+						</a>
+						. »
+					</blockquote>
 				</div>
 			</div>
 		</>

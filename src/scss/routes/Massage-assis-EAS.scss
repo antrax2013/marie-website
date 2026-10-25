@@ -64,11 +64,7 @@
 			display: flex;
 			flex-flow: row;
 			justify-content: space-around;
-		}
-
-		.massage-assis-eas-benefits-lists,
-		.massage-assis-eas-benefits-disclaimers {
-			flex-basis: 50vw;
+			align-items: flex-start;
 		}
 	}
 
@@ -79,11 +75,7 @@
 			display: flex;
 			flex-flow: row;
 			justify-content: space-around;
-		}
-
-		.massage-assis-eas-targets-lists,
-		.massage-assis-eas-target-disclaimer-list {
-			flex-basis: 50vw;
+			align-items: flex-start;
 		}
 	}
 

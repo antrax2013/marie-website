@@ -1,6 +1,6 @@
 {
 	"short_name": "Massages & Reiki",
-	"name": "Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines, Marie Cophignon",
+	"name": "Massages énergétiques et Reiki Usui sur Saint-Quentin-en-Yvelines, Marie Cophignon",
 	"icons": [
 		{
 			"src": "favicon.ico",
@@ -40,61 +40,85 @@
 	"display": "standalone",
 	"theme_color": "#f0f0f0",
 	"background_color": "#f0f0f0",
-	"description": "Massages énergétiques et Reiki Usui sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.",
+	"description": "Massages énergétiques et Reiki Usui sur Saint-Quentin-en-Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise. Relaxation, soin énergétique et lâcher‑prise pour retrouver équilibre et sérénité, sur rendez-vous.",
 	"shortcuts": [
 		{
 			"name": "Qui suis-je?",
 			"short_name": "Qui suis-je?",
-			"description": "Découvrez mon parcours et ma philosophie autour des massages énergétiques et du Reiki Usui. Une approche bienveillante et personnalisée sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise, pour votre bien‑être.",
+			"description": "Découvrez mon parcours et ma philosophie autour des massages énergétiques et du Reiki Usui. Une approche bienveillante et personnalisée sur Saint-Quentin-en-Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise, pour votre bien‑être.",
 			"url": "/qui-suis-je"
 		},
 		{
 			"name": "Massage assis méthode EAS®",
 			"short_name": "Massage assis EAS®",
-			"description": "Profitez du massage assis méthode EAS® sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise : détente profonde, relâchement des tensions et regain d’énergie en quelques minutes.",
+			"description": "Profitez du massage assis méthode EAS® sur Saint-Quentin-en-Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise : détente profonde, relâchement des tensions et regain d’énergie en quelques minutes.",
 			"url": "/massage-assis-methode-eas"
 		},
 
 		{
 			"name": "Massage des 5 Continents",
 			"short_name": "M5C",
-			"description": "Un soin puissant mêlant massage, soin énergétique et aromathérapie. Le Massage 5 Continents sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.",
+			"description": "Un soin puissant mêlant massage, soin énergétique et aromathérapie. Le Massage 5 Continents sur Saint-Quentin-en-Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour revitaliser corps et esprit.",
 			"url": "/massage-des-5-continents"
 		},
 		{
 			"name": "Reiki Usui",
 			"short_name": "Reiki Usui",
-			"description": "Séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies. Un moment de douceur et de recentrage.",
+			"description": "Séances de Reiki Usui sur Saint-Quentin-en-Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise, pour réduire le stress, apaiser l’esprit et rééquilibrer vos énergies. Un moment de douceur et de recentrage.",
 			"url": "/reiki-usui"
+		},
+		{
+			"name": "Soin duo massage du dos assis - Tambour Unité à Plaisir",
+			"short_name": "Massage du dos assis - Tambour Unité",
+			"description": "Découvrez à Plaisir un soin duo unique associant massage du dos assis, sons et vibrations du Tambour Unité, dans une expérience sensorielle à deux.",
+			"url": "/duo-massage-du-dos-assis-tambour-unite"
+		},
+		{
+			"name": "Massage en entreprise à Saint‑Quentin‑en‑Yvelines – Bien‑être au travail",
+			"short_name": "Massage en entreprise SQY",
+			"description": "Massage en entreprise à SQY : détente, énergie et réduction du stress. Massage du dos assis EAS® pour améliorer la QVCT. Interventions sur Saint‑Quentin‑en‑Yvelines et environs.",
+			"url": "/massage-en-entreprise-saint-quentin-en-yvelines"
+		},
+		{
+			"name": "Soins à domicile sur Saint-Quentin-en-Yvelines",
+			"short_name": "Soins à domicile SQY",
+			"description": "Reiki Usui, Massage des 5 Continents et massage assis EAS® à domicile sur Saint‑Quentin‑en‑Yvelines. Confort, qualité et sérénité.",
+			"url": "/soins-a-domicile-saint-quentin-en-yvelines"
 		},
 		{
 			"name": "Tarifs et offre de soins",
 			"short_name": "Tarifs & offres",
-			"description": "Consultez les tarifs des massages énergétique et séances de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Des soins adaptés à vos besoins pour un bien‑être durable.",
-			"url": "/consultations"
+			"description": "Consultez les tarifs des massages énergétique et séances de Reiki Usui sur Saint-Quentin-en-Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Des soins adaptés à vos besoins pour un bien‑être durable.",
+			"url": "/offres-et-tarifs"
 		},
 		{
 			"name": "Contact",
 			"short_name": "Contact",
-			"description": "Prenez rendez‑vous pour un massage énergétique ou une séance de Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Contact simple et rapide pour votre moment bien‑être.",
+			"description": "Prenez rendez‑vous pour un massage énergétique ou une séance de Reiki Usui sur Saint-Quentin-en-Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise. Contact simple et rapide pour votre moment bien‑être.",
 			"url": "/contact"
+		},
+		{
+			"name": "Naissance du soin duo massage du dos assis - Tambour Unité",
+			"short_name": "Naissance du massage du dos assis - Tambour Unité",
+			"description": "Découvrez comment Marie et Floriane ont imaginé leur soin duo massage du dos assis - Tambour Unité, né de leur complicité et de la fusion de leurs pratiques.",
+			"url": "/articles/soin-massage-eas-tambour-sqy-plaisir-yvelines"
 		},
 		{
 			"name": "Le plan du site",
 			"short_name": "Plan du site",
-			"description": "Plan des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.",
+			"description": "Plan des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin-en-Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.",
 			"url": "/plan-du-site"
 		},
 		{
 			"name": "Les mentions legales",
 			"short_name": "Mentions legales",
-			"description": "Les mentions legales des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.",
+			"description": "Les mentions legales des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin-en-Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.",
 			"url": "/mentions-legales"
 		},
 		{
 			"name": "La politique de confidentialité",
 			"short_name": "Politique de confidentialité",
-			"description": "La politique de confidentialité des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin en Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.",
+			"description": "La politique de confidentialité des sites marie.cophignon.net, massage‑reiki.fr, massages‑reiki.fr, praticienne en massages bien‑être et Reiki Usui sur Saint-Quentin-en-Yvelines, à Élancourt et Guyancourt, à domicile ou en entreprise.",
 			"url": "/politique-de-confidentialite"
 		}
 	]

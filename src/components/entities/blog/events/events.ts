@@ -1,0 +1,33 @@
+import { BlogArticleMassageSurChiseSQY } from '../articles/massage-sur-chaise-entreprise-saint-quentin-en-yvelines';
+import { BlogArticleMassageADomicilesSQY } from '../articles/massage-a-domicile';
+import { BlogArticleCabinetGrandeSalle } from '../articles/reiki-massage-guyancourt-nouvelle-salle-jeudi';
+import { BlogEvent20250922EASPetitfils } from './20250922-massage-du-dos-assis-EAS-en-entreprise-petit-fils-plaisir';
+import { BlogEvent20260125POCabinetBlowBall } from './20260125-portes-ouvertes-bien-etre-reiki-massage-saint-quentin-en-yvelines';
+import { BlogEvent20260412SalonSensEveil4 } from './20260412-salon-bien-etre-manet-montigny-le-bretonneux';
+import { BlogEvent20260412RetourSalonSensEveil4 } from './20260425-retour-salon-bien-etre-manet-montigny-le-bretonneux';
+import { BlogEvent20260430RetourInitTestMuscu } from './20260502-retour-initiation-test-musculaire-kinesio';
+import { BlogEvent20260531PortesOuvertesPrintemps2026 } from './20260531-portes-ouvertes-bien-etre-plaisir-78370-printemps-2026';
+import { BlogEvent20260830GmarcheEtBienEtre } from './20260830-gmarche-jouars-pontchartrain-massages-assis-june-bien-etre';
+import { BlogArticleM5cContreIndications } from '../articles/m5c-contre-indications';
+import { BlogArticleReikiUsuiChien } from '../articles/soin-reiki-usui-chienne-eva';
+import { BlogArticleNaissanceSoinDuoMassageTambour } from '../articles/soin-eas-tambour';
+import { BlogArticleEasOuM5C } from '../articles/massage-eas-ou-mc5';
+import { BlogEvent20261122PortesOuvertesBlowball } from './20261122-portes-cabinet-blowball';
+
+export const events = [
+	BlogEvent20250922EASPetitfils,
+	BlogEvent20260125POCabinetBlowBall,
+	BlogEvent20260412SalonSensEveil4,
+	BlogArticleCabinetGrandeSalle,
+	BlogEvent20260412RetourSalonSensEveil4,
+	BlogEvent20260430RetourInitTestMuscu,
+	BlogEvent20260531PortesOuvertesPrintemps2026,
+	BlogArticleMassageSurChiseSQY,
+	BlogArticleMassageADomicilesSQY,
+	BlogEvent20260830GmarcheEtBienEtre,
+	BlogArticleM5cContreIndications,
+	BlogArticleReikiUsuiChien,
+	BlogArticleNaissanceSoinDuoMassageTambour,
+	BlogArticleEasOuM5C,
+	BlogEvent20261122PortesOuvertesBlowball,
+];

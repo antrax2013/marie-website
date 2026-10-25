@@ -1,4 +1,4 @@
-import { iFaqItem } from '../../fragments/Faq-Item';
+import { iFaqItem } from '../../fragments/FAQ/Faq-Item';
 
 export const QuiSuisJeFaqItems: Array<iFaqItem> = [
 	{
@@ -21,7 +21,7 @@ export const QuiSuisJeFaqItems: Array<iFaqItem> = [
 		),
 	},
 	{
-		question: 'Quelle ma philosophie d’accompagnement ?',
+		question: 'Quelle est ma philosophie d’accompagnement ?',
 		response: (
 			<>
 				<p>

@@ -1,4 +1,6 @@
-import { iFaqItem } from '../../fragments/Faq-Item';
+import { iFaqItem } from '../../fragments/FAQ/Faq-Item';
+import McLinkEnEntreprise from '../../fragments/McLinks/McLink-En-Entreprise';
+import McLinkSoinDomicile from '../../fragments/McLinks/McLink-Soins-Domicile';
 
 export const OfrresFaqItems: Array<iFaqItem> = [
 	{
@@ -6,7 +8,9 @@ export const OfrresFaqItems: Array<iFaqItem> = [
 		response: (
 			<>
 				<p>
-					Oui, je me déplace à domicile ou en entreprise sur
+					Oui, je me déplace à
+					<McLinkSoinDomicile text='domicile' />
+					ou en <McLinkEnEntreprise text='entreprise' noWrap={true} /> sur
 					Saint‑Quentin‑en‑Yvelines. Il m’est également possible d’intervenir
 					ponctuellement en dehors de ce secteur. N’hésitez pas à m’appeler afin
 					que nous voyions ensemble ce qui peut être envisagé.

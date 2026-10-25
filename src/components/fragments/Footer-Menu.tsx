@@ -8,12 +8,8 @@ const FooterMenu = (/*{ ...props }*/) => {
 			<div className='main-footer-container'>
 				<div className='main-footer-flex-container'>
 					<div className='entreprise-container'>
-						<div
-							className='entreprise-flex-container'
-							itemScope
-							itemType='https://schema.org/HealthClub'
-						>
-							<div className='logo-container' itemProp='logo'>
+						<div className='entreprise-flex-container'>
+							<div className='logo-container'>
 								<img
 									alt='Fleur de vie utilisée comme logo pour illustrer le bien-être et l’harmonisation énergétique'
 									loading='lazy'
@@ -31,19 +27,11 @@ const FooterMenu = (/*{ ...props }*/) => {
 								/>
 								<div className='phone-container'>
 									Tél :{' '}
-									<a
-										itemProp='telephone'
-										href={`tel:${import.meta.env.VITE_META_NUMTEL}`}
-									>
+									<a href={`tel:${import.meta.env.VITE_META_NUMTEL}`}>
 										{import.meta.env.VITE_META_NUMTEL}
 									</a>
 								</div>
-								<div
-									className='siret-container'
-									itemScope
-									itemType='https://schema.org/Organization'
-								>
-									<meta itemProp='iso6523Code' content='0009:91042798800019' />
+								<div className='siret-container'>
 									<i className='siret'>N° Siret : 910 427 988 00019</i>
 								</div>
 							</div>
@@ -60,9 +48,9 @@ const FooterMenu = (/*{ ...props }*/) => {
 					<span className='asterix' id='disclaimers'>
 						*
 					</span>{' '}
-					Les soins Reiki Usui et massages énergétiques ne se substitutent pas
+					Les soins Reiki Usui et massages énergétiques ne se substitutent à pas
 					un traitement médical ou thérapeutique. Les soins et massages ne sont
-					pas à carctère sexuel. Pour les mineurs la présence d’un adulte
+					pas à caractère sexuel. Pour les mineurs la présence d’un adulte
 					accompagnant durant toute la séance est obligatoire.
 				</p>
 			</div>

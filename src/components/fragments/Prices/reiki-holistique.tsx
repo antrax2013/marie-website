@@ -9,15 +9,7 @@ export const PricesReikiH = ({ title }: iPricesTable) => {
 	return (
 		<>
 			<div className='prices-container'>
-				{!!title && (
-					<h4
-						id='reiki-holistique-tarifs'
-						itemScope
-						itemType='https://schema.org/PriceSpecification'
-					>
-						{title}
-					</h4>
-				)}
+				{!!title && <h4 id='reiki-holistique-tarifs'>{title}</h4>}
 				<table>
 					<tbody>
 						<tr>
@@ -27,47 +19,23 @@ export const PricesReikiH = ({ title }: iPricesTable) => {
 						</tr>
 						<tr>
 							<td>à l'unité</td>
-							<td>
-								<span itemProp='price'>70,00</span>{' '}
-								<span itemProp='priceCurrency'>€</span>
-							</td>
-							<td>
-								<span itemProp='price'>75,00</span>{' '}
-								<span itemProp='priceCurrency'>€</span>
-							</td>
+							<td>70,00 €</td>
+							<td>75,00 €</td>
 						</tr>
 						<tr>
 							<td>pack 3 soins</td>
-							<td>
-								<span itemProp='price'>200,00</span>{' '}
-								<span itemProp='priceCurrency'>€</span>
-							</td>
-							<td>
-								<span itemProp='price'>215,00</span>{' '}
-								<span itemProp='priceCurrency'>€</span>
-							</td>
+							<td>200,00 €</td>
+							<td>215,00 €</td>
 						</tr>
 						<tr>
 							<td>pack 6 soins</td>
-							<td>
-								<span itemProp='price'>390,00</span>{' '}
-								<span itemProp='priceCurrency'>€</span>
-							</td>
-							<td>
-								<span itemProp='price'>420,00</span>{' '}
-								<span itemProp='priceCurrency'>€</span>
-							</td>
+							<td>390,00 €</td>
+							<td>420,00 €</td>
 						</tr>
 						<tr>
 							<td>pack 12 soins</td>
-							<td>
-								<span itemProp='price'>770,00</span>{' '}
-								<span itemProp='priceCurrency'>€</span>
-							</td>
-							<td>
-								<span itemProp='price'>830,00</span>{' '}
-								<span itemProp='priceCurrency'>€</span>
-							</td>
+							<td>770,00 €</td>
+							<td>830,00 €</td>
 						</tr>
 					</tbody>
 				</table>

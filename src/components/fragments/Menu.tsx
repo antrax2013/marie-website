@@ -5,9 +5,8 @@ import { MenuItem, MenuItemOptions } from 'primereact/menuitem';
 const Menu = ({ ...props }) => {
 	const itemTemplate = (item: MenuItem, options: MenuItemOptions) => {
 		return (
-			<span itemProp='name' role='menuitem'>
+			<span role='menuitem'>
 				<a
-					itemProp='url'
 					className={options.className}
 					onClick={options.onClick}
 					href={item.url}
@@ -25,13 +24,12 @@ const Menu = ({ ...props }) => {
 				title='Cliquez ici pour retourner à la page d’accueil'
 			>
 				<img
-					itemProp='logo'
 					alt='Fleur de vie utilisée comme logo pour illustrer le bien-être et l’harmonisation énergétique'
 					src={logo}
 					className='logo'
 					loading='lazy'
 				/>
-				<span itemProp='name' className='nom-site'>
+				<span className='nom-site'>
 					<span className='name-marie'>
 						{import.meta.env.VITE_META_NAME} -{' '}
 					</span>
@@ -59,8 +57,22 @@ const Menu = ({ ...props }) => {
 			pathName === 'mes-soins' &&
 			(windowPathName.includes('massage-assis-methode-eas') ||
 				windowPathName.includes('massage-des-5-continents') ||
+				windowPathName.includes('massage-assis-tambour-unite') ||
 				windowPathName.includes('reiki'))
 		) {
+			return selectedClassName;
+		}
+		if (
+			pathName === 'mes-prestations' &&
+			(windowPathName.includes('soins-a-domicile-saint-quentin-en-yvelines') ||
+				windowPathName.includes(
+					'massage-en-entreprise-saint-quentin-en-yvelines',
+				) ||
+				windowPathName.includes('massage-en-cabinet'))
+		) {
+			return selectedClassName;
+		}
+		if (pathName === 'actualites' && windowPathName.includes('articles')) {
 			return selectedClassName;
 		}
 		return className;
@@ -103,8 +115,60 @@ const Menu = ({ ...props }) => {
 						onClick('reiki');
 					},
 				},
+				{
+					label: 'Massage assis & Tambour Unité',
+					template: (item: MenuItem, options: MenuItemOptions) => {
+						return itemTemplate(item, options);
+					},
+					url: '/duo-massage-du-dos-assis-tambour-unite',
+					className: getClassName('massage-assis-tambour-unite'),
+					command: () => {
+						onClick('massage-assis-tambour-unite');
+					},
+				},
 			],
 			className: getClassName('mes-soins'),
+		},
+		{
+			label: 'Mes interventions',
+			items: [
+				{
+					label: 'Massage en entreprise',
+					template: (item: MenuItem, options: MenuItemOptions) => {
+						return itemTemplate(item, options);
+					},
+					url: '/massage-en-entreprise-saint-quentin-en-yvelines',
+					className: getClassName(
+						'massage-en-entreprise-saint-quentin-en-yvelines',
+					),
+					command: () => {
+						onClick('massage-en-entreprise-saint-quentin-en-yvelines');
+					},
+				},
+				{
+					label: 'Soins à domicile',
+					template: (item: MenuItem, options: MenuItemOptions) => {
+						return itemTemplate(item, options);
+					},
+					url: '/soins-a-domicile-saint-quentin-en-yvelines',
+					className: getClassName('soins-a-domicile-saint-quentin-en-yvelines'),
+					command: () => {
+						onClick('soins-a-domicile-saint-quentin-en-yvelines');
+					},
+				},
+				// {
+				// 	label: 'Massage en cabinet',
+				// 	template: (item: MenuItem, options: MenuItemOptions) => {
+				// 		return itemTemplate(item, options);
+				// 	},
+				// 	url: '/massage-en-cabinet',
+				// 	className: getClassName('massage-en-cabinet'),
+				// 	command: () => {
+				// 		onClick('massage-en-cabinet');
+				// 	},
+				// },
+			],
+			className: getClassName('mes-prestations'),
 		},
 		{
 			label: 'Qui suis-je ?',
@@ -137,6 +201,17 @@ const Menu = ({ ...props }) => {
 			className: getClassName('contact'),
 			command: () => {
 				onClick('contact');
+			},
+		},
+		{
+			label: 'Actualités',
+			template: (item: MenuItem, options: MenuItemOptions) => {
+				return itemTemplate(item, options);
+			},
+			url: '/articles-et-actualites',
+			className: getClassName('actualites'),
+			command: () => {
+				onClick('actualites');
 			},
 		},
 	];

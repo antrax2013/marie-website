@@ -1,4 +1,6 @@
-import { iFaqItem } from '../../fragments/Faq-Item';
+import { iFaqItem } from '../../fragments/FAQ/Faq-Item';
+import McLinkEnEntreprise from '../../fragments/McLinks/McLink-En-Entreprise';
+import McLinkSoinDomicile from '../../fragments/McLinks/McLink-Soins-Domicile';
 
 export const AccueilFaqItems: Array<iFaqItem> = [
 	{
@@ -25,18 +27,42 @@ export const AccueilFaqItems: Array<iFaqItem> = [
 		),
 	},
 	{
+		question:
+			'Les soins ont-ils un caractère erotique, thérapeutique ou médical ?',
+		response: (
+			<>
+				<p>
+					Non. Tous les massages et soins énergétiques sont strictement soins de
+					confort et de bien-être professionnels,{' '}
+					<b>
+						non médicaux, non thérapeutique et sans aucun caractère sexuel ou
+						érotique
+					</b>
+					. Ils ne se substitutent ni à un traitement médical ou thérapeutique
+					ni à de la kinésithérapie.
+				</p>
+				<p>
+					Je m'engage à offrir un espace sécurisant et bienveillant. En
+					contrepartie, tout manquement au respect du praticien ou tout
+					comportement inapproprié mettra fin à la séance sans remboursement ni
+					remise.
+				</p>
+			</>
+		),
+	},
+	{
 		question: 'Quels sont mes horaires d’ouverture et où me trouver ? ',
 		response: (
 			<>
 				<p>
-					Je vous accueille{' '}
-					<u className='underline'>uniquement sur rendez-vous</u> du lundi au
+					Je vous accueille <b>uniquement sur rendez-vous</b> du lundi au
 					vendredi de 09h00 à 19h00.
 				</p>
 				<p>
 					Je consulte en cabinet, le lundi sur <em>Élancourt</em> et le jeudi
-					sur <em>Guyancourt</em>. Je me déplace également à{' '}
-					<strong>domicile</strong> et en <strong>entreprise</strong>, sur les
+					sur <em>Guyancourt</em>. Je me déplace également à
+					<McLinkSoinDomicile text='domicile' />
+					et en <McLinkEnEntreprise text='entreprise' noWrap={true} />, sur les
 					communes de l’agglomération de{' '}
 					<strong>Saint-Quentin-en-Yvelines</strong> et ses alentours (
 					<em>Maurepas</em>, <em>Montigny-le-Bretonneux</em>, <em>Plaisir</em>,{' '}
@@ -50,21 +76,37 @@ export const AccueilFaqItems: Array<iFaqItem> = [
 				</p>
 				<p>
 					Pour rester en contact et suivre mon actualité, retrouvez-moi sur{' '}
-					<a href={import.meta.env.VITE_URLFB} target='_blank'>
+					<a
+						className='underline'
+						href={import.meta.env.VITE_URLFB}
+						target='_blank'
+					>
 						Facebook
 					</a>
 					,{' '}
-					<a href={import.meta.env.VITE_URLInstagram} target='_blank'>
+					<a
+						className='underline'
+						href={import.meta.env.VITE_URLInstagram}
+						target='_blank'
+					>
 						Instagram
 					</a>
 					,{' '}
-					<a href={import.meta.env.VITE_URLTwitter} target='_blank'>
+					<a
+						className='underline'
+						href={import.meta.env.VITE_URLTwitter}
+						target='_blank'
+					>
 						Twitter
 					</a>{' '}
 					et{' '}
-					<a href={import.meta.env.VITE_URLLinkedIn} target='_blank'>
+					<a
+						className='underline'
+						href={import.meta.env.VITE_URLLinkedIn}
+						target='_blank'
+					>
 						LinkedIn
-					</a>{' '}
+					</a>
 					.
 				</p>
 			</>
@@ -82,7 +124,7 @@ export const AccueilFaqItems: Array<iFaqItem> = [
 				</p>
 				<p>
 					Il est essentiel de rappeler que mes soins Reiki Usui et massages
-					énergétiques ne se substitutent pas un traitement médical ou
+					énergétiques ne se substitutent pas à un traitement médical ou
 					thérapeutique. Ils n’ont pas pour vocation de guérir une maladie ou
 					une pathologie mais à vous accompagner sur votre chemin vers la
 					guérison et le mieux-être. Leur rôle est de soutenir, d’apaiser et

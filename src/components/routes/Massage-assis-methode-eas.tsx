@@ -1,60 +1,51 @@
-import ParagraphSeparator from '../fragments/Paragraph-Separator';
+import ParagraphSeparator from '../fragments/Tools/Paragraph-Separator';
 import ImgMA_EAS from '../../assets/Massage-assis-EAS/massage-assis-eas-chaise.png';
 import ImgMA_EAS_Trapezes from '../../assets/Massage-assis-EAS/massage-assis-eas-cou.png';
 import ImgMA_EAS_Epaules from '../../assets/Massage-assis-EAS/massage-assis-eas-épaule.png';
 import ImgMA_EAS_Lombaires from '../../assets/Massage-assis-EAS/massage-assis-eas-lombaires.png';
 import '../../scss/routes/Massage-assis-EAS.scss';
-import MetaTag from '../../modules/MetaTag';
-import Cta from '../fragments/Cta';
+import Cta from '../fragments/Ctas/Cta';
 import CtaRendezVous from '../fragments/Ctas/RendezVous';
-import Faq from '../fragments/Faq';
+import Faq from '../fragments/FAQ/Faq';
 import { EASFaqItems } from '../entities/faq-items/eas-faq-items';
-import McImage from '../fragments/McImage';
+import McImage from '../fragments/McImage/McImage';
 import { PricesMassageEAS } from '../fragments/Prices/massage-assis-eas-prices';
 import CtaOffres from '../fragments/Ctas/Offres';
-import BgMcImageContainer from '../fragments/McImageContainers/BgMcImageContainer';
-import BgMcImageAlternativeContainer from '../fragments/McImageContainers/BgMcImageAlternativeContainer';
-import ReviewContainer from '../fragments/Reviews-Container';
+import BgMcImageContainer from '../fragments/McImage/BgMcImageContainer';
+import BgMcImageAlternativeContainer from '../fragments/McImage/BgMcImageAlternativeContainer';
+import ReviewContainer from '../fragments/Reviews/Reviews-Container';
 import SocialNetworks from '../fragments/Social-Neworks';
+import McLinkSoinDomicile from '../fragments/McLinks/McLink-Soins-Domicile';
+import McLinkEnEntreprise from '../fragments/McLinks/McLink-En-Entreprise';
 
 const MassageAssisMethodeEAS = () => {
-	const head = () => {
-		return (
-			<MetaTag
-				title='Massage assis méthode EAS®'
-				description='Profitez du massage assis méthode EAS® sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise : détente profonde, relâchement des tensions et regain d’énergie en quelques minutes.'
-				resume='Profitez du massage assis méthode EAS® sur Saint-Quentin en Yvelines à Élancourt et Guyancourt, à domicile ou en entreprise : détente profonde, relâchement des tensions et regain d’énergie en quelques minutes.'
-			/>
-		);
-	};
-
 	return (
 		<>
-			{head()}
-			<div className='MA-EAS' itemScope itemType='https://schema.org/Offer'>
+			<div className='MA-EAS'>
 				<div className='first-header-2'>
 					<div className='first-header-2-container'>
 						<div className='header-2-container'>
 							<div className='header-2-content'>
-								<h1 itemProp='name'>
-									Le massage assis méthode EAS® - un massage essentiel et
+								<h1>
+									Le massage du dos assis méthode EAS® - un massage essentiel et
 									efficace, une détente profonde immédiate
 								</h1>
 								<div className='header-2-description'>
 									<p className='header-2-sub-title'>
-										Besoin de ralentir, de souffler, de respirer, de lâcher
-										prise ?
+										Et si une courte pause pouvait transformer votre journée ?
 									</p>
 									<p>
-										Offrez‑vous quelques minutes de massage assis Méthode EAS® :
-										une vague de détente profonde, une libération délicate des
-										tensions et une réharmonisation subtile de l’énergie du
-										corps.
+										Offrez‑vous quelques minutes de massage du dos assis Méthode
+										EAS® : une vague de détente profonde, une libération
+										délicate des tensions et une réharmonisation subtile de
+										l’énergie du corps.
 									</p>
 									<p>
-										Sur Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, à
-										domicile ou en entreprise, ouvrez une parenthèse de douceur
-										où le temps ralentit et où le quotidien s’efface.
+										Sur Saint‑Quentin‑en‑Yvelines, Élancourt et Guyancourt, à{' '}
+										<McLinkSoinDomicile text='domicile' />
+										ou en <McLinkEnEntreprise text='entreprise' noWrap={true} />
+										, ouvrez une parenthèse de douceur où le temps ralentit et
+										où le quotidien s’efface.
 									</p>
 									<BgMcImageAlternativeContainer
 										path={ImgMA_EAS}
@@ -83,10 +74,7 @@ const MassageAssisMethodeEAS = () => {
 					</div>
 				</div>
 				<ParagraphSeparator />
-				<div
-					className='massage-assis-eas-description-container'
-					itemProp='description'
-				>
+				<div className='massage-assis-eas-description-container'>
 					<div className='massage-assis-eas-description-main-content'>
 						<BgMcImageContainer
 							path={ImgMA_EAS_Trapezes}
@@ -95,7 +83,7 @@ const MassageAssisMethodeEAS = () => {
 						/>
 						<div className='massage-assis-eas-description-content'>
 							<p>
-								Le <em>massage assis méthode EAS®</em>, est un soin énergétique,
+								Le <em>massage assis méthode EAS®</em> est un soin énergétique,
 								doux, créé par Jean‑Noël Poucet au sein de l’
 								<a
 									href='https://ecoledesartsdusouffle.com/nos-formations/massage-assis-eas/'
@@ -118,10 +106,10 @@ const MassageAssisMethodeEAS = () => {
 								l’esprit et de retrouver une meilleure connexion à son corps.
 							</p>
 							<p>
-								Par son approche ciblée, permet à ce qu'une grande majorité des
-								personnes en bénéficie, que ce soit pour un moment de détente,
-								pour relâcher des tensions musculaires ou pour retrouver une
-								meilleure disponibilité corporelle et mentale.
+								Par son approche ciblée, il permet à ce qu'une grande majorité
+								des personnes en bénéficie, que ce soit pour un moment de
+								détente, pour relâcher des tensions musculaires ou pour
+								retrouver une meilleure disponibilité corporelle et mentale.
 							</p>
 						</div>
 					</div>
@@ -133,15 +121,15 @@ const MassageAssisMethodeEAS = () => {
 							</h2>
 							<div className='massage-assis-eas-benefits'>
 								<p>
-									Le massage assis méthode EAS® agit en profondeur grâce à des
-									pétrissages, lissages, étirements et pressions sur des points
-									énergétiques situés le long des méridiens. Cette approche
-									permet de relâcher les tensions physiques tout en apaisant le
-									mental.
+									Le massage du dos assis méthode EAS® agit en profondeur grâce
+									à des pétrissages, lissages, étirements et pressions sur des
+									points énergétiques situés le long des méridiens. Cette
+									approche permet de relâcher les tensions physiques tout en
+									apaisant le mental.
 								</p>
 								<div className='massage-assis-eas-benefits-lists'>
 									<div className='massage-assis-eas-benefits-list'>
-										<p>Le massage assis méthode EAS® apporte :</p>
+										<p>Le massage du dos assis méthode EAS® apporte :</p>
 										<ul>
 											<li>
 												Détendre rapidement le dos, la nuque et les épaules
@@ -163,7 +151,7 @@ const MassageAssisMethodeEAS = () => {
 										</ul>
 									</div>
 									<div className='massage-assis-eas-benefits-disclaimers'>
-										<p>Le massage assis méthode EAS® n'est pas :</p>
+										<p>Le massage du dos assis méthode EAS® n'est pas :</p>
 										<ul className='disclaimer'>
 											<li>Une pratique de la masso-kinésithérapie</li>
 											<li>Une pratique médicale</li>
@@ -180,7 +168,7 @@ const MassageAssisMethodeEAS = () => {
 						</div>
 						<ParagraphSeparator />
 						<div className='massage-assis-eas-targets-container'>
-							<h3>À qui s’adresse le massage assis méthode EAS® ?</h3>
+							<h3>À qui s’adresse le massage du dos assis méthode EAS® ?</h3>
 							<p>
 								Cette méthode convient à toute personne souhaitant prendre soin
 								d’elle, relâcher les tensions du quotidien et retrouver une
@@ -201,14 +189,14 @@ const MassageAssisMethodeEAS = () => {
 									</ul>
 								</div>
 								<div className='massage-assis-eas-target-disclaimer-list'>
-									<p>Elle ne covient pas en cas : </p>
+									<p>Elle ne convient pas en cas : </p>
 									<ul className='disclaimer'>
 										<li>
 											de troubles psychotiques, schizophréniques ou de
 											dissociation de la personnalité
 										</li>
 										<li>
-											de douleurs aigües ou d'une inflamation au niveau des
+											de douleurs aiguës ou d'une inflammation au niveau des
 											zones massées
 										</li>
 									</ul>
@@ -270,16 +258,16 @@ const MassageAssisMethodeEAS = () => {
 						<div className='eas-entreprise-content-container'>
 							<div className='eas-entreprise-header'>
 								<h2 id='massage-en-entreprise'>
-									Le massage assis méthode EAS® en entreprise sur Saint-Quentin
-									en Yvelines et ses alentours.
+									Le massage du dos assis méthode EAS® en entreprise sur
+									Saint-Quentin-en-Yvelines et ses alentours.
 								</h2>
 							</div>
 							<div className='eas-entreprise-content'>
 								<p>
-									Le massage assis en entreprise est bien plus qu’un simple
-									moment de détente : c’est un véritable levier de bien‑être et
-									de performance pour vos équipes. En quelques minutes
-									seulement, vos collaborateurs profitent d’une pause
+									Le massage du dos assis en entreprise est bien plus qu’un
+									simple moment de détente : c’est un véritable levier de
+									bien‑être et de performance pour vos équipes. En quelques
+									minutes seulement, vos collaborateurs profitent d’une pause
 									revitalisante qui libère les tensions, apaise le stress et
 									redonne de l’énergie.
 								</p>
@@ -290,15 +278,15 @@ const MassageAssisMethodeEAS = () => {
 								/>
 								<p>
 									Facile à intégrer dans le quotidien professionnel, le temps
-									d’une pause, 20 minutes, le massage assis méthode EAS® crée
-									une atmosphère plus sereine, renforce la cohésion et valorise
-									l’attention que vous portez à vos talents.
+									d’une pause, 20 minutes, le massage du dos assis méthode EAS®
+									crée une atmosphère plus sereine, renforce la cohésion et
+									valorise l’attention que vous portez à vos talents.
 								</p>
 								<div className='eas-entreprise-cta cta-container-row'>
 									<Cta
-										link='/massage-en-entreprise'
+										link='/massage-en-entreprise-saint-quentin-en-yvelines'
 										title={
-											'CLiquez ici pour découvrir les biens-faits du massage en entreprise'
+											'Cliquez ici pour découvrir les biens-faits du massage en entreprise'
 										}
 										ctaLinkClassName='cta-tertiary'
 									/>
@@ -334,13 +322,13 @@ const MassageAssisMethodeEAS = () => {
 				</div>
 				<ParagraphSeparator />
 				<div className='footer-cta'>
-					<h2>Envie de découvrir le massage assis méthode EAS® ?</h2>
+					<h2>Envie de découvrir le massage du dos assis méthode EAS® ?</h2>
 					<p>
 						Offrez-vous une parenthèse de douceur, un moment pour respirer,
-						relâcher et vous recentrer. Sur Saint-Quentin en Yvelines, à
-						Élancourt et Guyancourt, à domicile ou en entreprise, le massage
-						assis méthode EAS® est une invitation à renouer avec votre corpset
-						lâcher le mental.
+						relâcher et vous recentrer. Sur Saint-Quentin-en-Yvelines, à
+						Élancourt et Guyancourt, à <McLinkSoinDomicile text='domicile' />
+						ou en entreprise, le massage du dos assis méthode EAS® est une
+						invitation à renouer avec votre corpset lâcher le mental.
 					</p>
 					<p>
 						Contactez-moi pour réserver votre séance ou obtenir plus
