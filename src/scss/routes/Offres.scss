@@ -1,76 +1,47 @@
 @use '../rules/mixins';
 
 .Offres {
-	.article > section {
-		@include mixins.article-section;
-		align-items: flex-start;
-	}
-
-	.article section aside > div {
-		@include mixins.flex-content-center;
-	}
-
-	aside {
-		@include mixins.paragraphe-img-container;
-	}
-
-	.paragraphe-1 .paragraphe-content,
-	.paragraphe-2 .paragraphe-content,
-	.paragraphe-3 .paragraphe-content,
-	.paragraphe-4 .paragraphe-content .paragraphe-5 .paragraphe-content,
-	.paragraphe-6 .paragraphe-content .paragraphe-7 .paragraphe-content {
-		@include mixins.paragraphe-txt-container;
-	}
-
-	.paragraphe-7 {
+	.prices-content,
+	.intervention-area,
+	.offres-container {
+		@include mixins.ombre-portee-basse-panneau;
+		display: flex;
 		flex-direction: column;
-		align-items: center;
-		flex: 1;
-	}
+		justify-content: space-evenly;
+		padding: 0 1rem;
+		margin: 0.5rem;
 
-	.paragraphe-7 .paragraphe-content,
-	img.img-carte-cadeau {
-		display: block;
-		width: 100%;
-	}
+		.prices-paragraph-container,
+		.offres-paragraph-container {
+			display: flex;
+			justify-content: space-around;
+			padding: 0 1rem;
+			margin: 0.5rem;
 
-	.paragraphe-content table th:not(:first-child),
-	.paragraphe-content table td:not(:first-child) {
-		text-align: right;
-	}
-
-	.paragraphe-content table {
-		border-collapse: collapse;
-	}
-	.paragraphe-content table td,
-	.paragraphe-content table th {
-		padding: 0px 0.5em;
-	}
-
-	.paragraphe-1 {
-		margin-top: 1rem;
-	}
-}
-
-@media (max-width: 427px) {
-	.Offres {
-		.paragraphe-content table td,
-		.paragraphe-content table th {
-			font-size: 0.9em;
+			.prices-paragraph-content,
+			.offres-paragraph-content {
+				width: 300px;
+			}
 		}
-		.paragraphe-3,
-		.paragraphe-4 {
-			flex-direction: column;
-			align-items: flex-start;
+
+		.prices-container .footer-cta-container {
+			margin-bottom: 1rem;
 		}
 	}
 }
-
 @media (max-width: 768px) {
-	.Offres {
-		.paragraphe-content table td,
-		.paragraphe-content table th {
-			font-size: 0.85em;
-		}
+	h3,
+	h4 {
+		margin-bottom: inherit !important;
+	}
+
+	.prices-paragraph-content,
+	.offres-paragraph-content {
+		width: inherit !important;
+	}
+
+	.prices-paragraph-container,
+	.offres-paragraph-container {
+		flex-flow: column !important;
 	}
 }

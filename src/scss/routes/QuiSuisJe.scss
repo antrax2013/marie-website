@@ -1,63 +1,253 @@
 @use '../rules/mixins';
 
 .QuiSuisJe {
-	.article > section {
-		@include mixins.article-section;
-		align-items: center;
-	}
+	.first-header-2 {
+		.first-header-2-container {
+			.header-2-container {
+				.header-2-content {
+					.header-2-description {
+						display: inline-block;
 
-	.article section aside > div {
-		@include mixins.flex-content-center;
-	}
+						.img-moi-l-container {
+							display: block;
+							width: 100%;
+							text-align: center;
 
-	aside {
-		@include mixins.paragraphe-img-container;
-	}
+							.img-qui-suis-je-moi {
+								display: inline-block;
+								aspect-ratio: auto 100 / 100;
+								max-height: 250px;
+								@include mixins.border-rounded;
+							}
+						}
+					}
+				}
+				.header-2-image-container {
+					display: inline-block;
+					--background-image-lazy: url('../../assets/moi500x.jpg');
+					background-image: var(--background-image-lazy) !important;
+					background-size: cover;
+					background-position: center;
+					border-top-right-radius: 25px;
+					border-bottom-right-radius: 25px;
 
-	.paragraphe-1 .paragraphe-content,
-	.paragraphe-2 .paragraphe-content,
-	.paragraphe-3 .paragraphe-content {
-		@include mixins.paragraphe-txt-container;
-	}
-
-	.paragraphe-1 {
-		margin-top: 1rem;
-	}
-
-	img {
-		@include mixins.paragraphe-img;
-	}
-
-	.img-qui-suis-je-moi {
-		aspect-ratio: auto 320 / 383;
-	}
-}
-
-@media (max-width: 768px) and (min-width: 427px) {
-	.QuiSuisJe {
-		.img-qui-suis-je-moi {
-			width: 50%;
-			height: 50%;
+					img.img-qui-suis-je-moi {
+						display: inline-block;
+						aspect-ratio: auto 100 / 100;
+						visibility: hidden;
+						max-height: 325px;
+					}
+				}
+			}
 		}
-		.paragraphe-1 .paragraphe-content {
-			flex: 1 1;
+	}
+	.career-header {
+		.career-header-3-containers {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: start;
 		}
-		.article section aside {
-			flex: 2 1;
+		.career-content {
+			@include mixins.ombre-portee-basse-panneau;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			padding: 0 1rem 1rem;
+			margin: 0.5rem;
+
+			h3 {
+				color: var(--text-color) !important;
+				font-size: 1.1rem;
+				padding: 1rem 0 0.5rem 0;
+				margin-block-end: unset !important;
+				margin-block-start: unset !important;
+			}
+
+			.career-image-container {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				padding: 0 0 0.5rem 0;
+
+				img {
+					@include mixins.border-rounded;
+					max-width: 350px;
+				}
+			}
+
+			.cta-container {
+				padding-bottom: 0.5rem;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+
+				blockquote {
+					display: inline-block !important;
+					text-align: center;
+					color: var(--grey-medium);
+					font-style: italic !important;
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+
+	.centers-container {
+		.center-header {
+			p {
+				text-align: center;
+				margin-top: 0;
+			}
+		}
+		.centers-containers {
+			display: flex;
+			justify-content: start;
+			align-items: start;
+			margin-top: 0.5rem;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			.center-container {
+				display: inline-block !important;
+				width: 50%;
+				padding: 0.5rem;
+
+				.cta-container {
+					padding: 0.5rem;
+					display: block;
+				}
+
+				.center-area {
+					display: flex;
+					align-items: start;
+					flex-direction: row;
+					justify-content: flex-start;
+
+					ul:nth-of-type(2) {
+						margin-left: 20%;
+					}
+				}
+
+				h3 {
+					color: var(--text-color) !important;
+					font-size: 1.1rem;
+					padding: 1rem 0 0.5rem 0;
+					margin-block-end: unset !important;
+					margin-block-start: unset !important;
+				}
+
+				.address-container {
+					display: inline-block;
+					address {
+						display: flex;
+						align-items: center;
+						margin: 0.5rem;
+						flex-direction: row;
+						flex-wrap: nowrap;
+						width: 100%;
+
+						.section-adresse {
+							flex-basis: 50%;
+							padding: 0 1.5rem;
+							p {
+								margin-bottom: 0rem;
+							}
+							ul {
+								margin-top: 0rem;
+								padding-left: 0rem;
+
+								li {
+									display: inline-block;
+								}
+							}
+						}
+					}
+					iframe {
+						border: none;
+						@include mixins.border-rounded;
+						@include mixins.ombre-portee-basse-panneau;
+					}
+				}
+			}
 		}
 	}
 }
 
 @media (max-width: 768px) {
 	.QuiSuisJe {
-		.article section {
-			flex-direction: column;
-		}
-	}
-}
+		.first-header-2 {
+			.first-header-2-container {
+				.header-2-container {
+					.header-2-content {
+						padding-top: 0rem !important;
+						padding-bottom: 0rem !important;
 
-@media (min-width: 769px) {
-	.QuiSuisJe aside {
-		flex-direction: inherit;
+						h1 {
+							padding-top: 0.25rem;
+							font-size: 1.6rem;
+						}
+
+						.header-2-sub-title {
+							font-size: 0.8rem;
+							justify-content: unset !important;
+						}
+
+						.header-2-cta {
+							flex-flow: column !important;
+							.cta-container-row {
+								flex-flow: column !important;
+								margin-bottom: 0.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.centers-containers {
+			flex-direction: column !important;
+			.center-container {
+				flex-direction: column !important;
+				align-items: start !important;
+				width: 100% !important;
+				padding: 0rem !important;
+
+				.address-container {
+					text-align: center;
+					width: 100% !important;
+					.section-content {
+						address {
+							margin: 0rem !important;
+							flex-direction: column !important;
+							align-items: start !important;
+							text-align: start;
+
+							.section-map {
+								width: 100% !important;
+								text-align: center;
+							}
+							.section-adresse {
+								width: 100% !important;
+							}
+						}
+					}
+				}
+
+				.center-area {
+					flex-direction: column !important;
+					ul {
+						margin: 0rem !important;
+						margin-block-start: 0rem !important;
+						margin-block-end: 0rem !important;
+					}
+				}
+			}
+			.paragraphe-content {
+				ul {
+					padding-left: 0rem;
+				}
+			}
+		}
 	}
 }

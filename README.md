@@ -6,12 +6,12 @@
 
 - [Massage assis méthode EAS®](https://marie.cophignon.net/massage-assis-methode-eas)
 - [Massage des 5 Continents](https://marie.cophignon.net/massage-des-5-continents)
-- [Reiki Usui](https://marie.cophignon.net/reiki)
+- [Reiki Usui](https://marie.cophignon.net/reiki-usui)
 
 Elle consulte du lundi au vendredi de 09h00 à 19h00.
 Elle vous reçois en cabinet :
 
-- Le lundi à Elancourt
+- Le lundi à Élancourt
 - Le jeudi à Guyancourt
 
 Les autres jours de la semaine elle se déplace à domicile.

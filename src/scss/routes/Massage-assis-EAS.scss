@@ -1,50 +1,224 @@
 @use '../rules/mixins';
 
 .MA-EAS {
-	.article > section {
-		@include mixins.article-section;
+	.first-header-2 {
+		.first-header-2-container {
+			.header-2-container {
+				.bg-image-alternative-container-img-chaise {
+					img {
+						max-height: 250px;
+					}
+				}
+
+				.bg-image-container-img-chaise {
+					--background-image-lazy: url('../../assets/Massage-assis-EAS/massage-assis-eas-chaise.png');
+					background-image: var(--background-image-lazy) !important;
+					border-top-right-radius: 25px;
+					border-bottom-right-radius: 25px;
+					.bg-image-container-content {
+						img {
+							max-height: 300px;
+						}
+					}
+				}
+			}
+		}
 	}
 
-	.article section aside > div {
-		@include mixins.flex-content-center;
+	.massage-assis-eas-description-container {
+		.massage-assis-eas-description-main-content {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-evenly;
+			align-items: center;
+			@include mixins.ombre-portee-basse-panneau;
+
+			.bg-image-alternative-container-img-trapezes {
+				img {
+					max-height: 250px;
+				}
+			}
+
+			.bg-image-container-img-trapezes {
+				--background-image-lazy: url('../../assets/Massage-assis-EAS/massage-assis-eas-cou.png');
+				background-image: var(--background-image-lazy) !important;
+				border-bottom-left-radius: 25px;
+				.bg-image-container-content {
+					img {
+						max-height: 300px;
+					}
+				}
+			}
+
+			.massage-assis-eas-description-content {
+				padding: 0rem 1rem;
+			}
+		}
 	}
 
-	aside {
-		@include mixins.paragraphe-img-container;
+	.massage-assis-eas-benefits {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+
+		.massage-assis-eas-benefits-lists {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+		}
+
+		.massage-assis-eas-benefits-lists,
+		.massage-assis-eas-benefits-disclaimers {
+			flex-basis: 50vw;
+		}
 	}
 
-	.paragraphe-1 .paragraphe-content {
-		flex: 4 1;
+	.massage-assis-eas-targets-container {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+		.massage-assis-eas-targets-lists {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+		}
+
+		.massage-assis-eas-targets-lists,
+		.massage-assis-eas-target-disclaimer-list {
+			flex-basis: 50vw;
+		}
 	}
 
-	.paragraphe-1 .paragraphe-content ol i {
-		color: var(--primary-color) !important;
+	.massage-assis-eas-prices-container {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+		.massage-assis-eas-prices-content {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			align-items: center;
+
+			.massage-assis-eas-prices-image-content {
+				display: flex;
+				flex-flow: column;
+				justify-content: space-around;
+				align-items: center;
+
+				img {
+					@include mixins.border-rounded;
+				}
+			}
+
+			.massage-assis-eas-prices-inner-content {
+				text-align: right;
+				.massage-assis-eas-prices-cta {
+					padding: 1.5rem;
+					.cta-primary {
+						margin-right: 1.5rem;
+					}
+				}
+			}
+		}
 	}
 
-	.paragraphe-2-2 .paragraphe-content,
-	.paragraphe-3-2 .paragraphe-content {
-		@include mixins.paragraphe-txt-container;
-	}
+	.eas-entreprise {
+		@include mixins.border-rounded;
+		@include mixins.ombre-portee-panneau;
 
-	img {
-		@include mixins.paragraphe-img;
+		.bg-image-alternative-container-img-epaules {
+			img {
+				max-height: 200px;
+			}
+		}
+
+		.eas-entreprise-container {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			align-items: start;
+
+			.bg-image-container-img-epaules {
+				--background-image-lazy: url('../../assets/Massage-assis-EAS/massage-assis-eas-épaule.png');
+				background-image: var(--background-image-lazy) !important;
+				border-top-left-radius: 25px;
+				border-bottom-left-radius: 25px;
+
+				.bg-image-container-content {
+					img {
+						max-height: 250px;
+					}
+				}
+			}
+			.eas-entreprise-content-container {
+				padding: 1rem;
+				.eas-entreprise-cta {
+					.cta:first-child {
+						margin-right: 1rem;
+					}
+				}
+			}
+		}
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 	.MA-EAS {
-		.article section {
-			flex-direction: column;
+		.first-header-2 {
+			.first-header-2-container {
+				.header-2-container {
+					.header-2-content {
+						padding-top: 0rem !important;
+						padding-bottom: 0rem !important;
+
+						h1 {
+							padding-top: 0.25rem;
+							font-size: 1.6rem;
+						}
+
+						.header-2-sub-title {
+							font-size: 0.8rem;
+							justify-content: unset !important;
+						}
+
+						.header-2-cta {
+							flex-flow: column !important;
+							.cta-container-row {
+								flex-flow: column !important;
+								margin-bottom: 0.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+		.massage-assis-eas-description-main-content,
+		.massage-assis-eas-benefits-lists,
+		.massage-assis-eas-benefits-disclaimers,
+		.massage-assis-eas-targets-lists,
+		.massage-assis-eas-target-disclaimer-list,
+		.massage-assis-eas-prices-content {
+			flex-flow: column !important;
+			flex-basis: inherit !important;
 		}
 
-		.img-eas-chaise {
-			width: 50%;
+		.massage-assis-eas-prices-image-content,
+		.bg-image-alternative-container {
+			img:not(.vertical) {
+				width: 250px;
+				max-height: unset !important;
+			}
+			// img .vertical {
+			// 	max-height: 250px;
+			// }
 		}
 	}
 }
 
-@media (min-width: 1025px) {
-	.MA-EAS aside {
-		flex-direction: inherit;
+@media (min-width: 768px) and (max-width: 1023px) {
+	.MA-EAS {
+		.massage-assis-eas-prices-inner-content {
+			padding-left: 0.5rem;
+		}
+		img.img-lombaires {
+			max-width: 300px !important;
+		}
 	}
 }

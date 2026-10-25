@@ -18,7 +18,7 @@ const MetaTag = ({ title, description, resume, forceTitle }: iMetaTag) => {
 	const _title: string =
 		forceTitle === true
 			? title
-			: `${title} - ${import.meta.env.VITE_META_MAIN_TITLE_LIGTH || ''}`;
+			: `${title} - ${import.meta.env.VITE_META_MAIN_TITLE || ''}`;
 
 	const meta = [
 		{

@@ -1,0 +1,63 @@
+.review-main-container {
+	.p-carousel {
+		.p-carousel-items-container {
+			a:hover {
+				text-decoration: none;
+			}
+			.carousel-item-main-container {
+				padding: 0 1rem;
+				font-family: var(--text-font-family) !important;
+				.author-review-container {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+
+					.author-review {
+						margin: 0;
+						font-weight: bold;
+					}
+					.carousel-social-network-icon {
+						display: inline-block;
+						width: 20px;
+					}
+				}
+				.carousel-item-header-container {
+					display: flex;
+					flex-direction: row;
+					align-items: start;
+					justify-content: space-between;
+					margin: 0;
+
+					.rank-review {
+						margin: 0;
+						font-size: 0.9rem;
+					}
+					.date-review {
+						margin: 0;
+						font-size: 0.85rem;
+						color: var(--grey-medium) !important;
+						font-style: italic;
+					}
+				}
+
+				.content-review {
+					margin: 0.5rem 0 0;
+					a {
+						color: var(--color-text);
+
+						font-size: 0.9rem;
+					}
+				}
+			}
+		}
+	}
+	.review-cta {
+		.review-cta-container {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+			justify-content: space-evenly;
+		}
+	}
+}

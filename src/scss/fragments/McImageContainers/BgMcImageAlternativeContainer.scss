@@ -1,0 +1,13 @@
+@use '../../rules/main';
+@use '../../rules/mixins';
+
+.bg-image-alternative-container {
+	display: block;
+	width: 100%;
+	text-align: center;
+	img {
+		display: inline-block;
+		aspect-ratio: auto 100 / 100;
+		@include mixins.border-rounded;
+	}
+}

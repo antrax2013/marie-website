@@ -1,118 +1,187 @@
 @use '../rules/mixins';
 
 .M5C {
-	.article > section {
-		@include mixins.article-section;
-	}
+	.first-header-2 {
+		.first-header-2-container {
+			.header-2-container {
+				.bg-image-alternative-container-img-bas-dos {
+					img {
+						max-height: 250px;
+					}
+				}
 
-	.article section aside > div {
-		@include mixins.flex-content-center;
-	}
-
-	aside {
-		@include mixins.paragraphe-img-container;
-	}
-
-	.paragraphe-1-1 .paragraphe-content,
-	.paragraphe-1-2 .paragraphe-content.he,
-	.paragraphe-2 .paragraphe-content,
-	.paragraphe-3-2 .paragraphe-content,
-	.paragraphe-4 .paragraphe-content {
-		@include mixins.paragraphe-txt-container;
-	}
-
-	.paragraphe-1 .paragraphe-content,
-	.paragraphe-1-2 .paragraphe-content {
-		flex: 1 1;
-	}
-
-	.paragraphe-1-2 .paragraphe-content.he li {
-		display: inline-block;
-		width: 50%;
-	}
-
-	.paragraphe-1-2 .paragraphe-content ul > li:before {
-		content: '';
-		display: list-item;
-		position: absolute;
-	}
-
-	.img-m5c {
-		width: 75%;
-		height: 75%;
-	}
-
-	img:not(.img-m5c) {
-		@include mixins.paragraphe-img;
-	}
-}
-
-@media (max-width: 769px) {
-	.M5C {
-		.article section {
-			flex-direction: column;
-		}
-		.article section aside > div {
-			display: flex !important;
-			justify-content: center;
-		}
-
-		.paragraphe-3 {
-			flex-direction: column-reverse !important;
-		}
-
-		.paragraphe-3 .paragraphe-content {
-			margin-left: 0;
-		}
-
-		.ul-he {
-			display: flex !important;
-			flex-direction: column;
-		}
-
-		.img-m5c {
-			width: 50% !important;
+				.bg-image-container-img-bas-dos {
+					--background-image-lazy: url('../../assets/M5C/m5c-bas-dos.png');
+					background-image: var(--background-image-lazy) !important;
+					border-top-right-radius: 25px;
+					border-bottom-right-radius: 25px;
+					.bg-image-container-content {
+						img {
+							max-height: 300px;
+						}
+					}
+				}
+			}
 		}
 	}
-}
-
-@media (min-width: 770px) {
-	.M5C {
-		.article section:not(.paragraphe-2-2) aside {
-			height: 100%;
-			width: 100%;
-		}
-
-		.article section.paragraphe-2-2 aside > div {
-			display: block;
-		}
-
-		.article section.paragraphe-4 aside > div {
-			display: block;
-		}
-
-		.paragraphe-2-2 .paragraphe-content,
-		.paragraphe-3-2 .paragraphe-content,
-		.paragraphe-4 .paragraphe-content {
-			flex: 1 1;
-		}
-
-		.paragraphe-3-2,
-		.paragraphe-4,
-		.paragraphe-3-2 aside {
-			align-items: center;
-		}
-
-		.paragraphe-2-2,
-		.paragraphe-4 {
-			flex-direction: column !important;
-		}
-
-		.paragraphe-4 aside {
-			justify-content: center;
-			align-items: center;
+	.massage-cinq-continents-description-container {
+		.massage-cinq-continents-description-main-content {
 			display: flex;
-			flex-direction: column;
+			flex-flow: row;
+			justify-content: space-evenly;
+			align-items: center;
+			@include mixins.ombre-portee-basse-panneau;
+			padding: 1rem;
+
+			.bg-image-alternative-container-img-logo-M5C {
+				img {
+					max-height: 250px;
+				}
+			}
+
+			.bg-image-container-img-logo-M5C {
+				--background-image-lazy: url('../../assets/M5C/massage-5-continents.png');
+				background-image: var(--background-image-lazy) !important;
+				border-bottom-left-radius: 25px;
+				.bg-image-container-content {
+					margin: 1rem;
+					img {
+						max-height: 200px;
+					}
+				}
+			}
+
+			.massage-cinq-continents-description-content {
+				padding: 0rem 1rem;
+			}
+		}
+	}
+
+	.massage-cinq-continents-benefits {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+
+		.massage-cinq-continents-benefits-lists {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+		}
+
+		.massage-cinq-continents-benefits-lists,
+		.massage-cinq-continents-benefits-disclaimers {
+			flex-basis: 50vw;
+		}
+	}
+
+	.massage-cinq-continents-targets-container {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+		.massage-cinq-continents-targets-lists {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+		}
+
+		.massage-cinq-continents-targets-lists,
+		.massage-cinq-continents-target-disclaimer-list {
+			flex-basis: 50vw;
+		}
+	}
+
+	.massage-cinq-continents-prices-container {
+		@include mixins.ombre-portee-basse-panneau;
+		padding: 1rem;
+		.massage-cinq-continents-prices-content {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			align-items: center;
+
+			.massage-cinq-continents-prices-image-content {
+				display: flex;
+				flex-flow: column;
+				justify-content: space-around;
+				align-items: center;
+
+				img {
+					@include mixins.border-rounded;
+				}
+			}
+
+			.massage-cinq-continents-prices-inner-content {
+				td {
+					text-align: right;
+				}
+				.massage-cinq-continents-prices-cta {
+					padding: 1.5rem;
+					.cta-primary {
+						margin-right: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.M5C {
+		.first-header-2 {
+			.first-header-2-container {
+				.header-2-container {
+					.header-2-content {
+						padding-top: 0rem !important;
+						padding-bottom: 0rem !important;
+
+						h1 {
+							padding-top: 0.25rem;
+							font-size: 1.6rem;
+						}
+
+						.header-2-sub-title {
+							font-size: 0.8rem;
+							justify-content: unset !important;
+						}
+
+						.header-2-cta {
+							flex-flow: column !important;
+							.cta-container-row {
+								flex-flow: column !important;
+								margin-bottom: 0.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+		.massage-cinq-continents-description-main-content,
+		.massage-cinq-continents-benefits-lists,
+		.massage-cinq-continents-benefits-disclaimers,
+		.massage-cinq-continents-targets-lists,
+		.massage-cinq-continents-target-disclaimer-list,
+		.massage-cinq-continents-prices-content {
+			flex-flow: column !important;
+			flex-basis: inherit !important;
+		}
+
+		.massage-cinq-continents-prices-image-content,
+		.bg-image-alternative-container {
+			img:not(.vertical) {
+				width: 250px;
+				max-height: unset !important;
+			}
+			// img .vertical {
+			// 	max-height: 250px;
+			// }
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.M5C {
+		.massage-cinq-continents-prices-inner-content {
+			padding-left: 0.5rem;
+		}
+		img.img-lombaires {
+			max-width: 300px !important;
 		}
 	}
 }
