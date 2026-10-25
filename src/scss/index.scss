@@ -453,7 +453,16 @@ i.text-third {
 	.size-l-visible {
 		display: inherit !important;
 	}
+	.size-l-visible {
+		display: inherit !important;
+	}
 }
+@media (max-width: 768px) {
+	.App-body,
+	.footer-container {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
 @media (max-width: 768px) {
 	.App-body,
 	.footer-container {
@@ -487,7 +496,12 @@ i.text-third {
 					}
 				}
 			}
+				}
+		.lateral-pane-container,
+		.disclaimers-container {
+			font-size: 0.8rem;
 		}
+	}
 		.lateral-pane-container,
 		.disclaimers-container {
 			font-size: 0.8rem;

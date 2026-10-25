@@ -113,8 +113,6 @@ b p,
 .p-button-icon-only,
 nav .p-menuitem:not(.selected) .p-menuitem-text {
 	color: var(--text-color) !important;
-}
-
 nav li.p-menuitem.selected > .p-menuitem-content a .p-menuitem-text {
 	color: var(--primary-color) !important;
 }
