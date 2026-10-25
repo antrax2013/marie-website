@@ -1,3 +1,5 @@
+const tel = import.meta.env.VITE_META_NUMTEL;
+
 interface iAddress {
 	title?: string;
 	descprition?: string;
@@ -26,13 +28,17 @@ export const Adresse = ({
 }: /*...props*/
 iAddress) => {
 	return (
-		<div className='address-container'>
-			<div className='section-header'>{!!title && <h4>{title}</h4>}</div>
-			<div
-				className='section-content'
-				itemScope
-				itemType='https://schema.org/HealthClub'
-			>
+		<div
+			className='address-container'
+			itemScope
+			itemType='https://schema.org/LocalBusiness'
+		>
+			<div className='section-header' itemProp='name'>
+				{!!title && <h4>{title}</h4>}
+			</div>
+			<meta itemProp='image' />
+			<meta itemProp='telephone' content={tel} />
+			<div className='section-content'>
 				<address>
 					{!!map && (
 						<div className='section-map'>
@@ -65,6 +71,7 @@ iAddress) => {
 								<ol>
 									<span itemProp='postalCode'>{postalCode}</span>{' '}
 									<span itemProp='addressLocality'>{locality}</span>
+									<meta itemProp='addressCountry' content='France' />
 								</ol>
 							</ul>
 						</span>
