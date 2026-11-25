@@ -13,7 +13,7 @@
 		"postbuild": "react-spa-prerender && powershell -File .\\post-build.ps1 -m massage-reiki.fr -s marie.cophignon.net -t massages-reiki.fr"
 	},
 	"dependencies": {
-		"@emailjs/browser": "^4.4.1",
+		"@emailjs/browser": "^5.0.3",
 		"formik": "^2.4.9",
 		"primeflex": "^4.0.0",
 		"primeicons": "^7.0.0",
